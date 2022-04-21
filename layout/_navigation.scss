@@ -1,0 +1,72 @@
+.main-sidebar {
+  .brand-link {
+    background: $color_primary;
+    box-shadow: none;
+    border: none;
+    .brand-text {
+      color: #fff;
+      font-family: $font_secondary;
+      font-size: $font_size_subtitle;
+    }
+  }
+
+  .sidebar {
+    background: #fff;
+    padding: 0px;
+
+    nav {
+      .nav-item {
+        &.menu-open {
+          a.nav-link {
+            color: $font_color;
+          }
+
+          &.active {
+            color: #fff;
+            box-shadow: none;
+            border-radius: 0;
+            background: $color_primary;
+            width: 100%;
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+
+        a.nav-link {
+          color: $font_color;
+          font-family: $font_primary;
+          font-size: $font_size_paragraph;
+          &:hover {
+            color: $color_primary;
+          }
+          &.active {
+            color: #fff;
+            box-shadow: none;
+            border-radius: 0;
+            background: $color_primary;
+            width: 100%;
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.main-header {
+  background: $color_primary;
+  .nav-link {
+    color: #fff !important;
+  }
+}
+
+.navbar-nav {
+  a, button {
+    font-size: $font_size_paragraph;
+    font-family: $font_primary;
+    color: $font_color;
+  }
+}

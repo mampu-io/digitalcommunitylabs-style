@@ -1,0 +1,117 @@
+$primary-color: #006dbf;
+$border-color: #ccc;
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      337deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(210, 214, 212, 1) 0%,
+      rgba(234, 242, 249, 1) 45%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .card {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    height: auto;
+    margin: auto;
+    padding: 30px 50px;
+    width: 400px;
+    height: auto;
+    // box-shadow: 10px 10px 5px 10px rgba(0, 0, 0, 0.25);
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid $border-color;
+    h1 {
+      font-weight: 'bold';
+      font-size: 18px;
+      text-align: center;
+      margin: 20px 0;
+    }
+    form {
+      width: 100%;
+    }
+  }
+  
+  
+  .inputEmail{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border-color: $border-color;  
+  }
+  
+  .roleContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 10px 0;
+  }
+  
+  .formControl {
+    display: flex;
+    align-items: center;
+    margin: 5px 10px 10px 0;
+    label {
+      font-size: 18px;
+      font-family: 'Open Sans';
+    }
+    .checkbox {
+      width: 25px;
+      height: 25px;
+      margin-right: 10px;
+    }
+  }
+  
+
+  
+  
+  @media screen and (max-width: 600px) {
+    .topnav {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+    .topnav ul {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+  
+    .card {
+      padding: 10px 15px;
+      img {
+        width: 200px;
+        height: auto;
+      }
+    }
+    .card form {
+      width: 100%;
+    }
+  
+    .roleContainer {
+      display: grid;
+      grid-template-columns: auto;
+      margin: 10px 0;
+      /* width: 10; */
+    }
+  
+    .formControl {
+      display: flex;
+      align-items: center;
+      margin: 5px 100px 10px 0;
+      width: 100%;
+    }
+  }

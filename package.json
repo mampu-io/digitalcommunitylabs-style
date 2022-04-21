@@ -1,0 +1,14 @@
+{
+  "name": "digitalbankstyles",
+  "version": "1.0.0",
+  "description": "For styling all frontend apps Digital Community Bank",
+  "main": "index.js",
+  "scripts": {
+    "watch-sass": "node-sass -w globals.scss globals.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

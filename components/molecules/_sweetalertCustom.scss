@@ -1,0 +1,43 @@
+.swal2-popup {
+  border-radius: 3px !important;
+  border: none !important;
+  box-shadow: none !important;
+  width: 25em !important;
+
+  .swal2-close {
+    font-size: 2em;
+  }
+
+  .swal2-title {
+    font-size: $font_size_title;
+    font-family: $font_primary !important;
+    font-weight: 700;
+    color: $color_text !important;
+  }
+
+  .swal2-html-container {
+    font-size: $font_size_paragraph;
+    font-family: $font_primary !important;
+  }
+  .swal2-confirm,
+  .swal2-deny,
+  .swal2-cancel {
+    padding-left: 25px;
+    padding-right: 25px;
+    min-width: 150px;
+  }
+
+  .swal2-confirm {
+    background-color: $color_primary !important;
+    border: 1px solid $color_primary !important;
+  }
+  .swal2-deny {
+    background-color: $danger_color !important;
+    border: 1px solid $danger_color !important;
+  }
+  .swal2-cancel {
+    border: 1px solid $color_primary !important;
+    background-color: #fff !important;
+    color: $color_primary !important;
+  }
+}

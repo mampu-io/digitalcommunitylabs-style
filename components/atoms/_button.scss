@@ -1,0 +1,35 @@
+.btn {
+  padding-left: 25px;
+  padding-right: 25px;
+  min-width: 150px;
+
+  &-block {
+    width: 100% !important;
+  }
+}
+
+.btn-kc {
+  padding: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #fff;
+
+  &.btn-primary {
+    background: $color_primary;
+    border: 1px solid $color_primary;
+  }
+  &.btn-secondary {
+    background: none;
+    color: $color_primary;
+    border: 1px solid $color_primary;
+  }
+  &.btn-danger {
+    border: 1px solid $danger_color;
+    background: $danger_color;
+  }
+  .spinner-border {
+    width: 13px;
+    height: 13px;
+    font-size: 10px;
+  }
+}

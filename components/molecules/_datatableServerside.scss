@@ -1,0 +1,172 @@
+.as-react-table{
+    padding-bottom: 3px;
+    color: $color-text;
+    font-family: $font_primary;
+    font-size: $font_size_paragraph;
+
+    .table-responsive{
+        border: 1px solid $color-border;
+        border-top: none;
+        margin-bottom: 10px;
+        
+        table.datatable-serverside{
+            margin-bottom: 0px !important;
+            
+            thead tr th{
+                font-family: $font_primary;
+                font-weight: bold;
+                color: lighten($color-text, 20%);
+                &.sortable{color:  $color-text;}
+            }
+            tbody tr:nth-child(even) td{
+                background: lighten($color_border, 9%)  !important;
+            }
+        }
+    }
+    .asrt-table-body{margin-top: 0 !important;}
+    .header-datatable{
+        border-bottom: none;
+        padding: 15px 10px 15px;
+        border: 1px solid $color-border;
+        border-bottom: 0px;
+        clear: both;
+
+        span{
+            font-family: $font_primary !important;
+            font-size: $font_size_paragraph;
+        }
+
+        .form-control{
+            border: $color-border;
+            padding: 5px 20px;
+            background: $white;
+        
+            border-radius: 5px !important;
+            border: 1px solid $color-border;
+            color: $color-text;
+            font-family: $font_primary;
+            font-size: $font_size_paragraph;
+            min-width: 80px;
+        
+            &:focus{
+                outline: none;
+            }
+        }
+
+        .input-group > .form-control{
+            border-radius: 5px !important;
+        }
+    }
+
+    .fixedWidthColoumn{
+        margin: 0 auto;
+        width: 100%;
+        clear: both;
+        border-collapse: collapse;
+        table-layout: fixed;
+        word-wrap:break-word;
+    }
+
+
+    .asrt-pagination {
+        float: right;
+        text-align: right;
+        padding-top: 0.25em;
+        list-style: none !important;
+        .page-item{
+            margin : 0 1px;
+            &.active {
+                .page-link {
+                    font-family: $font_primary;
+                    font-weight: bold;
+                    color: $color-blue !important;
+                    &:hover, &:active {
+                        outline: none;
+                        font-family: $font_primary;
+                        font-weight: bold;
+                    }
+                }
+            }
+            
+            &.disabled {
+                .page-link {
+                    cursor: $color-placeholder;
+                    color: $color-placeholder;
+                    background: transparent;
+                    box-shadow: none;
+                    
+                    &:hover, &:active {
+                        cursor: default;
+                        color: $color-placeholder;
+                        border: 1px solid transparent;
+                        background: transparent;
+                        box-shadow: none;
+                    }
+                }
+            }
+
+            .page-link {
+                box-sizing: border-box;
+                display: inline-block;
+                min-width: 1.5em;
+                padding: 0px;
+                margin-left: 2px;
+                text-align: center;
+                text-decoration: none !important;
+                cursor: pointer;
+                *cursor: hand;
+                color: $color-text;
+                font-family: $font_primary;
+                font-size: $font_size_paragraph;
+                background: none;
+                border-radius: 2px;
+
+            
+                &:hover {
+                    font-family: $font_primary;
+                    color: $color-blue;
+                }
+                
+                &:active {
+                    outline: none;
+                    font-family: $font_primary;
+                    background-color: none;
+                }
+            }
+        }
+        
+        .ellipsis {
+            padding: 0 1em;
+        }
+    }
+
+    .asrt-table-foot{ margin-top: 10px; }
+    .asrt-table-head, .asrt-table-foot{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .asrt-table-head, .asrt-table-foot{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .col-md-6{ 
+            text-align: center; 
+            &.col-md-6:last-child {
+                float: none;
+                text-align: center;
+                display: flex;
+                align-items: center !important;
+                justify-content: center !important;
+                margin-top: 15px;
+            }
+        }
+    }
+
+    
+}

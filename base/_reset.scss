@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $font_primary;
+}
+
+h1 {
+  font-size: $font_size_title;
+}
+
+h2 {
+  font-size: $font_size_subtitle;
+}
+
+p,
+ul,
+li,
+a {
+  font-size: $font_size_paragraph;
+}

@@ -1,0 +1,68 @@
+.text-notes {
+  font-size: $font_size_note;
+  color: $notes_color;
+  font-style: italic;
+
+  &.text-notes-danger {
+    color: $danger_color;
+  }
+
+  &.text-notes-success {
+    color: $primary_color;
+  }
+
+  &.text-notes-green {
+    color: $success_color;
+  }
+
+  a {
+    font-size: $font_size_note;
+    text-decoration: none;
+    color: $primary_color;
+  }
+}
+
+.form-label {
+  font-weight: bold;
+}
+.form-control-error {
+  border: 1px solid $danger_color;
+}
+
+.link {
+  font-family: inherit;
+  &:hover {
+    cursor: pointer;
+    background: none;
+    color: $color_primary;
+  }
+}
+
+.progress {
+  height: 5px;
+}
+
+.notes {
+  display: block;
+  color: $notes_color;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.content{
+  ul{
+    list-style: disc;
+  }
+  ul, ol{
+    margin-left: 15px;
+    li{
+      margin-bottom: 5px;
+      &:last-child{margin-bottom: none;}
+    }
+    span{
+      color: $notes_color;
+      font-style: italic;
+      display: block;
+    }
+  }
+}

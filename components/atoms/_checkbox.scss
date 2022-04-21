@@ -1,0 +1,25 @@
+%checkboxWrapper-style {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.checkboxWrapper {
+  &-horizontal {
+    @extend %checkboxWrapper-style;
+    justify-content: space-between;
+
+    .form-check {
+      width: 33%;
+    }
+  }
+
+  &-vertical {
+    @extend %checkboxWrapper-style;
+    flex-direction: column;
+
+    .form-check {
+      width: 100%;
+    }
+  }
+}

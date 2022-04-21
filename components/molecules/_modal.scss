@@ -1,0 +1,24 @@
+.modal-kc {
+  .moda-dialog {
+    font-family: $font-primary;
+  }
+  .modal-content {
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+
+    .modal-header {
+      font-family: $font-primary;
+      color: $color_text;
+      .link {
+        color: $color_text !important;
+      }
+
+      .modal-title {
+        font-size: $font_size_title;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}
