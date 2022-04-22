@@ -4,11 +4,13 @@
   "description": "For styling all frontend apps Digital Community Bank",
   "main": "index.js",
   "scripts": {
-    "watch-sass": "node-sass -w globals.scss globals.css"
+    "watch-sass": "node-sass -w globals.scss globals.css",
+    "run-server": "http-server -S -C cert.pem -o -p 3030"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "local-web-server": "^5.2.0",
     "node-sass": "^7.0.1"
   }
 }
