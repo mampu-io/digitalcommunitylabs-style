@@ -1,0 +1,34 @@
+.tab {
+  cursor: pointer;
+  border: none;
+  margin-right: 15px;
+  padding: 0;
+
+  .tab-accent {
+    background-color: $neutral100;
+    box-shadow: 2px -5px 5px 0 rgba($color: $neutral700, $alpha: 0.3);
+    display: flex;
+    align-items: flex-start;
+    height: 50px;
+    min-width: 180px;
+
+    &--active {
+      background-color: $primary500;
+      height: 55px;
+    }
+  }
+
+  .tab-label {
+    background-color: $neutral100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    padding: 10px 20px;
+    width: 100%;
+
+    label {
+      cursor: pointer;
+    }
+  }
+}

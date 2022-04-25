@@ -1,0 +1,20 @@
+.record-item {
+  border: 0;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: $neutral300;
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  padding: 20px;
+  width: 100%;
+
+  .record-item--content {
+    display: flex;
+    flex-direction: row;
+
+    &--field, &--data {
+      flex-basis: 50%;
+    }
+  }
+}
