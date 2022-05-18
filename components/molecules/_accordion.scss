@@ -1,0 +1,41 @@
+.box {
+  border-radius: 3px;
+  background: #ffffff;
+  margin-bottom: 10px;
+  width: 100%;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+
+  &.box-primary {
+    border-top-color: $color_primary;
+  }
+}
+
+.box-header {
+  padding: 10px;
+
+  &.with-border {
+    border-bottom: 1px solid #f4f4f4;
+  }
+}
+
+.box-title {
+  display: inline-block;
+  line-height: 1;
+
+  a {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}
+
+.box-body {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding: 10px;
+}
+
+.panel {
+  border: 2px solid transparent;
+}

@@ -67,6 +67,9 @@ a {
     font-style: italic;
     display: block; }
 
+table p {
+  margin-bottom: 0; }
+
 .main-sidebar .brand-link {
   background: #0f77c0;
   box-shadow: none;
@@ -214,7 +217,7 @@ a {
 .content-title {
   font-size: 20px;
   font-weight: 700;
-  margin: 20px 0; }
+  margin: 10px 0 30px; }
 
 .tabs {
   align-items: center;
@@ -319,7 +322,7 @@ a {
   padding: 0; }
   .tab .tab-accent {
     background-color: #F5F5F5;
-    box-shadow: 2px -5px 5px 0 rgba(71, 71, 71, 0.3);
+    box-shadow: 8px 0 5px -5px rgba(71, 71, 71, 0.3);
     display: flex;
     align-items: flex-start;
     height: 50px;
@@ -539,3 +542,34 @@ a {
     flex-direction: row; }
     .record-item .record-item--content--field, .record-item .record-item--content--data {
       flex-basis: 50%; }
+
+.box {
+  border-radius: 3px;
+  background: #ffffff;
+  margin-bottom: 10px;
+  width: 100%;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
+  .box.box-primary {
+    border-top-color: #0f77c0; }
+
+.box-header {
+  padding: 10px; }
+  .box-header.with-border {
+    border-bottom: 1px solid #f4f4f4; }
+
+.box-title {
+  display: inline-block;
+  line-height: 1; }
+  .box-title a {
+    font-size: 1rem;
+    font-weight: 700; }
+
+.box-body {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding: 10px; }
+
+.panel {
+  border: 2px solid transparent; }
