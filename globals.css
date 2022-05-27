@@ -67,6 +67,9 @@ a {
     font-style: italic;
     display: block; }
 
+table p {
+  margin-bottom: 0; }
+
 .main-sidebar .brand-link {
   background: #0f77c0;
   box-shadow: none;
@@ -211,7 +214,7 @@ a {
 .content-title {
   font-size: 20px;
   font-weight: 700;
-  margin: 20px 0; }
+  margin: 10px 0 30px; }
 
 .tabs {
   align-items: center;
@@ -278,6 +281,14 @@ a {
 @media screen and (max-width: 480px) {
   .content-detail {
     padding: 15px 0; } }
+
+.badge-container {
+  display: inline-block;
+  margin-left: 15px; }
+  .badge-container .badge {
+    font-size: 85%;
+    min-width: 75px;
+    padding: 0.4em 0.5em; }
 
 .btn {
   padding-left: 25px;
@@ -350,7 +361,7 @@ a {
   padding: 0; }
   .tab .tab-accent {
     background-color: #F5F5F5;
-    box-shadow: 2px -5px 5px 0 rgba(71, 71, 71, 0.3);
+    box-shadow: 8px 0 5px -5px rgba(71, 71, 71, 0.3);
     display: flex;
     align-items: flex-start;
     height: 50px;
@@ -366,8 +377,9 @@ a {
     height: 50px;
     padding: 10px 20px;
     width: 100%; }
-    .tab .tab-label label {
-      cursor: pointer; }
+    .tab .tab-label p {
+      cursor: pointer;
+      margin: 0; }
 
 .text-kc {
   font-family: 'Open Sans', sans-serif;
@@ -573,6 +585,22 @@ a {
       margin: 0;
       padding: 0; }
 
+.modal .close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s; }
+
+.modal .modal-content-image {
+  border-radius: 10px;
+  position: relative;
+  width: 500px; }
+  .modal .modal-content-image img {
+    border-radius: 10px; }
+
 .swal2-popup {
   border-radius: 3px !important;
   border: none !important;
@@ -613,10 +641,46 @@ a {
   display: flex;
   flex-direction: column;
   min-width: 400px;
-  padding: 20px;
+  padding: 25px;
   width: 100%; }
   .record-item .record-item--content {
     display: flex;
     flex-direction: row; }
     .record-item .record-item--content--field, .record-item .record-item--content--data {
       flex-basis: 50%; }
+    .record-item .record-item--content .record-item--content--field p {
+      margin-bottom: 0; }
+    .record-item .record-item--content .record-item--content--data p {
+      font-weight: 700;
+      margin-bottom: 0; }
+
+.box {
+  border-radius: 3px;
+  background: #ffffff;
+  margin-bottom: 10px;
+  width: 100%;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
+  .box.box-primary {
+    border-top-color: #0f77c0; }
+
+.box-header {
+  padding: 10px; }
+  .box-header.with-border {
+    border-bottom: 1px solid #f4f4f4; }
+
+.box-title {
+  display: inline-block;
+  line-height: 1; }
+  .box-title a {
+    font-size: 1rem;
+    font-weight: 700; }
+
+.box-body {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding: 10px; }
+
+.panel {
+  border: 2px solid transparent; }
