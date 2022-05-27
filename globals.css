@@ -513,10 +513,12 @@ table p {
   font-weight: bold;
   transition: 0.3s; }
 
-.modal .modal-content {
-  height: 750px;
+.modal .modal-content-image {
+  border-radius: 10px;
   position: relative;
   width: 500px; }
+  .modal .modal-content-image img {
+    border-radius: 10px; }
 
 .swal2-popup {
   border-radius: 3px !important;

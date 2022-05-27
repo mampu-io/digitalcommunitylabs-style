@@ -34,9 +34,13 @@
     transition: 0.3s;
   }
   
-  .modal-content {
-    height: 750px;
+  .modal-content-image {
+    border-radius: 10px;
     position: relative;
     width: 500px;
+
+    img {
+      border-radius: 10px;
+    }
   }
 }
