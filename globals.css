@@ -67,6 +67,14 @@ a {
     font-style: italic;
     display: block; }
 
+table .datatable-cell-header {
+  margin-left: 16px;
+  font-weight: 700;
+  font-size: 1rem; }
+
+table .datatable-cell {
+  margin-left: 16px; }
+
 table p {
   margin-bottom: 0; }
 
@@ -322,22 +330,14 @@ table p {
     height: 13px;
     font-size: 10px; }
 
-.inputWrapper .border-input {
-  position: relative;
-  border-radius: 4px;
-  border: 1px solid #d4d4d4;
-  display: flex;
-  flex-direction: row; }
-  .inputWrapper .border-input input {
-    border: none; }
-  .inputWrapper .border-input .btn-seePassword {
-    background: none;
-    border: none;
-    margin: 0 10px; }
-    .inputWrapper .border-input .btn-seePassword .icon-seePassword {
-      color: #6c757d; }
-      .inputWrapper .border-input .btn-seePassword .icon-seePassword:hover {
-        cursor: pointer; }
+.inputWrapper .btn-seePassword {
+  background: none;
+  border: none; }
+  .inputWrapper .btn-seePassword .icon-seePassword {
+    color: #6c757d;
+    width: 20px; }
+    .inputWrapper .btn-seePassword .icon-seePassword:hover {
+      cursor: pointer; }
 
 .checkboxWrapper-horizontal, .checkboxWrapper-vertical {
   display: flex;

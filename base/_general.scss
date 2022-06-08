@@ -68,6 +68,16 @@
 }
 
 table {
+  .datatable-cell-header {
+    margin-left: 16px;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+  .datatable-cell {
+    margin-left: 16px;
+  }
+
   p {
     margin-bottom: 0;
   }
