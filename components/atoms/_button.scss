@@ -14,11 +14,19 @@
   padding-bottom: 5px;
   color: #fff;
   font-family: $font_primary;
-  font-size: $font_size_paragraph !important;
+  &.btn-sm{
+    font-size: $font_size_note !important;
+  }
+  &.btn-md{
+    font-size: $font_size_paragraph !important;
+    padding-top: 7.5px !important;
+    padding-bottom: 7.5px !important;
+  }
 
   &.btn-block{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    font-size: $font_size_paragraph !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
   }
 
   &.btn-primary {
@@ -35,8 +43,7 @@
     background: $danger_color;
   }
   .spinner-border {
-    width: 13px;
-    height: 13px;
-    font-size: 10px;
+    width: 15px !important;
+    height: 15px !important;
   }
 }
