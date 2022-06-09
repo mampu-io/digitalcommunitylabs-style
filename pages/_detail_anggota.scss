@@ -1,0 +1,43 @@
+.listRevision-Anggota{
+  margin: 0px !important; padding: 10px;
+  margin-bottom: 20px !important;
+  background: #f0f0f0;
+
+  &:last-child{
+    margin-bottom: 0px !important;
+  }
+
+  li{
+    list-style: none;
+    list-style-position: inside;
+    font-family: $font_primary;
+    color: $color_text;
+    margin-bottom: 20px !important;
+    &:last-child{
+      margin-bottom: 0px !important;
+    }
+
+    span{
+      display: inline-block;
+      font-style: normal;
+    }
+
+    input{
+      font-size: $font_size_paragraph;
+      font-family: $font_primary;
+      color: $color_text;
+    }
+
+    &.titleListRevision-Anggota{
+      font-weight: bold;
+      font-size: $font_size_subtitle;
+      padding-bottom: 5px;
+      color: $color_label;
+      border-bottom: 1px solid $color_border;
+    }
+  }
+}
+
+.custom-select {
+  font-size: 0.8rem;
+}
