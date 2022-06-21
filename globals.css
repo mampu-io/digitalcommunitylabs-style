@@ -1,8 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap");
+/* System Design */
 * {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans"; }
+  font-family: "Lato";
+  box-sizing: border-box; }
 
 h1 {
   font-size: 22px; }
@@ -78,6 +80,73 @@ table .datatable-cell {
 table p {
   margin-bottom: 0; }
 
+.kc-typo-bold {
+  font-weight: 700; }
+
+.kc-headline1 {
+  font-weight: 300;
+  font-size: 100px;
+  line-height: 120px;
+  letter-spacing: -1.5px; }
+
+.kc-headline2 {
+  font-weight: 300;
+  font-size: 62px;
+  line-height: 72px;
+  letter-spacing: -0.5px; }
+
+.kc-headline3 {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 60px; }
+
+.kc-headline4 {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 42px;
+  letter-spacing: 0.25px; }
+
+.kc-headline5 {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px; }
+
+.kc-headline6 {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  letter-spacing: 0.15px; }
+
+.kc-body1 {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.5px; }
+
+.kc-body2 {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.25px; }
+
+.kc-button-label {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 1.25px; }
+
+.kc-caption {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.4px; }
+
+.kc-overline {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1.5px; }
+
 .main-sidebar .brand-link {
   background: #0f77c0;
   box-shadow: none;
@@ -102,7 +171,7 @@ table p {
       color: #fff; }
   .main-sidebar .sidebar nav .nav-item a.nav-link {
     color: #6c757d;
-    font-family: "Open Sans";
+    font-family: "Lato";
     font-size: 13px; }
     .main-sidebar .sidebar nav .nav-item a.nav-link:hover {
       color: #0f77c0; }
@@ -122,12 +191,12 @@ table p {
 
 .navbar-nav a, .navbar-nav button {
   font-size: 13px;
-  font-family: "Open Sans";
+  font-family: "Lato";
   color: #6c757d; }
 
 .main-footer {
   font-size: 13px;
-  font-family: "Open Sans"; }
+  font-family: "Lato"; }
 
 .content {
   background: #fff;
@@ -140,11 +209,11 @@ table p {
 
 .content-header h1 {
   font-size: 22px;
-  font-family: "Open Sans";
+  font-family: "Lato";
   color: #333; }
 
 .content-header .breadcrumb {
-  font-family: "Open Sans";
+  font-family: "Lato";
   font-size: 13px; }
 
 .login-container {
@@ -168,7 +237,7 @@ table p {
         display: block;
         margin-left: 5px;
         color: #999999;
-        font-family: "Open Sans";
+        font-family: "Lato";
         font-style: italic; }
     .login-container .login-wrapper .login-box {
       padding: 15px;
@@ -195,7 +264,7 @@ table p {
     margin: 0px;
     padding: 0px; }
   .page-notfound h1 {
-    font-family: "Open Sans";
+    font-family: "Lato";
     color: #00b5c3;
     font-size: 75px;
     letter-spacing: 15.5px;
@@ -255,7 +324,7 @@ table p {
   .listRevision-CalonAnggota li {
     list-style: none;
     list-style-position: inside;
-    font-family: "Open Sans";
+    font-family: "Lato";
     color: #4c4c4c;
     margin-bottom: 20px !important; }
     .listRevision-CalonAnggota li:last-child {
@@ -265,7 +334,7 @@ table p {
       font-style: normal; }
     .listRevision-CalonAnggota li input {
       font-size: 13px;
-      font-family: "Open Sans";
+      font-family: "Lato";
       color: #4c4c4c; }
     .listRevision-CalonAnggota li.titleListRevision-CalonAnggota {
       font-weight: bold;
@@ -294,6 +363,39 @@ table p {
   .content-detail {
     padding: 15px 0; } }
 
+.kc-detil-calon-anggota {
+  width: 100%;
+  padding: 40px; }
+  .kc-detil-calon-anggota .kc-detil-calon-anggota--headline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px; }
+    .kc-detil-calon-anggota .kc-detil-calon-anggota--headline .kc-detil-calon-anggota--identity span {
+      font-weight: 500; }
+    .kc-detil-calon-anggota .kc-detil-calon-anggota--headline .kc-detil-calon-anggota--action-button {
+      display: flex;
+      flex-direction: row; }
+      .kc-detil-calon-anggota .kc-detil-calon-anggota--headline .kc-detil-calon-anggota--action-button .kc-button {
+        margin-left: 25px; }
+  .kc-detil-calon-anggota .kc-detil-calon-anggota--content {
+    padding: 10px; }
+    .kc-detil-calon-anggota .kc-detil-calon-anggota--content .kc-detil-calon-anggota--navigation {
+      margin-bottom: 50px;
+      display: flex;
+      flex-direction: row; }
+      .kc-detil-calon-anggota .kc-detil-calon-anggota--content .kc-detil-calon-anggota--navigation .kc-tab-navigation {
+        margin-right: 25px; }
+    .kc-detil-calon-anggota .kc-detil-calon-anggota--content .kc-detil-calon-anggota--content-detail .kc-section {
+      width: 600px; }
+      .kc-detil-calon-anggota .kc-detil-calon-anggota--content .kc-detil-calon-anggota--content-detail .kc-section .kc-section--foto-dokumen {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px; }
+        .kc-detil-calon-anggota .kc-detil-calon-anggota--content .kc-detil-calon-anggota--content-detail .kc-section .kc-section--foto-dokumen .kc-image-preview {
+          margin-right: 40px; }
+
 .listRevision-Anggota {
   margin: 0px !important;
   padding: 10px;
@@ -304,7 +406,7 @@ table p {
   .listRevision-Anggota li {
     list-style: none;
     list-style-position: inside;
-    font-family: "Open Sans";
+    font-family: "Lato";
     color: #4c4c4c;
     margin-bottom: 20px !important; }
     .listRevision-Anggota li:last-child {
@@ -314,7 +416,7 @@ table p {
       font-style: normal; }
     .listRevision-Anggota li input {
       font-size: 13px;
-      font-family: "Open Sans";
+      font-family: "Lato";
       color: #4c4c4c; }
     .listRevision-Anggota li.titleListRevision-Anggota {
       font-weight: bold;
@@ -346,7 +448,7 @@ table p {
   padding-top: 5px;
   padding-bottom: 5px;
   color: #fff;
-  font-family: "Open Sans"; }
+  font-family: "Lato"; }
   .btn-kc.btn-sm {
     font-size: 11px !important; }
   .btn-kc.btn-md {
@@ -470,7 +572,7 @@ table p {
     border-radius: 5px;
     padding: 15px;
     position: relative;
-    font-family: "Open Sans"; }
+    font-family: "Lato"; }
     .kc-popup-backdrop .kc-popup-wrapper .kc-popup-close {
       position: absolute;
       top: -10px;
@@ -502,7 +604,7 @@ table p {
 .as-react-table {
   padding-bottom: 3px;
   color: #4c4c4c;
-  font-family: "Open Sans";
+  font-family: "Lato";
   font-size: 13px; }
   .as-react-table .table-responsive {
     border: 1px solid #e0e0e0;
@@ -511,7 +613,7 @@ table p {
     .as-react-table .table-responsive table.datatable-serverside {
       margin-bottom: 0px !important; }
       .as-react-table .table-responsive table.datatable-serverside thead tr th {
-        font-family: "Open Sans";
+        font-family: "Lato";
         font-weight: bold;
         color: #7f7f7f; }
         .as-react-table .table-responsive table.datatable-serverside thead tr th.sortable {
@@ -527,7 +629,7 @@ table p {
     border-bottom: 0px;
     clear: both; }
     .as-react-table .header-datatable span {
-      font-family: "Open Sans" !important;
+      font-family: "Lato" !important;
       font-size: 13px; }
     .as-react-table .header-datatable .form-control {
       border: #e0e0e0;
@@ -536,7 +638,7 @@ table p {
       border-radius: 5px !important;
       border: 1px solid #e0e0e0;
       color: #4c4c4c;
-      font-family: "Open Sans";
+      font-family: "Lato";
       font-size: 13px;
       min-width: 80px; }
       .as-react-table .header-datatable .form-control:focus {
@@ -558,12 +660,12 @@ table p {
     .as-react-table .asrt-pagination .page-item {
       margin: 0 1px; }
       .as-react-table .asrt-pagination .page-item.active .page-link {
-        font-family: "Open Sans";
+        font-family: "Lato";
         font-weight: bold;
         color: #006dbf !important; }
         .as-react-table .asrt-pagination .page-item.active .page-link:hover, .as-react-table .asrt-pagination .page-item.active .page-link:active {
           outline: none;
-          font-family: "Open Sans";
+          font-family: "Lato";
           font-weight: bold; }
       .as-react-table .asrt-pagination .page-item.disabled .page-link {
         cursor: #aeaeae;
@@ -587,16 +689,16 @@ table p {
         cursor: pointer;
         *cursor: hand;
         color: #4c4c4c;
-        font-family: "Open Sans";
+        font-family: "Lato";
         font-size: 13px;
         background: none;
         border-radius: 2px; }
         .as-react-table .asrt-pagination .page-item .page-link:hover {
-          font-family: "Open Sans";
+          font-family: "Lato";
           color: #006dbf; }
         .as-react-table .asrt-pagination .page-item .page-link:active {
           outline: none;
-          font-family: "Open Sans";
+          font-family: "Lato";
           background-color: none; }
     .as-react-table .asrt-pagination .ellipsis {
       padding: 0 1em; }
@@ -624,14 +726,14 @@ table p {
         margin-top: 15px; } }
 
 .modal-kc .moda-dialog {
-  font-family: "Open Sans"; }
+  font-family: "Lato"; }
 
 .modal-kc .modal-content {
   border-radius: 0;
   border: none;
   box-shadow: none; }
   .modal-kc .modal-content .modal-header {
-    font-family: "Open Sans";
+    font-family: "Lato";
     color: #4c4c4c; }
     .modal-kc .modal-content .modal-header .link {
       color: #4c4c4c !important; }
@@ -665,12 +767,12 @@ table p {
     font-size: 2em; }
   .swal2-popup .swal2-title {
     font-size: 22px;
-    font-family: "Open Sans" !important;
+    font-family: "Lato" !important;
     font-weight: 700;
     color: #4c4c4c !important; }
   .swal2-popup .swal2-html-container {
     font-size: 13px;
-    font-family: "Open Sans" !important; }
+    font-family: "Lato" !important; }
   .swal2-popup .swal2-confirm,
   .swal2-popup .swal2-deny,
   .swal2-popup .swal2-cancel {
@@ -744,3 +846,109 @@ table p {
 
 .panel {
   border: 2px solid transparent; }
+
+.kc-image-preview {
+  width: 120px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .kc-image-preview .kc-image-preview--box {
+    border: 1px dashed #000000;
+    border-radius: 8px;
+    padding: 10px;
+    height: 100%;
+    width: 100%; }
+    .kc-image-preview .kc-image-preview--box .kc-image-preview--image {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .kc-image-preview .kc-image-preview--box .kc-image-preview--image img {
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: contain; }
+      .kc-image-preview .kc-image-preview--box .kc-image-preview--image i {
+        color: #8C8C8C;
+        font-size: 32px; }
+  .kc-image-preview .kc-image-preview--label {
+    padding: 16px;
+    text-align: center;
+    text-transform: uppercase; }
+    .kc-image-preview .kc-image-preview--label span {
+      color: #B52435; }
+
+.kc-button {
+  border: none;
+  border-radius: 4px;
+  height: 40px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .kc-button.kc-button--short {
+    min-width: 150px; }
+  .kc-button.kc-button--long {
+    min-width: 400px; }
+  .kc-button.kc-button--primary {
+    color: #FFFFFF;
+    background-color: #B52435; }
+    .kc-button.kc-button--primary:hover {
+      background-color: #DC3644; }
+    .kc-button.kc-button--primary:active {
+      background-color: #8F1528; }
+  .kc-button.kc-button--secondary {
+    color: #595959;
+    border: 1px solid #8C8C8C; }
+    .kc-button.kc-button--secondary:hover {
+      color: #DC3644;
+      border: 1px solid #DC3644; }
+    .kc-button.kc-button--secondary:active {
+      color: #8F1528;
+      border: 1px solid #8F1528; }
+  .kc-button.kc-button--primary:disabled, .kc-button.kc-button--secondary:disabled {
+    background-color: #F5F5F5;
+    border: 1px solid #D9D9D9;
+    color: #BFBFBF; }
+
+.kc-tab-navigation {
+  background-color: transparent !important;
+  border: none !important;
+  min-width: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0; }
+  .kc-tab-navigation .kc-tab-navigation--label {
+    margin: 5px 0 15px;
+    min-height: 20px;
+    text-align: center; }
+  .kc-tab-navigation .kc-tab-navigation--indicator {
+    height: 2px;
+    width: 100%; }
+    .kc-tab-navigation .kc-tab-navigation--indicator.kc-tab-navigation--active {
+      background-color: #262626; }
+    .kc-tab-navigation .kc-tab-navigation--indicator.kc-tab-navigation--nonactive {
+      background-color: transparent; }
+
+.kc-record-item {
+  width: 100%;
+  min-width: 400px;
+  padding: 15px 0; }
+  .kc-record-item .kc-record-item--content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+    .kc-record-item .kc-record-item--content .kc-record-item--key {
+      color: #8C8C8C;
+      flex-basis: 40%; }
+    .kc-record-item .kc-record-item--content .kc-record-item--value {
+      color: #1F1F1F;
+      flex-basis: 40%; }
+      .kc-record-item .kc-record-item--content .kc-record-item--value span {
+        font-weight: 700; }

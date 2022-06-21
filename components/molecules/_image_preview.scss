@@ -1,0 +1,50 @@
+$neutral13: #000000;
+$neutral7: #8C8C8C;
+$primary7: #B52435;
+
+.kc-image-preview {
+  width: 120px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .kc-image-preview--box {
+    border: 1px dashed $neutral13;
+    border-radius: 8px;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+
+    .kc-image-preview--image {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: contain;
+      }
+
+      i {
+        color: $neutral7;
+        font-size: 32px;
+      }
+    }
+  }
+
+  .kc-image-preview--label {
+    padding: 16px;
+    text-align: center;
+    text-transform: uppercase;
+
+    span {
+      color: $primary7;
+    }
+  }
+}
