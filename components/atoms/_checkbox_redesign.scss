@@ -1,0 +1,39 @@
+.kc-checkbox-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &.kc-checkbox--disabled label {
+    color: $textLight5;
+  }
+
+  input[type=checkbox] {
+    accent-color: $primary7;
+    border-color: $neutral2;
+    height: 16px;
+    margin: 0;
+    margin-right: 8px;
+    width: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input[type=checkbox]:indeterminate::before {
+    content: "";
+    display: block;
+    color: white;
+    width: 10px;
+    height: 10px;
+    background-color: $primary7;
+  }
+
+  label {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+    margin: 0;
+  }
+}
