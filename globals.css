@@ -202,7 +202,7 @@ table p {
   background: #fff;
   margin: 0 15px 0;
   border-radius: 5px;
-  padding: 15px !important; }
+  padding: 15px; }
 
 .content-wrapper {
   padding-bottom: 15px; }
@@ -456,6 +456,38 @@ table p {
   .content-detail {
     padding: 15px 0; } }
 
+.listRevision-Anggota {
+  margin: 0px !important;
+  padding: 10px;
+  margin-bottom: 20px !important;
+  background: #f0f0f0; }
+  .listRevision-Anggota:last-child {
+    margin-bottom: 0px !important; }
+  .listRevision-Anggota li {
+    list-style: none;
+    list-style-position: inside;
+    font-family: "Lato";
+    color: #4c4c4c;
+    margin-bottom: 20px !important; }
+    .listRevision-Anggota li:last-child {
+      margin-bottom: 0px !important; }
+    .listRevision-Anggota li span {
+      display: inline-block;
+      font-style: normal; }
+    .listRevision-Anggota li input {
+      font-size: 13px;
+      font-family: "Lato";
+      color: #4c4c4c; }
+    .listRevision-Anggota li.titleListRevision-Anggota {
+      font-weight: bold;
+      font-size: 16px;
+      padding-bottom: 5px;
+      color: #6f6f6f;
+      border-bottom: 1px solid #e0e0e0; }
+
+.custom-select {
+  font-size: 0.8rem; }
+
 .kc-detil-calon-anggota {
   width: 100%;
   padding: 40px; }
@@ -489,37 +521,32 @@ table p {
         .kc-detil-calon-anggota .kc-detil-calon-anggota--content .kc-detil-calon-anggota--content-detail .kc-section .kc-section--foto-dokumen .kc-image-preview {
           margin-right: 40px; }
 
-.listRevision-Anggota {
-  margin: 0px !important;
-  padding: 10px;
-  margin-bottom: 20px !important;
-  background: #f0f0f0; }
-  .listRevision-Anggota:last-child {
-    margin-bottom: 0px !important; }
-  .listRevision-Anggota li {
-    list-style: none;
-    list-style-position: inside;
-    font-family: "Lato";
-    color: #4c4c4c;
-    margin-bottom: 20px !important; }
-    .listRevision-Anggota li:last-child {
-      margin-bottom: 0px !important; }
-    .listRevision-Anggota li span {
-      display: inline-block;
-      font-style: normal; }
-    .listRevision-Anggota li input {
-      font-size: 13px;
-      font-family: "Lato";
-      color: #4c4c4c; }
-    .listRevision-Anggota li.titleListRevision-Anggota {
-      font-weight: bold;
-      font-size: 16px;
-      padding-bottom: 5px;
-      color: #6f6f6f;
-      border-bottom: 1px solid #e0e0e0; }
-
-.custom-select {
-  font-size: 0.8rem; }
+.content-wrapper > .content {
+  margin: 0;
+  padding: 50px; }
+  .content-wrapper > .content .kc-headline5 {
+    margin-bottom: 50px; }
+  .content-wrapper > .content .kc-form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column; }
+    .content-wrapper > .content .kc-form-group .kc-input-group {
+      margin-bottom: 30px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .content-wrapper > .content .kc-form-group .kc-input-group > label {
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        margin: 0; }
+      .content-wrapper > .content .kc-form-group .kc-input-group .kc-input {
+        margin-left: 20px; }
+        .content-wrapper > .content .kc-form-group .kc-input-group .kc-input .kc-roles .kc-roles--option {
+          margin-bottom: 10px; }
+        .content-wrapper > .content .kc-form-group .kc-input-group .kc-input ul {
+          width: 216px; }
 
 .badge-container {
   display: inline-block;
