@@ -1,0 +1,29 @@
+.kc-tab-navigation {
+  background-color: transparent !important;
+  border: none !important;
+  min-width: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+
+  .kc-tab-navigation--label {
+    margin: 5px 0 15px;
+    min-height: 20px;
+    text-align: center;
+  }
+
+  .kc-tab-navigation--indicator {
+    height: 2px;
+    width: 100%;
+
+    &.kc-tab-navigation--active {
+      background-color: $neutral10;
+    }
+
+    &.kc-tab-navigation--nonactive {
+      background-color: transparent;
+    }
+  }
+}

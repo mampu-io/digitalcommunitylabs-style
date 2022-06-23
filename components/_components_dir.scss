@@ -5,10 +5,17 @@
 @import 'atoms/tab';
 @import 'atoms/text';
 @import 'atoms/loadingPage';
-//@import 'molecules/datatable';
 @import 'molecules/popup';
 @import 'molecules/datatableServerside';
 @import 'molecules/modal';
 @import 'molecules/sweetalertCustom';
 @import 'molecules/record_item';
 @import 'molecules/accordion';
+
+// Component for re-design
+@import 'molecules/image_preview';
+@import 'atoms/button_redesign';
+@import 'atoms/tab_navigation';
+@import 'molecules/record_item_redesign';
+@import 'atoms/checkbox_redesign';
+@import 'atoms/textfield';

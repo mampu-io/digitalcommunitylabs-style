@@ -1,0 +1,57 @@
+.kc-detil-calon-anggota {
+  width: 100%;
+  padding: 40px;
+
+  .kc-detil-calon-anggota--headline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    .kc-detil-calon-anggota--identity {
+      span {
+        font-weight: 500;
+      }
+    }
+
+    .kc-detil-calon-anggota--action-button {
+      display: flex;
+      flex-direction: row;
+
+      .kc-button {
+        margin-left: 25px;
+      }
+    }
+  }
+
+  .kc-detil-calon-anggota--content {
+    padding: 10px;
+
+    .kc-detil-calon-anggota--navigation {
+      margin-bottom: 50px;
+      display: flex;
+      flex-direction: row;
+
+      .kc-tab-navigation {
+        margin-right: 25px;
+      }
+    }
+
+    .kc-detil-calon-anggota--content-detail {
+      .kc-section {
+        width: 600px;
+
+        .kc-section--foto-dokumen {
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 20px;
+
+          .kc-image-preview {
+            margin-right: 40px;
+          }
+        }
+      }
+    }
+  }
+}
