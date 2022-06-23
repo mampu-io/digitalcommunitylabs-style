@@ -1,7 +1,7 @@
 .kc-textfield {
   display: flex;
   flex-direction: column;
-  min-width: 216px;
+  width: 216px;
 
   &.kc-textfield--disabled {
     .kc-textfield--field {

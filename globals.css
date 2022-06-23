@@ -80,9 +80,6 @@ table .datatable-cell {
 table p {
   margin-bottom: 0; }
 
-.kc-typo-bold {
-  font-weight: 700; }
-
 .kc-headline1 {
   font-weight: 300;
   font-size: 100px;
@@ -145,7 +142,10 @@ table p {
   font-weight: 500;
   font-size: 10px;
   line-height: 12px;
-  letter-spacing: 1.5px; }
+  letter-spacing: 0.5px; }
+
+.kc-typo-bold {
+  font-weight: 700; }
 
 .main-sidebar .brand-link {
   background: #0f77c0;
@@ -547,6 +547,39 @@ table p {
           margin-bottom: 10px; }
         .content-wrapper > .content .kc-form-group .kc-input-group .kc-input ul {
           width: 216px; }
+
+.kc-active-indicator {
+  border-radius: 50%;
+  width: 16px;
+  height: 16px; }
+  .kc-active-indicator.kc-active-indicator--success {
+    background-color: #52C41A; }
+  .kc-active-indicator.kc-active-indicator--danger {
+    background-color: #FF4D4F; }
+
+.kc-role-indicators {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; }
+  .kc-role-indicators .kc-role-indicator {
+    background-color: #D9D9D9;
+    border-radius: 50px;
+    margin-right: 8px;
+    min-width: 72px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px; }
+    .kc-role-indicators .kc-role-indicator span {
+      color: #595959; }
+
+.datatable-cell button {
+  border: none;
+  background-color: transparent; }
+  .datatable-cell button i {
+    font-size: 20px; }
 
 .badge-container {
   display: inline-block;
@@ -1008,7 +1041,8 @@ table p {
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  padding: 0 10px; }
   .kc-button.kc-button--short {
     min-width: 150px; }
   .kc-button.kc-button--long {
@@ -1033,6 +1067,11 @@ table p {
     background-color: #F5F5F5;
     border: 1px solid #D9D9D9;
     color: #BFBFBF; }
+  .kc-button .kc-button--content {
+    width: 100%; }
+    .kc-button .kc-button--content .spinner-border {
+      width: 1.2rem;
+      height: 1.2rem; }
 
 .kc-tab-navigation {
   background-color: transparent !important;
@@ -1107,7 +1146,7 @@ table p {
 .kc-textfield {
   display: flex;
   flex-direction: column;
-  min-width: 216px; }
+  width: 216px; }
   .kc-textfield.kc-textfield--disabled .kc-textfield--field {
     background-color: #F5F5F5; }
     .kc-textfield.kc-textfield--disabled .kc-textfield--field .kc-textfield--prefix, .kc-textfield.kc-textfield--disabled .kc-textfield--field .kc-textfield--suffix {
