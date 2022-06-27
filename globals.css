@@ -323,8 +323,10 @@ table p {
           display: flex;
           align-items: center;
           margin: 0; }
-        .kc-modal--content > .kc-edit-user-modal .kc-form-group .kc-input-group .kc-input .kc-roles .kc-roles--option {
-          margin-bottom: 10px; }
+        .kc-modal--content > .kc-edit-user-modal .kc-form-group .kc-input-group .kc-input {
+          width: 216px; }
+          .kc-modal--content > .kc-edit-user-modal .kc-form-group .kc-input-group .kc-input .kc-roles .kc-roles--option {
+            margin-bottom: 10px; }
 
 .login-container {
   width: 100vw;
@@ -561,19 +563,25 @@ table p {
           align-items: center;
           margin: 0; }
         .content-wrapper > .content .kc-content .kc-form-group .kc-input-group .kc-input {
-          margin-left: 20px; }
+          margin-left: 20px;
+          width: 216px; }
           .content-wrapper > .content .kc-content .kc-form-group .kc-input-group .kc-input .kc-roles .kc-roles--option {
             margin-bottom: 10px; }
           .content-wrapper > .content .kc-content .kc-form-group .kc-input-group .kc-input ul {
             width: 216px; }
 
-.kc-active-indicator {
+.datatable-cell.kc-status-cell {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.datatable-cell .kc-active-indicator {
   border-radius: 50%;
   width: 16px;
   height: 16px; }
-  .kc-active-indicator.kc-active-indicator--success {
+  .datatable-cell .kc-active-indicator.kc-active-indicator--success {
     background-color: #52C41A; }
-  .kc-active-indicator.kc-active-indicator--danger {
+  .datatable-cell .kc-active-indicator.kc-active-indicator--danger {
     background-color: #FF4D4F; }
 
 .kc-role-indicators {
@@ -590,7 +598,8 @@ table p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 8px; }
+    padding: 8px;
+    white-space: nowrap; }
     .kc-role-indicators .kc-role-indicator span {
       color: #595959; }
 
