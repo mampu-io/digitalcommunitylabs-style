@@ -9,11 +9,11 @@
   padding: 0 10px;
 
   &.kc-button--short {
-    min-width: 150px;
+    width: 180px;
   }
 
   &.kc-button--long {
-    min-width: 400px;
+    width: 400px;
   }
 
   &.kc-button--primary {
@@ -41,6 +41,32 @@
     &:active {
       color: $primary8;
       border: 1px solid $primary8;
+    }
+  }
+
+  &.kc-button--success {
+    color: $neutral1;
+    background-color: $functionalSuccess500;
+
+    &:hover {
+      background-color: $functionalSuccess400;
+    }
+
+    &:active {
+      background-color: $functionalSuccess600;
+    }
+  }
+
+  &.kc-button--danger {
+    color: $neutral1;
+    background-color: $functionalError500;
+
+    &:hover {
+      background-color: $functionalError400;
+    }
+
+    &:active {
+      background-color: $functionalError600;
     }
   }
 

@@ -11,11 +11,11 @@
     height: 16px;
   
     &.kc-active-indicator--success {
-      background-color: $functionalSuccess;
+      background-color: $functionalSuccess500;
     }
   
     &.kc-active-indicator--danger {
-      background-color: $functionalError;
+      background-color: $functionalError500;
     }
   }
 }

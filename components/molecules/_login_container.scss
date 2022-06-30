@@ -1,0 +1,37 @@
+.kc-modal-login--wrapper {
+  width: 600px;
+  background-color: $neutral1;
+  border-radius: 8px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+  position: relative;
+
+  .kc-modal-login--content {
+    width: 420px;
+    padding: 0 10px;
+
+    .kc-form-group {
+      margin-bottom: 15px;
+
+      .kc-input-group {
+        margin-bottom: 15px;
+        width: 400px;
+        display: flex;
+        flex-direction: row;
+
+        label {
+          flex-basis: 25%;
+          display: flex;
+          align-items: center;
+        }
+
+        .kc-input {
+          flex-basis: 75%;
+        }
+      }
+    }
+  }
+}

@@ -1,7 +1,14 @@
 .kc-textfield {
   display: flex;
   flex-direction: column;
-  min-width: 216px;
+
+  &.kc-textfield--fixed {
+    width: 216px;
+  }
+
+  &.kc-textfield--fluid {
+    width: 100%;
+  }
 
   &.kc-textfield--error {
     .kc-textfield--field, .kc-textfield--field:focus-within {
@@ -107,6 +114,15 @@
     .kc-textfield--suffix {
       color: $neutral7;
       margin-left: 4px;
+    }
+
+    .kc-textfield--toggle-password {
+      color: $neutral9;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      padding: 0;
+      margin-left: 8px;
     }
   }
 
