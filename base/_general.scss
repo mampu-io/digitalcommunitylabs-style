@@ -82,3 +82,13 @@ table {
     margin-bottom: 0;
   }
 }
+
+input[type="text"], select, textarea, .form-control, .custom-select{
+  font-size: 13;
+  color: $color_text;
+  font-family: $font_secondary !important;
+  border-radius: 2px;
+  box-shadow: none;
+  border: 1px solid $color_border;
+
+}

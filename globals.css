@@ -3,23 +3,23 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Lato";
+  font-family: "Roboto";
   box-sizing: border-box; }
 
 h1 {
   font-size: 22px; }
 
 h2 {
-  font-size: 16px; }
+  font-size: 18px; }
 
 p,
 ul,
 li,
 a {
-  font-size: 13px; }
+  font-size: 15px; }
 
 .text-notes {
-  font-size: 11px;
+  font-size: 12px;
   color: #999999;
   font-style: italic; }
   .text-notes.text-notes-danger {
@@ -29,7 +29,7 @@ a {
   .text-notes.text-notes-green {
     color: #5fc856; }
   .text-notes a {
-    font-size: 11px;
+    font-size: 12px;
     text-decoration: none;
     color: #006dbf; }
 
@@ -79,6 +79,14 @@ table .datatable-cell {
 
 table p {
   margin-bottom: 0; }
+
+input[type="text"], select, textarea, .form-control, .custom-select {
+  font-size: 13;
+  color: #4c4c4c;
+  font-family: "Lato" !important;
+  border-radius: 2px;
+  box-shadow: none;
+  border: 1px solid #e0e0e0; }
 
 .kc-headline1 {
   font-weight: 300;
@@ -149,40 +157,41 @@ table p {
 
 .main-sidebar .brand-link {
   background: #0f77c0;
+  margin-bottom: 10px;
   box-shadow: none;
-  border: none; }
+  border-bottom: 1px solid #D9D9D9; }
   .main-sidebar .brand-link .brand-text {
     color: #fff;
     font-family: "Roboto";
-    font-size: 16px; }
+    font-size: 18px; }
 
 .main-sidebar .sidebar {
-  background: #fff;
+  background: #D9D9D9;
   padding: 0px; }
   .main-sidebar .sidebar nav .nav-item.menu-open a.nav-link {
     color: #6c757d; }
   .main-sidebar .sidebar nav .nav-item.menu-open.active {
-    color: #fff;
+    color: #8C8C8C;
     box-shadow: none;
     border-radius: 0;
-    background: #0f77c0;
+    background: #F0F0F0;
     width: 100%; }
     .main-sidebar .sidebar nav .nav-item.menu-open.active:hover {
-      color: #fff; }
+      color: #8C8C8C; }
   .main-sidebar .sidebar nav .nav-item a.nav-link {
     color: #6c757d;
-    font-family: "Lato";
-    font-size: 13px; }
+    font-family: "Roboto";
+    font-size: 15px; }
     .main-sidebar .sidebar nav .nav-item a.nav-link:hover {
-      color: #0f77c0; }
+      color: #8C8C8C; }
     .main-sidebar .sidebar nav .nav-item a.nav-link.active {
-      color: #fff;
+      color: #8C8C8C;
       box-shadow: none;
       border-radius: 0;
-      background: #0f77c0;
+      background: #F0F0F0;
       width: 100%; }
       .main-sidebar .sidebar nav .nav-item a.nav-link.active:hover {
-        color: #fff; }
+        color: #8C8C8C; }
 
 .main-header {
   background: #0f77c0; }
@@ -190,31 +199,67 @@ table p {
     color: #fff !important; }
 
 .navbar-nav a, .navbar-nav button {
-  font-size: 13px;
-  font-family: "Lato";
+  font-size: 15px;
+  font-family: "Roboto";
   color: #6c757d; }
 
 .main-footer {
-  font-size: 13px;
-  font-family: "Lato"; }
+  font-size: 15px;
+  font-family: "Roboto"; }
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .main-header .navbar-nav .nav-item {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: #ffffff;
+    margin-right: 25px; }
+    .main-header .navbar-nav .nav-item:last-child {
+      margin-right: 0; }
+    .main-header .navbar-nav .nav-item p {
+      line-height: 1;
+      padding: 0;
+      margin: 0; }
+      .main-header .navbar-nav .nav-item p span {
+        font-weight: 300; }
+    .main-header .navbar-nav .nav-item .nav-link {
+      padding: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .main-header .navbar-nav .nav-item .nav-link i {
+        font-size: 20px; }
 
 .content {
   background: #fff;
   margin: 0 15px 0;
   border-radius: 5px;
-  padding: 15px; }
+  padding: 0 !important; }
 
 .content-wrapper {
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  background-color: #fff; }
+
+.content-header .box-header {
+  padding-top: 0px;
+  border-bottom: 1px dashed #e0e0e0; }
 
 .content-header h1 {
   font-size: 22px;
-  font-family: "Lato";
-  color: #333; }
+  font-family: "Roboto";
+  color: #333;
+  margin: 0;
+  padding: 0; }
 
 .content-header .breadcrumb {
-  font-family: "Lato";
-  font-size: 13px; }
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: normal;
+  color: #4c4c4c; }
+  .content-header .breadcrumb a {
+    color: #4c4c4c; }
 
 .kc-modal.kc-modal--hidden {
   display: none; }
@@ -326,17 +371,17 @@ table p {
       justify-content: flex-start;
       align-items: flex-end; }
       .login-container .login-wrapper .login-title span {
-        font-size: 13px;
+        font-size: 15px;
         display: block;
         margin-left: 5px;
         color: #999999;
-        font-family: "Lato";
+        font-family: "Roboto";
         font-style: italic; }
     .login-container .login-wrapper .login-box {
       padding: 15px;
       border: 1px solid #e0e0e0;
       border-radius: 5px;
-      font-size: 13px;
+      font-size: 15px;
       background: #fff; }
 
 .reset-container {
@@ -357,20 +402,20 @@ table p {
     margin: 0px;
     padding: 0px; }
   .page-notfound h1 {
-    font-family: "Lato";
+    font-family: "Roboto";
     color: #00b5c3;
     font-size: 75px;
     letter-spacing: 15.5px;
     margin: 0px;
     font-weight: 900; }
   .page-notfound h2 {
-    font-family: "Roboto";
+    font-family: "Lato";
     font-size: 25px;
     font-weight: 700;
     letter-spacing: 1.5; }
   .page-notfound p {
-    font-family: "Roboto";
-    font-size: 13px;
+    font-family: "Lato";
+    font-size: 15px;
     font-style: italic;
     color: #999999; }
   .page-notfound .wrapper {
@@ -417,7 +462,7 @@ table p {
   .listRevision-CalonAnggota li {
     list-style: none;
     list-style-position: inside;
-    font-family: "Lato";
+    font-family: "Roboto";
     color: #4c4c4c;
     margin-bottom: 20px !important; }
     .listRevision-CalonAnggota li:last-child {
@@ -426,12 +471,12 @@ table p {
       display: inline-block;
       font-style: normal; }
     .listRevision-CalonAnggota li input {
-      font-size: 13px;
-      font-family: "Lato";
+      font-size: 15px;
+      font-family: "Roboto";
       color: #4c4c4c; }
     .listRevision-CalonAnggota li.titleListRevision-CalonAnggota {
       font-weight: bold;
-      font-size: 16px;
+      font-size: 18px;
       padding-bottom: 5px;
       color: #6f6f6f;
       border-bottom: 1px solid #e0e0e0; }
@@ -466,7 +511,7 @@ table p {
   .listRevision-Anggota li {
     list-style: none;
     list-style-position: inside;
-    font-family: "Lato";
+    font-family: "Roboto";
     color: #4c4c4c;
     margin-bottom: 20px !important; }
     .listRevision-Anggota li:last-child {
@@ -475,12 +520,12 @@ table p {
       display: inline-block;
       font-style: normal; }
     .listRevision-Anggota li input {
-      font-size: 13px;
-      font-family: "Lato";
+      font-size: 15px;
+      font-family: "Roboto";
       color: #4c4c4c; }
     .listRevision-Anggota li.titleListRevision-Anggota {
       font-weight: bold;
-      font-size: 16px;
+      font-size: 18px;
       padding-bottom: 5px;
       color: #6f6f6f;
       border-bottom: 1px solid #e0e0e0; }
@@ -521,32 +566,30 @@ table p {
         .kc-detil-calon-anggota .kc-detil-calon-anggota--content .kc-detil-calon-anggota--content-detail .kc-section .kc-section--foto-dokumen .kc-image-preview {
           margin-right: 40px; }
 
-.content-wrapper > .content {
-  margin: 0;
-  padding: 50px; }
-  .content-wrapper > .content .kc-headline5 {
-    margin-bottom: 50px; }
-  .content-wrapper > .content .kc-form-group {
-    margin-bottom: 15px;
+.content-wrapper .content .kc-headline5 {
+  margin-bottom: 50px; }
+
+.content-wrapper .content .kc-form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column; }
+  .content-wrapper .content .kc-form-group .kc-input-group {
+    margin-bottom: 30px;
+    width: 100%;
     display: flex;
-    flex-direction: column; }
-    .content-wrapper > .content .kc-form-group .kc-input-group {
-      margin-bottom: 30px;
-      width: 100%;
+    flex-direction: row;
+    justify-content: space-between; }
+    .content-wrapper .content .kc-form-group .kc-input-group > label {
+      font-weight: 400;
       display: flex;
-      flex-direction: row;
-      justify-content: space-between; }
-      .content-wrapper > .content .kc-form-group .kc-input-group > label {
-        font-weight: 400;
-        display: flex;
-        align-items: center;
-        margin: 0; }
-      .content-wrapper > .content .kc-form-group .kc-input-group .kc-input {
-        margin-left: 20px; }
-        .content-wrapper > .content .kc-form-group .kc-input-group .kc-input .kc-roles .kc-roles--option {
-          margin-bottom: 10px; }
-        .content-wrapper > .content .kc-form-group .kc-input-group .kc-input ul {
-          width: 216px; }
+      align-items: center;
+      margin: 0; }
+    .content-wrapper .content .kc-form-group .kc-input-group .kc-input {
+      margin-left: 20px; }
+      .content-wrapper .content .kc-form-group .kc-input-group .kc-input .kc-roles .kc-roles--option {
+        margin-bottom: 10px; }
+      .content-wrapper .content .kc-form-group .kc-input-group .kc-input ul {
+        width: 216px; }
 
 .kc-active-indicator {
   border-radius: 50%;
@@ -601,15 +644,15 @@ table p {
   padding-top: 5px;
   padding-bottom: 5px;
   color: #fff;
-  font-family: "Lato"; }
+  font-family: "Roboto"; }
   .btn-kc.btn-sm {
-    font-size: 11px !important; }
+    font-size: 12px !important; }
   .btn-kc.btn-md {
-    font-size: 13px !important;
+    font-size: 15px !important;
     padding-top: 7.5px !important;
     padding-bottom: 7.5px !important; }
   .btn-kc.btn-block {
-    font-size: 13px !important;
+    font-size: 15px !important;
     padding-top: 10px !important;
     padding-bottom: 10px !important; }
   .btn-kc.btn-primary {
@@ -725,7 +768,7 @@ table p {
     border-radius: 5px;
     padding: 15px;
     position: relative;
-    font-family: "Lato"; }
+    font-family: "Roboto"; }
     .kc-popup-backdrop .kc-popup-wrapper .kc-popup-close {
       position: absolute;
       top: -10px;
@@ -752,141 +795,52 @@ table p {
       height: auto;
       max-height: 400px;
       overflow-y: auto;
-      font-size: 13px !important; }
+      font-size: 15px !important; }
 
-.as-react-table {
-  padding-bottom: 3px;
-  color: #4c4c4c;
-  font-family: "Lato";
-  font-size: 13px; }
-  .as-react-table .table-responsive {
-    border: 1px solid #e0e0e0;
-    border-top: none;
-    margin-bottom: 10px; }
-    .as-react-table .table-responsive table.datatable-serverside {
-      margin-bottom: 0px !important; }
-      .as-react-table .table-responsive table.datatable-serverside thead tr th {
-        font-family: "Lato";
-        font-weight: bold;
-        color: #7f7f7f; }
-        .as-react-table .table-responsive table.datatable-serverside thead tr th.sortable {
-          color: #4c4c4c; }
-      .as-react-table .table-responsive table.datatable-serverside tbody tr:nth-child(even) td {
-        background: #f7f7f7 !important; }
-  .as-react-table .asrt-table-body {
-    margin-top: 0 !important; }
-  .as-react-table .header-datatable {
-    border-bottom: none;
-    padding: 15px 10px 15px;
-    border: 1px solid #e0e0e0;
-    border-bottom: 0px;
-    clear: both; }
-    .as-react-table .header-datatable span {
-      font-family: "Lato" !important;
-      font-size: 13px; }
-    .as-react-table .header-datatable .form-control {
-      border: #e0e0e0;
-      padding: 5px 20px;
-      background: #ffffff;
-      border-radius: 5px !important;
-      border: 1px solid #e0e0e0;
-      color: #4c4c4c;
-      font-family: "Lato";
-      font-size: 13px;
-      min-width: 80px; }
-      .as-react-table .header-datatable .form-control:focus {
-        outline: none; }
-    .as-react-table .header-datatable .input-group > .form-control {
-      border-radius: 5px !important; }
-  .as-react-table .fixedWidthColoumn {
-    margin: 0 auto;
-    width: 100%;
-    clear: both;
-    border-collapse: collapse;
-    table-layout: fixed;
-    word-wrap: break-word; }
-  .as-react-table .asrt-pagination {
-    float: right;
-    text-align: right;
-    padding-top: 0.25em;
-    list-style: none !important; }
-    .as-react-table .asrt-pagination .page-item {
-      margin: 0 1px; }
-      .as-react-table .asrt-pagination .page-item.active .page-link {
-        font-family: "Lato";
-        font-weight: bold;
-        color: #006dbf !important; }
-        .as-react-table .asrt-pagination .page-item.active .page-link:hover, .as-react-table .asrt-pagination .page-item.active .page-link:active {
-          outline: none;
-          font-family: "Lato";
-          font-weight: bold; }
-      .as-react-table .asrt-pagination .page-item.disabled .page-link {
-        cursor: #aeaeae;
-        color: #aeaeae;
-        background: transparent;
-        box-shadow: none; }
-        .as-react-table .asrt-pagination .page-item.disabled .page-link:hover, .as-react-table .asrt-pagination .page-item.disabled .page-link:active {
-          cursor: default;
-          color: #aeaeae;
-          border: 1px solid transparent;
-          background: transparent;
-          box-shadow: none; }
-      .as-react-table .asrt-pagination .page-item .page-link {
-        box-sizing: border-box;
-        display: inline-block;
-        min-width: 1.5em;
-        padding: 0px;
-        margin-left: 2px;
-        text-align: center;
-        text-decoration: none !important;
-        cursor: pointer;
-        *cursor: hand;
-        color: #4c4c4c;
-        font-family: "Lato";
-        font-size: 13px;
-        background: none;
-        border-radius: 2px; }
-        .as-react-table .asrt-pagination .page-item .page-link:hover {
-          font-family: "Lato";
-          color: #006dbf; }
-        .as-react-table .asrt-pagination .page-item .page-link:active {
-          outline: none;
-          font-family: "Lato";
-          background-color: none; }
-    .as-react-table .asrt-pagination .ellipsis {
-      padding: 0 1em; }
-  .as-react-table .asrt-table-foot {
-    margin-top: 10px; }
-  .as-react-table .asrt-table-head, .as-react-table .asrt-table-foot {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; }
+.mui_datatable .css-11mde6h-MuiPaper-root {
+  box-shadow: none !important; }
 
-@media screen and (max-width: 767px) {
-  .asrt-table-head, .asrt-table-foot {
+.mui_datatable .MuiToolbar-regular {
+  padding: 0; }
+  .mui_datatable .MuiToolbar-regular .tss-1fz5efq-MUIDataTableToolbar-left {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-    .asrt-table-head .col-md-6, .asrt-table-foot .col-md-6 {
-      text-align: center; }
-      .asrt-table-head .col-md-6.col-md-6:last-child, .asrt-table-foot .col-md-6.col-md-6:last-child {
-        float: none;
-        text-align: center;
-        display: flex;
-        align-items: center !important;
-        justify-content: center !important;
-        margin-top: 15px; } }
+    justify-content: end;
+    align-items: center; }
+    .mui_datatable .MuiToolbar-regular .tss-1fz5efq-MUIDataTableToolbar-left .tss-1ufdzki-MUIDataTableSearch-main {
+      flex-grow: 0;
+      display: block;
+      width: 350px !important; }
+      .mui_datatable .MuiToolbar-regular .tss-1fz5efq-MUIDataTableToolbar-left .tss-1ufdzki-MUIDataTableSearch-main .tss-1h5wt30-MUIDataTableSearch-searchIcon,
+      .mui_datatable .MuiToolbar-regular .tss-1fz5efq-MUIDataTableToolbar-left .tss-1ufdzki-MUIDataTableSearch-main .tss-52j81d-MUIDataTableSearch-clearIcon {
+        display: none; }
+      .mui_datatable .MuiToolbar-regular .tss-1fz5efq-MUIDataTableToolbar-left .tss-1ufdzki-MUIDataTableSearch-main input {
+        border: none; }
+  .mui_datatable .MuiToolbar-regular .tss-qbo1l6-MUIDataTableToolbar-actions {
+    display: none; }
+
+.mui_datatable .MuiTable-root {
+  border: 1px solid #e0e0e0; }
+  .mui_datatable .MuiTable-root.tss-5jmwmz-MUIDataTableFooter-root {
+    border: none; }
+  .mui_datatable .MuiTable-root tr:nth-child(even) {
+    background-color: #F8F8F8; }
+  .mui_datatable .MuiTable-root tr td {
+    border: none;
+    font-size: 15px;
+    font-family: "Lato";
+    color: #4c4c4c; }
+  .mui_datatable .MuiTable-root tr tbody tr td {
+    display: none !important; }
 
 .modal-kc .moda-dialog {
-  font-family: "Lato"; }
+  font-family: "Roboto"; }
 
 .modal-kc .modal-content {
   border-radius: 0;
   border: none;
   box-shadow: none; }
   .modal-kc .modal-content .modal-header {
-    font-family: "Lato";
+    font-family: "Roboto";
     color: #4c4c4c; }
     .modal-kc .modal-content .modal-header .link {
       color: #4c4c4c !important; }
@@ -920,12 +874,12 @@ table p {
     font-size: 2em; }
   .swal2-popup .swal2-title {
     font-size: 22px;
-    font-family: "Lato" !important;
+    font-family: "Roboto" !important;
     font-weight: 700;
     color: #4c4c4c !important; }
   .swal2-popup .swal2-html-container {
-    font-size: 13px;
-    font-family: "Lato" !important; }
+    font-size: 15px;
+    font-family: "Roboto" !important; }
   .swal2-popup .swal2-confirm,
   .swal2-popup .swal2-deny,
   .swal2-popup .swal2-cancel {

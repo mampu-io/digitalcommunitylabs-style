@@ -1,17 +1,18 @@
 .main-sidebar {
   .brand-link {
     background: $color_primary;
+    margin-bottom: 10px;
     box-shadow: none;
-    border: none;
+    border-bottom: 1px solid $neutral5;
     .brand-text {
       color: #fff;
-      font-family: $font_secondary;
+      font-family: $font_primary;
       font-size: $font_size_subtitle;
     }
   }
 
   .sidebar {
-    background: #fff;
+    background: $neutral5;
     padding: 0px;
 
     nav {
@@ -22,13 +23,13 @@
           }
 
           &.active {
-            color: #fff;
+            color: $neutral7;
             box-shadow: none;
             border-radius: 0;
-            background: $color_primary;
+            background: $neutral4;
             width: 100%;
             &:hover {
-              color: #fff;
+              color: $neutral7;
             }
           }
         }
@@ -38,16 +39,16 @@
           font-family: $font_primary;
           font-size: $font_size_paragraph;
           &:hover {
-            color: $color_primary;
+            color: $neutral7;
           }
           &.active {
-            color: #fff;
+            color: $neutral7;
             box-shadow: none;
             border-radius: 0;
-            background: $color_primary;
+            background: $neutral4;
             width: 100%;
             &:hover {
-              color: #fff;
+              color: $neutral7;
             }
           }
         }
