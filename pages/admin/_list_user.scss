@@ -1,14 +1,22 @@
-.kc-active-indicator {
-  border-radius: 50%;
-  width: 16px;
-  height: 16px;
-
-  &.kc-active-indicator--success {
-    background-color: $functionalSuccess;
+.datatable-cell {
+  &.kc-status-cell {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
-  &.kc-active-indicator--danger {
-    background-color: $functionalError;
+  .kc-active-indicator {
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+  
+    &.kc-active-indicator--success {
+      background-color: $functionalSuccess500;
+    }
+  
+    &.kc-active-indicator--danger {
+      background-color: $functionalError500;
+    }
   }
 }
 
@@ -28,6 +36,7 @@
     justify-content: center;
     align-items: center;
     padding: 8px;
+    white-space: nowrap;
 
     span {
       color: $neutral8;

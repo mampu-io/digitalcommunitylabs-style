@@ -1,25 +1,51 @@
 .kc-record-item {
-  width: 100%;
+  width: fit-content;
   min-width: 400px;
-  padding: 15px 0;
+  padding: 15px 10px;
 
   .kc-record-item--content {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 
     .kc-record-item--key {
       color: $neutral7;
-      flex-basis: 40%;
+      width: 250px;
+      margin-right: 20px;
     }
   
     .kc-record-item--value {
       color: $neutral11;
-      flex-basis: 40%;
+      width: 250px;
 
       span {
         font-weight: 700;
+      }
+    }
+
+    .kc-record-item--rows-value {
+      display: flex;
+      flex-direction: row;
+
+      .kc-record-item--value {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &.kc-record-item--highlight {
+    background-color: $primary7;
+    padding: 0 10px;
+    margin: 15px 0;
+
+    .kc-record-item--key {
+      color: $neutral4;
+    }
+
+    .kc-record-item--rows-value {
+      .kc-record-item--value {
+        color: $neutral1;
       }
     }
   }

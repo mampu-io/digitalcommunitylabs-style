@@ -8,12 +8,16 @@
   justify-content: center;
   padding: 0 10px;
 
+  &.kc-button--fluid {
+    width: 100%;
+  }
+
   &.kc-button--short {
-    min-width: 150px;
+    width: 180px;
   }
 
   &.kc-button--long {
-    min-width: 400px;
+    width: 400px;
   }
 
   &.kc-button--primary {
@@ -44,7 +48,33 @@
     }
   }
 
-  &.kc-button--primary, &.kc-button--secondary {
+  &.kc-button--success {
+    color: $neutral1;
+    background-color: $functionalSuccess500;
+
+    &:hover {
+      background-color: $functionalSuccess400;
+    }
+
+    &:active {
+      background-color: $functionalSuccess600;
+    }
+  }
+
+  &.kc-button--danger {
+    color: $neutral1;
+    background-color: $functionalError500;
+
+    &:hover {
+      background-color: $functionalError400;
+    }
+
+    &:active {
+      background-color: $functionalError600;
+    }
+  }
+
+  &.kc-button--primary, &.kc-button--secondary, &.kc-button--success, &.kc-button--danger {
     &:disabled {
       background-color: $neutral3;
       border: 1px solid $neutral5;

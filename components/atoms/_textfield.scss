@@ -1,7 +1,21 @@
 .kc-textfield {
   display: flex;
   flex-direction: column;
-  width: 216px;
+
+  &.kc-textfield--fixed {
+    width: 216px;
+  }
+
+  &.kc-textfield--fluid {
+    width: 100%;
+  }
+
+  &.kc-textfield--error {
+    .kc-textfield--field, .kc-textfield--field:focus-within {
+      border: 1px solid $primary7;
+      box-shadow: 0px 0px 0px 2px rgba(181, 36, 53, 0.2);
+    }
+  }
 
   &.kc-textfield--disabled {
     .kc-textfield--field {
@@ -100,6 +114,15 @@
     .kc-textfield--suffix {
       color: $neutral7;
       margin-left: 4px;
+    }
+
+    .kc-textfield--toggle-password {
+      color: $neutral9;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      padding: 0;
+      margin-left: 8px;
     }
   }
 
