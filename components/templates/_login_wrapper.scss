@@ -1,0 +1,37 @@
+.kc-login--wrapper {
+  background-color: #CBCBCB;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .kc-login--container {
+    padding-bottom: 150px;
+    
+    .kc-login--title {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 120px;
+      
+      .kc-login--back-button {
+        background-color: $neutral1;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        width: 48px;
+        height: 48px;
+        margin-right: 30px;
+      }
+
+      h1 {
+        font-weight: 400;
+        text-align: center;
+        margin: 0;
+      }
+    }
+  }
+}
