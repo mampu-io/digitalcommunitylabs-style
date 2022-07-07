@@ -1,13 +1,17 @@
 .kc-detil-calon-anggota {
   width: 100%;
   padding: 40px;
+  display: flex;
+  flex-direction: row;
 
   .kc-detil-calon-anggota--headline {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 60px;
+    flex-basis: 25%;
+    padding-top: 10px;
+    width: 100%;
 
     .kc-detil-calon-anggota--identity {
       span {
@@ -17,10 +21,31 @@
 
     .kc-detil-calon-anggota--action-button {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+      width: 100%;
 
       .kc-button {
-        margin-left: 25px;
+        margin-top: 25px;
+      }
+    }
+
+    .kc-detil-calon-anggota--detail-invoice {
+      border: 1px solid $neutral7;
+      border-radius: 8px;
+      padding: 20px 10px;
+      min-height: 300px;
+      margin: 25px 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .kc-detil-calon-anggota--detail-invoice-entry {
+        margin-top: 10px;
+
+        p {
+          margin: 0;
+        }
       }
     }
   }
