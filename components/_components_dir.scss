@@ -1,24 +1,22 @@
+// Atoms
 @import 'atoms/badge';
 @import 'atoms/button';
-@import 'atoms/input';
 @import 'atoms/checkbox';
-@import 'atoms/tab';
-@import 'atoms/text';
-@import 'atoms/loadingPage';
-@import 'molecules/popup';
-@import 'molecules/datatableServerside';
-@import 'molecules/modal';
-@import 'molecules/sweetalertCustom';
-@import 'molecules/record_item';
-@import 'molecules/accordion';
-
-// Component for re-design
-@import 'molecules/image_preview';
-@import 'atoms/button_redesign';
+@import 'atoms/input_field';
+@import 'atoms/loading_page';
 @import 'atoms/tab_navigation';
-@import 'molecules/record_item_redesign';
-@import 'atoms/checkbox_redesign';
-@import 'atoms/textfield';
+
+// Molecules
+@import 'molecules/accordion';
+@import 'molecules/datatable_serverside';
+@import 'molecules/image_preview';
 @import 'molecules/login_container';
-@import 'templates/login_wrapper';
+@import 'molecules/modal';
+@import 'molecules/popup';
+@import 'molecules/record_item';
 @import 'molecules/select_role';
+@import 'molecules/sweetalert_custom';
+
+// Templates
+@import 'templates/login_wrapper';
+

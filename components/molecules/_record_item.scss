@@ -1,38 +1,51 @@
-.record-item {
-  border: 0;
-  display: block;
+.kc-record-item {
+  width: fit-content;
   min-width: 400px;
-  padding: 15px 0;
-  width: 100%;
+  padding: 15px 10px;
 
-  .record-item--content {
+  .kc-record-item--content {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
 
-    &--field, &--data {
-      flex-basis: 40%;
+    .kc-record-item--key {
+      color: $neutral7;
+      width: 250px;
+      margin-right: 20px;
+    }
+  
+    .kc-record-item--value {
+      color: $neutral11;
+      width: 250px;
+
+      span {
+        font-weight: 700;
+      }
     }
 
-    .record-item--content--field {
+    .kc-record-item--rows-value {
       display: flex;
-      justify-content: space-between;
-      p {
-        margin-bottom: 0;
-      }
+      flex-direction: row;
 
-      &:after{
-        content: ":";
-        margin: auto 10px;
-        color: $notes_color;
+      .kc-record-item--value {
+        margin-right: 20px;
       }
     }
+  }
 
-    .record-item--content--data {
-      p {
-        font-weight: normal;
-        margin-bottom: 0;
+  &.kc-record-item--highlight {
+    background-color: $primary7;
+    padding: 0 10px;
+    margin: 15px 0;
+
+    .kc-record-item--key {
+      color: $neutral4;
+    }
+
+    .kc-record-item--rows-value {
+      .kc-record-item--value {
+        color: $neutral1;
       }
     }
   }

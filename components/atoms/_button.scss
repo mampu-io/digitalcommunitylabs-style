@@ -1,49 +1,93 @@
-.btn {
-  padding-left: 25px;
-  padding-right: 25px;
-  min-width: 150px;
+.kc-button {
+  border: none;
+  border-radius: 4px;
+  height: 40px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
 
-  &-block {
-    width: 100% !important;
-  }
-}
-
-.btn-kc {
-  padding: 0px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  color: #fff;
-  font-family: $font_primary;
-  &.btn-sm{
-    font-size: $font_size_note !important;
-  }
-  &.btn-md{
-    font-size: $font_size_paragraph !important;
-    padding-top: 7.5px !important;
-    padding-bottom: 7.5px !important;
+  &.kc-button--fluid {
+    width: 100%;
   }
 
-  &.btn-block{
-    font-size: $font_size_paragraph !important;
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
+  &.kc-button--short {
+    width: 180px;
   }
 
-  &.btn-primary {
-    background: $color_primary;
-    border: 1px solid $color_primary;
+  &.kc-button--long {
+    width: 400px;
   }
-  &.btn-secondary {
-    background: none;
-    color: $color_primary;
-    border: 1px solid $color_primary;
+
+  &.kc-button--primary {
+    color: $neutral1;
+    background-color: $primary7;
+
+    &:hover {
+      background-color: $primary6;
+    }
+
+    &:active {
+      background-color: $primary8;
+    }
   }
-  &.btn-danger {
-    border: 1px solid $danger_color;
-    background: $danger_color;
+
+  &.kc-button--secondary {
+    color: $neutral8;
+    border: 1px solid $neutral7;
+
+    &:hover {
+      color: $primary6;
+      border: 1px solid $primary6;
+    }
+
+    &:active {
+      color: $primary8;
+      border: 1px solid $primary8;
+    }
   }
-  .spinner-border {
-    width: 15px !important;
-    height: 15px !important;
+
+  &.kc-button--success {
+    color: $neutral1;
+    background-color: $functionalSuccess500;
+
+    &:hover {
+      background-color: $functionalSuccess400;
+    }
+
+    &:active {
+      background-color: $functionalSuccess600;
+    }
+  }
+
+  &.kc-button--danger {
+    color: $neutral1;
+    background-color: $functionalError500;
+
+    &:hover {
+      background-color: $functionalError400;
+    }
+
+    &:active {
+      background-color: $functionalError600;
+    }
+  }
+
+  &.kc-button--primary, &.kc-button--secondary, &.kc-button--success, &.kc-button--danger {
+    &:disabled {
+      background-color: $neutral3;
+      border: 1px solid $neutral5;
+      color: $textLight5;
+    }
+  }
+
+  .kc-button--content {
+    width: 100%;
+    
+    .spinner-border {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
   }
 }

@@ -1,8 +1,11 @@
-@import 'login';
-@import 'reset-password';
-@import 'notfound';
-@import 'detail_anggota';
+// Styling pages for backoffice
+@import 'backoffice/list_user';
+@import 'backoffice/reset_password';
 
-// Styling for re-design
-@import 'admin/list_user';
+// Styling pages for memberservice
+@import 'memberservice/detail_anggota';
 @import 'memberservice/revision_modal';
+
+// Styling pages for all dcb project
+@import 'login';
+@import 'not_found';
