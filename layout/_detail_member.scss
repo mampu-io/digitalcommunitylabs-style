@@ -66,6 +66,7 @@
     .kc-detail-member--content-detail {
       .kc-section {
         width: 600px;
+        margin-left: 20px;
 
         .kc-section--foto-dokumen {
           display: flex;
@@ -74,6 +75,30 @@
 
           .kc-image-preview {
             margin-right: 40px;
+          }
+        }
+
+        .kc-section-header {
+          margin-bottom: 15px;
+
+          .kc-record-item--value {
+            color: $neutral7;
+          }
+        }
+
+        .kc-bank-account-item {
+          border-top: 1px solid $textLight4;
+          padding: 15px 0 10px;
+
+          .kc-bank-account-item--header {
+            display: flex;
+            flex-direction: row;
+          }
+
+          .kc-bank-account-item--content {
+            .kc-record-item {
+              padding: 5px 0;
+            }
           }
         }
       }
