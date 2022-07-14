@@ -1,0 +1,60 @@
+.kc-status-card {
+  color: $neutral1;
+  border-radius: 50px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+
+  span {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+
+  &.kc-status-card--success {
+    background-color: $functionalSuccess500;
+  }
+
+  &.kc-status-card--info {
+    background-color: $functionalLink;
+  }
+
+  &.kc-status-card--warning {
+    background-color: $functionalWarning;
+  }
+
+  &.kc-status-card--danger {
+    background-color: $functionalError500;
+  }
+
+  &.kc-status-card--small {
+    min-width: 75px;
+    height: 25px;
+
+    span {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  &.kc-status-card--medium {
+    min-width: 90px;
+    height: 30px;
+
+    span {
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+
+  &.kc-status-card--large {
+    min-width: 120px;
+    height: 40px;
+
+    span {
+      font-size: 17px;
+      line-height: 20px;
+    }
+  }
+}

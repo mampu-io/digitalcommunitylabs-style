@@ -429,20 +429,45 @@ input[type="text"], select, textarea, .form-control, .custom-select {
       width: 100%; }
       .kc-detail-member .kc-detail-member--headline .kc-detail-member--action-button .kc-button {
         margin-top: 25px; }
-    .kc-detail-member .kc-detail-member--headline .kc-detail-member--detail-invoice {
+    .kc-detail-member .kc-detail-member--headline .kc-detail-member--card {
       border: 1px solid #8C8C8C;
       border-radius: 8px;
       padding: 20px 10px;
       min-height: 300px;
-      margin: 25px 0;
+      margin-top: 25px;
       width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center; }
-      .kc-detail-member .kc-detail-member--headline .kc-detail-member--detail-invoice .kc-detail-member--detail-invoice-entry {
+      .kc-detail-member .kc-detail-member--headline .kc-detail-member--card .kc-detail-member--card-entry {
         margin-top: 10px; }
-        .kc-detail-member .kc-detail-member--headline .kc-detail-member--detail-invoice .kc-detail-member--detail-invoice-entry p {
+        .kc-detail-member .kc-detail-member--headline .kc-detail-member--card .kc-detail-member--card-entry p {
           margin: 0; }
+        .kc-detail-member .kc-detail-member--headline .kc-detail-member--card .kc-detail-member--card-entry .kc-status-card {
+          width: fit-content; }
+        .kc-detail-member .kc-detail-member--headline .kc-detail-member--card .kc-detail-member--card-entry .kc-payment-link {
+          display: flex;
+          align-items: center; }
+          .kc-detail-member .kc-detail-member--headline .kc-detail-member--card .kc-detail-member--card-entry .kc-payment-link button {
+            border: 1px solid #D9D9D9;
+            border-radius: 2px;
+            background-color: #FFFFFF;
+            color: #8C8C8C;
+            height: 32px;
+            margin-left: 10px;
+            padding: 0 8px;
+            width: 85px;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            .kc-detail-member .kc-detail-member--headline .kc-detail-member--card .kc-detail-member--card-entry .kc-payment-link button:hover {
+              border: 1px solid #8C8C8C; }
+        .kc-detail-member .kc-detail-member--headline .kc-detail-member--card .kc-detail-member--card-entry .kc-total-deposit {
+          color: #8C8C8C;
+          font-weight: 500;
+          font-size: 21px;
+          line-height: 25px;
+          letter-spacing: 0.15px; }
   .kc-detail-member .kc-detail-member--content {
     padding: 10px; }
     .kc-detail-member .kc-detail-member--content .kc-detail-member--navigation {
@@ -464,14 +489,20 @@ input[type="text"], select, textarea, .form-control, .custom-select {
         margin-bottom: 15px; }
         .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section .kc-section-header .kc-record-item--value {
           color: #8C8C8C; }
-      .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section .kc-bank-account-item {
+      .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section .kc-bank-accounts-list .kc-dropdown {
+        margin-bottom: 30px; }
+      .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section .kc-bank-accounts-list .kc-bank-account-item {
         border-top: 1px solid #D9D9D9;
         padding: 15px 0 10px; }
-        .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section .kc-bank-account-item .kc-bank-account-item--header {
+        .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section .kc-bank-accounts-list .kc-bank-account-item .kc-bank-account-item--header {
           display: flex;
-          flex-direction: row; }
-        .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section .kc-bank-account-item .kc-bank-account-item--content .kc-record-item {
-          padding: 5px 0; }
+          align-items: center; }
+          .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section .kc-bank-accounts-list .kc-bank-account-item .kc-bank-account-item--header h3 {
+            margin-bottom: 0; }
+        .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section .kc-bank-accounts-list .kc-bank-account-item .kc-bank-account-item--content {
+          margin-top: 10px; }
+          .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section .kc-bank-accounts-list .kc-bank-account-item .kc-bank-account-item--content .kc-record-item {
+            padding: 5px 0; }
 
 .datatable-cell.kc-status-cell {
   display: flex;
@@ -822,6 +853,26 @@ input[type="text"], select, textarea, .form-control, .custom-select {
     margin: 0;
     max-width: 192px; }
 
+.kc-dropdown {
+  position: relative;
+  border: 1px solid #D9D9D9;
+  border-radius: 2px;
+  width: 150px;
+  height: 40px;
+  padding: 0 12px; }
+  .kc-dropdown select {
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    height: 100%; }
+    .kc-dropdown select:focus {
+      outline: none; }
+    .kc-dropdown select option {
+      padding: 0 -12px; }
+  .kc-dropdown:focus-within {
+    border: 1px solid #40A9FF;
+    box-shadow: 0px 0px 0px 2px rgba(24, 144, 255, 0.2); }
+
 .kc-textfield {
   display: flex;
   flex-direction: column; }
@@ -918,6 +969,44 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   .bg-loading-page .spinner-border {
     width: 65px;
     height: 65px; }
+
+.kc-status-card {
+  color: #FFFFFF;
+  border-radius: 50px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase; }
+  .kc-status-card span {
+    font-weight: 500;
+    letter-spacing: 0.5px; }
+  .kc-status-card.kc-status-card--success {
+    background-color: #52C41A; }
+  .kc-status-card.kc-status-card--info {
+    background-color: #1890FF; }
+  .kc-status-card.kc-status-card--warning {
+    background-color: #FAAD14; }
+  .kc-status-card.kc-status-card--danger {
+    background-color: #FF4D4F; }
+  .kc-status-card.kc-status-card--small {
+    min-width: 75px;
+    height: 25px; }
+    .kc-status-card.kc-status-card--small span {
+      font-size: 12px;
+      line-height: 14px; }
+  .kc-status-card.kc-status-card--medium {
+    min-width: 90px;
+    height: 30px; }
+    .kc-status-card.kc-status-card--medium span {
+      font-size: 15px;
+      line-height: 18px; }
+  .kc-status-card.kc-status-card--large {
+    min-width: 120px;
+    height: 40px; }
+    .kc-status-card.kc-status-card--large span {
+      font-size: 17px;
+      line-height: 20px; }
 
 .kc-tab-navigation {
   background-color: transparent !important;
