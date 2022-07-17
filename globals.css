@@ -320,15 +320,33 @@ input[type="text"], select, textarea, .form-control, .custom-select {
     min-height: 200px;
     width: 672px;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    position: relative; }
+    .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--close-button {
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      background-color: transparent;
+      border: none;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--close-button i {
+        font-size: 20px; }
+      .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--close-button:hover {
+        border-radius: 50%;
+        background-color: #F0F0F0; }
     .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main {
       display: flex;
       flex-direction: column;
-      padding: 25px 100px;
+      padding: 50px 25px;
       height: 100%; }
       .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--title {
         text-align: center;
-        width: 100%; }
+        width: 100%;
+        margin-bottom: 30px; }
       .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content {
         width: 100%;
         height: 100%;
@@ -364,34 +382,36 @@ input[type="text"], select, textarea, .form-control, .custom-select {
 
 .kc-modal--content {
   padding: 60px 30px 0; }
-  .kc-modal--content > .kc-user-registration-modal .kc-form-group {
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column; }
-    .kc-modal--content > .kc-user-registration-modal .kc-form-group .kc-input-group {
-      margin-bottom: 30px;
-      width: 100%;
+  .kc-modal--content > .kc-user-registration-modal {
+    width: 400px; }
+    .kc-modal--content > .kc-user-registration-modal .kc-form-group {
+      margin-bottom: 15px;
       display: flex;
-      flex-direction: row; }
-      .kc-modal--content > .kc-user-registration-modal .kc-form-group .kc-input-group > label {
-        flex-basis: 25%;
+      flex-direction: column; }
+      .kc-modal--content > .kc-user-registration-modal .kc-form-group .kc-input-group {
+        margin-bottom: 30px;
+        width: 100%;
         display: flex;
-        align-items: center;
-        margin: 0; }
-      .kc-modal--content > .kc-user-registration-modal .kc-form-group .kc-input-group .kc-input {
-        flex-basis: 75%; }
-        .kc-modal--content > .kc-user-registration-modal .kc-form-group .kc-input-group .kc-input .kc-roles .kc-roles--option {
-          margin-bottom: 25px; }
-          .kc-modal--content > .kc-user-registration-modal .kc-form-group .kc-input-group .kc-input .kc-roles .kc-roles--option .kc-role-option--desc {
-            color: #8C8C8C;
-            margin-top: 5px; }
-            .kc-modal--content > .kc-user-registration-modal .kc-form-group .kc-input-group .kc-input .kc-roles .kc-roles--option .kc-role-option--desc span {
-              letter-spacing: 0.25px; }
+        flex-direction: row; }
+        .kc-modal--content > .kc-user-registration-modal .kc-form-group .kc-input-group > label {
+          flex-basis: 25%;
+          display: flex;
+          align-items: center;
+          margin: 0; }
+        .kc-modal--content > .kc-user-registration-modal .kc-form-group .kc-input-group .kc-input {
+          flex-basis: 75%; }
+          .kc-modal--content > .kc-user-registration-modal .kc-form-group .kc-input-group .kc-input .kc-roles .kc-roles--option {
+            margin-bottom: 25px; }
+            .kc-modal--content > .kc-user-registration-modal .kc-form-group .kc-input-group .kc-input .kc-roles .kc-roles--option .kc-role-option--desc {
+              color: #8C8C8C;
+              margin-top: 5px; }
+              .kc-modal--content > .kc-user-registration-modal .kc-form-group .kc-input-group .kc-input .kc-roles .kc-roles--option .kc-role-option--desc span {
+                letter-spacing: 0.25px; }
 
 .kc-modal--content {
   padding: 60px 30px 0; }
   .kc-modal--content > .kc-edit-user-modal {
-    width: 100%; }
+    width: 400px; }
     .kc-modal--content > .kc-edit-user-modal .kc-form-group {
       margin-bottom: 15px;
       display: flex;
