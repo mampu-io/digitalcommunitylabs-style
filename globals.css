@@ -1102,7 +1102,7 @@ input[type="text"], select, textarea, .form-control, .custom-select {
       .mui_datatable .MuiToolbar-regular .tss-1fz5efq-MUIDataTableToolbar-left .tss-1ufdzki-MUIDataTableSearch-main input {
         border: none; }
   .mui_datatable .MuiToolbar-regular .tss-qbo1l6-MUIDataTableToolbar-actions {
-    display: none; }
+    display: block; }
 
 .mui_datatable .MuiTable-root {
   border: 1px solid #e0e0e0; }
