@@ -1,0 +1,47 @@
+.kc-account-balance-card {
+  background-color: $neutral3;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .kc-account-balance-card--headline {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+
+    .kc-account-balance-card--type {
+      color: $neutral9;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .kc-account-balance-card--holder-name {
+      color: $neutral8;
+      font-weight: 500;
+    }
+
+    .kc-account-balance-card--account-number {
+      color: $neutral7;
+      font-weight: 400;
+    }
+  }
+
+  .kc-account-balance-card--balance {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      color: $neutral7;
+      font-weight: 400;
+      margin-bottom: 5px;
+    }
+
+    span {
+      color: $neutral9;
+    }
+  }
+}

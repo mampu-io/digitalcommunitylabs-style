@@ -1,0 +1,100 @@
+.kc-deposit-invoice-detail {
+  .kc-modal {
+    .kc-modal--backdrop {
+      .kc-modal--container {
+        width: 800px;
+    
+        .kc-modal--main {
+          .kc-modal--title {
+            margin: 0;
+          }
+      
+          .kc-modal--content {
+            padding: 30px 10px;
+            align-items: flex-start;
+      
+            h1 {
+              font-weight: 500;
+              margin-left: 10px;
+              margin-bottom: 20px;
+            }
+      
+            .kc-deposit-invoice-detail--content {
+              display: flex;
+              justify-content: space-between;
+
+              .kc-deposit-invoice-detail--left {
+                margin-right: 30px;
+              }
+
+              .kc-deposit-invoice-detail--right {
+                .kc-record-item--rows-value {
+                  width: 100px;
+                  justify-content: flex-end;
+
+                  .kc-record-item--value {
+                    margin-right: 0;
+                  }
+                }
+              }
+      
+              .kc-record-item {
+                min-width: 0;
+                
+                .kc-record-item--key {
+                  width: 150px;
+                }
+  
+                .kc-record-item--value {
+                  width: fit-content;
+                }
+              }
+
+              .kc-payment-link {
+                display: flex;
+                padding: 10px;
+                width: 100%;
+      
+                button {
+                  border: 1px solid $neutral5;
+                  border-radius: 2px;
+                  background-color: $neutral1;
+                  color: $neutral7;
+                  height: 32px;
+                  margin-left: 10px;
+                  padding: 0 8px;
+                  width: 85px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+      
+                  &:hover {
+                    border: 1px solid $neutral7;
+                  }
+                }
+              }
+
+              .kc-status-card {
+                width: fit-content;
+                margin: 10px 0 0 10px;
+              }
+
+              .kc-deposit-invoice-detail--total-amount {
+                padding: 10px;
+
+                label {
+                  color: $neutral7;
+                  font-weight: 400;
+                }
+
+                p {
+                  color: $neutral9;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
