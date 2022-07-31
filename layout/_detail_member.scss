@@ -13,6 +13,10 @@
     padding-top: 10px;
     width: 100%;
 
+    .kc-record-item--content {
+      align-items: flex-start;
+    }
+
     .kc-detail-member--identity {
       span {
         font-weight: 500;

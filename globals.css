@@ -447,6 +447,8 @@ input[type="text"], select, textarea, .form-control, .custom-select {
     flex-basis: 25%;
     padding-top: 10px;
     width: 100%; }
+    .kc-detail-member .kc-detail-member--headline .kc-record-item--content {
+      align-items: flex-start; }
     .kc-detail-member .kc-detail-member--headline .kc-detail-member--identity span {
       font-weight: 500; }
     .kc-detail-member .kc-detail-member--headline .kc-detail-member--action-button {
@@ -795,6 +797,18 @@ input[type="text"], select, textarea, .form-control, .custom-select {
     width: 1200px;
     height: 900px; } }
 
+.kc-pencarian-rekening {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 30px; }
+  .kc-pencarian-rekening .kc-pencarian-rekening__searchbar {
+    margin-right: 20px;
+    width: 500px; }
+    .kc-pencarian-rekening .kc-pencarian-rekening__searchbar .kc-textfield .kc-textfield--field {
+      height: 40px; }
+
 .login-container {
   width: 100vw;
   height: 100vh;
@@ -946,6 +960,8 @@ input[type="text"], select, textarea, .form-control, .custom-select {
     color: #BFBFBF; }
   .kc-button .kc-button--content {
     width: 100%; }
+    .kc-button .kc-button--content .kc-button-icon {
+      margin-right: 10px; }
     .kc-button .kc-button--content .spinner-border {
       width: 1.2rem;
       height: 1.2rem; }
@@ -1247,6 +1263,7 @@ input[type="text"], select, textarea, .form-control, .custom-select {
       .kc-datatable table thead tr th button {
         background-color: transparent;
         border: none;
+        color: #262626;
         padding: 8px 0;
         text-transform: uppercase; }
         .kc-datatable table thead tr th button i {
@@ -1258,11 +1275,16 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   .kc-datatable table tbody tr:hover {
     background-color: #F0F0F0; }
   .kc-datatable table tbody tr td {
+    color: #262626;
     padding: 16px; }
     .kc-datatable table tbody tr td:nth-child(1) {
       padding-left: 32px; }
     .kc-datatable table tbody tr td:last-child {
       padding-right: 32px; }
+    .kc-datatable table tbody tr td .kc-status-card {
+      width: fit-content; }
+    .kc-datatable table tbody tr td i {
+      font-size: 20px; }
   .kc-datatable table tbody .kc-table-body--empty td {
     text-align: center; }
 
@@ -1273,6 +1295,11 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   padding: 16px 32px; }
   .kc-datatable .kc-datatable__pagination .kc-datatable__rows-per-page, .kc-datatable .kc-datatable__pagination .kc-datatable__data-count {
     margin-right: 32px; }
+  .kc-datatable .kc-datatable__pagination .kc-datatable__rows-per-page {
+    display: flex;
+    align-items: center; }
+    .kc-datatable .kc-datatable__pagination .kc-datatable__rows-per-page .kc-dropdown {
+      margin-left: 10px; }
   .kc-datatable .kc-datatable__pagination .kc-datatable__move-page-btn button {
     background-color: transparent;
     border: none;

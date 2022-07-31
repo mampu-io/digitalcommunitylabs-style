@@ -91,6 +91,7 @@
           button {
             background-color: transparent;
             border: none;
+            color: $neutral10;
             padding: 8px 0;
             text-transform: uppercase;
 
@@ -117,6 +118,7 @@
         }
 
         td {
+          color: $neutral10;
           padding: 16px;
 
           &:nth-child(1) {
@@ -125,6 +127,14 @@
 
           &:last-child {
             padding-right: 32px;
+          }
+
+          .kc-status-card {
+            width: fit-content;
+          }
+
+          i {
+            font-size: 20px;
           }
         }
       }
@@ -143,6 +153,15 @@
 
     .kc-datatable__rows-per-page, .kc-datatable__data-count {
       margin-right: 32px;
+    }
+
+    .kc-datatable__rows-per-page {
+      display: flex;
+      align-items: center;
+
+      .kc-dropdown {
+        margin-left: 10px;
+      }
     }
 
     .kc-datatable__move-page-btn {
