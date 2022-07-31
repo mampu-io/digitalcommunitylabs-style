@@ -1,11 +1,13 @@
-@import 'navigation';
+// Generic Layout
+@import 'content';
+@import 'detail_generic';
+@import 'detail_member';
 @import 'footer';
 @import 'header';
-@import 'content';
-
-// Component for re-design
 @import 'modal';
+@import 'navigation';
+
+// Specific Layout
 @import 'registration_user_modal';
 @import 'edit_user_modal';
-@import 'detail_member';
 @import 'deposit_invoice_detail';
