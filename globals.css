@@ -641,74 +641,79 @@ input[type="text"], select, textarea, .form-control, .custom-select {
             margin-bottom: 10px; }
 
 .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container {
-  width: 850px; }
+  width: 900px; }
   .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content {
     padding: 30px 10px;
     align-items: flex-start; }
     .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content label {
       font-weight: 400;
-      color: #8C8C8C; }
+      color: #8C8C8C;
+      margin: 0; }
     .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__invoice-number {
       display: flex;
       flex-direction: column;
       padding-left: 10px;
       margin-bottom: 30px; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__invoice-number span {
-        color: #1F1F1F; }
-    .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__status-title {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 30px;
-      padding-left: 10px; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__status-title .kc-invoice-detail__status {
+      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__invoice-number label {
+        margin-bottom: 10px; }
+      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__invoice-number .kc-invoice-number {
         display: flex;
-        align-items: center;
-        margin-right: 60px;
-        width: 100%; }
-        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__status-title .kc-invoice-detail__status label {
-          margin: 0;
-          margin-right: 20px; }
+        align-items: center; }
+        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__invoice-number .kc-invoice-number span {
+          margin-right: 10px; }
     .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content {
       display: flex;
-      justify-content: space-between; }
+      width: 100%; }
       .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-record-item {
-        min-width: 0; }
-        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-record-item .kc-record-item--key {
-          width: 150px; }
-        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-record-item .kc-record-item--value {
-          width: fit-content; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-status-card {
-        width: fit-content; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side {
-        margin-right: 30px; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-amount .kc-record-item--rows-value {
-        width: 160px;
-        justify-content: flex-end; }
-        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-amount .kc-record-item--rows-value .kc-record-item--value {
-          margin-right: 0; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-amount .kc-divider {
-        border-bottom: 1px solid #D9D9D9;
         width: 100%; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-link {
-        margin-top: 30px; }
-        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-link .kc-payment-link {
+        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-record-item .kc-record-item--content {
+          align-items: flex-start;
+          width: 100%; }
+          .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-record-item .kc-record-item--content .kc-record-item--key {
+            flex-basis: 40%;
+            width: 100%; }
+          .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-record-item .kc-record-item--content .kc-record-item--value {
+            flex-basis: 60%;
+            width: 200px; }
+            .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-record-item .kc-record-item--content .kc-record-item--value span {
+              white-space: normal;
+              word-wrap: break-word; }
+      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side {
+        flex-basis: 50%;
+        margin-right: 30px;
+        width: 100%; }
+        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-invoice-status {
           display: flex;
+          align-items: center;
           padding: 10px;
           width: 100%; }
-          .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-link .kc-payment-link button {
-            border: 1px solid #D9D9D9;
-            border-radius: 2px;
-            background-color: #FFFFFF;
-            color: #8C8C8C;
-            height: 32px;
-            margin-left: 10px;
-            padding: 0 8px;
-            width: 85px;
+          .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-invoice-status label {
+            margin-right: 20px; }
+      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side {
+        flex-basis: 50%;
+        width: 100%; }
+        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-title {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 20px;
+          padding: 10px;
+          width: 100%; }
+          .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-title label {
+            margin-bottom: 10px; }
+        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-amount .kc-divider {
+          border-bottom: 1px solid #D9D9D9;
+          width: 100%; }
+        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-amount .kc-record-item--value, .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-link .kc-record-item--value {
+          text-align: right; }
+        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-link {
+          margin-top: 30px; }
+          .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-link .kc-payment-link {
             display: flex;
-            justify-content: center;
-            align-items: center; }
-            .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-link .kc-payment-link button:hover {
-              border: 1px solid #8C8C8C; }
+            align-items: center;
+            padding: 10px;
+            width: 100%; }
+            .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-link .kc-payment-link .kc-textfield {
+              margin-right: 10px; }
 
 .datatable-cell.kc-status-cell {
   display: flex;
@@ -1190,6 +1195,57 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   .bg-loading-page .spinner-border {
     width: 65px;
     height: 65px; }
+
+.kc-rounded-button {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .kc-rounded-button:disabled {
+    background-color: #F5F5F5;
+    border: 1px solid #D9D9D9;
+    color: #BFBFBF; }
+  .kc-rounded-button.kc-rounded-button--small {
+    font-size: 18px;
+    height: 36px;
+    width: 36px; }
+  .kc-rounded-button.kc-rounded-button--medium {
+    font-size: 24px;
+    height: 48px;
+    width: 48px; }
+  .kc-rounded-button.kc-rounded-button--large {
+    font-size: 30px;
+    height: 60px;
+    width: 60px; }
+  .kc-rounded-button.kc-rounded-button--primary {
+    background-color: #B52435;
+    color: #FFFFFF; }
+    .kc-rounded-button.kc-rounded-button--primary:hover {
+      background-color: #DC3644; }
+    .kc-rounded-button.kc-rounded-button--primary:active {
+      background-color: #8F1528; }
+  .kc-rounded-button.kc-rounded-button--secondary {
+    border: 1px solid #8C8C8C;
+    color: #595959; }
+    .kc-rounded-button.kc-rounded-button--secondary:hover {
+      border: 1px solid #DC3644;
+      color: #DC3644; }
+    .kc-rounded-button.kc-rounded-button--secondary:active {
+      border: 1px solid #8F1528;
+      color: #8F1528; }
+  .kc-rounded-button.kc-rounded-button--neutral {
+    color: #595959; }
+    .kc-rounded-button.kc-rounded-button--neutral:hover {
+      background-color: #F0F0F0;
+      color: #8C8C8C; }
+    .kc-rounded-button.kc-rounded-button--neutral:active {
+      color: #434343; }
+  .kc-rounded-button .kc-rounded-button__content {
+    text-transform: uppercase;
+    width: 100%; }
 
 .kc-status-card {
   color: #FFFFFF;
