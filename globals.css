@@ -275,6 +275,9 @@ input[type="text"], select, textarea, .form-control, .custom-select {
     .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section {
       width: 600px;
       margin-left: 20px; }
+      .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section h3 {
+        margin-bottom: 30px;
+        margin-top: 10px; }
       .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-section--foto-dokumen {
         display: flex;
         flex-direction: row;
@@ -909,6 +912,21 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container {
     width: 1200px;
     height: 900px; } }
+
+.kc-detail-wrapper .kc-detail-wrapper__left {
+  margin-right: 30px; }
+  .kc-detail-wrapper .kc-detail-wrapper__left .kc-withdrawal-status {
+    display: flex;
+    align-items: center;
+    padding: 10px; }
+    .kc-detail-wrapper .kc-detail-wrapper__left .kc-withdrawal-status label {
+      color: #8C8C8C;
+      font-weight: 400;
+      margin: 0;
+      margin-right: 20px; }
+
+.kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section {
+  width: 800px; }
 
 .kc-pencarian-rekening {
   display: flex;
