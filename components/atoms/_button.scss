@@ -20,6 +20,10 @@
     width: 400px;
   }
 
+  &.kc-button--fit-content {
+    width: fit-content;
+  }
+
   &.kc-button--primary {
     color: $neutral1;
     background-color: $primary7;

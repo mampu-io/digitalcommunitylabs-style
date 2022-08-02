@@ -692,6 +692,9 @@ input[type="text"], select, textarea, .form-control, .custom-select {
           width: 100%; }
           .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-invoice-status label {
             margin-right: 20px; }
+        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side button {
+          margin-top: 20px;
+          margin-left: 10px; }
       .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side {
         flex-basis: 50%;
         width: 100%; }
@@ -1022,6 +1025,8 @@ input[type="text"], select, textarea, .form-control, .custom-select {
     width: 180px; }
   .kc-button.kc-button--long {
     width: 400px; }
+  .kc-button.kc-button--fit-content {
+    width: fit-content; }
   .kc-button.kc-button--primary {
     color: #FFFFFF;
     background-color: #B52435; }
