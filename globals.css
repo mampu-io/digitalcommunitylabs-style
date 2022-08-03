@@ -1102,17 +1102,15 @@ input[type="text"], select, textarea, .form-control, .custom-select {
     max-width: 192px; }
 
 .kc-dropdown {
+  background-color: #FFFFFF;
   position: relative;
   border: 1px solid #D9D9D9;
   border-radius: 2px;
-  min-width: 150px;
-  width: auto;
   height: 40px;
   padding: 0 12px; }
   .kc-dropdown select {
     cursor: pointer;
     border: none;
-    width: 100%;
     height: 100%; }
     .kc-dropdown select:focus {
       outline: none; }
@@ -1121,6 +1119,14 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   .kc-dropdown:focus-within {
     border: 1px solid #40A9FF;
     box-shadow: 0px 0px 0px 2px rgba(24, 144, 255, 0.2); }
+  .kc-dropdown.kc-dropdown--fit-content {
+    width: fit-content; }
+    .kc-dropdown.kc-dropdown--fit-content select {
+      width: fit-content; }
+  .kc-dropdown.kc-dropdown--fluid {
+    width: 100%; }
+    .kc-dropdown.kc-dropdown--fluid select {
+      width: 100%; }
 
 .kc-textfield {
   display: flex;
@@ -1395,6 +1401,8 @@ input[type="text"], select, textarea, .form-control, .custom-select {
             width: 150px; }
             .kc-datatable .kc-datatable__header .kc-datatable__filter .kc-filter .kc-filter__entries .kc-filter__entry .kc-filter__entry__label span {
               font-weight: 500; }
+          .kc-datatable .kc-datatable__header .kc-datatable__filter .kc-filter .kc-filter__entries .kc-filter__entry .kc-filter__entry__dropdown {
+            width: 200px; }
       .kc-datatable .kc-datatable__header .kc-datatable__filter .kc-filter .kc-filter__action-button {
         display: flex; }
         .kc-datatable .kc-datatable__header .kc-datatable__filter .kc-filter .kc-filter__action-button button:nth-child(1) {
