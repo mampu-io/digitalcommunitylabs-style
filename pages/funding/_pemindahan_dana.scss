@@ -1,0 +1,26 @@
+.kc-detail-wrapper {
+  .kc-detail-wrapper__left {
+    margin-right: 30px;
+
+    .kc-withdrawal-status {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+
+      label {
+        color: $neutral7;
+        font-weight: 400;
+        margin: 0;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .kc-detail-wrapper__right {
+    .kc-detail-content {
+      .kc-section {
+        width: 800px;
+      }
+    }
+  }
+}

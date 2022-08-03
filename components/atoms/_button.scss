@@ -20,6 +20,10 @@
     width: 400px;
   }
 
+  &.kc-button--fit-content {
+    width: fit-content;
+  }
+
   &.kc-button--primary {
     color: $neutral1;
     background-color: $primary7;
@@ -84,6 +88,10 @@
 
   .kc-button--content {
     width: 100%;
+
+    .kc-button-icon {
+      margin-right: 10px;
+    }
     
     .spinner-border {
       width: 1.2rem;

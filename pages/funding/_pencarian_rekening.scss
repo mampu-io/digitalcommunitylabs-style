@@ -1,0 +1,18 @@
+.kc-pencarian-rekening {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 30px;
+
+  .kc-pencarian-rekening__searchbar {
+    margin-right: 20px;
+    width: 500px;
+
+    .kc-textfield {  
+      .kc-textfield--field {
+        height: 40px;
+      }
+    }
+  }
+}
