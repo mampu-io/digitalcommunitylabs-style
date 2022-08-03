@@ -24,6 +24,11 @@
         }
         .tss-qbo1l6-MUIDataTableToolbar-actions{
             display: block;
+            width: auto;
+            flex: none !important;
+            .MuiButtonBase-root[data-testid="Search-iconButton"]{
+                display: none;
+            }
         }
     }
     .MuiTable-root{
