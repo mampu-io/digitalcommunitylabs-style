@@ -973,34 +973,19 @@ input[type="text"], select, textarea, .form-control, .custom-select {
       font-size: 15px;
       background: #fff; }
 
-.page-notfound {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.kc-page-notfound, .kc-verification-failed {
   height: 100vh; }
-  .page-notfound h1, .page-notfound h2, .page-notfound p {
-    margin: 0px;
-    padding: 0px; }
-  .page-notfound h1 {
-    font-family: "Roboto";
-    color: #00b5c3;
-    font-size: 75px;
-    letter-spacing: 15.5px;
-    margin: 0px;
-    font-weight: 900; }
-  .page-notfound h2 {
-    font-family: "Lato";
-    font-size: 25px;
-    font-weight: 700;
-    letter-spacing: 1.5; }
-  .page-notfound p {
-    font-family: "Lato";
+  .kc-page-notfound p.kc-caption, .kc-verification-failed p.kc-caption {
     font-size: 15px;
+    line-height: 1.25;
     font-style: italic;
-    color: #999999; }
-  .page-notfound .wrapper {
-    width: 500px;
-    max-width: 100%; }
+    color: #000000;
+    opacity: 0.5; }
+    .kc-page-notfound p.kc-caption a:link, .kc-page-notfound p.kc-caption a:visited, .kc-verification-failed p.kc-caption a:link, .kc-verification-failed p.kc-caption a:visited {
+      color: #000000;
+      font-weight: 700;
+      text-decoration: underline;
+      opacity: 1; }
 
 .badge-container {
   display: inline-block;

@@ -1,34 +1,18 @@
-.page-notfound{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    h1, h2, p{
-        margin: 0px;
-        padding: 0px;
+.kc-page-notfound, .kc-verification-failed {
+  height: 100vh;
+
+  p.kc-caption {
+    font-size: 15px;
+    line-height: 1.25;
+    font-style: italic;
+    color: $neutral13;
+    opacity: 0.5;
+
+    a:link, a:visited {
+      color: $neutral13;
+      font-weight: 700;
+      text-decoration: underline;
+      opacity: 1;
     }
-    h1{
-        font-family: $font-primary;
-        color: #00b5c3;
-        font-size: 75px;
-        letter-spacing: 15.5px;
-        margin: 0px;
-        font-weight: 900;
-    }
-    h2{
-        font-family: $font-secondary;
-        font-size: 25px;
-        font-weight: 700;
-        letter-spacing: 1.5;
-    }
-    p{
-        font-family: $font-secondary;
-        font-size: $font_size_paragraph;
-        font-style: italic;
-        color: $notes_color;
-    }
-    .wrapper{
-        width: 500px;
-        max-width: 100%;
-    }
+  }
 }
