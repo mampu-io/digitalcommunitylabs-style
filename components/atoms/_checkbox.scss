@@ -4,7 +4,7 @@
   align-items: center;
 
   &.kc-checkbox--disabled label {
-    color: $textLight5;
+    color: $neutral6;
   }
 
   input[type=checkbox] {
@@ -30,10 +30,6 @@
   }
 
   label {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
-    letter-spacing: 0.25px;
     margin: 0;
     max-width: 192px;
   }

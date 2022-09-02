@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: center;
   padding: 0 10px;
+  cursor: pointer;
 
   &.kc-button--fluid {
     width: 100%;
@@ -21,6 +22,7 @@
   }
 
   &.kc-button--fit-content {
+    padding: 0 20px;
     width: fit-content;
   }
 
@@ -82,20 +84,26 @@
     &:disabled {
       background-color: $neutral3;
       border: 1px solid $neutral5;
-      color: $textLight5;
+      color: $neutral6;
+      cursor: default;
     }
   }
 
-  .kc-button--content {
+  .kc-button__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-
-    .kc-button-icon {
+    
+    .kc-button__icon {
       margin-right: 10px;
     }
     
     .spinner-border {
       width: 1.2rem;
       height: 1.2rem;
+      border: 0.25em solid currentColor;
+      border-right-color: transparent;
     }
   }
 }
