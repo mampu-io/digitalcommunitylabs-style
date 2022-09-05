@@ -2,42 +2,26 @@
   padding: 60px 30px 0;
 
   > .kc-user-registration-modal {
-    width: 400px;
+    width: 450px;
     
-    .kc-form-group {
-      margin-bottom: 15px;
-      display: flex;
-      flex-direction: column;
-  
-      .kc-input-group {
-        margin-bottom: 30px;
-        width: 100%;
+    .kc-form-group {  
+      .kc-form-group__label {
+        width: 120px;
+      }
+
+      .kc-roles {
         display: flex;
-        flex-direction: row;
-  
-        > label {
-          flex-basis: 25%;
-          display: flex;
-          align-items: center;
-          margin: 0;
-        }
-  
-        .kc-input {
-          flex-basis: 75%;
-  
-          .kc-roles {
-            .kc-roles--option {
-              margin-bottom: 25px;
-  
-              .kc-role-option--desc {
-                color: $neutral7;
-                margin-top: 5px;
-  
-                span {
-                  letter-spacing: 0.25px;
-                }
-              }
-            }
+        flex-direction: column;
+        margin-top: 5px;
+        width: 100%;
+
+        .kc-roles__option {
+          margin-bottom: 15px;
+
+          span.kc-caption {
+            color: $neutral8;
+            font-size: 13px;
+            line-height: 8px;
           }
         }
       }

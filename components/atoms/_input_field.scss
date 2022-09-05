@@ -22,7 +22,7 @@
       background-color: $neutral3;
 
       .kc-textfield--prefix, .kc-textfield--suffix {
-        color: $textLight5;
+        color: $neutral6;
       }
     }
 
@@ -45,7 +45,7 @@
     flex-direction: row;
 
     &:focus-within {
-      border: 1px solid $secondary5;
+      border: 1px solid $functionalLink500;
       box-shadow: 0px 0px 0px 2px rgba(24, 144, 255, 0.2);
     }
 
@@ -101,7 +101,7 @@
 
       &:disabled {
         background-color: $neutral3;
-        color: $textLight5;
+        color: $neutral6;
       }
 
       &:-webkit-autofill {transition: background-color 5000s}

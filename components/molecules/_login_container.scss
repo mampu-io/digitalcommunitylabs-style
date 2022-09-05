@@ -16,20 +16,15 @@
     .kc-form-group {
       margin-bottom: 15px;
 
-      .kc-input-group {
-        margin-bottom: 15px;
-        width: 400px;
-        display: flex;
-        flex-direction: row;
+      .kc-form-group__label {
+        width: 120px;
+      }
+    }
 
-        label {
-          flex-basis: 25%;
-          display: flex;
-          align-items: center;
-        }
-
-        .kc-input {
-          flex-basis: 75%;
+    .kc-form-wrapper {
+      .kc-form-wrapper__submit-btn {
+        > button {
+          width: 100%;
         }
       }
     }

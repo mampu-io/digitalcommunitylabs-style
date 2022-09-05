@@ -2,33 +2,26 @@
   padding: 60px 30px 0;
 
   > .kc-edit-user-modal {
-    width: 400px;
+    width: 450px;
 
     .kc-form-group {
-      margin-bottom: 15px;
-      display: flex;
-      flex-direction: column;
-  
-      .kc-input-group {
-        margin-bottom: 30px;
-        width: 100%;
+      .kc-form-group__label {
+        width: 200px;
+      }
+
+      .kc-roles {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-  
-        > label {
-          display: flex;
-          align-items: center;
-          margin: 0;
-        }
-  
-        .kc-input {
-          width: 216px;
-  
-          .kc-roles {
-            .kc-roles--option {
-              margin-bottom: 10px;
-            }
+        flex-direction: column;
+        margin-top: 5px;
+        width: 100%;
+
+        .kc-roles__option {
+          margin-bottom: 15px;
+
+          span.kc-caption {
+            color: $neutral8;
+            font-size: 13px;
+            line-height: 8px;
           }
         }
       }

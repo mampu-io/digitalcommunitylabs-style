@@ -173,34 +173,6 @@ input[type="text"], select, textarea, .form-control, .custom-select {
       color: #4c4c4c; }
       .content-wrapper > .content-header .breadcrumb a {
         color: #4c4c4c; }
-  .content-wrapper > .content-body > .container-fluid > .kc-content {
-    max-width: 600px;
-    margin-bottom: 30px;
-    padding-left: 30px; }
-    .content-wrapper > .content-body > .container-fluid > .kc-content > .kc-form-group {
-      margin-bottom: 15px;
-      display: flex;
-      flex-direction: column; }
-      .content-wrapper > .content-body > .container-fluid > .kc-content > .kc-form-group > .kc-input-group {
-        margin-bottom: 30px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between; }
-        .content-wrapper > .content-body > .container-fluid > .kc-content > .kc-form-group > .kc-input-group > label {
-          font-weight: 400;
-          display: flex;
-          align-items: center;
-          margin: 0; }
-        .content-wrapper > .content-body > .container-fluid > .kc-content > .kc-form-group > .kc-input-group > .kc-input {
-          width: 250px; }
-          .content-wrapper > .content-body > .container-fluid > .kc-content > .kc-form-group > .kc-input-group > .kc-input .kc-roles--option {
-            margin-bottom: 10px; }
-            .content-wrapper > .content-body > .container-fluid > .kc-content > .kc-form-group > .kc-input-group > .kc-input .kc-roles--option span {
-              line-height: 8px; }
-          .content-wrapper > .content-body > .container-fluid > .kc-content > .kc-form-group > .kc-input-group > .kc-input ul {
-            width: 100%;
-            margin-left: 20px; }
 
 .kc-detail-wrapper {
   width: 100%;
@@ -517,7 +489,7 @@ input[type="text"], select, textarea, .form-control, .custom-select {
           background-color: #F0F0F0; }
       .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--action .kc-modal--action-success {
         border-bottom-right-radius: 8px;
-        color: #B52435;
+        color: #0F77C0;
         flex-basis: 50%; }
         .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--action .kc-modal--action-success:hover {
           background-color: #F0F0F0; }
@@ -595,53 +567,38 @@ input[type="text"], select, textarea, .form-control, .custom-select {
 .kc-modal--content {
   padding: 60px 30px 0; }
   .kc-modal--content > .kc-user-registration-modal {
-    width: 400px; }
-    .kc-modal--content > .kc-user-registration-modal .kc-form-group {
-      margin-bottom: 15px;
+    width: 450px; }
+    .kc-modal--content > .kc-user-registration-modal .kc-form-group .kc-form-group__label {
+      width: 120px; }
+    .kc-modal--content > .kc-user-registration-modal .kc-form-group .kc-roles {
       display: flex;
-      flex-direction: column; }
-      .kc-modal--content > .kc-user-registration-modal .kc-form-group .kc-input-group {
-        margin-bottom: 30px;
-        width: 100%;
-        display: flex;
-        flex-direction: row; }
-        .kc-modal--content > .kc-user-registration-modal .kc-form-group .kc-input-group > label {
-          flex-basis: 25%;
-          display: flex;
-          align-items: center;
-          margin: 0; }
-        .kc-modal--content > .kc-user-registration-modal .kc-form-group .kc-input-group .kc-input {
-          flex-basis: 75%; }
-          .kc-modal--content > .kc-user-registration-modal .kc-form-group .kc-input-group .kc-input .kc-roles .kc-roles--option {
-            margin-bottom: 25px; }
-            .kc-modal--content > .kc-user-registration-modal .kc-form-group .kc-input-group .kc-input .kc-roles .kc-roles--option .kc-role-option--desc {
-              color: #8C8C8C;
-              margin-top: 5px; }
-              .kc-modal--content > .kc-user-registration-modal .kc-form-group .kc-input-group .kc-input .kc-roles .kc-roles--option .kc-role-option--desc span {
-                letter-spacing: 0.25px; }
+      flex-direction: column;
+      margin-top: 5px;
+      width: 100%; }
+      .kc-modal--content > .kc-user-registration-modal .kc-form-group .kc-roles .kc-roles__option {
+        margin-bottom: 15px; }
+        .kc-modal--content > .kc-user-registration-modal .kc-form-group .kc-roles .kc-roles__option span.kc-caption {
+          color: #595959;
+          font-size: 13px;
+          line-height: 8px; }
 
 .kc-modal--content {
   padding: 60px 30px 0; }
   .kc-modal--content > .kc-edit-user-modal {
-    width: 400px; }
-    .kc-modal--content > .kc-edit-user-modal .kc-form-group {
-      margin-bottom: 15px;
+    width: 450px; }
+    .kc-modal--content > .kc-edit-user-modal .kc-form-group .kc-form-group__label {
+      width: 200px; }
+    .kc-modal--content > .kc-edit-user-modal .kc-form-group .kc-roles {
       display: flex;
-      flex-direction: column; }
-      .kc-modal--content > .kc-edit-user-modal .kc-form-group .kc-input-group {
-        margin-bottom: 30px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between; }
-        .kc-modal--content > .kc-edit-user-modal .kc-form-group .kc-input-group > label {
-          display: flex;
-          align-items: center;
-          margin: 0; }
-        .kc-modal--content > .kc-edit-user-modal .kc-form-group .kc-input-group .kc-input {
-          width: 216px; }
-          .kc-modal--content > .kc-edit-user-modal .kc-form-group .kc-input-group .kc-input .kc-roles .kc-roles--option {
-            margin-bottom: 10px; }
+      flex-direction: column;
+      margin-top: 5px;
+      width: 100%; }
+      .kc-modal--content > .kc-edit-user-modal .kc-form-group .kc-roles .kc-roles__option {
+        margin-bottom: 15px; }
+        .kc-modal--content > .kc-edit-user-modal .kc-form-group .kc-roles .kc-roles__option span.kc-caption {
+          color: #595959;
+          font-size: 13px;
+          line-height: 8px; }
 
 .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container {
   width: 900px; }
@@ -721,44 +678,36 @@ input[type="text"], select, textarea, .form-control, .custom-select {
             .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-link .kc-payment-link .kc-textfield {
               margin-right: 10px; }
 
-.datatable-cell.kc-status-cell {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
+.kc-add-user-button {
+  margin-right: 32px; }
 
-.datatable-cell .kc-active-indicator {
+.kc-datatable button {
+  border: none;
+  background-color: transparent; }
+
+.kc-datatable .kc-view-detail-button i {
+  font-size: 20px; }
+
+.kc-datatable .kc-toggle-active-user .kc-active-indicator {
   border-radius: 50%;
   width: 16px;
   height: 16px; }
-  .datatable-cell .kc-active-indicator.kc-active-indicator--success {
+  .kc-datatable .kc-toggle-active-user .kc-active-indicator.kc-active-indicator--success {
     background-color: #52C41A; }
-  .datatable-cell .kc-active-indicator.kc-active-indicator--danger {
+  .kc-datatable .kc-toggle-active-user .kc-active-indicator.kc-active-indicator--danger {
     background-color: #FF4D4F; }
 
-.kc-role-indicators {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start; }
-  .kc-role-indicators .kc-role-indicator {
-    background-color: #D9D9D9;
-    border-radius: 50px;
-    margin-right: 8px;
-    min-width: 72px;
-    height: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 8px;
-    white-space: nowrap; }
-    .kc-role-indicators .kc-role-indicator span {
-      color: #595959; }
-
-.datatable-cell button {
-  border: none;
-  background-color: transparent; }
-  .datatable-cell button i {
-    font-size: 20px; }
+.kc-datatable .kc-role-indicators .kc-role-indicator {
+  background-color: #D9D9D9;
+  border-radius: 50px;
+  margin-right: 8px;
+  min-width: 72px;
+  padding: 8px;
+  white-space: nowrap;
+  width: fit-content;
+  margin-bottom: 5px; }
+  .kc-datatable .kc-role-indicators .kc-role-indicator span.kc-caption {
+    color: #595959; }
 
 .reset-container {
   width: 100vw;
@@ -943,6 +892,28 @@ input[type="text"], select, textarea, .form-control, .custom-select {
     .kc-pencarian-rekening .kc-pencarian-rekening__searchbar .kc-textfield .kc-textfield--field {
       height: 40px; }
 
+.kc-profile, .kc-change-password {
+  max-width: 600px;
+  margin-bottom: 30px;
+  padding: 0 30px; }
+  .kc-profile .kc-form-wrapper .kc-form-group .kc-roles, .kc-change-password .kc-form-wrapper .kc-form-group .kc-roles {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px; }
+    .kc-profile .kc-form-wrapper .kc-form-group .kc-roles .kc-roles__option, .kc-change-password .kc-form-wrapper .kc-form-group .kc-roles .kc-roles__option {
+      margin-bottom: 15px; }
+      .kc-profile .kc-form-wrapper .kc-form-group .kc-roles .kc-roles__option span.kc-caption, .kc-change-password .kc-form-wrapper .kc-form-group .kc-roles .kc-roles__option span.kc-caption {
+        color: #595959;
+        font-size: 13px;
+        line-height: 8px; }
+  .kc-profile .kc-form-wrapper .kc-form-group ul.kc-roles, .kc-change-password .kc-form-wrapper .kc-form-group ul.kc-roles {
+    width: 100%;
+    margin-left: 40px; }
+
+.kc-change-password .kc-form-wrapper .kc-inputfield__subtitle span.kc-overline {
+  font-size: 11px;
+  letter-spacing: 0.75px; }
+
 .login-container {
   width: 100vw;
   height: 100vh;
@@ -973,34 +944,19 @@ input[type="text"], select, textarea, .form-control, .custom-select {
       font-size: 15px;
       background: #fff; }
 
-.page-notfound {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.kc-page-notfound, .kc-verification-failed {
   height: 100vh; }
-  .page-notfound h1, .page-notfound h2, .page-notfound p {
-    margin: 0px;
-    padding: 0px; }
-  .page-notfound h1 {
-    font-family: "Roboto";
-    color: #00b5c3;
-    font-size: 75px;
-    letter-spacing: 15.5px;
-    margin: 0px;
-    font-weight: 900; }
-  .page-notfound h2 {
-    font-family: "Lato";
-    font-size: 25px;
-    font-weight: 700;
-    letter-spacing: 1.5; }
-  .page-notfound p {
-    font-family: "Lato";
+  .kc-page-notfound p.kc-caption, .kc-verification-failed p.kc-caption {
     font-size: 15px;
+    line-height: 1.25;
     font-style: italic;
-    color: #999999; }
-  .page-notfound .wrapper {
-    width: 500px;
-    max-width: 100%; }
+    color: #000000;
+    opacity: 0.5; }
+    .kc-page-notfound p.kc-caption a:link, .kc-page-notfound p.kc-caption a:visited, .kc-verification-failed p.kc-caption a:link, .kc-verification-failed p.kc-caption a:visited {
+      color: #000000;
+      font-weight: 700;
+      text-decoration: underline;
+      opacity: 1; }
 
 .badge-container {
   display: inline-block;
@@ -1018,7 +974,8 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 10px; }
+  padding: 0 10px;
+  cursor: pointer; }
   .kc-button.kc-button--fluid {
     width: 100%; }
   .kc-button.kc-button--short {
@@ -1026,23 +983,24 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   .kc-button.kc-button--long {
     width: 400px; }
   .kc-button.kc-button--fit-content {
+    padding: 0 20px;
     width: fit-content; }
   .kc-button.kc-button--primary {
     color: #FFFFFF;
-    background-color: #B52435; }
+    background-color: #0F77C0; }
     .kc-button.kc-button--primary:hover {
-      background-color: #DC3644; }
+      background-color: #43A3D9; }
     .kc-button.kc-button--primary:active {
-      background-color: #8F1528; }
+      background-color: #0A5CA5; }
   .kc-button.kc-button--secondary {
     color: #595959;
     border: 1px solid #8C8C8C; }
     .kc-button.kc-button--secondary:hover {
-      color: #DC3644;
-      border: 1px solid #DC3644; }
+      color: #43A3D9;
+      border: 1px solid #43A3D9; }
     .kc-button.kc-button--secondary:active {
-      color: #8F1528;
-      border: 1px solid #8F1528; }
+      color: #0A5CA5;
+      border: 1px solid #0A5CA5; }
   .kc-button.kc-button--success {
     color: #FFFFFF;
     background-color: #52C41A; }
@@ -1060,14 +1018,20 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   .kc-button.kc-button--primary:disabled, .kc-button.kc-button--secondary:disabled, .kc-button.kc-button--success:disabled, .kc-button.kc-button--danger:disabled {
     background-color: #F5F5F5;
     border: 1px solid #D9D9D9;
-    color: #BFBFBF; }
-  .kc-button .kc-button--content {
+    color: #BFBFBF;
+    cursor: default; }
+  .kc-button .kc-button__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%; }
-    .kc-button .kc-button--content .kc-button-icon {
+    .kc-button .kc-button__content .kc-button__icon {
       margin-right: 10px; }
-    .kc-button .kc-button--content .spinner-border {
+    .kc-button .kc-button__content .spinner-border {
       width: 1.2rem;
-      height: 1.2rem; }
+      height: 1.2rem;
+      border: 0.25em solid currentColor;
+      border-right-color: transparent; }
 
 .kc-checkbox-container {
   display: flex;
@@ -1076,7 +1040,7 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   .kc-checkbox-container.kc-checkbox--disabled label {
     color: #BFBFBF; }
   .kc-checkbox-container input[type=checkbox] {
-    accent-color: #B52435;
+    accent-color: #0F77C0;
     border-color: #FAFAFA;
     height: 16px;
     margin: 0;
@@ -1092,12 +1056,8 @@ input[type="text"], select, textarea, .form-control, .custom-select {
     color: white;
     width: 10px;
     height: 10px;
-    background-color: #B52435; }
+    background-color: #0F77C0; }
   .kc-checkbox-container label {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
-    letter-spacing: 0.25px;
     margin: 0;
     max-width: 192px; }
 
@@ -1117,7 +1077,7 @@ input[type="text"], select, textarea, .form-control, .custom-select {
     .kc-dropdown select option {
       padding: 0 -12px; }
   .kc-dropdown:focus-within {
-    border: 1px solid #40A9FF;
+    border: 1px solid #1890FF;
     box-shadow: 0px 0px 0px 2px rgba(24, 144, 255, 0.2); }
   .kc-dropdown.kc-dropdown--fit-content {
     width: fit-content; }
@@ -1136,7 +1096,7 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   .kc-textfield.kc-textfield--fluid {
     width: 100%; }
   .kc-textfield.kc-textfield--error .kc-textfield--field, .kc-textfield.kc-textfield--error .kc-textfield--field:focus-within {
-    border: 1px solid #B52435;
+    border: 1px solid #0F77C0;
     box-shadow: 0px 0px 0px 2px rgba(181, 36, 53, 0.2); }
   .kc-textfield.kc-textfield--disabled .kc-textfield--field {
     background-color: #F5F5F5; }
@@ -1155,7 +1115,7 @@ input[type="text"], select, textarea, .form-control, .custom-select {
     display: flex;
     flex-direction: row; }
     .kc-textfield .kc-textfield--field:focus-within {
-      border: 1px solid #40A9FF;
+      border: 1px solid #1890FF;
       box-shadow: 0px 0px 0px 2px rgba(24, 144, 255, 0.2); }
     .kc-textfield .kc-textfield--field.kc-textfield--field--small {
       height: 24px;
@@ -1250,21 +1210,21 @@ input[type="text"], select, textarea, .form-control, .custom-select {
     height: 60px;
     width: 60px; }
   .kc-rounded-button.kc-rounded-button--primary {
-    background-color: #B52435;
+    background-color: #0F77C0;
     color: #FFFFFF; }
     .kc-rounded-button.kc-rounded-button--primary:hover {
-      background-color: #DC3644; }
+      background-color: #43A3D9; }
     .kc-rounded-button.kc-rounded-button--primary:active {
-      background-color: #8F1528; }
+      background-color: #0A5CA5; }
   .kc-rounded-button.kc-rounded-button--secondary {
     border: 1px solid #8C8C8C;
     color: #595959; }
     .kc-rounded-button.kc-rounded-button--secondary:hover {
-      border: 1px solid #DC3644;
-      color: #DC3644; }
+      border: 1px solid #43A3D9;
+      color: #43A3D9; }
     .kc-rounded-button.kc-rounded-button--secondary:active {
-      border: 1px solid #8F1528;
-      color: #8F1528; }
+      border: 1px solid #0A5CA5;
+      color: #0A5CA5; }
   .kc-rounded-button.kc-rounded-button--neutral {
     color: #595959; }
     .kc-rounded-button.kc-rounded-button--neutral:hover {
@@ -1562,17 +1522,10 @@ input[type="text"], select, textarea, .form-control, .custom-select {
     padding: 0 10px; }
     .kc-modal-login--wrapper .kc-modal-login--content .kc-form-group {
       margin-bottom: 15px; }
-      .kc-modal-login--wrapper .kc-modal-login--content .kc-form-group .kc-input-group {
-        margin-bottom: 15px;
-        width: 400px;
-        display: flex;
-        flex-direction: row; }
-        .kc-modal-login--wrapper .kc-modal-login--content .kc-form-group .kc-input-group label {
-          flex-basis: 25%;
-          display: flex;
-          align-items: center; }
-        .kc-modal-login--wrapper .kc-modal-login--content .kc-form-group .kc-input-group .kc-input {
-          flex-basis: 75%; }
+      .kc-modal-login--wrapper .kc-modal-login--content .kc-form-group .kc-form-group__label {
+        width: 120px; }
+    .kc-modal-login--wrapper .kc-modal-login--content .kc-form-wrapper .kc-form-wrapper__submit-btn > button {
+      width: 100%; }
 
 .modal-kc .moda-dialog {
   font-family: "Roboto"; }
