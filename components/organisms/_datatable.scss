@@ -1,0 +1,20 @@
+.kc-datatable {
+  height: fit-content;
+  width: 100%;
+
+  .kc-datatable__header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 16px 32px;
+
+    .kc-datatable__filter {
+      margin-left: 20px;
+
+      .kc-filter {
+        left: auto;
+        right: 0;
+      }
+    }
+  }
+}
