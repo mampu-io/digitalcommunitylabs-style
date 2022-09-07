@@ -1,0 +1,16 @@
+.kc-datatable__searchbar {
+  display: flex;
+  width: 400px;
+
+  .kc-inputfield {
+    margin-right: 20px;
+
+    .kc-inputfield__box {
+      height: 40px;
+    }
+  }
+
+  .kc-button {
+    border-radius: 2px;
+  }
+}
