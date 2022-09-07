@@ -1,17 +1,10 @@
 .kc-rounded-button {
-  background-color: transparent;
   border: none;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  &:disabled {
-    background-color: $neutral3;
-    border: 1px solid $neutral5;
-    color: $neutral6;
-  }
 
   &.kc-rounded-button--small {
     font-size: 18px;
@@ -60,6 +53,7 @@
   }
 
   &.kc-rounded-button--neutral {
+    background-color: $neutral1;
     color: $neutral8;
 
     &:hover {
@@ -72,7 +66,26 @@
     }
   }
 
+  &:disabled {
+    background-color: $neutral3;
+    border: 1px solid $neutral5;
+    color: $neutral6;
+    cursor: default;
+
+    &:hover {
+      background-color: $neutral3;
+      color: $neutral6;
+    }
+
+    &:active {
+      color: $neutral6;
+    }
+  }
+
   .kc-rounded-button__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-transform: uppercase;
     width: 100%;
   }
