@@ -1,0 +1,16 @@
+.kc-animation {
+  p.kc-caption {
+    font-size: 15px;
+    line-height: 1.25;
+    font-style: italic;
+    color: $neutral13;
+    opacity: 0.5;
+
+    a:link, a:visited {
+      color: $neutral13;
+      font-weight: 700;
+      text-decoration: underline;
+      opacity: 1;
+    }
+  }
+}
