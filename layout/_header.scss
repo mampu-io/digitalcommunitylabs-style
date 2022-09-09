@@ -13,6 +13,23 @@
       display: flex;
       align-items: center;
 
+      .kc-choose-role {
+        width: auto;
+
+        .kc-dropdown {
+          margin-left: 10px;
+          width: 150px;
+
+          button {
+            height: 32px;
+          }
+
+          .kc-dropdown__items {
+            top: 32px;
+          }
+        }
+      }
+
       &:last-child {
         margin-right: 0;
       }
