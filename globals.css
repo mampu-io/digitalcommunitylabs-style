@@ -777,8 +777,8 @@ input[type="text"], select, textarea, .form-control, .custom-select {
     border-radius: 8px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
     background-color: #FFFFFF;
-    width: 600px;
-    height: 450px;
+    width: 800px;
+    height: 700px;
     padding: 60px;
     display: flex;
     flex-direction: column;
@@ -801,17 +801,15 @@ input[type="text"], select, textarea, .form-control, .custom-select {
         background-color: #F0F0F0; }
     .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--header {
       width: 100%;
-      margin-bottom: 30px;
       display: flex;
-      flex-direction: row;
       justify-content: space-between; }
       .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--header .kc-revision-modal--navigation {
-        display: flex;
-        flex-direction: row; }
+        display: flex; }
         .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--header .kc-revision-modal--navigation button {
           margin-right: 15px; }
     .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content {
       width: 100%;
+      margin: 30px 0;
       padding: 10px;
       overflow-y: auto; }
       .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content::-webkit-scrollbar {
@@ -824,14 +822,10 @@ input[type="text"], select, textarea, .form-control, .custom-select {
         border-radius: 10px;
         box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
         -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
+      .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-dropdown button {
+        height: 32px; }
       .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section {
         width: fit-content; }
-        .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section--foto-dokumen {
-          display: flex;
-          flex-direction: row;
-          margin-bottom: 20px; }
-          .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section--foto-dokumen .kc-image-preview {
-            margin-right: 40px; }
         .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-header {
           margin-bottom: 15px; }
           .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-header .kc-record-item--value {
@@ -840,8 +834,7 @@ input[type="text"], select, textarea, .form-control, .custom-select {
           display: flex;
           flex-direction: column; }
           .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-item .kc-section-item--top {
-            display: flex;
-            flex-direction: row; }
+            display: flex; }
           .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-item .kc-section-item--bottom {
             width: 100%;
             padding: 0 10px;
@@ -850,29 +843,16 @@ input[type="text"], select, textarea, .form-control, .custom-select {
               resize: none; }
             .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-item .kc-section-item--bottom .kc-section-item--action {
               margin-top: 10px;
-              display: flex;
-              flex-direction: row; }
+              display: flex; }
               .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-item .kc-section-item--bottom .kc-section-item--action .kc-section-item--action-item {
                 margin-right: 25px; }
                 .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-item .kc-section-item--bottom .kc-section-item--action .kc-section-item--action-item input[type="radio"] {
                   margin-right: 10px; }
-      .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-revision-modal--action-button {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        padding: 20px 0; }
-        .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-revision-modal--action-button button {
-          margin: 0; }
-
-@media screen and (min-width: 768px) {
-  .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container {
-    width: 900px;
-    height: 675px; } }
-
-@media screen and (min-width: 1200px) {
-  .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container {
-    width: 1200px;
-    height: 900px; } }
+    .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--footer .kc-revision-modal--action-button {
+      display: flex;
+      justify-content: flex-start; }
+      .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--footer .kc-revision-modal--action-button button {
+        margin: 0; }
 
 .kc-detail-wrapper .kc-detail-wrapper__left {
   margin-right: 30px; }
