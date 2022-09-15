@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch-sass": "node-sass -w globals.scss globals.css",
-    "run-server": "http-server -S -C cert.pem -o -p 3030"
+    "run-https": "http-server -S -C cert.pem -o -p 3030"
   },
   "author": "",
   "license": "ISC",
