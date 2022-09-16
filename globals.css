@@ -1738,14 +1738,14 @@ input[type="text"], select, textarea, .form-control, .custom-select {
       .kc-datatable__pagination .kc-datatable__pagination-button button:disabled:hover {
         background-color: transparent; }
 
-.kc-datatable__searchbar {
+.kc-datatable__searchbar form {
   display: flex;
   width: 400px; }
-  .kc-datatable__searchbar .kc-inputfield {
+  .kc-datatable__searchbar form .kc-inputfield {
     margin-right: 20px; }
-    .kc-datatable__searchbar .kc-inputfield .kc-inputfield__box {
+    .kc-datatable__searchbar form .kc-inputfield .kc-inputfield__box {
       height: 40px; }
-  .kc-datatable__searchbar .kc-button {
+  .kc-datatable__searchbar form .kc-button {
     border-radius: 2px; }
 
 .kc-datatable {
@@ -1761,6 +1761,8 @@ input[type="text"], select, textarea, .form-control, .custom-select {
       .kc-datatable .kc-datatable__header .kc-datatable__filter .kc-filter {
         left: auto;
         right: 0; }
+  .kc-datatable .kc-status-card {
+    width: fit-content; }
 
 .kc-form-wrapper {
   max-width: 600px; }
