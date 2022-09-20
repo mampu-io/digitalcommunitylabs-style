@@ -173,6 +173,23 @@ input[type="text"], select, textarea, .form-control, .custom-select {
       color: #4c4c4c; }
       .content-wrapper > .content-header .breadcrumb a {
         color: #4c4c4c; }
+  .content-wrapper > .content-body .kc-content {
+    max-width: 600px;
+    margin-bottom: 30px;
+    padding: 0 30px; }
+    .content-wrapper > .content-body .kc-content .kc-form-wrapper .kc-form-group .kc-roles {
+      display: flex;
+      flex-direction: column;
+      margin-top: 5px; }
+      .content-wrapper > .content-body .kc-content .kc-form-wrapper .kc-form-group .kc-roles .kc-roles__option {
+        margin-bottom: 15px; }
+        .content-wrapper > .content-body .kc-content .kc-form-wrapper .kc-form-group .kc-roles .kc-roles__option span.kc-caption {
+          color: #595959;
+          font-size: 13px;
+          line-height: 8px; }
+    .content-wrapper > .content-body .kc-content .kc-form-wrapper .kc-form-group ul.kc-roles {
+      width: 100%;
+      margin-left: 40px; }
 
 .kc-detail-wrapper {
   width: 100%;
@@ -865,6 +882,11 @@ input[type="text"], select, textarea, .form-control, .custom-select {
       justify-content: flex-start; }
       .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--footer .kc-revision-modal--action-button button {
         margin: 0; }
+
+.kc-setting-deposit .kc-dropdown, .kc-setting-withdraw .kc-dropdown {
+  max-width: 500px; }
+  .kc-setting-deposit .kc-dropdown button, .kc-setting-withdraw .kc-dropdown button {
+    height: 32px; }
 
 .kc-detail-wrapper .kc-detail-wrapper__left {
   margin-right: 30px; }
@@ -1777,7 +1799,8 @@ input[type="text"], select, textarea, .form-control, .custom-select {
         left: auto;
         right: 0; }
   .kc-datatable .kc-status-card {
-    width: fit-content; }
+    width: fit-content;
+    white-space: nowrap; }
 
 .kc-form-wrapper {
   max-width: 600px; }
