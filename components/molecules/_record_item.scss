@@ -6,7 +6,7 @@
   .kc-record-item--content {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
 
     .kc-record-item--key {
@@ -19,8 +19,13 @@
       color: $neutral11;
       width: 250px;
 
-      span {
+      span, a {
         font-weight: 700;
+      }
+
+      a {
+        color: $primary7;
+        text-decoration: underline;
       }
     }
 
@@ -45,6 +50,12 @@
 
     .kc-record-item--rows-value {
       .kc-record-item--value {
+        color: $neutral1;
+      }
+    }
+
+    .kc-record-item--value {
+      a {
         color: $neutral1;
       }
     }

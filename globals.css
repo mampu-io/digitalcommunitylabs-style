@@ -173,6 +173,23 @@ input[type="text"], select, textarea, .form-control, .custom-select {
       color: #4c4c4c; }
       .content-wrapper > .content-header .breadcrumb a {
         color: #4c4c4c; }
+  .content-wrapper > .content-body .kc-content {
+    max-width: 600px;
+    margin-bottom: 30px;
+    padding: 0 30px; }
+    .content-wrapper > .content-body .kc-content .kc-form-wrapper .kc-form-group .kc-roles {
+      display: flex;
+      flex-direction: column;
+      margin-top: 5px; }
+      .content-wrapper > .content-body .kc-content .kc-form-wrapper .kc-form-group .kc-roles .kc-roles__option {
+        margin-bottom: 15px; }
+        .content-wrapper > .content-body .kc-content .kc-form-wrapper .kc-form-group .kc-roles .kc-roles__option span.kc-caption {
+          color: #595959;
+          font-size: 13px;
+          line-height: 8px; }
+    .content-wrapper > .content-body .kc-content .kc-form-wrapper .kc-form-group ul.kc-roles {
+      width: 100%;
+      margin-left: 40px; }
 
 .kc-detail-wrapper {
   width: 100%;
@@ -777,7 +794,7 @@ input[type="text"], select, textarea, .form-control, .custom-select {
     border-radius: 8px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
     background-color: #FFFFFF;
-    width: 800px;
+    width: auto;
     height: 700px;
     padding: 60px;
     display: flex;
@@ -807,10 +824,14 @@ input[type="text"], select, textarea, .form-control, .custom-select {
         display: flex; }
         .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--header .kc-revision-modal--navigation button {
           margin-right: 15px; }
+          .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--header .kc-revision-modal--navigation button .kc-tab-navigation--label {
+            margin-bottom: 10px; }
     .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content {
       width: 100%;
-      margin: 30px 0;
-      padding: 10px;
+      height: 100%;
+      margin: 20px 0;
+      padding-right: 50px;
+      overflow-x: hidden;
       overflow-y: auto; }
       .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content::-webkit-scrollbar {
         width: 6px; }
@@ -836,7 +857,13 @@ input[type="text"], select, textarea, .form-control, .custom-select {
           display: flex;
           flex-direction: column; }
           .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-item .kc-section-item--top {
-            display: flex; }
+            align-items: flex-start;
+            display: flex;
+            padding: 10px; }
+            .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-item .kc-section-item--top .kc-record-item {
+              padding: 0; }
+            .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-item .kc-section-item--top .kc-checkbox-container {
+              padding-top: 3px; }
           .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-item .kc-section-item--bottom {
             width: 100%;
             padding: 0 10px;
@@ -855,6 +882,11 @@ input[type="text"], select, textarea, .form-control, .custom-select {
       justify-content: flex-start; }
       .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--footer .kc-revision-modal--action-button button {
         margin: 0; }
+
+.kc-setting-deposit .kc-dropdown, .kc-setting-withdraw .kc-dropdown {
+  max-width: 500px; }
+  .kc-setting-deposit .kc-dropdown button, .kc-setting-withdraw .kc-dropdown button {
+    height: 32px; }
 
 .kc-detail-wrapper .kc-detail-wrapper__left {
   margin-right: 30px; }
@@ -1596,7 +1628,7 @@ input[type="text"], select, textarea, .form-control, .custom-select {
     text-align: center;
     text-transform: uppercase; }
     .kc-image-preview .kc-image-preview--label span {
-      color: #B52435; }
+      color: #0F77C0; }
 
 .kc-modal-login--wrapper {
   width: 600px;
@@ -1708,7 +1740,7 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   .kc-record-item .kc-record-item--content {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start; }
     .kc-record-item .kc-record-item--content .kc-record-item--key {
       color: #8C8C8C;
@@ -1717,20 +1749,25 @@ input[type="text"], select, textarea, .form-control, .custom-select {
     .kc-record-item .kc-record-item--content .kc-record-item--value {
       color: #1F1F1F;
       width: 250px; }
-      .kc-record-item .kc-record-item--content .kc-record-item--value span {
+      .kc-record-item .kc-record-item--content .kc-record-item--value span, .kc-record-item .kc-record-item--content .kc-record-item--value a {
         font-weight: 700; }
+      .kc-record-item .kc-record-item--content .kc-record-item--value a {
+        color: #0F77C0;
+        text-decoration: underline; }
     .kc-record-item .kc-record-item--content .kc-record-item--rows-value {
       display: flex;
       flex-direction: row; }
       .kc-record-item .kc-record-item--content .kc-record-item--rows-value .kc-record-item--value {
         margin-right: 20px; }
   .kc-record-item.kc-record-item--highlight {
-    background-color: #B52435;
+    background-color: #0F77C0;
     padding: 0 10px;
     margin: 15px 0; }
     .kc-record-item.kc-record-item--highlight .kc-record-item--key {
       color: #F0F0F0; }
     .kc-record-item.kc-record-item--highlight .kc-record-item--rows-value .kc-record-item--value {
+      color: #FFFFFF; }
+    .kc-record-item.kc-record-item--highlight .kc-record-item--value a {
       color: #FFFFFF; }
 
 .modal-dialog .modal-content .modal-body button {
@@ -1911,7 +1948,8 @@ input[type="text"], select, textarea, .form-control, .custom-select {
         left: auto;
         right: 0; }
   .kc-datatable .kc-status-card {
-    width: fit-content; }
+    width: fit-content;
+    white-space: nowrap; }
 
 .kc-form-wrapper {
   max-width: 600px; }

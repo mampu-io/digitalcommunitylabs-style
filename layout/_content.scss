@@ -24,4 +24,37 @@
       }
     }
   }
+
+  > .content-body {
+    .kc-content {
+      max-width: 600px;
+      margin-bottom: 30px;
+      padding: 0 30px;
+
+      .kc-form-wrapper {
+        .kc-form-group {
+          .kc-roles {
+            display: flex;
+            flex-direction: column;
+            margin-top: 5px;
+
+            .kc-roles__option {
+              margin-bottom: 15px;
+
+              span.kc-caption {
+                color: $neutral8;
+                font-size: 13px;
+                line-height: 8px;
+              }
+            }
+          }
+
+          ul.kc-roles {
+            width: 100%;
+            margin-left: 40px;
+          }
+        }
+      }
+    }
+  }
 }
