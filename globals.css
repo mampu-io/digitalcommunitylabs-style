@@ -883,6 +883,19 @@ input[type="text"], select, textarea, .form-control, .custom-select {
       .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--footer .kc-revision-modal--action-button button {
         margin: 0; }
 
+.kc-detail-wrapper.kc-funding-detail-member .kc-detail-wrapper__left {
+  margin-right: 50px; }
+
+.kc-detail-wrapper.kc-funding-detail-member .kc-detail-wrapper__right .kc-detail-content .kc-section {
+  margin: 0; }
+  .kc-detail-wrapper.kc-funding-detail-member .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-form-group {
+    margin: 0;
+    margin-right: 15px; }
+    .kc-detail-wrapper.kc-funding-detail-member .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-form-group .kc-inputfield {
+      width: 100%; }
+      .kc-detail-wrapper.kc-funding-detail-member .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-form-group .kc-inputfield .kc-inputfield__box {
+        height: 40px; }
+
 .kc-setting-deposit .kc-dropdown, .kc-setting-withdraw .kc-dropdown {
   max-width: 500px; }
   .kc-setting-deposit .kc-dropdown button, .kc-setting-withdraw .kc-dropdown button {
