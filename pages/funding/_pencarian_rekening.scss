@@ -1,18 +1,26 @@
 .kc-pencarian-rekening {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   height: 40px;
   margin: auto;
   margin-bottom: 30px;
 
   .kc-pencarian-rekening__searchbar {
     margin-right: 20px;
-    width: 500px;
+    width: 300px;
 
-    .kc-textfield {  
-      .kc-textfield--field {
+    .kc-inputfield {  
+      .kc-inputfield__box {
         height: 40px;
+
+        input {
+          font-size: 15px;
+        }
       }
     }
+  }
+
+  button.kc-button {
+    width: 120px;
   }
 }

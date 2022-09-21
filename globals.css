@@ -905,15 +905,19 @@ input[type="text"], select, textarea, .form-control, .custom-select {
 
 .kc-pencarian-rekening {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   height: 40px;
   margin: auto;
   margin-bottom: 30px; }
   .kc-pencarian-rekening .kc-pencarian-rekening__searchbar {
     margin-right: 20px;
-    width: 500px; }
-    .kc-pencarian-rekening .kc-pencarian-rekening__searchbar .kc-textfield .kc-textfield--field {
+    width: 300px; }
+    .kc-pencarian-rekening .kc-pencarian-rekening__searchbar .kc-inputfield .kc-inputfield__box {
       height: 40px; }
+      .kc-pencarian-rekening .kc-pencarian-rekening__searchbar .kc-inputfield .kc-inputfield__box input {
+        font-size: 15px; }
+  .kc-pencarian-rekening button.kc-button {
+    width: 120px; }
 
 .kc-profile, .kc-change-password {
   max-width: 600px;
