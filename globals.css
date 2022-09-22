@@ -627,82 +627,66 @@ input[type="text"], select, textarea, .form-control, .custom-select {
           line-height: 8px; }
 
 .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container {
-  width: 900px; }
+  width: 1000px; }
   .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content {
-    padding: 30px 10px;
+    padding: 0 10px;
     align-items: flex-start; }
     .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content label {
       font-weight: 400;
       color: #8C8C8C;
       margin: 0; }
     .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__invoice-number {
-      display: flex;
-      flex-direction: column;
       padding-left: 10px;
       margin-bottom: 30px; }
       .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__invoice-number label {
         margin-bottom: 10px; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__invoice-number .kc-invoice-number {
-        display: flex;
-        align-items: center; }
-        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__invoice-number .kc-invoice-number span {
-          margin-right: 10px; }
-    .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content {
-      display: flex;
+      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__invoice-number span {
+        margin-right: 10px; }
+    .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-record-item {
       width: 100%; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-record-item {
+      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-record-item .kc-record-item--content {
+        align-items: flex-start;
         width: 100%; }
-        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-record-item .kc-record-item--content {
-          align-items: flex-start;
+        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-record-item .kc-record-item--content .kc-record-item--key {
+          flex-basis: 40%;
           width: 100%; }
-          .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-record-item .kc-record-item--content .kc-record-item--key {
-            flex-basis: 40%;
-            width: 100%; }
-          .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-record-item .kc-record-item--content .kc-record-item--value {
-            flex-basis: 60%;
-            width: 200px; }
-            .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-record-item .kc-record-item--content .kc-record-item--value span {
-              white-space: normal;
-              word-wrap: break-word; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side {
-        flex-basis: 50%;
-        margin-right: 30px;
-        width: 100%; }
-        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-invoice-status {
-          display: flex;
-          align-items: center;
-          padding: 10px;
-          width: 100%; }
-          .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-invoice-status label {
-            margin-right: 20px; }
-        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side button {
-          margin-top: 20px;
-          margin-left: 10px; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side {
-        flex-basis: 50%;
-        width: 100%; }
-        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-title {
-          display: flex;
-          flex-direction: column;
-          margin-bottom: 20px;
-          padding: 10px;
-          width: 100%; }
-          .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-title label {
-            margin-bottom: 10px; }
-        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-amount .kc-divider {
-          border-bottom: 1px solid #D9D9D9;
-          width: 100%; }
-        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-amount .kc-record-item--value, .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-link .kc-record-item--value {
-          text-align: right; }
-        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-link {
-          margin-top: 30px; }
-          .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-link .kc-payment-link {
-            display: flex;
-            align-items: center;
-            padding: 10px;
-            width: 100%; }
-            .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-link .kc-payment-link .kc-textfield {
-              margin-right: 10px; }
+        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-record-item .kc-record-item--content .kc-record-item--value {
+          flex-basis: 60%;
+          width: 200px; }
+          .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-record-item .kc-record-item--content .kc-record-item--value span {
+            white-space: normal;
+            word-wrap: break-word; }
+    .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-divider, .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-divider {
+      border-bottom: 1px solid #D9D9D9;
+      width: 100%; }
+    .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-invoice-title, .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-title {
+      padding: 10px; }
+      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-invoice-title label, .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-title label {
+        margin-bottom: 10px; }
+    .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side {
+      flex-basis: 50%;
+      margin-right: 30px; }
+      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-invoice-status {
+        padding: 10px; }
+        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-invoice-status label {
+          margin-right: 20px; }
+      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-invoice-remark {
+        padding: 10px 0 0 10px; }
+      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-synchronize-button {
+        margin: 0 0 20px 10px;
+        width: 240px; }
+    .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side {
+      flex-basis: 50%; }
+      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-fee-type, .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-payment-link {
+        padding: 10px; }
+        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-fee-type label, .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-payment-link label {
+          margin-bottom: 10px; }
+      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-amount .kc-net-deposit-amount .kc-record-item--key {
+        flex-basis: 70%; }
+      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-amount .kc-record-item--value {
+        text-align: right; }
+      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-link {
+        margin-top: 30px; }
 
 .kc-add-user-button {
   margin-right: 32px; }
