@@ -420,7 +420,7 @@ input[type="text"], select, textarea, .form-control, .custom-select {
       width: auto; }
       .main-header .navbar-nav .nav-item .kc-choose-role .kc-dropdown {
         margin-left: 10px;
-        width: 150px; }
+        width: 200px; }
         .main-header .navbar-nav .nav-item .kc-choose-role .kc-dropdown button {
           height: 32px; }
         .main-header .navbar-nav .nav-item .kc-choose-role .kc-dropdown .kc-dropdown__items {
@@ -880,10 +880,16 @@ input[type="text"], select, textarea, .form-control, .custom-select {
       .kc-detail-wrapper.kc-funding-detail-member .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-form-group .kc-inputfield .kc-inputfield__box {
         height: 40px; }
 
-.kc-setting-deposit .kc-dropdown, .kc-setting-withdraw .kc-dropdown {
-  max-width: 500px; }
-  .kc-setting-deposit .kc-dropdown button, .kc-setting-withdraw .kc-dropdown button {
-    height: 32px; }
+.content-wrapper .content-body .kc-content.kc-setting-deposit, .content-wrapper .content-body .kc-content.kc-setting-withdraw {
+  max-width: none; }
+  .content-wrapper .content-body .kc-content.kc-setting-deposit .kc-dropdown, .content-wrapper .content-body .kc-content.kc-setting-withdraw .kc-dropdown {
+    max-width: 500px; }
+    .content-wrapper .content-body .kc-content.kc-setting-deposit .kc-dropdown button, .content-wrapper .content-body .kc-content.kc-setting-withdraw .kc-dropdown button {
+      height: 32px; }
+  .content-wrapper .content-body .kc-content.kc-setting-deposit .kc-form-wrapper, .content-wrapper .content-body .kc-content.kc-setting-withdraw .kc-form-wrapper {
+    margin-right: 40px; }
+  .content-wrapper .content-body .kc-content.kc-setting-deposit .kc-setting-simulation, .content-wrapper .content-body .kc-content.kc-setting-withdraw .kc-setting-simulation {
+    max-width: 550px; }
 
 .kc-detail-wrapper .kc-detail-wrapper__left {
   margin-right: 30px; }
@@ -896,6 +902,8 @@ input[type="text"], select, textarea, .form-control, .custom-select {
       font-weight: 400;
       margin: 0;
       margin-right: 20px; }
+  .kc-detail-wrapper .kc-detail-wrapper__left .kc-withdrawal-id {
+    width: fit-content; }
 
 .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section {
   width: 800px; }
