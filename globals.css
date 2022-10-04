@@ -544,6 +544,8 @@ input[type="text"], select, textarea, .form-control, .custom-select {
     font-weight: 700;
     text-transform: uppercase;
     padding: 0.5rem 1rem; }
+  .main-sidebar .sidebar > nav li.nav-item > a.nav-link.false {
+    width: 100%; }
   .main-sidebar .sidebar > nav li.nav-item > a.nav-link {
     margin-bottom: 0; }
     .main-sidebar .sidebar > nav li.nav-item > a.nav-link > p {
@@ -1591,6 +1593,7 @@ input[type="text"], select, textarea, .form-control, .custom-select {
       height: auto;
       max-height: 400px;
       overflow-y: auto;
+      padding: 0 5px;
       font-size: 15px !important; }
 
 .kc-record-item {
