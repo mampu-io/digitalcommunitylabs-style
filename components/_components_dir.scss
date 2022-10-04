@@ -1,21 +1,10 @@
 // Atoms
-@import 'atoms/badge';
-@import 'atoms/button';
-@import 'atoms/checkbox';
-@import 'atoms/dropdown';
-// @import 'atoms/dropdown_field';
-@import 'atoms/input_field';
 @import 'atoms/loading_page';
-@import 'atoms/rounded_button';
 @import 'atoms/status_card';
 @import 'atoms/tab_navigation';
 
 // Molecules
-@import 'molecules/accordion';
 @import 'molecules/animation';
-// @import 'molecules/datatable';
-// @import 'molecules/datatable_serverside';
-@import 'molecules/form_group';
 @import 'molecules/image_preview';
 @import 'molecules/login_container';
 @import 'molecules/modal';
@@ -23,15 +12,9 @@
 @import 'molecules/record_item';
 @import 'molecules/select_role';
 @import 'molecules/sweetalert_custom';
-@import 'molecules/table';
-@import 'molecules/table_filter';
-@import 'molecules/table_pagination';
-@import 'molecules/table_search';
 
 // Organisms
 @import 'organisms/datatable';
-@import 'organisms/form_wrapper';
 
 // Templates
 @import 'templates/login_wrapper';
-
