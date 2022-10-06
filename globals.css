@@ -1291,6 +1291,9 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   width: fit-content;
   white-space: nowrap; }
 
+.kc-datatable .kc-rounded-button.kc-rounded-button--neutral {
+  background-color: transparent; }
+
 .kc-login--wrapper {
   background-color: #CBCBCB;
   height: 100vh;
