@@ -1,9 +1,23 @@
-.kc-setting-deposit, .kc-setting-withdraw {
-  .kc-dropdown {
-    max-width: 500px;
+.content-wrapper {
+  .content-body {
+    .kc-content.kc-setting-deposit, .kc-content.kc-setting-withdraw {
+      max-width: none;
+    
+      .kc-dropdown {
+        max-width: 500px;
+    
+        button {
+          height: 32px;
+        }
+      }
 
-    button {
-      height: 32px;
+      .kc-form-wrapper {
+        margin-right: 40px;
+      }
+    
+      .kc-setting-simulation {
+        max-width: 550px;
+      }
     }
   }
 }

@@ -30,6 +30,10 @@
       }
 
       li.nav-item {
+        > a.nav-link.false {
+          width: 100%;
+        }
+
         > a.nav-link {
           margin-bottom: 0;
 

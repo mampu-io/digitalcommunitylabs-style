@@ -2,11 +2,11 @@
   .kc-modal {
     .kc-modal--backdrop {
       .kc-modal--container {
-        width: 900px;
+        width: 1000px;
     
         .kc-modal--main {      
           .kc-modal--content {
-            padding: 30px 10px;
+            padding: 0 10px;
             align-items: flex-start;
 
             label {
@@ -16,8 +16,6 @@
             }
 
             .kc-invoice-detail__invoice-number {
-              display: flex;
-              flex-direction: column;
               padding-left: 10px;
               margin-bottom: 30px;
 
@@ -25,20 +23,12 @@
                 margin-bottom: 10px;
               }
 
-              .kc-invoice-number {
-                display: flex;
-                align-items: center;
-
-                span {
-                  margin-right: 10px;
-                }
+              span {
+                margin-right: 10px;
               }
             }
       
             .kc-invoice-detail__content {
-              display: flex;
-              width: 100%;
-
               .kc-record-item {
                 width: 100%;
                 
@@ -63,38 +53,48 @@
                 }
               }
 
+              .kc-invoice-detail__left-side, .kc-invoice-detail__right-side {
+                .kc-divider {
+                  border-bottom: 1px solid $neutral5;
+                  width: 100%;
+                }
+
+                .kc-invoice-title {
+                  padding: 10px;
+    
+                  label {
+                    margin-bottom: 10px;
+                  }
+                }
+              }
+
               .kc-invoice-detail__left-side {
                 flex-basis: 50%;
                 margin-right: 30px;
-                width: 100%;
 
                 .kc-invoice-status {
-                  display: flex;
-                  align-items: center;
                   padding: 10px;
-                  width: 100%;
     
                   label {
                     margin-right: 20px;
                   }
                 }
 
-                button {
-                  margin-top: 20px;
-                  margin-left: 10px;
+                .kc-invoice-remark {
+                  padding: 10px 0 0 10px;
+                }
+
+                .kc-synchronize-button {
+                  margin: 0 0 20px 10px;
+                  width: 240px;
                 }
               }
 
               .kc-invoice-detail__right-side {
                 flex-basis: 50%;
-                width: 100%;
 
-                .kc-invoice-title {
-                  display: flex;
-                  flex-direction: column;
-                  margin-bottom: 20px;
+                .kc-fee-type, .kc-payment-link {
                   padding: 10px;
-                  width: 100%;
     
                   label {
                     margin-bottom: 10px;
@@ -102,13 +102,14 @@
                 }
 
                 .kc-invoice-detail__payment-amount {
-                  .kc-divider {
-                    border-bottom: 1px solid $neutral5;
-                    width: 100%;
+                  .kc-net-deposit-amount {
+                    .kc-record-item--key {
+                      flex-basis: 70%;
+                    }
                   }
                 }
 
-                .kc-invoice-detail__payment-amount, .kc-invoice-detail__payment-link {
+                .kc-invoice-detail__payment-amount {
                   .kc-record-item--value {
                     text-align: right;
                   }
@@ -116,17 +117,6 @@
 
                 .kc-invoice-detail__payment-link {
                   margin-top: 30px;
-
-                  .kc-payment-link {
-                    display: flex;
-                    align-items: center;
-                    padding: 10px;
-                    width: 100%;
-                    
-                    .kc-textfield {
-                      margin-right: 10px;
-                    }
-                  }
                 }
               }
             }
