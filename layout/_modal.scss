@@ -25,26 +25,13 @@
       flex-direction: column;
       position: relative;
 
-      .kc-modal--close-button {
+      > .kc-rounded-button {
         position: absolute;
         top: 25px;
         right: 25px;
-        background-color: transparent;
-        border: none;
+        font-size: 20px;
         width: 40px;
         height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        i {
-          font-size: 20px;
-        }
-
-        &:hover {
-          border-radius: 50%;
-          background-color: $neutral4;
-        }
       }
     
       .kc-modal--main {
