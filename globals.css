@@ -471,6 +471,22 @@ input[type="text"], select, textarea, .form-control, .custom-select {
       font-size: 20px;
       width: 40px;
       height: 40px; }
+    .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--close-button {
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      background-color: transparent;
+      border: none;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--close-button i {
+        font-size: 20px; }
+      .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--close-button:hover {
+        border-radius: 50%;
+        background-color: #F0F0F0; }
     .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main {
       display: flex;
       flex-direction: column;
@@ -1303,8 +1319,17 @@ input[type="text"], select, textarea, .form-control, .custom-select {
       align-items: center;
       justify-content: center;
       margin-bottom: 120px; }
-      .kc-login--wrapper .kc-login--container .kc-login--title .kc-rounded-button {
+      .kc-login--wrapper .kc-login--container .kc-login--title .kc-login--back-button {
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        width: 48px;
+        height: 48px;
         margin-right: 30px; }
+      .kc-login--wrapper .kc-login--container .kc-login--title .kc-rounded-button {
+        margin-right: 30px;
+        font-size: 1rem; }
       .kc-login--wrapper .kc-login--container .kc-login--title h1 {
         font-weight: 400;
         text-align: center;

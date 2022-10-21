@@ -33,6 +33,28 @@
         width: 40px;
         height: 40px;
       }
+
+      .kc-modal--close-button {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        background-color: transparent;
+        border: none;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        i {
+          font-size: 20px;
+        }
+
+        &:hover {
+          border-radius: 50%;
+          background-color: $neutral4;
+        }
+      }
     
       .kc-modal--main {
         display: flex;
