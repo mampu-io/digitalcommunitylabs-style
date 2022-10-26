@@ -101,6 +101,12 @@
                   }
                 }
 
+                .kc-payment-link {
+                  button.kc-rounded-button {
+                    min-width: 36px;
+                  }
+                }
+
                 .kc-invoice-detail__payment-amount {
                   .kc-net-deposit-amount {
                     .kc-record-item--key {

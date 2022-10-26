@@ -464,6 +464,13 @@ input[type="text"], select, textarea, .form-control, .custom-select {
     display: flex;
     flex-direction: column;
     position: relative; }
+    .kc-modal .kc-modal--backdrop .kc-modal--container > .kc-rounded-button {
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      font-size: 20px;
+      width: 40px;
+      height: 40px; }
     .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--close-button {
       position: absolute;
       top: 25px;
@@ -683,6 +690,8 @@ input[type="text"], select, textarea, .form-control, .custom-select {
         padding: 10px; }
         .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-fee-type label, .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-payment-link label {
           margin-bottom: 10px; }
+      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-payment-link button.kc-rounded-button {
+        min-width: 36px; }
       .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-amount .kc-net-deposit-amount .kc-record-item--key {
         flex-basis: 70%; }
       .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-amount .kc-record-item--value {
@@ -1318,6 +1327,9 @@ input[type="text"], select, textarea, .form-control, .custom-select {
         width: 48px;
         height: 48px;
         margin-right: 30px; }
+      .kc-login--wrapper .kc-login--container .kc-login--title .kc-rounded-button {
+        margin-right: 30px;
+        font-size: 1rem; }
       .kc-login--wrapper .kc-login--container .kc-login--title h1 {
         font-weight: 400;
         text-align: center;
