@@ -92,3 +92,8 @@ input[type="text"], select, textarea, .form-control, .custom-select{
   border: 1px solid $color_border;
 
 }
+
+::placeholder {
+  color: #d0d0d0 !important;
+  opacity: 1; /* Firefox */
+}
