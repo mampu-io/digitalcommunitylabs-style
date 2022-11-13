@@ -1075,6 +1075,53 @@ input[type="text"], select, textarea, .form-control, .custom-select {
     border: 1px solid #0F77C0;
     color: #FFFFFF; }
 
+.kc-push-notification-preview {
+  background-image: url("./device-dummy.svg");
+  background-size: cover;
+  height: 640px;
+  width: 360px; }
+  .kc-push-notification-preview .kc-notification-box {
+    background-color: #FFFFFF;
+    box-shadow: rgba(24, 39, 75, 0.12) 0px 6px 12px -6px, rgba(24, 39, 75, 0.08) 0px 8px 24px -4px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 24px auto 24px;
+    grid-template-areas: "icon head collapse" ". title title" ". preview preview";
+    grid-template-rows: auto;
+    gap: 8px 12px;
+    margin: 0 auto;
+    padding: 20px 16px;
+    position: relative;
+    top: 100px;
+    width: 320px; }
+    .kc-push-notification-preview .kc-notification-box .kc-notification-icon {
+      grid-area: icon / icon / icon / icon; }
+    .kc-push-notification-preview .kc-notification-box header.kc-notification-head {
+      align-items: center;
+      display: flex;
+      font-size: 13px;
+      grid-area: head / head / head / head; }
+    .kc-push-notification-preview .kc-notification-box .kc-notification-collapse {
+      align-items: center;
+      background-color: #F0F0F0;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      grid-area: collapse / collapse / collapse / collapse; }
+      .kc-push-notification-preview .kc-notification-box .kc-notification-collapse:hover {
+        background-color: #D9D9D9; }
+    .kc-push-notification-preview .kc-notification-box .kc-notification-title {
+      font-size: 15px;
+      grid-area: title / title / title / title; }
+    .kc-push-notification-preview .kc-notification-box .kc-notification-preview {
+      font-size: 14px;
+      grid-area: preview / preview / preview / preview;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden; }
+
 .kc-status-card {
   color: #FFFFFF;
   border-radius: 50px;
