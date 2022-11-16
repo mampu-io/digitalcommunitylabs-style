@@ -48,8 +48,19 @@
 
   .kc-content-notification-preview {
     border: 1px solid $neutral5;
-    height: 640px;
-    width: 360px;
+    height: fit-content;
+    padding: 10px;
+    width: 380px;
+
+    .kc-content-notification-preview__title {
+      margin-bottom: 10px;
+    }
+
+    iframe {
+      border: none;
+      height: 640px;
+      width: 360px;
+    }
   }
 }
 
