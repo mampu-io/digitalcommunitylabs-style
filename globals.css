@@ -946,22 +946,21 @@ select, .form-control, .custom-select {
   .kc-pencarian-rekening button.kc-button {
     width: 120px; }
 
-.kc-profile, .kc-change-password {
-  max-width: 600px;
-  margin-bottom: 30px;
-  padding: 0 30px; }
+.kc-profile .kc-form-wrapper, .kc-change-password .kc-form-wrapper {
+  margin: 20px 0; }
   .kc-profile .kc-form-wrapper .kc-form-group .kc-roles, .kc-change-password .kc-form-wrapper .kc-form-group .kc-roles {
-    display: flex;
-    flex-direction: column;
-    margin-top: 5px; }
+    margin-top: 5px;
+    margin-left: 10px; }
     .kc-profile .kc-form-wrapper .kc-form-group .kc-roles .kc-roles__option, .kc-change-password .kc-form-wrapper .kc-form-group .kc-roles .kc-roles__option {
       margin-bottom: 15px; }
-      .kc-profile .kc-form-wrapper .kc-form-group .kc-roles .kc-roles__option span.kc-caption, .kc-change-password .kc-form-wrapper .kc-form-group .kc-roles .kc-roles__option span.kc-caption {
+      .kc-profile .kc-form-wrapper .kc-form-group .kc-roles .kc-roles__option .kc-checkbox label, .kc-change-password .kc-form-wrapper .kc-form-group .kc-roles .kc-roles__option .kc-checkbox label {
+        max-width: none; }
+      .kc-profile .kc-form-wrapper .kc-form-group .kc-roles .kc-roles__option div.kc-caption, .kc-change-password .kc-form-wrapper .kc-form-group .kc-roles .kc-roles__option div.kc-caption {
         color: #595959;
         font-size: 13px;
-        line-height: 8px; }
+        line-height: 16px;
+        margin-top: 5px; }
   .kc-profile .kc-form-wrapper .kc-form-group ul.kc-roles, .kc-change-password .kc-form-wrapper .kc-form-group ul.kc-roles {
-    width: 100%;
     margin-left: 40px; }
 
 .kc-change-password .kc-form-wrapper .kc-inputfield__subtitle span.kc-overline {
