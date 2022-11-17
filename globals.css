@@ -1166,7 +1166,8 @@ select, .form-control, .custom-select {
     padding: 4px 10px !important;
     font-family: "Lato" !important;
     border-radius: 2px;
-    box-shadow: none; }
+    box-shadow: none;
+    border: 1px solid #d4d4d4; }
 
 .wraaperTagsInput {
   width: 100%; }
