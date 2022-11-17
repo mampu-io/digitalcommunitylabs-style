@@ -697,6 +697,26 @@ select, .form-control, .custom-select {
       .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-link {
         margin-top: 30px; }
 
+/**
+  Styling for list notification page [BACKOFFICE]
+*/
+.kc-list-notifications .kc-datatable .kc-datatable__header, .kc-list-notifications .kc-datatable .kc-datatable__pagination {
+  padding: 16px 0; }
+
+.kc-list-notifications .kc-datatable .kc-table table tbody tr td {
+  font-size: 15px; }
+  .kc-list-notifications .kc-datatable .kc-table table tbody tr td.kc-freeze-column {
+    border-left: none; }
+  .kc-list-notifications .kc-datatable .kc-table table tbody tr td .kc-notification-preview p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: break-spaces; }
+  .kc-list-notifications .kc-datatable .kc-table table tbody tr td .kc-rounded-button__tooltip {
+    right: 36px;
+    top: 0; }
+
 .kc-add-user-button {
   margin-right: 32px; }
 
@@ -1415,11 +1435,14 @@ select, .form-control, .custom-select {
         text-align: center;
         margin: 0; }
 
+/**
+  Styling for notification template [BACKOFFICE]
+  The template is used on create notification page and detail notification page
+*/
 .kc-notification {
   width: 100%;
   max-width: 1300px;
-  margin-bottom: 30px;
-  padding: 0 30px; }
+  margin-bottom: 30px; }
   .kc-notification .kc-form-group.kc-form-group--vertical {
     max-width: 500px; }
   .kc-notification .kc-form-group .kc-inputfield {
@@ -1451,9 +1474,3 @@ select, .form-control, .custom-select {
       border: none;
       height: 640px;
       width: 360px; }
-
-.kc-notification-preview p {
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden; }
