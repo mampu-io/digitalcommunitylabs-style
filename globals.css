@@ -80,7 +80,7 @@ table .datatable-cell {
 table p {
   margin-bottom: 0; }
 
-input[type="text"], select, textarea, .form-control, .custom-select {
+select, .form-control, .custom-select {
   font-size: 13;
   color: #4c4c4c;
   font-family: "Lato" !important;
@@ -741,35 +741,6 @@ input[type="text"], select, textarea, .form-control, .custom-select {
   .kc-datatable .kc-role-indicators .kc-role-indicator span.kc-caption {
     color: #595959; }
 
-.kc-notification {
-  width: 100%;
-  max-width: 1200px;
-  margin-bottom: 30px;
-  padding: 0 30px; }
-  .kc-notification .kc-form-group .kc-inputfield {
-    max-width: none; }
-  .kc-notification .kc-dropdown > button {
-    height: 32px; }
-  .kc-notification .kc-notification-tags {
-    display: flex;
-    flex-wrap: wrap; }
-  .kc-notification .spinner-border {
-    width: 3rem;
-    height: 3rem;
-    border: 0.25em solid #1890FF;
-    border-right-color: transparent; }
-
-.kc-notification-preview p {
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden; }
-
-.kc-notification-iframe-preview {
-  border: 1px solid #D9D9D9;
-  height: 640px;
-  width: 360px; }
-
 .reset-container {
   width: 100vw;
   height: 100vh;
@@ -1075,6 +1046,53 @@ input[type="text"], select, textarea, .form-control, .custom-select {
     border: 1px solid #0F77C0;
     color: #FFFFFF; }
 
+.kc-push-notification-preview {
+  background-image: url("./device-dummy.svg");
+  background-size: cover;
+  height: 640px;
+  width: 360px; }
+  .kc-push-notification-preview .kc-notification-box {
+    background-color: #FFFFFF;
+    box-shadow: rgba(24, 39, 75, 0.12) 0px 6px 12px -6px, rgba(24, 39, 75, 0.08) 0px 8px 24px -4px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 24px auto 24px;
+    grid-template-areas: "icon head collapse" ". title title" ". preview preview";
+    grid-template-rows: auto;
+    gap: 8px 12px;
+    margin: 0 auto;
+    padding: 20px 16px;
+    position: relative;
+    top: 100px;
+    width: 320px; }
+    .kc-push-notification-preview .kc-notification-box .kc-notification-icon {
+      grid-area: icon / icon / icon / icon; }
+    .kc-push-notification-preview .kc-notification-box header.kc-notification-head {
+      align-items: center;
+      display: flex;
+      font-size: 13px;
+      grid-area: head / head / head / head; }
+    .kc-push-notification-preview .kc-notification-box .kc-notification-collapse {
+      align-items: center;
+      background-color: #F0F0F0;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      grid-area: collapse / collapse / collapse / collapse; }
+      .kc-push-notification-preview .kc-notification-box .kc-notification-collapse:hover {
+        background-color: #D9D9D9; }
+    .kc-push-notification-preview .kc-notification-box .kc-notification-title {
+      font-size: 15px;
+      grid-area: title / title / title / title; }
+    .kc-push-notification-preview .kc-notification-box .kc-notification-preview {
+      font-size: 14px;
+      grid-area: preview / preview / preview / preview;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden; }
+
 .kc-status-card {
   color: #FFFFFF;
   border-radius: 50px;
@@ -1212,7 +1230,7 @@ input[type="text"], select, textarea, .form-control, .custom-select {
     text-align: center;
     text-transform: uppercase; }
     .kc-image-preview .kc-image-preview--label span {
-      color: #B52435; }
+      color: #0F77C0; }
 
 .kc-modal-login--wrapper {
   width: 600px;
@@ -1337,7 +1355,7 @@ input[type="text"], select, textarea, .form-control, .custom-select {
       .kc-record-item .kc-record-item--content .kc-record-item--value span, .kc-record-item .kc-record-item--content .kc-record-item--value a {
         font-weight: 700; }
       .kc-record-item .kc-record-item--content .kc-record-item--value a {
-        color: #B52435;
+        color: #0F77C0;
         text-decoration: underline; }
     .kc-record-item .kc-record-item--content .kc-record-item--rows-value {
       display: flex;
@@ -1345,7 +1363,7 @@ input[type="text"], select, textarea, .form-control, .custom-select {
       .kc-record-item .kc-record-item--content .kc-record-item--rows-value .kc-record-item--value {
         margin-right: 20px; }
   .kc-record-item.kc-record-item--highlight {
-    background-color: #B52435;
+    background-color: #0F77C0;
     padding: 0 10px;
     margin: 15px 0; }
     .kc-record-item.kc-record-item--highlight .kc-record-item--key {
@@ -1428,3 +1446,46 @@ input[type="text"], select, textarea, .form-control, .custom-select {
         font-weight: 400;
         text-align: center;
         margin: 0; }
+
+.kc-notification {
+  width: 100%;
+  max-width: 1300px;
+  margin-bottom: 30px;
+  padding: 0 30px; }
+  .kc-notification .kc-form-group.kc-form-group--vertical {
+    max-width: 500px; }
+  .kc-notification .kc-form-group .kc-inputfield {
+    max-width: none; }
+    .kc-notification .kc-form-group .kc-inputfield .kc-inputfield__box {
+      height: 40px; }
+  .kc-notification .kc-form-group .kc-textarea .kc-textarea__subtitle {
+    margin-top: 0; }
+    .kc-notification .kc-form-group .kc-textarea .kc-textarea__subtitle span.kc-overline {
+      font-size: 12px;
+      font-weight: 700; }
+  .kc-notification .kc-dropdown > button {
+    height: 40px; }
+  .kc-notification .spinner-border {
+    width: 3rem;
+    height: 3rem;
+    border: 0.25em solid #1890FF;
+    border-right-color: transparent; }
+  .kc-notification .kc-notification-editor .kc-form-group.kc-form-group--vertical {
+    max-width: 600px; }
+  .kc-notification .kc-content-notification-preview {
+    border: 1px solid #D9D9D9;
+    height: fit-content;
+    padding: 10px;
+    width: 380px; }
+    .kc-notification .kc-content-notification-preview .kc-content-notification-preview__title {
+      margin-bottom: 10px; }
+    .kc-notification .kc-content-notification-preview iframe {
+      border: none;
+      height: 640px;
+      width: 360px; }
+
+.kc-notification-preview p {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden; }

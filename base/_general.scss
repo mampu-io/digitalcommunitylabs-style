@@ -83,7 +83,7 @@ table {
   }
 }
 
-input[type="text"], select, textarea, .form-control, .custom-select{
+select, .form-control, .custom-select{
   font-size: 13;
   color: $color_text;
   font-family: $font_secondary !important;
