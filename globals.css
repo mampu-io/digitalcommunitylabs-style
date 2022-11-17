@@ -717,26 +717,26 @@ select, .form-control, .custom-select {
     right: 36px;
     top: 0; }
 
-.kc-add-user-button {
-  margin-right: 32px; }
+/**
+  Styling for list users page [BACKOFFICE]
+*/
+.kc-list-users .kc-datatable .kc-datatable__header, .kc-list-users .kc-datatable .kc-datatable__pagination {
+  padding: 16px 0; }
 
-.kc-datatable button {
+.kc-list-users .kc-datatable .kc-table table tbody tr td .kc-toggle-active-user button {
   border: none;
   background-color: transparent; }
 
-.kc-datatable .kc-view-detail-button i {
-  font-size: 20px; }
-
-.kc-datatable .kc-toggle-active-user .kc-active-indicator {
+.kc-list-users .kc-datatable .kc-table table tbody tr td .kc-toggle-active-user .kc-active-indicator {
   border-radius: 50%;
   width: 16px;
   height: 16px; }
-  .kc-datatable .kc-toggle-active-user .kc-active-indicator.kc-active-indicator--success {
+  .kc-list-users .kc-datatable .kc-table table tbody tr td .kc-toggle-active-user .kc-active-indicator.kc-active-indicator--success {
     background-color: #52C41A; }
-  .kc-datatable .kc-toggle-active-user .kc-active-indicator.kc-active-indicator--danger {
+  .kc-list-users .kc-datatable .kc-table table tbody tr td .kc-toggle-active-user .kc-active-indicator.kc-active-indicator--danger {
     background-color: #FF4D4F; }
 
-.kc-datatable .kc-role-indicators .kc-role-indicator {
+.kc-list-users .kc-datatable .kc-table table tbody tr td .kc-role-indicators .kc-role-indicator {
   background-color: #D9D9D9;
   border-radius: 50px;
   margin-right: 8px;
@@ -745,8 +745,21 @@ select, .form-control, .custom-select {
   white-space: nowrap;
   width: fit-content;
   margin-bottom: 5px; }
-  .kc-datatable .kc-role-indicators .kc-role-indicator span.kc-caption {
+  .kc-list-users .kc-datatable .kc-table table tbody tr td .kc-role-indicators .kc-role-indicator span.kc-caption {
     color: #595959; }
+
+.kc-list-users .kc-datatable .kc-table table tbody tr td .kc-rounded-button__tooltip {
+  right: 36px;
+  top: 0; }
+
+.kc-list-users .kc-modal .kc-roles .kc-roles__option .kc-checkbox label {
+  max-width: none; }
+
+.kc-list-users .kc-modal .kc-roles .kc-roles__option div.kc-caption {
+  color: #595959;
+  font-size: 13px;
+  line-height: 16px;
+  margin-top: 5px; }
 
 .reset-container {
   width: 100vw;
