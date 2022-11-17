@@ -1,60 +1,33 @@
 .content-wrapper {
-  padding-bottom: 15px;
-  background-color: $neutral1;
+  padding-bottom: 20px;
+  background-color: #F0F2F8;
 
   > .content-header {
-    padding: 30px;
+    padding: 20px;
+    height: 70px;
   
     h1 {
-      font-size: $font_size_title;
-      font-family: $font_primary;
-      color: #333;
-      margin: 0;
-      padding: 0;
+      font-size: 21px;
+      font-weight: 700;
+      color: $neutral10;
     }
   
     .breadcrumb {
-      font-family: $font_primary;
       font-size: $font_size_paragraph;
-      font-weight: normal;
-      color: $color-text;
+      color: $neutral9;
   
       a {
-        color : $color-text
+        color : $neutral9;
       }
     }
   }
 
   > .content-body {
-    .kc-content {
-      max-width: 600px;
-      margin-bottom: 30px;
-      padding: 0 30px;
-
-      .kc-form-wrapper {
-        .kc-form-group {
-          .kc-roles {
-            display: flex;
-            flex-direction: column;
-            margin-top: 5px;
-
-            .kc-roles__option {
-              margin-bottom: 15px;
-
-              span.kc-caption {
-                color: $neutral8;
-                font-size: 13px;
-                line-height: 8px;
-              }
-            }
-          }
-
-          ul.kc-roles {
-            width: 100%;
-            margin-left: 40px;
-          }
-        }
-      }
-    }
+    background-color: $neutral1;
+    border-radius: 2px;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
+    margin: 0 20px;
+    padding: 20px;
+    min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px) - 70px - 20px);
   }
 }

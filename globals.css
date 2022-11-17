@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto";
+  font-family: "Lato";
   box-sizing: border-box; }
 
 h1 {
@@ -83,7 +83,7 @@ table p {
 select, .form-control, .custom-select {
   font-size: 13;
   color: #4c4c4c;
-  font-family: "Lato" !important;
+  font-family: "Roboto" !important;
   border-radius: 2px;
   box-shadow: none;
   border: 1px solid #e0e0e0; }
@@ -161,40 +161,27 @@ select, .form-control, .custom-select {
   font-weight: 700; }
 
 .content-wrapper {
-  padding-bottom: 15px;
-  background-color: #FFFFFF; }
+  padding-bottom: 20px;
+  background-color: #F0F2F8; }
   .content-wrapper > .content-header {
-    padding: 30px; }
+    padding: 20px;
+    height: 70px; }
     .content-wrapper > .content-header h1 {
-      font-size: 22px;
-      font-family: "Roboto";
-      color: #333;
-      margin: 0;
-      padding: 0; }
+      font-size: 21px;
+      font-weight: 700;
+      color: #262626; }
     .content-wrapper > .content-header .breadcrumb {
-      font-family: "Roboto";
       font-size: 15px;
-      font-weight: normal;
-      color: #4c4c4c; }
+      color: #434343; }
       .content-wrapper > .content-header .breadcrumb a {
-        color: #4c4c4c; }
-  .content-wrapper > .content-body .kc-content {
-    max-width: 600px;
-    margin-bottom: 30px;
-    padding: 0 30px; }
-    .content-wrapper > .content-body .kc-content .kc-form-wrapper .kc-form-group .kc-roles {
-      display: flex;
-      flex-direction: column;
-      margin-top: 5px; }
-      .content-wrapper > .content-body .kc-content .kc-form-wrapper .kc-form-group .kc-roles .kc-roles__option {
-        margin-bottom: 15px; }
-        .content-wrapper > .content-body .kc-content .kc-form-wrapper .kc-form-group .kc-roles .kc-roles__option span.kc-caption {
-          color: #595959;
-          font-size: 13px;
-          line-height: 8px; }
-    .content-wrapper > .content-body .kc-content .kc-form-wrapper .kc-form-group ul.kc-roles {
-      width: 100%;
-      margin-left: 40px; }
+        color: #434343; }
+  .content-wrapper > .content-body {
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 20px;
+    padding: 20px;
+    min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px) - 70px - 20px); }
 
 .kc-detail-wrapper {
   width: 100%;
@@ -407,7 +394,7 @@ select, .form-control, .custom-select {
 
 .main-footer {
   font-size: 15px;
-  font-family: "Roboto"; }
+  font-family: "Lato"; }
 
 .main-header {
   display: flex;
@@ -416,7 +403,7 @@ select, .form-control, .custom-select {
   padding: 0.5rem 1rem; }
   .main-header .navbar-nav .nav-item {
     font-size: 15px;
-    font-family: "Roboto";
+    font-family: "Lato";
     color: #ffffff;
     margin-right: 25px;
     display: flex;
@@ -546,7 +533,7 @@ select, .form-control, .custom-select {
   border: none; }
   .main-sidebar .brand-link .brand-text {
     color: #fff;
-    font-family: "Lato";
+    font-family: "Roboto";
     font-size: 18px;
     padding: 0 0.5rem; }
 
@@ -607,7 +594,7 @@ select, .form-control, .custom-select {
 
 .navbar-nav a, .navbar-nav button {
   font-size: 15px;
-  font-family: "Roboto";
+  font-family: "Lato";
   color: #6c757d; }
 
 .kc-modal--content {
@@ -760,7 +747,7 @@ select, .form-control, .custom-select {
   .listRevision-Anggota li {
     list-style: none;
     list-style-position: inside;
-    font-family: "Roboto";
+    font-family: "Lato";
     color: #4c4c4c;
     margin-bottom: 20px !important; }
     .listRevision-Anggota li:last-child {
@@ -770,7 +757,7 @@ select, .form-control, .custom-select {
       font-style: normal; }
     .listRevision-Anggota li input {
       font-size: 15px;
-      font-family: "Roboto";
+      font-family: "Lato";
       color: #4c4c4c; }
     .listRevision-Anggota li.titleListRevision-Anggota {
       font-weight: bold;
@@ -988,7 +975,7 @@ select, .form-control, .custom-select {
         display: block;
         margin-left: 5px;
         color: #999999;
-        font-family: "Roboto";
+        font-family: "Lato";
         font-style: italic; }
     .login-container .login-wrapper .login-box {
       padding: 15px;
@@ -1234,14 +1221,14 @@ select, .form-control, .custom-select {
       width: 100%; }
 
 .modal-kc .moda-dialog {
-  font-family: "Roboto"; }
+  font-family: "Lato"; }
 
 .modal-kc .modal-content {
   border-radius: 0;
   border: none;
   box-shadow: none; }
   .modal-kc .modal-content .modal-header {
-    font-family: "Roboto";
+    font-family: "Lato";
     color: #4c4c4c; }
     .modal-kc .modal-content .modal-header .link {
       color: #4c4c4c !important; }
@@ -1287,7 +1274,7 @@ select, .form-control, .custom-select {
     border-radius: 5px;
     padding: 15px;
     position: relative;
-    font-family: "Roboto"; }
+    font-family: "Lato"; }
     .kc-popup-backdrop .kc-popup-wrapper .kc-popup-close {
       position: absolute;
       top: -10px;
@@ -1366,12 +1353,12 @@ select, .form-control, .custom-select {
     font-size: 2em; }
   .swal2-popup .swal2-title {
     font-size: 22px;
-    font-family: "Roboto" !important;
+    font-family: "Lato" !important;
     font-weight: 700;
     color: #4c4c4c !important; }
   .swal2-popup .swal2-html-container {
     font-size: 15px;
-    font-family: "Roboto" !important; }
+    font-family: "Lato" !important; }
   .swal2-popup .swal2-confirm,
   .swal2-popup .swal2-deny,
   .swal2-popup .swal2-cancel {
