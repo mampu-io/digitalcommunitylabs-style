@@ -16,5 +16,28 @@
     font-family: "Lato" !important;
     border-radius: 2px;
     box-shadow: none;
+    border:  1px solid #d4d4d4;
   }
+}
+
+.wraaperTagsInput{
+  width: 100%;
+}
+
+.errorTagsShow{
+  font-family: "Lato" !important;
+  color: #f00;
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 5px;
+
+  transition: opacity 1s ease-in;
+  opacity: 1;
+  height: auto;
+}
+
+.errorTagsHide{
+  transition: opacity 1s ease-out;
+  opacity: 0;
+  height: 0;
 }
