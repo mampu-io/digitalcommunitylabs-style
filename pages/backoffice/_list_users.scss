@@ -3,61 +3,6 @@
 */
 
 .kc-list-users {
-  .kc-datatable {
-    .kc-datatable__header, .kc-datatable__pagination {
-      padding: 16px 0;
-    }
-
-    .kc-table {
-      table {
-        tbody tr td {
-          .kc-toggle-active-user {
-            button {
-              border: none;
-              background-color: transparent;
-            }
-
-            .kc-active-indicator {
-              border-radius: 50%;
-              width: 16px;
-              height: 16px;
-            
-              &.kc-active-indicator--success {
-                background-color: $functionalSuccess500;
-              }
-            
-              &.kc-active-indicator--danger {
-                background-color: $functionalError500;
-              }
-            }
-          }
-
-          .kc-role-indicators {
-            .kc-role-indicator {
-              background-color: $neutral5;
-              border-radius: 50px;
-              margin-right: 8px;
-              min-width: 72px;
-              padding: 8px;
-              white-space: nowrap;
-              width: fit-content;
-              margin-bottom: 5px;
-          
-              span.kc-caption {
-                color: $neutral8;
-              }
-            }
-          }
-
-          .kc-rounded-button__tooltip {
-            right: 36px;
-            top: 0;
-          }
-        }
-      }
-    }
-  }
-
   .kc-modal {
     .kc-roles .kc-roles__option {
       .kc-checkbox label {

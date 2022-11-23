@@ -272,15 +272,33 @@ select, .form-control, .custom-select {
       content: "\25CF \00A0 \00A0 \00A0"; }
 
 /**
-  Styling for list notification page [BACKOFFICE]
+  General styling for all pages on BACKOFFICE
 */
-.kc-list-notifications .kc-datatable .kc-datatable__header, .kc-list-notifications .kc-datatable .kc-datatable__pagination {
+.kc-list-users .kc-datatable .kc-datatable__header, .kc-list-users .kc-datatable .kc-datatable__pagination, .kc-notification-setting .kc-datatable .kc-datatable__header, .kc-notification-setting .kc-datatable .kc-datatable__pagination, .kc-list-notifications .kc-datatable .kc-datatable__header, .kc-list-notifications .kc-datatable .kc-datatable__pagination {
   padding: 16px 0; }
 
+.kc-list-users .kc-datatable .kc-table table tbody tr td .kc-toggle-active-user button, .kc-notification-setting .kc-datatable .kc-table table tbody tr td .kc-toggle-active-user button {
+  border: none;
+  background-color: transparent; }
+
+.kc-list-users .kc-datatable .kc-table table tbody tr td .kc-toggle-active-user .kc-active-indicator, .kc-notification-setting .kc-datatable .kc-table table tbody tr td .kc-toggle-active-user .kc-active-indicator {
+  border-radius: 50%;
+  width: 16px;
+  height: 16px; }
+  .kc-list-users .kc-datatable .kc-table table tbody tr td .kc-toggle-active-user .kc-active-indicator.kc-active-indicator--success, .kc-notification-setting .kc-datatable .kc-table table tbody tr td .kc-toggle-active-user .kc-active-indicator.kc-active-indicator--success {
+    background-color: #52C41A; }
+  .kc-list-users .kc-datatable .kc-table table tbody tr td .kc-toggle-active-user .kc-active-indicator.kc-active-indicator--danger, .kc-notification-setting .kc-datatable .kc-table table tbody tr td .kc-toggle-active-user .kc-active-indicator.kc-active-indicator--danger {
+    background-color: #FF4D4F; }
+
+.kc-list-users .kc-datatable .kc-table table tbody tr td .kc-rounded-button__tooltip, .kc-notification-setting .kc-datatable .kc-table table tbody tr td .kc-rounded-button__tooltip {
+  right: 36px;
+  top: 0; }
+
+/**
+  Styling for list notification page [BACKOFFICE]
+*/
 .kc-list-notifications .kc-datatable .kc-table table tbody tr td {
   font-size: 15px; }
-  .kc-list-notifications .kc-datatable .kc-table table tbody tr td.kc-freeze-column {
-    border-left: none; }
   .kc-list-notifications .kc-datatable .kc-table table tbody tr td .kc-notification-preview p {
     display: -webkit-box;
     -webkit-line-clamp: 4;
@@ -294,38 +312,6 @@ select, .form-control, .custom-select {
 /**
   Styling for list users page [BACKOFFICE]
 */
-.kc-list-users .kc-datatable .kc-datatable__header, .kc-list-users .kc-datatable .kc-datatable__pagination {
-  padding: 16px 0; }
-
-.kc-list-users .kc-datatable .kc-table table tbody tr td .kc-toggle-active-user button {
-  border: none;
-  background-color: transparent; }
-
-.kc-list-users .kc-datatable .kc-table table tbody tr td .kc-toggle-active-user .kc-active-indicator {
-  border-radius: 50%;
-  width: 16px;
-  height: 16px; }
-  .kc-list-users .kc-datatable .kc-table table tbody tr td .kc-toggle-active-user .kc-active-indicator.kc-active-indicator--success {
-    background-color: #52C41A; }
-  .kc-list-users .kc-datatable .kc-table table tbody tr td .kc-toggle-active-user .kc-active-indicator.kc-active-indicator--danger {
-    background-color: #FF4D4F; }
-
-.kc-list-users .kc-datatable .kc-table table tbody tr td .kc-role-indicators .kc-role-indicator {
-  background-color: #D9D9D9;
-  border-radius: 50px;
-  margin-right: 8px;
-  min-width: 72px;
-  padding: 8px;
-  white-space: nowrap;
-  width: fit-content;
-  margin-bottom: 5px; }
-  .kc-list-users .kc-datatable .kc-table table tbody tr td .kc-role-indicators .kc-role-indicator span.kc-caption {
-    color: #595959; }
-
-.kc-list-users .kc-datatable .kc-table table tbody tr td .kc-rounded-button__tooltip {
-  right: 36px;
-  top: 0; }
-
 .kc-list-users .kc-modal .kc-roles .kc-roles__option .kc-checkbox label {
   max-width: none; }
 
@@ -335,14 +321,20 @@ select, .form-control, .custom-select {
   line-height: 16px;
   margin-top: 5px; }
 
-.reset-container {
-  width: 100vw;
-  height: 100vh;
-  background: #020024;
-  background: linear-gradient(337deg, #020024 0%, #d2d6d4 0%, #eaf2f9 45%);
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+/**
+  Styling for setting notification category page [BACKOFFICE]
+*/
+.kc-notification-setting .kc-datatable .kc-datatable__header {
+  padding: 0; }
+
+.kc-notification-setting .kc-datatable .kc-table table tr th:first-child, .kc-notification-setting .kc-datatable .kc-table table tr th:nth-child(2) {
+  width: 15% !important; }
+
+.kc-notification-setting .kc-datatable .kc-table table tr th:nth-child(3) {
+  width: 60% !important; }
+
+.kc-notification-setting .kc-datatable .kc-table table tr th:last-child {
+  width: 10% !important; }
 
 .listRevision-Anggota {
   margin: 0px !important;

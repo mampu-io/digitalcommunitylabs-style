@@ -1,7 +1,8 @@
 // Styling pages for backoffice
+@import 'backoffice/general';
 @import 'backoffice/list_notifications';
 @import 'backoffice/list_users';
-@import 'backoffice/reset_password';
+@import 'backoffice/notification_setting';
 
 // Styling pages for memberservice
 @import 'memberservice/detail_anggota';

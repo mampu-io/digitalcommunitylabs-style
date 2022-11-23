@@ -4,18 +4,10 @@
 
 .kc-list-notifications {
   .kc-datatable {
-    .kc-datatable__header, .kc-datatable__pagination {
-      padding: 16px 0;
-    }
-
     .kc-table {
       table {
         tbody tr td {
           font-size: 15px;
-
-          &.kc-freeze-column {
-            border-left: none;
-          }
 
           .kc-notification-preview {
             p {
