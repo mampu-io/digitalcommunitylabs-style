@@ -459,55 +459,42 @@ select, .form-control, .custom-select {
   z-index: 999999;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  overflow-y: auto; }
   .kc-modal .kc-modal--backdrop .kc-modal--container {
     border-radius: 8px;
     background-color: #FFFFFF;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
     min-height: 200px;
-    height: auto;
-    width: 672px;
+    height: fit-content;
+    min-width: 672px;
+    width: fit-content;
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
-    position: relative; }
+    position: relative;
+    margin: 1.75rem; }
     .kc-modal .kc-modal--backdrop .kc-modal--container > .kc-rounded-button {
       position: absolute;
       top: 25px;
       right: 25px;
       font-size: 20px;
-      width: 40px;
-      height: 40px; }
-    .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--close-button {
-      position: absolute;
-      top: 25px;
-      right: 25px;
-      background-color: transparent;
-      border: none;
-      width: 40px;
-      height: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--close-button i {
-        font-size: 20px; }
-      .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--close-button:hover {
-        border-radius: 50%;
-        background-color: #F0F0F0; }
+      width: 2.5rem;
+      height: 2.5rem; }
     .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main {
       display: flex;
       flex-direction: column;
-      padding: 25px;
+      padding: 50px 25px;
       height: 100%; }
       .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--title {
         text-align: center;
         width: 100%;
-        margin-bottom: 15px;
-        padding-bottom: 15px;
-        border-bottom: 1px solid #f0f0f0; }
+        margin-bottom: 30px; }
       .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content {
         width: 100%;
         height: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center; }
     .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--action {
