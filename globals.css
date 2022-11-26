@@ -1373,6 +1373,8 @@ select, .form-control, .custom-select {
     border-right-color: transparent; }
   .kc-notification .kc-notification-editor .kc-form-group.kc-form-group--vertical {
     max-width: 600px; }
+  .kc-notification .kc-notification-editor .kc-form-group .ck-editor__editable ol, .kc-notification .kc-notification-editor .kc-form-group .ck-editor__editable ul {
+    padding-inline-start: 40px; }
   .kc-notification .kc-content-notification-preview {
     border: 1px solid #D9D9D9;
     height: fit-content;

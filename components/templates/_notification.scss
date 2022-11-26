@@ -47,6 +47,12 @@
       &.kc-form-group--vertical {
         max-width: 600px;
       }
+
+      .ck-editor__editable {
+        ol, ul {
+          padding-inline-start: 40px;
+        }
+      }
     }
   }
 
