@@ -22,4 +22,20 @@
       }
     }
   }
+
+  .kc-modal {
+    .kc-modal__container {
+      width: 600px;
+
+      .kc-form-group {
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .kc-form-group__label {
+          width: 150px;
+        }
+      }
+    }
+  }
 }

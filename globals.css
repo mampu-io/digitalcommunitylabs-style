@@ -312,14 +312,41 @@ select, .form-control, .custom-select {
 /**
   Styling for list users page [BACKOFFICE]
 */
-.kc-list-users .kc-modal .kc-roles .kc-roles__option .kc-checkbox label {
-  max-width: none; }
+.kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container .kc-modal__content, .kc-list-users .kc-edit-user-profile-modal .kc-modal .kc-modal__container .kc-modal__content {
+  margin: 0 auto; }
+  .kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-roles, .kc-list-users .kc-edit-user-profile-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-roles {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    width: 100%; }
+    .kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-roles .kc-roles__option, .kc-list-users .kc-edit-user-profile-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-roles .kc-roles__option {
+      margin-bottom: 15px; }
+      .kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-roles .kc-roles__option .kc-checkbox label, .kc-list-users .kc-edit-user-profile-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-roles .kc-roles__option .kc-checkbox label {
+        max-width: none; }
+  .kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container .kc-modal__content p.text-notes, .kc-list-users .kc-edit-user-profile-modal .kc-modal .kc-modal__container .kc-modal__content p.text-notes {
+    height: 1rem;
+    margin-bottom: 0; }
 
-.kc-list-users .kc-modal .kc-roles .kc-roles__option div.kc-caption {
-  color: #595959;
-  font-size: 13px;
-  line-height: 16px;
-  margin-top: 5px; }
+.kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container {
+  width: 600px; }
+  .kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container .kc-modal__content {
+    width: 450px; }
+    .kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-form-group__label {
+      width: 120px; }
+    .kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-roles .kc-roles__option div.kc-caption {
+      color: #595959;
+      font-size: 13px;
+      line-height: 16px;
+      margin-top: 5px; }
+
+.kc-list-users .kc-edit-user-profile-modal .kc-modal .kc-modal__container {
+  width: 750px; }
+  .kc-list-users .kc-edit-user-profile-modal .kc-modal .kc-modal__container .kc-modal__content {
+    width: 600px; }
+    .kc-list-users .kc-edit-user-profile-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-form-group__label {
+      width: 200px; }
+    .kc-list-users .kc-edit-user-profile-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-roles .kc-roles__option {
+      margin-bottom: 5px; }
 
 /**
   Styling for setting notification category page [BACKOFFICE]
@@ -335,6 +362,13 @@ select, .form-control, .custom-select {
 
 .kc-notification-setting .kc-datatable .kc-table table tr th:last-child {
   width: 10% !important; }
+
+.kc-notification-setting .kc-modal .kc-modal__container {
+  width: 600px; }
+  .kc-notification-setting .kc-modal .kc-modal__container .kc-form-group:last-child {
+    margin-bottom: 0; }
+  .kc-notification-setting .kc-modal .kc-modal__container .kc-form-group .kc-form-group__label {
+    width: 150px; }
 
 .listRevision-Anggota {
   margin: 0px !important;
@@ -1001,68 +1035,73 @@ select, .form-control, .custom-select {
 .kc-datatable .kc-rounded-button.kc-rounded-button--neutral {
   background-color: transparent; }
 
-.kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container {
+/**
+  Styling for deposit invoice detail template [FUNDING]
+  This template is used on list deposit invoice page and
+  list deposit invoice synchronization page
+*/
+.kc-deposit-invoice-detail .kc-modal .kc-modal__container {
   width: 1000px; }
-  .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content {
-    padding: 0 10px;
-    align-items: flex-start; }
-    .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content label {
+  .kc-deposit-invoice-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
+    align-items: flex-start;
+    padding: 1.5rem 0.75rem 2.5rem; }
+    .kc-deposit-invoice-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content label {
       font-weight: 400;
       color: #8C8C8C;
       margin: 0; }
-    .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__invoice-number {
+    .kc-deposit-invoice-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail__invoice-number {
       padding-left: 10px;
       margin-bottom: 30px; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__invoice-number label {
+      .kc-deposit-invoice-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail__invoice-number label {
         margin-bottom: 10px; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__invoice-number span {
+      .kc-deposit-invoice-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail__invoice-number span {
         margin-right: 10px; }
-    .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-record-item {
+    .kc-deposit-invoice-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail__content .kc-record-item {
       width: 100%; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-record-item .kc-record-item--content {
+      .kc-deposit-invoice-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail__content .kc-record-item .kc-record-item--content {
         align-items: flex-start;
         width: 100%; }
-        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-record-item .kc-record-item--content .kc-record-item--key {
+        .kc-deposit-invoice-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail__content .kc-record-item .kc-record-item--content .kc-record-item--key {
           flex-basis: 40%;
           width: 100%; }
-        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-record-item .kc-record-item--content .kc-record-item--value {
+        .kc-deposit-invoice-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail__content .kc-record-item .kc-record-item--content .kc-record-item--value {
           flex-basis: 60%;
           width: 200px; }
-          .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-record-item .kc-record-item--content .kc-record-item--value span {
+          .kc-deposit-invoice-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail__content .kc-record-item .kc-record-item--content .kc-record-item--value span {
             white-space: normal;
             word-wrap: break-word; }
-    .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-divider, .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-divider {
+    .kc-deposit-invoice-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-divider, .kc-deposit-invoice-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-divider {
       border-bottom: 1px solid #D9D9D9;
       width: 100%; }
-    .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-invoice-title, .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-title {
+    .kc-deposit-invoice-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-invoice-title, .kc-deposit-invoice-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-title {
       padding: 10px; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-invoice-title label, .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-title label {
+      .kc-deposit-invoice-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-invoice-title label, .kc-deposit-invoice-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-title label {
         margin-bottom: 10px; }
-    .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side {
+    .kc-deposit-invoice-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail__content .kc-invoice-detail__left-side {
       flex-basis: 50%;
       margin-right: 30px; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-invoice-status {
+      .kc-deposit-invoice-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-invoice-status {
         padding: 10px; }
-        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-invoice-status label {
+        .kc-deposit-invoice-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-invoice-status label {
           margin-right: 20px; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-invoice-remark {
+      .kc-deposit-invoice-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-invoice-remark {
         padding: 10px 0 0 10px; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-synchronize-button {
+      .kc-deposit-invoice-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-synchronize-button {
         margin: 0 0 20px 10px;
         width: 240px; }
-    .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side {
+    .kc-deposit-invoice-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail__content .kc-invoice-detail__right-side {
       flex-basis: 50%; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-fee-type, .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-payment-link {
+      .kc-deposit-invoice-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-fee-type, .kc-deposit-invoice-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-payment-link {
         padding: 10px; }
-        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-fee-type label, .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-payment-link label {
+        .kc-deposit-invoice-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-fee-type label, .kc-deposit-invoice-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-payment-link label {
           margin-bottom: 10px; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-payment-link button.kc-rounded-button {
+      .kc-deposit-invoice-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-payment-link button.kc-rounded-button {
         min-width: 36px; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-amount .kc-net-deposit-amount .kc-record-item--key {
+      .kc-deposit-invoice-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-amount .kc-net-deposit-amount .kc-record-item--key {
         flex-basis: 70%; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-amount .kc-record-item--value {
+      .kc-deposit-invoice-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-amount .kc-record-item--value {
         text-align: right; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-link {
+      .kc-deposit-invoice-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-link {
         margin-top: 30px; }
 
 .kc-detail-wrapper {
@@ -1274,24 +1313,6 @@ select, .form-control, .custom-select {
           .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section .kc-bank-accounts-list .kc-bank-account-item .kc-bank-account-item--content .kc-record-item {
             padding: 5px 0; }
 
-.kc-modal--content {
-  padding: 60px 30px 0; }
-  .kc-modal--content > .kc-edit-user-modal {
-    width: 450px; }
-    .kc-modal--content > .kc-edit-user-modal .kc-form-group .kc-form-group__label {
-      width: 200px; }
-    .kc-modal--content > .kc-edit-user-modal .kc-form-group .kc-roles {
-      display: flex;
-      flex-direction: column;
-      margin-top: 5px;
-      width: 100%; }
-      .kc-modal--content > .kc-edit-user-modal .kc-form-group .kc-roles .kc-roles__option {
-        margin-bottom: 15px; }
-        .kc-modal--content > .kc-edit-user-modal .kc-form-group .kc-roles .kc-roles__option span.kc-caption {
-          color: #595959;
-          font-size: 13px;
-          line-height: 8px; }
-
 .kc-login--wrapper {
   background: #F2F3F9 url("https://storage.googleapis.com/ksp-dcb-web-assets/dcb_background.png") no-repeat top left;
   height: 100vh;
@@ -1363,21 +1384,3 @@ select, .form-control, .custom-select {
       border: none;
       height: 640px;
       width: 360px; }
-
-.kc-modal--content {
-  padding: 60px 30px 0; }
-  .kc-modal--content > .kc-user-registration-modal {
-    width: 450px; }
-    .kc-modal--content > .kc-user-registration-modal .kc-form-group .kc-form-group__label {
-      width: 120px; }
-    .kc-modal--content > .kc-user-registration-modal .kc-form-group .kc-roles {
-      display: flex;
-      flex-direction: column;
-      margin-top: 5px;
-      width: 100%; }
-      .kc-modal--content > .kc-user-registration-modal .kc-form-group .kc-roles .kc-roles__option {
-        margin-bottom: 15px; }
-        .kc-modal--content > .kc-user-registration-modal .kc-form-group .kc-roles .kc-roles__option span.kc-caption {
-          color: #595959;
-          font-size: 13px;
-          line-height: 8px; }
