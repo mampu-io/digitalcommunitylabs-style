@@ -1,0 +1,46 @@
+.kc-detail-wrapper.kc-funding-detail-deposito {
+  display: block;
+
+  .kc-detail-wrapper__left {
+    margin-right: 50px;
+  }
+
+  .kc-detail-wrapper__right {
+    .kc-detail-content {
+      .kc-section {
+        margin: 0;
+      }
+    }
+  }
+
+  .kc-detail-content {
+    .kc-section {
+      h3.kc-headline6 {
+        margin-bottom: 30px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .kc-datatable {
+    .kc-datatable__header {
+      padding: 0;
+    }
+  }
+
+  .kc-form-group {
+    margin: 0;
+    margin-right: 15px;
+    width: fit-content;
+
+    .kc-form-group__label {
+      width: fit-content;
+    }
+
+    .kc-inputfield {
+      .kc-inputfield__box {
+        height: 40px;
+      }
+    }
+  }
+}
