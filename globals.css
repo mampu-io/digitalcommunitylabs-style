@@ -876,6 +876,26 @@ select, .form-control, .custom-select {
       .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--footer .kc-revision-modal--action-button button {
         margin: 0; }
 
+.kc-detail-wrapper.kc-funding-detail-deposito {
+  display: block; }
+  .kc-detail-wrapper.kc-funding-detail-deposito .kc-detail-wrapper__left {
+    margin-right: 50px; }
+  .kc-detail-wrapper.kc-funding-detail-deposito .kc-detail-wrapper__right .kc-detail-content .kc-section {
+    margin: 0; }
+  .kc-detail-wrapper.kc-funding-detail-deposito .kc-detail-content .kc-section h3.kc-headline6 {
+    margin-bottom: 30px;
+    margin-top: 10px; }
+  .kc-detail-wrapper.kc-funding-detail-deposito .kc-datatable .kc-datatable__header {
+    padding: 0; }
+  .kc-detail-wrapper.kc-funding-detail-deposito .kc-form-group {
+    margin: 0;
+    margin-right: 15px;
+    width: fit-content; }
+    .kc-detail-wrapper.kc-funding-detail-deposito .kc-form-group .kc-form-group__label {
+      width: fit-content; }
+    .kc-detail-wrapper.kc-funding-detail-deposito .kc-form-group .kc-inputfield .kc-inputfield__box {
+      height: 40px; }
+
 .kc-detail-wrapper.kc-funding-detail-member .kc-detail-wrapper__left {
   margin-right: 50px; }
 
@@ -902,20 +922,21 @@ select, .form-control, .custom-select {
 
 .kc-detail-wrapper .kc-detail-wrapper__left {
   margin-right: 30px; }
-  .kc-detail-wrapper .kc-detail-wrapper__left .kc-withdrawal-status {
-    display: flex;
-    align-items: center;
-    padding: 10px; }
-    .kc-detail-wrapper .kc-detail-wrapper__left .kc-withdrawal-status label {
-      color: #8C8C8C;
-      font-weight: 400;
-      margin: 0;
-      margin-right: 20px; }
   .kc-detail-wrapper .kc-detail-wrapper__left .kc-withdrawal-id {
     width: fit-content; }
 
 .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section {
   width: 800px; }
+
+.kc-detail-wrapper .kc-withdrawal-status {
+  display: flex;
+  align-items: center;
+  padding: 10px; }
+  .kc-detail-wrapper .kc-withdrawal-status label {
+    color: #8C8C8C;
+    font-weight: 400;
+    margin: 0;
+    margin-right: 20px; }
 
 .kc-pencarian-rekening {
   display: flex;
