@@ -1,26 +1,47 @@
-.kc-pencarian-rekening {
-  display: flex;
-  justify-content: flex-end;
-  height: 40px;
-  margin: auto;
-  margin-bottom: 30px;
+/**
+  Styling for account search page [FUNDING]
+*/
 
-  .kc-pencarian-rekening__searchbar {
-    margin-right: 20px;
-    width: 300px;
+.kc-account-search {
+  form {
+    height: 40px;
+    margin-bottom: 20px;
 
-    .kc-inputfield {  
-      .kc-inputfield__box {
-        height: 40px;
-
-        input {
-          font-size: 15px;
+    .kc-account-search__searchbar {
+      margin-right: 20px;
+      width: 300px;
+  
+      .kc-inputfield {  
+        .kc-inputfield__box {
+          height: 40px;
+  
+          input {
+            font-size: 15px;
+          }
         }
       }
     }
+
+    button.kc-button {
+      width: 120px;
+    }
   }
 
-  button.kc-button {
-    width: 120px;
+  .kc-datatable {
+    .kc-datatable__header {
+      padding: 0;
+    }
+
+    .kc-table {
+      table {
+        tbody tr td {
+          .kc-rounded-button__tooltip {
+            left: auto;
+            right: 36px;
+            top: 0;
+          }
+        }
+      }
+    }
   }
 }

@@ -542,16 +542,28 @@ select, .form-control, .custom-select {
       .kc-detail-wrapper.kc-funding-detail-member .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-form-group .kc-inputfield .kc-inputfield__box {
         height: 40px; }
 
-.content-wrapper .content-body .kc-content.kc-setting-deposit, .content-wrapper .content-body .kc-content.kc-setting-withdraw {
-  max-width: none; }
-  .content-wrapper .content-body .kc-content.kc-setting-deposit .kc-dropdown, .content-wrapper .content-body .kc-content.kc-setting-withdraw .kc-dropdown {
+/**
+  General styling for all pages on FUNDING
+*/
+.kc-setting-deposit .kc-setting-deposit-form, .kc-setting-deposit .kc-setting-withdraw-form, .kc-setting-withdraw .kc-setting-deposit-form, .kc-setting-withdraw .kc-setting-withdraw-form {
+  margin-bottom: 30px; }
+  .kc-setting-deposit .kc-setting-deposit-form .kc-dropdown, .kc-setting-deposit .kc-setting-withdraw-form .kc-dropdown, .kc-setting-withdraw .kc-setting-deposit-form .kc-dropdown, .kc-setting-withdraw .kc-setting-withdraw-form .kc-dropdown {
     max-width: 500px; }
-    .content-wrapper .content-body .kc-content.kc-setting-deposit .kc-dropdown button, .content-wrapper .content-body .kc-content.kc-setting-withdraw .kc-dropdown button {
+    .kc-setting-deposit .kc-setting-deposit-form .kc-dropdown button, .kc-setting-deposit .kc-setting-withdraw-form .kc-dropdown button, .kc-setting-withdraw .kc-setting-deposit-form .kc-dropdown button, .kc-setting-withdraw .kc-setting-withdraw-form .kc-dropdown button {
       height: 32px; }
-  .content-wrapper .content-body .kc-content.kc-setting-deposit .kc-form-wrapper, .content-wrapper .content-body .kc-content.kc-setting-withdraw .kc-form-wrapper {
+  .kc-setting-deposit .kc-setting-deposit-form .kc-form-wrapper, .kc-setting-deposit .kc-setting-withdraw-form .kc-form-wrapper, .kc-setting-withdraw .kc-setting-deposit-form .kc-form-wrapper, .kc-setting-withdraw .kc-setting-withdraw-form .kc-form-wrapper {
     margin-right: 40px; }
-  .content-wrapper .content-body .kc-content.kc-setting-deposit .kc-setting-simulation, .content-wrapper .content-body .kc-content.kc-setting-withdraw .kc-setting-simulation {
-    max-width: 550px; }
+
+.kc-setting-deposit .kc-setting-simulation, .kc-setting-withdraw .kc-setting-simulation {
+  max-width: 550px; }
+
+.kc-member-list .kc-datatable .kc-datatable__header, .kc-member-list .kc-datatable .kc-datatable__pagination, .kc-deposit-list .kc-datatable .kc-datatable__header, .kc-deposit-list .kc-datatable .kc-datatable__pagination, .kc-deposit-sync-list .kc-datatable .kc-datatable__header, .kc-deposit-sync-list .kc-datatable .kc-datatable__pagination, .kc-transfer-list .kc-datatable .kc-datatable__header, .kc-transfer-list .kc-datatable .kc-datatable__pagination, .kc-transfer-refund-list .kc-datatable .kc-datatable__header, .kc-transfer-refund-list .kc-datatable .kc-datatable__pagination {
+  padding: 16px 0; }
+
+.kc-member-list .kc-datatable .kc-table table tbody tr td .kc-rounded-button__tooltip, .kc-deposit-list .kc-datatable .kc-table table tbody tr td .kc-rounded-button__tooltip, .kc-deposit-sync-list .kc-datatable .kc-table table tbody tr td .kc-rounded-button__tooltip, .kc-transfer-list .kc-datatable .kc-table table tbody tr td .kc-rounded-button__tooltip, .kc-transfer-refund-list .kc-datatable .kc-table table tbody tr td .kc-rounded-button__tooltip {
+  left: auto;
+  right: 36px;
+  top: 0; }
 
 .kc-detail-wrapper .kc-detail-wrapper__left {
   margin-right: 30px; }
@@ -571,21 +583,29 @@ select, .form-control, .custom-select {
     margin: 0;
     margin-right: 20px; }
 
-.kc-pencarian-rekening {
-  display: flex;
-  justify-content: flex-end;
+/**
+  Styling for account search page [FUNDING]
+*/
+.kc-account-search form {
   height: 40px;
-  margin: auto;
-  margin-bottom: 30px; }
-  .kc-pencarian-rekening .kc-pencarian-rekening__searchbar {
+  margin-bottom: 20px; }
+  .kc-account-search form .kc-account-search__searchbar {
     margin-right: 20px;
     width: 300px; }
-    .kc-pencarian-rekening .kc-pencarian-rekening__searchbar .kc-inputfield .kc-inputfield__box {
+    .kc-account-search form .kc-account-search__searchbar .kc-inputfield .kc-inputfield__box {
       height: 40px; }
-      .kc-pencarian-rekening .kc-pencarian-rekening__searchbar .kc-inputfield .kc-inputfield__box input {
+      .kc-account-search form .kc-account-search__searchbar .kc-inputfield .kc-inputfield__box input {
         font-size: 15px; }
-  .kc-pencarian-rekening button.kc-button {
+  .kc-account-search form button.kc-button {
     width: 120px; }
+
+.kc-account-search .kc-datatable .kc-datatable__header {
+  padding: 0; }
+
+.kc-account-search .kc-datatable .kc-table table tbody tr td .kc-rounded-button__tooltip {
+  left: auto;
+  right: 36px;
+  top: 0; }
 
 .kc-profile .kc-form-wrapper, .kc-change-password .kc-form-wrapper {
   margin: 20px 0; }

@@ -1,22 +1,44 @@
-.content-wrapper {
-  .content-body {
-    .kc-content.kc-setting-deposit, .kc-content.kc-setting-withdraw {
-      max-width: none;
-    
-      .kc-dropdown {
-        max-width: 500px;
-    
-        button {
-          height: 32px;
-        }
-      }
+/**
+  General styling for all pages on FUNDING
+*/
 
-      .kc-form-wrapper {
-        margin-right: 40px;
+.kc-setting-deposit, .kc-setting-withdraw {
+  .kc-setting-deposit-form, .kc-setting-withdraw-form {
+    margin-bottom: 30px;
+
+    .kc-dropdown {
+      max-width: 500px;
+  
+      button {
+        height: 32px;
       }
-    
-      .kc-setting-simulation {
-        max-width: 550px;
+    }
+
+    .kc-form-wrapper {
+      margin-right: 40px;
+    }
+  }
+
+  .kc-setting-simulation {
+    max-width: 550px;
+  }
+}
+
+.kc-member-list, .kc-deposit-list, .kc-deposit-sync-list, .kc-transfer-list, .kc-transfer-refund-list {
+  .kc-datatable {
+    .kc-datatable__header, .kc-datatable__pagination {
+      padding: 16px 0;
+    }
+
+    .kc-table {
+      table {
+        tbody tr td {
+          .kc-rounded-button__tooltip {
+            left: auto;
+            right: 36px;
+            top: 0;
+          }
+        }
       }
     }
   }
