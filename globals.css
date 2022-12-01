@@ -545,18 +545,6 @@ select, .form-control, .custom-select {
 /**
   General styling for all pages on FUNDING
 */
-.kc-setting-deposit .kc-setting-deposit-form, .kc-setting-deposit .kc-setting-withdraw-form, .kc-setting-withdraw .kc-setting-deposit-form, .kc-setting-withdraw .kc-setting-withdraw-form {
-  margin-bottom: 30px; }
-  .kc-setting-deposit .kc-setting-deposit-form .kc-dropdown, .kc-setting-deposit .kc-setting-withdraw-form .kc-dropdown, .kc-setting-withdraw .kc-setting-deposit-form .kc-dropdown, .kc-setting-withdraw .kc-setting-withdraw-form .kc-dropdown {
-    max-width: 500px; }
-    .kc-setting-deposit .kc-setting-deposit-form .kc-dropdown button, .kc-setting-deposit .kc-setting-withdraw-form .kc-dropdown button, .kc-setting-withdraw .kc-setting-deposit-form .kc-dropdown button, .kc-setting-withdraw .kc-setting-withdraw-form .kc-dropdown button {
-      height: 32px; }
-  .kc-setting-deposit .kc-setting-deposit-form .kc-form-wrapper, .kc-setting-deposit .kc-setting-withdraw-form .kc-form-wrapper, .kc-setting-withdraw .kc-setting-deposit-form .kc-form-wrapper, .kc-setting-withdraw .kc-setting-withdraw-form .kc-form-wrapper {
-    margin-right: 40px; }
-
-.kc-setting-deposit .kc-setting-simulation, .kc-setting-withdraw .kc-setting-simulation {
-  max-width: 550px; }
-
 .kc-member-list .kc-datatable .kc-datatable__header, .kc-member-list .kc-datatable .kc-datatable__pagination, .kc-deposit-list .kc-datatable .kc-datatable__header, .kc-deposit-list .kc-datatable .kc-datatable__pagination, .kc-deposit-sync-list .kc-datatable .kc-datatable__header, .kc-deposit-sync-list .kc-datatable .kc-datatable__pagination, .kc-transfer-list .kc-datatable .kc-datatable__header, .kc-transfer-list .kc-datatable .kc-datatable__pagination, .kc-transfer-refund-list .kc-datatable .kc-datatable__header, .kc-transfer-refund-list .kc-datatable .kc-datatable__pagination {
   padding: 16px 0; }
 
@@ -606,6 +594,42 @@ select, .form-control, .custom-select {
   left: auto;
   right: 36px;
   top: 0; }
+
+/**
+  Styling for setting deposit page and setting withdraw page [FUNDING]
+*/
+.kc-setting-deposit, .kc-setting-withdraw {
+  margin: 20px 0; }
+  .kc-setting-deposit .kc-setting-simulation, .kc-setting-withdraw .kc-setting-simulation {
+    background-color: #F5F5F5;
+    color: #8C8C8C;
+    height: fit-content;
+    margin-bottom: 30px;
+    margin-right: 40px;
+    max-width: 500px;
+    padding: 32px; }
+    .kc-setting-deposit .kc-setting-simulation hr.kc-border-line, .kc-setting-withdraw .kc-setting-simulation hr.kc-border-line {
+      border-top: 1px solid #8C8C8C;
+      margin-bottom: 1.5rem;
+      margin-top: 1.5rem; }
+    .kc-setting-deposit .kc-setting-simulation label, .kc-setting-withdraw .kc-setting-simulation label {
+      font-weight: 400;
+      margin: 0; }
+    .kc-setting-deposit .kc-setting-simulation span, .kc-setting-withdraw .kc-setting-simulation span {
+      font-weight: 700; }
+    .kc-setting-deposit .kc-setting-simulation p.text-danger, .kc-setting-withdraw .kc-setting-simulation p.text-danger {
+      margin-bottom: 0; }
+  .kc-setting-deposit .kc-setting-deposit-form, .kc-setting-deposit .kc-setting-withdraw-form, .kc-setting-withdraw .kc-setting-deposit-form, .kc-setting-withdraw .kc-setting-withdraw-form {
+    max-width: 500px; }
+    .kc-setting-deposit .kc-setting-deposit-form .kc-radio-button, .kc-setting-deposit .kc-setting-withdraw-form .kc-radio-button, .kc-setting-withdraw .kc-setting-deposit-form .kc-radio-button, .kc-setting-withdraw .kc-setting-withdraw-form .kc-radio-button {
+      margin-bottom: 15px; }
+      .kc-setting-deposit .kc-setting-deposit-form .kc-radio-button input[type="radio"], .kc-setting-deposit .kc-setting-withdraw-form .kc-radio-button input[type="radio"], .kc-setting-withdraw .kc-setting-deposit-form .kc-radio-button input[type="radio"], .kc-setting-withdraw .kc-setting-withdraw-form .kc-radio-button input[type="radio"] {
+        margin-top: 4px; }
+      .kc-setting-deposit .kc-setting-deposit-form .kc-radio-button .kc-radio-button__label, .kc-setting-deposit .kc-setting-withdraw-form .kc-radio-button .kc-radio-button__label, .kc-setting-withdraw .kc-setting-deposit-form .kc-radio-button .kc-radio-button__label, .kc-setting-withdraw .kc-setting-withdraw-form .kc-radio-button .kc-radio-button__label {
+        font-size: 16px;
+        font-weight: 400; }
+      .kc-setting-deposit .kc-setting-deposit-form .kc-radio-button:last-child, .kc-setting-deposit .kc-setting-withdraw-form .kc-radio-button:last-child, .kc-setting-withdraw .kc-setting-deposit-form .kc-radio-button:last-child, .kc-setting-withdraw .kc-setting-withdraw-form .kc-radio-button:last-child {
+        margin-bottom: 0; }
 
 .kc-profile .kc-form-wrapper, .kc-change-password .kc-form-wrapper {
   margin: 20px 0; }

@@ -1,0 +1,57 @@
+/**
+  Styling for setting deposit page and setting withdraw page [FUNDING]
+*/
+
+.kc-setting-deposit, .kc-setting-withdraw {
+  margin: 20px 0;
+
+  .kc-setting-simulation {
+    background-color: $neutral3;
+    color: $neutral7;
+    height: fit-content;
+    margin-bottom: 30px;
+    margin-right: 40px;
+    max-width: 500px;
+    padding: 32px;
+
+    hr.kc-border-line {
+      border-top: 1px solid $neutral7;
+      margin-bottom: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    label {
+      font-weight: 400;
+      margin: 0;
+    }
+
+    span {
+      font-weight: 700;
+    }
+
+    p.text-danger {
+      margin-bottom: 0;
+    }
+  }
+
+  .kc-setting-deposit-form, .kc-setting-withdraw-form {
+    max-width: 500px;
+
+    .kc-radio-button {
+      margin-bottom: 15px;
+
+      input[type="radio"] {
+        margin-top: 4px;
+      }
+
+      .kc-radio-button__label {
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
