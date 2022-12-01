@@ -545,10 +545,13 @@ select, .form-control, .custom-select {
 /**
   General styling for all pages on FUNDING
 */
-.kc-member-list .kc-datatable .kc-datatable__header, .kc-member-list .kc-datatable .kc-datatable__pagination, .kc-deposit-list .kc-datatable .kc-datatable__header, .kc-deposit-list .kc-datatable .kc-datatable__pagination, .kc-deposit-sync-list .kc-datatable .kc-datatable__header, .kc-deposit-sync-list .kc-datatable .kc-datatable__pagination, .kc-transfer-list .kc-datatable .kc-datatable__header, .kc-transfer-list .kc-datatable .kc-datatable__pagination, .kc-transfer-refund-list .kc-datatable .kc-datatable__header, .kc-transfer-refund-list .kc-datatable .kc-datatable__pagination {
+.kc-member-list .kc-datatable .kc-datatable__header, .kc-member-list .kc-datatable .kc-datatable__pagination, .kc-deposit-list .kc-datatable .kc-datatable__header, .kc-deposit-list .kc-datatable .kc-datatable__pagination, .kc-deposit-sync-list .kc-datatable .kc-datatable__header, .kc-deposit-sync-list .kc-datatable .kc-datatable__pagination, .kc-transfer-list .kc-datatable .kc-datatable__header, .kc-transfer-list .kc-datatable .kc-datatable__pagination,
+.kc-transfer-refund-list .kc-datatable .kc-datatable__header,
+.kc-transfer-refund-list .kc-datatable .kc-datatable__pagination, .kc-term-deposit-list .kc-datatable .kc-datatable__header, .kc-term-deposit-list .kc-datatable .kc-datatable__pagination {
   padding: 16px 0; }
 
-.kc-member-list .kc-datatable .kc-table table tbody tr td .kc-rounded-button__tooltip, .kc-deposit-list .kc-datatable .kc-table table tbody tr td .kc-rounded-button__tooltip, .kc-deposit-sync-list .kc-datatable .kc-table table tbody tr td .kc-rounded-button__tooltip, .kc-transfer-list .kc-datatable .kc-table table tbody tr td .kc-rounded-button__tooltip, .kc-transfer-refund-list .kc-datatable .kc-table table tbody tr td .kc-rounded-button__tooltip {
+.kc-member-list .kc-datatable .kc-table table tbody tr td .kc-rounded-button__tooltip, .kc-deposit-list .kc-datatable .kc-table table tbody tr td .kc-rounded-button__tooltip, .kc-deposit-sync-list .kc-datatable .kc-table table tbody tr td .kc-rounded-button__tooltip, .kc-transfer-list .kc-datatable .kc-table table tbody tr td .kc-rounded-button__tooltip,
+.kc-transfer-refund-list .kc-datatable .kc-table table tbody tr td .kc-rounded-button__tooltip, .kc-term-deposit-list .kc-datatable .kc-table table tbody tr td .kc-rounded-button__tooltip {
   left: auto;
   right: 36px;
   top: 0; }
