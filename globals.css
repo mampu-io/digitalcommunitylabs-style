@@ -1131,9 +1131,7 @@ select, .form-control, .custom-select {
     .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail .kc-invoice-detail__left {
       padding-right: 20px; }
       .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail .kc-invoice-detail__left section.kc-transaction-id .kc-record-table .kc-record-item-new {
-        margin-bottom: 10px; }
-        .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail .kc-invoice-detail__left section.kc-transaction-id .kc-record-table .kc-record-item-new label {
-          margin-bottom: 5px; }
+        margin-bottom: 30px; }
       .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail .kc-invoice-detail__left section.kc-invoice-status label, .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail .kc-invoice-detail__left section.kc-invoice-status .kc-record-item-new__value {
         min-width: auto; }
       .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail .kc-invoice-detail__left section.kc-invoice-remark .kc-record-item-new .kc-record-item-new__value span {
