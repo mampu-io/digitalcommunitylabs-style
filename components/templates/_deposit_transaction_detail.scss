@@ -1,10 +1,10 @@
 /**
-  Styling for deposit invoice detail template [FUNDING]
-  This template is used on list deposit invoice page and
-  list deposit invoice synchronization page
+  Styling for deposit transaction detail template [FUNDING]
+  This template is used on list deposit transaction page and
+  list deposit transaction synchronization page
 */
 
-.kc-deposit-invoice-detail {
+.kc-deposit-transaction-detail {
   .kc-modal {
     .kc-modal__container {
       width: 1000px;
@@ -140,7 +140,7 @@
 }
 
 @media screen and (max-width: 1080px) {
-  .kc-deposit-invoice-detail {
+  .kc-deposit-transaction-detail {
     .kc-modal {
       .kc-modal__container {
         width: fit-content;
@@ -150,12 +150,12 @@
 }
 
 @media screen and (max-width: 991px) {
-  .kc-deposit-invoice-detail {
+  .kc-deposit-transaction-detail {
     .kc-modal {
       .kc-modal__container {
         .kc-modal__main {
           .kc-modal__content {
-            .kc-invoice-detail__content {
+            .kc-invoice-detail {
               max-width: 480px;
             }
           }
