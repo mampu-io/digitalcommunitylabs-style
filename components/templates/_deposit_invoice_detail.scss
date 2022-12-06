@@ -11,124 +11,152 @@
   
       .kc-modal__main {      
         .kc-modal__content {
-          align-items: flex-start;
-          padding: 1.5rem 0.75rem 2.5rem;
+          padding: 1.5rem 1.75rem 2.75rem 1.25rem;
 
-          label {
-            font-weight: 400;
-            color: $neutral7;
-            margin: 0;
+          .kc-headline6 {
+            font-size: 20px;
           }
 
-          .kc-invoice-detail__invoice-number {
-            padding-left: 10px;
-            margin-bottom: 30px;
+          .kc-rounded-button {
+            margin-left: 5px;
+            min-width: 36px;
+          }
 
-            label {
-              margin-bottom: 10px;
+          .kc-record-item-new {
+            > label {
+              font-weight: 700;
+            }
+          }
+
+          .kc-record-table {
+            width: 100%;
+
+            .kc-record-table__label {
+              span {
+                font-weight: 700;
+              }
             }
 
-            span {
-              margin-right: 10px;
+            .kc-record-table__value {
+              span {
+                word-wrap: break-word;
+                word-break: break-word;
+              }
+            }
+          }
+
+          section {
+            &.kc-transaction-id,
+            &.kc-invoice-status,
+            &.kc-invoice-remark,
+            &.kc-invoice-amount {
+              margin-bottom: 30px;
             }
           }
     
-          .kc-invoice-detail__content {
-            .kc-record-item {
-              width: 100%;
-              
-              .kc-record-item--content {
-                align-items: flex-start;
-                width: 100%;
+          .kc-invoice-detail {
+            .kc-invoice-detail__left {
+              padding-right: 20px;
 
-                .kc-record-item--key {
-                  flex-basis: 40%;
-                  width: 100%;
-                }
-  
-                .kc-record-item--value {
-                  flex-basis: 60%;
-                  width: 200px;
-                  
-                  span {
-                    white-space: normal;
-                    word-wrap: break-word;
-                  }
-                }
-              }
-            }
+              section.kc-transaction-id {
+                .kc-record-table {
+                  .kc-record-item-new {
+                    margin-bottom: 10px;
 
-            .kc-invoice-detail__left-side, .kc-invoice-detail__right-side {
-              .kc-divider {
-                border-bottom: 1px solid $neutral5;
-                width: 100%;
-              }
-
-              .kc-invoice-title {
-                padding: 10px;
-  
-                label {
-                  margin-bottom: 10px;
-                }
-              }
-            }
-
-            .kc-invoice-detail__left-side {
-              flex-basis: 50%;
-              margin-right: 30px;
-
-              .kc-invoice-status {
-                padding: 10px;
-  
-                label {
-                  margin-right: 20px;
-                }
-              }
-
-              .kc-invoice-remark {
-                padding: 10px 0 0 10px;
-              }
-
-              .kc-synchronize-button {
-                margin: 0 0 20px 10px;
-                width: 240px;
-              }
-            }
-
-            .kc-invoice-detail__right-side {
-              flex-basis: 50%;
-
-              .kc-fee-type, .kc-payment-link {
-                padding: 10px;
-  
-                label {
-                  margin-bottom: 10px;
-                }
-              }
-
-              .kc-payment-link {
-                button.kc-rounded-button {
-                  min-width: 36px;
-                }
-              }
-
-              .kc-invoice-detail__payment-amount {
-                .kc-net-deposit-amount {
-                  .kc-record-item--key {
-                    flex-basis: 70%;
+                    label {
+                      margin-bottom: 5px;
+                    }
                   }
                 }
               }
 
-              .kc-invoice-detail__payment-amount {
-                .kc-record-item--value {
-                  text-align: right;
+              section.kc-invoice-status {
+                label, .kc-record-item-new__value {
+                  min-width: auto;
                 }
               }
 
-              .kc-invoice-detail__payment-link {
-                margin-top: 30px;
+              section.kc-invoice-remark {
+                .kc-record-item-new {
+                  .kc-record-item-new__value {
+                    span {
+                      color: $functionalError500;
+                    }
+                  }
+                }
+
+                .kc-synchronize-button {
+                  width: 240px;
+                }
               }
+            }
+
+            .kc-invoice-detail__right {
+              section.kc-customer-info {
+                margin-bottom: 20px;
+              }
+
+              section.kc-invoice-amount {
+                table.kc-record-table {
+                  tr:nth-child(3) {
+                    td {
+                      border-bottom: 1px solid $neutral5;
+                    }
+
+                    td.kc-record-table__label {
+                      padding: 10px 20px 20px 0;
+                    }
+                  }
+
+                  tr:last-child {
+                    td.kc-record-table__label {
+                      padding: 20px 20px 10px 0;
+                    }
+                  }
+
+                  td.kc-record-table__value {
+                    text-align: right;
+                  }
+                }
+              }
+
+              section.kc-payment-link {
+                .kc-record-item-new {
+                  .kc-record-item-new__value {
+                    min-width: 450px;
+                  }
+                }
+
+                .kc-expired-at {
+                  margin-top: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .kc-deposit-invoice-detail {
+    .kc-modal {
+      .kc-modal__container {
+        width: fit-content;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .kc-deposit-invoice-detail {
+    .kc-modal {
+      .kc-modal__container {
+        .kc-modal__main {
+          .kc-modal__content {
+            .kc-invoice-detail__content {
+              max-width: 480px;
             }
           }
         }
