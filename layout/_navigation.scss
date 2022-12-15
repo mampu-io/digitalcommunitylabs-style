@@ -5,7 +5,7 @@
     border: none;
     .brand-text {
       color: #fff;
-      font-family: $font_secondary;
+      font-family: $font_primary;
       font-size: $font_size_subtitle;
       padding: 0 0.5rem;
     }
@@ -17,19 +17,41 @@
     padding: 0px;
 
     > nav {
-      li.nav-header, li.nav-item a.nav-link p, li.nav-item a.nav-link i {
+      li.nav-header, li.nav-item a.nav-link p{
         color: $neutral13;
-        font-size: 15px;
+        font-size: 13px;
         line-height: 30px;
+        font-family: $font_secondary;
       }
 
       li.nav-header {
         font-weight: 700;
-        text-transform: uppercase;
+        text-transform: capitalize;
         padding: 0.5rem 1rem;
+        font-size: 14px !important;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+        line-height: 1;
+
+        i{
+          width: 17px;
+          margin-right: 3px;
+        }
       }
 
       li.nav-item {
+        .nav-treeview{
+          background: $neutral5;
+          .nav-item{
+            a.nav-link{
+              padding-left: 30px !important;
+            }
+          }
+        }
+
+
         > a.nav-link.false {
           width: 100%;
         }
@@ -42,10 +64,6 @@
 
             > i {
               line-height: 24px;
-            }
-
-            &:hover {
-              font-weight: 700;
             }
           }
   
@@ -71,20 +89,44 @@
         }
 
         &.menu-open {
-          a.nav-link {
-            i.right {
-              -webkit-transform: rotate(-180deg);
-              transform: rotate(-180deg);
+          &.nav-item{
+            background-color: $neutral6;
+          }
+
+          &.active{
+            > a.nav-link{
+              box-shadow: none;
+              border-radius: 0;
+              background: $color_primary;
+              width: 100%;
+    
+              > p, > i {
+                color: $neutral1;
+                font-weight: 700;
+              }
+  
+              &:hover {
+                color: $neutral1;
+              }
+            } 
+            
+            .nav-treeview{
+              .nav-item{
+                a.nav-link{
+                  &.active{
+                    > p, > i {
+                      color: $neutral13;
+                      font-weight: normal;
+                    }
+                    
+                    background-color: darken($neutral5, 7%);
+                  }
+                }
+              }
             }
           }
 
           li.nav-item a.nav-link {
-            padding: 0.5rem 1.75rem;
-
-            > p::before {
-              content: "\25CF \00A0 \00A0 \00A0";
-            }
-
             &.active {
               color: #fff;
               box-shadow: none;
@@ -117,3 +159,4 @@
     color: $font_color;
   }
 }
+

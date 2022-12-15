@@ -26,6 +26,7 @@
   }
 
   > .content-body {
+    padding: 15px 30px;
     .kc-content {
       max-width: 600px;
       margin-bottom: 30px;
@@ -55,6 +56,58 @@
           }
         }
       }
+    }
+  }
+}
+
+
+
+//PRODUCT DEPOSIT
+
+.product-deposit-wrapper{
+  width: 100%;
+  display: flex; 
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  .product-deposit-item{
+    display: flex; 
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 35%;
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom : 15px;
+
+    img{
+      width: 100px;
+      height: auto;
+      margin-right: 10px;
+    }
+
+    font-family: $font_primary;
+    h2{
+      font-weight: 700;
+      line-height: 1;
+      margin: 0; padding: 0;
+      margin-bottom: 10px;
+    }
+
+    p{
+      line-height: 1.5;
+      font-size: $font_size_paragraph;
+    }
+
+    .kuota {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      color: #333;
+      margin-bottom: 15px;
     }
   }
 }
