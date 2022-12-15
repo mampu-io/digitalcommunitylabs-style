@@ -1,0 +1,206 @@
+.kc-term-deposit-product {
+  .row {
+    .col-xxl-6 {
+      position: relative;
+      width: 100%;
+      padding-left: 7.5px;
+      padding-right: 7.5px;
+    }
+  }
+
+  section.kc-term-deposit-product__overview,
+  section.kc-term-deposit-product__interest-config {
+    background-color: $neutral3;
+    padding: 16px;
+    height: 100%;
+
+    .kc-form-group {
+      margin-bottom: 24px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .kc-form-group__identity {
+        margin-right: 30px;
+        max-width: 180px;
+
+        .kc-form-group__label {
+          display: flex;
+          max-width: 180px;
+
+          label {
+            font-size: 15px;
+          }
+        }
+      }
+
+      .kc-form-group__content {
+        flex-basis: 60%;
+
+        .kc-textarea, .kc-dropdown, .kc-input-tag {
+          max-width: 500px;
+        }
+
+        .kc-dropdown {
+          button {
+            height: 32px;
+          }
+        }
+
+        .kc-checkbox {
+          label {
+            max-width: none;
+          }
+        }
+
+        .kc-radio-button {
+          align-items: center;
+          margin-top: 3px;
+    
+          &:first-child {
+            margin-right: 20px;
+          }
+    
+          input[type="radio"] {
+            margin-right: 6px;
+          }
+
+          .kc-radio-button__text {
+            span {
+              font-size: 15px;
+            }
+          }
+        }
+
+        .kc-inputfield .kc-inputfield__subtitle,
+        .kc-textarea .kc-textarea__subtitle {
+          margin-top: 0;
+
+          span.kc-overline {
+            font-size: 11px;
+            letter-spacing: 1px;
+          }
+        }
+
+        .kc-inputfield--error {
+          .kc-overline {
+            color: $functionalError500;
+          }
+        }
+      }
+    }
+
+    label {
+      margin-bottom: 0;
+    }
+  }
+
+  section.kc-term-deposit-product__overview {
+    input[type="file"] {
+      width: 100%;
+    }
+
+    img.kc-term-deposit-product__icon {
+      margin-bottom: 10px;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .kc-form-group {
+      &:nth-child(6) {
+        margin-top: 30px;
+      }
+    }
+
+    hr {
+      background-color: $neutral4;
+      margin: 30px 0;
+    }
+  }
+
+  section.kc-term-deposit-product__interest-config {
+    .kc-tiered-balance-table, .kc-tiered-term-table {
+      margin-bottom: 24px;
+  
+      table, tr {
+        width: 100%;
+      }
+  
+      table {
+        border: 1px solid $neutral6;
+        max-width: 710px;
+  
+        th {
+          background-color: #E5E5E5;
+          text-align: center;
+        }
+  
+        th, td {
+          padding: 8px 16px
+        }
+  
+        tr {
+          td {
+            border: 1px solid $neutral6;
+            background-color: #F2F2F2;
+            vertical-align: top;
+
+            .kc-rounded-button {
+              button {
+                background-color: transparent;
+                border: none;
+              }
+            }
+          }
+        }
+
+        tr.kc-tiered-balance-table__last-entry {
+          td {
+            text-align: center;
+            vertical-align: baseline;
+          }
+        }
+      }
+    }
+
+    .kc-tiered-balance-table {
+      table {
+        border: none;
+        border-collapse: separate;
+        border-left: 1px solid $neutral6;
+        border-spacing: 0;
+        border-top: 1px solid $neutral6;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+
+        th {
+          &:first-child {
+            width: 60%;
+          }
+        }
+
+        th, tr td {
+          border: none;
+          border-bottom: 1px solid $neutral6;
+          border-right: 1px solid $neutral6;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .kc-term-deposit-product {
+    .row {
+      .col-xxl-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+  }
+}
