@@ -499,55 +499,42 @@ select, .form-control, .custom-select {
   z-index: 999999;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  overflow-y: auto; }
   .kc-modal .kc-modal--backdrop .kc-modal--container {
     border-radius: 8px;
     background-color: #FFFFFF;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
     min-height: 200px;
-    height: auto;
-    width: 672px;
+    height: fit-content;
+    min-width: 672px;
+    width: fit-content;
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
-    position: relative; }
+    position: relative;
+    margin: 1.75rem; }
     .kc-modal .kc-modal--backdrop .kc-modal--container > .kc-rounded-button {
       position: absolute;
       top: 25px;
       right: 25px;
       font-size: 20px;
-      width: 40px;
-      height: 40px; }
-    .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--close-button {
-      position: absolute;
-      top: 25px;
-      right: 25px;
-      background-color: transparent;
-      border: none;
-      width: 40px;
-      height: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--close-button i {
-        font-size: 20px; }
-      .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--close-button:hover {
-        border-radius: 50%;
-        background-color: #F0F0F0; }
+      width: 2.5rem;
+      height: 2.5rem; }
     .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main {
       display: flex;
       flex-direction: column;
-      padding: 25px;
+      padding: 50px 25px;
       height: 100%; }
       .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--title {
         text-align: center;
         width: 100%;
-        margin-bottom: 15px;
-        padding-bottom: 15px;
-        border-bottom: 1px solid #f0f0f0; }
+        margin-bottom: 30px; }
       .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content {
         width: 100%;
         height: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center; }
     .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--action {
@@ -950,6 +937,26 @@ select, .form-control, .custom-select {
       .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--footer .kc-revision-modal--action-button button {
         margin: 0; }
 
+.kc-detail-wrapper.kc-funding-detail-deposito {
+  display: block; }
+  .kc-detail-wrapper.kc-funding-detail-deposito .kc-detail-wrapper__left {
+    margin-right: 50px; }
+  .kc-detail-wrapper.kc-funding-detail-deposito .kc-detail-wrapper__right .kc-detail-content .kc-section {
+    margin: 0; }
+  .kc-detail-wrapper.kc-funding-detail-deposito .kc-detail-content .kc-section h3.kc-headline6 {
+    margin-bottom: 30px;
+    margin-top: 10px; }
+  .kc-detail-wrapper.kc-funding-detail-deposito .kc-datatable .kc-datatable__header {
+    padding: 0; }
+  .kc-detail-wrapper.kc-funding-detail-deposito .kc-form-group {
+    margin: 0;
+    margin-right: 15px;
+    width: fit-content; }
+    .kc-detail-wrapper.kc-funding-detail-deposito .kc-form-group .kc-form-group__label {
+      width: fit-content; }
+    .kc-detail-wrapper.kc-funding-detail-deposito .kc-form-group .kc-inputfield .kc-inputfield__box {
+      height: 40px; }
+
 .kc-detail-wrapper.kc-funding-detail-member .kc-detail-wrapper__left {
   margin-right: 50px; }
 
@@ -976,20 +983,21 @@ select, .form-control, .custom-select {
 
 .kc-detail-wrapper .kc-detail-wrapper__left {
   margin-right: 30px; }
-  .kc-detail-wrapper .kc-detail-wrapper__left .kc-withdrawal-status {
-    display: flex;
-    align-items: center;
-    padding: 10px; }
-    .kc-detail-wrapper .kc-detail-wrapper__left .kc-withdrawal-status label {
-      color: #8C8C8C;
-      font-weight: 400;
-      margin: 0;
-      margin-right: 20px; }
   .kc-detail-wrapper .kc-detail-wrapper__left .kc-withdrawal-id {
     width: fit-content; }
 
 .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section {
   width: 800px; }
+
+.kc-detail-wrapper .kc-withdrawal-status {
+  display: flex;
+  align-items: center;
+  padding: 10px; }
+  .kc-detail-wrapper .kc-withdrawal-status label {
+    color: #8C8C8C;
+    font-weight: 400;
+    margin: 0;
+    margin-right: 20px; }
 
 .kc-pencarian-rekening {
   display: flex;
@@ -1072,6 +1080,20 @@ select, .form-control, .custom-select {
       font-weight: 700;
       text-decoration: underline;
       opacity: 1; }
+
+.kc-color-pallete {
+  background-color: #FFFFFF;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  height: 36px;
+  padding: 3px;
+  width: 36px; }
+  .kc-color-pallete.kc-color-pallete--checked {
+    border: 2px solid #1890FF; }
+  .kc-color-pallete .kc-color-pallete__inner {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%; }
 
 .bg-loading-page {
   width: 100%;
@@ -1684,3 +1706,138 @@ select, .form-control, .custom-select {
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden; }
+
+.kc-term-deposit-product .row .col-xxl-6 {
+  position: relative;
+  width: 100%;
+  padding-left: 7.5px;
+  padding-right: 7.5px; }
+
+.kc-term-deposit-product section.kc-term-deposit-product__overview,
+.kc-term-deposit-product section.kc-term-deposit-product__interest-config {
+  background-color: #F5F5F5;
+  padding: 16px;
+  height: 100%; }
+  .kc-term-deposit-product section.kc-term-deposit-product__overview .kc-form-group,
+  .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-form-group {
+    margin-bottom: 24px; }
+    .kc-term-deposit-product section.kc-term-deposit-product__overview .kc-form-group:last-child,
+    .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-form-group:last-child {
+      margin-bottom: 0; }
+    .kc-term-deposit-product section.kc-term-deposit-product__overview .kc-form-group .kc-form-group__identity,
+    .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-form-group .kc-form-group__identity {
+      margin-right: 30px;
+      max-width: 180px; }
+      .kc-term-deposit-product section.kc-term-deposit-product__overview .kc-form-group .kc-form-group__identity .kc-form-group__label,
+      .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-form-group .kc-form-group__identity .kc-form-group__label {
+        display: flex;
+        max-width: 180px; }
+        .kc-term-deposit-product section.kc-term-deposit-product__overview .kc-form-group .kc-form-group__identity .kc-form-group__label label,
+        .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-form-group .kc-form-group__identity .kc-form-group__label label {
+          font-size: 15px; }
+    .kc-term-deposit-product section.kc-term-deposit-product__overview .kc-form-group .kc-form-group__content,
+    .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-form-group .kc-form-group__content {
+      flex-basis: 60%; }
+      .kc-term-deposit-product section.kc-term-deposit-product__overview .kc-form-group .kc-form-group__content .kc-textarea, .kc-term-deposit-product section.kc-term-deposit-product__overview .kc-form-group .kc-form-group__content .kc-dropdown, .kc-term-deposit-product section.kc-term-deposit-product__overview .kc-form-group .kc-form-group__content .kc-input-tag,
+      .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-form-group .kc-form-group__content .kc-textarea,
+      .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-form-group .kc-form-group__content .kc-dropdown,
+      .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-form-group .kc-form-group__content .kc-input-tag {
+        max-width: 500px; }
+      .kc-term-deposit-product section.kc-term-deposit-product__overview .kc-form-group .kc-form-group__content .kc-dropdown button,
+      .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-form-group .kc-form-group__content .kc-dropdown button {
+        height: 32px; }
+      .kc-term-deposit-product section.kc-term-deposit-product__overview .kc-form-group .kc-form-group__content .kc-checkbox label,
+      .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-form-group .kc-form-group__content .kc-checkbox label {
+        max-width: none; }
+      .kc-term-deposit-product section.kc-term-deposit-product__overview .kc-form-group .kc-form-group__content .kc-radio-button,
+      .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-form-group .kc-form-group__content .kc-radio-button {
+        align-items: center;
+        margin-top: 3px; }
+        .kc-term-deposit-product section.kc-term-deposit-product__overview .kc-form-group .kc-form-group__content .kc-radio-button:first-child,
+        .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-form-group .kc-form-group__content .kc-radio-button:first-child {
+          margin-right: 20px; }
+        .kc-term-deposit-product section.kc-term-deposit-product__overview .kc-form-group .kc-form-group__content .kc-radio-button input[type="radio"],
+        .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-form-group .kc-form-group__content .kc-radio-button input[type="radio"] {
+          margin-right: 6px; }
+        .kc-term-deposit-product section.kc-term-deposit-product__overview .kc-form-group .kc-form-group__content .kc-radio-button .kc-radio-button__text span,
+        .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-form-group .kc-form-group__content .kc-radio-button .kc-radio-button__text span {
+          font-size: 15px; }
+      .kc-term-deposit-product section.kc-term-deposit-product__overview .kc-form-group .kc-form-group__content .kc-inputfield .kc-inputfield__subtitle,
+      .kc-term-deposit-product section.kc-term-deposit-product__overview .kc-form-group .kc-form-group__content .kc-textarea .kc-textarea__subtitle,
+      .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-form-group .kc-form-group__content .kc-inputfield .kc-inputfield__subtitle,
+      .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-form-group .kc-form-group__content .kc-textarea .kc-textarea__subtitle {
+        margin-top: 0; }
+        .kc-term-deposit-product section.kc-term-deposit-product__overview .kc-form-group .kc-form-group__content .kc-inputfield .kc-inputfield__subtitle span.kc-overline,
+        .kc-term-deposit-product section.kc-term-deposit-product__overview .kc-form-group .kc-form-group__content .kc-textarea .kc-textarea__subtitle span.kc-overline,
+        .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-form-group .kc-form-group__content .kc-inputfield .kc-inputfield__subtitle span.kc-overline,
+        .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-form-group .kc-form-group__content .kc-textarea .kc-textarea__subtitle span.kc-overline {
+          font-size: 11px;
+          letter-spacing: 1px; }
+      .kc-term-deposit-product section.kc-term-deposit-product__overview .kc-form-group .kc-form-group__content .kc-inputfield--error .kc-overline,
+      .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-form-group .kc-form-group__content .kc-inputfield--error .kc-overline {
+        color: #FF4D4F; }
+  .kc-term-deposit-product section.kc-term-deposit-product__overview label,
+  .kc-term-deposit-product section.kc-term-deposit-product__interest-config label {
+    margin-bottom: 0; }
+
+.kc-term-deposit-product section.kc-term-deposit-product__overview input[type="file"] {
+  width: 100%; }
+
+.kc-term-deposit-product section.kc-term-deposit-product__overview img.kc-term-deposit-product__icon {
+  margin-bottom: 10px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: center; }
+
+.kc-term-deposit-product section.kc-term-deposit-product__overview .kc-form-group:nth-child(6) {
+  margin-top: 30px; }
+
+.kc-term-deposit-product section.kc-term-deposit-product__overview hr {
+  background-color: #F0F0F0;
+  margin: 30px 0; }
+
+.kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-balance-table, .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-term-table {
+  margin-bottom: 24px; }
+  .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-balance-table table, .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-balance-table tr, .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-term-table table, .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-term-table tr {
+    width: 100%; }
+  .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-balance-table table, .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-term-table table {
+    border: 1px solid #BFBFBF;
+    max-width: 710px; }
+    .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-balance-table table th, .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-term-table table th {
+      background-color: #E5E5E5;
+      text-align: center; }
+    .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-balance-table table th, .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-balance-table table td, .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-term-table table th, .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-term-table table td {
+      padding: 8px 16px; }
+    .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-balance-table table tr td, .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-term-table table tr td {
+      border: 1px solid #BFBFBF;
+      background-color: #F2F2F2;
+      vertical-align: top; }
+      .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-balance-table table tr td .kc-rounded-button button, .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-term-table table tr td .kc-rounded-button button {
+        background-color: transparent;
+        border: none; }
+    .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-balance-table table tr.kc-tiered-balance-table__last-entry td, .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-term-table table tr.kc-tiered-balance-table__last-entry td {
+      text-align: center;
+      vertical-align: baseline; }
+
+.kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-balance-table table {
+  border: none;
+  border-collapse: separate;
+  border-left: 1px solid #BFBFBF;
+  border-spacing: 0;
+  border-top: 1px solid #BFBFBF;
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap; }
+  .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-balance-table table th:first-child {
+    width: 60%; }
+  .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-balance-table table th, .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-balance-table table tr td {
+    border: none;
+    border-bottom: 1px solid #BFBFBF;
+    border-right: 1px solid #BFBFBF; }
+
+@media screen and (min-width: 1400px) {
+  .kc-term-deposit-product .row .col-xxl-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; } }
