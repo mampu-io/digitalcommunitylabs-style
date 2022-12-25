@@ -1,0 +1,100 @@
+.kc-detail-wrapper.kc-term-deposit-application-detail {
+  display: block;
+
+  table.kc-record-table {
+    width: 600px;
+
+    tbody {
+      tr {
+        td {
+          white-space: nowrap;
+        }
+
+        td.kc-record-table__label {
+          display: flex;
+          width: 240px;
+        }
+
+        td.kc-record-table__value {
+          width: 100%;
+
+          .kc-status-card {
+            width: fit-content;
+          }
+        }
+      }
+    }
+  }
+
+  section.kc-product-detail-section, section.kc-customer-detail-section {
+    h2 {
+      font-weight: 700;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+    }
+  }
+
+  hr {
+    margin: 30px 0 40px;
+  }
+
+  section.kc-customer-detail-section {
+    table.kc-record-table {
+      tbody {
+        tr {
+          &:nth-child(1), &:nth-child(2) {
+            td.kc-record-table__value {
+              padding-top: 0;
+            }
+          }
+
+          td {
+            .kc-rounded-button {
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  section.kc-product-detail-section {
+    .kc-remark {
+      background-color: $functionalError500;
+      color: $neutral1;
+      margin-top: 24px;
+      max-width: 360px;
+      padding: 8px 16px;
+      white-space: break-spaces;
+      width: fit-content;
+    }
+  }
+
+  .kc-detail-wrapper__left {
+    margin-bottom: 30px;
+    margin-right: 50px;
+  }
+
+  .kc-modal {
+    .kc-modal__container {
+      width: 600px;
+
+      .kc-form-group {
+        .kc-textarea {
+          .kc-textarea__subtitle {
+            margin-top: 0;
+
+            span.kc-overline {
+              font-size: 11px;
+              letter-spacing: 1px;
+            }
+          }
+        }
+
+        .kc-inputfield {
+          max-width: none;
+        }
+      }
+    }
+  }
+}

@@ -1015,6 +1015,50 @@ select, .form-control, .custom-select {
   .kc-pencarian-rekening button.kc-button {
     width: 120px; }
 
+.kc-detail-wrapper.kc-term-deposit-application-detail {
+  display: block; }
+  .kc-detail-wrapper.kc-term-deposit-application-detail table.kc-record-table {
+    width: 600px; }
+    .kc-detail-wrapper.kc-term-deposit-application-detail table.kc-record-table tbody tr td {
+      white-space: nowrap; }
+    .kc-detail-wrapper.kc-term-deposit-application-detail table.kc-record-table tbody tr td.kc-record-table__label {
+      display: flex;
+      width: 240px; }
+    .kc-detail-wrapper.kc-term-deposit-application-detail table.kc-record-table tbody tr td.kc-record-table__value {
+      width: 100%; }
+      .kc-detail-wrapper.kc-term-deposit-application-detail table.kc-record-table tbody tr td.kc-record-table__value .kc-status-card {
+        width: fit-content; }
+  .kc-detail-wrapper.kc-term-deposit-application-detail section.kc-product-detail-section h2, .kc-detail-wrapper.kc-term-deposit-application-detail section.kc-customer-detail-section h2 {
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-transform: uppercase; }
+  .kc-detail-wrapper.kc-term-deposit-application-detail hr {
+    margin: 30px 0 40px; }
+  .kc-detail-wrapper.kc-term-deposit-application-detail section.kc-customer-detail-section table.kc-record-table tbody tr:nth-child(1) td.kc-record-table__value, .kc-detail-wrapper.kc-term-deposit-application-detail section.kc-customer-detail-section table.kc-record-table tbody tr:nth-child(2) td.kc-record-table__value {
+    padding-top: 0; }
+  .kc-detail-wrapper.kc-term-deposit-application-detail section.kc-customer-detail-section table.kc-record-table tbody tr td .kc-rounded-button {
+    margin-left: 5px; }
+  .kc-detail-wrapper.kc-term-deposit-application-detail section.kc-product-detail-section .kc-remark {
+    background-color: #FF4D4F;
+    color: #FFFFFF;
+    margin-top: 24px;
+    max-width: 360px;
+    padding: 8px 16px;
+    white-space: break-spaces;
+    width: fit-content; }
+  .kc-detail-wrapper.kc-term-deposit-application-detail .kc-detail-wrapper__left {
+    margin-bottom: 30px;
+    margin-right: 50px; }
+  .kc-detail-wrapper.kc-term-deposit-application-detail .kc-modal .kc-modal__container {
+    width: 600px; }
+    .kc-detail-wrapper.kc-term-deposit-application-detail .kc-modal .kc-modal__container .kc-form-group .kc-textarea .kc-textarea__subtitle {
+      margin-top: 0; }
+      .kc-detail-wrapper.kc-term-deposit-application-detail .kc-modal .kc-modal__container .kc-form-group .kc-textarea .kc-textarea__subtitle span.kc-overline {
+        font-size: 11px;
+        letter-spacing: 1px; }
+    .kc-detail-wrapper.kc-term-deposit-application-detail .kc-modal .kc-modal__container .kc-form-group .kc-inputfield {
+      max-width: none; }
+
 .kc-profile, .kc-change-password {
   max-width: 600px;
   margin-bottom: 30px;
