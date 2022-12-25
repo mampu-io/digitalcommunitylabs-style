@@ -1082,7 +1082,7 @@ select, .form-control, .custom-select {
       opacity: 1; }
 
 .kc-color-pallete {
-  background-color: #FFFFFF;
+  background-color: transparent;
   border: 2px solid transparent;
   border-radius: 50%;
   height: 36px;
@@ -1091,9 +1091,14 @@ select, .form-control, .custom-select {
   .kc-color-pallete.kc-color-pallete--checked {
     border: 2px solid #1890FF; }
   .kc-color-pallete .kc-color-pallete__inner {
+    align-items: center;
     border-radius: 50%;
+    display: flex;
     height: 100%;
+    justify-content: center;
     width: 100%; }
+    .kc-color-pallete .kc-color-pallete__inner i {
+      font-size: 24px; }
 
 .bg-loading-page {
   width: 100%;
@@ -1707,6 +1712,11 @@ select, .form-control, .custom-select {
   -webkit-box-orient: vertical;
   overflow: hidden; }
 
+/**
+  Styling for term deposit product template [FUNDING]
+  The template is used on create term deposit product page and
+  term deposit product detail page
+*/
 .kc-term-deposit-product .row .col-xxl-6 {
   position: relative;
   width: 100%;
@@ -1731,6 +1741,7 @@ select, .form-control, .custom-select {
       .kc-term-deposit-product section.kc-term-deposit-product__overview .kc-form-group .kc-form-group__identity .kc-form-group__label,
       .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-form-group .kc-form-group__identity .kc-form-group__label {
         display: flex;
+        height: 24px;
         max-width: 180px; }
         .kc-term-deposit-product section.kc-term-deposit-product__overview .kc-form-group .kc-form-group__identity .kc-form-group__label label,
         .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-form-group .kc-form-group__identity .kc-form-group__label label {
@@ -1780,15 +1791,37 @@ select, .form-control, .custom-select {
   .kc-term-deposit-product section.kc-term-deposit-product__interest-config label {
     margin-bottom: 0; }
 
+.kc-term-deposit-product section.kc-term-deposit-product__overview p {
+  margin-bottom: 0; }
+  .kc-term-deposit-product section.kc-term-deposit-product__overview p.kc-upload-icon-status--failed {
+    color: #FF4D4F; }
+  .kc-term-deposit-product section.kc-term-deposit-product__overview p.kc-upload-icon-status--successful {
+    color: #52C41A; }
+  .kc-term-deposit-product section.kc-term-deposit-product__overview p.kc-upload-icon-status--processed .spinner-border {
+    width: 1rem;
+    height: 1rem;
+    border: 0.25em solid #1890FF;
+    border-right-color: transparent;
+    margin-left: 5px; }
+
 .kc-term-deposit-product section.kc-term-deposit-product__overview input[type="file"] {
-  width: 100%; }
+  visibility: hidden; }
 
 .kc-term-deposit-product section.kc-term-deposit-product__overview img.kc-term-deposit-product__icon {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   width: 100px;
   height: 100px;
   object-fit: cover;
   object-position: center; }
+
+.kc-term-deposit-product section.kc-term-deposit-product__overview button.kc-upload-icon-btn {
+  background-color: transparent;
+  border: none;
+  width: fit-content; }
+  .kc-term-deposit-product section.kc-term-deposit-product__overview button.kc-upload-icon-btn label {
+    color: #0F77C0;
+    cursor: pointer;
+    text-decoration: underline; }
 
 .kc-term-deposit-product section.kc-term-deposit-product__overview .kc-form-group:nth-child(6) {
   margin-top: 30px; }
@@ -1796,6 +1829,15 @@ select, .form-control, .custom-select {
 .kc-term-deposit-product section.kc-term-deposit-product__overview hr {
   background-color: #F0F0F0;
   margin: 30px 0; }
+
+.kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-interest-type-desc {
+  align-items: center;
+  margin-top: 10px; }
+  .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-interest-type-desc i {
+    font-size: 15px;
+    margin-right: 8px; }
+  .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-interest-type-desc p {
+    margin: 0; }
 
 .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-balance-table, .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-term-table {
   margin-bottom: 24px; }
