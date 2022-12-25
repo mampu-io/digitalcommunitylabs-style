@@ -1,0 +1,178 @@
+
+// Variable for dashboard 
+$dashboard_color_purple : #757AEA;
+$dashboard_color_blue : #51BCF8;
+$dashboard_color_yellow : #E5AE20;
+$dashboard_color_red : #DC496F;
+$dashboard_color_green : #74C990;
+
+
+.dashboard-cards-wrapper{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.dashboard-cards-container{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+
+    .dashboard-left{
+        width: calc(30% - 30px);
+        margin: 0 15px;
+    }
+    .dashboard-right{
+        width: calc(70% - 30px);
+        margin: 0 15px;
+    }
+
+    table{
+        width: 100%;
+
+        tr td{
+            padding: 7.5px 0;
+            font-family: $font_primary;
+            font-size: 14px;
+            color: #8c8c8c;
+
+            h1, h2, h3{ color: #000;}
+
+            text-align: right;
+            font-weight: bold;
+
+            &:first-child{
+                font-weight: normal;
+                text-align: left;
+            }
+        }
+    }
+}
+.dashboard-cards{
+    background: #FFFFFF;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 25px;
+    margin: 15px;
+    width: calc(50% - 30px);
+
+    &.dashboard-cards-full{
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .title-with-icon-dashboard-cards{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .icon-dashboard-cards{
+            width: auto;
+            padding: 5px;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $white;
+
+            &.green{
+                background-color: $dashboard_color_green;
+            }
+            &.purple{
+                background-color: $dashboard_color_purple;
+            }
+            &.yellow{
+                background-color: $dashboard_color_yellow;
+            }
+            &.blue{
+                background-color: $dashboard_color_blue;
+            }
+        }
+    }
+
+
+    .title-dashboard-cards{
+        font-family: $font_primary;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        margin: 0px; padding: 0px;
+        margin-bottom: 0;
+        text-transform: uppercase;
+    }
+
+    span{
+        font-family: $font_primary;
+        font-style: normal;
+        color: #8C8C8C;
+        font-size: 14px;
+    }
+
+    .nominal-dashboard-cards{
+        span{
+            color: #000;
+            font-size: 25px;
+            font-weight: normal;
+        }
+        font-size: 40px;
+        color: #000;
+        font-weight: bold;
+        font-family: $font_primary;
+        margin: 0; padding: 0;
+
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+
+    .footer-dashboard-cards{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        p{
+            margin: 0; padding: 0;
+            font-family: $font_primary;
+            font-size: 17px;
+            color: #8C8C8C;
+        }
+
+        .increase-status-dashboard-cards{
+            text-align: right;
+            .icon-increase-status-dashboard-cards{
+                padding: 5px 10px;
+                color: $white;
+                border-radius: 4px;
+
+                &.increase{
+                    background-color: #52B524;
+                }
+                &.decrease{
+                    background-color: $dashboard_color_red;
+                }
+            }
+        }
+    }
+    .tx-color-purple-dashboard-cards{color: $dashboard_color_purple;}
+    .tx-color-blue-dashboard-cards{color: $dashboard_color_blue;}
+    .tx-color-yellow-dashboard-cards{color: $dashboard_color_yellow;}
+    .tx-color-red-dashboard-cards{color: $dashboard_color_red}
+    .tx-color-green-dashboard-cards{color: $dashboard_color_green}
+    .tx-color-black-dashboard-cards{color: #000}
+
+    .sparator{
+        width: 100%;
+        height: 1px;
+        margin: 15px 0;
+        &.sparator-black{
+            background: #000;
+        }
+        &.sparator-grey{
+            background: #8c8c8c;
+        }
+    }
+}
