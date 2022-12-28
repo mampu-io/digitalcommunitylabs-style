@@ -63,14 +63,139 @@
 
 
 //PRODUCT DEPOSIT
+.product-deposit-col-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #f0f0f0;
+
+  font-family: $font_primary;
+  font-size: $font_size_paragraph;
+  color: $color-text;
+
+  .buttonDetail-produk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 100em;
+    border: none;
+
+    background: none;
+
+    &:hover{
+      background-color: $neutral3;
+    }
+  }
+
+  .label-produk{
+    padding: 3px 5px;
+    padding-right: 20px;
+    font-size: 12px;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: auto;
+
+    &::before{
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 0;
+      height: 0;
+      border-top: 12.5px solid transparent;
+      border-bottom: 12.5px solid transparent;
+      border-right: 12.5px solid #fff;
+    }
+  }
+
+  &.list-product-deposit-col{
+    &-not-aktif{
+      i, p,b,span,div{
+        color: #c0c0c0;
+      }
+
+      .label-produk{
+        color: #fff;
+        background-color: #c0c0c0 !important;
+      }
+    }
+
+    &:hover{
+      cursor: grab;
+    }
+  }
+
+  &.header-product-deposit-col{
+    font-weight: bold !important;
+    color: #333;
+  }
+  .product-deposit-col{
+    padding: 10px 5px;
+  }
+  .product-deposit-col-iconDnD{
+    width: 5%;
+    text-align: center;
+  }
+  .product-deposit-col-no{
+    width: 5%;
+  }
+  .product-deposit-col-nama{
+    width: 20%;
+  }
+  .product-deposit-col-deskripsi{
+   width: 25%;
+  }
+  .product-deposit-col-general{
+    width: 10%;
+  }
+  .product-deposit-col-detail{
+    width: 5%;
+  }
+}
+.product-deposit-wrapper-scroll-info{
+  position: relative;
+  
+  .produk-scroll-atas,
+  .produk-scroll-bawah{
+    position: absolute;
+    color: #666;
+    font-size: 11px;
+    left: calc(50% - 11px);
+  }
+
+  .produk-scroll-atas{
+    top: 6px;
+  }
+  .produk-scroll-bawah{
+    bottom: 6px;
+  }
+}
 
 .product-deposit-wrapper{
   width: 100%;
-  display: flex; 
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  flex-wrap: wrap;
+  height: calc(100vh - 350px);
+  overflow-y: auto;
+  border-top: 30px solid #f0f0f0;
+  border-bottom: 30px solid #f0f0f0;
+  border-left: 1px solid #f0f0f0;
+  
+  .petunjuk-scroll-atas{
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d0d0d0;
+  }
 
   .product-deposit-item{
     display: flex; 
@@ -110,4 +235,133 @@
       margin-bottom: 15px;
     }
   }
+}
+.loading-produk-wrapper{
+  width: 100%;
+  height: calc(100vh - 350px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-top: 30px solid #f0f0f0;
+  border-bottom: 30px solid #f0f0f0;
+}
+.wrapper-infoDnD{
+  z-index: 1;
+  flex: 1;
+  .icon-infoDnD{
+    font-size: 17px;
+    &-show{
+      color: $danger_color;
+    }
+
+    &-hide{
+      color: $primary_color;
+    }
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  position: relative;
+
+  .content-infoDnD{
+    border-radius: 5px;
+    max-width: 450px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid #e0e0e0;
+    align-items: flex-start;
+    background: #f0f0f0;
+    position: absolute;
+    right: 0;
+    top:20px;
+
+    &.content-infoDnD-hide{
+      height: 0;
+      width: 10px;
+      opacity: 0;
+      animation: slide 1s ease 3.5s forwards;
+      div, p, span {
+        display: none;
+      }
+    }
+
+    &.content-infoDnD-show{
+      height: auto;
+      width: inherit;
+      opacity: 1;
+      transition: opacity 0.6s linear; 
+      div, p, span {
+        display: block;
+      }
+    }
+
+    .image-infoDnD{
+      position: relative;
+      width: 170px;
+      height: 100px;
+      margin-right: 10px;
+      border: 1px solid #666;
+    }
+
+    i{
+      font-size: 20px;
+      margin-right: 10px;
+      margin-top: 5px;
+      color: #666;
+    }
+
+    p{
+      margin: 0; padding: 0;
+      line-height: 1.5;
+      font-family: $font_primary;
+      font-size: $font_size_note;
+      font-style: italic;
+      color: $color_label;
+
+      b{
+        display: block;
+        margin-bottom: 5px;
+        font-style: normal;
+        color: #000;
+        font-size: $font_size_paragraph;
+      }
+    }
+  }
+}
+
+// Color Picker
+.color-picker {
+  width: 36px;
+  height: 14px;
+  border-radius: 2px;
+}
+.swatch {
+  cursor: pointer;
+  padding: 5px;
+  background: #fff;
+  border-radius: 1px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+  display: inline-block;
+}
+.popover {
+  top: 28px;
+  position: absolute;
+  z-index:  2;
+}
+.cover {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
 }
