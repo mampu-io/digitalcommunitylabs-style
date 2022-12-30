@@ -761,18 +761,48 @@ select, .form-control, .custom-select {
     .kc-detail-wrapper.kc-funding-detail-deposito .kc-form-group .kc-inputfield .kc-inputfield__box {
       height: 40px; }
 
-.kc-detail-wrapper.kc-funding-detail-member .kc-detail-wrapper__left {
-  margin-right: 50px; }
-
-.kc-detail-wrapper.kc-funding-detail-member .kc-detail-wrapper__right .kc-detail-content .kc-section {
-  margin: 0; }
-  .kc-detail-wrapper.kc-funding-detail-member .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-form-group {
-    margin: 0;
-    margin-right: 15px; }
-    .kc-detail-wrapper.kc-funding-detail-member .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-form-group .kc-inputfield {
-      width: 100%; }
-      .kc-detail-wrapper.kc-funding-detail-member .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-form-group .kc-inputfield .kc-inputfield__box {
-        height: 40px; }
+/**
+  Styling for active member detail page [FUNDING]
+*/
+.kc-funding-detail-member .content-body {
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0; }
+  .kc-funding-detail-member .content-body .container-fluid {
+    display: flex; }
+    .kc-funding-detail-member .content-body .container-fluid .kc-record-item-new > label {
+      font-weight: 400; }
+    .kc-funding-detail-member .content-body .container-fluid main {
+      background-color: #FFFFFF;
+      border-radius: 2px;
+      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+      max-width: 1080px;
+      min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px) - 70px - 20px);
+      padding: 20px;
+      width: 70%; }
+      .kc-funding-detail-member .content-body .container-fluid main .spinner-border {
+        width: 1.25rem;
+        height: 1.25rem;
+        border: 0.25em solid #1890FF;
+        border-right-color: transparent;
+        margin-left: 5px; }
+      .kc-funding-detail-member .content-body .container-fluid main .kc-record-item-new:first-child .kc-record-item-new__value label {
+        font-weight: 400; }
+      .kc-funding-detail-member .content-body .container-fluid main .kc-form-group {
+        margin-bottom: 0;
+        margin-right: 10px;
+        width: fit-content; }
+        .kc-funding-detail-member .content-body .container-fluid main .kc-form-group .kc-inputfield .kc-inputfield__box {
+          height: 40px; }
+      .kc-funding-detail-member .content-body .container-fluid main .kc-datatable .kc-datatable__header {
+        padding: 0; }
+    .kc-funding-detail-member .content-body .container-fluid aside {
+      margin-left: 20px;
+      max-width: 360px;
+      width: 30%; }
+      .kc-funding-detail-member .content-body .container-fluid aside h2 {
+        margin-bottom: 40px; }
 
 /**
   General styling for all pages on FUNDING
