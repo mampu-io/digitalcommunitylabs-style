@@ -163,8 +163,9 @@
   }
 
   section.kc-term-deposit-product__interest-config {
-    .kc-interest-type-desc {
+    .kc-interest-config-hint {
       align-items: center;
+      color: $neutral8;
       margin-top: 10px;
 
       i {
@@ -242,6 +243,21 @@
           border: none;
           border-bottom: 1px solid $neutral6;
           border-right: 1px solid $neutral6;
+        }
+      }
+    }
+
+    .kc-tiered-term-table {
+      table {
+        tbody {
+          tr {
+            td {
+              .kc-rounded-button {
+                display: flex;
+                justify-content: center;
+              }
+            }
+          }
         }
       }
     }
