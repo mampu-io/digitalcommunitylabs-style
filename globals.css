@@ -2068,13 +2068,14 @@ select, .form-control, .custom-select {
   background-color: #F0F0F0;
   margin: 30px 0; }
 
-.kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-interest-type-desc {
+.kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-interest-config-hint {
   align-items: center;
+  color: #595959;
   margin-top: 10px; }
-  .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-interest-type-desc i {
+  .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-interest-config-hint i {
     font-size: 15px;
     margin-right: 8px; }
-  .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-interest-type-desc p {
+  .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-interest-config-hint p {
     margin: 0; }
 
 .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-balance-table, .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-term-table {
@@ -2115,6 +2116,10 @@ select, .form-control, .custom-select {
     border: none;
     border-bottom: 1px solid #BFBFBF;
     border-right: 1px solid #BFBFBF; }
+
+.kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-term-table table tbody tr td .kc-rounded-button {
+  display: flex;
+  justify-content: center; }
 
 @media screen and (min-width: 1400px) {
   .kc-term-deposit-product .row .col-xxl-6 {
