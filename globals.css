@@ -858,23 +858,58 @@ select, .form-control, .custom-select {
   .kc-term-deposit-application-list .kc-datatable .kc-table table tbody tr td .kc-rounded-button button {
     background-color: transparent; }
 
-.kc-detail-wrapper .kc-detail-wrapper__left {
-  margin-right: 30px; }
-  .kc-detail-wrapper .kc-detail-wrapper__left .kc-withdrawal-id {
-    width: fit-content; }
+/**
+  Styling for withdrawal detail page [FUNDING]
+*/
+.kc-detail-wrapper.kc-withdrawal-detail .col-xxl-6 {
+  position: relative;
+  width: 100%;
+  padding-left: 7.5px;
+  padding-right: 7.5px; }
 
-.kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section {
-  width: 800px; }
+.kc-detail-wrapper.kc-withdrawal-detail table tbody tr td.kc-record-table__label {
+  padding: 10px 20px 0 0;
+  width: 250px; }
 
-.kc-detail-wrapper .kc-withdrawal-status {
-  display: flex;
-  align-items: center;
-  padding: 10px; }
-  .kc-detail-wrapper .kc-withdrawal-status label {
-    color: #8C8C8C;
-    font-weight: 400;
-    margin: 0;
-    margin-right: 20px; }
+.kc-detail-wrapper.kc-withdrawal-detail table tbody tr td.kc-record-table__value {
+  padding-bottom: 0; }
+
+.kc-detail-wrapper.kc-withdrawal-detail section h2 {
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.kc-detail-wrapper.kc-withdrawal-detail hr {
+  margin: 30px 0; }
+
+.kc-detail-wrapper.kc-withdrawal-detail section.kc-withdrawal-detail__identity table tbody tr td.kc-record-table__value .kc-status-card {
+  width: fit-content; }
+
+.kc-detail-wrapper.kc-withdrawal-detail section.kc-withdrawal-detail__identity table tbody tr td.kc-record-table__value .kc-rounded-button {
+  margin-left: 8px; }
+
+.kc-detail-wrapper.kc-withdrawal-detail section.kc-withdrawal-detail__transaction table tbody tr:first-child td {
+  padding-top: 0; }
+
+.kc-detail-wrapper.kc-withdrawal-detail section.kc-withdrawal-detail__status-history {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-left: 0;
+  margin-top: 30px;
+  padding-top: 30px; }
+  .kc-detail-wrapper.kc-withdrawal-detail section.kc-withdrawal-detail__status-history h2 {
+    margin-bottom: 20px; }
+  .kc-detail-wrapper.kc-withdrawal-detail section.kc-withdrawal-detail__status-history .kc-datatable .kc-datatable__header {
+    padding: 0; }
+
+@media screen and (min-width: 1500px) {
+  .kc-detail-wrapper.kc-withdrawal-detail .col-xxl-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; }
+  .kc-detail-wrapper.kc-withdrawal-detail section.kc-withdrawal-detail__status-history {
+    border-top: none;
+    margin-left: 20px;
+    margin-top: 0;
+    padding-top: 0; } }
 
 /**
   Styling for account search page [FUNDING]
