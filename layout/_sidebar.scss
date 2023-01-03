@@ -1,3 +1,7 @@
+/**
+  Styling for admin sidebar [AdminHOC]
+*/
+
 .layout-navbar-fixed.layout-fixed {
   .wrapper {
     .main-sidebar {
@@ -34,70 +38,72 @@
             font-weight: 700;
             text-transform: uppercase;
             padding: 0.5rem 1rem;
+
+            i {
+              margin-right: 8px;
+            }
           }
     
           li.nav-item {    
             a.nav-link {
+              background-color: transparent;
+              border-radius: 0;
               margin-bottom: 0;
               width: 100%;
-    
-              p:hover {
-                font-weight: 700;
-              }
-
-              i {
-                margin-right: 8px;
-              }
+              transition: background-color .5s;
+              -webkit-transition: background-color .5s;
       
               &.active {
-                border-radius: 0;
                 background-color: $primary7;
       
-                p, i {
+                p {
                   color: $neutral1;
                   font-weight: 700;
                 }
               }
             }
-    
-            &:hover {
-              background-color: $neutral6;
+
+            ul.nav-treeview {
+              li.nav-item {
+                a.nav-link {
+                  padding-left: 1.75rem;
+
+                  &.active {
+                    background-color: #CACACA;
+                  }
+
+                  p {
+                    color: $neutral13;
+                    font-weight: 400;
+                  }
+                }
+              }
             }
     
-            &.has-treeview {
-              a.nav-link {
-                width: 100%;
+            &:hover {
+              > a.nav-link {
+                background-color: #CACACA;
 
-                p {
-                  i {
-                    position: absolute;
-                    right: 1rem;
-                    top: 0.7rem;
-                    transition: transform ease-in-out .3s;
-                    transition: -webkit-transform ease-in-out .3s;
+                &.active {
+                  background-color: $primary7;
+                }
+              }
+            }
+
+            &.menu-open {
+              &.active {
+                > a.nav-link {
+                  background-color: $primary7;
+
+                  p, i {
+                    color: $neutral1;
+                    font-weight: 700;
                   }
                 }
               }
 
-              &.menu-is-opening {
-                a.nav-link {
-                  p {
-                    i {
-                      transition: transform ease-in-out .3s;
-                      transition: -webkit-transform ease-in-out .3s;
-                      -webkit-transform: rotate(-180deg);
-                      transform: rotate(-180deg);
-                    }
-                  }
-                }
-              }
-    
-              li.nav-item a.nav-link {
-                padding-left: 1.75rem;
-    
-                > p::before {
-                  content: "\25CF \00A0 \00A0 \00A0";
-                }
+              > a.nav-link {
+                background-color: $neutral6;
               }
             }
           }

@@ -446,6 +446,9 @@ select, .form-control, .custom-select {
       .main-header .navbar-nav .nav-item .dropdown-menu a.dropdown-item:hover {
         color: #0F77C0; }
 
+/**
+  Styling for admin sidebar [AdminHOC]
+*/
 .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .brand-link {
   background-color: #0F77C0;
   padding: 8px;
@@ -470,38 +473,38 @@ select, .form-control, .custom-select {
     font-weight: 700;
     text-transform: uppercase;
     padding: 0.5rem 1rem; }
-  .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item a.nav-link {
-    margin-bottom: 0;
-    width: 100%; }
-    .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item a.nav-link p:hover {
-      font-weight: 700; }
-    .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item a.nav-link i {
+    .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-header i {
       margin-right: 8px; }
+  .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item a.nav-link {
+    background-color: transparent;
+    border-radius: 0;
+    margin-bottom: 0;
+    width: 100%;
+    transition: background-color .5s;
+    -webkit-transition: background-color .5s; }
     .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item a.nav-link.active {
-      border-radius: 0;
       background-color: #0F77C0; }
-      .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item a.nav-link.active p, .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item a.nav-link.active i {
+      .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item a.nav-link.active p {
         color: #FFFFFF;
         font-weight: 700; }
-  .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item:hover {
-    background-color: #BFBFBF; }
-  .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item.has-treeview a.nav-link {
-    width: 100%; }
-    .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item.has-treeview a.nav-link p i {
-      position: absolute;
-      right: 1rem;
-      top: 0.7rem;
-      transition: transform ease-in-out .3s;
-      transition: -webkit-transform ease-in-out .3s; }
-  .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item.has-treeview.menu-is-opening a.nav-link p i {
-    transition: transform ease-in-out .3s;
-    transition: -webkit-transform ease-in-out .3s;
-    -webkit-transform: rotate(-180deg);
-    transform: rotate(-180deg); }
-  .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item.has-treeview li.nav-item a.nav-link {
+  .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item ul.nav-treeview li.nav-item a.nav-link {
     padding-left: 1.75rem; }
-    .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item.has-treeview li.nav-item a.nav-link > p::before {
-      content: "\25CF \00A0 \00A0 \00A0"; }
+    .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item ul.nav-treeview li.nav-item a.nav-link.active {
+      background-color: #CACACA; }
+    .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item ul.nav-treeview li.nav-item a.nav-link p {
+      color: #000000;
+      font-weight: 400; }
+  .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item:hover > a.nav-link {
+    background-color: #CACACA; }
+    .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item:hover > a.nav-link.active {
+      background-color: #0F77C0; }
+  .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item.menu-open.active > a.nav-link {
+    background-color: #0F77C0; }
+    .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item.menu-open.active > a.nav-link p, .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item.menu-open.active > a.nav-link i {
+      color: #FFFFFF;
+      font-weight: 700; }
+  .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item.menu-open > a.nav-link {
+    background-color: #BFBFBF; }
 
 /**
   General styling for all pages on BACKOFFICE
