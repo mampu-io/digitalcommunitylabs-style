@@ -1,0 +1,116 @@
+/**
+  Styling for term deposit account detail page [FUNDING]
+*/
+
+.kc-term-deposit-account-detail {
+  .content-body {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+
+    .container-fluid {
+      display: flex;
+
+      .kc-record-item-new {
+        > label {
+          font-weight: 400;
+        }
+      }
+
+      h3 {
+        font-size: 18px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+      }
+
+      main {
+        background-color: $neutral1;
+        border-radius: 2px;
+        box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
+        min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px) - 70px - 20px);
+        padding: 40px;
+        width: 70%;
+
+        .spinner-border {
+          width: 1.25rem;
+          height: 1.25rem;
+          border: 0.25em solid $functionalLink500;
+          border-right-color: transparent;
+          margin-left: 5px;
+        }
+
+        .kc-form-group {
+          margin-bottom: 0;
+          margin-right: 10px;
+          width: fit-content;
+
+          .kc-inputfield {
+            .kc-inputfield__box {
+              height: 40px;
+            }
+          }
+        }
+
+        .kc-datatable {
+          .kc-datatable__header {
+            padding: 0;
+          }
+        }
+
+        section.kc-term-deposit-account__transaction-history {
+          margin-top: 40px;
+
+          .kc-form-group {
+            .kc-form-group__label {
+              label {
+                font-size: 15px;
+                font-weight: 400;
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+
+      aside {
+        margin-left: 20px;
+        width: 30%;
+
+        h2 {
+          margin-bottom: 40px;
+        }
+
+        hr {
+          margin: 40px 0;
+        }
+
+        a {
+          color: $primary7;
+          font-weight: 700;
+          text-decoration: underline;
+        }
+
+        .kc-record-item-new {
+          > label {
+            margin-bottom: 5px;
+          }
+        }
+
+        .kc-rounded-button {
+          background-color: transparent;
+          margin-left: 5px;
+
+          button {
+            background-color: transparent;
+          }
+        }
+
+        .kc-status-card {
+          margin-top: 5px;
+          width: fit-content;
+        }
+      }
+    }
+  }
+}
