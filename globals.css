@@ -778,98 +778,12 @@ select, .form-control, .custom-select {
         width: fit-content; }
         .kc-funding-detail-member .content-body .container-fluid main .kc-form-group .kc-inputfield .kc-inputfield__box {
           height: 40px; }
-      .kc-funding-detail-member .content-body .container-fluid main .kc-datatable .kc-datatable__header {
-        padding: 0; }
     .kc-funding-detail-member .content-body .container-fluid aside {
       margin-left: 20px;
       max-width: 360px;
       width: 30%; }
       .kc-funding-detail-member .content-body .container-fluid aside h2 {
         margin-bottom: 40px; }
-
-/**
-  General styling for all pages on FUNDING
-*/
-.kc-account-search .kc-datatable .kc-datatable__header, .kc-account-search .kc-datatable .kc-datatable__pagination,
-.kc-member-list .kc-datatable .kc-datatable__header,
-.kc-member-list .kc-datatable .kc-datatable__pagination,
-.kc-deposit-list .kc-datatable .kc-datatable__header,
-.kc-deposit-list .kc-datatable .kc-datatable__pagination,
-.kc-deposit-sync-list .kc-datatable .kc-datatable__header,
-.kc-deposit-sync-list .kc-datatable .kc-datatable__pagination,
-.kc-transfer-list .kc-datatable .kc-datatable__header,
-.kc-transfer-list .kc-datatable .kc-datatable__pagination,
-.kc-transfer-refund-list .kc-datatable .kc-datatable__header,
-.kc-transfer-refund-list .kc-datatable .kc-datatable__pagination,
-.kc-term-deposit-list .kc-datatable .kc-datatable__header,
-.kc-term-deposit-list .kc-datatable .kc-datatable__pagination,
-.kc-term-deposit-application-list .kc-datatable .kc-datatable__header,
-.kc-term-deposit-application-list .kc-datatable .kc-datatable__pagination {
-  padding: 16px 0; }
-
-.kc-account-search .kc-datatable .kc-table table,
-.kc-member-list .kc-datatable .kc-table table,
-.kc-deposit-list .kc-datatable .kc-table table,
-.kc-deposit-sync-list .kc-datatable .kc-table table,
-.kc-transfer-list .kc-datatable .kc-table table,
-.kc-transfer-refund-list .kc-datatable .kc-table table,
-.kc-term-deposit-list .kc-datatable .kc-table table,
-.kc-term-deposit-application-list .kc-datatable .kc-table table {
-  background-color: #FFFFFF;
-  transition: background-color .5s;
-  -webkit-transition: background-color .5s;
-  background-clip: text;
-  -webkit-background-clip: text; }
-  .kc-account-search .kc-datatable .kc-table table:hover,
-  .kc-member-list .kc-datatable .kc-table table:hover,
-  .kc-deposit-list .kc-datatable .kc-table table:hover,
-  .kc-deposit-sync-list .kc-datatable .kc-table table:hover,
-  .kc-transfer-list .kc-datatable .kc-table table:hover,
-  .kc-transfer-refund-list .kc-datatable .kc-table table:hover,
-  .kc-term-deposit-list .kc-datatable .kc-table table:hover,
-  .kc-term-deposit-application-list .kc-datatable .kc-table table:hover {
-    background-color: rgba(0, 0, 0, 0.18); }
-  .kc-account-search .kc-datatable .kc-table table::-webkit-scrollbar-thumb,
-  .kc-member-list .kc-datatable .kc-table table::-webkit-scrollbar-thumb,
-  .kc-deposit-list .kc-datatable .kc-table table::-webkit-scrollbar-thumb,
-  .kc-deposit-sync-list .kc-datatable .kc-table table::-webkit-scrollbar-thumb,
-  .kc-transfer-list .kc-datatable .kc-table table::-webkit-scrollbar-thumb,
-  .kc-transfer-refund-list .kc-datatable .kc-table table::-webkit-scrollbar-thumb,
-  .kc-term-deposit-list .kc-datatable .kc-table table::-webkit-scrollbar-thumb,
-  .kc-term-deposit-application-list .kc-datatable .kc-table table::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    box-shadow: none;
-    background-color: inherit;
-    -webkit-box-shadow: none; }
-  .kc-account-search .kc-datatable .kc-table table::-webkit-scrollbar-track,
-  .kc-member-list .kc-datatable .kc-table table::-webkit-scrollbar-track,
-  .kc-deposit-list .kc-datatable .kc-table table::-webkit-scrollbar-track,
-  .kc-deposit-sync-list .kc-datatable .kc-table table::-webkit-scrollbar-track,
-  .kc-transfer-list .kc-datatable .kc-table table::-webkit-scrollbar-track,
-  .kc-transfer-refund-list .kc-datatable .kc-table table::-webkit-scrollbar-track,
-  .kc-term-deposit-list .kc-datatable .kc-table table::-webkit-scrollbar-track,
-  .kc-term-deposit-application-list .kc-datatable .kc-table table::-webkit-scrollbar-track {
-    box-shadow: none;
-    -webkit-box-shadow: none; }
-  .kc-account-search .kc-datatable .kc-table table::-webkit-scrollbar,
-  .kc-member-list .kc-datatable .kc-table table::-webkit-scrollbar,
-  .kc-deposit-list .kc-datatable .kc-table table::-webkit-scrollbar,
-  .kc-deposit-sync-list .kc-datatable .kc-table table::-webkit-scrollbar,
-  .kc-transfer-list .kc-datatable .kc-table table::-webkit-scrollbar,
-  .kc-transfer-refund-list .kc-datatable .kc-table table::-webkit-scrollbar,
-  .kc-term-deposit-list .kc-datatable .kc-table table::-webkit-scrollbar,
-  .kc-term-deposit-application-list .kc-datatable .kc-table table::-webkit-scrollbar {
-    width: 6px;
-    height: 6px; }
-  .kc-account-search .kc-datatable .kc-table table tbody tr td .kc-rounded-button button,
-  .kc-member-list .kc-datatable .kc-table table tbody tr td .kc-rounded-button button,
-  .kc-deposit-list .kc-datatable .kc-table table tbody tr td .kc-rounded-button button,
-  .kc-deposit-sync-list .kc-datatable .kc-table table tbody tr td .kc-rounded-button button,
-  .kc-transfer-list .kc-datatable .kc-table table tbody tr td .kc-rounded-button button,
-  .kc-transfer-refund-list .kc-datatable .kc-table table tbody tr td .kc-rounded-button button,
-  .kc-term-deposit-list .kc-datatable .kc-table table tbody tr td .kc-rounded-button button,
-  .kc-term-deposit-application-list .kc-datatable .kc-table table tbody tr td .kc-rounded-button button {
-    background-color: transparent; }
 
 /**
   Styling for withdrawal detail page [FUNDING]
@@ -910,8 +824,6 @@ select, .form-control, .custom-select {
   padding-top: 30px; }
   .kc-detail-wrapper.kc-withdrawal-detail section.kc-withdrawal-detail__status-history h2 {
     margin-bottom: 20px; }
-  .kc-detail-wrapper.kc-withdrawal-detail section.kc-withdrawal-detail__status-history .kc-datatable .kc-datatable__header {
-    padding: 0; }
 
 @media screen and (min-width: 1500px) {
   .kc-detail-wrapper.kc-withdrawal-detail .col-xxl-6 {
@@ -939,14 +851,6 @@ select, .form-control, .custom-select {
         font-size: 15px; }
   .kc-account-search form button.kc-button {
     width: 120px; }
-
-.kc-account-search .kc-datatable .kc-datatable__header {
-  padding: 0; }
-
-.kc-account-search .kc-datatable .kc-table table tbody tr td .kc-rounded-button__tooltip {
-  left: auto;
-  right: 36px;
-  top: 0; }
 
 /**
   Styling for setting deposit page and setting withdraw page [FUNDING]
@@ -1019,8 +923,6 @@ select, .form-control, .custom-select {
         width: fit-content; }
         .kc-term-deposit-account-detail .content-body .container-fluid main .kc-form-group .kc-inputfield .kc-inputfield__box {
           height: 40px; }
-      .kc-term-deposit-account-detail .content-body .container-fluid main .kc-datatable .kc-datatable__header {
-        padding: 0; }
       .kc-term-deposit-account-detail .content-body .container-fluid main section.kc-term-deposit-account__transaction-history {
         margin-top: 40px; }
         .kc-term-deposit-account-detail .content-body .container-fluid main section.kc-term-deposit-account__transaction-history .kc-form-group .kc-form-group__label label {
@@ -1080,8 +982,6 @@ select, .form-control, .custom-select {
         width: fit-content; }
         .kc-term-deposit-application-detail .content-body .container-fluid main .kc-form-group .kc-inputfield .kc-inputfield__box {
           height: 40px; }
-      .kc-term-deposit-application-detail .content-body .container-fluid main .kc-datatable .kc-datatable__header {
-        padding: 0; }
     .kc-term-deposit-application-detail .content-body .container-fluid aside {
       margin-left: 20px;
       width: 25%; }
@@ -1757,6 +1657,8 @@ select, .form-control, .custom-select {
 
 .kc-datatable .kc-rounded-button.kc-rounded-button--neutral {
   background-color: transparent; }
+  .kc-datatable .kc-rounded-button.kc-rounded-button--neutral button {
+    background-color: transparent; }
 
 /**
   Styling for deposit transaction detail template [FUNDING]

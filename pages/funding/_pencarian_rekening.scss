@@ -26,22 +26,4 @@
       width: 120px;
     }
   }
-
-  .kc-datatable {
-    .kc-datatable__header {
-      padding: 0;
-    }
-
-    .kc-table {
-      table {
-        tbody tr td {
-          .kc-rounded-button__tooltip {
-            left: auto;
-            right: 36px;
-            top: 0;
-          }
-        }
-      }
-    }
-  }
 }
