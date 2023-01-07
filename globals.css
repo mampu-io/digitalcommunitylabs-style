@@ -566,7 +566,7 @@ select, .form-control, .custom-select {
   width: 600px; }
   .kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container .kc-modal__content {
     width: 450px; }
-    .kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-form-group__label {
+    .kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-form-group__identity {
       width: 120px; }
     .kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-roles .kc-roles__option div.kc-caption {
       color: #595959;
@@ -578,7 +578,7 @@ select, .form-control, .custom-select {
   width: 750px; }
   .kc-list-users .kc-edit-user-profile-modal .kc-modal .kc-modal__container .kc-modal__content {
     width: 600px; }
-    .kc-list-users .kc-edit-user-profile-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-form-group__label {
+    .kc-list-users .kc-edit-user-profile-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-form-group__identity {
       width: 200px; }
     .kc-list-users .kc-edit-user-profile-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-roles .kc-roles__option {
       margin-bottom: 5px; }
@@ -1357,7 +1357,7 @@ select, .form-control, .custom-select {
     padding: 0 10px; }
     .kc-modal-login--wrapper .kc-modal-login--content .kc-form-group {
       margin-bottom: 15px; }
-      .kc-modal-login--wrapper .kc-modal-login--content .kc-form-group .kc-form-group__label {
+      .kc-modal-login--wrapper .kc-modal-login--content .kc-form-group .kc-form-group__identity {
         width: 120px; }
     .kc-modal-login--wrapper .kc-modal-login--content .kc-form-wrapper .kc-form-wrapper__submit-btn > button {
       width: 100%; }
