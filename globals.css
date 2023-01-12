@@ -1651,6 +1651,74 @@ select, .form-control, .custom-select {
     background-color: transparent; }
 
 /**
+  Styling for deposit account onboarding template [MEMBERSERVICE]
+  This template is used on:
+  - invoice detail page
+  - invoice suspended detail page
+*/
+aside.kc-deposit-account-onboarding-detail {
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: auto; }
+  aside.kc-deposit-account-onboarding-detail section.kc-initial-deposit-detail,
+  aside.kc-deposit-account-onboarding-detail section.kc-invoice-detail {
+    border: 1px solid #8C8C8C;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 32px; }
+  aside.kc-deposit-account-onboarding-detail section.kc-initial-deposit-detail .kc-record-table {
+    width: fit-content; }
+    aside.kc-deposit-account-onboarding-detail section.kc-initial-deposit-detail .kc-record-table tbody tr .kc-record-table__label,
+    aside.kc-deposit-account-onboarding-detail section.kc-initial-deposit-detail .kc-record-table tbody tr .kc-record-table__value {
+      color: #8C8C8C; }
+      aside.kc-deposit-account-onboarding-detail section.kc-initial-deposit-detail .kc-record-table tbody tr .kc-record-table__label span,
+      aside.kc-deposit-account-onboarding-detail section.kc-initial-deposit-detail .kc-record-table tbody tr .kc-record-table__value span {
+        font-size: 15px; }
+    aside.kc-deposit-account-onboarding-detail section.kc-initial-deposit-detail .kc-record-table tbody tr .kc-record-table__label {
+      max-width: 180px; }
+    aside.kc-deposit-account-onboarding-detail section.kc-initial-deposit-detail .kc-record-table tbody tr:last-child .kc-record-table__label,
+    aside.kc-deposit-account-onboarding-detail section.kc-initial-deposit-detail .kc-record-table tbody tr:last-child .kc-record-table__value {
+      color: #1F1F1F; }
+    aside.kc-deposit-account-onboarding-detail section.kc-initial-deposit-detail .kc-record-table tbody tr:last-child .kc-record-table__label span {
+      font-weight: 700;
+      text-transform: uppercase; }
+  aside.kc-deposit-account-onboarding-detail section.kc-invoice-detail h3 {
+    margin-bottom: 20px; }
+  aside.kc-deposit-account-onboarding-detail section.kc-invoice-detail .kc-deposit-account-onboarding-detail__entry {
+    margin-top: 10px; }
+    aside.kc-deposit-account-onboarding-detail section.kc-invoice-detail .kc-deposit-account-onboarding-detail__entry p {
+      margin: 0; }
+  aside.kc-deposit-account-onboarding-detail section.kc-invoice-detail .kc-rounded-button {
+    margin-left: 5px; }
+  aside.kc-deposit-account-onboarding-detail section.kc-invoice-detail .kc-payment-link {
+    display: flex;
+    align-items: center; }
+  aside.kc-deposit-account-onboarding-detail section.kc-invoice-detail .kc-status-card {
+    width: fit-content; }
+  aside.kc-deposit-account-onboarding-detail section.kc-invoice-detail .kc-button {
+    margin-top: 20px; }
+  aside.kc-deposit-account-onboarding-detail > .kc-button {
+    margin-bottom: 16px; }
+    aside.kc-deposit-account-onboarding-detail > .kc-button:last-child {
+      margin-bottom: 0; }
+
+@media screen and (min-width: 1400px) {
+  aside.kc-deposit-account-onboarding-detail section.kc-initial-deposit-detail,
+  aside.kc-deposit-account-onboarding-detail section.kc-invoice-detail {
+    padding: 20px; } }
+
+@media screen and (min-width: 1500px) {
+  aside.kc-deposit-account-onboarding-detail section.kc-initial-deposit-detail .kc-record-table tbody tr .kc-record-table__label span,
+  aside.kc-deposit-account-onboarding-detail section.kc-initial-deposit-detail .kc-record-table tbody tr .kc-record-table__value span {
+    font-size: 16px; }
+  aside.kc-deposit-account-onboarding-detail section.kc-initial-deposit-detail .kc-record-table tbody tr .kc-record-table__label {
+    max-width: 250px; }
+  aside.kc-deposit-account-onboarding-detail section.kc-invoice-detail .kc-deposit-account-onboarding-detail__entry label, aside.kc-deposit-account-onboarding-detail section.kc-invoice-detail .kc-deposit-account-onboarding-detail__entry p {
+    font-size: 16px; } }
+
+/**
   Styling for deposit transaction detail template [FUNDING]
   This template is used on list deposit transaction page and
   list deposit transaction synchronization page
