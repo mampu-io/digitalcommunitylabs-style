@@ -1,0 +1,59 @@
+/**
+  General styling for all pages on MEMBERSERVICE
+*/
+
+.kc-active-member-detail,
+.kc-approved-member-detail,
+.kc-rejected-member-detail,
+.kc-suspended-member-detail,
+.kc-member-proposal-detail,
+.kc-dao-membership-detail,
+.kc-request-update-data-detail {
+  .content-body {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+
+    .container-fluid {
+      display: flex;
+
+      main.kc-memberservice-detail {
+        width: 75%;
+      }
+
+      aside {
+        margin-left: 20px;
+        width: 25%;
+
+        .kc-memberservice-detail__action-buttons {
+          hr {
+            margin: 30px 0;
+          }
+
+          > .kc-button {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.kc-member-proposal-detail,
+.kc-active-member-detail,
+.kc-request-update-data-detail {
+  .kc-modal {
+    .kc-modal__container {
+      .kc-modal__main {
+        .kc-modal__header {
+          .kc-modal__title {
+            span.kc-headline5 {
+              font-size: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
