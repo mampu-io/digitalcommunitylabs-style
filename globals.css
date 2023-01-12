@@ -1539,6 +1539,9 @@ select, .form-control, .custom-select {
   .kc-image-preview .kc-image-preview__content {
     border: 1px solid #8C8C8C;
     height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative; }
     .kc-image-preview .kc-image-preview__content img {
       width: 100%;
