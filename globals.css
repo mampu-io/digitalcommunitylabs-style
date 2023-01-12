@@ -1310,37 +1310,27 @@ select, .form-control, .custom-select {
 
 .kc-image-preview {
   width: 120px;
-  height: 200px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-  .kc-image-preview .kc-image-preview--box {
-    border: 1px dashed #000000;
-    border-radius: 8px;
-    padding: 10px;
-    height: 100%;
-    width: 100%; }
-    .kc-image-preview .kc-image-preview--box .kc-image-preview--image {
+  flex-direction: column; }
+  .kc-image-preview .kc-image-preview__content {
+    border: 1px solid #8C8C8C;
+    height: 160px;
+    position: relative; }
+    .kc-image-preview .kc-image-preview__content img {
       width: 100%;
       height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      .kc-image-preview .kc-image-preview--box .kc-image-preview--image img {
-        width: 100%;
-        height: 100%;
-        object-position: center;
-        object-fit: contain; }
-      .kc-image-preview .kc-image-preview--box .kc-image-preview--image i {
-        color: #8C8C8C;
-        font-size: 32px; }
-  .kc-image-preview .kc-image-preview--label {
-    padding: 16px;
-    text-align: center;
-    text-transform: uppercase; }
-    .kc-image-preview .kc-image-preview--label span {
-      color: #0F77C0; }
+      object-position: center;
+      object-fit: contain; }
+    .kc-image-preview .kc-image-preview__content a {
+      bottom: 10px;
+      position: absolute;
+      right: 10px; }
+      .kc-image-preview .kc-image-preview__content a i {
+        color: #FFFFFF; }
+  .kc-image-preview .kc-image-preview__label {
+    padding: 8px 0; }
+    .kc-image-preview .kc-image-preview__label span.kc-button-label {
+      font-weight: 700; }
 
 .kc-modal-login--wrapper {
   width: 600px;
@@ -1958,6 +1948,131 @@ select, .form-control, .custom-select {
         font-weight: 400;
         text-align: center;
         margin: 0; }
+
+/**
+  Styling for membership detail template [MEMBERSERVICE]
+  This template is used on: 
+  - active member detail page
+  - member proposal detail page
+  - approved member detail page
+  - invoice detail page
+  - invoice suspended detail page
+  - rejected member detail page
+  - suspended member detail page
+  - request update data detail page
+*/
+main.kc-memberservice-detail {
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px) - 70px - 20px);
+  padding: 30px;
+  width: auto; }
+  main.kc-memberservice-detail h2 {
+    margin-bottom: 40px; }
+  main.kc-memberservice-detail hr {
+    margin: 20px 0; }
+  main.kc-memberservice-detail .kc-memberservice-detail__navigation {
+    margin-bottom: 40px;
+    overflow-x: auto;
+    border-color: transparent;
+    transition: border-color .25s linear;
+    -webkit-transition: border-color .25s linear; }
+    main.kc-memberservice-detail .kc-memberservice-detail__navigation:hover {
+      border-color: rgba(0, 0, 0, 0.1); }
+    main.kc-memberservice-detail .kc-memberservice-detail__navigation::-webkit-scrollbar, main.kc-memberservice-detail .kc-memberservice-detail__navigation::-webkit-scrollbar-thumb, main.kc-memberservice-detail .kc-memberservice-detail__navigation::-webkit-scrollbar-corner {
+      border-right-style: inset;
+      border-color: inherit;
+      border-right-width: calc(100vw + 100vh); }
+    main.kc-memberservice-detail .kc-memberservice-detail__navigation::-webkit-scrollbar {
+      width: 6px;
+      height: 6px; }
+    main.kc-memberservice-detail .kc-memberservice-detail__navigation .kc-tab-navigation {
+      margin-right: 25px; }
+  main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right,
+  main.kc-memberservice-detail section.kc-residence-address,
+  main.kc-memberservice-detail section.kc-employment-data,
+  main.kc-memberservice-detail section.kc-other-data .kc-other-data__right {
+    max-width: 800px;
+    min-width: 500px;
+    width: fit-content; }
+    main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right table.kc-record-table tbody tr td.kc-record-table__label,
+    main.kc-memberservice-detail section.kc-residence-address table.kc-record-table tbody tr td.kc-record-table__label,
+    main.kc-memberservice-detail section.kc-employment-data table.kc-record-table tbody tr td.kc-record-table__label,
+    main.kc-memberservice-detail section.kc-other-data .kc-other-data__right table.kc-record-table tbody tr td.kc-record-table__label {
+      display: flex;
+      width: 240px; }
+  main.kc-memberservice-detail section.kc-identity-data,
+  main.kc-memberservice-detail section.kc-other-data {
+    display: flex;
+    flex-direction: column; }
+  main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__left {
+    margin-bottom: 40px; }
+    main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__left .kc-image-identity {
+      display: flex; }
+      main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__left .kc-image-identity .kc-image-preview:first-child {
+        margin-right: 30px; }
+  main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right .kc-status-identity {
+    margin-bottom: 30px; }
+    main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right .kc-status-identity .kc-record-item-new.kc-record-item-new--horizontal {
+      align-items: baseline;
+      margin: 20px 0; }
+      main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right .kc-status-identity .kc-record-item-new.kc-record-item-new--horizontal:first-child {
+        margin-top: 0; }
+      main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right .kc-status-identity .kc-record-item-new.kc-record-item-new--horizontal label {
+        font-weight: 400;
+        margin-right: 0;
+        min-width: 240px; }
+      main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right .kc-status-identity .kc-record-item-new.kc-record-item-new--horizontal .kc-record-item-new__value span {
+        line-height: 25px; }
+      main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right .kc-status-identity .kc-record-item-new.kc-record-item-new--horizontal .kc-record-item-new__value .kc-rounded-button {
+        margin-left: 5px; }
+    main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right .kc-status-identity .kc-status-card {
+      width: fit-content; }
+    main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right .kc-status-identity .kc-note .kc-record-item-new.kc-record-item-new--horizontal label {
+      color: #FF4D4F; }
+    main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right .kc-status-identity .kc-note p {
+      color: #FF4D4F;
+      margin-bottom: 0; }
+  main.kc-memberservice-detail section.kc-employment-data table.kc-record-table tbody tr td.kc-record-table__label {
+    width: 260px; }
+  main.kc-memberservice-detail section.kc-other-data .kc-other-data__left {
+    margin-bottom: 40px; }
+    main.kc-memberservice-detail section.kc-other-data .kc-other-data__left .kc-image-identity {
+      display: flex; }
+  main.kc-memberservice-detail section.kc-other-data .kc-other-data__right table.kc-record-table tbody tr td.kc-record-table__label {
+    width: 260px; }
+  main.kc-memberservice-detail section.kc-emergency-contacts .kc-emergency-contact {
+    border-bottom: 1px solid #F0F0F0;
+    max-width: 500px;
+    padding: 30px 0; }
+    main.kc-memberservice-detail section.kc-emergency-contacts .kc-emergency-contact:first-child {
+      padding-top: 0; }
+    main.kc-memberservice-detail section.kc-emergency-contacts .kc-emergency-contact:last-child {
+      border-bottom: none;
+      padding-bottom: 0; }
+    main.kc-memberservice-detail section.kc-emergency-contacts .kc-emergency-contact .kc-emergency-contact__header {
+      margin-bottom: 10px; }
+      main.kc-memberservice-detail section.kc-emergency-contacts .kc-emergency-contact .kc-emergency-contact__header .kc-status-card {
+        margin-left: 10px; }
+
+@media screen and (min-width: 1400px) {
+  main.kc-memberservice-detail section.kc-identity-data,
+  main.kc-memberservice-detail section.kc-other-data {
+    flex-direction: row; }
+  main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__left,
+  main.kc-memberservice-detail section.kc-other-data .kc-other-data__left {
+    margin-bottom: 0;
+    margin-right: 40px; }
+    main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__left .kc-image-identity,
+    main.kc-memberservice-detail section.kc-other-data .kc-other-data__left .kc-image-identity {
+      flex-direction: column; }
+      main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__left .kc-image-identity .kc-image-preview:first-child,
+      main.kc-memberservice-detail section.kc-other-data .kc-other-data__left .kc-image-identity .kc-image-preview:first-child {
+        margin-bottom: 20px;
+        margin-right: 0; }
+  main.kc-memberservice-detail section.kc-other-data .kc-other-data__left .kc-image-identity {
+    margin-top: 10px; } }
 
 /**
   Styling for notification template [BACKOFFICE]
