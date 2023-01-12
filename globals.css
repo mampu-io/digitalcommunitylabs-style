@@ -605,145 +605,6 @@ select, .form-control, .custom-select {
   .kc-notification-setting .kc-modal .kc-modal__container .kc-form-group .kc-form-group__label {
     width: 150px; }
 
-.listRevision-Anggota {
-  margin: 0px !important;
-  padding: 10px;
-  margin-bottom: 20px !important;
-  background: #f0f0f0; }
-  .listRevision-Anggota:last-child {
-    margin-bottom: 0px !important; }
-  .listRevision-Anggota li {
-    list-style: none;
-    list-style-position: inside;
-    font-family: "Lato";
-    color: #4c4c4c;
-    margin-bottom: 20px !important; }
-    .listRevision-Anggota li:last-child {
-      margin-bottom: 0px !important; }
-    .listRevision-Anggota li span {
-      display: inline-block;
-      font-style: normal; }
-    .listRevision-Anggota li input {
-      font-size: 15px;
-      font-family: "Lato";
-      color: #4c4c4c; }
-    .listRevision-Anggota li.titleListRevision-Anggota {
-      font-weight: bold;
-      font-size: 18px;
-      padding-bottom: 5px;
-      color: #6f6f6f;
-      border-bottom: 1px solid #e0e0e0; }
-
-.custom-select {
-  font-size: 0.8rem; }
-
-.kc-revision-modal.kc-revision-modal--hidden {
-  display: none; }
-
-.kc-revision-modal .kc-revision-modal--backdrop {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  background: rgba(0, 0, 0, 0.2);
-  z-index: 999999;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container {
-    border-radius: 8px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
-    background-color: #FFFFFF;
-    width: auto;
-    height: 700px;
-    padding: 60px;
-    display: flex;
-    flex-direction: column;
-    position: relative; }
-    .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--close-button {
-      position: absolute;
-      top: 25px;
-      right: 25px;
-      background-color: transparent;
-      border: none;
-      width: 40px;
-      height: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--close-button i {
-        font-size: 20px; }
-      .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--close-button:hover {
-        border-radius: 50%;
-        background-color: #F0F0F0; }
-    .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--header {
-      width: 100%;
-      display: flex;
-      justify-content: space-between; }
-      .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--header .kc-revision-modal--navigation {
-        display: flex; }
-        .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--header .kc-revision-modal--navigation button {
-          margin-right: 15px; }
-          .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--header .kc-revision-modal--navigation button .kc-tab-navigation--label {
-            margin-bottom: 10px; }
-    .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content {
-      width: 100%;
-      height: 100%;
-      margin: 20px 0;
-      padding-right: 50px;
-      overflow-x: hidden;
-      overflow-y: auto; }
-      .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content::-webkit-scrollbar {
-        width: 6px; }
-      .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-        border-radius: 10px; }
-      .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content::-webkit-scrollbar-thumb {
-        border-radius: 10px;
-        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
-        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
-      .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-dropdown button {
-        height: 32px; }
-      .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-dropdown .kc-dropdown__items {
-        top: 32px; }
-      .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section {
-        width: fit-content; }
-        .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-header {
-          margin-bottom: 15px; }
-          .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-header .kc-record-item--value {
-            color: #8C8C8C; }
-        .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-item {
-          display: flex;
-          flex-direction: column; }
-          .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-item .kc-section-item--top {
-            align-items: flex-start;
-            display: flex;
-            padding: 10px; }
-            .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-item .kc-section-item--top .kc-record-item {
-              padding: 0; }
-            .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-item .kc-section-item--top .kc-checkbox-container {
-              padding-top: 3px; }
-          .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-item .kc-section-item--bottom {
-            width: 100%;
-            padding: 0 10px;
-            margin-bottom: 15px; }
-            .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-item .kc-section-item--bottom textarea {
-              resize: none; }
-            .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-item .kc-section-item--bottom .kc-section-item--action {
-              margin-top: 10px;
-              display: flex; }
-              .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-item .kc-section-item--bottom .kc-section-item--action .kc-section-item--action-item {
-                margin-right: 25px; }
-                .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-item .kc-section-item--bottom .kc-section-item--action .kc-section-item--action-item input[type="radio"] {
-                  margin-right: 10px; }
-    .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--footer .kc-revision-modal--action-button {
-      display: flex;
-      justify-content: flex-start; }
-      .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--footer .kc-revision-modal--action-button button {
-        margin: 0; }
-
 /**
   Styling for active member detail page [MEMBERSERVICE]
 */
@@ -1297,6 +1158,20 @@ select, .form-control, .custom-select {
   .kc-term-deposit-application-detail .kc-modal .kc-modal__container .kc-form-group .kc-inputfield {
     max-width: none; }
 
+.kc-page-notfound, .kc-verification-failed {
+  height: 100vh; }
+  .kc-page-notfound p.kc-caption, .kc-verification-failed p.kc-caption {
+    font-size: 15px;
+    line-height: 1.25;
+    font-style: italic;
+    color: #000000;
+    opacity: 0.5; }
+    .kc-page-notfound p.kc-caption a:link, .kc-page-notfound p.kc-caption a:visited, .kc-verification-failed p.kc-caption a:link, .kc-verification-failed p.kc-caption a:visited {
+      color: #000000;
+      font-weight: 700;
+      text-decoration: underline;
+      opacity: 1; }
+
 .kc-profile .kc-form-wrapper, .kc-change-password .kc-form-wrapper {
   margin: 20px 0; }
   .kc-profile .kc-form-wrapper .kc-form-group .kc-roles, .kc-change-password .kc-form-wrapper .kc-form-group .kc-roles {
@@ -1317,50 +1192,6 @@ select, .form-control, .custom-select {
 .kc-change-password .kc-form-wrapper .kc-inputfield__subtitle span.kc-overline {
   font-size: 11px;
   letter-spacing: 0.75px; }
-
-.login-container {
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(337deg, #020024 0%, #d2d6d4 0%, #eaf2f9 45%);
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .login-container .login-wrapper {
-    width: auto;
-    height: auto; }
-    .login-container .login-wrapper .login-title {
-      font-size: 22px;
-      margin-bottom: 15px;
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-end; }
-      .login-container .login-wrapper .login-title span {
-        font-size: 15px;
-        display: block;
-        margin-left: 5px;
-        color: #999999;
-        font-family: "Lato";
-        font-style: italic; }
-    .login-container .login-wrapper .login-box {
-      padding: 15px;
-      border: 1px solid #e0e0e0;
-      border-radius: 5px;
-      font-size: 15px;
-      background: #fff; }
-
-.kc-page-notfound, .kc-verification-failed {
-  height: 100vh; }
-  .kc-page-notfound p.kc-caption, .kc-verification-failed p.kc-caption {
-    font-size: 15px;
-    line-height: 1.25;
-    font-style: italic;
-    color: #000000;
-    opacity: 0.5; }
-    .kc-page-notfound p.kc-caption a:link, .kc-page-notfound p.kc-caption a:visited, .kc-verification-failed p.kc-caption a:link, .kc-verification-failed p.kc-caption a:visited {
-      color: #000000;
-      font-weight: 700;
-      text-decoration: underline;
-      opacity: 1; }
 
 .kc-color-pallete {
   background-color: transparent;
@@ -1568,6 +1399,139 @@ select, .form-control, .custom-select {
     text-decoration: underline;
     opacity: 1; }
 
+.dashboard-cards-wrapper {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
+
+.dashboard-cards-container {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
+  .dashboard-cards-container .dashboard-left {
+    width: calc(30% - 30px);
+    margin: 0 15px; }
+  .dashboard-cards-container .dashboard-right {
+    width: calc(70% - 30px);
+    margin: 0 15px; }
+  .dashboard-cards-container table {
+    width: 100%; }
+    .dashboard-cards-container table tr td {
+      padding: 7.5px 0;
+      font-family: "Lato";
+      font-size: 14px;
+      color: #8c8c8c;
+      text-align: right;
+      font-weight: bold; }
+      .dashboard-cards-container table tr td h1, .dashboard-cards-container table tr td h2, .dashboard-cards-container table tr td h3 {
+        color: #000; }
+      .dashboard-cards-container table tr td:first-child {
+        font-weight: normal;
+        text-align: left; }
+
+.dashboard-cards {
+  background: #FFFFFF;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 25px;
+  margin: 15px;
+  width: calc(50% - 30px); }
+  .dashboard-cards.dashboard-cards-full {
+    width: 100%;
+    margin: 15px 0; }
+  .dashboard-cards .title-with-icon-dashboard-cards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; }
+    .dashboard-cards .title-with-icon-dashboard-cards .icon-dashboard-cards {
+      width: auto;
+      padding: 5px;
+      height: 50px;
+      width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff; }
+      .dashboard-cards .title-with-icon-dashboard-cards .icon-dashboard-cards.green {
+        background-color: #74C990; }
+      .dashboard-cards .title-with-icon-dashboard-cards .icon-dashboard-cards.purple {
+        background-color: #757AEA; }
+      .dashboard-cards .title-with-icon-dashboard-cards .icon-dashboard-cards.yellow {
+        background-color: #E5AE20; }
+      .dashboard-cards .title-with-icon-dashboard-cards .icon-dashboard-cards.blue {
+        background-color: #51BCF8; }
+  .dashboard-cards .title-dashboard-cards {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 0;
+    text-transform: uppercase; }
+  .dashboard-cards span {
+    font-family: "Lato";
+    font-style: normal;
+    color: #8C8C8C;
+    font-size: 14px; }
+  .dashboard-cards .nominal-dashboard-cards {
+    font-size: 40px;
+    color: #000;
+    font-weight: bold;
+    font-family: "Lato";
+    margin: 0;
+    padding: 0;
+    margin-top: 45px;
+    margin-bottom: 45px; }
+    .dashboard-cards .nominal-dashboard-cards span {
+      color: #000;
+      font-size: 25px;
+      font-weight: normal; }
+  .dashboard-cards .footer-dashboard-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+    .dashboard-cards .footer-dashboard-cards p {
+      margin: 0;
+      padding: 0;
+      font-family: "Lato";
+      font-size: 17px;
+      color: #8C8C8C; }
+    .dashboard-cards .footer-dashboard-cards .increase-status-dashboard-cards {
+      text-align: right; }
+      .dashboard-cards .footer-dashboard-cards .increase-status-dashboard-cards .icon-increase-status-dashboard-cards {
+        padding: 5px 10px;
+        color: #ffffff;
+        border-radius: 4px; }
+        .dashboard-cards .footer-dashboard-cards .increase-status-dashboard-cards .icon-increase-status-dashboard-cards.increase {
+          background-color: #52B524; }
+        .dashboard-cards .footer-dashboard-cards .increase-status-dashboard-cards .icon-increase-status-dashboard-cards.decrease {
+          background-color: #DC496F; }
+  .dashboard-cards .tx-color-purple-dashboard-cards {
+    color: #757AEA; }
+  .dashboard-cards .tx-color-blue-dashboard-cards {
+    color: #51BCF8; }
+  .dashboard-cards .tx-color-yellow-dashboard-cards {
+    color: #E5AE20; }
+  .dashboard-cards .tx-color-red-dashboard-cards {
+    color: #DC496F; }
+  .dashboard-cards .tx-color-green-dashboard-cards {
+    color: #74C990; }
+  .dashboard-cards .tx-color-black-dashboard-cards {
+    color: #000; }
+  .dashboard-cards .sparator {
+    width: 100%;
+    height: 1px;
+    margin: 15px 0; }
+    .dashboard-cards .sparator.sparator-black {
+      background: #000; }
+    .dashboard-cards .sparator.sparator-grey {
+      background: #8c8c8c; }
+
 .kc-image-preview {
   width: 120px;
   display: flex;
@@ -1768,139 +1732,6 @@ select, .form-control, .custom-select {
     background-color: #fff !important;
     color: #0f77c0 !important; }
 
-.dashboard-cards-wrapper {
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px; }
-
-.dashboard-cards-container {
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px; }
-  .dashboard-cards-container .dashboard-left {
-    width: calc(30% - 30px);
-    margin: 0 15px; }
-  .dashboard-cards-container .dashboard-right {
-    width: calc(70% - 30px);
-    margin: 0 15px; }
-  .dashboard-cards-container table {
-    width: 100%; }
-    .dashboard-cards-container table tr td {
-      padding: 7.5px 0;
-      font-family: "Lato";
-      font-size: 14px;
-      color: #8c8c8c;
-      text-align: right;
-      font-weight: bold; }
-      .dashboard-cards-container table tr td h1, .dashboard-cards-container table tr td h2, .dashboard-cards-container table tr td h3 {
-        color: #000; }
-      .dashboard-cards-container table tr td:first-child {
-        font-weight: normal;
-        text-align: left; }
-
-.dashboard-cards {
-  background: #FFFFFF;
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  padding: 25px;
-  margin: 15px;
-  width: calc(50% - 30px); }
-  .dashboard-cards.dashboard-cards-full {
-    width: 100%;
-    margin: 15px 0; }
-  .dashboard-cards .title-with-icon-dashboard-cards {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between; }
-    .dashboard-cards .title-with-icon-dashboard-cards .icon-dashboard-cards {
-      width: auto;
-      padding: 5px;
-      height: 50px;
-      width: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #ffffff; }
-      .dashboard-cards .title-with-icon-dashboard-cards .icon-dashboard-cards.green {
-        background-color: #74C990; }
-      .dashboard-cards .title-with-icon-dashboard-cards .icon-dashboard-cards.purple {
-        background-color: #757AEA; }
-      .dashboard-cards .title-with-icon-dashboard-cards .icon-dashboard-cards.yellow {
-        background-color: #E5AE20; }
-      .dashboard-cards .title-with-icon-dashboard-cards .icon-dashboard-cards.blue {
-        background-color: #51BCF8; }
-  .dashboard-cards .title-dashboard-cards {
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 25px;
-    margin: 0px;
-    padding: 0px;
-    margin-bottom: 0;
-    text-transform: uppercase; }
-  .dashboard-cards span {
-    font-family: "Lato";
-    font-style: normal;
-    color: #8C8C8C;
-    font-size: 14px; }
-  .dashboard-cards .nominal-dashboard-cards {
-    font-size: 40px;
-    color: #000;
-    font-weight: bold;
-    font-family: "Lato";
-    margin: 0;
-    padding: 0;
-    margin-top: 45px;
-    margin-bottom: 45px; }
-    .dashboard-cards .nominal-dashboard-cards span {
-      color: #000;
-      font-size: 25px;
-      font-weight: normal; }
-  .dashboard-cards .footer-dashboard-cards {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; }
-    .dashboard-cards .footer-dashboard-cards p {
-      margin: 0;
-      padding: 0;
-      font-family: "Lato";
-      font-size: 17px;
-      color: #8C8C8C; }
-    .dashboard-cards .footer-dashboard-cards .increase-status-dashboard-cards {
-      text-align: right; }
-      .dashboard-cards .footer-dashboard-cards .increase-status-dashboard-cards .icon-increase-status-dashboard-cards {
-        padding: 5px 10px;
-        color: #ffffff;
-        border-radius: 4px; }
-        .dashboard-cards .footer-dashboard-cards .increase-status-dashboard-cards .icon-increase-status-dashboard-cards.increase {
-          background-color: #52B524; }
-        .dashboard-cards .footer-dashboard-cards .increase-status-dashboard-cards .icon-increase-status-dashboard-cards.decrease {
-          background-color: #DC496F; }
-  .dashboard-cards .tx-color-purple-dashboard-cards {
-    color: #757AEA; }
-  .dashboard-cards .tx-color-blue-dashboard-cards {
-    color: #51BCF8; }
-  .dashboard-cards .tx-color-yellow-dashboard-cards {
-    color: #E5AE20; }
-  .dashboard-cards .tx-color-red-dashboard-cards {
-    color: #DC496F; }
-  .dashboard-cards .tx-color-green-dashboard-cards {
-    color: #74C990; }
-  .dashboard-cards .tx-color-black-dashboard-cards {
-    color: #000; }
-  .dashboard-cards .sparator {
-    width: 100%;
-    height: 1px;
-    margin: 15px 0; }
-    .dashboard-cards .sparator.sparator-black {
-      background: #000; }
-    .dashboard-cards .sparator.sparator-grey {
-      background: #8c8c8c; }
-
 .kc-datatable .kc-status-card {
   width: fit-content;
   white-space: nowrap; }
@@ -2035,215 +1866,6 @@ aside.kc-deposit-account-onboarding-detail {
 @media screen and (max-width: 991px) {
   .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail {
     max-width: 480px; } }
-
-.kc-detail-wrapper {
-  width: 100%;
-  padding: 30px;
-  display: flex; }
-  .kc-detail-wrapper .kc-detail-wrapper__left {
-    display: flex;
-    flex-direction: column;
-    margin-right: 60px;
-    flex-basis: 25%;
-    padding-top: 10px;
-    width: 100%; }
-    .kc-detail-wrapper .kc-detail-wrapper__left .kc-record-item--content {
-      align-items: flex-start; }
-    .kc-detail-wrapper .kc-detail-wrapper__left h2.kc-detail-headline {
-      font-weight: 500;
-      margin: 0;
-      margin-bottom: 20px; }
-    .kc-detail-wrapper .kc-detail-wrapper__left .kc-detail-card {
-      border: 1px solid #8C8C8C;
-      border-radius: 8px;
-      padding: 20px 10px;
-      min-height: 300px;
-      margin-top: 25px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
-      .kc-detail-wrapper .kc-detail-wrapper__left .kc-detail-card .kc-detail-card__entry {
-        margin-top: 10px; }
-        .kc-detail-wrapper .kc-detail-wrapper__left .kc-detail-card .kc-detail-card__entry p {
-          margin: 0; }
-        .kc-detail-wrapper .kc-detail-wrapper__left .kc-detail-card .kc-detail-card__entry .kc-status-card {
-          width: fit-content; }
-        .kc-detail-wrapper .kc-detail-wrapper__left .kc-detail-card .kc-detail-card__entry .kc-payment-link {
-          display: flex;
-          align-items: center; }
-          .kc-detail-wrapper .kc-detail-wrapper__left .kc-detail-card .kc-detail-card__entry .kc-payment-link button {
-            border: 1px solid #D9D9D9;
-            border-radius: 2px;
-            background-color: #FFFFFF;
-            color: #8C8C8C;
-            height: 32px;
-            margin-left: 10px;
-            padding: 0 8px;
-            width: 85px;
-            display: flex;
-            justify-content: center;
-            align-items: center; }
-            .kc-detail-wrapper .kc-detail-wrapper__left .kc-detail-card .kc-detail-card__entry .kc-payment-link button:hover {
-              border: 1px solid #8C8C8C; }
-        .kc-detail-wrapper .kc-detail-wrapper__left .kc-detail-card .kc-detail-card__entry .kc-total-deposit {
-          color: #8C8C8C;
-          font-weight: 500;
-          font-size: 21px;
-          line-height: 25px;
-          letter-spacing: 0.15px; }
-    .kc-detail-wrapper .kc-detail-wrapper__left .kc-detail-action-buttons {
-      display: flex;
-      flex-direction: column;
-      width: 100%; }
-      .kc-detail-wrapper .kc-detail-wrapper__left .kc-detail-action-buttons .kc-button {
-        margin-top: 25px; }
-  .kc-detail-wrapper .kc-detail-wrapper__right {
-    padding: 10px; }
-    .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-navigation {
-      margin-bottom: 50px;
-      display: flex;
-      flex-direction: row; }
-      .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-navigation .kc-tab-navigation {
-        margin-right: 25px; }
-    .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section {
-      width: 600px;
-      margin-left: 20px; }
-      .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section h3 {
-        margin-bottom: 30px;
-        margin-top: 10px; }
-      .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-section--foto-dokumen {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 20px; }
-        .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-section--foto-dokumen .kc-image-preview {
-          margin-right: 40px; }
-      .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-section-header {
-        margin-bottom: 15px; }
-        .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-section-header .kc-record-item--value {
-          color: #8C8C8C; }
-      .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-deposit-account-balance {
-        display: flex;
-        flex-direction: column;
-        padding-left: 10px; }
-        .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-deposit-account-balance label {
-          color: #8C8C8C;
-          font-weight: 400;
-          margin-bottom: 5px; }
-        .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-deposit-account-balance span {
-          color: #434343; }
-      .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-bank-accounts-list .kc-dropdown {
-        margin-bottom: 30px; }
-      .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-bank-accounts-list .kc-bank-account-item {
-        border-top: 1px solid #D9D9D9;
-        padding: 15px 0 10px; }
-        .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-bank-accounts-list .kc-bank-account-item .kc-bank-account-item--header {
-          display: flex;
-          align-items: center; }
-          .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-bank-accounts-list .kc-bank-account-item .kc-bank-account-item--header h3 {
-            margin-bottom: 0; }
-        .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-bank-accounts-list .kc-bank-account-item .kc-bank-account-item--content {
-          margin-top: 10px; }
-          .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-bank-accounts-list .kc-bank-account-item .kc-bank-account-item--content .kc-record-item {
-            padding: 5px 0; }
-
-.kc-detail-member {
-  width: 100%;
-  padding: 30px;
-  display: flex;
-  flex-direction: row; }
-  .kc-detail-member .kc-detail-member--headline {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-right: 60px;
-    flex-basis: 25%;
-    padding-top: 10px;
-    width: 100%; }
-    .kc-detail-member .kc-detail-member--headline .kc-record-item--content {
-      align-items: flex-start; }
-    .kc-detail-member .kc-detail-member--headline .kc-detail-member--identity span {
-      font-weight: 500; }
-    .kc-detail-member .kc-detail-member--headline .kc-detail-member--action-button {
-      display: flex;
-      flex-direction: column;
-      width: 100%; }
-      .kc-detail-member .kc-detail-member--headline .kc-detail-member--action-button .kc-button {
-        margin-top: 25px; }
-    .kc-detail-member .kc-detail-member--headline .kc-detail-member--card {
-      border: 1px solid #8C8C8C;
-      border-radius: 8px;
-      padding: 20px 10px;
-      min-height: 300px;
-      margin-top: 25px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
-      .kc-detail-member .kc-detail-member--headline .kc-detail-member--card .kc-detail-member--card-entry {
-        margin-top: 10px; }
-        .kc-detail-member .kc-detail-member--headline .kc-detail-member--card .kc-detail-member--card-entry p {
-          margin: 0; }
-        .kc-detail-member .kc-detail-member--headline .kc-detail-member--card .kc-detail-member--card-entry .kc-status-card {
-          width: fit-content; }
-        .kc-detail-member .kc-detail-member--headline .kc-detail-member--card .kc-detail-member--card-entry .kc-payment-link {
-          display: flex;
-          align-items: center; }
-          .kc-detail-member .kc-detail-member--headline .kc-detail-member--card .kc-detail-member--card-entry .kc-payment-link button {
-            border: 1px solid #D9D9D9;
-            border-radius: 2px;
-            background-color: #FFFFFF;
-            color: #8C8C8C;
-            height: 32px;
-            margin-left: 10px;
-            padding: 0 8px;
-            width: 85px;
-            display: flex;
-            justify-content: center;
-            align-items: center; }
-            .kc-detail-member .kc-detail-member--headline .kc-detail-member--card .kc-detail-member--card-entry .kc-payment-link button:hover {
-              border: 1px solid #8C8C8C; }
-        .kc-detail-member .kc-detail-member--headline .kc-detail-member--card .kc-detail-member--card-entry .kc-total-deposit {
-          color: #8C8C8C;
-          font-weight: 500;
-          font-size: 21px;
-          line-height: 25px;
-          letter-spacing: 0.15px; }
-  .kc-detail-member .kc-detail-member--content {
-    padding: 10px; }
-    .kc-detail-member .kc-detail-member--content .kc-detail-member--navigation {
-      margin-bottom: 50px;
-      display: flex;
-      flex-direction: row; }
-      .kc-detail-member .kc-detail-member--content .kc-detail-member--navigation .kc-tab-navigation {
-        margin-right: 25px; }
-    .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section {
-      width: 600px;
-      margin-left: 20px; }
-      .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section .kc-section--foto-dokumen {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 20px; }
-        .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section .kc-section--foto-dokumen .kc-image-preview {
-          margin-right: 40px; }
-      .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section .kc-section-header {
-        margin-bottom: 15px; }
-        .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section .kc-section-header .kc-record-item--value {
-          color: #8C8C8C; }
-      .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section .kc-bank-accounts-list .kc-dropdown {
-        margin-bottom: 30px; }
-      .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section .kc-bank-accounts-list .kc-bank-account-item {
-        border-top: 1px solid #D9D9D9;
-        padding: 15px 0 10px; }
-        .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section .kc-bank-accounts-list .kc-bank-account-item .kc-bank-account-item--header {
-          display: flex;
-          align-items: center; }
-          .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section .kc-bank-accounts-list .kc-bank-account-item .kc-bank-account-item--header h3 {
-            margin-bottom: 0; }
-        .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section .kc-bank-accounts-list .kc-bank-account-item .kc-bank-account-item--content {
-          margin-top: 10px; }
-          .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section .kc-bank-accounts-list .kc-bank-account-item .kc-bank-account-item--content .kc-record-item {
-            padding: 5px 0; }
 
 .kc-login--wrapper {
   background: #F2F3F9 url("https://storage.googleapis.com/ksp-dcb-web-assets/dcb_background.png") no-repeat top left;

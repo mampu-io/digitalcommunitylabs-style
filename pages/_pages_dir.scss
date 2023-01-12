@@ -5,8 +5,6 @@
 @import 'backoffice/notification_setting';
 
 // Styling pages for memberservice
-@import 'memberservice/detail_anggota';
-@import 'memberservice/revision_modal';
 @import 'memberservice/active_member_detail';
 @import 'memberservice/dao_membership_detail';
 @import 'memberservice/general';
@@ -23,8 +21,5 @@
 @import 'funding/term_deposit_application_detail';
 
 // Styling pages for general
+@import 'general/not_found';
 @import 'general/profile';
-
-// Styling pages for all dcb project
-@import 'login';
-@import 'not_found';

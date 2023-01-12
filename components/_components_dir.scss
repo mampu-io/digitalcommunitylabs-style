@@ -9,6 +9,7 @@
 
 // Molecules
 @import 'molecules/animation';
+@import 'molecules/dashbord_cards';
 @import 'molecules/image_preview';
 @import 'molecules/login_container';
 @import 'molecules/modal';
@@ -16,7 +17,6 @@
 @import 'molecules/record_item';
 @import 'molecules/select_role';
 @import 'molecules/sweetalert_custom';
-@import 'molecules/dashbord_cards';
 
 // Organisms
 @import 'organisms/datatable';
@@ -24,8 +24,6 @@
 // Templates
 @import 'templates/deposit_account_onboarding_detail';
 @import 'templates/deposit_transaction_detail';
-@import 'templates/detail_generic';
-@import 'templates/detail_member';
 @import 'templates/login_wrapper';
 @import 'templates/memberservice_detail';
 @import 'templates/notification';
