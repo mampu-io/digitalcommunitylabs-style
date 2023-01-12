@@ -1,0 +1,47 @@
+/**
+  General styling for all pages on BACKOFFICE
+*/
+
+.kc-list-users, .kc-notification-setting, .kc-list-notifications {
+  .kc-datatable {
+    .kc-datatable__header, .kc-datatable__pagination {
+      padding: 16px 0;
+    }
+  }
+}
+
+.kc-list-users, .kc-notification-setting {
+  .kc-datatable {
+    .kc-table {
+      table {
+        tbody tr td {
+          .kc-toggle-active-user {
+            button {
+              border: none;
+              background-color: transparent;
+            }
+
+            .kc-active-indicator {
+              border-radius: 50%;
+              width: 16px;
+              height: 16px;
+            
+              &.kc-active-indicator--success {
+                background-color: $functionalSuccess500;
+              }
+            
+              &.kc-active-indicator--danger {
+                background-color: $functionalError500;
+              }
+            }
+          }
+
+          .kc-rounded-button__tooltip {
+            right: 36px;
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+}

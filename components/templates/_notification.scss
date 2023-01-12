@@ -1,8 +1,12 @@
+/**
+  Styling for notification template [BACKOFFICE]
+  The template is used on create notification page and detail notification page
+*/
+
 .kc-notification {
   width: 100%;
   max-width: 1300px;
   margin-bottom: 30px;
-  padding: 0 30px;
 
   .kc-form-group {
     &.kc-form-group--vertical {
@@ -43,6 +47,12 @@
       &.kc-form-group--vertical {
         max-width: 600px;
       }
+
+      .ck-editor__editable {
+        ol, ul {
+          padding-inline-start: 40px;
+        }
+      }
     }
   }
 
@@ -61,15 +71,5 @@
       height: 640px;
       width: 360px;
     }
-  }
-}
-
-// List Notifikasi
-.kc-notification-preview {
-  p {
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;  
-    overflow: hidden;
   }
 }

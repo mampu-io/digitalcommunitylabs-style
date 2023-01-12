@@ -1,24 +1,70 @@
-.kc-detail-wrapper.kc-funding-detail-member {
-  .kc-detail-wrapper__left {
-    margin-right: 50px;
-  }
+/**
+  Styling for active member detail page [FUNDING]
+*/
 
-  .kc-detail-wrapper__right {
-    .kc-detail-content {
-      .kc-section {
-        margin: 0;
+.kc-funding-detail-member {
+  .content-body {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+
+    .container-fluid {
+      display: flex;
+
+      .kc-record-item-new {
+        > label {
+          font-weight: 400;
+        }
+      }
+
+      main {
+        background-color: $neutral1;
+        border-radius: 2px;
+        box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
+        max-width: 1080px;
+        min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px) - 70px - 20px);
+        padding: 20px;
+        width: 70%;
+
+        .spinner-border {
+          width: 1.25rem;
+          height: 1.25rem;
+          border: 0.25em solid $functionalLink500;
+          border-right-color: transparent;
+          margin-left: 5px;
+        }
+
+        .kc-record-item-new {
+          &:first-child {
+            .kc-record-item-new__value {
+              label {
+                font-weight: 400;
+              }
+            }
+          }
+        }
 
         .kc-form-group {
-          margin: 0;
-          margin-right: 15px;
+          margin-bottom: 0;
+          margin-right: 10px;
+          width: fit-content;
 
           .kc-inputfield {
-            width: 100%;
-
             .kc-inputfield__box {
               height: 40px;
             }
           }
+        }
+      }
+
+      aside {
+        margin-left: 20px;
+        max-width: 360px;
+        width: 30%;
+
+        h2 {
+          margin-bottom: 40px;
         }
       }
     }

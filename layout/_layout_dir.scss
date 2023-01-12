@@ -1,13 +1,4 @@
-// Generic Layout
 @import 'content';
-@import 'detail_generic';
-@import 'detail_member';
 @import 'footer';
 @import 'header';
-@import 'modal';
-@import 'navigation';
-
-// Specific Layout
-@import 'registration_user_modal';
-@import 'edit_user_modal';
-@import 'deposit_invoice_detail';
+@import 'sidebar';

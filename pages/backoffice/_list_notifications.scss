@@ -1,0 +1,30 @@
+/**
+  Styling for list notification page [BACKOFFICE]
+*/
+
+.kc-list-notifications {
+  .kc-datatable {
+    .kc-table {
+      table {
+        tbody tr td {
+          font-size: 15px;
+
+          .kc-notification-preview {
+            p {
+              display: -webkit-box;
+              -webkit-line-clamp: 4;
+              -webkit-box-orient: vertical;  
+              overflow: hidden;
+              white-space: break-spaces;
+            }
+          }
+
+          .kc-rounded-button__tooltip {
+            right: 36px;
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+}

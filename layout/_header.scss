@@ -1,24 +1,17 @@
 .main-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background: $primary7;
+  border-bottom: none;
   padding: 0.5rem 1rem;
+  height: 60px;
   
   .navbar-nav {
     .nav-item {
-      font-size: $font_size_paragraph;
-      font-family: $font_primary;
-      color: $white;
+      color: $neutral1;
       margin-right: 25px;
-      display: flex;
-      align-items: center;
 
       .kc-choose-role {
-        width: auto;
-
         .kc-dropdown {
           margin-left: 10px;
-          width: 200px;
 
           button {
             height: 32px;
@@ -34,24 +27,31 @@
         margin-right: 0;
       }
       
-      p {
-        line-height: 1;
-        padding: 0;
+      p.kc-welcome-text {
         margin: 0;
+        font-weight: 700;
         
         span {
-          font-weight: 300;
+          font-weight: 400;
         }
       }
 
       .nav-link {
+        color: $neutral1;
         padding: 0px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
 
         i {
           font-size: 20px;
+        }
+      }
+
+      .dropdown-menu {
+        a.dropdown-item {
+          color: $neutral8;
+
+          &:hover {
+            color: $primary7;
+          }
         }
       }
     }

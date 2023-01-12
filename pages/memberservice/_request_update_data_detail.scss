@@ -1,0 +1,38 @@
+/**
+  Styling for request update data detail page [MEMBERSERVICE]
+*/
+
+.kc-request-update-data-detail {
+  .kc-reject-request-update-data-modal {
+    .kc-modal {
+      .kc-modal__container {
+        width: 500px;
+
+        .kc-modal__main {
+          .kc-modal__content {
+            .kc-textarea {
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  main.kc-memberservice-detail {
+    .kc-section {
+      .kc-section-header {
+        .kc-record-item {
+          .kc-record-item--rows-value {
+            .kc-record-item--value {
+              span {
+                color: $neutral7;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,22 +1,25 @@
 // Styling pages for backoffice
-@import 'backoffice/list_user';
-@import 'backoffice/reset_password';
+@import 'backoffice/general';
+@import 'backoffice/list_notifications';
+@import 'backoffice/list_users';
+@import 'backoffice/notification_setting';
 
 // Styling pages for memberservice
-@import 'memberservice/detail_anggota';
-@import 'memberservice/revision_modal';
+@import 'memberservice/active_member_detail';
+@import 'memberservice/dao_membership_detail';
+@import 'memberservice/general';
+@import 'memberservice/invoice_list';
+@import 'memberservice/member_proposal_detail';
+@import 'memberservice/request_update_data_detail';
 
 // Styling pages for funding
-@import 'funding/detail_deposito';
 @import 'funding/detail_member';
-@import 'funding/general';
 @import 'funding/pemindahan_dana';
 @import 'funding/pencarian_rekening';
+@import 'funding/setting_deposit_withdraw';
+@import 'funding/term_deposit_account_detail';
 @import 'funding/term_deposit_application_detail';
 
 // Styling pages for general
+@import 'general/not_found';
 @import 'general/profile';
-
-// Styling pages for all dcb project
-@import 'login';
-@import 'not_found';

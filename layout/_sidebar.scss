@@ -1,0 +1,114 @@
+/**
+  Styling for admin sidebar [AdminHOC]
+*/
+
+.layout-navbar-fixed.layout-fixed {
+  .wrapper {
+    .main-sidebar {
+      .brand-link {
+        background-color: $primary7;
+        padding: 8px;
+        height: 60px;
+    
+        .brand-text {
+          color: $neutral1;
+          height: min-content;
+          padding: 0 0.5rem;
+        }
+    
+        img {
+          height: 100%;
+          object-position: center;
+          object-fit: cover;
+        }
+      }
+    
+      .sidebar {
+        background-color: $neutral5;
+        margin-top: 60px;
+        padding: 0px;
+    
+        nav {
+          li.nav-header, li.nav-item a.nav-link p, li.nav-item a.nav-link i {
+            color: $neutral13;
+            line-height: 30px;
+          }
+    
+          li.nav-header {
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 0.5rem 1rem;
+
+            i {
+              margin-right: 8px;
+            }
+          }
+    
+          li.nav-item {    
+            a.nav-link {
+              background-color: transparent;
+              border-radius: 0;
+              margin-bottom: 0;
+              width: 100%;
+              transition: background-color .5s;
+              -webkit-transition: background-color .5s;
+      
+              &.active {
+                background-color: $primary7;
+      
+                p {
+                  color: $neutral1;
+                  font-weight: 700;
+                }
+              }
+            }
+
+            ul.nav-treeview {
+              li.nav-item {
+                a.nav-link {
+                  padding-left: 1.75rem;
+
+                  &.active {
+                    background-color: #CACACA;
+                  }
+
+                  p {
+                    color: $neutral13;
+                    font-weight: 400;
+                  }
+                }
+              }
+            }
+    
+            &:hover {
+              > a.nav-link {
+                background-color: #CACACA;
+
+                &.active {
+                  background-color: $primary7;
+                }
+              }
+            }
+
+            &.menu-open {
+              &.active {
+                > a.nav-link {
+                  background-color: $primary7;
+
+                  p, i {
+                    color: $neutral1;
+                    font-weight: 700;
+                  }
+                }
+              }
+
+              > a.nav-link {
+                background-color: $neutral6;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

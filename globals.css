@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto";
+  font-family: "Lato";
   box-sizing: border-box; }
 
 h1 {
@@ -90,7 +90,7 @@ table p {
 select, .form-control, .custom-select {
   font-size: 13;
   color: #4c4c4c;
-  font-family: "Lato" !important;
+  font-family: "Roboto" !important;
   border-radius: 2px;
   box-shadow: none;
   border: 1px solid #e0e0e0; }
@@ -168,42 +168,27 @@ select, .form-control, .custom-select {
   font-weight: 700; }
 
 .content-wrapper {
-  padding-bottom: 15px;
-  background-color: #FFFFFF; }
+  padding-bottom: 20px;
+  background-color: #F0F2F8; }
   .content-wrapper > .content-header {
-    padding: 30px; }
+    padding: 20px;
+    height: 70px; }
     .content-wrapper > .content-header h1 {
-      font-size: 22px;
-      font-family: "Roboto";
-      color: #333;
-      margin: 0;
-      padding: 0; }
+      font-size: 21px;
+      font-weight: 700;
+      color: #262626; }
     .content-wrapper > .content-header .breadcrumb {
-      font-family: "Roboto";
       font-size: 15px;
-      font-weight: normal;
-      color: #4c4c4c; }
+      color: #434343; }
       .content-wrapper > .content-header .breadcrumb a {
-        color: #4c4c4c; }
+        color: #434343; }
   .content-wrapper > .content-body {
-    padding: 15px 30px; }
-    .content-wrapper > .content-body .kc-content {
-      max-width: 600px;
-      margin-bottom: 30px;
-      padding: 0 30px; }
-      .content-wrapper > .content-body .kc-content .kc-form-wrapper .kc-form-group .kc-roles {
-        display: flex;
-        flex-direction: column;
-        margin-top: 5px; }
-        .content-wrapper > .content-body .kc-content .kc-form-wrapper .kc-form-group .kc-roles .kc-roles__option {
-          margin-bottom: 15px; }
-          .content-wrapper > .content-body .kc-content .kc-form-wrapper .kc-form-group .kc-roles .kc-roles__option span.kc-caption {
-            color: #595959;
-            font-size: 13px;
-            line-height: 8px; }
-      .content-wrapper > .content-body .kc-content .kc-form-wrapper .kc-form-group ul.kc-roles {
-        width: 100%;
-        margin-left: 40px; }
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 20px;
+    padding: 20px;
+    min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px) - 70px - 20px); }
 
 .product-deposit-col-wrapper {
   width: 100%;
@@ -211,7 +196,7 @@ select, .form-control, .custom-select {
   justify-content: space-between;
   align-items: flex-start;
   border-bottom: 1px solid #f0f0f0;
-  font-family: "Roboto";
+  font-family: "Lato";
   font-size: 15px;
   color: #4c4c4c; }
   .product-deposit-col-wrapper .buttonDetail-produk {
@@ -311,7 +296,7 @@ select, .form-control, .custom-select {
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 15px;
-    font-family: "Roboto"; }
+    font-family: "Lato"; }
     .product-deposit-wrapper .product-deposit-item img {
       width: 100px;
       height: auto;
@@ -399,7 +384,7 @@ select, .form-control, .custom-select {
       margin: 0;
       padding: 0;
       line-height: 1.5;
-      font-family: "Roboto";
+      font-family: "Lato";
       font-size: 12px;
       font-style: italic;
       color: #6f6f6f; }
@@ -437,880 +422,748 @@ select, .form-control, .custom-select {
   bottom: 0px;
   left: 0px; }
 
-.kc-detail-wrapper {
-  width: 100%;
-  padding: 30px;
-  display: flex; }
-  .kc-detail-wrapper .kc-detail-wrapper__left {
-    display: flex;
-    flex-direction: column;
-    margin-right: 60px;
-    flex-basis: 25%;
-    padding-top: 10px;
-    width: 100%; }
-    .kc-detail-wrapper .kc-detail-wrapper__left .kc-record-item--content {
-      align-items: flex-start; }
-    .kc-detail-wrapper .kc-detail-wrapper__left h2.kc-detail-headline {
-      font-weight: 500;
-      margin: 0;
-      margin-bottom: 20px; }
-    .kc-detail-wrapper .kc-detail-wrapper__left .kc-detail-card {
-      border: 1px solid #8C8C8C;
-      border-radius: 8px;
-      padding: 20px 10px;
-      min-height: 300px;
-      margin-top: 25px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
-      .kc-detail-wrapper .kc-detail-wrapper__left .kc-detail-card .kc-detail-card__entry {
-        margin-top: 10px; }
-        .kc-detail-wrapper .kc-detail-wrapper__left .kc-detail-card .kc-detail-card__entry p {
-          margin: 0; }
-        .kc-detail-wrapper .kc-detail-wrapper__left .kc-detail-card .kc-detail-card__entry .kc-status-card {
-          width: fit-content; }
-        .kc-detail-wrapper .kc-detail-wrapper__left .kc-detail-card .kc-detail-card__entry .kc-payment-link {
-          display: flex;
-          align-items: center; }
-          .kc-detail-wrapper .kc-detail-wrapper__left .kc-detail-card .kc-detail-card__entry .kc-payment-link button {
-            border: 1px solid #D9D9D9;
-            border-radius: 2px;
-            background-color: #FFFFFF;
-            color: #8C8C8C;
-            height: 32px;
-            margin-left: 10px;
-            padding: 0 8px;
-            width: 85px;
-            display: flex;
-            justify-content: center;
-            align-items: center; }
-            .kc-detail-wrapper .kc-detail-wrapper__left .kc-detail-card .kc-detail-card__entry .kc-payment-link button:hover {
-              border: 1px solid #8C8C8C; }
-        .kc-detail-wrapper .kc-detail-wrapper__left .kc-detail-card .kc-detail-card__entry .kc-total-deposit {
-          color: #8C8C8C;
-          font-weight: 500;
-          font-size: 21px;
-          line-height: 25px;
-          letter-spacing: 0.15px; }
-    .kc-detail-wrapper .kc-detail-wrapper__left .kc-detail-action-buttons {
-      display: flex;
-      flex-direction: column;
-      width: 100%; }
-      .kc-detail-wrapper .kc-detail-wrapper__left .kc-detail-action-buttons .kc-button {
-        margin-top: 25px; }
-  .kc-detail-wrapper .kc-detail-wrapper__right {
-    padding: 10px; }
-    .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-navigation {
-      margin-bottom: 50px;
-      display: flex;
-      flex-direction: row; }
-      .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-navigation .kc-tab-navigation {
-        margin-right: 25px; }
-    .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section {
-      width: 600px;
-      margin-left: 20px; }
-      .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section h3 {
-        margin-bottom: 30px;
-        margin-top: 10px; }
-      .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-section--foto-dokumen {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 20px; }
-        .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-section--foto-dokumen .kc-image-preview {
-          margin-right: 40px; }
-      .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-section-header {
-        margin-bottom: 15px; }
-        .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-section-header .kc-record-item--value {
-          color: #8C8C8C; }
-      .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-deposit-account-balance {
-        display: flex;
-        flex-direction: column;
-        padding-left: 10px; }
-        .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-deposit-account-balance label {
-          color: #8C8C8C;
-          font-weight: 400;
-          margin-bottom: 5px; }
-        .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-deposit-account-balance span {
-          color: #434343; }
-      .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-bank-accounts-list .kc-dropdown {
-        margin-bottom: 30px; }
-      .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-bank-accounts-list .kc-bank-account-item {
-        border-top: 1px solid #D9D9D9;
-        padding: 15px 0 10px; }
-        .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-bank-accounts-list .kc-bank-account-item .kc-bank-account-item--header {
-          display: flex;
-          align-items: center; }
-          .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-bank-accounts-list .kc-bank-account-item .kc-bank-account-item--header h3 {
-            margin-bottom: 0; }
-        .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-bank-accounts-list .kc-bank-account-item .kc-bank-account-item--content {
-          margin-top: 10px; }
-          .kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-bank-accounts-list .kc-bank-account-item .kc-bank-account-item--content .kc-record-item {
-            padding: 5px 0; }
-
-.kc-detail-member {
-  width: 100%;
-  padding: 30px;
-  display: flex;
-  flex-direction: row; }
-  .kc-detail-member .kc-detail-member--headline {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-right: 60px;
-    flex-basis: 25%;
-    padding-top: 10px;
-    width: 100%; }
-    .kc-detail-member .kc-detail-member--headline .kc-record-item--content {
-      align-items: flex-start; }
-    .kc-detail-member .kc-detail-member--headline .kc-detail-member--identity span {
-      font-weight: 500; }
-    .kc-detail-member .kc-detail-member--headline .kc-detail-member--action-button {
-      display: flex;
-      flex-direction: column;
-      width: 100%; }
-      .kc-detail-member .kc-detail-member--headline .kc-detail-member--action-button .kc-button {
-        margin-top: 25px; }
-    .kc-detail-member .kc-detail-member--headline .kc-detail-member--card {
-      border: 1px solid #8C8C8C;
-      border-radius: 8px;
-      padding: 20px 10px;
-      min-height: 300px;
-      margin-top: 25px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
-      .kc-detail-member .kc-detail-member--headline .kc-detail-member--card .kc-detail-member--card-entry {
-        margin-top: 10px; }
-        .kc-detail-member .kc-detail-member--headline .kc-detail-member--card .kc-detail-member--card-entry p {
-          margin: 0; }
-        .kc-detail-member .kc-detail-member--headline .kc-detail-member--card .kc-detail-member--card-entry .kc-status-card {
-          width: fit-content; }
-        .kc-detail-member .kc-detail-member--headline .kc-detail-member--card .kc-detail-member--card-entry .kc-payment-link {
-          display: flex;
-          align-items: center; }
-          .kc-detail-member .kc-detail-member--headline .kc-detail-member--card .kc-detail-member--card-entry .kc-payment-link button {
-            border: 1px solid #D9D9D9;
-            border-radius: 2px;
-            background-color: #FFFFFF;
-            color: #8C8C8C;
-            height: 32px;
-            margin-left: 10px;
-            padding: 0 8px;
-            width: 85px;
-            display: flex;
-            justify-content: center;
-            align-items: center; }
-            .kc-detail-member .kc-detail-member--headline .kc-detail-member--card .kc-detail-member--card-entry .kc-payment-link button:hover {
-              border: 1px solid #8C8C8C; }
-        .kc-detail-member .kc-detail-member--headline .kc-detail-member--card .kc-detail-member--card-entry .kc-total-deposit {
-          color: #8C8C8C;
-          font-weight: 500;
-          font-size: 21px;
-          line-height: 25px;
-          letter-spacing: 0.15px; }
-  .kc-detail-member .kc-detail-member--content {
-    padding: 10px; }
-    .kc-detail-member .kc-detail-member--content .kc-detail-member--navigation {
-      margin-bottom: 50px;
-      display: flex;
-      flex-direction: row; }
-      .kc-detail-member .kc-detail-member--content .kc-detail-member--navigation .kc-tab-navigation {
-        margin-right: 25px; }
-    .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section {
-      width: 600px;
-      margin-left: 20px; }
-      .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section .kc-section--foto-dokumen {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 20px; }
-        .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section .kc-section--foto-dokumen .kc-image-preview {
-          margin-right: 40px; }
-      .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section .kc-section-header {
-        margin-bottom: 15px; }
-        .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section .kc-section-header .kc-record-item--value {
-          color: #8C8C8C; }
-      .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section .kc-bank-accounts-list .kc-dropdown {
-        margin-bottom: 30px; }
-      .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section .kc-bank-accounts-list .kc-bank-account-item {
-        border-top: 1px solid #D9D9D9;
-        padding: 15px 0 10px; }
-        .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section .kc-bank-accounts-list .kc-bank-account-item .kc-bank-account-item--header {
-          display: flex;
-          align-items: center; }
-          .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section .kc-bank-accounts-list .kc-bank-account-item .kc-bank-account-item--header h3 {
-            margin-bottom: 0; }
-        .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section .kc-bank-accounts-list .kc-bank-account-item .kc-bank-account-item--content {
-          margin-top: 10px; }
-          .kc-detail-member .kc-detail-member--content .kc-detail-member--content-detail .kc-section .kc-bank-accounts-list .kc-bank-account-item .kc-bank-account-item--content .kc-record-item {
-            padding: 5px 0; }
-
-.main-footer {
-  font-size: 15px;
-  font-family: "Roboto"; }
-
 .main-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 1rem; }
+  background: #0F77C0;
+  border-bottom: none;
+  padding: 0.5rem 1rem;
+  height: 60px; }
   .main-header .navbar-nav .nav-item {
-    font-size: 15px;
-    font-family: "Roboto";
-    color: #ffffff;
-    margin-right: 25px;
-    display: flex;
-    align-items: center; }
-    .main-header .navbar-nav .nav-item .kc-choose-role {
-      width: auto; }
-      .main-header .navbar-nav .nav-item .kc-choose-role .kc-dropdown {
-        margin-left: 10px;
-        width: 200px; }
-        .main-header .navbar-nav .nav-item .kc-choose-role .kc-dropdown button {
-          height: 32px; }
-        .main-header .navbar-nav .nav-item .kc-choose-role .kc-dropdown .kc-dropdown__items {
-          top: 32px; }
+    color: #FFFFFF;
+    margin-right: 25px; }
+    .main-header .navbar-nav .nav-item .kc-choose-role .kc-dropdown {
+      margin-left: 10px; }
+      .main-header .navbar-nav .nav-item .kc-choose-role .kc-dropdown button {
+        height: 32px; }
+      .main-header .navbar-nav .nav-item .kc-choose-role .kc-dropdown .kc-dropdown__items {
+        top: 32px; }
     .main-header .navbar-nav .nav-item:last-child {
       margin-right: 0; }
-    .main-header .navbar-nav .nav-item p {
-      line-height: 1;
-      padding: 0;
-      margin: 0; }
-      .main-header .navbar-nav .nav-item p span {
-        font-weight: 300; }
+    .main-header .navbar-nav .nav-item p.kc-welcome-text {
+      margin: 0;
+      font-weight: 700; }
+      .main-header .navbar-nav .nav-item p.kc-welcome-text span {
+        font-weight: 400; }
     .main-header .navbar-nav .nav-item .nav-link {
-      padding: 0px;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
+      color: #FFFFFF;
+      padding: 0px; }
       .main-header .navbar-nav .nav-item .nav-link i {
         font-size: 20px; }
+    .main-header .navbar-nav .nav-item .dropdown-menu a.dropdown-item {
+      color: #595959; }
+      .main-header .navbar-nav .nav-item .dropdown-menu a.dropdown-item:hover {
+        color: #0F77C0; }
 
-.kc-modal.kc-modal--hidden {
-  display: none; }
-
-.kc-modal .kc-modal--backdrop {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  background: rgba(0, 0, 0, 0.2);
-  z-index: 999999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow-y: auto; }
-  .kc-modal .kc-modal--backdrop .kc-modal--container {
-    border-radius: 8px;
-    background-color: #FFFFFF;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
-    min-height: 200px;
-    height: fit-content;
-    min-width: 672px;
-    width: fit-content;
-    max-width: 1000px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin: 1.75rem; }
-    .kc-modal .kc-modal--backdrop .kc-modal--container > .kc-rounded-button {
-      position: absolute;
-      top: 25px;
-      right: 25px;
-      font-size: 20px;
-      width: 2.5rem;
-      height: 2.5rem; }
-    .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main {
-      display: flex;
-      flex-direction: column;
-      padding: 50px 25px;
-      height: 100%; }
-      .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--title {
-        text-align: center;
-        width: 100%;
-        margin-bottom: 30px; }
-      .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; }
-    .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--action {
-      display: flex;
-      flex-direction: row;
-      height: 60px;
-      border-top: 1px solid #f0f0f0; }
-      .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--action button:hover {
-        background-color: #F0F0F0; }
-      .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--action button {
-        background-color: transparent;
-        border: none;
-        text-transform: uppercase;
-        height: 100%;
-        border-right: 1px solid #f0f0f0; }
-        .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--action button:last-child {
-          border: none; }
-      .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--action .kc-modal--action-cancel {
-        border-bottom-left-radius: 8px;
-        color: #8C8C8C;
-        flex-basis: 50%; }
-        .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--action .kc-modal--action-cancel:hover {
-          background-color: #F0F0F0; }
-      .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--action .kc-modal--action-success {
-        border-bottom-right-radius: 8px;
-        color: #0F77C0;
-        flex-basis: 50%; }
-        .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--action .kc-modal--action-success:hover {
-          background-color: #F0F0F0; }
-        .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--action .kc-modal--action-success span {
-          font-weight: 700; }
-
-.main-sidebar .brand-link {
-  background: #0f77c0;
-  box-shadow: none;
-  border: none; }
-  .main-sidebar .brand-link .brand-text {
-    color: #fff;
-    font-family: "Roboto";
-    font-size: 18px;
+/**
+  Styling for admin sidebar [AdminHOC]
+*/
+.layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .brand-link {
+  background-color: #0F77C0;
+  padding: 8px;
+  height: 60px; }
+  .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .brand-link .brand-text {
+    color: #FFFFFF;
+    height: min-content;
     padding: 0 0.5rem; }
+  .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .brand-link img {
+    height: 100%;
+    object-position: center;
+    object-fit: cover; }
 
-.main-sidebar .sidebar {
-  background: #D9D9D9;
-  margin-top: 3.5rem !important;
+.layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar {
+  background-color: #D9D9D9;
+  margin-top: 60px;
   padding: 0px; }
-  .main-sidebar .sidebar > nav li.nav-header, .main-sidebar .sidebar > nav li.nav-item a.nav-link p {
+  .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-header, .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item a.nav-link p, .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item a.nav-link i {
     color: #000000;
-    font-size: 13px;
-    line-height: 30px;
-    font-family: "Lato"; }
-  .main-sidebar .sidebar > nav li.nav-header {
+    line-height: 30px; }
+  .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-header {
     font-weight: 700;
-    text-transform: capitalize;
-    padding: 0.5rem 1rem;
-    font-size: 14px !important;
-    display: flex;
-    justify-content: flex-start;
-    align-items: baseline;
-    line-height: 1; }
-    .main-sidebar .sidebar > nav li.nav-header i {
-      width: 17px;
-      margin-right: 3px; }
-  .main-sidebar .sidebar > nav li.nav-item .nav-treeview {
-    background: #D9D9D9; }
-    .main-sidebar .sidebar > nav li.nav-item .nav-treeview .nav-item a.nav-link {
-      padding-left: 30px !important; }
-  .main-sidebar .sidebar > nav li.nav-item > a.nav-link.false {
-    width: 100%; }
-  .main-sidebar .sidebar > nav li.nav-item > a.nav-link {
-    margin-bottom: 0; }
-    .main-sidebar .sidebar > nav li.nav-item > a.nav-link > p {
-      font-weight: 400; }
-      .main-sidebar .sidebar > nav li.nav-item > a.nav-link > p > i {
-        line-height: 24px; }
-    .main-sidebar .sidebar > nav li.nav-item > a.nav-link.active {
-      box-shadow: none;
-      border-radius: 0;
-      background: #0f77c0;
-      width: 100%; }
-      .main-sidebar .sidebar > nav li.nav-item > a.nav-link.active > p, .main-sidebar .sidebar > nav li.nav-item > a.nav-link.active > i {
+    text-transform: uppercase;
+    padding: 0.5rem 1rem; }
+    .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-header i {
+      margin-right: 8px; }
+  .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item a.nav-link {
+    background-color: transparent;
+    border-radius: 0;
+    margin-bottom: 0;
+    width: 100%;
+    transition: background-color .5s;
+    -webkit-transition: background-color .5s; }
+    .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item a.nav-link.active {
+      background-color: #0F77C0; }
+      .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item a.nav-link.active p {
         color: #FFFFFF;
         font-weight: 700; }
-      .main-sidebar .sidebar > nav li.nav-item > a.nav-link.active:hover {
-        color: #FFFFFF; }
-  .main-sidebar .sidebar > nav li.nav-item:hover {
-    background-color: #BFBFBF; }
-  .main-sidebar .sidebar > nav li.nav-item.menu-open.nav-item {
-    background-color: #BFBFBF; }
-  .main-sidebar .sidebar > nav li.nav-item.menu-open.active > a.nav-link {
-    box-shadow: none;
-    border-radius: 0;
-    background: #0f77c0;
-    width: 100%; }
-    .main-sidebar .sidebar > nav li.nav-item.menu-open.active > a.nav-link > p, .main-sidebar .sidebar > nav li.nav-item.menu-open.active > a.nav-link > i {
+  .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item ul.nav-treeview li.nav-item a.nav-link {
+    padding-left: 1.75rem; }
+    .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item ul.nav-treeview li.nav-item a.nav-link.active {
+      background-color: #CACACA; }
+    .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item ul.nav-treeview li.nav-item a.nav-link p {
+      color: #000000;
+      font-weight: 400; }
+  .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item:hover > a.nav-link {
+    background-color: #CACACA; }
+    .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item:hover > a.nav-link.active {
+      background-color: #0F77C0; }
+  .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item.menu-open.active > a.nav-link {
+    background-color: #0F77C0; }
+    .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item.menu-open.active > a.nav-link p, .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item.menu-open.active > a.nav-link i {
       color: #FFFFFF;
       font-weight: 700; }
-    .main-sidebar .sidebar > nav li.nav-item.menu-open.active > a.nav-link:hover {
-      color: #FFFFFF; }
-  .main-sidebar .sidebar > nav li.nav-item.menu-open.active .nav-treeview .nav-item a.nav-link.active {
-    background-color: #c7c7c7; }
-    .main-sidebar .sidebar > nav li.nav-item.menu-open.active .nav-treeview .nav-item a.nav-link.active > p, .main-sidebar .sidebar > nav li.nav-item.menu-open.active .nav-treeview .nav-item a.nav-link.active > i {
-      color: #000000;
-      font-weight: normal; }
-  .main-sidebar .sidebar > nav li.nav-item.menu-open li.nav-item a.nav-link.active {
-    color: #fff;
-    box-shadow: none;
-    border-radius: 0;
-    background: #0f77c0;
-    width: 100%; }
-    .main-sidebar .sidebar > nav li.nav-item.menu-open li.nav-item a.nav-link.active:hover {
-      color: #fff; }
+  .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item.menu-open > a.nav-link {
+    background-color: #BFBFBF; }
 
-.main-header {
-  background: #0f77c0; }
-  .main-header .nav-link {
-    color: #fff !important; }
+/**
+  General styling for all pages on BACKOFFICE
+*/
+.kc-list-users .kc-datatable .kc-datatable__header, .kc-list-users .kc-datatable .kc-datatable__pagination, .kc-notification-setting .kc-datatable .kc-datatable__header, .kc-notification-setting .kc-datatable .kc-datatable__pagination, .kc-list-notifications .kc-datatable .kc-datatable__header, .kc-list-notifications .kc-datatable .kc-datatable__pagination {
+  padding: 16px 0; }
 
-.navbar-nav a, .navbar-nav button {
-  font-size: 15px;
-  font-family: "Roboto";
-  color: #6c757d; }
-
-.kc-modal--content {
-  padding: 60px 30px 0; }
-  .kc-modal--content > .kc-user-registration-modal {
-    width: 450px; }
-    .kc-modal--content > .kc-user-registration-modal .kc-form-group .kc-form-group__label {
-      width: 120px; }
-    .kc-modal--content > .kc-user-registration-modal .kc-form-group .kc-roles {
-      display: flex;
-      flex-direction: column;
-      margin-top: 5px;
-      width: 100%; }
-      .kc-modal--content > .kc-user-registration-modal .kc-form-group .kc-roles .kc-roles__option {
-        margin-bottom: 15px; }
-        .kc-modal--content > .kc-user-registration-modal .kc-form-group .kc-roles .kc-roles__option span.kc-caption {
-          color: #595959;
-          font-size: 13px;
-          line-height: 8px; }
-
-.kc-modal--content {
-  padding: 60px 30px 0; }
-  .kc-modal--content > .kc-edit-user-modal {
-    width: 450px; }
-    .kc-modal--content > .kc-edit-user-modal .kc-form-group .kc-form-group__label {
-      width: 200px; }
-    .kc-modal--content > .kc-edit-user-modal .kc-form-group .kc-roles {
-      display: flex;
-      flex-direction: column;
-      margin-top: 5px;
-      width: 100%; }
-      .kc-modal--content > .kc-edit-user-modal .kc-form-group .kc-roles .kc-roles__option {
-        margin-bottom: 15px; }
-        .kc-modal--content > .kc-edit-user-modal .kc-form-group .kc-roles .kc-roles__option span.kc-caption {
-          color: #595959;
-          font-size: 13px;
-          line-height: 8px; }
-
-.kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container {
-  width: 1000px; }
-  .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content {
-    padding: 0 10px;
-    align-items: flex-start; }
-    .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content label {
-      font-weight: 400;
-      color: #8C8C8C;
-      margin: 0; }
-    .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__invoice-number {
-      padding-left: 10px;
-      margin-bottom: 30px; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__invoice-number label {
-        margin-bottom: 10px; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__invoice-number span {
-        margin-right: 10px; }
-    .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-record-item {
-      width: 100%; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-record-item .kc-record-item--content {
-        align-items: flex-start;
-        width: 100%; }
-        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-record-item .kc-record-item--content .kc-record-item--key {
-          flex-basis: 40%;
-          width: 100%; }
-        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-record-item .kc-record-item--content .kc-record-item--value {
-          flex-basis: 60%;
-          width: 200px; }
-          .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-record-item .kc-record-item--content .kc-record-item--value span {
-            white-space: normal;
-            word-wrap: break-word; }
-    .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-divider, .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-divider {
-      border-bottom: 1px solid #D9D9D9;
-      width: 100%; }
-    .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-invoice-title, .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-title {
-      padding: 10px; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-invoice-title label, .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-title label {
-        margin-bottom: 10px; }
-    .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side {
-      flex-basis: 50%;
-      margin-right: 30px; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-invoice-status {
-        padding: 10px; }
-        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-invoice-status label {
-          margin-right: 20px; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-invoice-remark {
-        padding: 10px 0 0 10px; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__left-side .kc-synchronize-button {
-        margin: 0 0 20px 10px;
-        width: 240px; }
-    .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side {
-      flex-basis: 50%; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-fee-type, .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-payment-link {
-        padding: 10px; }
-        .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-fee-type label, .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-payment-link label {
-          margin-bottom: 10px; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-payment-link button.kc-rounded-button {
-        min-width: 36px; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-amount .kc-net-deposit-amount .kc-record-item--key {
-        flex-basis: 70%; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-amount .kc-record-item--value {
-        text-align: right; }
-      .kc-invoice-detail .kc-modal .kc-modal--backdrop .kc-modal--container .kc-modal--main .kc-modal--content .kc-invoice-detail__content .kc-invoice-detail__right-side .kc-invoice-detail__payment-link {
-        margin-top: 30px; }
-
-.kc-add-user-button {
-  margin-right: 32px; }
-
-.kc-datatable button {
+.kc-list-users .kc-datatable .kc-table table tbody tr td .kc-toggle-active-user button, .kc-notification-setting .kc-datatable .kc-table table tbody tr td .kc-toggle-active-user button {
   border: none;
   background-color: transparent; }
 
-.kc-datatable .kc-view-detail-button i {
-  font-size: 20px; }
-
-.kc-datatable .kc-toggle-active-user .kc-active-indicator {
+.kc-list-users .kc-datatable .kc-table table tbody tr td .kc-toggle-active-user .kc-active-indicator, .kc-notification-setting .kc-datatable .kc-table table tbody tr td .kc-toggle-active-user .kc-active-indicator {
   border-radius: 50%;
   width: 16px;
   height: 16px; }
-  .kc-datatable .kc-toggle-active-user .kc-active-indicator.kc-active-indicator--success {
+  .kc-list-users .kc-datatable .kc-table table tbody tr td .kc-toggle-active-user .kc-active-indicator.kc-active-indicator--success, .kc-notification-setting .kc-datatable .kc-table table tbody tr td .kc-toggle-active-user .kc-active-indicator.kc-active-indicator--success {
     background-color: #52C41A; }
-  .kc-datatable .kc-toggle-active-user .kc-active-indicator.kc-active-indicator--danger {
+  .kc-list-users .kc-datatable .kc-table table tbody tr td .kc-toggle-active-user .kc-active-indicator.kc-active-indicator--danger, .kc-notification-setting .kc-datatable .kc-table table tbody tr td .kc-toggle-active-user .kc-active-indicator.kc-active-indicator--danger {
     background-color: #FF4D4F; }
 
-.kc-datatable .kc-role-indicators .kc-role-indicator {
-  background-color: #D9D9D9;
-  border-radius: 50px;
-  margin-right: 8px;
-  min-width: 72px;
-  padding: 8px;
-  white-space: nowrap;
-  width: fit-content;
-  margin-bottom: 5px; }
-  .kc-datatable .kc-role-indicators .kc-role-indicator span.kc-caption {
-    color: #595959; }
+.kc-list-users .kc-datatable .kc-table table tbody tr td .kc-rounded-button__tooltip, .kc-notification-setting .kc-datatable .kc-table table tbody tr td .kc-rounded-button__tooltip {
+  right: 36px;
+  top: 0; }
 
-.reset-container {
-  width: 100vw;
-  height: 100vh;
-  background: #020024;
-  background: linear-gradient(337deg, #020024 0%, #d2d6d4 0%, #eaf2f9 45%);
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+/**
+  Styling for list notification page [BACKOFFICE]
+*/
+.kc-list-notifications .kc-datatable .kc-table table tbody tr td {
+  font-size: 15px; }
+  .kc-list-notifications .kc-datatable .kc-table table tbody tr td .kc-notification-preview p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: break-spaces; }
+  .kc-list-notifications .kc-datatable .kc-table table tbody tr td .kc-rounded-button__tooltip {
+    right: 36px;
+    top: 0; }
 
-.listRevision-Anggota {
-  margin: 0px !important;
-  padding: 10px;
-  margin-bottom: 20px !important;
-  background: #f0f0f0; }
-  .listRevision-Anggota:last-child {
-    margin-bottom: 0px !important; }
-  .listRevision-Anggota li {
-    list-style: none;
-    list-style-position: inside;
-    font-family: "Roboto";
-    color: #4c4c4c;
-    margin-bottom: 20px !important; }
-    .listRevision-Anggota li:last-child {
-      margin-bottom: 0px !important; }
-    .listRevision-Anggota li span {
-      display: inline-block;
-      font-style: normal; }
-    .listRevision-Anggota li input {
-      font-size: 15px;
-      font-family: "Roboto";
-      color: #4c4c4c; }
-    .listRevision-Anggota li.titleListRevision-Anggota {
-      font-weight: bold;
-      font-size: 18px;
-      padding-bottom: 5px;
-      color: #6f6f6f;
-      border-bottom: 1px solid #e0e0e0; }
-
-.custom-select {
-  font-size: 0.8rem; }
-
-.kc-revision-modal.kc-revision-modal--hidden {
-  display: none; }
-
-.kc-revision-modal .kc-revision-modal--backdrop {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  background: rgba(0, 0, 0, 0.2);
-  z-index: 999999;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container {
-    border-radius: 8px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
-    background-color: #FFFFFF;
-    width: auto;
-    height: 700px;
-    padding: 60px;
+/**
+  Styling for list users page [BACKOFFICE]
+*/
+.kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container .kc-modal__content, .kc-list-users .kc-edit-user-profile-modal .kc-modal .kc-modal__container .kc-modal__content {
+  margin: 0 auto; }
+  .kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-roles, .kc-list-users .kc-edit-user-profile-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-roles {
     display: flex;
     flex-direction: column;
-    position: relative; }
-    .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--close-button {
-      position: absolute;
-      top: 25px;
-      right: 25px;
-      background-color: transparent;
-      border: none;
-      width: 40px;
-      height: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--close-button i {
-        font-size: 20px; }
-      .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--close-button:hover {
-        border-radius: 50%;
-        background-color: #F0F0F0; }
-    .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--header {
-      width: 100%;
-      display: flex;
-      justify-content: space-between; }
-      .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--header .kc-revision-modal--navigation {
-        display: flex; }
-        .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--header .kc-revision-modal--navigation button {
-          margin-right: 15px; }
-          .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--header .kc-revision-modal--navigation button .kc-tab-navigation--label {
-            margin-bottom: 10px; }
-    .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content {
-      width: 100%;
-      height: 100%;
-      margin: 20px 0;
-      padding-right: 50px;
-      overflow-x: hidden;
-      overflow-y: auto; }
-      .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content::-webkit-scrollbar {
-        width: 6px; }
-      .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-        border-radius: 10px; }
-      .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content::-webkit-scrollbar-thumb {
-        border-radius: 10px;
-        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
-        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
-      .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-dropdown button {
-        height: 32px; }
-      .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-dropdown .kc-dropdown__items {
-        top: 32px; }
-      .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section {
-        width: fit-content; }
-        .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-header {
-          margin-bottom: 15px; }
-          .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-header .kc-record-item--value {
-            color: #8C8C8C; }
-        .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-item {
-          display: flex;
-          flex-direction: column; }
-          .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-item .kc-section-item--top {
-            align-items: flex-start;
-            display: flex;
-            padding: 10px; }
-            .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-item .kc-section-item--top .kc-record-item {
-              padding: 0; }
-            .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-item .kc-section-item--top .kc-checkbox-container {
-              padding-top: 3px; }
-          .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-item .kc-section-item--bottom {
-            width: 100%;
-            padding: 0 10px;
-            margin-bottom: 15px; }
-            .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-item .kc-section-item--bottom textarea {
-              resize: none; }
-            .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-item .kc-section-item--bottom .kc-section-item--action {
-              margin-top: 10px;
-              display: flex; }
-              .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-item .kc-section-item--bottom .kc-section-item--action .kc-section-item--action-item {
-                margin-right: 25px; }
-                .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--content .kc-section .kc-section-item .kc-section-item--bottom .kc-section-item--action .kc-section-item--action-item input[type="radio"] {
-                  margin-right: 10px; }
-    .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--footer .kc-revision-modal--action-button {
-      display: flex;
-      justify-content: flex-start; }
-      .kc-revision-modal .kc-revision-modal--backdrop .kc-revision-modal--container .kc-revision-modal--footer .kc-revision-modal--action-button button {
-        margin: 0; }
+    margin-top: 5px;
+    width: 100%; }
+    .kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-roles .kc-roles__option, .kc-list-users .kc-edit-user-profile-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-roles .kc-roles__option {
+      margin-bottom: 15px; }
+      .kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-roles .kc-roles__option .kc-checkbox label, .kc-list-users .kc-edit-user-profile-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-roles .kc-roles__option .kc-checkbox label {
+        max-width: none; }
+  .kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container .kc-modal__content p.text-notes, .kc-list-users .kc-edit-user-profile-modal .kc-modal .kc-modal__container .kc-modal__content p.text-notes {
+    height: 1rem;
+    margin-bottom: 0; }
 
-.kc-detail-wrapper.kc-funding-detail-deposito {
-  display: block; }
-  .kc-detail-wrapper.kc-funding-detail-deposito .kc-detail-wrapper__left {
-    margin-right: 50px; }
-  .kc-detail-wrapper.kc-funding-detail-deposito .kc-detail-wrapper__right .kc-detail-content .kc-section {
-    margin: 0; }
-  .kc-detail-wrapper.kc-funding-detail-deposito .kc-detail-content .kc-section h3.kc-headline6 {
-    margin-bottom: 30px;
-    margin-top: 10px; }
-  .kc-detail-wrapper.kc-funding-detail-deposito .kc-datatable .kc-datatable__header {
-    padding: 0; }
-  .kc-detail-wrapper.kc-funding-detail-deposito .kc-form-group {
-    margin: 0;
-    margin-right: 15px;
-    width: fit-content; }
-    .kc-detail-wrapper.kc-funding-detail-deposito .kc-form-group .kc-form-group__label {
-      width: fit-content; }
-    .kc-detail-wrapper.kc-funding-detail-deposito .kc-form-group .kc-inputfield .kc-inputfield__box {
-      height: 40px; }
+.kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container {
+  width: 600px; }
+  .kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container .kc-modal__content {
+    width: 450px; }
+    .kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-form-group__identity {
+      width: 120px; }
+    .kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-roles .kc-roles__option div.kc-caption {
+      color: #595959;
+      font-size: 13px;
+      line-height: 16px;
+      margin-top: 5px; }
 
-.kc-detail-wrapper.kc-funding-detail-member .kc-detail-wrapper__left {
-  margin-right: 50px; }
+.kc-list-users .kc-edit-user-profile-modal .kc-modal .kc-modal__container {
+  width: 750px; }
+  .kc-list-users .kc-edit-user-profile-modal .kc-modal .kc-modal__container .kc-modal__content {
+    width: 600px; }
+    .kc-list-users .kc-edit-user-profile-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-form-group__identity {
+      width: 200px; }
+    .kc-list-users .kc-edit-user-profile-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-roles .kc-roles__option {
+      margin-bottom: 5px; }
 
-.kc-detail-wrapper.kc-funding-detail-member .kc-detail-wrapper__right .kc-detail-content .kc-section {
-  margin: 0; }
-  .kc-detail-wrapper.kc-funding-detail-member .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-form-group {
-    margin: 0;
-    margin-right: 15px; }
-    .kc-detail-wrapper.kc-funding-detail-member .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-form-group .kc-inputfield {
-      width: 100%; }
-      .kc-detail-wrapper.kc-funding-detail-member .kc-detail-wrapper__right .kc-detail-content .kc-section .kc-form-group .kc-inputfield .kc-inputfield__box {
-        height: 40px; }
+/**
+  Styling for setting notification category page [BACKOFFICE]
+*/
+.kc-notification-setting .kc-datatable .kc-datatable__header {
+  padding: 0; }
 
-.content-wrapper .content-body .kc-content.kc-setting-deposit, .content-wrapper .content-body .kc-content.kc-setting-withdraw {
-  max-width: none; }
-  .content-wrapper .content-body .kc-content.kc-setting-deposit .kc-dropdown, .content-wrapper .content-body .kc-content.kc-setting-withdraw .kc-dropdown {
-    max-width: 500px; }
-    .content-wrapper .content-body .kc-content.kc-setting-deposit .kc-dropdown button, .content-wrapper .content-body .kc-content.kc-setting-withdraw .kc-dropdown button {
+.kc-notification-setting .kc-datatable .kc-table table tr th:first-child, .kc-notification-setting .kc-datatable .kc-table table tr th:nth-child(2) {
+  width: 15% !important; }
+
+.kc-notification-setting .kc-datatable .kc-table table tr th:nth-child(3) {
+  width: 60% !important; }
+
+.kc-notification-setting .kc-datatable .kc-table table tr th:last-child {
+  width: 10% !important; }
+
+.kc-notification-setting .kc-modal .kc-modal__container {
+  width: 600px; }
+  .kc-notification-setting .kc-modal .kc-modal__container .kc-form-group:last-child {
+    margin-bottom: 0; }
+  .kc-notification-setting .kc-modal .kc-modal__container .kc-form-group .kc-form-group__label {
+    width: 150px; }
+
+/**
+  Styling for active member detail page [MEMBERSERVICE]
+*/
+.kc-active-member-detail .kc-suspend-member-modal .kc-modal .kc-modal__container {
+  width: 500px; }
+  .kc-active-member-detail .kc-suspend-member-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-textarea {
+    margin-bottom: 15px; }
+
+.kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
+  height: 700px;
+  padding-top: 1.5rem; }
+  .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__header .kc-revision-modal--navigation {
+      display: flex; }
+      .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__header .kc-revision-modal--navigation button {
+        margin-right: 15px; }
+        .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__header .kc-revision-modal--navigation button .kc-tab-navigation--label {
+          margin-bottom: 10px; }
+  .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content {
+    width: 100%;
+    height: 100%;
+    margin: 20px 0;
+    padding-right: 50px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-color: transparent;
+    transition: border-color .25s linear;
+    -webkit-transition: border-color .25s linear; }
+    .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content:hover {
+      border-color: rgba(0, 0, 0, 0.1); }
+    .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content::-webkit-scrollbar, .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content::-webkit-scrollbar-thumb, .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content::-webkit-scrollbar-corner {
+      border-right-style: inset;
+      border-color: inherit;
+      border-right-width: calc(100vw + 100vh); }
+    .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content::-webkit-scrollbar {
+      width: 6px;
+      height: 6px; }
+    .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-dropdown button {
       height: 32px; }
-  .content-wrapper .content-body .kc-content.kc-setting-deposit .kc-form-wrapper, .content-wrapper .content-body .kc-content.kc-setting-withdraw .kc-form-wrapper {
-    margin-right: 40px; }
-  .content-wrapper .content-body .kc-content.kc-setting-deposit .kc-setting-simulation, .content-wrapper .content-body .kc-content.kc-setting-withdraw .kc-setting-simulation {
-    max-width: 550px; }
+    .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-dropdown .kc-dropdown__items {
+      top: 32px; }
+    .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section {
+      width: fit-content; }
+      .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-header {
+        margin-bottom: 15px; }
+        .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-header .kc-record-item--value {
+          color: #8C8C8C; }
+      .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-item {
+        display: flex;
+        flex-direction: column; }
+        .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-item .kc-section-item--top {
+          align-items: flex-start;
+          display: flex;
+          padding: 10px; }
+          .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-item .kc-section-item--top .kc-record-item {
+            padding: 0; }
+          .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-item .kc-section-item--top .kc-checkbox-container {
+            padding-top: 3px; }
+        .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-item .kc-section-item--bottom {
+          width: 100%;
+          padding: 0 10px;
+          margin-bottom: 15px; }
+          .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-item .kc-section-item--bottom textarea {
+            resize: none; }
+          .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-item .kc-section-item--bottom .kc-section-item--action {
+            margin-top: 10px;
+            display: flex; }
+            .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-item .kc-section-item--bottom .kc-section-item--action .kc-section-item--action-item {
+              margin-right: 25px; }
+              .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-item .kc-section-item--bottom .kc-section-item--action .kc-section-item--action-item input[type="radio"] {
+                margin-right: 10px; }
+  .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__footer .kc-revision-modal--action-button {
+    display: flex;
+    justify-content: flex-start; }
+    .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__footer .kc-revision-modal--action-button button {
+      margin: 0; }
 
-.kc-detail-wrapper .kc-detail-wrapper__left {
-  margin-right: 30px; }
-  .kc-detail-wrapper .kc-detail-wrapper__left .kc-withdrawal-id {
-    width: fit-content; }
+/**
+  Styling for invoice detail page and
+  invoice suspended detail page [MEMBERSERVICE]
+*/
+.kc-dao-membership-detail .content-body .container-fluid main.kc-memberservice-detail {
+  width: 65%; }
 
-.kc-detail-wrapper .kc-detail-wrapper__right .kc-detail-content .kc-section {
-  width: 800px; }
+.kc-dao-membership-detail .content-body .container-fluid aside.kc-deposit-account-onboarding-detail {
+  width: 35%; }
 
-.kc-detail-wrapper .kc-withdrawal-status {
+/**
+  General styling for all pages on MEMBERSERVICE
+*/
+.kc-active-member-detail .content-body,
+.kc-approved-member-detail .content-body,
+.kc-rejected-member-detail .content-body,
+.kc-suspended-member-detail .content-body,
+.kc-member-proposal-detail .content-body,
+.kc-dao-membership-detail .content-body,
+.kc-request-update-data-detail .content-body {
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0; }
+  .kc-active-member-detail .content-body .container-fluid,
+  .kc-approved-member-detail .content-body .container-fluid,
+  .kc-rejected-member-detail .content-body .container-fluid,
+  .kc-suspended-member-detail .content-body .container-fluid,
+  .kc-member-proposal-detail .content-body .container-fluid,
+  .kc-dao-membership-detail .content-body .container-fluid,
+  .kc-request-update-data-detail .content-body .container-fluid {
+    display: flex; }
+    .kc-active-member-detail .content-body .container-fluid main.kc-memberservice-detail,
+    .kc-approved-member-detail .content-body .container-fluid main.kc-memberservice-detail,
+    .kc-rejected-member-detail .content-body .container-fluid main.kc-memberservice-detail,
+    .kc-suspended-member-detail .content-body .container-fluid main.kc-memberservice-detail,
+    .kc-member-proposal-detail .content-body .container-fluid main.kc-memberservice-detail,
+    .kc-dao-membership-detail .content-body .container-fluid main.kc-memberservice-detail,
+    .kc-request-update-data-detail .content-body .container-fluid main.kc-memberservice-detail {
+      width: 75%; }
+    .kc-active-member-detail .content-body .container-fluid aside,
+    .kc-approved-member-detail .content-body .container-fluid aside,
+    .kc-rejected-member-detail .content-body .container-fluid aside,
+    .kc-suspended-member-detail .content-body .container-fluid aside,
+    .kc-member-proposal-detail .content-body .container-fluid aside,
+    .kc-dao-membership-detail .content-body .container-fluid aside,
+    .kc-request-update-data-detail .content-body .container-fluid aside {
+      margin-left: 20px;
+      width: 25%; }
+      .kc-active-member-detail .content-body .container-fluid aside .kc-memberservice-detail__action-buttons hr,
+      .kc-approved-member-detail .content-body .container-fluid aside .kc-memberservice-detail__action-buttons hr,
+      .kc-rejected-member-detail .content-body .container-fluid aside .kc-memberservice-detail__action-buttons hr,
+      .kc-suspended-member-detail .content-body .container-fluid aside .kc-memberservice-detail__action-buttons hr,
+      .kc-member-proposal-detail .content-body .container-fluid aside .kc-memberservice-detail__action-buttons hr,
+      .kc-dao-membership-detail .content-body .container-fluid aside .kc-memberservice-detail__action-buttons hr,
+      .kc-request-update-data-detail .content-body .container-fluid aside .kc-memberservice-detail__action-buttons hr {
+        margin: 30px 0; }
+      .kc-active-member-detail .content-body .container-fluid aside .kc-memberservice-detail__action-buttons > .kc-button,
+      .kc-approved-member-detail .content-body .container-fluid aside .kc-memberservice-detail__action-buttons > .kc-button,
+      .kc-rejected-member-detail .content-body .container-fluid aside .kc-memberservice-detail__action-buttons > .kc-button,
+      .kc-suspended-member-detail .content-body .container-fluid aside .kc-memberservice-detail__action-buttons > .kc-button,
+      .kc-member-proposal-detail .content-body .container-fluid aside .kc-memberservice-detail__action-buttons > .kc-button,
+      .kc-dao-membership-detail .content-body .container-fluid aside .kc-memberservice-detail__action-buttons > .kc-button,
+      .kc-request-update-data-detail .content-body .container-fluid aside .kc-memberservice-detail__action-buttons > .kc-button {
+        margin-bottom: 15px; }
+
+.kc-member-proposal-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__header .kc-modal__title span.kc-headline5,
+.kc-active-member-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__header .kc-modal__title span.kc-headline5,
+.kc-request-update-data-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__header .kc-modal__title span.kc-headline5 {
+  font-size: 22px; }
+
+/**
+  Styling for invoice list page [MEMBERSERVICE]
+*/
+.kc-invoice-list .kc-table table tbody tr td:nth-child(7) {
   display: flex;
-  align-items: center;
-  padding: 10px; }
-  .kc-detail-wrapper .kc-withdrawal-status label {
-    color: #8C8C8C;
-    font-weight: 400;
-    margin: 0;
-    margin-right: 20px; }
+  height: 100%;
+  justify-content: center; }
 
-.kc-pencarian-rekening {
-  display: flex;
-  justify-content: flex-end;
+/**
+  Styling for member proposal detail page [MEMBERSERVICE]
+*/
+.kc-member-proposal-detail .kc-reject-proposal-modal .kc-modal .kc-modal__container {
+  width: 600px; }
+  .kc-member-proposal-detail .kc-reject-proposal-modal .kc-modal .kc-modal__container .kc-modal__content .kc-textarea, .kc-member-proposal-detail .kc-reject-proposal-modal .kc-modal .kc-modal__container .kc-modal__content .kc-button {
+    margin-top: 15px; }
+
+.kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
+  height: 700px;
+  padding-top: 1.5rem; }
+  .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__header .kc-revision-modal--navigation {
+      display: flex; }
+      .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__header .kc-revision-modal--navigation button {
+        margin-right: 15px; }
+        .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__header .kc-revision-modal--navigation button .kc-tab-navigation--label {
+          margin-bottom: 10px; }
+  .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content {
+    width: 100%;
+    height: 100%;
+    margin: 20px 0;
+    padding-right: 50px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-color: transparent;
+    transition: border-color .25s linear;
+    -webkit-transition: border-color .25s linear; }
+    .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content:hover {
+      border-color: rgba(0, 0, 0, 0.1); }
+    .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content::-webkit-scrollbar, .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content::-webkit-scrollbar-thumb, .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content::-webkit-scrollbar-corner {
+      border-right-style: inset;
+      border-color: inherit;
+      border-right-width: calc(100vw + 100vh); }
+    .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content::-webkit-scrollbar {
+      width: 6px;
+      height: 6px; }
+    .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-dropdown button {
+      height: 32px; }
+    .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-dropdown .kc-dropdown__items {
+      top: 32px; }
+    .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section {
+      width: fit-content; }
+      .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-header {
+        margin-bottom: 15px; }
+        .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-header .kc-record-item--value {
+          color: #8C8C8C; }
+      .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-item {
+        display: flex;
+        flex-direction: column; }
+        .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-item .kc-section-item--top {
+          align-items: flex-start;
+          display: flex;
+          padding: 10px; }
+          .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-item .kc-section-item--top .kc-record-item {
+            padding: 0; }
+          .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-item .kc-section-item--top .kc-checkbox-container {
+            padding-top: 3px; }
+        .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-item .kc-section-item--bottom {
+          width: 100%;
+          padding: 0 10px;
+          margin-bottom: 15px; }
+          .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-item .kc-section-item--bottom textarea {
+            resize: none; }
+          .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-item .kc-section-item--bottom .kc-section-item--action {
+            margin-top: 10px;
+            display: flex; }
+            .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-item .kc-section-item--bottom .kc-section-item--action .kc-section-item--action-item {
+              margin-right: 25px; }
+              .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-item .kc-section-item--bottom .kc-section-item--action .kc-section-item--action-item input[type="radio"] {
+                margin-right: 10px; }
+  .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__footer .kc-revision-modal--action-button {
+    display: flex;
+    justify-content: flex-start; }
+    .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__footer .kc-revision-modal--action-button button {
+      margin: 0; }
+
+.kc-member-proposal-detail .kc-deposit-account-onboarding-modal .kc-modal .kc-modal__container {
+  width: 500px; }
+  .kc-member-proposal-detail .kc-deposit-account-onboarding-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
+    padding: 1.5rem 1rem; }
+    .kc-member-proposal-detail .kc-deposit-account-onboarding-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-inputfield {
+      margin-bottom: 20px; }
+      .kc-member-proposal-detail .kc-deposit-account-onboarding-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-inputfield .kc-inputfield__title span.kc-caption {
+        font-size: 15px; }
+
+/**
+  Styling for request update data detail page [MEMBERSERVICE]
+*/
+.kc-request-update-data-detail .kc-reject-request-update-data-modal .kc-modal .kc-modal__container {
+  width: 500px; }
+  .kc-request-update-data-detail .kc-reject-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-textarea {
+    margin-bottom: 15px; }
+
+.kc-request-update-data-detail main.kc-memberservice-detail .kc-section .kc-section-header .kc-record-item .kc-record-item--rows-value .kc-record-item--value span {
+  color: #8C8C8C;
+  font-weight: 400; }
+
+/**
+  Styling for active member detail page [FUNDING]
+*/
+.kc-funding-detail-member .content-body {
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0; }
+  .kc-funding-detail-member .content-body .container-fluid {
+    display: flex; }
+    .kc-funding-detail-member .content-body .container-fluid .kc-record-item-new > label {
+      font-weight: 400; }
+    .kc-funding-detail-member .content-body .container-fluid main {
+      background-color: #FFFFFF;
+      border-radius: 2px;
+      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+      max-width: 1080px;
+      min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px) - 70px - 20px);
+      padding: 20px;
+      width: 70%; }
+      .kc-funding-detail-member .content-body .container-fluid main .spinner-border {
+        width: 1.25rem;
+        height: 1.25rem;
+        border: 0.25em solid #1890FF;
+        border-right-color: transparent;
+        margin-left: 5px; }
+      .kc-funding-detail-member .content-body .container-fluid main .kc-record-item-new:first-child .kc-record-item-new__value label {
+        font-weight: 400; }
+      .kc-funding-detail-member .content-body .container-fluid main .kc-form-group {
+        margin-bottom: 0;
+        margin-right: 10px;
+        width: fit-content; }
+        .kc-funding-detail-member .content-body .container-fluid main .kc-form-group .kc-inputfield .kc-inputfield__box {
+          height: 40px; }
+    .kc-funding-detail-member .content-body .container-fluid aside {
+      margin-left: 20px;
+      max-width: 360px;
+      width: 30%; }
+      .kc-funding-detail-member .content-body .container-fluid aside h2 {
+        margin-bottom: 40px; }
+
+/**
+  Styling for withdrawal detail page [FUNDING]
+*/
+.kc-detail-wrapper.kc-withdrawal-detail .col-xxl-6 {
+  position: relative;
+  width: 100%;
+  padding-left: 7.5px;
+  padding-right: 7.5px; }
+
+.kc-detail-wrapper.kc-withdrawal-detail table tbody tr td.kc-record-table__label {
+  padding: 10px 20px 0 0;
+  width: 250px; }
+
+.kc-detail-wrapper.kc-withdrawal-detail table tbody tr td.kc-record-table__value {
+  padding-bottom: 0; }
+
+.kc-detail-wrapper.kc-withdrawal-detail section h2 {
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.kc-detail-wrapper.kc-withdrawal-detail hr {
+  margin: 30px 0; }
+
+.kc-detail-wrapper.kc-withdrawal-detail section.kc-withdrawal-detail__identity table tbody tr td.kc-record-table__value .kc-status-card {
+  width: fit-content; }
+
+.kc-detail-wrapper.kc-withdrawal-detail section.kc-withdrawal-detail__identity table tbody tr td.kc-record-table__value .kc-rounded-button {
+  margin-left: 8px; }
+
+.kc-detail-wrapper.kc-withdrawal-detail section.kc-withdrawal-detail__transaction table tbody tr:first-child td {
+  padding-top: 0; }
+
+.kc-detail-wrapper.kc-withdrawal-detail section.kc-withdrawal-detail__status-history {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-left: 0;
+  margin-top: 30px;
+  padding-top: 30px; }
+  .kc-detail-wrapper.kc-withdrawal-detail section.kc-withdrawal-detail__status-history h2 {
+    margin-bottom: 20px; }
+
+@media screen and (min-width: 1500px) {
+  .kc-detail-wrapper.kc-withdrawal-detail .col-xxl-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; }
+  .kc-detail-wrapper.kc-withdrawal-detail section.kc-withdrawal-detail__status-history {
+    border-top: none;
+    margin-left: 20px;
+    margin-top: 0;
+    padding-top: 0; } }
+
+/**
+  Styling for account search page [FUNDING]
+*/
+.kc-account-search form {
   height: 40px;
-  margin: auto;
-  margin-bottom: 30px; }
-  .kc-pencarian-rekening .kc-pencarian-rekening__searchbar {
+  margin-bottom: 20px; }
+  .kc-account-search form .kc-account-search__searchbar {
     margin-right: 20px;
     width: 300px; }
-    .kc-pencarian-rekening .kc-pencarian-rekening__searchbar .kc-inputfield .kc-inputfield__box {
+    .kc-account-search form .kc-account-search__searchbar .kc-inputfield .kc-inputfield__box {
       height: 40px; }
-      .kc-pencarian-rekening .kc-pencarian-rekening__searchbar .kc-inputfield .kc-inputfield__box input {
+      .kc-account-search form .kc-account-search__searchbar .kc-inputfield .kc-inputfield__box input {
         font-size: 15px; }
-  .kc-pencarian-rekening button.kc-button {
+  .kc-account-search form button.kc-button {
     width: 120px; }
 
-.kc-detail-wrapper.kc-term-deposit-application-detail {
-  display: block; }
-  .kc-detail-wrapper.kc-term-deposit-application-detail table.kc-record-table {
-    width: 600px; }
-    .kc-detail-wrapper.kc-term-deposit-application-detail table.kc-record-table tbody tr td {
-      white-space: nowrap; }
-    .kc-detail-wrapper.kc-term-deposit-application-detail table.kc-record-table tbody tr td.kc-record-table__label {
-      display: flex;
-      width: 240px; }
-    .kc-detail-wrapper.kc-term-deposit-application-detail table.kc-record-table tbody tr td.kc-record-table__value {
-      width: 100%; }
-      .kc-detail-wrapper.kc-term-deposit-application-detail table.kc-record-table tbody tr td.kc-record-table__value .kc-status-card {
-        width: fit-content; }
-  .kc-detail-wrapper.kc-term-deposit-application-detail section.kc-product-detail-section h2, .kc-detail-wrapper.kc-term-deposit-application-detail section.kc-customer-detail-section h2 {
-    font-weight: 700;
-    margin-bottom: 24px;
-    text-transform: uppercase; }
-  .kc-detail-wrapper.kc-term-deposit-application-detail hr {
-    margin: 30px 0 40px; }
-  .kc-detail-wrapper.kc-term-deposit-application-detail section.kc-customer-detail-section table.kc-record-table tbody tr:nth-child(1) td.kc-record-table__value, .kc-detail-wrapper.kc-term-deposit-application-detail section.kc-customer-detail-section table.kc-record-table tbody tr:nth-child(2) td.kc-record-table__value {
-    padding-top: 0; }
-  .kc-detail-wrapper.kc-term-deposit-application-detail section.kc-customer-detail-section table.kc-record-table tbody tr td .kc-rounded-button {
-    margin-left: 5px; }
-  .kc-detail-wrapper.kc-term-deposit-application-detail section.kc-product-detail-section .kc-remark {
-    background-color: #FF4D4F;
-    color: #FFFFFF;
-    margin-top: 24px;
-    max-width: 360px;
-    padding: 8px 16px;
-    white-space: break-spaces;
-    width: fit-content; }
-  .kc-detail-wrapper.kc-term-deposit-application-detail .kc-detail-wrapper__left {
+/**
+  Styling for setting deposit page and setting withdraw page [FUNDING]
+*/
+.kc-setting-deposit, .kc-setting-withdraw {
+  margin: 20px 0; }
+  .kc-setting-deposit .kc-setting-simulation, .kc-setting-withdraw .kc-setting-simulation {
+    background-color: #F5F5F5;
+    color: #8C8C8C;
+    height: fit-content;
     margin-bottom: 30px;
-    margin-right: 50px; }
-  .kc-detail-wrapper.kc-term-deposit-application-detail .kc-modal .kc-modal__container {
-    width: 600px; }
-    .kc-detail-wrapper.kc-term-deposit-application-detail .kc-modal .kc-modal__container .kc-form-group .kc-textarea .kc-textarea__subtitle {
-      margin-top: 0; }
-      .kc-detail-wrapper.kc-term-deposit-application-detail .kc-modal .kc-modal__container .kc-form-group .kc-textarea .kc-textarea__subtitle span.kc-overline {
-        font-size: 11px;
-        letter-spacing: 1px; }
-    .kc-detail-wrapper.kc-term-deposit-application-detail .kc-modal .kc-modal__container .kc-form-group .kc-inputfield {
-      max-width: none; }
-
-.kc-profile, .kc-change-password {
-  max-width: 600px;
-  margin-bottom: 30px;
-  padding: 0 30px; }
-  .kc-profile .kc-form-wrapper .kc-form-group .kc-roles, .kc-change-password .kc-form-wrapper .kc-form-group .kc-roles {
-    display: flex;
-    flex-direction: column;
-    margin-top: 5px; }
-    .kc-profile .kc-form-wrapper .kc-form-group .kc-roles .kc-roles__option, .kc-change-password .kc-form-wrapper .kc-form-group .kc-roles .kc-roles__option {
+    margin-right: 40px;
+    max-width: 500px;
+    padding: 32px; }
+    .kc-setting-deposit .kc-setting-simulation hr.kc-border-line, .kc-setting-withdraw .kc-setting-simulation hr.kc-border-line {
+      border-top: 1px solid #8C8C8C;
+      margin-bottom: 1.5rem;
+      margin-top: 1.5rem; }
+    .kc-setting-deposit .kc-setting-simulation label, .kc-setting-withdraw .kc-setting-simulation label {
+      font-weight: 400;
+      margin: 0; }
+    .kc-setting-deposit .kc-setting-simulation span, .kc-setting-withdraw .kc-setting-simulation span {
+      font-weight: 700; }
+    .kc-setting-deposit .kc-setting-simulation p.text-danger, .kc-setting-withdraw .kc-setting-simulation p.text-danger {
+      margin-bottom: 0; }
+  .kc-setting-deposit .kc-setting-deposit-form, .kc-setting-deposit .kc-setting-withdraw-form, .kc-setting-withdraw .kc-setting-deposit-form, .kc-setting-withdraw .kc-setting-withdraw-form {
+    max-width: 500px; }
+    .kc-setting-deposit .kc-setting-deposit-form .kc-radio-button, .kc-setting-deposit .kc-setting-withdraw-form .kc-radio-button, .kc-setting-withdraw .kc-setting-deposit-form .kc-radio-button, .kc-setting-withdraw .kc-setting-withdraw-form .kc-radio-button {
       margin-bottom: 15px; }
-      .kc-profile .kc-form-wrapper .kc-form-group .kc-roles .kc-roles__option span.kc-caption, .kc-change-password .kc-form-wrapper .kc-form-group .kc-roles .kc-roles__option span.kc-caption {
-        color: #595959;
-        font-size: 13px;
-        line-height: 8px; }
-  .kc-profile .kc-form-wrapper .kc-form-group ul.kc-roles, .kc-change-password .kc-form-wrapper .kc-form-group ul.kc-roles {
-    width: 100%;
-    margin-left: 40px; }
+      .kc-setting-deposit .kc-setting-deposit-form .kc-radio-button input[type="radio"], .kc-setting-deposit .kc-setting-withdraw-form .kc-radio-button input[type="radio"], .kc-setting-withdraw .kc-setting-deposit-form .kc-radio-button input[type="radio"], .kc-setting-withdraw .kc-setting-withdraw-form .kc-radio-button input[type="radio"] {
+        margin-top: 4px; }
+      .kc-setting-deposit .kc-setting-deposit-form .kc-radio-button .kc-radio-button__label, .kc-setting-deposit .kc-setting-withdraw-form .kc-radio-button .kc-radio-button__label, .kc-setting-withdraw .kc-setting-deposit-form .kc-radio-button .kc-radio-button__label, .kc-setting-withdraw .kc-setting-withdraw-form .kc-radio-button .kc-radio-button__label {
+        font-size: 16px;
+        font-weight: 400; }
+      .kc-setting-deposit .kc-setting-deposit-form .kc-radio-button:last-child, .kc-setting-deposit .kc-setting-withdraw-form .kc-radio-button:last-child, .kc-setting-withdraw .kc-setting-deposit-form .kc-radio-button:last-child, .kc-setting-withdraw .kc-setting-withdraw-form .kc-radio-button:last-child {
+        margin-bottom: 0; }
 
-.kc-change-password .kc-form-wrapper .kc-inputfield__subtitle span.kc-overline {
-  font-size: 11px;
-  letter-spacing: 0.75px; }
+/**
+  Styling for term deposit account detail page [FUNDING]
+*/
+.kc-term-deposit-account-detail .content-body {
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0; }
+  .kc-term-deposit-account-detail .content-body .container-fluid {
+    display: flex; }
+    .kc-term-deposit-account-detail .content-body .container-fluid .kc-record-item-new > label {
+      font-weight: 400; }
+    .kc-term-deposit-account-detail .content-body .container-fluid h3 {
+      font-size: 18px;
+      margin-bottom: 20px;
+      text-transform: uppercase; }
+    .kc-term-deposit-account-detail .content-body .container-fluid main {
+      background-color: #FFFFFF;
+      border-radius: 2px;
+      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+      min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px) - 70px - 20px);
+      padding: 40px;
+      width: 70%; }
+      .kc-term-deposit-account-detail .content-body .container-fluid main .spinner-border {
+        width: 1.25rem;
+        height: 1.25rem;
+        border: 0.25em solid #1890FF;
+        border-right-color: transparent;
+        margin-left: 5px; }
+      .kc-term-deposit-account-detail .content-body .container-fluid main .kc-form-group {
+        margin-bottom: 0;
+        margin-right: 10px;
+        width: fit-content; }
+        .kc-term-deposit-account-detail .content-body .container-fluid main .kc-form-group .kc-inputfield .kc-inputfield__box {
+          height: 40px; }
+      .kc-term-deposit-account-detail .content-body .container-fluid main section.kc-term-deposit-account__transaction-history {
+        margin-top: 40px; }
+        .kc-term-deposit-account-detail .content-body .container-fluid main section.kc-term-deposit-account__transaction-history .kc-form-group .kc-form-group__label label {
+          font-size: 15px;
+          font-weight: 400;
+          margin-bottom: 0; }
+    .kc-term-deposit-account-detail .content-body .container-fluid aside {
+      margin-left: 20px;
+      width: 30%; }
+      .kc-term-deposit-account-detail .content-body .container-fluid aside h2 {
+        margin-bottom: 40px; }
+      .kc-term-deposit-account-detail .content-body .container-fluid aside hr {
+        margin: 40px 0; }
+      .kc-term-deposit-account-detail .content-body .container-fluid aside a {
+        color: #0F77C0;
+        font-weight: 700;
+        text-decoration: underline; }
+      .kc-term-deposit-account-detail .content-body .container-fluid aside .kc-record-item-new > label {
+        margin-bottom: 5px; }
+      .kc-term-deposit-account-detail .content-body .container-fluid aside .kc-rounded-button {
+        background-color: transparent;
+        margin-left: 5px; }
+        .kc-term-deposit-account-detail .content-body .container-fluid aside .kc-rounded-button button {
+          background-color: transparent; }
+      .kc-term-deposit-account-detail .content-body .container-fluid aside .kc-status-card {
+        margin-top: 5px;
+        width: fit-content; }
 
-.login-container {
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(337deg, #020024 0%, #d2d6d4 0%, #eaf2f9 45%);
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .login-container .login-wrapper {
-    width: auto;
-    height: auto; }
-    .login-container .login-wrapper .login-title {
-      font-size: 22px;
-      margin-bottom: 15px;
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-end; }
-      .login-container .login-wrapper .login-title span {
-        font-size: 15px;
-        display: block;
-        margin-left: 5px;
-        color: #999999;
-        font-family: "Roboto";
-        font-style: italic; }
-    .login-container .login-wrapper .login-box {
-      padding: 15px;
-      border: 1px solid #e0e0e0;
-      border-radius: 5px;
-      font-size: 15px;
-      background: #fff; }
+/**
+  Styling for term deposit application detail page [FUNDING]
+*/
+.kc-term-deposit-application-detail .content-body {
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0; }
+  .kc-term-deposit-application-detail .content-body .container-fluid {
+    display: flex; }
+    .kc-term-deposit-application-detail .content-body .container-fluid .kc-record-item-new > label {
+      font-weight: 400; }
+    .kc-term-deposit-application-detail .content-body .container-fluid main {
+      background-color: #FFFFFF;
+      border-radius: 2px;
+      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+      min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px) - 70px - 20px);
+      padding: 40px;
+      width: 75%; }
+      .kc-term-deposit-application-detail .content-body .container-fluid main .spinner-border {
+        width: 1.25rem;
+        height: 1.25rem;
+        border: 0.25em solid #1890FF;
+        border-right-color: transparent;
+        margin-left: 5px; }
+      .kc-term-deposit-application-detail .content-body .container-fluid main .kc-form-group {
+        margin-bottom: 0;
+        margin-right: 10px;
+        width: fit-content; }
+        .kc-term-deposit-application-detail .content-body .container-fluid main .kc-form-group .kc-inputfield .kc-inputfield__box {
+          height: 40px; }
+    .kc-term-deposit-application-detail .content-body .container-fluid aside {
+      margin-left: 20px;
+      width: 25%; }
+      .kc-term-deposit-application-detail .content-body .container-fluid aside h2 {
+        margin-bottom: 40px; }
+
+.kc-term-deposit-application-detail table.kc-record-table {
+  width: 600px; }
+  .kc-term-deposit-application-detail table.kc-record-table tbody tr td {
+    white-space: nowrap; }
+  .kc-term-deposit-application-detail table.kc-record-table tbody tr td.kc-record-table__label {
+    display: flex;
+    width: 240px; }
+  .kc-term-deposit-application-detail table.kc-record-table tbody tr td.kc-record-table__value {
+    width: 100%; }
+    .kc-term-deposit-application-detail table.kc-record-table tbody tr td.kc-record-table__value .kc-status-card {
+      width: fit-content; }
+
+.kc-term-deposit-application-detail section.kc-product-detail-section h2, .kc-term-deposit-application-detail section.kc-customer-detail-section h2 {
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-transform: uppercase; }
+
+.kc-term-deposit-application-detail hr {
+  margin: 30px 0 40px; }
+
+.kc-term-deposit-application-detail section.kc-customer-detail-section table.kc-record-table tbody tr:nth-child(1) td.kc-record-table__value, .kc-term-deposit-application-detail section.kc-customer-detail-section table.kc-record-table tbody tr:nth-child(2) td.kc-record-table__value {
+  padding-top: 0; }
+
+.kc-term-deposit-application-detail section.kc-customer-detail-section table.kc-record-table tbody tr td .kc-rounded-button {
+  margin-left: 5px; }
+
+.kc-term-deposit-application-detail section.kc-product-detail-section .kc-remark {
+  background-color: #FF4D4F;
+  color: #FFFFFF;
+  margin-top: 24px;
+  max-width: 360px;
+  padding: 8px 16px;
+  white-space: break-spaces;
+  width: fit-content; }
+
+.kc-term-deposit-application-detail .kc-detail-wrapper__left {
+  margin-bottom: 30px;
+  margin-right: 50px; }
+
+.kc-term-deposit-application-detail .kc-modal .kc-modal__container {
+  width: 600px; }
+  .kc-term-deposit-application-detail .kc-modal .kc-modal__container .kc-form-group .kc-textarea .kc-textarea__subtitle {
+    margin-top: 0; }
+    .kc-term-deposit-application-detail .kc-modal .kc-modal__container .kc-form-group .kc-textarea .kc-textarea__subtitle span.kc-overline {
+      font-size: 11px;
+      letter-spacing: 1px; }
+  .kc-term-deposit-application-detail .kc-modal .kc-modal__container .kc-form-group .kc-inputfield {
+    max-width: none; }
 
 .kc-page-notfound, .kc-verification-failed {
   height: 100vh; }
@@ -1325,6 +1178,27 @@ select, .form-control, .custom-select {
       font-weight: 700;
       text-decoration: underline;
       opacity: 1; }
+
+.kc-profile .kc-form-wrapper, .kc-change-password .kc-form-wrapper {
+  margin: 20px 0; }
+  .kc-profile .kc-form-wrapper .kc-form-group .kc-roles, .kc-change-password .kc-form-wrapper .kc-form-group .kc-roles {
+    margin-top: 5px;
+    margin-left: 10px; }
+    .kc-profile .kc-form-wrapper .kc-form-group .kc-roles .kc-roles__option, .kc-change-password .kc-form-wrapper .kc-form-group .kc-roles .kc-roles__option {
+      margin-bottom: 15px; }
+      .kc-profile .kc-form-wrapper .kc-form-group .kc-roles .kc-roles__option .kc-checkbox label, .kc-change-password .kc-form-wrapper .kc-form-group .kc-roles .kc-roles__option .kc-checkbox label {
+        max-width: none; }
+      .kc-profile .kc-form-wrapper .kc-form-group .kc-roles .kc-roles__option div.kc-caption, .kc-change-password .kc-form-wrapper .kc-form-group .kc-roles .kc-roles__option div.kc-caption {
+        color: #595959;
+        font-size: 13px;
+        line-height: 16px;
+        margin-top: 5px; }
+  .kc-profile .kc-form-wrapper .kc-form-group ul.kc-roles, .kc-change-password .kc-form-wrapper .kc-form-group ul.kc-roles {
+    margin-left: 40px; }
+
+.kc-change-password .kc-form-wrapper .kc-inputfield__subtitle span.kc-overline {
+  font-size: 11px;
+  letter-spacing: 0.75px; }
 
 .kc-color-pallete {
   background-color: transparent;
@@ -1532,39 +1406,165 @@ select, .form-control, .custom-select {
     text-decoration: underline;
     opacity: 1; }
 
+.dashboard-cards-wrapper {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
+
+.dashboard-cards-container {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
+  .dashboard-cards-container .dashboard-left {
+    width: calc(30% - 30px);
+    margin: 0 15px; }
+  .dashboard-cards-container .dashboard-right {
+    width: calc(70% - 30px);
+    margin: 0 15px; }
+  .dashboard-cards-container table {
+    width: 100%; }
+    .dashboard-cards-container table tr td {
+      padding: 7.5px 0;
+      font-family: "Lato";
+      font-size: 14px;
+      color: #8c8c8c;
+      text-align: right;
+      font-weight: bold; }
+      .dashboard-cards-container table tr td h1, .dashboard-cards-container table tr td h2, .dashboard-cards-container table tr td h3 {
+        color: #000; }
+      .dashboard-cards-container table tr td:first-child {
+        font-weight: normal;
+        text-align: left; }
+
+.dashboard-cards {
+  background: #FFFFFF;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 25px;
+  margin: 15px;
+  width: calc(50% - 30px); }
+  .dashboard-cards.dashboard-cards-full {
+    width: 100%;
+    margin: 15px 0; }
+  .dashboard-cards .title-with-icon-dashboard-cards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; }
+    .dashboard-cards .title-with-icon-dashboard-cards .icon-dashboard-cards {
+      width: auto;
+      padding: 5px;
+      height: 50px;
+      width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff; }
+      .dashboard-cards .title-with-icon-dashboard-cards .icon-dashboard-cards.green {
+        background-color: #74C990; }
+      .dashboard-cards .title-with-icon-dashboard-cards .icon-dashboard-cards.purple {
+        background-color: #757AEA; }
+      .dashboard-cards .title-with-icon-dashboard-cards .icon-dashboard-cards.yellow {
+        background-color: #E5AE20; }
+      .dashboard-cards .title-with-icon-dashboard-cards .icon-dashboard-cards.blue {
+        background-color: #51BCF8; }
+  .dashboard-cards .title-dashboard-cards {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 0;
+    text-transform: uppercase; }
+  .dashboard-cards span {
+    font-family: "Lato";
+    font-style: normal;
+    color: #8C8C8C;
+    font-size: 14px; }
+  .dashboard-cards .nominal-dashboard-cards {
+    font-size: 40px;
+    color: #000;
+    font-weight: bold;
+    font-family: "Lato";
+    margin: 0;
+    padding: 0;
+    margin-top: 45px;
+    margin-bottom: 45px; }
+    .dashboard-cards .nominal-dashboard-cards span {
+      color: #000;
+      font-size: 25px;
+      font-weight: normal; }
+  .dashboard-cards .footer-dashboard-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+    .dashboard-cards .footer-dashboard-cards p {
+      margin: 0;
+      padding: 0;
+      font-family: "Lato";
+      font-size: 17px;
+      color: #8C8C8C; }
+    .dashboard-cards .footer-dashboard-cards .increase-status-dashboard-cards {
+      text-align: right; }
+      .dashboard-cards .footer-dashboard-cards .increase-status-dashboard-cards .icon-increase-status-dashboard-cards {
+        padding: 5px 10px;
+        color: #ffffff;
+        border-radius: 4px; }
+        .dashboard-cards .footer-dashboard-cards .increase-status-dashboard-cards .icon-increase-status-dashboard-cards.increase {
+          background-color: #52B524; }
+        .dashboard-cards .footer-dashboard-cards .increase-status-dashboard-cards .icon-increase-status-dashboard-cards.decrease {
+          background-color: #DC496F; }
+  .dashboard-cards .tx-color-purple-dashboard-cards {
+    color: #757AEA; }
+  .dashboard-cards .tx-color-blue-dashboard-cards {
+    color: #51BCF8; }
+  .dashboard-cards .tx-color-yellow-dashboard-cards {
+    color: #E5AE20; }
+  .dashboard-cards .tx-color-red-dashboard-cards {
+    color: #DC496F; }
+  .dashboard-cards .tx-color-green-dashboard-cards {
+    color: #74C990; }
+  .dashboard-cards .tx-color-black-dashboard-cards {
+    color: #000; }
+  .dashboard-cards .sparator {
+    width: 100%;
+    height: 1px;
+    margin: 15px 0; }
+    .dashboard-cards .sparator.sparator-black {
+      background: #000; }
+    .dashboard-cards .sparator.sparator-grey {
+      background: #8c8c8c; }
+
 .kc-image-preview {
   width: 120px;
-  height: 200px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-  .kc-image-preview .kc-image-preview--box {
-    border: 1px dashed #000000;
-    border-radius: 8px;
-    padding: 10px;
-    height: 100%;
-    width: 100%; }
-    .kc-image-preview .kc-image-preview--box .kc-image-preview--image {
+  flex-direction: column; }
+  .kc-image-preview .kc-image-preview__content {
+    border: 1px solid #8C8C8C;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; }
+    .kc-image-preview .kc-image-preview__content img {
       width: 100%;
       height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      .kc-image-preview .kc-image-preview--box .kc-image-preview--image img {
-        width: 100%;
-        height: 100%;
-        object-position: center;
-        object-fit: contain; }
-      .kc-image-preview .kc-image-preview--box .kc-image-preview--image i {
-        color: #8C8C8C;
-        font-size: 32px; }
-  .kc-image-preview .kc-image-preview--label {
-    padding: 16px;
-    text-align: center;
-    text-transform: uppercase; }
-    .kc-image-preview .kc-image-preview--label span {
-      color: #0F77C0; }
+      object-position: center;
+      object-fit: contain; }
+    .kc-image-preview .kc-image-preview__content a {
+      bottom: 10px;
+      position: absolute;
+      right: 10px; }
+      .kc-image-preview .kc-image-preview__content a i {
+        color: #FFFFFF; }
+  .kc-image-preview .kc-image-preview__label {
+    padding: 8px 0; }
+    .kc-image-preview .kc-image-preview__label span.kc-button-label {
+      font-weight: 700; }
 
 .kc-modal-login--wrapper {
   width: 600px;
@@ -1581,20 +1581,20 @@ select, .form-control, .custom-select {
     padding: 0 10px; }
     .kc-modal-login--wrapper .kc-modal-login--content .kc-form-group {
       margin-bottom: 15px; }
-      .kc-modal-login--wrapper .kc-modal-login--content .kc-form-group .kc-form-group__label {
+      .kc-modal-login--wrapper .kc-modal-login--content .kc-form-group .kc-form-group__identity {
         width: 120px; }
     .kc-modal-login--wrapper .kc-modal-login--content .kc-form-wrapper .kc-form-wrapper__submit-btn > button {
       width: 100%; }
 
 .modal-kc .moda-dialog {
-  font-family: "Roboto"; }
+  font-family: "Lato"; }
 
 .modal-kc .modal-content {
   border-radius: 0;
   border: none;
   box-shadow: none; }
   .modal-kc .modal-content .modal-header {
-    font-family: "Roboto";
+    font-family: "Lato";
     color: #4c4c4c; }
     .modal-kc .modal-content .modal-header .link {
       color: #4c4c4c !important; }
@@ -1640,7 +1640,7 @@ select, .form-control, .custom-select {
     border-radius: 5px;
     padding: 15px;
     position: relative;
-    font-family: "Roboto"; }
+    font-family: "Lato"; }
     .kc-popup-backdrop .kc-popup-wrapper .kc-popup-close {
       position: absolute;
       top: -10px;
@@ -1719,12 +1719,12 @@ select, .form-control, .custom-select {
     font-size: 2em; }
   .swal2-popup .swal2-title {
     font-size: 22px;
-    font-family: "Roboto" !important;
+    font-family: "Lato" !important;
     font-weight: 700;
     color: #4c4c4c !important; }
   .swal2-popup .swal2-html-container {
     font-size: 15px;
-    font-family: "Roboto" !important; }
+    font-family: "Lato" !important; }
   .swal2-popup .swal2-confirm,
   .swal2-popup .swal2-deny,
   .swal2-popup .swal2-cancel {
@@ -1742,148 +1742,143 @@ select, .form-control, .custom-select {
     background-color: #fff !important;
     color: #0f77c0 !important; }
 
-.dashboard-cards-wrapper {
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px; }
-
-.dashboard-cards-container {
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px; }
-  .dashboard-cards-container .dashboard-left {
-    width: calc(30% - 30px);
-    margin: 0 15px; }
-  .dashboard-cards-container .dashboard-right {
-    width: calc(70% - 30px);
-    margin: 0 15px; }
-  .dashboard-cards-container table {
-    width: 100%; }
-    .dashboard-cards-container table tr td {
-      padding: 7.5px 0;
-      font-family: "Roboto";
-      font-size: 14px;
-      color: #8c8c8c;
-      text-align: right;
-      font-weight: bold; }
-      .dashboard-cards-container table tr td h1, .dashboard-cards-container table tr td h2, .dashboard-cards-container table tr td h3 {
-        color: #000; }
-      .dashboard-cards-container table tr td:first-child {
-        font-weight: normal;
-        text-align: left; }
-
-.dashboard-cards {
-  background: #FFFFFF;
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  padding: 25px;
-  margin: 15px;
-  width: calc(50% - 30px); }
-  .dashboard-cards.dashboard-cards-full {
-    width: 100%;
-    margin: 15px 0; }
-  .dashboard-cards .title-with-icon-dashboard-cards {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between; }
-    .dashboard-cards .title-with-icon-dashboard-cards .icon-dashboard-cards {
-      width: auto;
-      padding: 5px;
-      height: 50px;
-      width: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #ffffff; }
-      .dashboard-cards .title-with-icon-dashboard-cards .icon-dashboard-cards.green {
-        background-color: #74C990; }
-      .dashboard-cards .title-with-icon-dashboard-cards .icon-dashboard-cards.purple {
-        background-color: #757AEA; }
-      .dashboard-cards .title-with-icon-dashboard-cards .icon-dashboard-cards.yellow {
-        background-color: #E5AE20; }
-      .dashboard-cards .title-with-icon-dashboard-cards .icon-dashboard-cards.blue {
-        background-color: #51BCF8; }
-  .dashboard-cards .title-dashboard-cards {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 25px;
-    margin: 0px;
-    padding: 0px;
-    margin-bottom: 0;
-    text-transform: uppercase; }
-  .dashboard-cards span {
-    font-family: "Roboto";
-    font-style: normal;
-    color: #8C8C8C;
-    font-size: 14px; }
-  .dashboard-cards .nominal-dashboard-cards {
-    font-size: 40px;
-    color: #000;
-    font-weight: bold;
-    font-family: "Roboto";
-    margin: 0;
-    padding: 0;
-    margin-top: 45px;
-    margin-bottom: 45px; }
-    .dashboard-cards .nominal-dashboard-cards span {
-      color: #000;
-      font-size: 25px;
-      font-weight: normal; }
-  .dashboard-cards .footer-dashboard-cards {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; }
-    .dashboard-cards .footer-dashboard-cards p {
-      margin: 0;
-      padding: 0;
-      font-family: "Roboto";
-      font-size: 17px;
-      color: #8C8C8C; }
-    .dashboard-cards .footer-dashboard-cards .increase-status-dashboard-cards {
-      text-align: right; }
-      .dashboard-cards .footer-dashboard-cards .increase-status-dashboard-cards .icon-increase-status-dashboard-cards {
-        padding: 5px 10px;
-        color: #ffffff;
-        border-radius: 4px; }
-        .dashboard-cards .footer-dashboard-cards .increase-status-dashboard-cards .icon-increase-status-dashboard-cards.increase {
-          background-color: #52B524; }
-        .dashboard-cards .footer-dashboard-cards .increase-status-dashboard-cards .icon-increase-status-dashboard-cards.decrease {
-          background-color: #DC496F; }
-  .dashboard-cards .tx-color-purple-dashboard-cards {
-    color: #757AEA; }
-  .dashboard-cards .tx-color-blue-dashboard-cards {
-    color: #51BCF8; }
-  .dashboard-cards .tx-color-yellow-dashboard-cards {
-    color: #E5AE20; }
-  .dashboard-cards .tx-color-red-dashboard-cards {
-    color: #DC496F; }
-  .dashboard-cards .tx-color-green-dashboard-cards {
-    color: #74C990; }
-  .dashboard-cards .tx-color-black-dashboard-cards {
-    color: #000; }
-  .dashboard-cards .sparator {
-    width: 100%;
-    height: 1px;
-    margin: 15px 0; }
-    .dashboard-cards .sparator.sparator-black {
-      background: #000; }
-    .dashboard-cards .sparator.sparator-grey {
-      background: #8c8c8c; }
-
 .kc-datatable .kc-status-card {
   width: fit-content;
   white-space: nowrap; }
 
 .kc-datatable .kc-rounded-button.kc-rounded-button--neutral {
   background-color: transparent; }
+  .kc-datatable .kc-rounded-button.kc-rounded-button--neutral button {
+    background-color: transparent; }
+
+/**
+  Styling for deposit account onboarding template [MEMBERSERVICE]
+  This template is used on:
+  - invoice detail page
+  - invoice suspended detail page
+*/
+aside.kc-deposit-account-onboarding-detail {
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: auto; }
+  aside.kc-deposit-account-onboarding-detail section.kc-initial-deposit-detail,
+  aside.kc-deposit-account-onboarding-detail section.kc-invoice-detail {
+    border: 1px solid #8C8C8C;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 32px; }
+  aside.kc-deposit-account-onboarding-detail section.kc-initial-deposit-detail .kc-record-table {
+    width: fit-content; }
+    aside.kc-deposit-account-onboarding-detail section.kc-initial-deposit-detail .kc-record-table tbody tr .kc-record-table__label,
+    aside.kc-deposit-account-onboarding-detail section.kc-initial-deposit-detail .kc-record-table tbody tr .kc-record-table__value {
+      color: #8C8C8C; }
+      aside.kc-deposit-account-onboarding-detail section.kc-initial-deposit-detail .kc-record-table tbody tr .kc-record-table__label span,
+      aside.kc-deposit-account-onboarding-detail section.kc-initial-deposit-detail .kc-record-table tbody tr .kc-record-table__value span {
+        font-size: 15px; }
+    aside.kc-deposit-account-onboarding-detail section.kc-initial-deposit-detail .kc-record-table tbody tr .kc-record-table__label {
+      max-width: 180px; }
+    aside.kc-deposit-account-onboarding-detail section.kc-initial-deposit-detail .kc-record-table tbody tr:last-child .kc-record-table__label,
+    aside.kc-deposit-account-onboarding-detail section.kc-initial-deposit-detail .kc-record-table tbody tr:last-child .kc-record-table__value {
+      color: #1F1F1F; }
+    aside.kc-deposit-account-onboarding-detail section.kc-initial-deposit-detail .kc-record-table tbody tr:last-child .kc-record-table__label span {
+      font-weight: 700;
+      text-transform: uppercase; }
+  aside.kc-deposit-account-onboarding-detail section.kc-invoice-detail h3 {
+    margin-bottom: 20px; }
+  aside.kc-deposit-account-onboarding-detail section.kc-invoice-detail .kc-deposit-account-onboarding-detail__entry {
+    margin-top: 10px; }
+    aside.kc-deposit-account-onboarding-detail section.kc-invoice-detail .kc-deposit-account-onboarding-detail__entry p {
+      margin: 0; }
+  aside.kc-deposit-account-onboarding-detail section.kc-invoice-detail .kc-rounded-button {
+    margin-left: 5px; }
+  aside.kc-deposit-account-onboarding-detail section.kc-invoice-detail .kc-payment-link {
+    display: flex;
+    align-items: center; }
+  aside.kc-deposit-account-onboarding-detail section.kc-invoice-detail .kc-status-card {
+    width: fit-content; }
+  aside.kc-deposit-account-onboarding-detail section.kc-invoice-detail .kc-button {
+    margin-top: 20px; }
+  aside.kc-deposit-account-onboarding-detail > .kc-button {
+    margin-bottom: 16px; }
+    aside.kc-deposit-account-onboarding-detail > .kc-button:last-child {
+      margin-bottom: 0; }
+
+@media screen and (min-width: 1400px) {
+  aside.kc-deposit-account-onboarding-detail section.kc-initial-deposit-detail,
+  aside.kc-deposit-account-onboarding-detail section.kc-invoice-detail {
+    padding: 20px; } }
+
+@media screen and (min-width: 1500px) {
+  aside.kc-deposit-account-onboarding-detail section.kc-initial-deposit-detail .kc-record-table tbody tr .kc-record-table__label span,
+  aside.kc-deposit-account-onboarding-detail section.kc-initial-deposit-detail .kc-record-table tbody tr .kc-record-table__value span {
+    font-size: 16px; }
+  aside.kc-deposit-account-onboarding-detail section.kc-initial-deposit-detail .kc-record-table tbody tr .kc-record-table__label {
+    max-width: 250px; }
+  aside.kc-deposit-account-onboarding-detail section.kc-invoice-detail .kc-deposit-account-onboarding-detail__entry label, aside.kc-deposit-account-onboarding-detail section.kc-invoice-detail .kc-deposit-account-onboarding-detail__entry p {
+    font-size: 16px; } }
+
+/**
+  Styling for deposit transaction detail template [FUNDING]
+  This template is used on list deposit transaction page and
+  list deposit transaction synchronization page
+*/
+.kc-deposit-transaction-detail .kc-modal .kc-modal__container {
+  width: 1000px; }
+  .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
+    padding: 1.5rem 1.75rem 2.75rem 1.25rem; }
+    .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-headline6 {
+      font-size: 20px; }
+    .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-rounded-button {
+      margin-left: 5px;
+      min-width: 36px; }
+    .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-record-item-new > label {
+      font-weight: 700; }
+    .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-record-table {
+      width: 100%; }
+      .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-record-table .kc-record-table__label span {
+        font-weight: 700; }
+      .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-record-table .kc-record-table__value span {
+        word-wrap: break-word;
+        word-break: break-word; }
+    .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content section.kc-transaction-id, .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content section.kc-invoice-status, .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content section.kc-invoice-remark, .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content section.kc-invoice-amount {
+      margin-bottom: 30px; }
+    .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail .kc-invoice-detail__left {
+      padding-right: 20px; }
+      .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail .kc-invoice-detail__left section.kc-transaction-id .kc-record-table .kc-record-item-new {
+        margin-bottom: 30px; }
+      .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail .kc-invoice-detail__left section.kc-invoice-status label, .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail .kc-invoice-detail__left section.kc-invoice-status .kc-record-item-new__value {
+        min-width: auto; }
+      .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail .kc-invoice-detail__left section.kc-invoice-remark .kc-record-item-new .kc-record-item-new__value span {
+        color: #FF4D4F; }
+      .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail .kc-invoice-detail__left section.kc-invoice-remark .kc-synchronize-button {
+        width: 240px; }
+    .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail .kc-invoice-detail__right section.kc-customer-info {
+      margin-bottom: 20px; }
+    .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail .kc-invoice-detail__right section.kc-invoice-amount table.kc-record-table tr:nth-child(3) td {
+      border-bottom: 1px solid #D9D9D9; }
+    .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail .kc-invoice-detail__right section.kc-invoice-amount table.kc-record-table tr:nth-child(3) td.kc-record-table__label {
+      padding: 10px 20px 20px 0; }
+    .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail .kc-invoice-detail__right section.kc-invoice-amount table.kc-record-table tr:last-child td.kc-record-table__label {
+      padding: 20px 20px 10px 0; }
+    .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail .kc-invoice-detail__right section.kc-invoice-amount table.kc-record-table td.kc-record-table__value {
+      text-align: right; }
+    .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail .kc-invoice-detail__right section.kc-payment-link .kc-record-item-new .kc-record-item-new__value {
+      min-width: 450px; }
+    .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail .kc-invoice-detail__right section.kc-payment-link .kc-expired-at {
+      margin-top: 15px; }
+
+@media screen and (max-width: 1080px) {
+  .kc-deposit-transaction-detail .kc-modal .kc-modal__container {
+    width: fit-content; } }
+
+@media screen and (max-width: 991px) {
+  .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail {
+    max-width: 480px; } }
 
 .kc-login--wrapper {
-  background-color: #CBCBCB;
+  background: #F2F3F9 url("https://storage.googleapis.com/ksp-dcb-web-assets/dcb_background.png") no-repeat top left;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -1914,11 +1909,139 @@ select, .form-control, .custom-select {
         text-align: center;
         margin: 0; }
 
+/**
+  Styling for membership detail template [MEMBERSERVICE]
+  This template is used on: 
+  - active member detail page
+  - member proposal detail page
+  - approved member detail page
+  - invoice detail page
+  - invoice suspended detail page
+  - rejected member detail page
+  - suspended member detail page
+  - request update data detail page
+*/
+main.kc-memberservice-detail {
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px) - 70px - 20px);
+  padding: 30px;
+  width: auto; }
+  main.kc-memberservice-detail h2 {
+    margin-bottom: 40px; }
+  main.kc-memberservice-detail hr {
+    margin: 20px 0; }
+  main.kc-memberservice-detail .kc-memberservice-detail__navigation {
+    margin-bottom: 40px;
+    overflow-x: auto;
+    border-color: transparent;
+    transition: border-color .25s linear;
+    -webkit-transition: border-color .25s linear; }
+    main.kc-memberservice-detail .kc-memberservice-detail__navigation:hover {
+      border-color: rgba(0, 0, 0, 0.1); }
+    main.kc-memberservice-detail .kc-memberservice-detail__navigation::-webkit-scrollbar, main.kc-memberservice-detail .kc-memberservice-detail__navigation::-webkit-scrollbar-thumb, main.kc-memberservice-detail .kc-memberservice-detail__navigation::-webkit-scrollbar-corner {
+      border-right-style: inset;
+      border-color: inherit;
+      border-right-width: calc(100vw + 100vh); }
+    main.kc-memberservice-detail .kc-memberservice-detail__navigation::-webkit-scrollbar {
+      width: 6px;
+      height: 6px; }
+    main.kc-memberservice-detail .kc-memberservice-detail__navigation .kc-tab-navigation {
+      margin-right: 25px; }
+  main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right,
+  main.kc-memberservice-detail section.kc-residence-address,
+  main.kc-memberservice-detail section.kc-employment-data,
+  main.kc-memberservice-detail section.kc-other-data .kc-other-data__right {
+    max-width: 800px;
+    min-width: 500px;
+    width: fit-content; }
+    main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right table.kc-record-table tbody tr td.kc-record-table__label,
+    main.kc-memberservice-detail section.kc-residence-address table.kc-record-table tbody tr td.kc-record-table__label,
+    main.kc-memberservice-detail section.kc-employment-data table.kc-record-table tbody tr td.kc-record-table__label,
+    main.kc-memberservice-detail section.kc-other-data .kc-other-data__right table.kc-record-table tbody tr td.kc-record-table__label {
+      display: flex;
+      width: 240px; }
+  main.kc-memberservice-detail section.kc-identity-data,
+  main.kc-memberservice-detail section.kc-other-data {
+    display: flex;
+    flex-direction: column; }
+  main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__left {
+    margin-bottom: 40px; }
+    main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__left .kc-image-identity {
+      display: flex; }
+      main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__left .kc-image-identity .kc-image-preview:first-child {
+        margin-right: 30px; }
+  main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right .kc-status-identity {
+    margin-bottom: 30px; }
+    main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right .kc-status-identity .kc-record-item-new.kc-record-item-new--horizontal {
+      align-items: baseline;
+      margin: 20px 0; }
+      main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right .kc-status-identity .kc-record-item-new.kc-record-item-new--horizontal:first-child {
+        margin-top: 0; }
+      main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right .kc-status-identity .kc-record-item-new.kc-record-item-new--horizontal label {
+        font-weight: 400;
+        margin-right: 0;
+        min-width: 240px; }
+      main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right .kc-status-identity .kc-record-item-new.kc-record-item-new--horizontal .kc-record-item-new__value span {
+        line-height: 25px; }
+      main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right .kc-status-identity .kc-record-item-new.kc-record-item-new--horizontal .kc-record-item-new__value .kc-rounded-button {
+        margin-left: 5px; }
+    main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right .kc-status-identity .kc-status-card {
+      width: fit-content; }
+    main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right .kc-status-identity .kc-note .kc-record-item-new.kc-record-item-new--horizontal label {
+      color: #FF4D4F; }
+    main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right .kc-status-identity .kc-note p {
+      color: #FF4D4F;
+      margin-bottom: 0; }
+  main.kc-memberservice-detail section.kc-employment-data table.kc-record-table tbody tr td.kc-record-table__label {
+    width: 260px; }
+  main.kc-memberservice-detail section.kc-other-data .kc-other-data__left {
+    margin-bottom: 40px; }
+    main.kc-memberservice-detail section.kc-other-data .kc-other-data__left .kc-image-identity {
+      display: flex; }
+  main.kc-memberservice-detail section.kc-other-data .kc-other-data__right table.kc-record-table tbody tr td.kc-record-table__label {
+    width: 260px; }
+  main.kc-memberservice-detail section.kc-emergency-contacts .kc-emergency-contact {
+    border-bottom: 1px solid #F0F0F0;
+    max-width: 500px;
+    padding: 30px 0; }
+    main.kc-memberservice-detail section.kc-emergency-contacts .kc-emergency-contact:first-child {
+      padding-top: 0; }
+    main.kc-memberservice-detail section.kc-emergency-contacts .kc-emergency-contact:last-child {
+      border-bottom: none;
+      padding-bottom: 0; }
+    main.kc-memberservice-detail section.kc-emergency-contacts .kc-emergency-contact .kc-emergency-contact__header {
+      margin-bottom: 10px; }
+      main.kc-memberservice-detail section.kc-emergency-contacts .kc-emergency-contact .kc-emergency-contact__header .kc-status-card {
+        margin-left: 10px; }
+
+@media screen and (min-width: 1400px) {
+  main.kc-memberservice-detail section.kc-identity-data,
+  main.kc-memberservice-detail section.kc-other-data {
+    flex-direction: row; }
+  main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__left,
+  main.kc-memberservice-detail section.kc-other-data .kc-other-data__left {
+    margin-bottom: 0;
+    margin-right: 40px; }
+    main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__left .kc-image-identity,
+    main.kc-memberservice-detail section.kc-other-data .kc-other-data__left .kc-image-identity {
+      flex-direction: column; }
+      main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__left .kc-image-identity .kc-image-preview:first-child,
+      main.kc-memberservice-detail section.kc-other-data .kc-other-data__left .kc-image-identity .kc-image-preview:first-child {
+        margin-bottom: 20px;
+        margin-right: 0; }
+  main.kc-memberservice-detail section.kc-other-data .kc-other-data__left .kc-image-identity {
+    margin-top: 10px; } }
+
+/**
+  Styling for notification template [BACKOFFICE]
+  The template is used on create notification page and detail notification page
+*/
 .kc-notification {
   width: 100%;
   max-width: 1300px;
-  margin-bottom: 30px;
-  padding: 0 30px; }
+  margin-bottom: 30px; }
   .kc-notification .kc-form-group.kc-form-group--vertical {
     max-width: 500px; }
   .kc-notification .kc-form-group .kc-inputfield {
@@ -1939,6 +2062,8 @@ select, .form-control, .custom-select {
     border-right-color: transparent; }
   .kc-notification .kc-notification-editor .kc-form-group.kc-form-group--vertical {
     max-width: 600px; }
+  .kc-notification .kc-notification-editor .kc-form-group .ck-editor__editable ol, .kc-notification .kc-notification-editor .kc-form-group .ck-editor__editable ul {
+    padding-inline-start: 40px; }
   .kc-notification .kc-content-notification-preview {
     border: 1px solid #D9D9D9;
     height: fit-content;
@@ -1950,12 +2075,6 @@ select, .form-control, .custom-select {
       border: none;
       height: 640px;
       width: 360px; }
-
-.kc-notification-preview p {
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden; }
 
 /**
   Styling for term deposit product template [FUNDING]
@@ -2075,13 +2194,14 @@ select, .form-control, .custom-select {
   background-color: #F0F0F0;
   margin: 30px 0; }
 
-.kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-interest-type-desc {
+.kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-interest-config-hint {
   align-items: center;
+  color: #595959;
   margin-top: 10px; }
-  .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-interest-type-desc i {
+  .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-interest-config-hint i {
     font-size: 15px;
     margin-right: 8px; }
-  .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-interest-type-desc p {
+  .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-interest-config-hint p {
     margin: 0; }
 
 .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-balance-table, .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-term-table {
@@ -2122,6 +2242,10 @@ select, .form-control, .custom-select {
     border: none;
     border-bottom: 1px solid #BFBFBF;
     border-right: 1px solid #BFBFBF; }
+
+.kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-term-table table tbody tr td .kc-rounded-button {
+  display: flex;
+  justify-content: center; }
 
 @media screen and (min-width: 1400px) {
   .kc-term-deposit-product .row .col-xxl-6 {

@@ -1,0 +1,41 @@
+/**
+  Styling for setting notification category page [BACKOFFICE]
+*/
+
+.kc-notification-setting {
+  .kc-datatable {
+    .kc-datatable__header {
+      padding: 0;
+    }
+  
+    .kc-table table tr th {
+      &:first-child, &:nth-child(2) {
+        width: 15% !important;
+      }
+  
+      &:nth-child(3) {
+        width: 60% !important;
+      }
+  
+      &:last-child {
+        width: 10% !important;
+      }
+    }
+  }
+
+  .kc-modal {
+    .kc-modal__container {
+      width: 600px;
+
+      .kc-form-group {
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .kc-form-group__label {
+          width: 150px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,162 @@
+/**
+  Styling for deposit transaction detail template [FUNDING]
+  This template is used on list deposit transaction page and
+  list deposit transaction synchronization page
+*/
+
+.kc-deposit-transaction-detail {
+  .kc-modal {
+    .kc-modal__container {
+      width: 1000px;
+  
+      .kc-modal__main {      
+        .kc-modal__content {
+          padding: 1.5rem 1.75rem 2.75rem 1.25rem;
+
+          .kc-headline6 {
+            font-size: 20px;
+          }
+
+          .kc-rounded-button {
+            margin-left: 5px;
+            min-width: 36px;
+          }
+
+          .kc-record-item-new {
+            > label {
+              font-weight: 700;
+            }
+          }
+
+          .kc-record-table {
+            width: 100%;
+
+            .kc-record-table__label {
+              span {
+                font-weight: 700;
+              }
+            }
+
+            .kc-record-table__value {
+              span {
+                word-wrap: break-word;
+                word-break: break-word;
+              }
+            }
+          }
+
+          section {
+            &.kc-transaction-id,
+            &.kc-invoice-status,
+            &.kc-invoice-remark,
+            &.kc-invoice-amount {
+              margin-bottom: 30px;
+            }
+          }
+    
+          .kc-invoice-detail {
+            .kc-invoice-detail__left {
+              padding-right: 20px;
+
+              section.kc-transaction-id {
+                .kc-record-table {
+                  .kc-record-item-new {
+                    margin-bottom: 30px;
+                  }
+                }
+              }
+
+              section.kc-invoice-status {
+                label, .kc-record-item-new__value {
+                  min-width: auto;
+                }
+              }
+
+              section.kc-invoice-remark {
+                .kc-record-item-new {
+                  .kc-record-item-new__value {
+                    span {
+                      color: $functionalError500;
+                    }
+                  }
+                }
+
+                .kc-synchronize-button {
+                  width: 240px;
+                }
+              }
+            }
+
+            .kc-invoice-detail__right {
+              section.kc-customer-info {
+                margin-bottom: 20px;
+              }
+
+              section.kc-invoice-amount {
+                table.kc-record-table {
+                  tr:nth-child(3) {
+                    td {
+                      border-bottom: 1px solid $neutral5;
+                    }
+
+                    td.kc-record-table__label {
+                      padding: 10px 20px 20px 0;
+                    }
+                  }
+
+                  tr:last-child {
+                    td.kc-record-table__label {
+                      padding: 20px 20px 10px 0;
+                    }
+                  }
+
+                  td.kc-record-table__value {
+                    text-align: right;
+                  }
+                }
+              }
+
+              section.kc-payment-link {
+                .kc-record-item-new {
+                  .kc-record-item-new__value {
+                    min-width: 450px;
+                  }
+                }
+
+                .kc-expired-at {
+                  margin-top: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .kc-deposit-transaction-detail {
+    .kc-modal {
+      .kc-modal__container {
+        width: fit-content;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .kc-deposit-transaction-detail {
+    .kc-modal {
+      .kc-modal__container {
+        .kc-modal__main {
+          .kc-modal__content {
+            .kc-invoice-detail {
+              max-width: 480px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

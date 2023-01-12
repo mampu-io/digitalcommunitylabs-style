@@ -1,28 +1,29 @@
 .kc-profile, .kc-change-password {
-  max-width: 600px;
-  margin-bottom: 30px;
-  padding: 0 30px;
-
   .kc-form-wrapper {
+    margin: 20px 0;
+
     .kc-form-group {
       .kc-roles {
-        display: flex;
-        flex-direction: column;
         margin-top: 5px;
+        margin-left: 10px;
 
         .kc-roles__option {
           margin-bottom: 15px;
 
-          span.kc-caption {
+          .kc-checkbox label {
+            max-width: none;
+          }
+
+          div.kc-caption {
             color: $neutral8;
             font-size: 13px;
-            line-height: 8px;
+            line-height: 16px;
+            margin-top: 5px;
           }
         }
       }
 
       ul.kc-roles {
-        width: 100%;
         margin-left: 40px;
       }
     }

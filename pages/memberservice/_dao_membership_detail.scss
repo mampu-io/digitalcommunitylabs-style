@@ -1,0 +1,18 @@
+/**
+  Styling for invoice detail page and
+  invoice suspended detail page [MEMBERSERVICE]
+*/
+
+.kc-dao-membership-detail {
+  .content-body {
+    .container-fluid {
+      main.kc-memberservice-detail {
+        width: 65%;
+      }
+
+      aside.kc-deposit-account-onboarding-detail {
+        width: 35%;
+      }
+    }
+  }
+}

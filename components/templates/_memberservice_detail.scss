@@ -1,0 +1,229 @@
+/**
+  Styling for membership detail template [MEMBERSERVICE]
+  This template is used on: 
+  - active member detail page
+  - member proposal detail page
+  - approved member detail page
+  - invoice detail page
+  - invoice suspended detail page
+  - rejected member detail page
+  - suspended member detail page
+  - request update data detail page
+*/
+
+main.kc-memberservice-detail {
+  background-color: $neutral1;
+  border-radius: 2px;
+  box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
+  min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px) - 70px - 20px);
+  padding: 30px;
+  width: auto;
+
+  h2 {
+    margin-bottom: 40px;
+  }
+
+  hr {
+    margin: 20px 0;
+  }
+
+  .kc-memberservice-detail__navigation {
+    margin-bottom: 40px;
+    overflow-x: auto;
+    border-color: transparent;
+    transition: border-color .25s linear;
+    -webkit-transition: border-color .25s linear;
+
+    &:hover {
+      border-color: rgba(0,0,0,0.1);
+    }
+
+    &::-webkit-scrollbar,
+    &::-webkit-scrollbar-thumb,
+    &::-webkit-scrollbar-corner {
+      border-right-style: inset;
+      border-color: inherit;
+      border-right-width: calc(100vw + 100vh);
+    }
+    
+    &::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+
+    .kc-tab-navigation {
+      margin-right: 25px;
+    }
+  }
+
+  section.kc-identity-data .kc-identity-data__right,
+  section.kc-residence-address,
+  section.kc-employment-data,
+  section.kc-other-data .kc-other-data__right {
+    max-width: 800px;
+    min-width: 500px;
+    width: fit-content;
+
+    table.kc-record-table {
+      tbody tr td.kc-record-table__label {
+        display: flex;
+        width: 240px;
+      }
+    }
+  }
+
+  section.kc-identity-data,
+  section.kc-other-data {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.kc-identity-data {
+    .kc-identity-data__left {
+      margin-bottom: 40px;
+
+      .kc-image-identity {
+        display: flex;
+
+        .kc-image-preview {
+          &:first-child {
+            margin-right: 30px;
+          }
+        }
+      }
+    }
+
+    .kc-identity-data__right {
+      .kc-status-identity {
+        margin-bottom: 30px;
+
+        .kc-record-item-new.kc-record-item-new--horizontal {
+          align-items: baseline;
+          margin: 20px 0;
+  
+          &:first-child {
+            margin-top: 0;
+          }
+  
+          label {
+            font-weight: 400;
+            margin-right: 0;
+            min-width: 240px;
+          }
+  
+          .kc-record-item-new__value {
+            span {
+              line-height: 25px;
+            }
+  
+            .kc-rounded-button {
+              margin-left: 5px;
+            }
+          }
+        }
+  
+        .kc-status-card {
+          width: fit-content;
+        }
+  
+        .kc-note {
+          .kc-record-item-new.kc-record-item-new--horizontal {
+            label {
+              color: $functionalError500;
+            }
+          }
+  
+          p {
+            color: $functionalError500;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  section.kc-employment-data {
+    table.kc-record-table {
+      tbody tr td.kc-record-table__label {
+        width: 260px;
+      }
+    }
+  }
+
+  section.kc-other-data {
+    .kc-other-data__left {
+      margin-bottom: 40px;
+
+      .kc-image-identity {
+        display: flex;
+      }
+    }
+
+    .kc-other-data__right {
+      table.kc-record-table {
+        tbody tr td.kc-record-table__label {
+          width: 260px;
+        }
+      }
+    }
+  }
+
+  section.kc-emergency-contacts {
+    .kc-emergency-contact {
+      border-bottom: 1px solid $neutral4;
+      max-width: 500px;
+      padding: 30px 0;
+
+      &:first-child {
+        padding-top: 0;
+      }
+
+      &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      .kc-emergency-contact__header {
+        margin-bottom: 10px;
+    
+        .kc-status-card {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  main.kc-memberservice-detail {
+    section.kc-identity-data,
+    section.kc-other-data {
+      flex-direction: row;
+    }
+
+    section.kc-identity-data .kc-identity-data__left,
+    section.kc-other-data .kc-other-data__left {
+      margin-bottom: 0;
+      margin-right: 40px;
+
+      .kc-image-identity {
+        flex-direction: column;
+
+        .kc-image-preview {
+          &:first-child {
+            margin-bottom: 20px;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    section.kc-other-data {
+      .kc-other-data__left {
+        .kc-image-identity {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
