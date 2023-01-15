@@ -920,8 +920,17 @@ select, .form-control, .custom-select {
         border: 0.25em solid #1890FF;
         border-right-color: transparent;
         margin-left: 5px; }
-      .kc-funding-detail-member .content-body .container-fluid main .kc-record-item-new:first-child .kc-record-item-new__value label {
-        font-weight: 400; }
+      .kc-funding-detail-member .content-body .container-fluid main section.kc-deposit-account-detail {
+        width: 648px; }
+        .kc-funding-detail-member .content-body .container-fluid main section.kc-deposit-account-detail .kc-dropdown {
+          margin-bottom: 20px; }
+        .kc-funding-detail-member .content-body .container-fluid main section.kc-deposit-account-detail .kc-record-item-new {
+          padding-left: 10px; }
+          .kc-funding-detail-member .content-body .container-fluid main section.kc-deposit-account-detail .kc-record-item-new:first-child .kc-record-item-new__value label {
+            font-weight: 400; }
+        .kc-funding-detail-member .content-body .container-fluid main section.kc-deposit-account-detail p.kc-body2 {
+          color: #FF4D4F;
+          padding-left: 10px; }
       .kc-funding-detail-member .content-body .container-fluid main .kc-form-group {
         margin-bottom: 0;
         margin-right: 10px;
