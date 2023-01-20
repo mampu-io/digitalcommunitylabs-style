@@ -3,6 +3,16 @@
 */
 
 .kc-member-proposal-detail {
+  aside {
+    .kc-memberservice-detail__action-buttons {
+      .kc-proposal-validation-result {
+        span {
+          width: 200px;
+        }
+      }
+    }
+  }
+
   .kc-reject-proposal-modal {
     .kc-modal {
       .kc-modal__container {
@@ -170,6 +180,20 @@
                 }
               }
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .kc-member-proposal-detail {
+    aside {
+      .kc-memberservice-detail__action-buttons {
+        .kc-proposal-validation-result {
+          span {
+            width: 240px;
           }
         }
       }
