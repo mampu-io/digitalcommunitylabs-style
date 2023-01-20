@@ -100,6 +100,18 @@ select, .form-control, .custom-select {
   opacity: 1;
   /* Firefox */ }
 
+.dateRange-wrapper {
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 15px; }
+  .dateRange-wrapper .kc-form-group {
+    margin-bottom: 0;
+    margin-right: 15px; }
+    .dateRange-wrapper .kc-form-group .kc-inputfield .kc-inputfield__box {
+      height: 40px; }
+
 .kc-headline1 {
   font-weight: 300;
   font-size: 100px;
@@ -898,8 +910,6 @@ select, .form-control, .custom-select {
         border: 0.25em solid #1890FF;
         border-right-color: transparent;
         margin-left: 5px; }
-      .kc-funding-detail-member .content-body .container-fluid main .kc-record-item-new:first-child .kc-record-item-new__value label {
-        font-weight: 400; }
       .kc-funding-detail-member .content-body .container-fluid main .kc-form-group {
         margin-bottom: 0;
         margin-right: 10px;

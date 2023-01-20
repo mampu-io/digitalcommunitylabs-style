@@ -97,3 +97,22 @@ select, .form-control, .custom-select{
   color: #d0d0d0 !important;
   opacity: 1; /* Firefox */
 }
+
+.dateRange-wrapper{
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 15px;
+
+
+  .kc-form-group{
+    margin-bottom: 0;
+    margin-right: 15px;
+    .kc-inputfield {
+      .kc-inputfield__box {
+        height: 40px;
+      }
+    }
+  }
+}
