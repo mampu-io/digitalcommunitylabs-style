@@ -26,4 +26,16 @@
       width: 120px;
     }
   }
+
+  .kc-datatable {
+    .kc-table {
+      thead tr th {
+        width: 30% !important;
+      }
+
+      thead tr th:last-child {
+        width: 10% !important;
+      }
+    }
+  }
 }

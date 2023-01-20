@@ -35,6 +35,18 @@
           margin-left: 5px;
         }
 
+        section.kc-deposit-account-detail {
+          width: 100%;
+
+          .kc-record-item-new {
+            padding-left: 10px;
+          }
+
+          p.kc-body2 {
+            color: $functionalError500;
+            padding-left: 10px;
+          }
+        }
 
         .kc-form-group {
           margin-bottom: 0;

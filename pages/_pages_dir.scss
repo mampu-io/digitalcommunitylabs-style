@@ -13,12 +13,12 @@
 @import 'memberservice/request_update_data_detail';
 
 // Styling pages for funding
+@import 'funding/account_search';
 @import 'funding/detail_member';
-@import 'funding/pemindahan_dana';
-@import 'funding/pencarian_rekening';
 @import 'funding/setting_deposit_withdraw';
 @import 'funding/term_deposit_account_detail';
 @import 'funding/term_deposit_application_detail';
+@import 'funding/withdrawal_detail';
 
 // Styling pages for general
 @import 'general/not_found';
