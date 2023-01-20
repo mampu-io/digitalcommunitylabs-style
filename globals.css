@@ -786,6 +786,9 @@ select, .form-control, .custom-select {
 /**
   Styling for member proposal detail page [MEMBERSERVICE]
 */
+.kc-member-proposal-detail aside .kc-memberservice-detail__action-buttons .kc-proposal-validation-result span {
+  width: 200px; }
+
 .kc-member-proposal-detail .kc-reject-proposal-modal .kc-modal .kc-modal__container {
   width: 600px; }
   .kc-member-proposal-detail .kc-reject-proposal-modal .kc-modal .kc-modal__container .kc-modal__content .kc-textarea, .kc-member-proposal-detail .kc-reject-proposal-modal .kc-modal .kc-modal__container .kc-modal__content .kc-button {
@@ -871,6 +874,10 @@ select, .form-control, .custom-select {
       margin-bottom: 20px; }
       .kc-member-proposal-detail .kc-deposit-account-onboarding-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-inputfield .kc-inputfield__title span.kc-caption {
         font-size: 15px; }
+
+@media screen and (min-width: 1400px) {
+  .kc-member-proposal-detail aside .kc-memberservice-detail__action-buttons .kc-proposal-validation-result span {
+    width: 240px; } }
 
 /**
   Styling for request update data detail page [MEMBERSERVICE]
@@ -1316,6 +1323,19 @@ select, .form-control, .custom-select {
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       overflow: hidden; }
+
+.kc-result-indicator {
+  align-items: center;
+  border-radius: 50%;
+  color: #FFFFFF;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  width: 32px; }
+  .kc-result-indicator.kc-result-indicator--success {
+    background-color: #52C41A; }
+  .kc-result-indicator.kc-result-indicator--fail {
+    background-color: #FF4D4F; }
 
 .kc-status-card {
   color: #FFFFFF;

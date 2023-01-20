@@ -1,0 +1,17 @@
+.kc-result-indicator {
+  align-items: center;
+  border-radius: 50%;
+  color: $neutral1;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  width: 32px;
+
+  &.kc-result-indicator--success {
+    background-color: $functionalSuccess500;
+  }
+
+  &.kc-result-indicator--fail {
+    background-color: $functionalError500;
+  }
+}
