@@ -1243,6 +1243,32 @@ select, .form-control, .custom-select {
     .kc-color-pallete .kc-color-pallete__inner i {
       font-size: 24px; }
 
+/**
+  Styling for GalleryCard atom component.
+  The component is used on FUNDING > Content and Feature Management
+*/
+.kc-gallery-card {
+  border: 1px solid #BFBFBF;
+  border-radius: 4px;
+  cursor: default;
+  display: flex;
+  max-width: 250px;
+  min-width: 200px;
+  padding: 10px 15px; }
+  .kc-gallery-card:hover {
+    background-color: #F0F0F0; }
+  .kc-gallery-card .kc-gallery-card__icon {
+    margin-right: 15px; }
+    .kc-gallery-card .kc-gallery-card__icon i {
+      color: #595959;
+      font-size: 17px; }
+  .kc-gallery-card .kc-gallery-card__name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+    .kc-gallery-card .kc-gallery-card__name span.kc-body2 {
+      color: #1F1F1F; }
+
 .bg-loading-page {
   width: 100%;
   height: 100%;
@@ -1256,6 +1282,45 @@ select, .form-control, .custom-select {
   .bg-loading-page .spinner-border {
     width: 65px;
     height: 65px; }
+
+/**
+  Styling for MediaCard atom component.
+  The component is used on FUNDING > Content and Feature Management
+*/
+.kc-media-card {
+  border: 1px solid #D9D9D9;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 200px; }
+  .kc-media-card.kc-media-card--active {
+    border: 2px solid #0F77C0; }
+    .kc-media-card.kc-media-card--active .kc-media-card__overview {
+      background-color: #F0F0F0; }
+  .kc-media-card:hover .kc-media-card__overview {
+    background-color: #F0F0F0; }
+  .kc-media-card .kc-media-card__thumbnail {
+    border-bottom: 1px solid #D9D9D9;
+    height: 150px;
+    padding: 10px; }
+    .kc-media-card .kc-media-card__thumbnail img {
+      height: 130px;
+      width: 100%;
+      object-fit: contain;
+      object-position: center; }
+  .kc-media-card .kc-media-card__overview {
+    align-items: center;
+    border-radius: 0 0 6px 6px;
+    display: flex;
+    height: 100%;
+    padding: 0 10px; }
+    .kc-media-card .kc-media-card__overview .kc-media-card__icon i.kc-media-card__media-type {
+      margin-right: 10px; }
+    .kc-media-card .kc-media-card__overview .kc-media-card__title {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
 
 .kc-notification-tag {
   align-items: center;
@@ -1576,6 +1641,26 @@ select, .form-control, .custom-select {
     .dashboard-cards .sparator.sparator-grey {
       background: #8c8c8c; }
 
+/**
+  Styling for GalleryList molecule component.
+  The component is used on FUNDING > Content and Feature Management
+*/
+.kc-gallery-list {
+  column-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 10px; }
+  .kc-gallery-list--loading, .kc-gallery-list--error, .kc-gallery-list--empty {
+    margin-top: 10px; }
+    .kc-gallery-list--loading span.kc-body2, .kc-gallery-list--error span.kc-body2, .kc-gallery-list--empty span.kc-body2 {
+      font-size: 16px;
+      line-height: 24px; }
+  .kc-gallery-list--loading .spinner-border {
+    height: 1.2rem;
+    width: 1.2rem; }
+  .kc-gallery-list--error {
+    color: #FF4D4F; }
+
 .kc-image-preview {
   width: 120px;
   display: flex;
@@ -1623,6 +1708,38 @@ select, .form-control, .custom-select {
     .kc-modal-login--wrapper .kc-modal-login--content .kc-form-wrapper .kc-form-wrapper__submit-btn > button {
       width: 100%; }
 
+/**
+  Styling for MediaList molecule component.
+  The component is used on FUNDING > Content and Feature Management
+*/
+.kc-media-list {
+  height: fit-content;
+  padding: 0;
+  width: 100%;
+  min-width: auto; }
+  .kc-media-list .kc-media-list__wrapper {
+    position: relative;
+    width: 100%; }
+    .kc-media-list .kc-media-list__wrapper .kc-media-list__entries {
+      column-gap: 8px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+      row-gap: 8px;
+      grid-auto-rows: min-content;
+      width: 100%;
+      position: absolute;
+      top: 0; }
+    .kc-media-list .kc-media-list__wrapper--empty span.kc-body2, .kc-media-list .kc-media-list__wrapper--loading span.kc-body2, .kc-media-list .kc-media-list__wrapper--error span.kc-body2 {
+      font-size: 16px;
+      line-height: 24px; }
+    .kc-media-list .kc-media-list__wrapper--empty span.kc-body2 {
+      margin-bottom: 10px; }
+    .kc-media-list .kc-media-list__wrapper--loading .spinner-border {
+      height: 1.2rem;
+      width: 1.2rem; }
+    .kc-media-list .kc-media-list__wrapper--error {
+      color: #FF4D4F; }
+
 .modal-kc .moda-dialog {
   font-family: "Lato"; }
 
@@ -1655,6 +1772,30 @@ select, .form-control, .custom-select {
   width: 500px; }
   .modal .modal-content-image img {
     border-radius: 10px; }
+
+/**
+  Styling for Navigation molecule component.
+  The component is used on FUNDING > Content and Feature Management
+*/
+.kc-navigation {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  height: 50px; }
+  .kc-navigation button.kc-navigation-item {
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    font-size: 15px;
+    height: 100%;
+    padding: 8px 20px 5px;
+    text-transform: uppercase;
+    transition: border-color .25s linear;
+    -webkit-transition: border-color .25s linear; }
+    .kc-navigation button.kc-navigation-item:active {
+      background-color: rgba(15, 119, 192, 0.3);
+      border-bottom: 3px solid rgba(15, 119, 192, 0); }
+    .kc-navigation button.kc-navigation-item.kc-navigation-item--active {
+      border-bottom: 3px solid #0F77C0;
+      color: #0F77C0; }
 
 .kc-popup-backdrop {
   width: 100%;
@@ -1779,6 +1920,25 @@ select, .form-control, .custom-select {
     background-color: #fff !important;
     color: #0f77c0 !important; }
 
+/**
+  Styling for UploadMedia molecule component.
+  The component is used on FUNDING > Content and Feature Management
+*/
+.kc-upload-media {
+  position: relative; }
+  .kc-upload-media input[type="file"] {
+    position: absolute;
+    visibility: hidden; }
+  .kc-upload-media span.kc-upload-media__success-msg, .kc-upload-media span.kc-upload-media__fail-msg {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px; }
+  .kc-upload-media span.kc-upload-media__success-msg {
+    color: #52C41A; }
+  .kc-upload-media span.kc-upload-media__fail-msg {
+    color: #FF4D4F; }
+
 .kc-datatable .kc-status-card {
   width: fit-content;
   white-space: nowrap; }
@@ -1787,6 +1947,84 @@ select, .form-control, .custom-select {
   background-color: transparent; }
   .kc-datatable .kc-rounded-button.kc-rounded-button--neutral button {
     background-color: transparent; }
+
+/**
+  Styling for MediaModal organism component.
+  The component is used on FUNDING > Content and Feature Management
+*/
+.kc-media-modal .kc-modal .kc-modal__container {
+  height: 800px;
+  width: 800px; }
+  .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main {
+    display: flex;
+    flex-direction: column;
+    height: 100%; }
+    .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__header {
+      border-bottom: none; }
+      .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__header .kc-modal__title span.kc-headline5 {
+        font-size: 21px; }
+    .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
+      padding: 0; }
+      .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-navigation {
+        margin: 0 1.25rem; }
+      .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent {
+        display: flex;
+        flex: 1 1 auto;
+        flex-direction: column;
+        padding: 2rem 1.5rem 2.5rem; }
+        .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__back-btn {
+          background-color: #F0F0F0;
+          border: none;
+          border-radius: 4px;
+          margin-bottom: 20px;
+          padding: 5px 10px;
+          width: fit-content; }
+          .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__back-btn:hover {
+            background-color: #D9D9D9; }
+          .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__back-btn i {
+            font-size: 14px;
+            margin-right: 10px; }
+        .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__search {
+          margin-bottom: 30px; }
+          .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__search .kc-inputfield .kc-inputfield__box {
+            height: 36px; }
+            .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__search .kc-inputfield .kc-inputfield__box input {
+              font-size: 16px; }
+        .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__content {
+          display: flex;
+          flex: 1 1 auto;
+          overflow-y: auto;
+          flex-direction: column;
+          border-color: transparent;
+          transition: border-color .25s linear;
+          -webkit-transition: border-color .25s linear; }
+          .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__content:hover {
+            border-color: rgba(0, 0, 0, 0.1); }
+          .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__content::-webkit-scrollbar, .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__content::-webkit-scrollbar-thumb, .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__content::-webkit-scrollbar-corner {
+            border-right-style: inset;
+            border-color: inherit;
+            border-right-width: calc(100vw + 100vh); }
+          .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__content::-webkit-scrollbar {
+            width: 6px;
+            height: 6px; }
+          .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__content .kc-media-modal-recent__galleries, .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__content .kc-media-modal-recent__all-media {
+            padding-right: 6px; }
+            .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__content .kc-media-modal-recent__galleries span.kc-body1, .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__content .kc-media-modal-recent__all-media span.kc-body1 {
+              font-size: 18px; }
+            .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__content .kc-media-modal-recent__galleries .kc-gallery-list, .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__content .kc-media-modal-recent__galleries .kc-media-list, .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__content .kc-media-modal-recent__all-media .kc-gallery-list, .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__content .kc-media-modal-recent__all-media .kc-media-list {
+              margin-top: 10px; }
+          .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__content .kc-media-modal-recent__galleries {
+            margin-bottom: 30px; }
+          .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__content .kc-media-modal-recent__all-media {
+            height: 100%; }
+      .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-upload {
+        padding: 2rem 1.75rem 2.5rem; }
+        .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-upload--error {
+          color: #FF4D4F;
+          padding: 2rem 1.75rem 2.5rem; }
+          .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-upload--error span.kc-body2 {
+            font-size: 16px;
+            line-height: 24px; }
 
 /**
   Styling for deposit account onboarding template [MEMBERSERVICE]

@@ -1,6 +1,8 @@
 // Atoms
 @import 'atoms/color_pallete';
+@import 'atoms/gallery_card';
 @import 'atoms/loading_page';
+@import 'atoms/media_card';
 @import 'atoms/notification_tag';
 @import 'atoms/push_notification_preview';
 @import 'atoms/result_indicator';
@@ -11,16 +13,21 @@
 // Molecules
 @import 'molecules/animation';
 @import 'molecules/dashbord_cards';
+@import 'molecules/gallery_list';
 @import 'molecules/image_preview';
 @import 'molecules/login_container';
+@import 'molecules/media_list';
 @import 'molecules/modal';
+@import 'molecules/navigation';
 @import 'molecules/popup';
 @import 'molecules/record_item';
 @import 'molecules/select_role';
 @import 'molecules/sweetalert_custom';
+@import 'molecules/upload_media';
 
 // Organisms
 @import 'organisms/datatable';
+@import 'organisms/media_modal';
 
 // Templates
 @import 'templates/deposit_account_onboarding_detail';

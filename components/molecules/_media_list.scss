@@ -1,0 +1,51 @@
+/**
+  Styling for MediaList molecule component.
+  The component is used on FUNDING > Content and Feature Management
+*/
+
+.kc-media-list {
+  height: fit-content;
+  padding: 0;
+  width: 100%;
+  min-width: auto;
+
+  .kc-media-list__wrapper {
+    position: relative;
+    width: 100%;
+
+    .kc-media-list__entries {
+      column-gap: 8px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+      row-gap: 8px;
+      grid-auto-rows: min-content;
+      width: 100%;
+      position: absolute;
+      top: 0;
+    }
+
+    &--empty, &--loading, &--error {
+      span.kc-body2 {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    &--empty {
+      span.kc-body2 {
+        margin-bottom: 10px;
+      }
+    }
+
+    &--loading {  
+      .spinner-border {
+        height: 1.2rem;
+        width: 1.2rem;
+      }
+    }
+
+    &--error {
+      color: $functionalError500;
+    }
+  }
+}

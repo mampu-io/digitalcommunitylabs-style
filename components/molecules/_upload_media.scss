@@ -1,0 +1,28 @@
+/**
+  Styling for UploadMedia molecule component.
+  The component is used on FUNDING > Content and Feature Management
+*/
+
+.kc-upload-media {
+  position: relative;
+
+  input[type="file"] {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  span.kc-upload-media__success-msg, span.kc-upload-media__fail-msg {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  span.kc-upload-media__success-msg {
+    color: $functionalSuccess500;
+  }
+  
+  span.kc-upload-media__fail-msg {
+    color: $functionalError500;
+  }
+}

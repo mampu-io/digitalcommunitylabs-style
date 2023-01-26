@@ -1,0 +1,137 @@
+/**
+  Styling for MediaModal organism component.
+  The component is used on FUNDING > Content and Feature Management
+*/
+
+.kc-media-modal {
+  .kc-modal {
+    .kc-modal__container {
+      height: 800px;
+      width: 800px;
+
+      .kc-modal__main {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        .kc-modal__header {
+          border-bottom: none;
+
+          .kc-modal__title {
+            span.kc-headline5 {
+              font-size: 21px;
+            }
+          }
+        }
+
+        .kc-modal__content {
+          padding: 0;
+
+          .kc-navigation {
+            margin: 0 1.25rem;
+          }
+
+          .kc-media-modal-recent {
+            display: flex;
+            flex: 1 1 auto;
+            flex-direction: column;
+            padding: 2rem 1.5rem 2.5rem;
+
+            .kc-media-modal-recent__back-btn {
+              background-color: $neutral4;
+              border: none;
+              border-radius: 4px;
+              margin-bottom: 20px;
+              padding: 5px 10px;
+              width: fit-content;
+          
+              &:hover {
+                background-color: $neutral5;
+              }
+          
+              i {
+                font-size: 14px;
+                margin-right: 10px;
+              }
+            }
+
+            .kc-media-modal-recent__search {
+              margin-bottom: 30px;
+
+              .kc-inputfield {
+                .kc-inputfield__box {
+                  height: 36px;
+
+                  input {
+                    font-size: 16px;
+                  }
+                }
+              }
+            }
+
+            .kc-media-modal-recent__content {
+              display: flex;
+              flex: 1 1 auto;
+              overflow-y: auto;
+              flex-direction: column;
+              border-color: transparent;
+              transition: border-color .25s linear;
+              -webkit-transition: border-color .25s linear;
+
+              &:hover {
+                border-color: rgba(0, 0, 0, 0.1);
+              }
+          
+              &::-webkit-scrollbar,
+              &::-webkit-scrollbar-thumb,
+              &::-webkit-scrollbar-corner {
+                border-right-style: inset;
+                border-color: inherit;
+                border-right-width: calc(100vw + 100vh);
+              }
+              
+              &::-webkit-scrollbar {
+                width: 6px;
+                height: 6px;
+              }
+
+              .kc-media-modal-recent__galleries, .kc-media-modal-recent__all-media {  
+                padding-right: 6px;
+
+                span.kc-body1 {
+                  font-size: 18px;
+                }
+
+                .kc-gallery-list, .kc-media-list {
+                  margin-top: 10px;
+                }
+              }
+
+              .kc-media-modal-recent__galleries {
+                margin-bottom: 30px;
+              }
+
+              .kc-media-modal-recent__all-media {
+                height: 100%;
+              }
+            }
+          }
+
+          .kc-media-modal-upload {
+            padding: 2rem 1.75rem 2.5rem;
+
+            &--error {
+              color: $functionalError500;
+              padding: 2rem 1.75rem 2.5rem;
+
+              span.kc-body2 {
+                font-size: 16px;
+                line-height: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

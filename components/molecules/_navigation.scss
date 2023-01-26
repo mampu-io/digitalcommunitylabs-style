@@ -1,0 +1,31 @@
+/**
+  Styling for Navigation molecule component.
+  The component is used on FUNDING > Content and Feature Management
+*/
+
+.kc-navigation {
+  border-bottom: 1px solid rgba(0, 0, 0, .12);
+  height: 50px;
+
+  button.kc-navigation-item {
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    font-size: 15px;
+    height: 100%;
+    padding: 8px 20px 5px;
+    text-transform: uppercase;
+    transition: border-color .25s linear;
+    -webkit-transition: border-color .25s linear;
+
+    &:active {
+      background-color: rgba(15, 119, 192, .3);
+      border-bottom: 3px solid rgba(15, 119, 192, 0);
+    }
+
+    &.kc-navigation-item--active {
+      border-bottom: 3px solid $primary7;
+      color: $primary7;
+    }
+  }
+}
