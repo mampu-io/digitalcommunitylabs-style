@@ -1,0 +1,36 @@
+/**
+  Styling for OnboardingImage atom component.
+  The component is used on FUNDING > Content and Feature Management
+*/
+
+.kc-onboarding-image {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 200px;
+
+  .kc-onboarding-image__canvas {
+    align-items: center;
+    border: 1px solid $neutral13;
+    cursor: pointer;
+    display: flex;
+    height: 160px;
+    justify-content: center;
+    width: 160px;
+
+    img {
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      width: 100%;
+    }
+  }
+
+  .kc-onboarding-image__note {
+    align-items: center;
+    display: flex;
+    flex: 1 1 auto;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,23 @@
+/**
+  Styling for MultipleInputField molecule component.
+  The component is used on FUNDING > Content and Feature Management
+*/
+
+.kc-multiple-inputfield {
+  display: flex;
+  flex-direction: column;
+
+  .kc-multiple-inputfield__child {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    .kc-inputfield {
+      margin-bottom: 5px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

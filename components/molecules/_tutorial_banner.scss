@@ -1,0 +1,101 @@
+/**
+  Styling for TutorialBanner molecule component.
+  The component is used on FUNDING > Content and Feature Management
+*/
+
+.kc-tutorial-banner {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 999;
+
+  &.kc-tutorial-banner--active {
+    i.kc-tutorial-banner__toggle {
+      color: $functionalError500;
+    }
+
+    .kc-tutorial-banner__content {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  i.kc-tutorial-banner__toggle {
+    color: $functionalLink500;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .kc-tutorial-banner__content {
+    background-color: $neutral4;
+    border-radius: 4px;
+    display: flex;
+    height: 200px;
+    opacity: 0;
+    padding: 20px;
+    position: absolute;
+    top: 24px;
+    visibility: hidden;
+    transition: visibility 0s, opacity .5s linear;
+    -webkit-transition: visibility 0s, opacity .5s linear;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      width: 160px;
+    }
+
+    .kc-tutorial-banner__overview {
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px;
+
+      .kc-rounded-button {
+        button {
+          height: 32px;
+          width: 32px;
+
+          .kc-rounded-button__content {
+            i {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+
+      .kc-tutorial-banner__header {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        button {
+          background-color: transparent;
+        }
+      }
+
+      .kc-tutorial-banner__description {
+        flex: 1 1 auto;
+        font-size: 16px;
+      }
+
+      .kc-tutorial-banner__pagination {
+        bottom: 10px;
+        display: flex;
+        justify-content: flex-end;
+  
+        .kc-rounded-button {
+          button {
+            background-color: $neutral1;
+            border: none;
+          }
+  
+          &:first-child {
+            margin-right: 32px;
+          }
+        }
+      }
+    }
+  }
+}

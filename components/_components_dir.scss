@@ -1,13 +1,16 @@
 // Atoms
+@import 'atoms/add_onboarding_button';
 @import 'atoms/color_pallete';
 @import 'atoms/gallery_card';
 @import 'atoms/loading_page';
 @import 'atoms/media_card';
 @import 'atoms/notification_tag';
+@import 'atoms/onboarding_image';
 @import 'atoms/push_notification_preview';
 @import 'atoms/result_indicator';
 @import 'atoms/status_card';
 @import 'atoms/tab_navigation';
+@import 'atoms/text_button';
 @import 'atoms/custom_input_tags';
 
 // Molecules
@@ -18,16 +21,19 @@
 @import 'molecules/login_container';
 @import 'molecules/media_list';
 @import 'molecules/modal';
+@import 'molecules/multiple_inputfield';
 @import 'molecules/navigation';
 @import 'molecules/popup';
 @import 'molecules/record_item';
 @import 'molecules/select_role';
 @import 'molecules/sweetalert_custom';
+@import 'molecules/tutorial_banner';
 @import 'molecules/upload_media';
 
 // Organisms
 @import 'organisms/datatable';
 @import 'organisms/media_modal';
+@import 'organisms/onboarding_card';
 
 // Templates
 @import 'templates/deposit_account_onboarding_detail';
@@ -35,4 +41,6 @@
 @import 'templates/login_wrapper';
 @import 'templates/memberservice_detail';
 @import 'templates/notification';
+@import 'templates/onboarding_configuration';
+@import 'templates/support_configuration';
 @import 'templates/term_deposit_product';

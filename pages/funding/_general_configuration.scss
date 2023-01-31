@@ -1,0 +1,83 @@
+/**
+  Styling for general configuration page [FUNDING]
+*/
+
+.kc-general-configuration {
+  .content-body {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+
+    .container-fluid {
+      display: flex;
+      flex-direction: column;
+
+      nav {
+        margin-bottom: 10px;
+
+        button.kc-navigation-item {
+          letter-spacing: 1px;
+          text-transform: none;
+
+          &.kc-navigation-item--active {
+            font-weight: 700;
+          }
+        }
+      }
+
+      main {
+        background-color: $neutral1;
+        border-radius: 2px;
+        box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
+        min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px) - 70px - 20px - 60px);
+        padding: 20px;
+        width: 100%;
+
+        .kc-general-configuration__content {
+          margin: 0 20px;
+
+          .kc-form-group {
+            .kc-form-group__identity {
+              width: 200px;
+            }
+
+            .kc-input-tag, .kc-textarea {
+              max-width: 500px;
+            }
+
+            .kc-text-html-editor {
+              max-width: 750px;
+
+              .ck-editor {
+                height: fit-content;
+
+                .ck-editor__main {
+                  height: fit-content;
+
+                  .ck-content.ck-editor__editable {
+                    height: 500px;
+
+                    ol {
+                      margin-left: 1rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .kc-tutorial-banner {
+          margin-bottom: 20px;
+        }
+      }
+
+      .kc-floating-action-btn {
+        bottom: 40px;
+        position: fixed;
+        right: 40px;
+      }
+    }
+  }
+}

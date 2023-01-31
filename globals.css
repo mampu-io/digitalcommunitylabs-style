@@ -960,6 +960,54 @@ select, .form-control, .custom-select {
         margin-bottom: 40px; }
 
 /**
+  Styling for general configuration page [FUNDING]
+*/
+.kc-general-configuration .content-body {
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0; }
+  .kc-general-configuration .content-body .container-fluid {
+    display: flex;
+    flex-direction: column; }
+    .kc-general-configuration .content-body .container-fluid nav {
+      margin-bottom: 10px; }
+      .kc-general-configuration .content-body .container-fluid nav button.kc-navigation-item {
+        letter-spacing: 1px;
+        text-transform: none; }
+        .kc-general-configuration .content-body .container-fluid nav button.kc-navigation-item.kc-navigation-item--active {
+          font-weight: 700; }
+    .kc-general-configuration .content-body .container-fluid main {
+      background-color: #FFFFFF;
+      border-radius: 2px;
+      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+      min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px) - 70px - 20px - 60px);
+      padding: 20px;
+      width: 100%; }
+      .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content {
+        margin: 0 20px; }
+        .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-form-group__identity {
+          width: 200px; }
+        .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-input-tag, .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-textarea {
+          max-width: 500px; }
+        .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor {
+          max-width: 750px; }
+          .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor {
+            height: fit-content; }
+            .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor .ck-editor__main {
+              height: fit-content; }
+              .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor .ck-editor__main .ck-content.ck-editor__editable {
+                height: 500px; }
+                .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor .ck-editor__main .ck-content.ck-editor__editable ol {
+                  margin-left: 1rem; }
+      .kc-general-configuration .content-body .container-fluid main .kc-tutorial-banner {
+        margin-bottom: 20px; }
+    .kc-general-configuration .content-body .container-fluid .kc-floating-action-btn {
+      bottom: 40px;
+      position: fixed;
+      right: 40px; }
+
+/**
   Styling for setting deposit page and setting withdraw page [FUNDING]
 */
 .kc-setting-deposit, .kc-setting-withdraw {
@@ -1224,6 +1272,25 @@ select, .form-control, .custom-select {
   font-size: 11px;
   letter-spacing: 0.75px; }
 
+/**
+  Styling for AddOnboardingButton atom component.
+  The component is used on FUNDING > Content and Feature Management
+*/
+.kc-add-onboarding-button {
+  align-items: center;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 516px;
+  justify-content: center;
+  padding: 32px 16px;
+  width: 250px; }
+  .kc-add-onboarding-button i {
+    font-size: 100px;
+    margin-bottom: 16px; }
+
 .kc-color-pallete {
   background-color: transparent;
   border: 2px solid transparent;
@@ -1341,6 +1408,35 @@ select, .form-control, .custom-select {
     background-color: #0F77C0;
     border: 1px solid #0F77C0;
     color: #FFFFFF; }
+
+/**
+  Styling for OnboardingImage atom component.
+  The component is used on FUNDING > Content and Feature Management
+*/
+.kc-onboarding-image {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 200px; }
+  .kc-onboarding-image .kc-onboarding-image__canvas {
+    align-items: center;
+    border: 1px solid #000000;
+    cursor: pointer;
+    display: flex;
+    height: 160px;
+    justify-content: center;
+    width: 160px; }
+    .kc-onboarding-image .kc-onboarding-image__canvas img {
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      width: 100%; }
+  .kc-onboarding-image .kc-onboarding-image__note {
+    align-items: center;
+    display: flex;
+    flex: 1 1 auto;
+    font-size: 14px; }
 
 .kc-push-notification-preview {
   background-image: url("./device-dummy.svg");
@@ -1460,6 +1556,29 @@ select, .form-control, .custom-select {
       background-color: #262626; }
     .kc-tab-navigation .kc-tab-navigation--indicator.kc-tab-navigation--nonactive {
       background-color: transparent; }
+
+/**
+  Styling for TextButton atom component.
+  The component is used on FUNDING > Content and Feature Management
+*/
+button.kc-text-button {
+  background-color: transparent;
+  border: none;
+  font-weight: 700;
+  text-decoration: underline;
+  width: fit-content; }
+  button.kc-text-button.kc-text-button--primary {
+    color: #0F77C0; }
+  button.kc-text-button.kc-text-button--neutral {
+    color: #000000; }
+  button.kc-text-button.kc-text-button--success {
+    color: #52C41A; }
+  button.kc-text-button.kc-text-button--warning {
+    color: #FAAD14; }
+  button.kc-text-button.kc-text-button--danger {
+    color: #FF4D4F; }
+  button.kc-text-button:disabled {
+    color: #BFBFBF; }
 
 .rti--container {
   width: 100%;
@@ -1774,6 +1893,22 @@ select, .form-control, .custom-select {
     border-radius: 10px; }
 
 /**
+  Styling for MultipleInputField molecule component.
+  The component is used on FUNDING > Content and Feature Management
+*/
+.kc-multiple-inputfield {
+  display: flex;
+  flex-direction: column; }
+  .kc-multiple-inputfield .kc-multiple-inputfield__child {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px; }
+    .kc-multiple-inputfield .kc-multiple-inputfield__child .kc-inputfield {
+      margin-bottom: 5px; }
+      .kc-multiple-inputfield .kc-multiple-inputfield__child .kc-inputfield:last-child {
+        margin-bottom: 0; }
+
+/**
   Styling for Navigation molecule component.
   The component is used on FUNDING > Content and Feature Management
 */
@@ -1921,6 +2056,70 @@ select, .form-control, .custom-select {
     color: #0f77c0 !important; }
 
 /**
+  Styling for TutorialBanner molecule component.
+  The component is used on FUNDING > Content and Feature Management
+*/
+.kc-tutorial-banner {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 999; }
+  .kc-tutorial-banner.kc-tutorial-banner--active i.kc-tutorial-banner__toggle {
+    color: #FF4D4F; }
+  .kc-tutorial-banner.kc-tutorial-banner--active .kc-tutorial-banner__content {
+    opacity: 1;
+    visibility: visible; }
+  .kc-tutorial-banner i.kc-tutorial-banner__toggle {
+    color: #1890FF;
+    cursor: pointer;
+    font-size: 20px; }
+  .kc-tutorial-banner .kc-tutorial-banner__content {
+    background-color: #F0F0F0;
+    border-radius: 4px;
+    display: flex;
+    height: 200px;
+    opacity: 0;
+    padding: 20px;
+    position: absolute;
+    top: 24px;
+    visibility: hidden;
+    transition: visibility 0s, opacity .5s linear;
+    -webkit-transition: visibility 0s, opacity .5s linear; }
+    .kc-tutorial-banner .kc-tutorial-banner__content img {
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      width: 160px; }
+    .kc-tutorial-banner .kc-tutorial-banner__content .kc-tutorial-banner__overview {
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px; }
+      .kc-tutorial-banner .kc-tutorial-banner__content .kc-tutorial-banner__overview .kc-rounded-button button {
+        height: 32px;
+        width: 32px; }
+        .kc-tutorial-banner .kc-tutorial-banner__content .kc-tutorial-banner__overview .kc-rounded-button button .kc-rounded-button__content i {
+          font-size: 16px; }
+      .kc-tutorial-banner .kc-tutorial-banner__content .kc-tutorial-banner__overview .kc-tutorial-banner__header {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px; }
+        .kc-tutorial-banner .kc-tutorial-banner__content .kc-tutorial-banner__overview .kc-tutorial-banner__header button {
+          background-color: transparent; }
+      .kc-tutorial-banner .kc-tutorial-banner__content .kc-tutorial-banner__overview .kc-tutorial-banner__description {
+        flex: 1 1 auto;
+        font-size: 16px; }
+      .kc-tutorial-banner .kc-tutorial-banner__content .kc-tutorial-banner__overview .kc-tutorial-banner__pagination {
+        bottom: 10px;
+        display: flex;
+        justify-content: flex-end; }
+        .kc-tutorial-banner .kc-tutorial-banner__content .kc-tutorial-banner__overview .kc-tutorial-banner__pagination .kc-rounded-button button {
+          background-color: #FFFFFF;
+          border: none; }
+        .kc-tutorial-banner .kc-tutorial-banner__content .kc-tutorial-banner__overview .kc-tutorial-banner__pagination .kc-rounded-button:first-child {
+          margin-right: 32px; }
+
+/**
   Styling for UploadMedia molecule component.
   The component is used on FUNDING > Content and Feature Management
 */
@@ -2025,6 +2224,31 @@ select, .form-control, .custom-select {
           .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-upload--error span.kc-body2 {
             font-size: 16px;
             line-height: 24px; }
+
+/**
+  Styling for OnboardingCard organism component.
+  The component is used on FUNDING > Content and Feature Management
+*/
+.kc-onboarding-card {
+  align-items: center;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  height: 516px;
+  padding: 32px 16px;
+  position: relative;
+  width: 250px; }
+  .kc-onboarding-card .kc-rounded-button {
+    position: absolute;
+    right: 4px;
+    top: 4px; }
+  .kc-onboarding-card .kc-onboarding-image {
+    margin-bottom: 16px; }
+  .kc-onboarding-card .kc-onboarding-card__title, .kc-onboarding-card .kc-onboarding-card__body {
+    width: 100%; }
+  .kc-onboarding-card .kc-onboarding-card__body .kc-form-group {
+    margin-bottom: 0; }
 
 /**
   Styling for deposit account onboarding template [MEMBERSERVICE]
@@ -2350,6 +2574,80 @@ main.kc-memberservice-detail {
       border: none;
       height: 640px;
       width: 360px; }
+
+/**
+  Styling for onboarding configuration template [FUNDING]
+  The template is used on general configuration page
+*/
+.kc-onboarding-configuration .kc-tutorial-banner {
+  margin-bottom: 20px; }
+
+.kc-onboarding-configuration .kc-general-configuration__content, .kc-onboarding-configuration .kc-onboarding-card-list {
+  display: flex; }
+
+.kc-onboarding-configuration .kc-general-configuration__content {
+  margin: 0 20px; }
+
+.kc-onboarding-configuration .kc-onboarding-card-list {
+  display: -webkit-inline-box;
+  margin-right: 20px;
+  max-width: calc(100% - 250px - 20px);
+  overflow: auto;
+  border-color: transparent;
+  transition: border-color .25s linear;
+  -webkit-transition: border-color .25s linear; }
+  .kc-onboarding-configuration .kc-onboarding-card-list:hover {
+    border-color: rgba(0, 0, 0, 0.1); }
+  .kc-onboarding-configuration .kc-onboarding-card-list::-webkit-scrollbar, .kc-onboarding-configuration .kc-onboarding-card-list::-webkit-scrollbar-thumb, .kc-onboarding-configuration .kc-onboarding-card-list::-webkit-scrollbar-corner {
+    border-right-style: inset;
+    border-color: inherit;
+    border-right-width: calc(100vw + 100vh); }
+  .kc-onboarding-configuration .kc-onboarding-card-list::-webkit-scrollbar {
+    width: 6px;
+    height: 6px; }
+  .kc-onboarding-configuration .kc-onboarding-card-list.kc-onboarding-card-list--stretch {
+    max-width: 100%; }
+  .kc-onboarding-configuration .kc-onboarding-card-list .kc-onboarding-card {
+    margin-right: 20px; }
+    .kc-onboarding-configuration .kc-onboarding-card-list .kc-onboarding-card:last-child {
+      margin-right: 0; }
+
+/**
+  Styling for support configuration template [FUNDING]
+  The template is used on general configuration page
+*/
+.kc-support-configuration .kc-tutorial-banner {
+  margin-bottom: 20px; }
+
+.kc-support-configuration .kc-general-configuration__content .kc-form-group .kc-markdown-editor {
+  min-height: 200px;
+  width: 500px; }
+
+.kc-support-configuration .kc-general-configuration__content .kc-form-group > ul {
+  list-style-type: decimal;
+  margin-left: 20px;
+  margin-top: 20px; }
+  .kc-support-configuration .kc-general-configuration__content .kc-form-group > ul li {
+    border-bottom: 1px solid #D9D9D9;
+    margin-top: 20px;
+    width: fit-content; }
+    .kc-support-configuration .kc-general-configuration__content .kc-form-group > ul li:first-child {
+      margin-top: 0; }
+    .kc-support-configuration .kc-general-configuration__content .kc-form-group > ul li:last-child {
+      border-bottom: none; }
+    .kc-support-configuration .kc-general-configuration__content .kc-form-group > ul li .kc-form-group {
+      margin-right: 40px;
+      width: 300px; }
+      .kc-support-configuration .kc-general-configuration__content .kc-form-group > ul li .kc-form-group.kc-form-group--vertical .kc-form-group__identity .kc-form-group__label {
+        margin-bottom: 0; }
+      .kc-support-configuration .kc-general-configuration__content .kc-form-group > ul li .kc-form-group .kc-form-group__identity .kc-form-group__label label {
+        font-size: 16px;
+        font-weight: 400; }
+      .kc-support-configuration .kc-general-configuration__content .kc-form-group > ul li .kc-form-group .kc-multiple-inputfield .kc-multiple-inputfield__child .kc-inputfield .kc-inputfield__box button i:hover {
+        color: #FF4D4F; }
+    .kc-support-configuration .kc-general-configuration__content .kc-form-group > ul li button.kc-text-button {
+      display: flex;
+      height: fit-content; }
 
 /**
   Styling for term deposit product template [FUNDING]

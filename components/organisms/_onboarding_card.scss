@@ -1,0 +1,36 @@
+/**
+  Styling for OnboardingCard organism component.
+  The component is used on FUNDING > Content and Feature Management
+*/
+
+.kc-onboarding-card {
+  align-items: center;
+  border: 1px solid $neutral13;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  height: 516px;
+  padding: 32px 16px;
+  position: relative;
+  width: 250px;
+
+  .kc-rounded-button {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+  }
+
+  .kc-onboarding-image {
+    margin-bottom: 16px;
+  }
+
+  .kc-onboarding-card__title, .kc-onboarding-card__body {
+    width: 100%;
+  }
+
+  .kc-onboarding-card__body {
+    .kc-form-group {
+      margin-bottom: 0;
+    }
+  }
+}
