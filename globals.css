@@ -971,12 +971,27 @@ select, .form-control, .custom-select {
     display: flex;
     flex-direction: column; }
     .kc-general-configuration .content-body .container-fluid nav {
+      align-items: flex-end;
+      display: flex;
+      justify-content: space-between;
       margin-bottom: 10px; }
-      .kc-general-configuration .content-body .container-fluid nav button.kc-navigation-item {
-        letter-spacing: 1px;
-        text-transform: none; }
-        .kc-general-configuration .content-body .container-fluid nav button.kc-navigation-item.kc-navigation-item--active {
-          font-weight: 700; }
+      .kc-general-configuration .content-body .container-fluid nav .kc-navigation {
+        display: flex;
+        margin-right: 60px;
+        overflow: auto; }
+        .kc-general-configuration .content-body .container-fluid nav .kc-navigation::-webkit-scrollbar, .kc-general-configuration .content-body .container-fluid nav .kc-navigation::-webkit-scrollbar-thumb, .kc-general-configuration .content-body .container-fluid nav .kc-navigation::-webkit-scrollbar-corner {
+          border-right-style: inset;
+          border-color: inherit;
+          border-right-width: calc(100vw + 100vh); }
+        .kc-general-configuration .content-body .container-fluid nav .kc-navigation::-webkit-scrollbar {
+          width: 1px;
+          height: 1px; }
+        .kc-general-configuration .content-body .container-fluid nav .kc-navigation button.kc-navigation-item {
+          letter-spacing: 1px;
+          text-transform: none;
+          white-space: nowrap; }
+          .kc-general-configuration .content-body .container-fluid nav .kc-navigation button.kc-navigation-item.kc-navigation-item--active {
+            font-weight: 700; }
     .kc-general-configuration .content-body .container-fluid main {
       background-color: #FFFFFF;
       border-radius: 2px;

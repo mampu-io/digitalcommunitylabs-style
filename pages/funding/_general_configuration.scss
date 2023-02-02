@@ -14,14 +14,37 @@
       flex-direction: column;
 
       nav {
+        align-items: flex-end;
+        display: flex;
+        justify-content: space-between;
         margin-bottom: 10px;
 
-        button.kc-navigation-item {
-          letter-spacing: 1px;
-          text-transform: none;
+        .kc-navigation {
+          display: flex;
+          margin-right: 60px;
+          overflow: auto;
 
-          &.kc-navigation-item--active {
-            font-weight: 700;
+          &::-webkit-scrollbar,
+          &::-webkit-scrollbar-thumb,
+          &::-webkit-scrollbar-corner {
+            border-right-style: inset;
+            border-color: inherit;
+            border-right-width: calc(100vw + 100vh);
+          }
+          
+          &::-webkit-scrollbar {
+            width: 1px;
+            height: 1px;
+          }
+
+          button.kc-navigation-item {
+            letter-spacing: 1px;
+            text-transform: none;
+            white-space: nowrap;
+  
+            &.kc-navigation-item--active {
+              font-weight: 700;
+            }
           }
         }
       }
