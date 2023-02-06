@@ -549,6 +549,69 @@ select, .form-control, .custom-select {
   top: 0; }
 
 /**
+  Styling for general configuration page [BACKOFFICE]
+*/
+.kc-general-configuration .content-body {
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0; }
+  .kc-general-configuration .content-body .container-fluid {
+    display: flex;
+    flex-direction: column; }
+    .kc-general-configuration .content-body .container-fluid nav {
+      align-items: flex-end;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px; }
+      .kc-general-configuration .content-body .container-fluid nav .kc-navigation {
+        display: flex;
+        margin-right: 60px;
+        overflow: auto; }
+        .kc-general-configuration .content-body .container-fluid nav .kc-navigation::-webkit-scrollbar, .kc-general-configuration .content-body .container-fluid nav .kc-navigation::-webkit-scrollbar-thumb, .kc-general-configuration .content-body .container-fluid nav .kc-navigation::-webkit-scrollbar-corner {
+          border-right-style: inset;
+          border-color: inherit;
+          border-right-width: calc(100vw + 100vh); }
+        .kc-general-configuration .content-body .container-fluid nav .kc-navigation::-webkit-scrollbar {
+          width: 1px;
+          height: 1px; }
+        .kc-general-configuration .content-body .container-fluid nav .kc-navigation button.kc-navigation-item {
+          letter-spacing: 1px;
+          text-transform: none;
+          white-space: nowrap; }
+          .kc-general-configuration .content-body .container-fluid nav .kc-navigation button.kc-navigation-item.kc-navigation-item--active {
+            font-weight: 700; }
+    .kc-general-configuration .content-body .container-fluid main {
+      background-color: #FFFFFF;
+      border-radius: 2px;
+      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+      min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px) - 70px - 20px - 60px);
+      padding: 20px;
+      width: 100%; }
+      .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content {
+        margin: 0 20px; }
+        .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-form-group__identity {
+          width: 200px; }
+        .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-input-tag, .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-textarea {
+          max-width: 500px; }
+        .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor {
+          max-width: 750px; }
+          .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor {
+            height: fit-content; }
+            .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor .ck-editor__main {
+              height: fit-content; }
+              .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor .ck-editor__main .ck-content.ck-editor__editable {
+                height: 500px; }
+                .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor .ck-editor__main .ck-content.ck-editor__editable ol {
+                  margin-left: 1rem; }
+      .kc-general-configuration .content-body .container-fluid main .kc-tutorial-banner {
+        margin-bottom: 20px; }
+    .kc-general-configuration .content-body .container-fluid .kc-floating-action-btn {
+      bottom: 40px;
+      position: fixed;
+      right: 40px; }
+
+/**
   Styling for list notification page [BACKOFFICE]
 */
 .kc-list-notifications .kc-datatable .kc-table table tbody tr td {
@@ -1005,69 +1068,6 @@ select, .form-control, .custom-select {
       width: 30%; }
       .kc-funding-detail-member .content-body .container-fluid aside h2 {
         margin-bottom: 40px; }
-
-/**
-  Styling for general configuration page [FUNDING]
-*/
-.kc-general-configuration .content-body {
-  background-color: transparent;
-  border-radius: 0;
-  box-shadow: none;
-  padding: 0; }
-  .kc-general-configuration .content-body .container-fluid {
-    display: flex;
-    flex-direction: column; }
-    .kc-general-configuration .content-body .container-fluid nav {
-      align-items: flex-end;
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 10px; }
-      .kc-general-configuration .content-body .container-fluid nav .kc-navigation {
-        display: flex;
-        margin-right: 60px;
-        overflow: auto; }
-        .kc-general-configuration .content-body .container-fluid nav .kc-navigation::-webkit-scrollbar, .kc-general-configuration .content-body .container-fluid nav .kc-navigation::-webkit-scrollbar-thumb, .kc-general-configuration .content-body .container-fluid nav .kc-navigation::-webkit-scrollbar-corner {
-          border-right-style: inset;
-          border-color: inherit;
-          border-right-width: calc(100vw + 100vh); }
-        .kc-general-configuration .content-body .container-fluid nav .kc-navigation::-webkit-scrollbar {
-          width: 1px;
-          height: 1px; }
-        .kc-general-configuration .content-body .container-fluid nav .kc-navigation button.kc-navigation-item {
-          letter-spacing: 1px;
-          text-transform: none;
-          white-space: nowrap; }
-          .kc-general-configuration .content-body .container-fluid nav .kc-navigation button.kc-navigation-item.kc-navigation-item--active {
-            font-weight: 700; }
-    .kc-general-configuration .content-body .container-fluid main {
-      background-color: #FFFFFF;
-      border-radius: 2px;
-      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
-      min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px) - 70px - 20px - 60px);
-      padding: 20px;
-      width: 100%; }
-      .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content {
-        margin: 0 20px; }
-        .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-form-group__identity {
-          width: 200px; }
-        .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-input-tag, .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-textarea {
-          max-width: 500px; }
-        .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor {
-          max-width: 750px; }
-          .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor {
-            height: fit-content; }
-            .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor .ck-editor__main {
-              height: fit-content; }
-              .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor .ck-editor__main .ck-content.ck-editor__editable {
-                height: 500px; }
-                .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor .ck-editor__main .ck-content.ck-editor__editable ol {
-                  margin-left: 1rem; }
-      .kc-general-configuration .content-body .container-fluid main .kc-tutorial-banner {
-        margin-bottom: 20px; }
-    .kc-general-configuration .content-body .container-fluid .kc-floating-action-btn {
-      bottom: 40px;
-      position: fixed;
-      right: 40px; }
 
 /**
   Styling for setting deposit page and setting withdraw page [FUNDING]
