@@ -1336,7 +1336,7 @@ select, .form-control, .custom-select {
 
 /**
   Styling for AddOnboardingButton atom component.
-  The component is used on FUNDING > Content and Feature Management
+  The component is used on BACKOFFICE > Content and Feature Management
 */
 .kc-add-onboarding-button {
   align-items: center;
@@ -1374,7 +1374,7 @@ select, .form-control, .custom-select {
 
 /**
   Styling for GalleryCard atom component.
-  The component is used on FUNDING > Content and Feature Management
+  The component is used on BACKOFFICE > Content and Feature Management
 */
 .kc-gallery-card.kc-gallery-card--selected .kc-gallery-card__content {
   background-color: #F0F0F0;
@@ -1430,7 +1430,7 @@ select, .form-control, .custom-select {
 
 /**
   Styling for MediaCard atom component.
-  The component is used on FUNDING > Content and Feature Management
+  The component is used on BACKOFFICE > Content and Feature Management
 */
 .kc-media-card {
   border: 1px solid #D9D9D9;
@@ -1499,7 +1499,7 @@ select, .form-control, .custom-select {
 
 /**
   Styling for OnboardingImage atom component.
-  The component is used on FUNDING > Content and Feature Management
+  The component is used on BACKOFFICE > Content and Feature Management
 */
 .kc-onboarding-image {
   align-items: center;
@@ -1647,7 +1647,7 @@ select, .form-control, .custom-select {
 
 /**
   Styling for TextButton atom component.
-  The component is used on FUNDING > Content and Feature Management
+  The component is used on BACKOFFICE > Content and Feature Management
 */
 button.kc-text-button {
   background-color: transparent;
@@ -1850,7 +1850,7 @@ button.kc-text-button {
 
 /**
   Styling for GalleryList molecule component.
-  The component is used on FUNDING > Content and Feature Management
+  The component is used on BACKOFFICE > Content and Feature Management
 */
 .kc-gallery-list {
   column-gap: 10px;
@@ -1917,7 +1917,7 @@ button.kc-text-button {
 
 /**
   Styling for MediaList molecule component.
-  The component is used on FUNDING > Content and Feature Management
+  The component is used on BACKOFFICE > Content and Feature Management
 */
 .kc-media-list {
   height: fit-content;
@@ -1982,7 +1982,7 @@ button.kc-text-button {
 
 /**
   Styling for MultipleInputField molecule component.
-  The component is used on FUNDING > Content and Feature Management
+  The component is used on BACKOFFICE > Content and Feature Management
 */
 .kc-multiple-inputfield {
   display: flex;
@@ -1998,7 +1998,7 @@ button.kc-text-button {
 
 /**
   Styling for Navigation molecule component.
-  The component is used on FUNDING > Content and Feature Management
+  The component is used on BACKOFFICE > Content and Feature Management
 */
 .kc-navigation {
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
@@ -2145,7 +2145,7 @@ button.kc-text-button {
 
 /**
   Styling for TutorialBanner molecule component.
-  The component is used on FUNDING > Content and Feature Management
+  The component is used on BACKOFFICE > Content and Feature Management
 */
 .kc-tutorial-banner {
   display: flex;
@@ -2209,7 +2209,7 @@ button.kc-text-button {
 
 /**
   Styling for UploadMedia molecule component.
-  The component is used on FUNDING > Content and Feature Management
+  The component is used on BACKOFFICE > Content and Feature Management
 */
 .kc-upload-media {
   position: relative; }
@@ -2237,7 +2237,7 @@ button.kc-text-button {
 
 /**
   Styling for MediaModal organism component.
-  The component is used on FUNDING > Content and Feature Management
+  The component is used on BACKOFFICE > Content and Feature Management
 */
 .kc-media-modal .kc-modal .kc-modal__container {
   height: 800px;
@@ -2313,6 +2313,10 @@ button.kc-text-button {
             font-size: 16px;
             line-height: 24px; }
 
+/**
+  Styling for MediaShortcutMenu organism component.
+  The component is used on BACKOFFICE > Content and Feature Management
+*/
 nav.kc-media-shortcut-menu {
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -2327,7 +2331,7 @@ nav.kc-media-shortcut-menu {
 
 /**
   Styling for OnboardingCard organism component.
-  The component is used on FUNDING > Content and Feature Management
+  The component is used on BACKOFFICE > Content and Feature Management
 */
 .kc-onboarding-card {
   align-items: center;
@@ -2682,7 +2686,7 @@ main.kc-memberservice-detail {
       width: 360px; }
 
 /**
-  Styling for onboarding configuration template [FUNDING]
+  Styling for onboarding configuration template [BACKOFFICE]
   The template is used on general configuration page
 */
 .kc-onboarding-configuration .kc-tutorial-banner {
@@ -2719,7 +2723,7 @@ main.kc-memberservice-detail {
       margin-right: 0; }
 
 /**
-  Styling for support configuration template [FUNDING]
+  Styling for support configuration template [BACKOFFICE]
   The template is used on general configuration page
 */
 .kc-support-configuration .kc-tutorial-banner {
