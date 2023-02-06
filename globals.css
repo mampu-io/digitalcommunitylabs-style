@@ -668,49 +668,56 @@ select, .form-control, .custom-select {
 /**
   Styling for media management page [BACKOFFICE]
 */
-.kc-media-management .kc-media-management__header {
-  display: flex;
-  margin-bottom: 20px; }
-  .kc-media-management .kc-media-management__header .kc-inputfield {
-    margin-left: 20px; }
-    .kc-media-management .kc-media-management__header .kc-inputfield .kc-inputfield__box {
-      height: 40px; }
-
-.kc-media-management .kc-media-modal-recent__back-btn {
-  background-color: #F0F0F0;
-  border: none;
-  border-radius: 4px;
-  margin-bottom: 20px;
-  padding: 5px 10px;
-  width: fit-content; }
-  .kc-media-management .kc-media-modal-recent__back-btn:hover {
-    background-color: #D9D9D9; }
-  .kc-media-management .kc-media-modal-recent__back-btn i {
-    font-size: 14px;
-    margin-right: 10px; }
-
-.kc-media-management .kc-media-management__gallery-list {
-  margin-bottom: 20px; }
-
-.kc-media-management .kc-gallery-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 20px; }
-  .kc-media-management .kc-gallery-list .kc-gallery-card .kc-gallery-card__content {
-    width: 250px; }
-
-.kc-media-management .kc-modal .kc-modal__title span.kc-headline5 {
-  font-size: 21px; }
-
-.kc-media-management .kc-media-management__media-list .kc-media-list {
-  margin-top: 20px; }
-  .kc-media-management .kc-media-management__media-list .kc-media-list .kc-media-list__entries {
+.kc-media-management .content-body {
+  padding: 30px 20px; }
+  .kc-media-management .content-body .kc-modal .kc-modal__container .kc-modal__main .kc-modal__header .kc-modal__title span.kc-headline5 {
+    font-size: 21px; }
+  .kc-media-management .content-body .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
+    padding: 1.5rem 1.5rem 2.5rem; }
+    .kc-media-management .content-body .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group {
+      margin-bottom: 0; }
+    .kc-media-management .content-body .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content button.kc-button--primary {
+      margin-top: 20px; }
+  .kc-media-management .content-body .kc-media-management__header {
     display: flex;
-    flex-wrap: wrap;
-    position: relative; }
-    .kc-media-management .kc-media-management__media-list .kc-media-list .kc-media-list__entries .kc-media-card {
-      cursor: default;
-      width: 200px; }
+    margin-bottom: 30px; }
+    .kc-media-management .content-body .kc-media-management__header > .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-upload .kc-upload-media {
+      margin-top: 20px; }
+      .kc-media-management .content-body .kc-media-management__header > .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-upload .kc-upload-media button.kc-button--primary {
+        margin-top: 0; }
+    .kc-media-management .content-body .kc-media-management__header > .kc-inputfield {
+      margin-left: 20px; }
+      .kc-media-management .content-body .kc-media-management__header > .kc-inputfield .kc-inputfield__box {
+        height: 40px; }
+  .kc-media-management .content-body .kc-media-modal-recent__back-btn {
+    background-color: #F0F0F0;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    width: fit-content; }
+    .kc-media-management .content-body .kc-media-modal-recent__back-btn:hover {
+      background-color: #D9D9D9; }
+    .kc-media-management .content-body .kc-media-modal-recent__back-btn i {
+      font-size: 14px;
+      margin-right: 10px; }
+  .kc-media-management .content-body .kc-media-management__gallery-list {
+    margin-bottom: 30px; }
+    .kc-media-management .content-body .kc-media-management__gallery-list .kc-gallery-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 15px; }
+      .kc-media-management .content-body .kc-media-management__gallery-list .kc-gallery-list .kc-gallery-card .kc-gallery-card__content {
+        width: 250px; }
+  .kc-media-management .content-body .kc-media-management__media-list .kc-media-list {
+    margin-top: 15px; }
+    .kc-media-management .content-body .kc-media-management__media-list .kc-media-list .kc-media-list__entries {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative; }
+      .kc-media-management .content-body .kc-media-management__media-list .kc-media-list .kc-media-list__entries .kc-media-card {
+        cursor: default;
+        width: 200px; }
 
 /**
   Styling for setting notification category page [BACKOFFICE]
