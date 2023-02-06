@@ -18,6 +18,18 @@
     position: absolute;
     right: 4px;
     top: 4px;
+
+    &.kc-rounded-button--neutral {
+      button {
+        background-color: transparent;
+        border: none;
+
+        &:hover {
+          background-color: transparent;
+          border: none;
+        }
+      }
+    }
   }
 
   .kc-onboarding-image {

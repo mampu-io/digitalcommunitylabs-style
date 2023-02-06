@@ -2343,6 +2343,12 @@ nav.kc-media-shortcut-menu {
     position: absolute;
     right: 4px;
     top: 4px; }
+    .kc-onboarding-card .kc-rounded-button.kc-rounded-button--neutral button {
+      background-color: transparent;
+      border: none; }
+      .kc-onboarding-card .kc-rounded-button.kc-rounded-button--neutral button:hover {
+        background-color: transparent;
+        border: none; }
   .kc-onboarding-card .kc-onboarding-image {
     margin-bottom: 16px; }
   .kc-onboarding-card .kc-onboarding-card__title, .kc-onboarding-card .kc-onboarding-card__body {
