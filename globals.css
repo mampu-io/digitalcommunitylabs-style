@@ -603,6 +603,53 @@ select, .form-control, .custom-select {
       margin-bottom: 5px; }
 
 /**
+  Styling for media management page [BACKOFFICE]
+*/
+.kc-media-management .kc-media-management__header {
+  display: flex;
+  margin-bottom: 20px; }
+  .kc-media-management .kc-media-management__header .kc-inputfield {
+    margin-left: 20px; }
+    .kc-media-management .kc-media-management__header .kc-inputfield .kc-inputfield__box {
+      height: 40px; }
+
+.kc-media-management .kc-media-modal-recent__back-btn {
+  background-color: #F0F0F0;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  width: fit-content; }
+  .kc-media-management .kc-media-modal-recent__back-btn:hover {
+    background-color: #D9D9D9; }
+  .kc-media-management .kc-media-modal-recent__back-btn i {
+    font-size: 14px;
+    margin-right: 10px; }
+
+.kc-media-management .kc-media-management__gallery-list {
+  margin-bottom: 20px; }
+
+.kc-media-management .kc-gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px; }
+  .kc-media-management .kc-gallery-list .kc-gallery-card .kc-gallery-card__content {
+    width: 250px; }
+
+.kc-media-management .kc-modal .kc-modal__title span.kc-headline5 {
+  font-size: 21px; }
+
+.kc-media-management .kc-media-management__media-list .kc-media-list {
+  margin-top: 20px; }
+  .kc-media-management .kc-media-management__media-list .kc-media-list .kc-media-list__entries {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative; }
+    .kc-media-management .kc-media-management__media-list .kc-media-list .kc-media-list__entries .kc-media-card {
+      cursor: default;
+      width: 200px; }
+
+/**
   Styling for setting notification category page [BACKOFFICE]
 */
 .kc-notification-setting .kc-datatable .kc-datatable__header {
@@ -1329,7 +1376,23 @@ select, .form-control, .custom-select {
   Styling for GalleryCard atom component.
   The component is used on FUNDING > Content and Feature Management
 */
-.kc-gallery-card {
+.kc-gallery-card.kc-gallery-card--selected .kc-gallery-card__content {
+  background-color: #F0F0F0;
+  border: 2px solid #0F77C0; }
+
+.kc-gallery-card nav.react-contextmenu {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12), 0px 5px 5px -3px rgba(0, 0, 0, 0.2);
+  min-width: 180px;
+  z-index: 999; }
+  .kc-gallery-card nav.react-contextmenu .react-contextmenu-item {
+    cursor: pointer;
+    padding: 10px 20px; }
+    .kc-gallery-card nav.react-contextmenu .react-contextmenu-item:hover {
+      background-color: #D9D9D9; }
+
+.kc-gallery-card .kc-gallery-card__content {
   border: 1px solid #BFBFBF;
   border-radius: 4px;
   cursor: default;
@@ -1337,18 +1400,18 @@ select, .form-control, .custom-select {
   max-width: 250px;
   min-width: 200px;
   padding: 10px 15px; }
-  .kc-gallery-card:hover {
+  .kc-gallery-card .kc-gallery-card__content:hover {
     background-color: #F0F0F0; }
-  .kc-gallery-card .kc-gallery-card__icon {
+  .kc-gallery-card .kc-gallery-card__content .kc-gallery-card__icon {
     margin-right: 15px; }
-    .kc-gallery-card .kc-gallery-card__icon i {
+    .kc-gallery-card .kc-gallery-card__content .kc-gallery-card__icon i {
       color: #595959;
       font-size: 17px; }
-  .kc-gallery-card .kc-gallery-card__name {
+  .kc-gallery-card .kc-gallery-card__content .kc-gallery-card__name {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap; }
-    .kc-gallery-card .kc-gallery-card__name span.kc-body2 {
+    .kc-gallery-card .kc-gallery-card__content .kc-gallery-card__name span.kc-body2 {
       color: #1F1F1F; }
 
 .bg-loading-page {
@@ -1396,6 +1459,7 @@ select, .form-control, .custom-select {
     border-radius: 0 0 6px 6px;
     display: flex;
     height: 100%;
+    justify-content: space-between;
     padding: 0 10px; }
     .kc-media-card .kc-media-card__overview .kc-media-card__icon i.kc-media-card__media-type {
       margin-right: 10px; }
@@ -1403,6 +1467,15 @@ select, .form-control, .custom-select {
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap; }
+    .kc-media-card .kc-media-card__overview .kc-media-card__action-button {
+      position: relative; }
+      .kc-media-card .kc-media-card__overview .kc-media-card__action-button > button {
+        background-color: transparent;
+        border: none;
+        width: 24px; }
+      .kc-media-card .kc-media-card__overview .kc-media-card__action-button .kc-media-shortcut-menu {
+        position: absolute;
+        right: 0; }
 
 .kc-notification-tag {
   align-items: center;
@@ -2239,6 +2312,18 @@ button.kc-text-button {
           .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-upload--error span.kc-body2 {
             font-size: 16px;
             line-height: 24px; }
+
+nav.kc-media-shortcut-menu {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12), 0px 5px 5px -3px rgba(0, 0, 0, 0.2);
+  min-width: 180px;
+  z-index: 999; }
+  nav.kc-media-shortcut-menu .kc-media-shortcut-menu__item {
+    cursor: pointer;
+    padding: 10px 20px; }
+    nav.kc-media-shortcut-menu .kc-media-shortcut-menu__item:hover {
+      background-color: #D9D9D9; }
 
 /**
   Styling for OnboardingCard organism component.

@@ -1,0 +1,77 @@
+/**
+  Styling for media management page [BACKOFFICE]
+*/
+
+.kc-media-management {
+  .kc-media-management__header {
+    display: flex;
+    margin-bottom: 20px;
+
+    .kc-inputfield {
+      margin-left: 20px;
+
+      .kc-inputfield__box {
+        height: 40px;
+      }
+    }
+  }
+
+  .kc-media-modal-recent__back-btn {
+    background-color: $neutral4;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    width: fit-content;
+
+    &:hover {
+      background-color: $neutral5;
+    }
+
+    i {
+      font-size: 14px;
+      margin-right: 10px;
+    }
+  }
+
+  .kc-media-management__gallery-list {
+    margin-bottom: 20px;
+  }
+
+  .kc-gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    .kc-gallery-card {
+      .kc-gallery-card__content {
+        width: 250px;
+      }
+    }
+  }
+
+  .kc-modal {
+    .kc-modal__title {
+      span.kc-headline5 {
+        font-size: 21px;
+      }
+    }
+  }
+
+  .kc-media-management__media-list {
+    .kc-media-list {
+      margin-top: 20px;
+
+      .kc-media-list__entries {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+
+        .kc-media-card {
+          cursor: default;
+          width: 200px;
+        }
+      }
+    }
+  }
+}
