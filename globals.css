@@ -1024,6 +1024,13 @@ select, .form-control, .custom-select {
   .kc-member-proposal-detail .kc-reject-proposal-modal .kc-modal .kc-modal__container .kc-modal__content .kc-textarea, .kc-member-proposal-detail .kc-reject-proposal-modal .kc-modal .kc-modal__container .kc-modal__content .kc-button {
     margin-top: 15px; }
 
+.kc-member-proposal-detail .kc-approve-proposal-modal .kc-modal .kc-modal__container {
+  width: 500px; }
+  .kc-member-proposal-detail .kc-approve-proposal-modal .kc-modal .kc-modal__container .kc-modal__content .alert.alert-warning p.kc-body2 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0; }
+
 .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
   height: 700px;
   padding-top: 1.5rem; }
