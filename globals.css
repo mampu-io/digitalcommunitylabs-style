@@ -736,6 +736,125 @@ select, .form-control, .custom-select {
     width: 150px; }
 
 /**
+  Styling for notification template detail page [BACKOFFICE]
+*/
+.kc-notification-template-detail .col-xl-6 {
+  max-width: 500px; }
+
+.kc-notification-template-detail .kc-form-group {
+  margin-bottom: 25px; }
+  .kc-notification-template-detail .kc-form-group .kc-form-group__label label {
+    margin-bottom: 0; }
+  .kc-notification-template-detail .kc-form-group:last-child {
+    margin-bottom: 0; }
+
+.kc-notification-template-detail .kc-notification-description .kc-form-group.kc-form-group--vertical {
+  margin-bottom: 25px; }
+  .kc-notification-template-detail .kc-notification-description .kc-form-group.kc-form-group--vertical .kc-form-group__label {
+    margin-bottom: 0; }
+  .kc-notification-template-detail .kc-notification-description .kc-form-group.kc-form-group--vertical .kc-textarea .kc-textarea__title span.kc-caption {
+    color: #8C8C8C;
+    font-size: 13px; }
+  .kc-notification-template-detail .kc-notification-description .kc-form-group.kc-form-group--vertical .kc-textarea .kc-textarea__subtitle {
+    margin-top: 0; }
+    .kc-notification-template-detail .kc-notification-description .kc-form-group.kc-form-group--vertical .kc-textarea .kc-textarea__subtitle span.kc-overline {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px; }
+
+.kc-notification-template-detail .kc-notification-illustration img {
+  height: 100px;
+  object-fit: contain;
+  object-position: center;
+  width: 100px; }
+
+.kc-notification-template-detail .kc-notification-illustration button.kc-upload-illustration-btn {
+  background-color: transparent;
+  border: none;
+  margin-top: 5px;
+  width: fit-content; }
+  .kc-notification-template-detail .kc-notification-illustration button.kc-upload-illustration-btn label {
+    color: #0F77C0;
+    cursor: pointer;
+    margin-bottom: 0;
+    text-decoration: underline; }
+
+.kc-notification-template-detail .kc-notification-illustration p {
+  margin-bottom: 0; }
+  .kc-notification-template-detail .kc-notification-illustration p.kc-upload-illustration-status--failed {
+    color: #FF4D4F;
+    font-weight: 700; }
+  .kc-notification-template-detail .kc-notification-illustration p.kc-upload-illustration-status--successful {
+    color: #52C41A;
+    font-weight: 700; }
+  .kc-notification-template-detail .kc-notification-illustration p.kc-upload-illustration-status--processed .spinner-border {
+    width: 1rem;
+    height: 1rem;
+    border: 0.25em solid #1890FF;
+    border-right-color: transparent;
+    margin-left: 5px; }
+
+.kc-notification-template-detail .kc-notification-illustration input[type="file"] {
+  visibility: hidden; }
+
+.kc-notification-template-detail .kc-text-html-editor .ck-editor .ck-editor__main .ck-content.ck-editor__editable ol, .kc-notification-template-detail .kc-text-html-editor .ck-editor .ck-editor__main .ck-content.ck-editor__editable ul {
+  margin-left: 2rem; }
+
+.kc-notification-template-detail p.kc-notification-placeholders--empty {
+  margin-bottom: 0; }
+
+.kc-notification-template-detail ul.kc-notification-placeholders {
+  margin-left: 2rem; }
+  .kc-notification-template-detail ul.kc-notification-placeholders .kc-body1 {
+    font-size: 16px; }
+  .kc-notification-template-detail ul.kc-notification-placeholders li {
+    margin-bottom: 10px; }
+    .kc-notification-template-detail ul.kc-notification-placeholders li:last-child {
+      margin-bottom: 0; }
+    .kc-notification-template-detail ul.kc-notification-placeholders li .kc-record-item-new label {
+      font-weight: 400; }
+    .kc-notification-template-detail ul.kc-notification-placeholders li .kc-record-item-new:first-child {
+      margin-bottom: 5px; }
+      .kc-notification-template-detail ul.kc-notification-placeholders li .kc-record-item-new:first-child .kc-record-item-new__value label {
+        font-weight: 700; }
+
+.kc-notification-template-detail .kc-notification-preview {
+  position: sticky;
+  top: 80px;
+  z-index: 999; }
+  .kc-notification-template-detail .kc-notification-preview .kc-notification-preview__options {
+    margin-bottom: 20px; }
+    .kc-notification-template-detail .kc-notification-preview .kc-notification-preview__options .kc-radio-button {
+      align-items: center;
+      margin-bottom: 5px; }
+  .kc-notification-template-detail .kc-notification-preview .kc-notification-body-preview {
+    border: 1px solid #D9D9D9;
+    height: 750px;
+    padding: 10px;
+    width: fit-content; }
+    .kc-notification-template-detail .kc-notification-preview .kc-notification-body-preview.kc-notification-body-preview--template {
+      align-items: center;
+      display: flex;
+      flex-direction: column; }
+      .kc-notification-template-detail .kc-notification-preview .kc-notification-body-preview.kc-notification-body-preview--template img.kc-notification-body-preview__illustration {
+        height: 200px;
+        object-fit: contain;
+        object-position: center;
+        width: 200px; }
+      .kc-notification-template-detail .kc-notification-preview .kc-notification-body-preview.kc-notification-body-preview--template .kc-notification-body-preview__title {
+        font-size: 25px;
+        margin-top: 15px; }
+    .kc-notification-template-detail .kc-notification-preview .kc-notification-body-preview .kc-notification-body-preview__title {
+      margin-bottom: 10px; }
+    .kc-notification-template-detail .kc-notification-preview .kc-notification-body-preview iframe {
+      border: none;
+      height: 640px;
+      width: 360px; }
+
+.kc-notification-template-detail > button.kc-button--primary {
+  margin-top: 30px; }
+
+/**
   Styling for active member detail page [MEMBERSERVICE]
 */
 .kc-active-member-detail .kc-suspend-member-modal .kc-modal .kc-modal__container {

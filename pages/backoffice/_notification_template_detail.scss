@@ -1,0 +1,205 @@
+/**
+  Styling for notification template detail page [BACKOFFICE]
+*/
+
+.kc-notification-template-detail {
+  .col-xl-6 {
+    max-width: 500px;
+  }
+
+  .kc-form-group {
+    margin-bottom: 25px;
+
+    .kc-form-group__label {
+      label {
+        margin-bottom: 0;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .kc-notification-description {
+    .kc-form-group.kc-form-group--vertical {
+      margin-bottom: 25px;
+
+      .kc-form-group__label {
+        margin-bottom: 0;
+      }
+
+      .kc-textarea {
+        .kc-textarea__title {
+          span.kc-caption {
+            color: $neutral7;
+            font-size: 13px;
+          }
+        }
+  
+        .kc-textarea__subtitle {
+          margin-top: 0;
+  
+          span.kc-overline {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+  }
+
+  .kc-notification-illustration {
+    img {
+      height: 100px;
+      object-fit: contain;
+      object-position: center;
+      width: 100px;
+    }
+
+    button.kc-upload-illustration-btn {
+      background-color: transparent;
+      border: none;
+      margin-top: 5px;
+      width: fit-content;
+
+      label {
+        color: $primary7;
+        cursor: pointer;
+        margin-bottom: 0;
+        text-decoration: underline;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+
+      &.kc-upload-illustration-status--failed {
+        color: $functionalError500;
+        font-weight: 700;
+      }
+
+      &.kc-upload-illustration-status--successful {
+        color: $functionalSuccess500;
+        font-weight: 700;
+      }
+
+      &.kc-upload-illustration-status--processed {
+        .spinner-border {
+          width: 1rem;
+          height: 1rem;
+          border: 0.25em solid $functionalLink500;
+          border-right-color: transparent;
+          margin-left: 5px;
+        }
+      }
+    }
+
+    input[type="file"] {
+      visibility: hidden;
+    }
+  }
+
+  .kc-text-html-editor {
+    .ck-editor {
+      .ck-editor__main {
+        .ck-content.ck-editor__editable {
+          ol, ul {
+            margin-left: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+  p.kc-notification-placeholders--empty {
+    margin-bottom: 0;
+  }
+
+  ul.kc-notification-placeholders {
+    margin-left: 2rem;
+
+    .kc-body1 {
+      font-size: 16px;
+    }
+
+    li {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .kc-record-item-new {
+        label {
+          font-weight: 400;
+        }
+
+        &:first-child {
+          margin-bottom: 5px;
+
+          .kc-record-item-new__value {
+            label {
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .kc-notification-preview {
+    position: sticky;
+    top: 80px;
+    z-index: 999;
+
+    .kc-notification-preview__options {
+      margin-bottom: 20px;
+
+      .kc-radio-button {
+        align-items: center;
+        margin-bottom: 5px;
+      }
+    }
+
+    .kc-notification-body-preview {
+      border: 1px solid $neutral5;
+      height: 750px;
+      padding: 10px;
+      width: fit-content;
+
+      &.kc-notification-body-preview--template {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        img.kc-notification-body-preview__illustration {
+          height: 200px;
+          object-fit: contain;
+          object-position: center;
+          width: 200px;
+        }
+
+        .kc-notification-body-preview__title {
+          font-size: 25px;
+          margin-top: 15px;
+        }
+      }
+
+      .kc-notification-body-preview__title {
+        margin-bottom: 10px;
+      }
+  
+      iframe {
+        border: none;
+        height: 640px;
+        width: 360px;
+      }
+    }
+  }
+
+  > button.kc-button--primary {
+    margin-top: 30px;
+  }
+}
