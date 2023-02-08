@@ -2723,6 +2723,12 @@ main.kc-memberservice-detail {
     main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right .kc-status-identity .kc-note p {
       color: #FF4D4F;
       margin-bottom: 0; }
+    main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right .kc-status-identity table.kc-record-table {
+      margin-top: 15px; }
+      main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right .kc-status-identity table.kc-record-table tr td.kc-record-table__label, main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right .kc-status-identity table.kc-record-table tr td.kc-record-table__value {
+        padding: 10px 0 15px; }
+      main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right .kc-status-identity table.kc-record-table tr:last-child td.kc-record-table__label, main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right .kc-status-identity table.kc-record-table tr:last-child td.kc-record-table__value {
+        padding: 10px 0 0; }
   main.kc-memberservice-detail section.kc-employment-data table.kc-record-table tbody tr td.kc-record-table__label {
     width: 260px; }
   main.kc-memberservice-detail section.kc-other-data .kc-other-data__left {
