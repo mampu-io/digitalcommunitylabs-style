@@ -45,3 +45,25 @@
     }
   }
 }
+
+.kc-list-notifications, .kc-notification-templates-list {
+  .kc-datatable {
+    .kc-table {
+      table {
+        tbody tr td {
+          font-size: 15px;
+
+          .kc-notification-preview {
+            p {
+              display: -webkit-box;
+              -webkit-line-clamp: 4;
+              -webkit-box-orient: vertical;  
+              overflow: hidden;
+              white-space: break-spaces;
+            }
+          }
+        }
+      }
+    }
+  }
+}

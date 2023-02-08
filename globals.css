@@ -548,6 +548,15 @@ select, .form-control, .custom-select {
   right: 36px;
   top: 0; }
 
+.kc-list-notifications .kc-datatable .kc-table table tbody tr td, .kc-notification-templates-list .kc-datatable .kc-table table tbody tr td {
+  font-size: 15px; }
+  .kc-list-notifications .kc-datatable .kc-table table tbody tr td .kc-notification-preview p, .kc-notification-templates-list .kc-datatable .kc-table table tbody tr td .kc-notification-preview p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: break-spaces; }
+
 /**
   Styling for general configuration page [BACKOFFICE]
 */
@@ -610,21 +619,6 @@ select, .form-control, .custom-select {
       bottom: 40px;
       position: fixed;
       right: 40px; }
-
-/**
-  Styling for list notification page [BACKOFFICE]
-*/
-.kc-list-notifications .kc-datatable .kc-table table tbody tr td {
-  font-size: 15px; }
-  .kc-list-notifications .kc-datatable .kc-table table tbody tr td .kc-notification-preview p {
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    white-space: break-spaces; }
-  .kc-list-notifications .kc-datatable .kc-table table tbody tr td .kc-rounded-button__tooltip {
-    right: 36px;
-    top: 0; }
 
 /**
   Styling for list users page [BACKOFFICE]
