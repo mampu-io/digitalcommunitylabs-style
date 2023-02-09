@@ -830,17 +830,22 @@ select, .form-control, .custom-select {
   .kc-notification-template-detail .kc-notification-preview .kc-notification-body-preview {
     border: 1px solid #D9D9D9;
     height: 750px;
-    padding: 10px;
+    padding: 20px 10px;
     width: fit-content; }
     .kc-notification-template-detail .kc-notification-preview .kc-notification-body-preview.kc-notification-body-preview--template {
       align-items: center;
       display: flex;
       flex-direction: column; }
-      .kc-notification-template-detail .kc-notification-preview .kc-notification-body-preview.kc-notification-body-preview--template img.kc-notification-body-preview__illustration {
+      .kc-notification-template-detail .kc-notification-preview .kc-notification-body-preview.kc-notification-body-preview--template img.kc-notification-body-preview__illustration,
+      .kc-notification-template-detail .kc-notification-preview .kc-notification-body-preview.kc-notification-body-preview--template div.kc-notification-body-preview__illustration--empty {
         height: 200px;
-        object-fit: contain;
-        object-position: center;
         width: 200px; }
+      .kc-notification-template-detail .kc-notification-preview .kc-notification-body-preview.kc-notification-body-preview--template img.kc-notification-body-preview__illustration {
+        object-fit: contain;
+        object-position: center; }
+      .kc-notification-template-detail .kc-notification-preview .kc-notification-body-preview.kc-notification-body-preview--template div.kc-notification-body-preview__illustration--empty {
+        border: 1px solid #BFBFBF;
+        flex: 1 0 200px; }
       .kc-notification-template-detail .kc-notification-preview .kc-notification-body-preview.kc-notification-body-preview--template .kc-notification-body-preview__title {
         font-size: 25px;
         margin-top: 15px; }
