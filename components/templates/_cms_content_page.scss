@@ -164,3 +164,14 @@
         }
     }
 }
+
+.alert-before-publish{
+    margin: 15px 0;
+    background: lighten($danger_color, 40%);
+    border: 1px solid $danger_color;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: $color_text;
+    font-family: $font_primary;
+}

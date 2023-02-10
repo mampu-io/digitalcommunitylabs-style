@@ -3231,3 +3231,13 @@ main.kc-memberservice-detail {
     padding: 5px;
     border: 1px solid #e0e0e0;
     border-radius: 3px; }
+
+.alert-before-publish {
+  margin: 15px 0;
+  background: #f8cecf;
+  border: 1px solid #db1f25;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #4c4c4c;
+  font-family: "Lato"; }
