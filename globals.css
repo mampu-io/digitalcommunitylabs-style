@@ -680,9 +680,13 @@ select, .form-control, .custom-select {
       .kc-media-management .content-body .kc-media-management__header > .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-upload .kc-upload-media button.kc-button--primary {
         margin-top: 0; }
     .kc-media-management .content-body .kc-media-management__header > .kc-inputfield {
-      margin-left: 20px; }
+      flex: 1;
+      margin-left: 20px;
+      width: auto; }
       .kc-media-management .content-body .kc-media-management__header > .kc-inputfield .kc-inputfield__box {
         height: 40px; }
+    .kc-media-management .content-body .kc-media-management__header > .kc-dropdown {
+      margin-left: 20px; }
   .kc-media-management .content-body .kc-media-modal-recent__back-btn {
     background-color: #F0F0F0;
     border: none;

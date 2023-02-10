@@ -55,11 +55,17 @@
       }
   
       > .kc-inputfield {
+        flex: 1;
         margin-left: 20px;
+        width: auto;
   
         .kc-inputfield__box {
           height: 40px;
         }
+      }
+
+      > .kc-dropdown {
+        margin-left: 20px;
       }
     }
 
