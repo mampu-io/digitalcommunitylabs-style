@@ -597,6 +597,9 @@ select, .form-control, .custom-select {
       min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px) - 70px - 20px - 60px);
       padding: 20px;
       width: 100%; }
+      .kc-general-configuration .content-body .container-fluid main p.kc-configuration-warning {
+        color: #FAAD14;
+        margin: 0 20px 20px; }
       .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content {
         margin: 0 20px; }
         .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-form-group__identity {
@@ -610,7 +613,8 @@ select, .form-control, .custom-select {
             .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor .ck-editor__main {
               height: fit-content; }
               .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor .ck-editor__main .ck-content.ck-editor__editable {
-                height: 500px; }
+                height: fit-content;
+                max-height: 500px; }
                 .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor .ck-editor__main .ck-content.ck-editor__editable ol {
                   margin-left: 1rem; }
       .kc-general-configuration .content-body .container-fluid main .kc-tutorial-banner {
