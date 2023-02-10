@@ -1508,43 +1508,43 @@ select, .form-control, .custom-select {
   Styling for GalleryCard atom component.
   The component is used on BACKOFFICE > Content and Feature Management
 */
-.kc-gallery-card.kc-gallery-card--selected .kc-gallery-card__content {
-  background-color: #F0F0F0;
-  border: 2px solid #0F77C0; }
-
-.kc-gallery-card nav.react-contextmenu {
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12), 0px 5px 5px -3px rgba(0, 0, 0, 0.2);
-  min-width: 180px;
-  z-index: 999; }
-  .kc-gallery-card nav.react-contextmenu .react-contextmenu-item {
-    cursor: pointer;
-    padding: 10px 20px; }
-    .kc-gallery-card nav.react-contextmenu .react-contextmenu-item:hover {
-      background-color: #D9D9D9; }
-
-.kc-gallery-card .kc-gallery-card__content {
-  border: 1px solid #BFBFBF;
-  border-radius: 4px;
-  cursor: default;
+.kc-gallery-card {
   display: flex;
-  max-width: 250px;
-  min-width: 200px;
-  padding: 10px 15px; }
-  .kc-gallery-card .kc-gallery-card__content:hover {
-    background-color: #F0F0F0; }
-  .kc-gallery-card .kc-gallery-card__content .kc-gallery-card__icon {
-    margin-right: 15px; }
-    .kc-gallery-card .kc-gallery-card__content .kc-gallery-card__icon i {
-      color: #595959;
-      font-size: 17px; }
-  .kc-gallery-card .kc-gallery-card__content .kc-gallery-card__name {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap; }
-    .kc-gallery-card .kc-gallery-card__content .kc-gallery-card__name span.kc-body2 {
-      color: #1F1F1F; }
+  height: 50px; }
+  .kc-gallery-card.kc-gallery-card--selected .kc-gallery-card__content {
+    background-color: #F0F0F0;
+    border: 2px solid #0F77C0; }
+  .kc-gallery-card .kc-gallery-card__content {
+    align-items: center;
+    border: 1px solid #BFBFBF;
+    border-radius: 4px;
+    cursor: default;
+    display: flex;
+    max-width: 250px;
+    min-width: 200px;
+    padding: 10px 15px; }
+    .kc-gallery-card .kc-gallery-card__content:hover {
+      background-color: #F0F0F0; }
+    .kc-gallery-card .kc-gallery-card__content .kc-gallery-card__icon {
+      margin-right: 15px; }
+      .kc-gallery-card .kc-gallery-card__content .kc-gallery-card__icon i {
+        color: #595959;
+        font-size: 17px; }
+    .kc-gallery-card .kc-gallery-card__content .kc-gallery-card__name {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+      .kc-gallery-card .kc-gallery-card__content .kc-gallery-card__name span.kc-body2 {
+        color: #1F1F1F; }
+    .kc-gallery-card .kc-gallery-card__content .kc-more-option {
+      position: relative; }
+      .kc-gallery-card .kc-gallery-card__content .kc-more-option > button {
+        background-color: transparent;
+        border: none;
+        width: 24px; }
+      .kc-gallery-card .kc-gallery-card__content .kc-more-option .kc-more-option-menu {
+        position: absolute;
+        right: 0; }
 
 .bg-loading-page {
   width: 100%;
@@ -2476,16 +2476,16 @@ button.kc-text-button {
   Styling for MediaShortcutMenu organism component.
   The component is used on BACKOFFICE > Content and Feature Management
 */
-nav.kc-media-shortcut-menu {
+nav.kc-media-shortcut-menu, nav.kc-more-option-menu {
   background-color: #FFFFFF;
   border-radius: 4px;
   box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12), 0px 5px 5px -3px rgba(0, 0, 0, 0.2);
   min-width: 180px;
   z-index: 999; }
-  nav.kc-media-shortcut-menu .kc-media-shortcut-menu__item {
+  nav.kc-media-shortcut-menu .kc-media-shortcut-menu__item, nav.kc-media-shortcut-menu .kc-more-option-menu__item, nav.kc-more-option-menu .kc-media-shortcut-menu__item, nav.kc-more-option-menu .kc-more-option-menu__item {
     cursor: pointer;
     padding: 10px 20px; }
-    nav.kc-media-shortcut-menu .kc-media-shortcut-menu__item:hover {
+    nav.kc-media-shortcut-menu .kc-media-shortcut-menu__item:hover, nav.kc-media-shortcut-menu .kc-more-option-menu__item:hover, nav.kc-more-option-menu .kc-media-shortcut-menu__item:hover, nav.kc-more-option-menu .kc-more-option-menu__item:hover {
       background-color: #D9D9D9; }
 
 /**
