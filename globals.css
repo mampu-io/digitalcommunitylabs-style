@@ -2901,6 +2901,12 @@ main.kc-memberservice-detail {
 .kc-support-configuration .kc-tutorial-banner {
   margin-bottom: 20px; }
 
+.kc-support-configuration .kc-general-configuration__content .kc-form-group .kc-multiple-inputfield {
+  flex: 1;
+  max-width: 500px; }
+  .kc-support-configuration .kc-general-configuration__content .kc-form-group .kc-multiple-inputfield .kc-multiple-inputfield__child .kc-inputfield .kc-inputfield__box button i:hover {
+    color: #FF4D4F; }
+
 .kc-support-configuration .kc-general-configuration__content .kc-form-group .kc-markdown-editor {
   min-height: 200px;
   width: 500px; }
@@ -2925,8 +2931,6 @@ main.kc-memberservice-detail {
       .kc-support-configuration .kc-general-configuration__content .kc-form-group > ul li .kc-form-group .kc-form-group__identity .kc-form-group__label label {
         font-size: 16px;
         font-weight: 400; }
-      .kc-support-configuration .kc-general-configuration__content .kc-form-group > ul li .kc-form-group .kc-multiple-inputfield .kc-multiple-inputfield__child .kc-inputfield .kc-inputfield__box button i:hover {
-        color: #FF4D4F; }
     .kc-support-configuration .kc-general-configuration__content .kc-form-group > ul li button.kc-text-button {
       display: flex;
       height: fit-content; }
