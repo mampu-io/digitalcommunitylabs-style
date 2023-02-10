@@ -1,6 +1,6 @@
 /**
   Styling for MediaCard atom component.
-  The component is used on FUNDING > Content and Feature Management
+  The component is used on BACKOFFICE > Content and Feature Management
 */
 
 .kc-media-card {
@@ -43,6 +43,7 @@
     border-radius: 0 0 6px 6px;
     display: flex;
     height: 100%;
+    justify-content: space-between;
     padding: 0 10px;
 
     .kc-media-card__icon {
@@ -55,6 +56,21 @@
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
+    }
+
+    .kc-media-card__action-button {
+      position: relative;
+
+      > button {
+        background-color: transparent;
+        border: none;
+        width: 24px;
+      }
+
+      .kc-media-shortcut-menu {
+        position: absolute;
+        right: 0;
+      }
     }
   }
 }

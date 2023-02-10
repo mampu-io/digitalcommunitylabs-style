@@ -1,37 +1,65 @@
 /**
   Styling for GalleryCard atom component.
-  The component is used on FUNDING > Content and Feature Management
+  The component is used on BACKOFFICE > Content and Feature Management
 */
 
 .kc-gallery-card {
-  border: 1px solid $neutral6;
-  border-radius: 4px;
-  cursor: default;
   display: flex;
-  max-width: 250px;
-  min-width: 200px;
-  padding: 10px 15px;
+  height: 50px;
 
-  &:hover {
-    background-color: $neutral4;
-  }
-
-  .kc-gallery-card__icon {
-    margin-right: 15px;
-
-    i {
-      color: $neutral8;
-      font-size: 17px;
+  &.kc-gallery-card--selected {
+    .kc-gallery-card__content {
+      background-color: $neutral4;
+      border: 2px solid $primary7;
     }
   }
 
-  .kc-gallery-card__name {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  .kc-gallery-card__content {
+    align-items: center;
+    border: 1px solid $neutral6;
+    border-radius: 4px;
+    cursor: default;
+    display: flex;
+    max-width: 250px;
+    min-width: 200px;
+    padding: 10px 15px;
 
-    span.kc-body2 {
-      color: $neutral11;
+    &:hover {
+      background-color: $neutral4;
+    }
+
+    .kc-gallery-card__icon {
+      margin-right: 15px;
+
+      i {
+        color: $neutral8;
+        font-size: 17px;
+      }
+    }
+
+    .kc-gallery-card__name {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      span.kc-body2 {
+        color: $neutral11;
+      }
+    }
+
+    .kc-more-option {
+      position: relative;
+
+      > button {
+        background-color: transparent;
+        border: none;
+        width: 24px;
+      }
+
+      .kc-more-option-menu {
+        position: absolute;
+        right: 0;
+      }
     }
   }
 }

@@ -548,20 +548,81 @@ select, .form-control, .custom-select {
   right: 36px;
   top: 0; }
 
-/**
-  Styling for list notification page [BACKOFFICE]
-*/
-.kc-list-notifications .kc-datatable .kc-table table tbody tr td {
+.kc-list-notifications .kc-datatable .kc-table table tbody tr td, .kc-notification-templates-list .kc-datatable .kc-table table tbody tr td {
   font-size: 15px; }
-  .kc-list-notifications .kc-datatable .kc-table table tbody tr td .kc-notification-preview p {
+  .kc-list-notifications .kc-datatable .kc-table table tbody tr td .kc-notification-preview p, .kc-notification-templates-list .kc-datatable .kc-table table tbody tr td .kc-notification-preview p {
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
     white-space: break-spaces; }
-  .kc-list-notifications .kc-datatable .kc-table table tbody tr td .kc-rounded-button__tooltip {
-    right: 36px;
-    top: 0; }
+
+/**
+  Styling for general configuration page [BACKOFFICE]
+*/
+.kc-general-configuration .content-body {
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0; }
+  .kc-general-configuration .content-body .container-fluid {
+    display: flex;
+    flex-direction: column; }
+    .kc-general-configuration .content-body .container-fluid nav {
+      align-items: flex-end;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px; }
+      .kc-general-configuration .content-body .container-fluid nav .kc-navigation {
+        display: flex;
+        margin-right: 60px;
+        overflow: auto; }
+        .kc-general-configuration .content-body .container-fluid nav .kc-navigation::-webkit-scrollbar, .kc-general-configuration .content-body .container-fluid nav .kc-navigation::-webkit-scrollbar-thumb, .kc-general-configuration .content-body .container-fluid nav .kc-navigation::-webkit-scrollbar-corner {
+          border-right-style: inset;
+          border-color: inherit;
+          border-right-width: calc(100vw + 100vh); }
+        .kc-general-configuration .content-body .container-fluid nav .kc-navigation::-webkit-scrollbar {
+          width: 1px;
+          height: 1px; }
+        .kc-general-configuration .content-body .container-fluid nav .kc-navigation button.kc-navigation-item {
+          letter-spacing: 1px;
+          text-transform: none;
+          white-space: nowrap; }
+          .kc-general-configuration .content-body .container-fluid nav .kc-navigation button.kc-navigation-item.kc-navigation-item--active {
+            font-weight: 700; }
+    .kc-general-configuration .content-body .container-fluid main {
+      background-color: #FFFFFF;
+      border-radius: 2px;
+      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+      min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px) - 70px - 20px - 60px);
+      padding: 20px;
+      width: 100%; }
+      .kc-general-configuration .content-body .container-fluid main p.kc-configuration-warning {
+        color: #FAAD14;
+        margin: 0 20px 20px; }
+      .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content {
+        margin: 0 20px; }
+        .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-form-group__identity {
+          width: 200px; }
+        .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-input-tag, .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-textarea {
+          max-width: 500px; }
+        .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor {
+          max-width: 750px; }
+          .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor {
+            height: fit-content; }
+            .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor .ck-editor__main {
+              height: fit-content; }
+              .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor .ck-editor__main .ck-content.ck-editor__editable {
+                height: fit-content;
+                max-height: 500px; }
+                .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor .ck-editor__main .ck-content.ck-editor__editable ol {
+                  margin-left: 1rem; }
+      .kc-general-configuration .content-body .container-fluid main .kc-tutorial-banner {
+        margin-bottom: 20px; }
+    .kc-general-configuration .content-body .container-fluid .kc-floating-action-btn {
+      bottom: 40px;
+      position: fixed;
+      right: 40px; }
 
 /**
   Styling for list users page [BACKOFFICE]
@@ -603,6 +664,64 @@ select, .form-control, .custom-select {
       margin-bottom: 5px; }
 
 /**
+  Styling for media management page [BACKOFFICE]
+*/
+.kc-media-management .content-body {
+  padding: 30px 20px; }
+  .kc-media-management .content-body .kc-modal .kc-modal__container .kc-modal__main .kc-modal__header .kc-modal__title span.kc-headline5 {
+    font-size: 21px; }
+  .kc-media-management .content-body .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
+    padding: 1.5rem 1.5rem 2.5rem; }
+    .kc-media-management .content-body .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group {
+      margin-bottom: 0; }
+    .kc-media-management .content-body .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content button.kc-button--primary {
+      margin-top: 20px; }
+  .kc-media-management .content-body .kc-media-management__header {
+    display: flex;
+    margin-bottom: 30px; }
+    .kc-media-management .content-body .kc-media-management__header > .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-upload .kc-upload-media {
+      margin-top: 20px; }
+      .kc-media-management .content-body .kc-media-management__header > .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-upload .kc-upload-media button.kc-button--primary {
+        margin-top: 0; }
+    .kc-media-management .content-body .kc-media-management__header > .kc-inputfield {
+      flex: 1;
+      margin-left: 20px;
+      width: auto; }
+      .kc-media-management .content-body .kc-media-management__header > .kc-inputfield .kc-inputfield__box {
+        height: 40px; }
+    .kc-media-management .content-body .kc-media-management__header > .kc-dropdown {
+      margin-left: 20px; }
+  .kc-media-management .content-body .kc-media-modal-recent__back-btn {
+    background-color: #F0F0F0;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    width: fit-content; }
+    .kc-media-management .content-body .kc-media-modal-recent__back-btn:hover {
+      background-color: #D9D9D9; }
+    .kc-media-management .content-body .kc-media-modal-recent__back-btn i {
+      font-size: 14px;
+      margin-right: 10px; }
+  .kc-media-management .content-body .kc-media-management__gallery-list {
+    margin-bottom: 30px; }
+    .kc-media-management .content-body .kc-media-management__gallery-list .kc-gallery-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 15px; }
+      .kc-media-management .content-body .kc-media-management__gallery-list .kc-gallery-list .kc-gallery-card .kc-gallery-card__content {
+        width: 250px; }
+  .kc-media-management .content-body .kc-media-management__media-list .kc-media-list {
+    margin-top: 15px; }
+    .kc-media-management .content-body .kc-media-management__media-list .kc-media-list .kc-media-list__entries {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative; }
+      .kc-media-management .content-body .kc-media-management__media-list .kc-media-list .kc-media-list__entries .kc-media-card {
+        cursor: default;
+        width: 200px; }
+
+/**
   Styling for setting notification category page [BACKOFFICE]
 */
 .kc-notification-setting .kc-datatable .kc-datatable__header {
@@ -623,6 +742,130 @@ select, .form-control, .custom-select {
     margin-bottom: 0; }
   .kc-notification-setting .kc-modal .kc-modal__container .kc-form-group .kc-form-group__label {
     width: 150px; }
+
+/**
+  Styling for notification template detail page [BACKOFFICE]
+*/
+.kc-notification-template-detail .col-xl-6 {
+  max-width: 500px; }
+
+.kc-notification-template-detail .kc-form-group {
+  margin-bottom: 25px; }
+  .kc-notification-template-detail .kc-form-group .kc-form-group__label label {
+    margin-bottom: 0; }
+  .kc-notification-template-detail .kc-form-group:last-child {
+    margin-bottom: 0; }
+
+.kc-notification-template-detail .kc-notification-description .kc-form-group.kc-form-group--vertical {
+  margin-bottom: 25px; }
+  .kc-notification-template-detail .kc-notification-description .kc-form-group.kc-form-group--vertical .kc-form-group__label {
+    margin-bottom: 0; }
+  .kc-notification-template-detail .kc-notification-description .kc-form-group.kc-form-group--vertical .kc-textarea .kc-textarea__title span.kc-caption {
+    color: #8C8C8C;
+    font-size: 13px; }
+  .kc-notification-template-detail .kc-notification-description .kc-form-group.kc-form-group--vertical .kc-textarea .kc-textarea__subtitle {
+    margin-top: 0; }
+    .kc-notification-template-detail .kc-notification-description .kc-form-group.kc-form-group--vertical .kc-textarea .kc-textarea__subtitle span.kc-overline {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px; }
+
+.kc-notification-template-detail .kc-notification-illustration img {
+  height: 100px;
+  object-fit: contain;
+  object-position: center;
+  width: 100px; }
+
+.kc-notification-template-detail .kc-notification-illustration button.kc-upload-illustration-btn {
+  background-color: transparent;
+  border: none;
+  margin-top: 5px;
+  width: fit-content; }
+  .kc-notification-template-detail .kc-notification-illustration button.kc-upload-illustration-btn label {
+    color: #0F77C0;
+    cursor: pointer;
+    margin-bottom: 0;
+    text-decoration: underline; }
+
+.kc-notification-template-detail .kc-notification-illustration p {
+  margin-bottom: 0; }
+  .kc-notification-template-detail .kc-notification-illustration p.kc-upload-illustration-status--failed {
+    color: #FF4D4F;
+    font-weight: 700; }
+  .kc-notification-template-detail .kc-notification-illustration p.kc-upload-illustration-status--successful {
+    color: #52C41A;
+    font-weight: 700; }
+  .kc-notification-template-detail .kc-notification-illustration p.kc-upload-illustration-status--processed .spinner-border {
+    width: 1rem;
+    height: 1rem;
+    border: 0.25em solid #1890FF;
+    border-right-color: transparent;
+    margin-left: 5px; }
+
+.kc-notification-template-detail .kc-notification-illustration input[type="file"] {
+  visibility: hidden; }
+
+.kc-notification-template-detail .kc-text-html-editor .ck-editor .ck-editor__main .ck-content.ck-editor__editable ol, .kc-notification-template-detail .kc-text-html-editor .ck-editor .ck-editor__main .ck-content.ck-editor__editable ul {
+  margin-left: 2rem; }
+
+.kc-notification-template-detail p.kc-notification-placeholders--empty {
+  margin-bottom: 0; }
+
+.kc-notification-template-detail ul.kc-notification-placeholders {
+  margin-left: 2rem; }
+  .kc-notification-template-detail ul.kc-notification-placeholders .kc-body1 {
+    font-size: 16px; }
+  .kc-notification-template-detail ul.kc-notification-placeholders li {
+    margin-bottom: 10px; }
+    .kc-notification-template-detail ul.kc-notification-placeholders li:last-child {
+      margin-bottom: 0; }
+    .kc-notification-template-detail ul.kc-notification-placeholders li .kc-record-item-new label {
+      font-weight: 400; }
+    .kc-notification-template-detail ul.kc-notification-placeholders li .kc-record-item-new:first-child {
+      margin-bottom: 5px; }
+      .kc-notification-template-detail ul.kc-notification-placeholders li .kc-record-item-new:first-child .kc-record-item-new__value label {
+        font-weight: 700; }
+
+.kc-notification-template-detail .kc-notification-preview {
+  position: sticky;
+  top: 80px;
+  z-index: 999; }
+  .kc-notification-template-detail .kc-notification-preview .kc-notification-preview__options {
+    margin-bottom: 20px; }
+    .kc-notification-template-detail .kc-notification-preview .kc-notification-preview__options .kc-radio-button {
+      align-items: center;
+      margin-bottom: 5px; }
+  .kc-notification-template-detail .kc-notification-preview .kc-notification-body-preview {
+    border: 1px solid #D9D9D9;
+    height: 750px;
+    padding: 20px 10px;
+    width: fit-content; }
+    .kc-notification-template-detail .kc-notification-preview .kc-notification-body-preview.kc-notification-body-preview--template {
+      align-items: center;
+      display: flex;
+      flex-direction: column; }
+      .kc-notification-template-detail .kc-notification-preview .kc-notification-body-preview.kc-notification-body-preview--template img.kc-notification-body-preview__illustration,
+      .kc-notification-template-detail .kc-notification-preview .kc-notification-body-preview.kc-notification-body-preview--template div.kc-notification-body-preview__illustration--empty {
+        height: 200px;
+        width: 200px; }
+      .kc-notification-template-detail .kc-notification-preview .kc-notification-body-preview.kc-notification-body-preview--template img.kc-notification-body-preview__illustration {
+        object-fit: contain;
+        object-position: center; }
+      .kc-notification-template-detail .kc-notification-preview .kc-notification-body-preview.kc-notification-body-preview--template div.kc-notification-body-preview__illustration--empty {
+        border: 1px solid #BFBFBF;
+        flex: 1 0 200px; }
+      .kc-notification-template-detail .kc-notification-preview .kc-notification-body-preview.kc-notification-body-preview--template .kc-notification-body-preview__title {
+        font-size: 25px;
+        margin-top: 15px; }
+    .kc-notification-template-detail .kc-notification-preview .kc-notification-body-preview .kc-notification-body-preview__title {
+      margin-bottom: 10px; }
+    .kc-notification-template-detail .kc-notification-preview .kc-notification-body-preview iframe {
+      border: none;
+      height: 640px;
+      width: 360px; }
+
+.kc-notification-template-detail > button.kc-button--primary {
+  margin-top: 30px; }
 
 /**
   Styling for active member detail page [MEMBERSERVICE]
@@ -794,6 +1037,13 @@ select, .form-control, .custom-select {
   .kc-member-proposal-detail .kc-reject-proposal-modal .kc-modal .kc-modal__container .kc-modal__content .kc-textarea, .kc-member-proposal-detail .kc-reject-proposal-modal .kc-modal .kc-modal__container .kc-modal__content .kc-button {
     margin-top: 15px; }
 
+.kc-member-proposal-detail .kc-approve-proposal-modal .kc-modal .kc-modal__container {
+  width: 500px; }
+  .kc-member-proposal-detail .kc-approve-proposal-modal .kc-modal .kc-modal__container .kc-modal__content .alert.alert-warning p.kc-body2 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0; }
+
 .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
   height: 700px;
   padding-top: 1.5rem; }
@@ -958,69 +1208,6 @@ select, .form-control, .custom-select {
       width: 30%; }
       .kc-funding-detail-member .content-body .container-fluid aside h2 {
         margin-bottom: 40px; }
-
-/**
-  Styling for general configuration page [FUNDING]
-*/
-.kc-general-configuration .content-body {
-  background-color: transparent;
-  border-radius: 0;
-  box-shadow: none;
-  padding: 0; }
-  .kc-general-configuration .content-body .container-fluid {
-    display: flex;
-    flex-direction: column; }
-    .kc-general-configuration .content-body .container-fluid nav {
-      align-items: flex-end;
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 10px; }
-      .kc-general-configuration .content-body .container-fluid nav .kc-navigation {
-        display: flex;
-        margin-right: 60px;
-        overflow: auto; }
-        .kc-general-configuration .content-body .container-fluid nav .kc-navigation::-webkit-scrollbar, .kc-general-configuration .content-body .container-fluid nav .kc-navigation::-webkit-scrollbar-thumb, .kc-general-configuration .content-body .container-fluid nav .kc-navigation::-webkit-scrollbar-corner {
-          border-right-style: inset;
-          border-color: inherit;
-          border-right-width: calc(100vw + 100vh); }
-        .kc-general-configuration .content-body .container-fluid nav .kc-navigation::-webkit-scrollbar {
-          width: 1px;
-          height: 1px; }
-        .kc-general-configuration .content-body .container-fluid nav .kc-navigation button.kc-navigation-item {
-          letter-spacing: 1px;
-          text-transform: none;
-          white-space: nowrap; }
-          .kc-general-configuration .content-body .container-fluid nav .kc-navigation button.kc-navigation-item.kc-navigation-item--active {
-            font-weight: 700; }
-    .kc-general-configuration .content-body .container-fluid main {
-      background-color: #FFFFFF;
-      border-radius: 2px;
-      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
-      min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px) - 70px - 20px - 60px);
-      padding: 20px;
-      width: 100%; }
-      .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content {
-        margin: 0 20px; }
-        .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-form-group__identity {
-          width: 200px; }
-        .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-input-tag, .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-textarea {
-          max-width: 500px; }
-        .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor {
-          max-width: 750px; }
-          .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor {
-            height: fit-content; }
-            .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor .ck-editor__main {
-              height: fit-content; }
-              .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor .ck-editor__main .ck-content.ck-editor__editable {
-                height: 500px; }
-                .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor .ck-editor__main .ck-content.ck-editor__editable ol {
-                  margin-left: 1rem; }
-      .kc-general-configuration .content-body .container-fluid main .kc-tutorial-banner {
-        margin-bottom: 20px; }
-    .kc-general-configuration .content-body .container-fluid .kc-floating-action-btn {
-      bottom: 40px;
-      position: fixed;
-      right: 40px; }
 
 /**
   Styling for setting deposit page and setting withdraw page [FUNDING]
@@ -1289,7 +1476,7 @@ select, .form-control, .custom-select {
 
 /**
   Styling for AddOnboardingButton atom component.
-  The component is used on FUNDING > Content and Feature Management
+  The component is used on BACKOFFICE > Content and Feature Management
 */
 .kc-add-onboarding-button {
   align-items: center;
@@ -1301,7 +1488,7 @@ select, .form-control, .custom-select {
   height: 516px;
   justify-content: center;
   padding: 32px 16px;
-  width: 250px; }
+  width: 300px; }
   .kc-add-onboarding-button i {
     font-size: 100px;
     margin-bottom: 16px; }
@@ -1327,29 +1514,45 @@ select, .form-control, .custom-select {
 
 /**
   Styling for GalleryCard atom component.
-  The component is used on FUNDING > Content and Feature Management
+  The component is used on BACKOFFICE > Content and Feature Management
 */
 .kc-gallery-card {
-  border: 1px solid #BFBFBF;
-  border-radius: 4px;
-  cursor: default;
   display: flex;
-  max-width: 250px;
-  min-width: 200px;
-  padding: 10px 15px; }
-  .kc-gallery-card:hover {
-    background-color: #F0F0F0; }
-  .kc-gallery-card .kc-gallery-card__icon {
-    margin-right: 15px; }
-    .kc-gallery-card .kc-gallery-card__icon i {
-      color: #595959;
-      font-size: 17px; }
-  .kc-gallery-card .kc-gallery-card__name {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap; }
-    .kc-gallery-card .kc-gallery-card__name span.kc-body2 {
-      color: #1F1F1F; }
+  height: 50px; }
+  .kc-gallery-card.kc-gallery-card--selected .kc-gallery-card__content {
+    background-color: #F0F0F0;
+    border: 2px solid #0F77C0; }
+  .kc-gallery-card .kc-gallery-card__content {
+    align-items: center;
+    border: 1px solid #BFBFBF;
+    border-radius: 4px;
+    cursor: default;
+    display: flex;
+    max-width: 250px;
+    min-width: 200px;
+    padding: 10px 15px; }
+    .kc-gallery-card .kc-gallery-card__content:hover {
+      background-color: #F0F0F0; }
+    .kc-gallery-card .kc-gallery-card__content .kc-gallery-card__icon {
+      margin-right: 15px; }
+      .kc-gallery-card .kc-gallery-card__content .kc-gallery-card__icon i {
+        color: #595959;
+        font-size: 17px; }
+    .kc-gallery-card .kc-gallery-card__content .kc-gallery-card__name {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+      .kc-gallery-card .kc-gallery-card__content .kc-gallery-card__name span.kc-body2 {
+        color: #1F1F1F; }
+    .kc-gallery-card .kc-gallery-card__content .kc-more-option {
+      position: relative; }
+      .kc-gallery-card .kc-gallery-card__content .kc-more-option > button {
+        background-color: transparent;
+        border: none;
+        width: 24px; }
+      .kc-gallery-card .kc-gallery-card__content .kc-more-option .kc-more-option-menu {
+        position: absolute;
+        right: 0; }
 
 .bg-loading-page {
   width: 100%;
@@ -1367,7 +1570,7 @@ select, .form-control, .custom-select {
 
 /**
   Styling for MediaCard atom component.
-  The component is used on FUNDING > Content and Feature Management
+  The component is used on BACKOFFICE > Content and Feature Management
 */
 .kc-media-card {
   border: 1px solid #D9D9D9;
@@ -1396,6 +1599,7 @@ select, .form-control, .custom-select {
     border-radius: 0 0 6px 6px;
     display: flex;
     height: 100%;
+    justify-content: space-between;
     padding: 0 10px; }
     .kc-media-card .kc-media-card__overview .kc-media-card__icon i.kc-media-card__media-type {
       margin-right: 10px; }
@@ -1403,6 +1607,15 @@ select, .form-control, .custom-select {
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap; }
+    .kc-media-card .kc-media-card__overview .kc-media-card__action-button {
+      position: relative; }
+      .kc-media-card .kc-media-card__overview .kc-media-card__action-button > button {
+        background-color: transparent;
+        border: none;
+        width: 24px; }
+      .kc-media-card .kc-media-card__overview .kc-media-card__action-button .kc-media-shortcut-menu {
+        position: absolute;
+        right: 0; }
 
 .kc-notification-tag {
   align-items: center;
@@ -1426,22 +1639,21 @@ select, .form-control, .custom-select {
 
 /**
   Styling for OnboardingImage atom component.
-  The component is used on FUNDING > Content and Feature Management
+  The component is used on BACKOFFICE > Content and Feature Management
 */
 .kc-onboarding-image {
-  align-items: center;
   display: flex;
   flex-direction: column;
-  height: 200px;
-  width: 200px; }
+  height: 200px; }
   .kc-onboarding-image .kc-onboarding-image__canvas {
     align-items: center;
-    border: 1px solid #000000;
+    border: 1px solid #D9D9D9;
     cursor: pointer;
     display: flex;
-    height: 160px;
+    height: 170px;
     justify-content: center;
-    width: 160px; }
+    padding: 10px;
+    width: 170px; }
     .kc-onboarding-image .kc-onboarding-image__canvas img {
       height: 100%;
       object-fit: contain;
@@ -1451,7 +1663,7 @@ select, .form-control, .custom-select {
     align-items: center;
     display: flex;
     flex: 1 1 auto;
-    font-size: 14px; }
+    font-size: 15px; }
 
 .kc-push-notification-preview {
   background-image: url("./device-dummy.svg");
@@ -1574,7 +1786,7 @@ select, .form-control, .custom-select {
 
 /**
   Styling for TextButton atom component.
-  The component is used on FUNDING > Content and Feature Management
+  The component is used on BACKOFFICE > Content and Feature Management
 */
 button.kc-text-button {
   background-color: transparent;
@@ -1777,7 +1989,7 @@ button.kc-text-button {
 
 /**
   Styling for GalleryList molecule component.
-  The component is used on FUNDING > Content and Feature Management
+  The component is used on BACKOFFICE > Content and Feature Management
 */
 .kc-gallery-list {
   column-gap: 10px;
@@ -1844,7 +2056,7 @@ button.kc-text-button {
 
 /**
   Styling for MediaList molecule component.
-  The component is used on FUNDING > Content and Feature Management
+  The component is used on BACKOFFICE > Content and Feature Management
 */
 .kc-media-list {
   height: fit-content;
@@ -1909,7 +2121,7 @@ button.kc-text-button {
 
 /**
   Styling for MultipleInputField molecule component.
-  The component is used on FUNDING > Content and Feature Management
+  The component is used on BACKOFFICE > Content and Feature Management
 */
 .kc-multiple-inputfield {
   display: flex;
@@ -1925,7 +2137,7 @@ button.kc-text-button {
 
 /**
   Styling for Navigation molecule component.
-  The component is used on FUNDING > Content and Feature Management
+  The component is used on BACKOFFICE > Content and Feature Management
 */
 .kc-navigation {
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
@@ -2072,7 +2284,7 @@ button.kc-text-button {
 
 /**
   Styling for TutorialBanner molecule component.
-  The component is used on FUNDING > Content and Feature Management
+  The component is used on BACKOFFICE > Content and Feature Management
 */
 .kc-tutorial-banner {
   display: flex;
@@ -2136,7 +2348,7 @@ button.kc-text-button {
 
 /**
   Styling for UploadMedia molecule component.
-  The component is used on FUNDING > Content and Feature Management
+  The component is used on BACKOFFICE > Content and Feature Management
 */
 .kc-upload-media {
   position: relative; }
@@ -2153,6 +2365,34 @@ button.kc-text-button {
   .kc-upload-media span.kc-upload-media__fail-msg {
     color: #FF4D4F; }
 
+.kc-configuration-card {
+  background-color: #EBEBEB;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  padding: 16px;
+  height: 516px; }
+  .kc-configuration-card .kc-configuration-card__content {
+    background-color: #FFFFFF;
+    flex: 1; }
+  .kc-configuration-card .kc-configuration-card__action-buttons {
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    margin-top: 8px; }
+    .kc-configuration-card .kc-configuration-card__action-buttons button {
+      background-color: #FFFFFF;
+      border: none;
+      border-radius: 4px;
+      height: 40px;
+      padding: 8px;
+      width: 40px; }
+      .kc-configuration-card .kc-configuration-card__action-buttons button:hover {
+        background-color: #D9D9D9; }
+      .kc-configuration-card .kc-configuration-card__action-buttons button:disabled:hover {
+        background-color: #FFFFFF; }
+
 .kc-datatable .kc-status-card {
   width: fit-content;
   white-space: nowrap; }
@@ -2164,7 +2404,7 @@ button.kc-text-button {
 
 /**
   Styling for MediaModal organism component.
-  The component is used on FUNDING > Content and Feature Management
+  The component is used on BACKOFFICE > Content and Feature Management
 */
 .kc-media-modal .kc-modal .kc-modal__container {
   height: 800px;
@@ -2241,28 +2481,54 @@ button.kc-text-button {
             line-height: 24px; }
 
 /**
+  Styling for MediaShortcutMenu organism component.
+  The component is used on BACKOFFICE > Content and Feature Management
+*/
+nav.kc-media-shortcut-menu, nav.kc-more-option-menu {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12), 0px 5px 5px -3px rgba(0, 0, 0, 0.2);
+  min-width: 180px;
+  z-index: 999; }
+  nav.kc-media-shortcut-menu .kc-media-shortcut-menu__item, nav.kc-media-shortcut-menu .kc-more-option-menu__item, nav.kc-more-option-menu .kc-media-shortcut-menu__item, nav.kc-more-option-menu .kc-more-option-menu__item {
+    cursor: pointer;
+    padding: 10px 20px; }
+    nav.kc-media-shortcut-menu .kc-media-shortcut-menu__item:hover, nav.kc-media-shortcut-menu .kc-more-option-menu__item:hover, nav.kc-more-option-menu .kc-media-shortcut-menu__item:hover, nav.kc-more-option-menu .kc-more-option-menu__item:hover {
+      background-color: #D9D9D9; }
+
+/**
   Styling for OnboardingCard organism component.
-  The component is used on FUNDING > Content and Feature Management
+  The component is used on BACKOFFICE > Content and Feature Management
 */
 .kc-onboarding-card {
   align-items: center;
-  border: 1px solid #000000;
-  border-radius: 4px;
+  background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
-  height: 516px;
+  justify-content: center;
   padding: 32px 16px;
-  position: relative;
-  width: 250px; }
-  .kc-onboarding-card .kc-rounded-button {
-    position: absolute;
-    right: 4px;
-    top: 4px; }
-  .kc-onboarding-card .kc-onboarding-image {
-    margin-bottom: 16px; }
-  .kc-onboarding-card .kc-onboarding-card__title, .kc-onboarding-card .kc-onboarding-card__body {
+  width: 100%; }
+  .kc-onboarding-card p.kc-onboarding-card__title, .kc-onboarding-card p.kc-onboarding-card__body {
+    margin-bottom: 0;
+    margin-top: 16px;
+    text-align: center;
     width: 100%; }
-  .kc-onboarding-card .kc-onboarding-card__body .kc-form-group {
+  .kc-onboarding-card img.kc-onboarding-card__image {
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+    width: 200px; }
+
+.kc-onboarding-modal .kc-modal__main .kc-modal__header .kc-modal__title span.kc-headline5 {
+  font-size: 21px; }
+
+.kc-onboarding-modal .kc-modal__main .kc-modal__content .kc-form-group {
+  margin-bottom: 25px; }
+  .kc-onboarding-modal .kc-modal__main .kc-modal__content .kc-form-group:last-child {
+    margin-bottom: 0; }
+  .kc-onboarding-modal .kc-modal__main .kc-modal__content .kc-form-group .kc-form-group__identity .kc-form-group__label {
+    margin-bottom: 5px; }
+  .kc-onboarding-modal .kc-modal__main .kc-modal__content .kc-form-group p {
     margin-bottom: 0; }
 
 /**
@@ -2508,6 +2774,12 @@ main.kc-memberservice-detail {
     main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right .kc-status-identity .kc-note p {
       color: #FF4D4F;
       margin-bottom: 0; }
+    main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right .kc-status-identity table.kc-record-table {
+      margin-top: 15px; }
+      main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right .kc-status-identity table.kc-record-table tr td.kc-record-table__label, main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right .kc-status-identity table.kc-record-table tr td.kc-record-table__value {
+        padding: 10px 0 15px; }
+      main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right .kc-status-identity table.kc-record-table tr:last-child td.kc-record-table__label, main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right .kc-status-identity table.kc-record-table tr:last-child td.kc-record-table__value {
+        padding: 10px 0 0; }
   main.kc-memberservice-detail section.kc-employment-data table.kc-record-table tbody tr td.kc-record-table__label {
     width: 260px; }
   main.kc-memberservice-detail section.kc-other-data .kc-other-data__left {
@@ -2591,7 +2863,7 @@ main.kc-memberservice-detail {
       width: 360px; }
 
 /**
-  Styling for onboarding configuration template [FUNDING]
+  Styling for onboarding configuration template [BACKOFFICE]
   The template is used on general configuration page
 */
 .kc-onboarding-configuration .kc-tutorial-banner {
@@ -2606,7 +2878,7 @@ main.kc-memberservice-detail {
 .kc-onboarding-configuration .kc-onboarding-card-list {
   display: -webkit-inline-box;
   margin-right: 20px;
-  max-width: calc(100% - 250px - 20px);
+  max-width: calc(100% - 300px - 20px);
   overflow: auto;
   border-color: transparent;
   transition: border-color .25s linear;
@@ -2622,17 +2894,26 @@ main.kc-memberservice-detail {
     height: 6px; }
   .kc-onboarding-configuration .kc-onboarding-card-list.kc-onboarding-card-list--stretch {
     max-width: 100%; }
-  .kc-onboarding-configuration .kc-onboarding-card-list .kc-onboarding-card {
-    margin-right: 20px; }
-    .kc-onboarding-configuration .kc-onboarding-card-list .kc-onboarding-card:last-child {
+  .kc-onboarding-configuration .kc-onboarding-card-list .kc-configuration-card {
+    margin-right: 20px;
+    width: 300px; }
+    .kc-onboarding-configuration .kc-onboarding-card-list .kc-configuration-card:last-child {
       margin-right: 0; }
+    .kc-onboarding-configuration .kc-onboarding-card-list .kc-configuration-card .kc-configuration-card__content .kc-onboarding-card {
+      height: 100%; }
 
 /**
-  Styling for support configuration template [FUNDING]
+  Styling for support configuration template [BACKOFFICE]
   The template is used on general configuration page
 */
 .kc-support-configuration .kc-tutorial-banner {
   margin-bottom: 20px; }
+
+.kc-support-configuration .kc-general-configuration__content .kc-form-group .kc-multiple-inputfield {
+  flex: 1;
+  max-width: 500px; }
+  .kc-support-configuration .kc-general-configuration__content .kc-form-group .kc-multiple-inputfield .kc-multiple-inputfield__child .kc-inputfield .kc-inputfield__box button i:hover {
+    color: #FF4D4F; }
 
 .kc-support-configuration .kc-general-configuration__content .kc-form-group .kc-markdown-editor {
   min-height: 200px;
@@ -2658,8 +2939,6 @@ main.kc-memberservice-detail {
       .kc-support-configuration .kc-general-configuration__content .kc-form-group > ul li .kc-form-group .kc-form-group__identity .kc-form-group__label label {
         font-size: 16px;
         font-weight: 400; }
-      .kc-support-configuration .kc-general-configuration__content .kc-form-group > ul li .kc-form-group .kc-multiple-inputfield .kc-multiple-inputfield__child .kc-inputfield .kc-inputfield__box button i:hover {
-        color: #FF4D4F; }
     .kc-support-configuration .kc-general-configuration__content .kc-form-group > ul li button.kc-text-button {
       display: flex;
       height: fit-content; }

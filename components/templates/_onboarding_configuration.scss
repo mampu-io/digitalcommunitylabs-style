@@ -1,5 +1,5 @@
 /**
-  Styling for onboarding configuration template [FUNDING]
+  Styling for onboarding configuration template [BACKOFFICE]
   The template is used on general configuration page
 */
 
@@ -19,7 +19,7 @@
   .kc-onboarding-card-list {
     display: -webkit-inline-box;
     margin-right: 20px;
-    max-width: calc(100% - 250px - 20px);
+    max-width: calc(100% - 300px - 20px);
     overflow: auto;
     border-color: transparent;
     transition: border-color .25s linear;
@@ -46,11 +46,18 @@
       max-width: 100%;
     }
 
-    .kc-onboarding-card {
+    .kc-configuration-card {
       margin-right: 20px;
+      width: 300px;
 
       &:last-child {
         margin-right: 0;
+      }
+
+      .kc-configuration-card__content {
+        .kc-onboarding-card {
+          height: 100%;
+        }
       }
     }
   }

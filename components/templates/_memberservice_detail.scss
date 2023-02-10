@@ -138,6 +138,22 @@ main.kc-memberservice-detail {
             margin-bottom: 0;
           }
         }
+
+        table.kc-record-table {
+          margin-top: 15px;
+
+          tr {
+            td.kc-record-table__label, td.kc-record-table__value {
+              padding: 10px 0 15px;
+            }
+
+            &:last-child {
+              td.kc-record-table__label, td.kc-record-table__value {
+                padding: 10px 0 0;
+              }
+            }
+          }
+        }
       }
     }
   }

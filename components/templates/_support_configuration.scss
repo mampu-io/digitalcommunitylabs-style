@@ -1,5 +1,5 @@
 /**
-  Styling for support configuration template [FUNDING]
+  Styling for support configuration template [BACKOFFICE]
   The template is used on general configuration page
 */
 
@@ -10,6 +10,23 @@
 
   .kc-general-configuration__content {
     .kc-form-group {
+      .kc-multiple-inputfield {
+        flex: 1;
+        max-width: 500px;
+
+        .kc-multiple-inputfield__child {
+          .kc-inputfield {
+            .kc-inputfield__box {
+              button {
+                i:hover {
+                  color: $functionalError500;
+                }
+              }
+            }
+          }
+        }
+      }
+
       .kc-markdown-editor {
         min-height: 200px;
         width: 500px;
@@ -50,20 +67,6 @@
                 label {
                   font-size: 16px;
                   font-weight: 400;
-                }
-              }
-            }
-  
-            .kc-multiple-inputfield {
-              .kc-multiple-inputfield__child {
-                .kc-inputfield {
-                  .kc-inputfield__box {
-                    button {
-                      i:hover {
-                        color: $functionalError500;
-                      }
-                    }
-                  }
                 }
               }
             }

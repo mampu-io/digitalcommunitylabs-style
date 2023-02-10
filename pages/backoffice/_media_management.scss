@@ -1,0 +1,123 @@
+/**
+  Styling for media management page [BACKOFFICE]
+*/
+
+.kc-media-management {
+  .content-body {
+    padding: 30px 20px;
+
+    .kc-modal {
+      .kc-modal__container {
+        .kc-modal__main {
+          .kc-modal__header {
+            .kc-modal__title {
+              span.kc-headline5 {
+                font-size: 21px;
+              }
+            }
+          }
+
+          .kc-modal__content {
+            padding: 1.5rem 1.5rem 2.5rem;
+
+            .kc-form-group {
+              margin-bottom: 0;
+            }
+
+            button.kc-button--primary {
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .kc-media-management__header {
+      display: flex;
+      margin-bottom: 30px;
+  
+      > .kc-modal {
+        .kc-modal__container {
+          .kc-modal__main {
+            .kc-modal__content {
+              .kc-media-modal-upload {
+                .kc-upload-media {
+                  margin-top: 20px;
+
+                  button.kc-button--primary {
+                    margin-top: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+  
+      > .kc-inputfield {
+        flex: 1;
+        margin-left: 20px;
+        width: auto;
+  
+        .kc-inputfield__box {
+          height: 40px;
+        }
+      }
+
+      > .kc-dropdown {
+        margin-left: 20px;
+      }
+    }
+
+    .kc-media-modal-recent__back-btn {
+      background-color: $neutral4;
+      border: none;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      padding: 5px 10px;
+      width: fit-content;
+  
+      &:hover {
+        background-color: $neutral5;
+      }
+  
+      i {
+        font-size: 14px;
+        margin-right: 10px;
+      }
+    }
+
+    .kc-media-management__gallery-list {
+      margin-bottom: 30px;
+  
+      .kc-gallery-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 15px;
+    
+        .kc-gallery-card {
+          .kc-gallery-card__content {
+            width: 250px;
+          }
+        }
+      }
+    }
+
+    .kc-media-management__media-list {
+      .kc-media-list {
+        margin-top: 15px;
+  
+        .kc-media-list__entries {
+          display: flex;
+          flex-wrap: wrap;
+          position: relative;
+  
+          .kc-media-card {
+            cursor: default;
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
+}

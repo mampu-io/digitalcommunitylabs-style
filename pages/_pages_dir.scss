@@ -1,8 +1,10 @@
 // Styling pages for backoffice
 @import 'backoffice/general';
-@import 'backoffice/list_notifications';
+@import 'backoffice/general_configuration';
 @import 'backoffice/list_users';
+@import 'backoffice/media_management';
 @import 'backoffice/notification_setting';
+@import 'backoffice/notification_template_detail';
 
 // Styling pages for memberservice
 @import 'memberservice/active_member_detail';
@@ -15,7 +17,6 @@
 // Styling pages for funding
 @import 'funding/account_search';
 @import 'funding/detail_member';
-@import 'funding/general_configuration';
 @import 'funding/setting_deposit_withdraw';
 @import 'funding/term_deposit_account_detail';
 @import 'funding/term_deposit_application_detail';

@@ -1,0 +1,23 @@
+/**
+  Styling for MediaShortcutMenu organism component.
+  The component is used on BACKOFFICE > Content and Feature Management
+*/
+
+nav.kc-media-shortcut-menu, nav.kc-more-option-menu {
+  background-color: $neutral1;
+  border-radius: 4px;
+  box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, .14),
+    0px 3px 14px 2px rgba(0, 0, 0, .12),
+    0px 5px 5px -3px rgba(0, 0, 0, .2);
+  min-width: 180px;
+  z-index: 999;
+
+  .kc-media-shortcut-menu__item, .kc-more-option-menu__item {
+    cursor: pointer;
+    padding: 10px 20px;
+
+    &:hover {
+      background-color: $neutral5;
+    }
+  }
+}
