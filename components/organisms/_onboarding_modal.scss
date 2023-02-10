@@ -1,0 +1,31 @@
+.kc-onboarding-modal {
+  .kc-modal__main {
+    .kc-modal__header {
+      .kc-modal__title {
+        span.kc-headline5 {
+          font-size: 21px;
+        }
+      }
+    }
+
+    .kc-modal__content {
+      .kc-form-group {
+        margin-bottom: 25px;
+    
+        &:last-child {
+          margin-bottom: 0;
+        }
+    
+        .kc-form-group__identity {
+          .kc-form-group__label {
+            margin-bottom: 5px;
+          }
+        }
+    
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

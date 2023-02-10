@@ -5,44 +5,24 @@
 
 .kc-onboarding-card {
   align-items: center;
-  border: 1px solid $neutral13;
-  border-radius: 4px;
+  background-color: $neutral1;
   display: flex;
   flex-direction: column;
-  height: 516px;
+  justify-content: center;
   padding: 32px 16px;
-  position: relative;
-  width: 250px;
+  width: 100%;
 
-  .kc-rounded-button {
-    position: absolute;
-    right: 4px;
-    top: 4px;
-
-    &.kc-rounded-button--neutral {
-      button {
-        background-color: transparent;
-        border: none;
-
-        &:hover {
-          background-color: transparent;
-          border: none;
-        }
-      }
-    }
-  }
-
-  .kc-onboarding-image {
-    margin-bottom: 16px;
-  }
-
-  .kc-onboarding-card__title, .kc-onboarding-card__body {
+  p.kc-onboarding-card__title, p.kc-onboarding-card__body {
+    margin-bottom: 0;
+    margin-top: 16px;
+    text-align: center;
     width: 100%;
   }
 
-  .kc-onboarding-card__body {
-    .kc-form-group {
-      margin-bottom: 0;
-    }
+  img.kc-onboarding-card__image {
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+    width: 200px;
   }
 }

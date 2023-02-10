@@ -1,0 +1,40 @@
+.kc-configuration-card {
+  background-color: #EBEBEB;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  padding: 16px;
+  height: 516px;
+
+  .kc-configuration-card__content {
+    background-color: $neutral1;
+    flex: 1;
+  }
+
+  .kc-configuration-card__action-buttons {
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    margin-top: 8px;
+
+    button {
+      background-color: $neutral1;
+      border: none;
+      border-radius: 4px;
+      height: 40px;
+      padding: 8px;
+      width: 40px;
+
+      &:hover {
+        background-color: $neutral5;
+      }
+
+      &:disabled {
+        &:hover {
+          background-color: $neutral1;
+        }
+      }
+    }
+  }
+}

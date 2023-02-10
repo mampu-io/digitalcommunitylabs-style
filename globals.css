@@ -1480,7 +1480,7 @@ select, .form-control, .custom-select {
   height: 516px;
   justify-content: center;
   padding: 32px 16px;
-  width: 250px; }
+  width: 300px; }
   .kc-add-onboarding-button i {
     font-size: 100px;
     margin-bottom: 16px; }
@@ -1634,19 +1634,18 @@ select, .form-control, .custom-select {
   The component is used on BACKOFFICE > Content and Feature Management
 */
 .kc-onboarding-image {
-  align-items: center;
   display: flex;
   flex-direction: column;
-  height: 200px;
-  width: 200px; }
+  height: 200px; }
   .kc-onboarding-image .kc-onboarding-image__canvas {
     align-items: center;
-    border: 1px solid #000000;
+    border: 1px solid #D9D9D9;
     cursor: pointer;
     display: flex;
-    height: 160px;
+    height: 170px;
     justify-content: center;
-    width: 160px; }
+    padding: 10px;
+    width: 170px; }
     .kc-onboarding-image .kc-onboarding-image__canvas img {
       height: 100%;
       object-fit: contain;
@@ -1656,7 +1655,7 @@ select, .form-control, .custom-select {
     align-items: center;
     display: flex;
     flex: 1 1 auto;
-    font-size: 14px; }
+    font-size: 15px; }
 
 .kc-push-notification-preview {
   background-image: url("./device-dummy.svg");
@@ -2358,6 +2357,34 @@ button.kc-text-button {
   .kc-upload-media span.kc-upload-media__fail-msg {
     color: #FF4D4F; }
 
+.kc-configuration-card {
+  background-color: #EBEBEB;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  padding: 16px;
+  height: 516px; }
+  .kc-configuration-card .kc-configuration-card__content {
+    background-color: #FFFFFF;
+    flex: 1; }
+  .kc-configuration-card .kc-configuration-card__action-buttons {
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    margin-top: 8px; }
+    .kc-configuration-card .kc-configuration-card__action-buttons button {
+      background-color: #FFFFFF;
+      border: none;
+      border-radius: 4px;
+      height: 40px;
+      padding: 8px;
+      width: 40px; }
+      .kc-configuration-card .kc-configuration-card__action-buttons button:hover {
+        background-color: #D9D9D9; }
+      .kc-configuration-card .kc-configuration-card__action-buttons button:disabled:hover {
+        background-color: #FFFFFF; }
+
 .kc-datatable .kc-status-card {
   width: fit-content;
   white-space: nowrap; }
@@ -2467,29 +2494,33 @@ nav.kc-media-shortcut-menu {
 */
 .kc-onboarding-card {
   align-items: center;
-  border: 1px solid #000000;
-  border-radius: 4px;
+  background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
-  height: 516px;
+  justify-content: center;
   padding: 32px 16px;
-  position: relative;
-  width: 250px; }
-  .kc-onboarding-card .kc-rounded-button {
-    position: absolute;
-    right: 4px;
-    top: 4px; }
-    .kc-onboarding-card .kc-rounded-button.kc-rounded-button--neutral button {
-      background-color: transparent;
-      border: none; }
-      .kc-onboarding-card .kc-rounded-button.kc-rounded-button--neutral button:hover {
-        background-color: transparent;
-        border: none; }
-  .kc-onboarding-card .kc-onboarding-image {
-    margin-bottom: 16px; }
-  .kc-onboarding-card .kc-onboarding-card__title, .kc-onboarding-card .kc-onboarding-card__body {
+  width: 100%; }
+  .kc-onboarding-card p.kc-onboarding-card__title, .kc-onboarding-card p.kc-onboarding-card__body {
+    margin-bottom: 0;
+    margin-top: 16px;
+    text-align: center;
     width: 100%; }
-  .kc-onboarding-card .kc-onboarding-card__body .kc-form-group {
+  .kc-onboarding-card img.kc-onboarding-card__image {
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+    width: 200px; }
+
+.kc-onboarding-modal .kc-modal__main .kc-modal__header .kc-modal__title span.kc-headline5 {
+  font-size: 21px; }
+
+.kc-onboarding-modal .kc-modal__main .kc-modal__content .kc-form-group {
+  margin-bottom: 25px; }
+  .kc-onboarding-modal .kc-modal__main .kc-modal__content .kc-form-group:last-child {
+    margin-bottom: 0; }
+  .kc-onboarding-modal .kc-modal__main .kc-modal__content .kc-form-group .kc-form-group__identity .kc-form-group__label {
+    margin-bottom: 5px; }
+  .kc-onboarding-modal .kc-modal__main .kc-modal__content .kc-form-group p {
     margin-bottom: 0; }
 
 /**
@@ -2839,7 +2870,7 @@ main.kc-memberservice-detail {
 .kc-onboarding-configuration .kc-onboarding-card-list {
   display: -webkit-inline-box;
   margin-right: 20px;
-  max-width: calc(100% - 250px - 20px);
+  max-width: calc(100% - 300px - 20px);
   overflow: auto;
   border-color: transparent;
   transition: border-color .25s linear;
@@ -2855,10 +2886,13 @@ main.kc-memberservice-detail {
     height: 6px; }
   .kc-onboarding-configuration .kc-onboarding-card-list.kc-onboarding-card-list--stretch {
     max-width: 100%; }
-  .kc-onboarding-configuration .kc-onboarding-card-list .kc-onboarding-card {
-    margin-right: 20px; }
-    .kc-onboarding-configuration .kc-onboarding-card-list .kc-onboarding-card:last-child {
+  .kc-onboarding-configuration .kc-onboarding-card-list .kc-configuration-card {
+    margin-right: 20px;
+    width: 300px; }
+    .kc-onboarding-configuration .kc-onboarding-card-list .kc-configuration-card:last-child {
       margin-right: 0; }
+    .kc-onboarding-configuration .kc-onboarding-card-list .kc-configuration-card .kc-configuration-card__content .kc-onboarding-card {
+      height: 100%; }
 
 /**
   Styling for support configuration template [BACKOFFICE]

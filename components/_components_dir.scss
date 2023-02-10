@@ -31,10 +31,12 @@
 @import 'molecules/upload_media';
 
 // Organisms
+@import 'organisms/configuration_card';
 @import 'organisms/datatable';
 @import 'organisms/media_modal';
 @import 'organisms/media_shortcut_menu';
 @import 'organisms/onboarding_card';
+@import 'organisms/onboarding_modal';
 
 // Templates
 @import 'templates/deposit_account_onboarding_detail';

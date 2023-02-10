@@ -4,20 +4,19 @@
 */
 
 .kc-onboarding-image {
-  align-items: center;
   display: flex;
   flex-direction: column;
   height: 200px;
-  width: 200px;
 
   .kc-onboarding-image__canvas {
     align-items: center;
-    border: 1px solid $neutral13;
+    border: 1px solid $neutral5;
     cursor: pointer;
     display: flex;
-    height: 160px;
+    height: 170px;
     justify-content: center;
-    width: 160px;
+    padding: 10px;
+    width: 170px;
 
     img {
       height: 100%;
@@ -31,6 +30,6 @@
     align-items: center;
     display: flex;
     flex: 1 1 auto;
-    font-size: 14px;
+    font-size: 15px;
   }
 }
