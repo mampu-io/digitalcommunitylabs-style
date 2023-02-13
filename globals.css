@@ -600,23 +600,21 @@ select, .form-control, .custom-select {
       .kc-general-configuration .content-body .container-fluid main p.kc-configuration-warning {
         color: #FAAD14;
         margin: 0 20px 20px; }
-      .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content {
-        margin: 0 20px; }
-        .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-form-group__identity {
-          width: 200px; }
-        .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-input-tag, .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-textarea {
-          max-width: 500px; }
-        .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor {
-          max-width: 750px; }
-          .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor {
+      .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-form-group__identity {
+        width: 200px; }
+      .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-input-tag, .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-textarea {
+        max-width: 500px; }
+      .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor {
+        max-width: 750px; }
+        .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor {
+          height: fit-content; }
+          .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor .ck-editor__main {
             height: fit-content; }
-            .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor .ck-editor__main {
-              height: fit-content; }
-              .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor .ck-editor__main .ck-content.ck-editor__editable {
-                height: fit-content;
-                max-height: 500px; }
-                .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor .ck-editor__main .ck-content.ck-editor__editable ol {
-                  margin-left: 1rem; }
+            .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor .ck-editor__main .ck-content.ck-editor__editable {
+              height: fit-content;
+              max-height: 500px; }
+              .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor .ck-editor__main .ck-content.ck-editor__editable ol {
+                margin-left: 1rem; }
       .kc-general-configuration .content-body .container-fluid main .kc-tutorial-banner {
         margin-bottom: 20px; }
     .kc-general-configuration .content-body .container-fluid .kc-floating-action-btn {
@@ -2367,7 +2365,6 @@ button.kc-text-button {
 
 .kc-configuration-card {
   background-color: #EBEBEB;
-  border-radius: 4px;
   display: flex;
   flex-direction: column;
   max-width: 300px;
@@ -2507,7 +2504,13 @@ nav.kc-media-shortcut-menu, nav.kc-more-option-menu {
   flex-direction: column;
   justify-content: center;
   padding: 32px 16px;
+  position: relative;
   width: 100%; }
+  .kc-onboarding-card .kc-onboarding-card__drag-drop-icon {
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px; }
   .kc-onboarding-card p.kc-onboarding-card__title, .kc-onboarding-card p.kc-onboarding-card__body {
     margin-bottom: 0;
     margin-top: 16px;
@@ -2871,9 +2874,6 @@ main.kc-memberservice-detail {
 
 .kc-onboarding-configuration .kc-general-configuration__content, .kc-onboarding-configuration .kc-onboarding-card-list {
   display: flex; }
-
-.kc-onboarding-configuration .kc-general-configuration__content {
-  margin: 0 20px; }
 
 .kc-onboarding-configuration .kc-onboarding-card-list {
   display: -webkit-inline-box;
