@@ -1612,8 +1612,11 @@ select, .form-control, .custom-select {
         border: none;
         width: 24px; }
       .kc-media-card .kc-media-card__overview .kc-media-card__action-button .kc-media-shortcut-menu {
+        display: flex;
+        flex-direction: column;
         position: absolute;
-        right: 0; }
+        right: 0;
+        width: max-content; }
 
 .kc-notification-tag {
   align-items: center;
