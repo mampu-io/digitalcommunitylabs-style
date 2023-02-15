@@ -18,8 +18,10 @@
           .kc-inputfield {
             .kc-inputfield__box {
               button {
-                i:hover {
-                  color: $functionalError500;
+                &:not(:disabled) {
+                  i:hover {
+                    color: $functionalError500;
+                  }
                 }
               }
             }
@@ -76,6 +78,14 @@
             display: flex;
             height: fit-content;
           }
+        }
+      }
+    }
+
+    .kc-modal {
+      .kc-modal__title {
+        span.kc-headline5 {
+          font-size: 21px;
         }
       }
     }

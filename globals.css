@@ -2930,7 +2930,7 @@ main.kc-memberservice-detail {
 .kc-support-configuration .kc-general-configuration__content .kc-form-group .kc-multiple-inputfield {
   flex: 1;
   max-width: 500px; }
-  .kc-support-configuration .kc-general-configuration__content .kc-form-group .kc-multiple-inputfield .kc-multiple-inputfield__child .kc-inputfield .kc-inputfield__box button i:hover {
+  .kc-support-configuration .kc-general-configuration__content .kc-form-group .kc-multiple-inputfield .kc-multiple-inputfield__child .kc-inputfield .kc-inputfield__box button:not(:disabled) i:hover {
     color: #FF4D4F; }
 
 .kc-support-configuration .kc-general-configuration__content .kc-form-group .kc-markdown-editor {
@@ -2960,6 +2960,9 @@ main.kc-memberservice-detail {
     .kc-support-configuration .kc-general-configuration__content .kc-form-group > ul li button.kc-text-button {
       display: flex;
       height: fit-content; }
+
+.kc-support-configuration .kc-general-configuration__content .kc-modal .kc-modal__title span.kc-headline5 {
+  font-size: 21px; }
 
 /**
   Styling for term deposit product template [FUNDING]
