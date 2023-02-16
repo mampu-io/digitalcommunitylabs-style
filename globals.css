@@ -112,6 +112,29 @@ select, .form-control, .custom-select {
     .dateRange-wrapper .kc-form-group .kc-inputfield .kc-inputfield__box {
       height: 40px; }
 
+.header-daftar-cabang {
+  width: 100%; }
+  .header-daftar-cabang label.form-label {
+    color: #6f6f6f;
+    font-weight: normal;
+    font-family: "Roboto";
+    font-size: 13px; }
+  .header-daftar-cabang .kc-dropdown {
+    z-index: 9999; }
+
+.bg-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 10px;
+  border: 1px solid #e0e0e0; }
+  .bg-loading .text-loading {
+    display: block;
+    margin-top: 5px;
+    font-family: "Lato";
+    color: #6f6f6f; }
+
 .kc-headline1 {
   font-weight: 300;
   font-size: 100px;
