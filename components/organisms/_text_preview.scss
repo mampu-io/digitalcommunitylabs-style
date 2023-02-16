@@ -1,0 +1,38 @@
+/**
+  Styling for TextPreview organism component.
+  The component is used on BACKOFFICE > Content and Feature Management
+*/
+
+.kc-text-preview {
+  display: flex;
+
+  iframe {
+    border: 1px solid $neutral6;
+    flex-grow: 1;
+  }
+
+  button.kc-text-preview__edit-btn {
+    align-items: center;
+    background-color: $neutral1;
+    border: 1px solid $neutral6;
+    border-radius: 4px;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    margin-left: 10px;
+    padding: 8px;
+    width: 40px;
+
+    &:hover {
+      background-color: $neutral5;
+    }
+  }
+
+  .kc-modal {
+    .kc-modal__title {
+      span.kc-headline5 {
+        font-size: 21px;
+      }
+    }
+  }
+}
