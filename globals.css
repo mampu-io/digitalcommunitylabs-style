@@ -120,7 +120,7 @@ select, .form-control, .custom-select {
     font-family: "Roboto";
     font-size: 13px; }
   .header-daftar-cabang .kc-dropdown {
-    z-index: 9999; }
+    z-index: 1000; }
 
 .bg-loading {
   display: flex;
@@ -134,6 +134,9 @@ select, .form-control, .custom-select {
     margin-top: 5px;
     font-family: "Lato";
     color: #6f6f6f; }
+
+.tox.tox-silver-sink.tox-tinymce-aux {
+  z-index: 999999; }
 
 .kc-headline1 {
   font-weight: 300;
@@ -784,6 +787,8 @@ select, .form-control, .custom-select {
   .kc-notification-template-detail .kc-notification-description .kc-form-group.kc-form-group--vertical .kc-textarea .kc-textarea__title span.kc-caption {
     color: #8C8C8C;
     font-size: 13px; }
+  .kc-notification-template-detail .kc-notification-description .kc-form-group.kc-form-group--vertical .kc-textarea .kc-textarea__box textarea {
+    line-height: 24px; }
   .kc-notification-template-detail .kc-notification-description .kc-form-group.kc-form-group--vertical .kc-textarea .kc-textarea__subtitle {
     margin-top: 0; }
     .kc-notification-template-detail .kc-notification-description .kc-form-group.kc-form-group--vertical .kc-textarea .kc-textarea__subtitle span.kc-overline {
@@ -826,8 +831,17 @@ select, .form-control, .custom-select {
 .kc-notification-template-detail .kc-notification-illustration input[type="file"] {
   visibility: hidden; }
 
-.kc-notification-template-detail .kc-text-html-editor .ck-editor .ck-editor__main .ck-content.ck-editor__editable ol, .kc-notification-template-detail .kc-text-html-editor .ck-editor .ck-editor__main .ck-content.ck-editor__editable ul {
-  margin-left: 2rem; }
+.kc-notification-template-detail .kc-notification-body {
+  margin-bottom: 25px; }
+  .kc-notification-template-detail .kc-notification-body button.kc-text-button, .kc-notification-template-detail .kc-notification-body .kc-notification-body__helper {
+    margin-bottom: 10px; }
+  .kc-notification-template-detail .kc-notification-body .kc-notification-body__helper {
+    background: #fef3dc;
+    border: 1px solid #FAAD14;
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 4px;
+    color: #595959; }
 
 .kc-notification-template-detail p.kc-notification-placeholders--empty {
   margin-bottom: 0; }
@@ -840,12 +854,14 @@ select, .form-control, .custom-select {
     margin-bottom: 10px; }
     .kc-notification-template-detail ul.kc-notification-placeholders li:last-child {
       margin-bottom: 0; }
-    .kc-notification-template-detail ul.kc-notification-placeholders li .kc-record-item-new label {
-      font-weight: 400; }
-    .kc-notification-template-detail ul.kc-notification-placeholders li .kc-record-item-new:first-child {
-      margin-bottom: 5px; }
-      .kc-notification-template-detail ul.kc-notification-placeholders li .kc-record-item-new:first-child .kc-record-item-new__value label {
-        font-weight: 700; }
+    .kc-notification-template-detail ul.kc-notification-placeholders li .kc-record-item-new {
+      align-items: flex-start; }
+      .kc-notification-template-detail ul.kc-notification-placeholders li .kc-record-item-new label {
+        font-weight: 400; }
+      .kc-notification-template-detail ul.kc-notification-placeholders li .kc-record-item-new:first-child {
+        margin-bottom: 5px; }
+        .kc-notification-template-detail ul.kc-notification-placeholders li .kc-record-item-new:first-child .kc-record-item-new__value label {
+          font-weight: 700; }
 
 .kc-notification-template-detail .kc-notification-preview {
   position: sticky;
@@ -877,9 +893,11 @@ select, .form-control, .custom-select {
         flex: 1 0 200px; }
       .kc-notification-template-detail .kc-notification-preview .kc-notification-body-preview.kc-notification-body-preview--template .kc-notification-body-preview__title {
         font-size: 25px;
-        margin-top: 15px; }
+        margin-bottom: 20px;
+        margin-top: 20px; }
     .kc-notification-template-detail .kc-notification-preview .kc-notification-body-preview .kc-notification-body-preview__title {
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      margin-top: 0; }
     .kc-notification-template-detail .kc-notification-preview .kc-notification-body-preview iframe {
       border: none;
       height: 640px;
@@ -1635,8 +1653,11 @@ select, .form-control, .custom-select {
         border: none;
         width: 24px; }
       .kc-media-card .kc-media-card__overview .kc-media-card__action-button .kc-media-shortcut-menu {
+        display: flex;
+        flex-direction: column;
         position: absolute;
-        right: 0; }
+        right: 0;
+        width: max-content; }
 
 .kc-notification-tag {
   align-items: center;
@@ -2558,6 +2579,31 @@ nav.kc-media-shortcut-menu, nav.kc-more-option-menu {
     margin-bottom: 0; }
 
 /**
+  Styling for TextPreview organism component.
+  The component is used on BACKOFFICE > Content and Feature Management
+*/
+.kc-text-preview {
+  display: flex; }
+  .kc-text-preview iframe {
+    border: 1px solid #BFBFBF;
+    flex-grow: 1; }
+  .kc-text-preview button.kc-text-preview__edit-btn {
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid #BFBFBF;
+    border-radius: 4px;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    margin-left: 10px;
+    padding: 8px;
+    width: 40px; }
+    .kc-text-preview button.kc-text-preview__edit-btn:hover {
+      background-color: #D9D9D9; }
+  .kc-text-preview .kc-modal .kc-modal__title span.kc-headline5 {
+    font-size: 21px; }
+
+/**
   Styling for deposit account onboarding template [MEMBERSERVICE]
   This template is used on:
   - invoice detail page
@@ -2935,7 +2981,7 @@ main.kc-memberservice-detail {
 .kc-support-configuration .kc-general-configuration__content .kc-form-group .kc-multiple-inputfield {
   flex: 1;
   max-width: 500px; }
-  .kc-support-configuration .kc-general-configuration__content .kc-form-group .kc-multiple-inputfield .kc-multiple-inputfield__child .kc-inputfield .kc-inputfield__box button i:hover {
+  .kc-support-configuration .kc-general-configuration__content .kc-form-group .kc-multiple-inputfield .kc-multiple-inputfield__child .kc-inputfield .kc-inputfield__box button:not(:disabled) i:hover {
     color: #FF4D4F; }
 
 .kc-support-configuration .kc-general-configuration__content .kc-form-group .kc-markdown-editor {
@@ -2965,6 +3011,9 @@ main.kc-memberservice-detail {
     .kc-support-configuration .kc-general-configuration__content .kc-form-group > ul li button.kc-text-button {
       display: flex;
       height: fit-content; }
+
+.kc-support-configuration .kc-general-configuration__content .kc-modal .kc-modal__title span.kc-headline5 {
+  font-size: 21px; }
 
 /**
   Styling for term deposit product template [FUNDING]

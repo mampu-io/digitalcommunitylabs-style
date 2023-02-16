@@ -126,9 +126,10 @@ select, .form-control, .custom-select{
     font-size: 13px;
   }
   .kc-dropdown{
-    z-index: 9999;
+    z-index: 1000;
   }
 }
+
 .bg-loading{
   display: flex;
   justify-content: center;
@@ -143,4 +144,7 @@ select, .form-control, .custom-select{
     font-family: $font_primary;
     color: $color-label;
   }
+}
+.tox.tox-silver-sink.tox-tinymce-aux {
+  z-index: 999999;
 }
