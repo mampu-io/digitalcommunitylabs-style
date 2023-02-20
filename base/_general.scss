@@ -117,6 +117,34 @@ select, .form-control, .custom-select{
   }
 }
 
+.header-daftar-cabang{
+  width: 100%;
+  label.form-label{
+    color: $color_label;
+    font-weight: normal;
+    font-family: $font_secondary;
+    font-size: 13px;
+  }
+  .kc-dropdown{
+    z-index: 1000;
+  }
+}
+
+.bg-loading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 10px;
+  border: 1px solid $color_border;
+
+  .text-loading{
+    display: block;
+    margin-top: 5px;
+    font-family: $font_primary;
+    color: $color-label;
+  }
+}
 .tox.tox-silver-sink.tox-tinymce-aux {
   z-index: 999999;
 }
