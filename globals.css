@@ -656,7 +656,7 @@ select, .form-control, .custom-select {
 */
 .kc-media-management .content-body {
   padding: 30px 20px; }
-  .kc-media-management .content-body .kc-modal .kc-modal__container .kc-modal__main .kc-modal__header .kc-modal__title span.kc-headline5 {
+  .kc-media-management .content-body .kc-modal .kc-modal__container .kc-modal__main .kc-modal__title span.kc-headline5 {
     font-size: 21px; }
   .kc-media-management .content-body .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
     padding: 1.5rem 1.5rem 2.5rem; }
@@ -664,50 +664,45 @@ select, .form-control, .custom-select {
       margin-bottom: 0; }
     .kc-media-management .content-body .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content button.kc-button--primary {
       margin-top: 20px; }
+    .kc-media-management .content-body .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-upload .kc-upload-media {
+      margin-top: 20px; }
+      .kc-media-management .content-body .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-upload .kc-upload-media button.kc-button--primary {
+        margin-top: 0; }
   .kc-media-management .content-body .kc-media-management__header {
     display: flex;
     margin-bottom: 30px; }
-    .kc-media-management .content-body .kc-media-management__header > .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-upload .kc-upload-media {
-      margin-top: 20px; }
-      .kc-media-management .content-body .kc-media-management__header > .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-upload .kc-upload-media button.kc-button--primary {
-        margin-top: 0; }
+    .kc-media-management .content-body .kc-media-management__header > .kc-inputfield, .kc-media-management .content-body .kc-media-management__header > .kc-dropdown {
+      margin-left: 20px; }
     .kc-media-management .content-body .kc-media-management__header > .kc-inputfield {
-      flex: 1;
-      margin-left: 20px;
-      width: auto; }
+      flex: 1; }
       .kc-media-management .content-body .kc-media-management__header > .kc-inputfield .kc-inputfield__box {
         height: 40px; }
-    .kc-media-management .content-body .kc-media-management__header > .kc-dropdown {
-      margin-left: 20px; }
-  .kc-media-management .content-body .kc-media-modal-recent__back-btn {
+  .kc-media-management .content-body .kc-media__back-btn {
     background-color: #F0F0F0;
     border: none;
     border-radius: 4px;
     margin-bottom: 20px;
     padding: 5px 10px;
     width: fit-content; }
-    .kc-media-management .content-body .kc-media-modal-recent__back-btn:hover {
+    .kc-media-management .content-body .kc-media__back-btn:hover:not(:disabled) {
       background-color: #D9D9D9; }
-    .kc-media-management .content-body .kc-media-modal-recent__back-btn i {
+    .kc-media-management .content-body .kc-media__back-btn i {
       font-size: 14px;
       margin-right: 10px; }
-  .kc-media-management .content-body .kc-media-management__gallery-list {
+  .kc-media-management .content-body .kc-gallery-list {
     margin-bottom: 30px; }
-    .kc-media-management .content-body .kc-media-management__gallery-list .kc-gallery-list {
+    .kc-media-management .content-body .kc-gallery-list .kc-gallery-list__entries {
       display: flex;
-      flex-wrap: wrap;
-      margin-top: 15px; }
-      .kc-media-management .content-body .kc-media-management__gallery-list .kc-gallery-list .kc-gallery-card .kc-gallery-card__content {
+      flex-wrap: wrap; }
+      .kc-media-management .content-body .kc-gallery-list .kc-gallery-list__entries .kc-gallery-card .kc-gallery-card__content {
         width: 250px; }
-  .kc-media-management .content-body .kc-media-management__media-list .kc-media-list {
-    margin-top: 15px; }
-    .kc-media-management .content-body .kc-media-management__media-list .kc-media-list .kc-media-list__entries {
-      display: flex;
-      flex-wrap: wrap;
-      position: relative; }
-      .kc-media-management .content-body .kc-media-management__media-list .kc-media-list .kc-media-list__entries .kc-media-card {
-        cursor: default;
-        width: 200px; }
+  .kc-media-management .content-body .kc-media-list .kc-media-list__entries {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative; }
+    .kc-media-management .content-body .kc-media-list .kc-media-list__entries .kc-media-card {
+      cursor: default;
+      width: 200px; }
 
 /**
   Styling for setting notification category page [BACKOFFICE]
@@ -1999,18 +1994,25 @@ button.kc-text-button {
   The component is used on BACKOFFICE > Content and Feature Management
 */
 .kc-gallery-list {
-  column-gap: 10px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: 10px; }
-  .kc-gallery-list--loading, .kc-gallery-list--error, .kc-gallery-list--empty {
-    margin-top: 10px; }
-    .kc-gallery-list--loading span.kc-body2, .kc-gallery-list--error span.kc-body2, .kc-gallery-list--empty span.kc-body2 {
-      font-size: 16px;
-      line-height: 24px; }
+  display: flex;
+  flex-direction: column; }
+  .kc-gallery-list .kc-gallery-list__title {
+    color: #262626;
+    font-size: 18px;
+    margin-bottom: 15px; }
+  .kc-gallery-list .kc-gallery-list__entries {
+    column-gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px; }
+  .kc-gallery-list--loading span.kc-body2, .kc-gallery-list--error span.kc-body2, .kc-gallery-list--empty span.kc-body2 {
+    font-size: 16px;
+    line-height: 24px; }
   .kc-gallery-list--loading .spinner-border {
-    height: 1.2rem;
-    width: 1.2rem; }
+    border: 0.2em solid #1890FF;
+    border-right-color: transparent;
+    height: 1.25rem;
+    width: 1.25rem; }
   .kc-gallery-list--error {
     color: #FF4D4F; }
 
@@ -2066,32 +2068,33 @@ button.kc-text-button {
   The component is used on BACKOFFICE > Content and Feature Management
 */
 .kc-media-list {
-  height: fit-content;
-  padding: 0;
-  width: 100%;
-  min-width: auto; }
+  display: flex;
+  flex-direction: column; }
+  .kc-media-list .kc-media-list__title {
+    color: #262626;
+    font-size: 18px;
+    margin-bottom: 15px; }
   .kc-media-list .kc-media-list__wrapper {
-    position: relative;
-    width: 100%; }
+    position: relative; }
     .kc-media-list .kc-media-list__wrapper .kc-media-list__entries {
       column-gap: 8px;
       display: grid;
       grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
       row-gap: 8px;
-      grid-auto-rows: min-content;
-      width: 100%;
       position: absolute;
       top: 0; }
-    .kc-media-list .kc-media-list__wrapper--empty span.kc-body2, .kc-media-list .kc-media-list__wrapper--loading span.kc-body2, .kc-media-list .kc-media-list__wrapper--error span.kc-body2 {
-      font-size: 16px;
-      line-height: 24px; }
-    .kc-media-list .kc-media-list__wrapper--empty span.kc-body2 {
-      margin-bottom: 10px; }
-    .kc-media-list .kc-media-list__wrapper--loading .spinner-border {
-      height: 1.2rem;
-      width: 1.2rem; }
-    .kc-media-list .kc-media-list__wrapper--error {
-      color: #FF4D4F; }
+  .kc-media-list--empty span.kc-body2, .kc-media-list--loading span.kc-body2, .kc-media-list--error span.kc-body2 {
+    font-size: 16px;
+    line-height: 24px; }
+  .kc-media-list--empty span.kc-body2 {
+    margin-bottom: 10px; }
+  .kc-media-list--loading .spinner-border {
+    border: 0.2em solid #1890FF;
+    border-right-color: transparent;
+    height: 1.25rem;
+    width: 1.25rem; }
+  .kc-media-list--error {
+    color: #FF4D4F; }
 
 .modal-kc .moda-dialog {
   font-family: "Lato"; }
@@ -2432,16 +2435,16 @@ button.kc-text-button {
         flex: 1 1 auto;
         flex-direction: column;
         padding: 2rem 1.5rem 2.5rem; }
-        .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__back-btn {
+        .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media__back-btn {
           background-color: #F0F0F0;
           border: none;
           border-radius: 4px;
           margin-bottom: 20px;
           padding: 5px 10px;
           width: fit-content; }
-          .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__back-btn:hover {
+          .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media__back-btn:hover:not(:disabled) {
             background-color: #D9D9D9; }
-          .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__back-btn i {
+          .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media__back-btn i {
             font-size: 14px;
             margin-right: 10px; }
         .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__search {
@@ -2456,6 +2459,7 @@ button.kc-text-button {
           overflow-y: auto;
           flex-direction: column;
           border-color: transparent;
+          padding-right: 6px;
           transition: border-color .25s linear;
           -webkit-transition: border-color .25s linear; }
           .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__content:hover {
@@ -2467,16 +2471,8 @@ button.kc-text-button {
           .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__content::-webkit-scrollbar {
             width: 6px;
             height: 6px; }
-          .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__content .kc-media-modal-recent__galleries, .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__content .kc-media-modal-recent__all-media {
-            padding-right: 6px; }
-            .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__content .kc-media-modal-recent__galleries span.kc-body1, .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__content .kc-media-modal-recent__all-media span.kc-body1 {
-              font-size: 18px; }
-            .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__content .kc-media-modal-recent__galleries .kc-gallery-list, .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__content .kc-media-modal-recent__galleries .kc-media-list, .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__content .kc-media-modal-recent__all-media .kc-gallery-list, .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__content .kc-media-modal-recent__all-media .kc-media-list {
-              margin-top: 10px; }
-          .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__content .kc-media-modal-recent__galleries {
+          .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__content .kc-gallery-list {
             margin-bottom: 30px; }
-          .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-recent .kc-media-modal-recent__content .kc-media-modal-recent__all-media {
-            height: 100%; }
       .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-upload {
         padding: 2rem 1.75rem 2.5rem; }
         .kc-media-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-upload--error {

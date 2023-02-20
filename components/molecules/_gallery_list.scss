@@ -4,14 +4,23 @@
 */
 
 .kc-gallery-list {
-  column-gap: 10px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: 10px;
+  display: flex;
+  flex-direction: column;
+
+  .kc-gallery-list__title {
+    color: $neutral10;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .kc-gallery-list__entries {
+    column-gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+  }
 
   &--loading, &--error, &--empty {
-    margin-top: 10px;
-
     span.kc-body2 {
       font-size: 16px;
       line-height: 24px;
@@ -20,8 +29,10 @@
 
   &--loading {
     .spinner-border {
-      height: 1.2rem;
-      width: 1.2rem;
+      border: 0.2em solid $functionalLink500;
+      border-right-color: transparent;
+      height: 1.25rem;
+      width: 1.25rem;
     }
   }
 
