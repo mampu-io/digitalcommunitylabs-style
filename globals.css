@@ -631,22 +631,9 @@ select, .form-control, .custom-select {
       .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-input-tag, .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-textarea {
         max-width: 500px; }
       .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor {
-        max-width: 750px; }
-        .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor {
-          height: fit-content; }
-          .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor .ck-editor__main {
-            height: fit-content; }
-            .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor .ck-editor__main .ck-content.ck-editor__editable {
-              height: fit-content;
-              max-height: 500px; }
-              .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor .ck-editor .ck-editor__main .ck-content.ck-editor__editable ol {
-                margin-left: 1rem; }
+        width: fit-content; }
       .kc-general-configuration .content-body .container-fluid main .kc-tutorial-banner {
         margin-bottom: 20px; }
-    .kc-general-configuration .content-body .container-fluid .kc-floating-action-btn {
-      bottom: 40px;
-      position: fixed;
-      right: 40px; }
 
 /**
   Styling for list users page [BACKOFFICE]
@@ -1569,7 +1556,8 @@ select, .form-control, .custom-select {
     display: flex;
     max-width: 250px;
     min-width: 200px;
-    padding: 10px 15px; }
+    padding: 10px 15px;
+    width: 100%; }
     .kc-gallery-card .kc-gallery-card__content:hover {
       background-color: #F0F0F0; }
     .kc-gallery-card .kc-gallery-card__content .kc-gallery-card__icon {
@@ -2289,7 +2277,7 @@ button.kc-text-button {
     .kc-record-item.kc-record-item--highlight .kc-record-item--value a {
       color: #FFFFFF; }
 
-.modal-dialog .modal-content .modal-body button {
+.modal-dialog .modal-content .modal-body > button {
   margin-top: 10px; }
 
 .swal2-popup {
@@ -3259,20 +3247,7 @@ main.kc-memberservice-detail {
 .wrapper-form-cms {
   width: 100%; }
   .wrapper-form-cms .kc-text-html-editor {
-    width: 100%;
-    max-width: 750px; }
-    .wrapper-form-cms .kc-text-html-editor .ck-editor {
-      min-height: 300px;
-      height: fit-content; }
-      .wrapper-form-cms .kc-text-html-editor .ck-editor .ck-editor__main {
-        height: fit-content;
-        min-height: 300px; }
-        .wrapper-form-cms .kc-text-html-editor .ck-editor .ck-editor__main .ck-content.ck-editor__editable {
-          height: fit-content;
-          min-height: 300px;
-          max-height: 500px; }
-          .wrapper-form-cms .kc-text-html-editor .ck-editor .ck-editor__main .ck-content.ck-editor__editable ol, .wrapper-form-cms .kc-text-html-editor .ck-editor .ck-editor__main .ck-content.ck-editor__editable ul {
-            margin-left: 1rem; }
+    width: fit-content; }
   .wrapper-form-cms .kc-form-group .kc-form-group__identity {
     width: 100%;
     max-width: 300px; }

@@ -73,24 +73,7 @@
             }
 
             .kc-text-html-editor {
-              max-width: 750px;
-
-              .ck-editor {
-                height: fit-content;
-
-                .ck-editor__main {
-                  height: fit-content;
-
-                  .ck-content.ck-editor__editable {
-                    height: fit-content;
-                    max-height: 500px;
-
-                    ol {
-                      margin-left: 1rem;
-                    }
-                  }
-                }
-              }
+              width: fit-content;
             }
           }
         }
@@ -98,12 +81,6 @@
         .kc-tutorial-banner {
           margin-bottom: 20px;
         }
-      }
-
-      .kc-floating-action-btn {
-        bottom: 40px;
-        position: fixed;
-        right: 40px;
       }
     }
   }
