@@ -70,6 +70,49 @@
     }
   }
 
+  section.kc-withdrawal-approval {
+    margin-left: 0;
+    margin-top: 30px;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    button.kc-button {
+      margin-right: 10px;
+      max-width: 240px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+      margin-top: 10px;
+    }
+
+    .kc-modal {
+      .kc-modal__container {
+        .kc-modal__main {
+          .kc-modal__content {
+            padding: 1.5rem 1.5rem 2rem;
+
+            .kc-form-group {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+
+      .kc-modal__title {
+        span.kc-headline5 {
+          font-size: 21px;
+        }
+      }
+    }
+  }
+
   section.kc-withdrawal-detail__status-history {
     border-top: 1px solid rgba(0, 0, 0, .1);
     margin-left: 0;
@@ -90,11 +133,43 @@
       max-width: 50%;
     }
 
+    section.kc-withdrawal-approval {
+      margin-bottom: 30px;
+      margin-left: 20px;
+      margin-top: 0;
+    }
+
     section.kc-withdrawal-detail__status-history {
       border-top: none;
       margin-left: 20px;
       margin-top: 0;
       padding-top: 0;
+    }
+  }
+}
+
+.kc-input-otp-modal {
+  .modal-header {
+    padding: 1rem 1.5rem;
+  }
+
+  .modal-body {
+    padding: 1.5rem;
+
+    button.kc-resend-otp-button {
+      background-color: transparent;
+      border: none;
+      color: $functionalError500;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+
+    p {
+      line-height: 20px;
+    }
+  
+    .kc-otp-input {
+      margin-bottom: 1rem;
     }
   }
 }
