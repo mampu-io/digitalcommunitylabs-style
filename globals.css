@@ -2776,7 +2776,10 @@ aside.kc-deposit-account-onboarding-detail {
     max-width: 480px; } }
 
 .kc-login--wrapper {
-  background: #F2F3F9 url("https://storage.googleapis.com/ksp-dcb-web-assets/dcb_background.png") no-repeat top left;
+  background: #F2F3F9 url("https://storage.googleapis.com/dcb_web_assets/mampu-login-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
   display: flex;
