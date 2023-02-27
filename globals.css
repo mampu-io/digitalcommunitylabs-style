@@ -137,6 +137,8 @@ select, .form-control, .custom-select {
 
 .tox.tox-silver-sink.tox-tinymce-aux {
   z-index: 999999; }
+  .tox.tox-silver-sink.tox-tinymce-aux .tox-notifications-container {
+    display: none; }
 
 .kc-headline1 {
   font-weight: 300;
