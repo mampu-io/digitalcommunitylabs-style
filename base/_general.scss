@@ -145,6 +145,11 @@ select, .form-control, .custom-select{
     color: $color-label;
   }
 }
+
 .tox.tox-silver-sink.tox-tinymce-aux {
   z-index: 999999;
+
+  .tox-notifications-container {
+    display: none;
+  }
 }

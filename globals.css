@@ -137,6 +137,8 @@ select, .form-control, .custom-select {
 
 .tox.tox-silver-sink.tox-tinymce-aux {
   z-index: 999999; }
+  .tox.tox-silver-sink.tox-tinymce-aux .tox-notifications-container {
+    display: none; }
 
 .kc-headline1 {
   font-weight: 300;
@@ -1441,6 +1443,25 @@ select, .form-control, .custom-select {
     margin-left: 8px; }
   .kc-detail-wrapper.kc-withdrawal-detail section.kc-withdrawal-detail__transaction table tbody tr:first-child td {
     padding-top: 0; }
+  .kc-detail-wrapper.kc-withdrawal-detail section.kc-withdrawal-approval {
+    margin-left: 0;
+    margin-top: 30px; }
+    .kc-detail-wrapper.kc-withdrawal-detail section.kc-withdrawal-approval h2 {
+      margin-bottom: 20px; }
+    .kc-detail-wrapper.kc-withdrawal-detail section.kc-withdrawal-approval button.kc-button {
+      margin-right: 10px;
+      max-width: 240px; }
+      .kc-detail-wrapper.kc-withdrawal-detail section.kc-withdrawal-approval button.kc-button:last-child {
+        margin-right: 0; }
+    .kc-detail-wrapper.kc-withdrawal-detail section.kc-withdrawal-approval p {
+      margin-bottom: 0;
+      margin-top: 10px; }
+    .kc-detail-wrapper.kc-withdrawal-detail section.kc-withdrawal-approval .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
+      padding: 1.5rem 1.5rem 2rem; }
+      .kc-detail-wrapper.kc-withdrawal-detail section.kc-withdrawal-approval .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group {
+        margin-bottom: 0; }
+    .kc-detail-wrapper.kc-withdrawal-detail section.kc-withdrawal-approval .kc-modal .kc-modal__title span.kc-headline5 {
+      font-size: 21px; }
   .kc-detail-wrapper.kc-withdrawal-detail section.kc-withdrawal-detail__status-history {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     margin-left: 0;
@@ -1454,11 +1475,31 @@ select, .form-control, .custom-select {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%; }
+  .kc-detail-wrapper.kc-withdrawal-detail section.kc-withdrawal-approval {
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-top: 0; }
   .kc-detail-wrapper.kc-withdrawal-detail section.kc-withdrawal-detail__status-history {
     border-top: none;
     margin-left: 20px;
     margin-top: 0;
     padding-top: 0; } }
+
+.kc-input-otp-modal .modal-header {
+  padding: 1rem 1.5rem; }
+
+.kc-input-otp-modal .modal-body {
+  padding: 1.5rem; }
+  .kc-input-otp-modal .modal-body button.kc-resend-otp-button {
+    background-color: transparent;
+    border: none;
+    color: #FF4D4F;
+    font-weight: 700;
+    text-decoration: underline; }
+  .kc-input-otp-modal .modal-body p {
+    line-height: 20px; }
+  .kc-input-otp-modal .modal-body .kc-otp-input {
+    margin-bottom: 1rem; }
 
 .kc-page-notfound, .kc-verification-failed {
   height: 100vh; }
@@ -2192,6 +2233,25 @@ button.kc-text-button {
       border-bottom: 3px solid #0F77C0;
       color: #0F77C0; }
 
+.kc-otp-input {
+  display: flex;
+  justify-content: center; }
+  .kc-otp-input input[type="text"] {
+    border: 1px solid #8C8C8C;
+    border-radius: 4px;
+    color: #262626;
+    font-size: 24px;
+    font-weight: 700;
+    height: 60px;
+    margin-right: 10px;
+    outline: none;
+    text-align: center;
+    width: 60px; }
+    .kc-otp-input input[type="text"]:focus, .kc-otp-input input[type="text"]:active {
+      border: 2px solid #0F77C0; }
+    .kc-otp-input input[type="text"]:last-child {
+      margin-right: 0; }
+
 .kc-popup-backdrop {
   width: 100%;
   height: 100%;
@@ -2714,7 +2774,10 @@ aside.kc-deposit-account-onboarding-detail {
     max-width: 480px; } }
 
 .kc-login--wrapper {
-  background: #F2F3F9 url("https://storage.googleapis.com/ksp-dcb-web-assets/dcb_background.png") no-repeat top left;
+  background: #F2F3F9 url("https://storage.googleapis.com/dcb_web_assets/mampu-login-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
   display: flex;

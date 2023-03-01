@@ -1,0 +1,25 @@
+.kc-otp-input {
+  display: flex;
+  justify-content: center;
+
+  input[type="text"] {
+    border: 1px solid $neutral7;
+    border-radius: 4px;
+    color: $neutral10;
+    font-size: 24px;
+    font-weight: 700;
+    height: 60px;
+    margin-right: 10px;
+    outline: none;
+    text-align: center;
+    width: 60px;
+
+    &:focus, &:active {
+      border: 2px solid $primary7;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
