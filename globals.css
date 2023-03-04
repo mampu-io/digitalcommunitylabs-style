@@ -780,40 +780,43 @@ select, .form-control, .custom-select {
       font-weight: 700;
       letter-spacing: 1px; }
 
-.kc-notification-template-detail .kc-notification-illustration img {
-  height: 100px;
-  object-fit: contain;
-  object-position: center;
-  width: 100px; }
-
-.kc-notification-template-detail .kc-notification-illustration button.kc-upload-illustration-btn {
-  background-color: transparent;
-  border: none;
-  margin-top: 5px;
-  width: fit-content; }
-  .kc-notification-template-detail .kc-notification-illustration button.kc-upload-illustration-btn label {
-    color: #0F77C0;
-    cursor: pointer;
-    margin-bottom: 0;
-    text-decoration: underline; }
-
-.kc-notification-template-detail .kc-notification-illustration p {
-  margin-bottom: 0; }
-  .kc-notification-template-detail .kc-notification-illustration p.kc-upload-illustration-status--failed {
-    color: #FF4D4F;
-    font-weight: 700; }
-  .kc-notification-template-detail .kc-notification-illustration p.kc-upload-illustration-status--successful {
-    color: #52C41A;
-    font-weight: 700; }
-  .kc-notification-template-detail .kc-notification-illustration p.kc-upload-illustration-status--processed .spinner-border {
-    width: 1rem;
-    height: 1rem;
-    border: 0.25em solid #1890FF;
-    border-right-color: transparent;
-    margin-left: 5px; }
-
-.kc-notification-template-detail .kc-notification-illustration input[type="file"] {
-  visibility: hidden; }
+.kc-notification-template-detail .kc-notification-illustration .kc-form-group {
+  margin-bottom: 25px; }
+  .kc-notification-template-detail .kc-notification-illustration .kc-form-group .kc-form-group__identity .kc-form-group__label {
+    margin-bottom: 0; }
+  .kc-notification-template-detail .kc-notification-illustration .kc-form-group .d-flex.flex-column small.text-muted {
+    margin-bottom: 10px; }
+  .kc-notification-template-detail .kc-notification-illustration .kc-form-group .d-flex.flex-column img {
+    height: 100px;
+    object-fit: contain;
+    object-position: center;
+    width: 100px; }
+  .kc-notification-template-detail .kc-notification-illustration .kc-form-group .d-flex.flex-column button.kc-upload-illustration-btn {
+    background-color: transparent;
+    border: none;
+    margin-top: 10px;
+    width: fit-content; }
+    .kc-notification-template-detail .kc-notification-illustration .kc-form-group .d-flex.flex-column button.kc-upload-illustration-btn label {
+      color: #0F77C0;
+      cursor: pointer;
+      margin-bottom: 0;
+      text-decoration: underline; }
+  .kc-notification-template-detail .kc-notification-illustration .kc-form-group .d-flex.flex-column p {
+    margin-bottom: 0; }
+    .kc-notification-template-detail .kc-notification-illustration .kc-form-group .d-flex.flex-column p.kc-upload-illustration-status--failed {
+      color: #FF4D4F;
+      font-weight: 700; }
+    .kc-notification-template-detail .kc-notification-illustration .kc-form-group .d-flex.flex-column p.kc-upload-illustration-status--successful {
+      color: #52C41A;
+      font-weight: 700; }
+    .kc-notification-template-detail .kc-notification-illustration .kc-form-group .d-flex.flex-column p.kc-upload-illustration-status--processed .spinner-border {
+      width: 1rem;
+      height: 1rem;
+      border: 0.25em solid #1890FF;
+      border-right-color: transparent;
+      margin-left: 5px; }
+  .kc-notification-template-detail .kc-notification-illustration .kc-form-group .d-flex.flex-column input[type="file"] {
+    visibility: hidden; }
 
 .kc-notification-template-detail .kc-notification-body {
   margin-bottom: 25px; }
@@ -2774,7 +2777,7 @@ aside.kc-deposit-account-onboarding-detail {
     max-width: 480px; } }
 
 .kc-login--wrapper {
-  background: #F2F3F9 url("https://storage.googleapis.com/dcb_web_assets/mampu-login-background.png");
+  background: #F2F3F9 url("https://storage.googleapis.com/dcb_web_assets/others/mampu_background_v2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
