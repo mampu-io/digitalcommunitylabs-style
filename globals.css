@@ -505,7 +505,9 @@ select, .form-control, .custom-select {
     height: min-content;
     padding: 0 0.5rem; }
   .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .brand-link img {
-    height: 100%;
+    max-width: 90%;
+    max-height: 90%;
+    height: auto;
     object-position: center;
     object-fit: cover; }
 
