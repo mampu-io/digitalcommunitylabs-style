@@ -35,6 +35,39 @@
         .kc-form-group__label {
           width: 150px;
         }
+
+        .kc-notification-tag-hint {
+          align-items: center;
+          color: $neutral8;
+          margin-top: 5px;
+
+          i {
+            font-size: 13px;
+            margin-right: 8px;
+          }
+
+          p.kc-body2 {
+            font-size: 13px;
+            margin: 0;
+          }
+        }
+
+        .kc-notification-tag-error {
+          color: $functionalError500;
+          font-size: 12px;
+          font-style: italic;
+          margin-top: 5px;
+        
+          transition: opacity 1s ease-in;
+          opacity: 1;
+          height: auto;
+        }
+        
+        .kc-notification-tag-error--hide {
+          transition: opacity 1s ease-out;
+          opacity: 0;
+          height: 0;
+        }
       }
     }
   }
