@@ -2,7 +2,7 @@
   Styling for notification template detail page [BACKOFFICE]
 */
 
-.kc-notification-template-detail {
+.kc-notification {
   .col-xl-6 {
     max-width: 500px;
   }
@@ -56,75 +56,8 @@
     }
   }
 
-  .kc-notification-illustration {
-    .kc-form-group {
-      margin-bottom: 25px;
-
-      .kc-form-group__identity {
-        .kc-form-group__label {
-          margin-bottom: 0;
-        }
-      }
-
-      .d-flex.flex-column {
-        small.text-muted {
-          margin-bottom: 10px;
-        }
-
-        img {
-          height: 100px;
-          object-fit: contain;
-          object-position: center;
-          width: 100px;
-        }
-    
-        button.kc-upload-illustration-btn {
-          background-color: transparent;
-          border: none;
-          margin-top: 10px;
-          width: fit-content;
-    
-          label {
-            color: $primary7;
-            cursor: pointer;
-            margin-bottom: 0;
-            text-decoration: underline;
-          }
-        }
-    
-        p {
-          margin-bottom: 0;
-    
-          &.kc-upload-illustration-status--failed {
-            color: $functionalError500;
-            font-weight: 700;
-          }
-    
-          &.kc-upload-illustration-status--successful {
-            color: $functionalSuccess500;
-            font-weight: 700;
-          }
-    
-          &.kc-upload-illustration-status--processed {
-            .spinner-border {
-              width: 1rem;
-              height: 1rem;
-              border: 0.25em solid $functionalLink500;
-              border-right-color: transparent;
-              margin-left: 5px;
-            }
-          }
-        }
-    
-        input[type="file"] {
-          visibility: hidden;
-        }
-      }
-    }
-  }
-
   .kc-notification-body {
-    margin-bottom: 25px;
+    margin-bottom: 0;
 
     button.kc-text-button, .kc-notification-body__helper {
       margin-bottom: 10px;
@@ -137,44 +70,6 @@
       padding: 5px;
       border-radius: 4px;
       color: $neutral8;
-    }
-  }
-
-  p.kc-notification-placeholders--empty {
-    margin-bottom: 0;
-  }
-
-  ul.kc-notification-placeholders {
-    margin-left: 2rem;
-
-    .kc-body1 {
-      font-size: 16px;
-    }
-
-    li {
-      margin-bottom: 10px;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-
-      .kc-record-item-new {
-        align-items: flex-start;
-
-        label {
-          font-weight: 400;
-        }
-
-        &:first-child {
-          margin-bottom: 5px;
-
-          .kc-record-item-new__value {
-            label {
-              font-weight: 700;
-            }
-          }
-        }
-      }
     }
   }
 
@@ -194,7 +89,7 @@
 
     .kc-notification-body-preview {
       border: 1px solid $neutral5;
-      height: 750px;
+      height: auto;
       padding: 20px 10px;
       width: fit-content;
 
@@ -233,7 +128,7 @@
   
       iframe {
         border: none;
-        height: 640px;
+        height: 576px;
         width: 360px;
       }
     }
@@ -241,5 +136,112 @@
 
   > button.kc-button--primary {
     margin-top: 30px;
+  }
+
+  &.kc-notification--template {
+    .kc-notification-illustration {
+      .kc-form-group {
+        margin-bottom: 25px;
+  
+        .kc-form-group__identity {
+          .kc-form-group__label {
+            margin-bottom: 0;
+          }
+        }
+  
+        .d-flex.flex-column {
+          img {
+            height: 100px;
+            margin: 10px 0;
+            object-fit: contain;
+            object-position: center;
+            width: 100px;
+          }
+      
+          button.kc-upload-illustration-btn {
+            background-color: transparent;
+            border: none;
+            width: fit-content;
+      
+            label {
+              color: $primary7;
+              cursor: pointer;
+              margin-bottom: 0;
+              text-decoration: underline;
+            }
+          }
+      
+          p {
+            margin-bottom: 0;
+      
+            &.kc-upload-illustration-status--failed {
+              color: $functionalError500;
+              font-weight: 700;
+            }
+      
+            &.kc-upload-illustration-status--successful {
+              color: $functionalSuccess500;
+              font-weight: 700;
+            }
+      
+            &.kc-upload-illustration-status--processed {
+              .spinner-border {
+                width: 1rem;
+                height: 1rem;
+                border: 0.25em solid $functionalLink500;
+                border-right-color: transparent;
+                margin-left: 5px;
+              }
+            }
+          }
+      
+          input[type="file"] {
+            visibility: hidden;
+          }
+        }
+      }
+    }
+
+    .kc-notification-body {
+      margin-bottom: 25px;
+    }
+
+    p.kc-notification-placeholders--empty {
+      margin-bottom: 0;
+    }
+  
+    ul.kc-notification-placeholders {
+      margin-left: 2rem;
+  
+      .kc-body1 {
+        font-size: 16px;
+      }
+  
+      li {
+        margin-bottom: 10px;
+  
+        &:last-child {
+          margin-bottom: 0;
+        }
+  
+        .kc-record-item-new {
+          align-items: flex-start;
+  
+          label {
+            font-weight: 400;
+          }
+  
+          &:first-child {
+            margin-bottom: 5px;
+  
+            .kc-record-item-new__value {
+              label {
+                font-weight: 700;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
