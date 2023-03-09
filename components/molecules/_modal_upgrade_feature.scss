@@ -1,0 +1,38 @@
+.modal-get-premium{
+    .modal-body{
+        position: relative;
+        padding: 50px 15px;
+        text-align: center;
+        border: 1px dashed $primary500;
+        margin: 7px;
+        border-radius: 3px;
+
+        h1{
+            color: $primary500;
+            font-size: 30px;
+            font-family: $font_secondary;
+            font-weight: bolder;
+            span{
+                color: $primary900
+            }
+        }
+        p{
+            font-size: 13px;
+            color: $color_label;
+            font-family: $font_primary;
+            line-height: 1.5;
+        }
+        .close-botton{
+            position: absolute;
+            background-color: $primary900;
+            color: #fff;
+            padding: 5px 8px;
+            border-radius: 50em;
+            top : -15px; right: -15px;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}

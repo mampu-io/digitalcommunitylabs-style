@@ -524,6 +524,23 @@ select, .form-control, .custom-select {
     padding: 0.5rem 1rem; }
     .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-header i {
       margin-right: 8px; }
+  .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item.menu-upgrade {
+    position: relative; }
+    .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item.menu-upgrade::after {
+      content: "pro";
+      color: #fff;
+      background: #006DBF;
+      font-size: 13px;
+      line-height: 1.5;
+      font-family: "Lato";
+      padding: 0px 5px 2px;
+      border-radius: 3px;
+      position: absolute;
+      right: 7.5px;
+      top: 50%;
+      transform: translateY(-50%); }
+    .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item.menu-upgrade p {
+      color: #aeaeae !important; }
   .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item a.nav-link {
     background-color: transparent;
     border-radius: 0;
@@ -2459,6 +2476,36 @@ button.kc-text-button {
     color: #52C41A; }
   .kc-upload-media span.kc-upload-media__fail-msg {
     color: #FF4D4F; }
+
+.modal-get-premium .modal-body {
+  position: relative;
+  padding: 50px 15px;
+  text-align: center;
+  border: 1px dashed #006DBF;
+  margin: 7px;
+  border-radius: 3px; }
+  .modal-get-premium .modal-body h1 {
+    color: #006DBF;
+    font-size: 30px;
+    font-family: "Roboto";
+    font-weight: bolder; }
+    .modal-get-premium .modal-body h1 span {
+      color: #001F5B; }
+  .modal-get-premium .modal-body p {
+    font-size: 13px;
+    color: #6f6f6f;
+    font-family: "Lato";
+    line-height: 1.5; }
+  .modal-get-premium .modal-body .close-botton {
+    position: absolute;
+    background-color: #001F5B;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 50em;
+    top: -15px;
+    right: -15px; }
+    .modal-get-premium .modal-body .close-botton:hover {
+      cursor: pointer; }
 
 .kc-configuration-card {
   background-color: #EBEBEB;

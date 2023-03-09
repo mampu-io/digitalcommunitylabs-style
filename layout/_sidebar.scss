@@ -47,6 +47,27 @@
           }
     
           li.nav-item {    
+            &.menu-upgrade{
+              position: relative;
+              &::after{
+                content: "pro";
+                color: #fff;
+                background: $primary500;
+                font-size: 13px;
+                line-height: 1.5;
+                font-family: $font-primary;
+                padding: 0px 5px 2px;
+                border-radius: 3px;
+                position: absolute;
+                right: 7.5px;
+                top: 50%;
+
+                transform: translateY(-50%);
+              }
+              p {
+                color: $color_placeholder !important;
+              }
+            }
             a.nav-link {
               background-color: transparent;
               border-radius: 0;
