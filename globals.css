@@ -527,13 +527,16 @@ select, .form-control, .custom-select {
   .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item.menu-upgrade {
     position: relative; }
     .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item.menu-upgrade::after {
-      content: "pro";
-      color: #fff;
-      background: #006DBF;
-      font-size: 13px;
+      content: "PRO";
+      color: #fde7b2;
+      background: #D78D0E;
+      font-size: 9px;
+      letter-spacing: 2px;
+      font-weight: 500;
       line-height: 1.5;
+      opacity: 0.9;
       font-family: "Lato";
-      padding: 0px 5px 2px;
+      padding: 1px 2px 2px 5px;
       border-radius: 3px;
       position: absolute;
       right: 7.5px;
@@ -3350,7 +3353,9 @@ main.kc-memberservice-detail {
 .wrapper-form-cms {
   width: 100%; }
   .wrapper-form-cms .kc-text-html-editor {
-    width: fit-content; }
+    min-width: fit-content;
+    max-width: 500px;
+    width: 100%; }
   .wrapper-form-cms .kc-form-group .kc-form-group__identity {
     width: 100%;
     max-width: 300px; }

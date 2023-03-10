@@ -95,7 +95,9 @@
 .wrapper-form-cms{
     width: 100%;
     .kc-text-html-editor {
-        width: fit-content;
+        min-width: fit-content;
+        max-width: 500px;
+        width: 100%;
     }
 
     .kc-form-group{
