@@ -44,6 +44,16 @@
       display: flex;
       margin-bottom: 30px;
   
+      > .kc-more-option {
+        position: relative;
+
+        .kc-more-option-menu {
+          position: absolute;
+          right: 0;
+          width: max-content;
+        }
+      }
+
       > .kc-inputfield, > .kc-dropdown {
         margin-left: 20px;
       }

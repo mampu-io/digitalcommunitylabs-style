@@ -725,6 +725,12 @@ select, .form-control, .custom-select {
   .kc-media-management .content-body .kc-media-management__header {
     display: flex;
     margin-bottom: 30px; }
+    .kc-media-management .content-body .kc-media-management__header > .kc-more-option {
+      position: relative; }
+      .kc-media-management .content-body .kc-media-management__header > .kc-more-option .kc-more-option-menu {
+        position: absolute;
+        right: 0;
+        width: max-content; }
     .kc-media-management .content-body .kc-media-management__header > .kc-inputfield, .kc-media-management .content-body .kc-media-management__header > .kc-dropdown {
       margin-left: 20px; }
     .kc-media-management .content-body .kc-media-management__header > .kc-inputfield {
@@ -1676,7 +1682,8 @@ select, .form-control, .custom-select {
         width: 24px; }
       .kc-gallery-card .kc-gallery-card__content .kc-more-option .kc-more-option-menu {
         position: absolute;
-        right: 0; }
+        right: 0;
+        width: max-content; }
 
 .bg-loading-page {
   width: 100%;
@@ -1731,15 +1738,13 @@ select, .form-control, .custom-select {
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap; }
-    .kc-media-card .kc-media-card__overview .kc-media-card__action-button {
+    .kc-media-card .kc-media-card__overview .kc-more-option {
       position: relative; }
-      .kc-media-card .kc-media-card__overview .kc-media-card__action-button > button {
+      .kc-media-card .kc-media-card__overview .kc-more-option > button {
         background-color: transparent;
         border: none;
         width: 24px; }
-      .kc-media-card .kc-media-card__overview .kc-media-card__action-button .kc-media-shortcut-menu {
-        display: flex;
-        flex-direction: column;
+      .kc-media-card .kc-media-card__overview .kc-more-option .kc-more-option-menu {
         position: absolute;
         right: 0;
         width: max-content; }

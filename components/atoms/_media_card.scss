@@ -58,7 +58,7 @@
       white-space: nowrap;
     }
 
-    .kc-media-card__action-button {
+    .kc-more-option {
       position: relative;
 
       > button {
@@ -67,9 +67,7 @@
         width: 24px;
       }
 
-      .kc-media-shortcut-menu {
-        display: flex;
-        flex-direction: column;
+      .kc-more-option-menu {
         position: absolute;
         right: 0;
         width: max-content;
