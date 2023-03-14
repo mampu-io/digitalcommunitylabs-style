@@ -647,15 +647,22 @@ select, .form-control, .custom-select {
       min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px) - 70px - 20px - 60px);
       padding: 20px;
       width: 100%; }
-      .kc-general-configuration .content-body .container-fluid main p.kc-configuration-warning {
-        color: #FAAD14;
-        margin: 0 20px 20px; }
-      .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-form-group__identity {
-        width: 200px; }
-      .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-input-tag, .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-textarea {
-        max-width: 500px; }
-      .kc-general-configuration .content-body .container-fluid main .kc-general-configuration__content .kc-form-group .kc-text-html-editor {
-        width: fit-content; }
+      .kc-general-configuration .content-body .container-fluid main .kc-modal .kc-modal__container {
+        width: 500px; }
+        .kc-general-configuration .content-body .container-fluid main .kc-modal .kc-modal__container .kc-modal__title span.kc-headline5 {
+          font-size: 22px; }
+        .kc-general-configuration .content-body .container-fluid main .kc-modal .kc-modal__container .kc-modal__content > .kc-form-group {
+          margin-bottom: 30px; }
+          .kc-general-configuration .content-body .container-fluid main .kc-modal .kc-modal__container .kc-modal__content > .kc-form-group .kc-form-group__label {
+            margin-bottom: 0; }
+            .kc-general-configuration .content-body .container-fluid main .kc-modal .kc-modal__container .kc-modal__content > .kc-form-group .kc-form-group__label > label {
+              font-size: 16px;
+              font-weight: 500;
+              font-family: "Roboto"; }
+        .kc-general-configuration .content-body .container-fluid main .kc-modal .kc-modal__container .kc-modal__content .kc-inputfield .kc-inputfield__box {
+          height: 40px; }
+      .kc-general-configuration .content-body .container-fluid main .kc-media-modal .kc-modal__container {
+        width: 800px; }
       .kc-general-configuration .content-body .container-fluid main .kc-tutorial-banner {
         margin-bottom: 20px; }
 
@@ -3110,42 +3117,39 @@ main.kc-memberservice-detail {
 .kc-support-configuration .kc-tutorial-banner {
   margin-bottom: 20px; }
 
-.kc-support-configuration .kc-general-configuration__content .kc-form-group .kc-multiple-inputfield {
+.kc-support-configuration .kc-form-group .kc-multiple-inputfield {
   flex: 1;
   max-width: 500px; }
-  .kc-support-configuration .kc-general-configuration__content .kc-form-group .kc-multiple-inputfield .kc-multiple-inputfield__child .kc-inputfield .kc-inputfield__box button:not(:disabled) i:hover {
+  .kc-support-configuration .kc-form-group .kc-multiple-inputfield .kc-multiple-inputfield__child .kc-inputfield .kc-inputfield__box button:not(:disabled) i:hover {
     color: #FF4D4F; }
 
-.kc-support-configuration .kc-general-configuration__content .kc-form-group .kc-markdown-editor {
+.kc-support-configuration .kc-form-group .kc-markdown-editor {
   min-height: 200px;
   width: 500px; }
 
-.kc-support-configuration .kc-general-configuration__content .kc-form-group > ul {
+.kc-support-configuration ul {
   list-style-type: decimal;
   margin-left: 20px;
   margin-top: 20px; }
-  .kc-support-configuration .kc-general-configuration__content .kc-form-group > ul li {
+  .kc-support-configuration ul li {
     border-bottom: 1px solid #D9D9D9;
     margin-top: 20px;
     width: fit-content; }
-    .kc-support-configuration .kc-general-configuration__content .kc-form-group > ul li:first-child {
+    .kc-support-configuration ul li:first-child {
       margin-top: 0; }
-    .kc-support-configuration .kc-general-configuration__content .kc-form-group > ul li:last-child {
+    .kc-support-configuration ul li:last-child {
       border-bottom: none; }
-    .kc-support-configuration .kc-general-configuration__content .kc-form-group > ul li .kc-form-group {
+    .kc-support-configuration ul li .kc-form-group {
       margin-right: 40px;
       width: 300px; }
-      .kc-support-configuration .kc-general-configuration__content .kc-form-group > ul li .kc-form-group.kc-form-group--vertical .kc-form-group__identity .kc-form-group__label {
+      .kc-support-configuration ul li .kc-form-group.kc-form-group--vertical .kc-form-group__identity .kc-form-group__label {
         margin-bottom: 0; }
-      .kc-support-configuration .kc-general-configuration__content .kc-form-group > ul li .kc-form-group .kc-form-group__identity .kc-form-group__label label {
+      .kc-support-configuration ul li .kc-form-group .kc-form-group__identity .kc-form-group__label label {
         font-size: 16px;
         font-weight: 400; }
-    .kc-support-configuration .kc-general-configuration__content .kc-form-group > ul li button.kc-text-button {
+    .kc-support-configuration ul li button.kc-text-button {
       display: flex;
       height: fit-content; }
-
-.kc-support-configuration .kc-general-configuration__content .kc-modal .kc-modal__title span.kc-headline5 {
-  font-size: 21px; }
 
 /**
   Styling for term deposit product template [FUNDING]
@@ -3324,106 +3328,120 @@ main.kc-memberservice-detail {
     flex: 0 0 50%;
     max-width: 50%; } }
 
-.wrapper-cms {
-  width: 100%;
-  height: auto; }
-  .wrapper-cms .judul-cms {
-    font-size: 16px;
-    font-family: "Roboto";
-    font-weight: bold;
-    margin-bottom: 25px; }
-  .wrapper-cms .wrapper-registration-intro {
-    width: calc(100% + 30px);
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    margin-left: -15px; }
-    .wrapper-cms .wrapper-registration-intro .item-registration-intro {
-      width: calc(25% - 30px);
-      margin: 15px;
-      padding: 15px;
-      background: #EBEBEB;
-      border: 1px solid #EBEBEB; }
-      .wrapper-cms .wrapper-registration-intro .item-registration-intro .item-content-registration-intro {
-        background: #fff;
-        padding: 15px;
-        font-family: "Lato";
-        line-height: 1.5; }
-        .wrapper-cms .wrapper-registration-intro .item-registration-intro .item-content-registration-intro ul li {
-          margin-left: 25px; }
-        .wrapper-cms .wrapper-registration-intro .item-registration-intro .item-content-registration-intro .title-registration-intro {
-          height: 50px; }
-          .wrapper-cms .wrapper-registration-intro .item-registration-intro .item-content-registration-intro .title-registration-intro h3 {
-            font-size: 16px;
-            font-weight: bold; }
-        .wrapper-cms .wrapper-registration-intro .item-registration-intro .item-content-registration-intro .wrapper-body-registration-intro {
-          width: 100%;
-          height: 300px;
-          overflow-y: auto; }
-      .wrapper-cms .wrapper-registration-intro .item-registration-intro .item-footer-registration-intro {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 15px;
-        height: 40px; }
-        .wrapper-cms .wrapper-registration-intro .item-registration-intro .item-footer-registration-intro .kc-rounded-button button {
-          border-radius: 5px; }
-      .wrapper-cms .wrapper-registration-intro .item-registration-intro.add-new-registration-intro {
-        height: 465px;
-        background: #fff;
-        border: 1px solid #000;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0px; }
-        .wrapper-cms .wrapper-registration-intro .item-registration-intro.add-new-registration-intro:hover {
-          cursor: pointer; }
-        .wrapper-cms .wrapper-registration-intro .item-registration-intro.add-new-registration-intro .icon-add-new {
-          text-align: center;
-          font-family: "Roboto";
-          font-size: 14px; }
-          .wrapper-cms .wrapper-registration-intro .item-registration-intro.add-new-registration-intro .icon-add-new i {
-            font-size: 75px;
-            display: block;
-            margin-bottom: 5px; }
+.wrapper-cms .judul-cms {
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 700;
+  margin-bottom: 25px; }
 
-.wrapper-form-cms {
+.wrapper-cms .wrapper-registration-intro {
+  width: calc(100% + 30px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-left: -15px; }
+  .wrapper-cms .wrapper-registration-intro .item-registration-intro {
+    width: calc(25% - 30px);
+    margin: 15px;
+    padding: 15px;
+    background: #EBEBEB;
+    border: 1px solid #EBEBEB; }
+    .wrapper-cms .wrapper-registration-intro .item-registration-intro .item-content-registration-intro {
+      background: #fff;
+      padding: 15px;
+      font-family: "Lato";
+      line-height: 1.5; }
+      .wrapper-cms .wrapper-registration-intro .item-registration-intro .item-content-registration-intro ul li {
+        margin-left: 25px; }
+      .wrapper-cms .wrapper-registration-intro .item-registration-intro .item-content-registration-intro .title-registration-intro {
+        height: 50px; }
+        .wrapper-cms .wrapper-registration-intro .item-registration-intro .item-content-registration-intro .title-registration-intro h3 {
+          font-size: 16px;
+          font-weight: bold; }
+      .wrapper-cms .wrapper-registration-intro .item-registration-intro .item-content-registration-intro .wrapper-body-registration-intro {
+        width: 100%;
+        height: 300px;
+        overflow-y: auto; }
+    .wrapper-cms .wrapper-registration-intro .item-registration-intro .item-footer-registration-intro {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 15px;
+      height: 40px; }
+      .wrapper-cms .wrapper-registration-intro .item-registration-intro .item-footer-registration-intro .kc-rounded-button button {
+        border-radius: 5px; }
+    .wrapper-cms .wrapper-registration-intro .item-registration-intro.add-new-registration-intro {
+      height: 465px;
+      background: #fff;
+      border: 1px solid #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0px; }
+      .wrapper-cms .wrapper-registration-intro .item-registration-intro.add-new-registration-intro:hover {
+        cursor: pointer; }
+      .wrapper-cms .wrapper-registration-intro .item-registration-intro.add-new-registration-intro .icon-add-new {
+        text-align: center;
+        font-family: "Roboto";
+        font-size: 14px; }
+        .wrapper-cms .wrapper-registration-intro .item-registration-intro.add-new-registration-intro .icon-add-new i {
+          font-size: 75px;
+          display: block;
+          margin-bottom: 5px; }
+
+.wrapper-form-cms .kc-text-html-editor {
+  min-width: fit-content;
+  max-width: 500px;
   width: 100%; }
-  .wrapper-form-cms .kc-text-html-editor {
-    min-width: fit-content;
-    max-width: 500px;
-    width: 100%; }
-  .wrapper-form-cms .kc-form-group .kc-form-group__identity {
+
+.wrapper-form-cms > .kc-form-group .kc-form-group__identity {
+  max-width: 250px; }
+  .wrapper-form-cms > .kc-form-group .kc-form-group__identity .kc-form-group__label > label {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Roboto"; }
+
+.wrapper-form-cms > .kc-form-group .kc-textarea, .wrapper-form-cms > .kc-form-group .kc-dropdown, .wrapper-form-cms > .kc-form-group .kc-input-tag {
+  width: 100%;
+  max-width: 500px; }
+
+.wrapper-form-cms > .kc-form-group .kc-dropdown > button {
+  height: 32px; }
+
+.wrapper-form-cms > .kc-form-group .kc-input-tag-cms {
+  max-width: 500px; }
+  .wrapper-form-cms > .kc-form-group .kc-input-tag-cms .kc-input-tag-hint {
+    color: #595959;
+    margin-top: 5px; }
+
+.wrapper-form-cms .aro-item-wrapper {
+  width: 100%;
+  max-width: 500px; }
+
+.wrapper-form-cms .versi-input-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start; }
+  .wrapper-form-cms .versi-input-wrapper .kc-inputfield {
     width: 100%;
-    max-width: 300px; }
-    .wrapper-form-cms .kc-form-group .kc-form-group__identity .kc-form-group__label > label {
-      font-size: 14px;
-      font-weight: normal;
-      font-family: "Roboto"; }
-  .wrapper-form-cms .kc-form-group .kc-textarea {
-    width: 100%;
-    max-width: 500px; }
-  .wrapper-form-cms .aro-item-wrapper {
-    width: 100%;
-    max-width: 500px; }
-  .wrapper-form-cms .versi-input-wrapper {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start; }
-    .wrapper-form-cms .versi-input-wrapper .kc-inputfield {
-      width: 100%;
-      max-width: 75px; }
-      .wrapper-form-cms .versi-input-wrapper .kc-inputfield input {
-        text-align: center; }
-  .wrapper-form-cms .image-cms img {
-    width: 100%;
-    max-width: 150px;
-    height: auto;
-    margin-bottom: 10px;
-    padding: 5px;
-    border: 1px solid #e0e0e0;
-    border-radius: 3px; }
+    max-width: 75px; }
+    .wrapper-form-cms .versi-input-wrapper .kc-inputfield input {
+      text-align: center; }
+
+.wrapper-form-cms .image-cms img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px; }
+
+.wrapper-form-cms .kc-panel-information-config {
+  margin-bottom: 20px; }
+  .wrapper-form-cms .kc-panel-information-config:last-child {
+    margin-bottom: 0; }
 
 .alert-before-publish {
   margin: 15px 0;
