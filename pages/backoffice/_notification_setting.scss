@@ -57,12 +57,11 @@
           font-size: 12px;
           font-style: italic;
           margin-top: 5px;
-
           transition: opacity 1s ease-in;
           opacity: 1;
           height: auto;
         }
-
+        
         .kc-notification-tag-error--hide {
           transition: opacity 1s ease-out;
           opacity: 0;

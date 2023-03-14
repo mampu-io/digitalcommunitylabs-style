@@ -9,11 +9,9 @@
     .kc-modal {
       .kc-modal__container {
         .kc-modal__main {
-          .kc-modal__header {
-            .kc-modal__title {
-              span.kc-headline5 {
-                font-size: 21px;
-              }
+          .kc-modal__title {
+            span.kc-headline5 {
+              font-size: 21px;
             }
           }
 
@@ -27,6 +25,16 @@
             button.kc-button--primary {
               margin-top: 20px;
             }
+
+            .kc-media-modal-upload {
+              .kc-upload-media {
+                margin-top: 20px;
+
+                button.kc-button--primary {
+                  margin-top: 0;
+                }
+              }
+            }
           }
         }
       }
@@ -36,40 +44,20 @@
       display: flex;
       margin-bottom: 30px;
   
-      > .kc-modal {
-        .kc-modal__container {
-          .kc-modal__main {
-            .kc-modal__content {
-              .kc-media-modal-upload {
-                .kc-upload-media {
-                  margin-top: 20px;
-
-                  button.kc-button--primary {
-                    margin-top: 0;
-                  }
-                }
-              }
-            }
-          }
-        }
+      > .kc-inputfield, > .kc-dropdown {
+        margin-left: 20px;
       }
-  
+
       > .kc-inputfield {
         flex: 1;
-        margin-left: 20px;
-        width: auto;
   
         .kc-inputfield__box {
           height: 40px;
         }
       }
-
-      > .kc-dropdown {
-        margin-left: 20px;
-      }
     }
 
-    .kc-media-modal-recent__back-btn {
+    .kc-media__back-btn {
       background-color: $neutral4;
       border: none;
       border-radius: 4px;
@@ -78,7 +66,9 @@
       width: fit-content;
   
       &:hover {
-        background-color: $neutral5;
+        &:not(:disabled) {
+          background-color: $neutral5;
+        }
       }
   
       i {
@@ -87,13 +77,12 @@
       }
     }
 
-    .kc-media-management__gallery-list {
+    .kc-gallery-list {
       margin-bottom: 30px;
-  
-      .kc-gallery-list {
+
+      .kc-gallery-list__entries {
         display: flex;
         flex-wrap: wrap;
-        margin-top: 15px;
     
         .kc-gallery-card {
           .kc-gallery-card__content {
@@ -103,19 +92,15 @@
       }
     }
 
-    .kc-media-management__media-list {
-      .kc-media-list {
-        margin-top: 15px;
-  
-        .kc-media-list__entries {
-          display: flex;
-          flex-wrap: wrap;
-          position: relative;
-  
-          .kc-media-card {
-            cursor: default;
-            width: 200px;
-          }
+    .kc-media-list {
+      .kc-media-list__entries {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+
+        .kc-media-card {
+          cursor: default;
+          width: 200px;
         }
       }
     }
