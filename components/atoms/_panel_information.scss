@@ -1,0 +1,47 @@
+/**
+  Styling for PanelInformation component.
+  The component is used on BACKOFFICE > Content and Feature Management
+*/
+
+.kc-panel-information-config {
+  width: 400px;
+
+  .kc-panel-information-config__header {
+    width: 350px;
+
+    .kc-toggle-switch {
+      margin-bottom: 0;
+    }
+  }
+
+  .kc-panel-information-card {
+    background-color: $neutral4;
+    border: 1px solid $neutral13;
+    border-radius: 4px;
+    display: flex;
+    padding: 8px 12px;
+    width: 350px;
+  
+    svg {
+      flex-shrink: 0;
+      margin-right: 10px;
+    }
+  
+    .kc-panel-information-card__content p {
+      margin-bottom: 0;
+    }
+  }
+
+  button.kc-panel-information-edit-btn {
+    background-color: $neutral4;
+    border: none;
+    border-radius: 4px;
+    height: 40px;
+    padding: 8px;
+    width: 40px;
+
+    &:hover {
+      background-color: $neutral5;
+    }
+  }
+}
