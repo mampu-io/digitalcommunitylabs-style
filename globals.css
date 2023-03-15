@@ -524,6 +524,9 @@ select, .form-control, .custom-select {
     padding: 0.5rem 1rem; }
     .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-header i {
       margin-right: 8px; }
+  .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav hr {
+    margin-bottom: .5rem;
+    margin-top: .5rem; }
   .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item.menu-upgrade {
     position: relative; }
     .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item.menu-upgrade::after {
@@ -757,12 +760,22 @@ select, .form-control, .custom-select {
       .kc-media-management .content-body .kc-gallery-list .kc-gallery-list__entries .kc-gallery-card .kc-gallery-card__content {
         width: 250px; }
   .kc-media-management .content-body .kc-media-list .kc-media-list__entries {
-    display: flex;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     position: relative; }
     .kc-media-management .content-body .kc-media-list .kc-media-list__entries .kc-media-card {
+      aspect-ratio: 1/1;
       cursor: default;
-      width: 200px; }
+      height: auto;
+      max-width: 100%;
+      min-width: 0;
+      width: auto; }
+      .kc-media-management .content-body .kc-media-list .kc-media-list__entries .kc-media-card .kc-media-card__thumbnail {
+        flex: 1 0;
+        width: 100%; }
+        .kc-media-management .content-body .kc-media-list .kc-media-list__entries .kc-media-card .kc-media-card__thumbnail img {
+          height: 100%; }
+      .kc-media-management .content-body .kc-media-list .kc-media-list__entries .kc-media-card .kc-media-card__overview {
+        flex: 0 1 50px; }
 
 /**
   Styling for setting notification category page [BACKOFFICE]
@@ -2204,10 +2217,10 @@ button.kc-text-button {
   .kc-media-list .kc-media-list__wrapper {
     position: relative; }
     .kc-media-list .kc-media-list__wrapper .kc-media-list__entries {
-      column-gap: 8px;
+      column-gap: 12px;
       display: grid;
       grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
-      row-gap: 8px;
+      row-gap: 12px;
       position: absolute;
       top: 0; }
   .kc-media-list--empty span.kc-body2, .kc-media-list--loading span.kc-body2, .kc-media-list--error span.kc-body2 {
@@ -3430,14 +3443,18 @@ main.kc-memberservice-detail {
     .wrapper-form-cms .versi-input-wrapper .kc-inputfield input {
       text-align: center; }
 
-.wrapper-form-cms .image-cms img {
-  width: 100%;
-  max-width: 150px;
-  height: auto;
+.wrapper-form-cms .kc-choose-image-media img {
+  border: 1px solid #D9D9D9;
+  border-radius: 3px;
+  height: 150px;
   margin-bottom: 10px;
+  object-fit: contain;
+  object-position: center;
   padding: 5px;
-  border: 1px solid #e0e0e0;
-  border-radius: 3px; }
+  width: 150px; }
+
+.wrapper-form-cms .kc-choose-image-media button {
+  flex-shrink: 0; }
 
 .wrapper-form-cms .kc-panel-information-config {
   margin-bottom: 20px; }

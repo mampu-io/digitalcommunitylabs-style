@@ -45,11 +45,17 @@
               margin-right: 8px;
             }
           }
+
+          hr {
+            margin-bottom: .5rem;
+            margin-top: .5rem;
+          }
     
           li.nav-item {    
-            &.menu-upgrade{
+            &.menu-upgrade {
               position: relative;
-              &::after{
+
+              &::after {
                 content: "PRO";
                 color: lighten($functionalWarning600, 20%);
                 background: $functionalWarning400;
@@ -64,13 +70,14 @@
                 position: absolute;
                 right: 7.5px;
                 top: 50%;
-
                 transform: translateY(-50%);
               }
+
               p {
                 color: $color_placeholder !important;
               }
             }
+
             a.nav-link {
               background-color: transparent;
               border-radius: 0;

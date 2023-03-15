@@ -104,13 +104,29 @@
 
     .kc-media-list {
       .kc-media-list__entries {
-        display: flex;
-        flex-wrap: wrap;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         position: relative;
 
         .kc-media-card {
+          aspect-ratio: 1/1;
           cursor: default;
-          width: 200px;
+          height: auto;
+          max-width: 100%;
+          min-width: 0;
+          width: auto;
+
+          .kc-media-card__thumbnail {
+            flex: 1 0;
+            width: 100%;
+        
+            img {
+              height: 100%;
+            }
+          }
+
+          .kc-media-card__overview {
+            flex: 0 1 50px;
+          }
         }
       }
     }

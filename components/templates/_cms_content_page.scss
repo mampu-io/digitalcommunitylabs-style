@@ -147,15 +147,20 @@
 		}
 	}
 
-	.image-cms {
+	.kc-choose-image-media {
 		img {
-			width: 100%;
-			max-width: 150px;
-			height: auto;
-			margin-bottom: 10px;
-			padding: 5px;
-			border: 1px solid $color_border;
+			border: 1px solid $neutral5;
 			border-radius: 3px;
+			height: 150px;
+			margin-bottom: 10px;
+			object-fit: contain;
+			object-position: center;
+			padding: 5px;
+			width: 150px;
+		}
+
+		button {
+			flex-shrink: 0;
 		}
 	}
 
