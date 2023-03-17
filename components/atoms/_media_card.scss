@@ -48,11 +48,13 @@
 
     .kc-media-card__icon {
       i.kc-media-card__media-type {
+        color: $neutral8;
         margin-right: 10px;
       }
     }
 
     .kc-media-card__title {
+      color: $neutral11;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;

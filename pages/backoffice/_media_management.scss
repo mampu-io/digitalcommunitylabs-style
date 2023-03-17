@@ -27,6 +27,8 @@
             }
 
             .kc-media-modal-upload {
+              width: 400px;
+
               .kc-upload-media {
                 margin-top: 20px;
 
@@ -91,21 +93,17 @@
       margin-bottom: 30px;
 
       .kc-gallery-list__entries {
-        display: flex;
-        flex-wrap: wrap;
-    
-        .kc-gallery-card {
-          .kc-gallery-card__content {
-            width: 250px;
-          }
-        }
+        column-gap: 20px;
+        row-gap: 20px;
       }
     }
 
     .kc-media-list {
       .kc-media-list__entries {
+        column-gap: 20px;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         position: relative;
+        row-gap: 20px;
 
         .kc-media-card {
           aspect-ratio: 1/1;

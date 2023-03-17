@@ -14,10 +14,10 @@
   }
 
   .kc-gallery-list__entries {
-    column-gap: 10px;
+    column-gap: 12px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    row-gap: 12px;
   }
 
   &--loading, &--error, &--empty {
