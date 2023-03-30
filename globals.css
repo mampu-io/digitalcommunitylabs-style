@@ -140,6 +140,9 @@ select, .form-control, .custom-select {
   .tox.tox-silver-sink.tox-tinymce-aux .tox-notifications-container {
     display: none; }
 
+.text-danger {
+  color: #FF4D4F !important; }
+
 .kc-headline1 {
   font-weight: 300;
   font-size: 100px;
@@ -723,6 +726,11 @@ select, .form-control, .custom-select {
       margin-top: 20px; }
     .kc-media-management .content-body .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-upload {
       width: 400px; }
+      .kc-media-management .content-body .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-upload--error {
+        color: #FF4D4F; }
+        .kc-media-management .content-body .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-upload--error span.kc-body2 {
+          font-size: 16px;
+          line-height: 24px; }
       .kc-media-management .content-body .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-upload .kc-upload-media {
         margin-top: 20px; }
         .kc-media-management .content-body .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-media-modal-upload .kc-upload-media button.kc-button--primary {

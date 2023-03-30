@@ -153,3 +153,7 @@ select, .form-control, .custom-select{
     display: none;
   }
 }
+
+.text-danger {
+  color: $functionalError500 !important;
+}
