@@ -1254,6 +1254,20 @@ select, .form-control, .custom-select {
   color: #8C8C8C;
   font-weight: 400; }
 
+.kc-whitelist .kc-datatable__searchbar button.kc-button--primary {
+  background-color: #FFFFFF;
+  border: 1px solid #8C8C8C;
+  color: #595959; }
+  .kc-whitelist .kc-datatable__searchbar button.kc-button--primary:hover {
+    border: 1px solid #43A3D9;
+    color: #43A3D9; }
+  .kc-whitelist .kc-datatable__searchbar button.kc-button--primary:active {
+    border: 1px solid #0A5CA5;
+    color: #0A5CA5; }
+
+.kc-whitelist .kc-modal .kc-modal__header .kc-modal__title span.kc-headline5 {
+  font-size: 22px; }
+
 /**
   Styling for account search page [FUNDING]
 */
