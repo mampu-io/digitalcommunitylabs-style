@@ -143,6 +143,16 @@ select, .form-control, .custom-select {
 .text-danger {
   color: #FF4D4F !important; }
 
+.kc-reset-pin-modal .modal-dialog {
+  width: 450px; }
+  .kc-reset-pin-modal .modal-dialog .modal-body {
+    padding: 1.5rem; }
+    .kc-reset-pin-modal .modal-dialog .modal-body .kc-radio-button {
+      align-items: baseline;
+      margin-bottom: 10px; }
+      .kc-reset-pin-modal .modal-dialog .modal-body .kc-radio-button .kc-radio-button__label {
+        font-weight: 400; }
+
 .kc-headline1 {
   font-weight: 300;
   font-size: 100px;

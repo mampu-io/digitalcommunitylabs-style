@@ -157,3 +157,22 @@ select, .form-control, .custom-select{
 .text-danger {
   color: $functionalError500 !important;
 }
+
+.kc-reset-pin-modal {
+  .modal-dialog {
+    width: 450px;
+
+    .modal-body {
+      padding: 1.5rem;
+
+      .kc-radio-button {
+        align-items: baseline;
+        margin-bottom: 10px;
+
+        .kc-radio-button__label {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
