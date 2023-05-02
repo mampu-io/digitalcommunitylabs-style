@@ -1036,6 +1036,65 @@ select, .form-control, .custom-select {
     .kc-dao-membership-detail .content-body .container-fluid main.kc-memberservice-detail,
     .kc-request-update-data-detail .content-body .container-fluid main.kc-memberservice-detail {
       width: 75%; }
+      .kc-active-member-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation,
+      .kc-approved-member-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation,
+      .kc-rejected-member-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation,
+      .kc-suspended-member-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation,
+      .kc-member-proposal-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation,
+      .kc-dao-membership-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation,
+      .kc-request-update-data-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation {
+        display: flex;
+        margin-bottom: 20px;
+        overflow: auto; }
+        .kc-active-member-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation::-webkit-scrollbar, .kc-active-member-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation::-webkit-scrollbar-thumb, .kc-active-member-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation::-webkit-scrollbar-corner,
+        .kc-approved-member-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation::-webkit-scrollbar,
+        .kc-approved-member-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation::-webkit-scrollbar-thumb,
+        .kc-approved-member-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation::-webkit-scrollbar-corner,
+        .kc-rejected-member-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation::-webkit-scrollbar,
+        .kc-rejected-member-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation::-webkit-scrollbar-thumb,
+        .kc-rejected-member-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation::-webkit-scrollbar-corner,
+        .kc-suspended-member-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation::-webkit-scrollbar,
+        .kc-suspended-member-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation::-webkit-scrollbar-thumb,
+        .kc-suspended-member-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation::-webkit-scrollbar-corner,
+        .kc-member-proposal-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation::-webkit-scrollbar,
+        .kc-member-proposal-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation::-webkit-scrollbar-thumb,
+        .kc-member-proposal-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation::-webkit-scrollbar-corner,
+        .kc-dao-membership-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation::-webkit-scrollbar,
+        .kc-dao-membership-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation::-webkit-scrollbar-thumb,
+        .kc-dao-membership-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation::-webkit-scrollbar-corner,
+        .kc-request-update-data-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation::-webkit-scrollbar,
+        .kc-request-update-data-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation::-webkit-scrollbar-thumb,
+        .kc-request-update-data-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation::-webkit-scrollbar-corner {
+          border-right-style: inset;
+          border-color: inherit;
+          border-right-width: calc(100vw + 100vh); }
+        .kc-active-member-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation::-webkit-scrollbar,
+        .kc-approved-member-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation::-webkit-scrollbar,
+        .kc-rejected-member-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation::-webkit-scrollbar,
+        .kc-suspended-member-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation::-webkit-scrollbar,
+        .kc-member-proposal-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation::-webkit-scrollbar,
+        .kc-dao-membership-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation::-webkit-scrollbar,
+        .kc-request-update-data-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation::-webkit-scrollbar {
+          width: 1px;
+          height: 1px; }
+        .kc-active-member-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation .kc-navigation-item,
+        .kc-approved-member-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation .kc-navigation-item,
+        .kc-rejected-member-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation .kc-navigation-item,
+        .kc-suspended-member-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation .kc-navigation-item,
+        .kc-member-proposal-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation .kc-navigation-item,
+        .kc-dao-membership-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation .kc-navigation-item,
+        .kc-request-update-data-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation .kc-navigation-item {
+          letter-spacing: 1px;
+          text-transform: none;
+          white-space: nowrap; }
+          .kc-active-member-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation .kc-navigation-item.kc-navigation-item--active,
+          .kc-approved-member-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation .kc-navigation-item.kc-navigation-item--active,
+          .kc-rejected-member-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation .kc-navigation-item.kc-navigation-item--active,
+          .kc-suspended-member-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation .kc-navigation-item.kc-navigation-item--active,
+          .kc-member-proposal-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation .kc-navigation-item.kc-navigation-item--active,
+          .kc-dao-membership-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation .kc-navigation-item.kc-navigation-item--active,
+          .kc-request-update-data-detail .content-body .container-fluid main.kc-memberservice-detail .kc-navigation .kc-navigation-item.kc-navigation-item--active {
+            font-weight: 700; }
     .kc-active-member-detail .content-body .container-fluid aside,
     .kc-approved-member-detail .content-body .container-fluid aside,
     .kc-rejected-member-detail .content-body .container-fluid aside,
@@ -1096,16 +1155,23 @@ select, .form-control, .custom-select {
 .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
   height: 700px;
   padding-top: 1.5rem; }
-  .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__header {
-    width: 100%;
+  .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-navigation {
     display: flex;
-    justify-content: space-between; }
-    .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__header .kc-revision-modal--navigation {
-      display: flex; }
-      .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__header .kc-revision-modal--navigation button {
-        margin-right: 15px; }
-        .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__header .kc-revision-modal--navigation button .kc-tab-navigation--label {
-          margin-bottom: 10px; }
+    flex-shrink: 0;
+    overflow: auto; }
+    .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-navigation::-webkit-scrollbar, .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-navigation::-webkit-scrollbar-thumb, .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-navigation::-webkit-scrollbar-corner {
+      border-right-style: inset;
+      border-color: inherit;
+      border-right-width: calc(100vw + 100vh); }
+    .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-navigation::-webkit-scrollbar {
+      width: 1px;
+      height: 1px; }
+    .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-navigation .kc-navigation-item {
+      letter-spacing: 1px;
+      text-transform: none;
+      white-space: nowrap; }
+      .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-navigation .kc-navigation-item.kc-navigation-item--active {
+        font-weight: 700; }
   .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content {
     width: 100%;
     height: 100%;
@@ -2823,7 +2889,7 @@ main.kc-memberservice-detail {
   main.kc-memberservice-detail hr {
     margin: 20px 0; }
   main.kc-memberservice-detail .kc-memberservice-detail__navigation {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     overflow-x: auto;
     border-color: transparent;
     transition: border-color .25s linear;
@@ -2839,6 +2905,12 @@ main.kc-memberservice-detail {
       height: 6px; }
     main.kc-memberservice-detail .kc-memberservice-detail__navigation .kc-tab-navigation {
       margin-right: 25px; }
+  main.kc-memberservice-detail section.kc-identity-data,
+  main.kc-memberservice-detail section.kc-residence-address,
+  main.kc-memberservice-detail section.kc-employment-data,
+  main.kc-memberservice-detail section.kc-other-data,
+  main.kc-memberservice-detail section.kc-emergency-contacts {
+    margin: 0 20px; }
   main.kc-memberservice-detail section.kc-identity-data .kc-identity-data__right,
   main.kc-memberservice-detail section.kc-residence-address,
   main.kc-memberservice-detail section.kc-employment-data,

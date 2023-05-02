@@ -53,20 +53,31 @@
             height: 700px;
             padding-top: 1.5rem;
 
-            .kc-revision-modal__header {
-              width: 100%;
+            .kc-navigation {
               display: flex;
-              justify-content: space-between;
+              flex-shrink: 0;
+              overflow: auto;
+    
+              &::-webkit-scrollbar,
+              &::-webkit-scrollbar-thumb,
+              &::-webkit-scrollbar-corner {
+                border-right-style: inset;
+                border-color: inherit;
+                border-right-width: calc(100vw + 100vh);
+              }
+              
+              &::-webkit-scrollbar {
+                width: 1px;
+                height: 1px;
+              }
         
-              .kc-revision-modal--navigation {
-                display: flex;
+              .kc-navigation-item {
+                letter-spacing: 1px;
+                text-transform: none;
+                white-space: nowrap;
         
-                button {
-                  margin-right: 15px;
-        
-                  .kc-tab-navigation--label {
-                    margin-bottom: 10px;
-                  }
+                &.kc-navigation-item--active {
+                  font-weight: 700;
                 }
               }
             }

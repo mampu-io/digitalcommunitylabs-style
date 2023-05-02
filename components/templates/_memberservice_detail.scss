@@ -28,7 +28,7 @@ main.kc-memberservice-detail {
   }
 
   .kc-memberservice-detail__navigation {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     overflow-x: auto;
     border-color: transparent;
     transition: border-color .25s linear;
@@ -54,6 +54,14 @@ main.kc-memberservice-detail {
     .kc-tab-navigation {
       margin-right: 25px;
     }
+  }
+
+  section.kc-identity-data,
+  section.kc-residence-address,
+  section.kc-employment-data,
+  section.kc-other-data,
+  section.kc-emergency-contacts {
+    margin: 0 20px;
   }
 
   section.kc-identity-data .kc-identity-data__right,
