@@ -176,3 +176,37 @@ select, .form-control, .custom-select{
     }
   }
 }
+
+.kc-change-phone-number-modal {
+  .modal-title.h4 {
+    font-size: 1.4rem;
+  }
+
+  .modal-body, .modal-footer {
+    padding-left: 1.5rem;
+  }
+
+  .modal-body {
+    .kc-form-group.kc-form-group--vertical {
+      margin-bottom: 10px;
+
+      .kc-form-group__identity .kc-form-group__label {
+        margin-bottom: 0;
+  
+        label {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .btn-close {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+  }
+
+  .btn-close:after {
+    content: "\2715";
+  }
+}
