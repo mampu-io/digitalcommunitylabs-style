@@ -159,34 +159,22 @@ select, .form-control, .custom-select{
 }
 
 .kc-reset-pin-modal {
-  .modal-dialog {
-    width: 450px;
+  .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
+    .kc-radio-button {
+      align-items: baseline;
+      margin-bottom: 10px;
 
-    .modal-body {
-      padding: 1.5rem;
-
-      .kc-radio-button {
-        align-items: baseline;
-        margin-bottom: 10px;
-
-        .kc-radio-button__label {
-          font-weight: 400;
-        }
+      .kc-radio-button__label {
+        font-weight: 400;
       }
     }
   }
 }
 
 .kc-change-phone-number-modal {
-  .modal-title.h4 {
-    font-size: 1.4rem;
-  }
+  .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
+    padding: 1.25rem 1.5rem 2.5rem;
 
-  .modal-body, .modal-footer {
-    padding-left: 1.5rem;
-  }
-
-  .modal-body {
     .kc-form-group.kc-form-group--vertical {
       margin-bottom: 10px;
 
@@ -198,15 +186,5 @@ select, .form-control, .custom-select{
         }
       }
     }
-  }
-
-  .btn-close {
-    background: transparent;
-    border: none;
-    font-size: 20px;
-  }
-
-  .btn-close:after {
-    content: "\2715";
   }
 }
