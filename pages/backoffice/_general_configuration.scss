@@ -57,24 +57,41 @@
         padding: 20px;
         width: 100%;
 
-        p.kc-configuration-warning {
-          color: $functionalWarning500;
-          margin: 0 20px 20px;
+        .kc-modal {
+          .kc-modal__container {
+            width: 500px;
+
+            .kc-modal__title {
+              span.kc-headline5 {
+                font-size: 22px;
+              }
+            }
+
+            .kc-modal__content {
+              > .kc-form-group {
+                margin-bottom: 30px;
+  
+                .kc-form-group__label {
+                  margin-bottom: 0;
+  
+                  > label {
+                    font-size: 16px;
+                    font-weight: 500;
+                    font-family: $font_secondary;
+                  }
+                }
+              }
+  
+              .kc-inputfield .kc-inputfield__box {
+                height: 40px;
+              }
+            }
+          }
         }
 
-        .kc-general-configuration__content {
-          .kc-form-group {
-            .kc-form-group__identity {
-              width: 200px;
-            }
-
-            .kc-input-tag, .kc-textarea {
-              max-width: 500px;
-            }
-
-            .kc-text-html-editor {
-              width: fit-content;
-            }
+        .kc-media-modal {
+          .kc-modal__container {
+            width: 800px;
           }
         }
 

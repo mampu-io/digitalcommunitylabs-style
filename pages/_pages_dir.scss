@@ -5,6 +5,7 @@
 @import 'backoffice/media_management';
 @import 'backoffice/notification_setting';
 @import 'backoffice/notification_template_detail';
+@import 'backoffice/product_biller_category_detail';
 
 // Styling pages for memberservice
 @import 'memberservice/active_member_detail';
@@ -13,6 +14,7 @@
 @import 'memberservice/invoice_list';
 @import 'memberservice/member_proposal_detail';
 @import 'memberservice/request_update_data_detail';
+@import 'memberservice/whitelist';
 
 // Styling pages for funding
 @import 'funding/account_search';

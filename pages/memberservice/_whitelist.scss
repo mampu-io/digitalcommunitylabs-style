@@ -1,0 +1,29 @@
+.kc-whitelist {
+  .kc-datatable__searchbar {
+    button.kc-button--primary {
+      background-color: $neutral1;
+      border: 1px solid $neutral7;
+      color: $neutral8;
+
+      &:hover {
+        border: 1px solid $primary6;
+        color: $primary6;
+      }
+
+      &:active {
+        border: 1px solid $primary8;
+        color: $primary8;
+      }
+    }
+  }
+
+  .kc-modal {
+    .kc-modal__header {
+      .kc-modal__title {
+        span.kc-headline5 {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}

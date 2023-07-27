@@ -153,3 +153,38 @@ select, .form-control, .custom-select{
     display: none;
   }
 }
+
+.text-danger {
+  color: $functionalError500 !important;
+}
+
+.kc-reset-pin-modal {
+  .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
+    .kc-radio-button {
+      align-items: baseline;
+      margin-bottom: 10px;
+
+      .kc-radio-button__label {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.kc-change-phone-number-modal {
+  .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
+    padding: 1.25rem 1.5rem 2.5rem;
+
+    .kc-form-group.kc-form-group--vertical {
+      margin-bottom: 10px;
+
+      .kc-form-group__identity .kc-form-group__label {
+        margin-bottom: 0;
+  
+        label {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
