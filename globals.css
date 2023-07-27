@@ -924,77 +924,48 @@ select, .form-control, .custom-select {
   .kc-active-member-detail .kc-suspend-member-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-textarea {
     margin-bottom: 15px; }
 
-.kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
+.kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
   height: 700px;
   padding-top: 1.5rem; }
-  .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between; }
-    .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__header .kc-revision-modal--navigation {
-      display: flex; }
-      .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__header .kc-revision-modal--navigation button {
-        margin-right: 15px; }
-        .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__header .kc-revision-modal--navigation button .kc-tab-navigation--label {
-          margin-bottom: 10px; }
-  .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content {
-    width: 100%;
+  .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content {
+    width: 500px;
     height: 100%;
     margin: 20px 0;
-    padding-right: 50px;
     overflow-x: hidden;
     overflow-y: auto;
     border-color: transparent;
     transition: border-color .25s linear;
     -webkit-transition: border-color .25s linear; }
-    .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content:hover {
+    .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content:hover {
       border-color: rgba(0, 0, 0, 0.1); }
-    .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content::-webkit-scrollbar, .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content::-webkit-scrollbar-thumb, .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content::-webkit-scrollbar-corner {
+    .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content::-webkit-scrollbar, .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content::-webkit-scrollbar-thumb, .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content::-webkit-scrollbar-corner {
       border-right-style: inset;
       border-color: inherit;
       border-right-width: calc(100vw + 100vh); }
-    .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content::-webkit-scrollbar {
+    .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content::-webkit-scrollbar {
       width: 6px;
       height: 6px; }
-    .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-dropdown button {
-      height: 32px; }
-    .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-dropdown .kc-dropdown__items {
-      top: 32px; }
-    .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section {
-      width: fit-content; }
-      .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-header {
-        margin-bottom: 15px; }
-        .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-header .kc-record-item--value {
-          color: #8C8C8C; }
-      .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-item {
-        display: flex;
-        flex-direction: column; }
-        .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-item .kc-section-item--top {
-          align-items: flex-start;
-          display: flex;
-          padding: 10px; }
-          .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-item .kc-section-item--top .kc-record-item {
-            padding: 0; }
-          .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-item .kc-section-item--top .kc-checkbox-container {
-            padding-top: 3px; }
-        .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-item .kc-section-item--bottom {
-          width: 100%;
-          padding: 0 10px;
-          margin-bottom: 15px; }
-          .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-item .kc-section-item--bottom textarea {
-            resize: none; }
-          .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-item .kc-section-item--bottom .kc-section-item--action {
-            margin-top: 10px;
-            display: flex; }
-            .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-item .kc-section-item--bottom .kc-section-item--action .kc-section-item--action-item {
-              margin-right: 25px; }
-              .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section .kc-section-item .kc-section-item--bottom .kc-section-item--action .kc-section-item--action-item input[type="radio"] {
-                margin-right: 10px; }
-  .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__footer .kc-revision-modal--action-button {
-    display: flex;
-    justify-content: flex-start; }
-    .kc-active-member-detail .kc-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__footer .kc-revision-modal--action-button button {
-      margin: 0; }
+    .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section-item {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 5px;
+      padding: 10px; }
+      .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section-item .kc-record-item-new {
+        align-items: flex-start;
+        background-color: #EFEFEF;
+        margin-bottom: 10px;
+        padding: 5px;
+        width: 100%; }
+        .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section-item .kc-record-item-new label, .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section-item .kc-record-item-new .kc-record-item-new__value {
+          flex: 1; }
+        .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section-item .kc-record-item-new label {
+          line-height: 24px; }
+      .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section-item .kc-dropdown button {
+        height: 32px; }
+      .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section-item .kc-dropdown .kc-dropdown__items {
+        top: 32px; }
+  .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__footer {
+    margin-left: 10px; }
 
 /**
   Styling for invoice detail page and
