@@ -143,21 +143,6 @@ select, .form-control, .custom-select {
 .text-danger {
   color: #FF4D4F !important; }
 
-.kc-reset-pin-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-radio-button {
-  align-items: baseline;
-  margin-bottom: 10px; }
-  .kc-reset-pin-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-radio-button .kc-radio-button__label {
-    font-weight: 400; }
-
-.kc-change-phone-number-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
-  padding: 1.25rem 1.5rem 2.5rem; }
-  .kc-change-phone-number-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical {
-    margin-bottom: 10px; }
-    .kc-change-phone-number-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical .kc-form-group__identity .kc-form-group__label {
-      margin-bottom: 0; }
-      .kc-change-phone-number-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical .kc-form-group__identity .kc-form-group__label label {
-        margin-bottom: 0; }
-
 .kc-headline1 {
   font-weight: 300;
   font-size: 100px;
@@ -1045,6 +1030,21 @@ select, .form-control, .custom-select {
         top: 32px; }
   .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__footer {
     margin-left: 10px; }
+
+.kc-active-member-detail .kc-reset-pin-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-radio-button {
+  align-items: baseline;
+  margin-bottom: 10px; }
+  .kc-active-member-detail .kc-reset-pin-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-radio-button .kc-radio-button__label {
+    font-weight: 400; }
+
+.kc-active-member-detail .kc-change-phone-number-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
+  padding: 1.25rem 1.5rem 2.5rem; }
+  .kc-active-member-detail .kc-change-phone-number-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical {
+    margin-bottom: 10px; }
+    .kc-active-member-detail .kc-change-phone-number-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical .kc-form-group__identity .kc-form-group__label {
+      margin-bottom: 0; }
+      .kc-active-member-detail .kc-change-phone-number-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical .kc-form-group__identity .kc-form-group__label label {
+        margin-bottom: 0; }
 
 /**
   Styling for invoice detail page and
