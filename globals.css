@@ -1202,6 +1202,12 @@ select, .form-control, .custom-select {
     line-height: 24px;
     margin-bottom: 0; }
 
+.kc-member-proposal-detail .kc-reset-pin-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-radio-button {
+  align-items: baseline;
+  margin-bottom: 10px; }
+  .kc-member-proposal-detail .kc-reset-pin-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-radio-button .kc-radio-button__label {
+    font-weight: 400; }
+
 .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
   height: 700px;
   padding-top: 1.5rem; }
