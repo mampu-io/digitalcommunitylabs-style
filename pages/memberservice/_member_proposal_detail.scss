@@ -16,9 +16,11 @@
   .kc-reject-proposal-modal {
     .kc-modal {
       .kc-modal__container {
-        width: 600px;
+        width: 500px;
 
         .kc-modal__content {
+          padding: 1.5rem 1.5rem 2.5rem;
+
           .kc-textarea, .kc-button {
             margin-top: 15px;
           }

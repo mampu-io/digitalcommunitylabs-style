@@ -985,8 +985,14 @@ select, .form-control, .custom-select {
 */
 .kc-active-member-detail .kc-suspend-member-modal .kc-modal .kc-modal__container {
   width: 500px; }
-  .kc-active-member-detail .kc-suspend-member-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-textarea {
-    margin-bottom: 15px; }
+  .kc-active-member-detail .kc-suspend-member-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
+    padding: 1.5rem 1.5rem 2.5rem; }
+    .kc-active-member-detail .kc-suspend-member-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical {
+      margin-bottom: 10px; }
+      .kc-active-member-detail .kc-suspend-member-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical .kc-form-group__identity .kc-form-group__label {
+        margin-bottom: 0; }
+        .kc-active-member-detail .kc-suspend-member-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical .kc-form-group__identity .kc-form-group__label label {
+          margin-bottom: 0; }
 
 .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
   height: 700px;
@@ -1191,9 +1197,11 @@ select, .form-control, .custom-select {
   width: 200px; }
 
 .kc-member-proposal-detail .kc-reject-proposal-modal .kc-modal .kc-modal__container {
-  width: 600px; }
-  .kc-member-proposal-detail .kc-reject-proposal-modal .kc-modal .kc-modal__container .kc-modal__content .kc-textarea, .kc-member-proposal-detail .kc-reject-proposal-modal .kc-modal .kc-modal__container .kc-modal__content .kc-button {
-    margin-top: 15px; }
+  width: 500px; }
+  .kc-member-proposal-detail .kc-reject-proposal-modal .kc-modal .kc-modal__container .kc-modal__content {
+    padding: 1.5rem 1.5rem 2.5rem; }
+    .kc-member-proposal-detail .kc-reject-proposal-modal .kc-modal .kc-modal__container .kc-modal__content .kc-textarea, .kc-member-proposal-detail .kc-reject-proposal-modal .kc-modal .kc-modal__container .kc-modal__content .kc-button {
+      margin-top: 15px; }
 
 .kc-member-proposal-detail .kc-approve-proposal-modal .kc-modal .kc-modal__container {
   width: 500px; }
@@ -1305,8 +1313,16 @@ select, .form-control, .custom-select {
 */
 .kc-request-update-data-detail .kc-reject-request-update-data-modal .kc-modal .kc-modal__container {
   width: 500px; }
-  .kc-request-update-data-detail .kc-reject-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-textarea {
-    margin-bottom: 15px; }
+  .kc-request-update-data-detail .kc-reject-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
+    padding: 1.5rem 1.5rem 2.5rem; }
+    .kc-request-update-data-detail .kc-reject-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-textarea {
+      margin-bottom: 15px; }
+    .kc-request-update-data-detail .kc-reject-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical {
+      margin-bottom: 10px; }
+      .kc-request-update-data-detail .kc-reject-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical .kc-form-group__identity .kc-form-group__label {
+        margin-bottom: 0; }
+        .kc-request-update-data-detail .kc-reject-request-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical .kc-form-group__identity .kc-form-group__label label {
+          margin-bottom: 0; }
 
 .kc-request-update-data-detail main.kc-memberservice-detail .kc-section .kc-section-header .kc-record-item .kc-record-item--rows-value .kc-record-item--value span {
   color: #8C8C8C;
