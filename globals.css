@@ -2954,8 +2954,8 @@ aside.kc-deposit-account-onboarding-detail {
         min-width: auto; }
       .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail .kc-invoice-detail__left section.kc-invoice-remark .kc-record-item-new .kc-record-item-new__value span {
         color: #FF4D4F; }
-      .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail .kc-invoice-detail__left section.kc-invoice-remark .kc-synchronize-button {
-        width: 240px; }
+      .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail .kc-invoice-detail__left .kc-synchronize-button {
+        max-width: 240px; }
     .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail .kc-invoice-detail__right section.kc-customer-info {
       margin-bottom: 20px; }
     .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail .kc-invoice-detail__right section.kc-invoice-amount table.kc-record-table tr:nth-child(3) td {
