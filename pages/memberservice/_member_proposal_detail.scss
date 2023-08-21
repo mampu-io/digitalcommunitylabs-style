@@ -66,7 +66,7 @@
         .kc-modal__main {
           .kc-modal__content {
             height: 700px;
-            padding-top: 1.5rem;
+            padding-top: 1rem;
 
             .kc-navigation {
               display: flex;
@@ -98,10 +98,8 @@
             }
         
             .kc-revision-modal__content {
-              width: 100%;
-              height: 100%;
               margin: 20px 0;
-              padding-right: 50px;
+              padding-right: 10px;
               overflow-x: hidden;
               overflow-y: auto;
               border-color: transparent;
@@ -125,30 +123,27 @@
                 height: 6px;
               }
         
-              .kc-dropdown {
-                button {
-                  height: 32px;
-                }
-        
-                .kc-dropdown__items {
-                  top: 32px;
-                }
-              }
-        
               .kc-section {
-                width: fit-content;
-        
                 .kc-section-header {
-                  margin-bottom: 15px;
-        
+                  margin-bottom: 10px;
+
                   .kc-record-item--value {
                     color: $neutral7;
                   }
+                }
+
+                .kc-section-item:nth-child(odd) {
+                  background-color: #EFEFEF;
+                }
+
+                .kc-section-item:nth-child(even) {
+                  background-color: #F5F5F5;
                 }
         
                 .kc-section-item {
                   display: flex;
                   flex-direction: column;
+                  margin-bottom: 0.75rem;
         
                   .kc-section-item--top {
                     align-items: flex-start;
@@ -157,46 +152,36 @@
         
                     .kc-record-item {
                       padding: 0;
-                    }
-        
-                    .kc-checkbox-container {
-                      padding-top: 3px;
-                    }
-                  }
-        
-                  .kc-section-item--bottom {
-                    width: 100%;
-                    padding: 0 10px;
-                    margin-bottom: 15px;
-        
-                    textarea {
-                      resize: none;
-                    }
-        
-                    .kc-section-item--action {
-                      margin-top: 10px;
-                      display: flex;
-        
-                      .kc-section-item--action-item {
-                        margin-right: 25px;
-        
-                        input[type="radio"] {
-                          margin-right: 10px;
+
+                      .kc-record-item--key span {
+                        font-weight: 700;
+                      }
+
+                      .kc-record-item--value {
+                        a.kc-body1, span.kc-body1 {
+                          font-weight: 400;
                         }
                       }
                     }
-                  }
-                }
-              }
-            }
+
+                    .kc-record-item--highlight {
+                      margin: 0 0 10px;
+                      padding: 10px;
+                    }
         
-            .kc-revision-modal__footer {
-              .kc-revision-modal--action-button {
-                display: flex;
-                justify-content: flex-start;
-                
-                button {
-                  margin: 0;
+                    .kc-checkbox {
+                      padding-top: 5px;
+                    }
+                  }
+
+                  .kc-section-item--top:has(.kc-record-item--highlight) {
+                    padding: 0;
+                  }
+        
+                  .kc-section-item--bottom {
+                    padding: 0 10px;
+                    margin-bottom: 15px;
+                  }
                 }
               }
             }
