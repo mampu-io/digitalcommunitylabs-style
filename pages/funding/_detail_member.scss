@@ -62,37 +62,81 @@
         }
 
         section.kc-qris-detail {
-          .kc-form-group {
-            margin-bottom: 20px;
-            width: 100%;
+          .kc-dropdown .kc-dropdown__items {
+            z-index: 1000;
+          }
 
-            .kc-form-group__label {
+          .kc-more-option {
+            position: relative;
+      
+            > button {
+              background-color: transparent;
+              border: none;
+              width: 24px;
+            }
+      
+            .kc-more-option-menu {
+              position: fixed;
+              width: max-content;
+            }
+          }
+
+          .kc-qris-merchant-modal .kc-modal .kc-modal__container {
+            width: 800px;
+
+            .kc-modal__main .kc-modal__content {
+              height: 550px;
+              padding: 1.5rem;
+
+              .kc-form-group {
+                margin-bottom: 20px;
+                width: 100%;
+    
+                .kc-form-group__identity .kc-form-group__label {
+                  margin-bottom: 5px;
+  
+                  label.kc-body1 {
+                    font-size: 15px !important;
+                  }
+                }
+              }
+
+              .kc-merchant-address {
+                .kc-form-group {
+                  flex-grow: 1;
+  
+                  .kc-textarea, .kc-textarea .kc-textarea__box, .kc-textarea .kc-textarea__box textarea {
+                    height: 100%;
+                  }
+                }
+              }
+            }
+          }
+
+          .kc-upload-qris-image-modal {
+            img.kc-qris-image {
               margin-bottom: 5px;
+              width: 200px;
+              height: 200px;
+              object-fit: cover;
+              object-position: center;
             }
-          }
-
-          img.kc-qris-image {
-            margin-bottom: 5px;
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            object-position: center;
-          }
-
-          button.kc-upload-qris-btn {
-            background-color: transparent;
-            border: none;
-            width: fit-content;
-            
-            label {
-              color: $primary7;
-              cursor: pointer;
-              text-decoration: underline;
+  
+            button.kc-upload-qris-btn {
+              background-color: transparent;
+              border: none;
+              width: fit-content;
+              
+              label {
+                color: $primary7;
+                cursor: pointer;
+                text-decoration: underline;
+              }
             }
-          }
-
-          input[type="file"] {
-            visibility: hidden;
+  
+            input[type="file"] {
+              visibility: hidden;
+            }
           }
         }
 

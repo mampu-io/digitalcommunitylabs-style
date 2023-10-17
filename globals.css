@@ -1395,26 +1395,48 @@ select, .form-control, .custom-select {
         .kc-funding-detail-member .content-body .container-fluid main section.kc-deposit-account-detail p.kc-body2 {
           color: #FF4D4F;
           padding-left: 10px; }
-      .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-form-group {
-        margin-bottom: 20px;
-        width: 100%; }
-        .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-form-group .kc-form-group__label {
-          margin-bottom: 5px; }
-      .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail img.kc-qris-image {
+      .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-dropdown .kc-dropdown__items {
+        z-index: 1000; }
+      .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-more-option {
+        position: relative; }
+        .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-more-option > button {
+          background-color: transparent;
+          border: none;
+          width: 24px; }
+        .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-more-option .kc-more-option-menu {
+          position: fixed;
+          width: max-content; }
+      .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container {
+        width: 800px; }
+        .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
+          height: 550px;
+          padding: 1.5rem; }
+          .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group {
+            margin-bottom: 20px;
+            width: 100%; }
+            .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group .kc-form-group__identity .kc-form-group__label {
+              margin-bottom: 5px; }
+              .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group .kc-form-group__identity .kc-form-group__label label.kc-body1 {
+                font-size: 15px !important; }
+          .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-merchant-address .kc-form-group {
+            flex-grow: 1; }
+            .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-merchant-address .kc-form-group .kc-textarea, .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-merchant-address .kc-form-group .kc-textarea .kc-textarea__box, .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-merchant-address .kc-form-group .kc-textarea .kc-textarea__box textarea {
+              height: 100%; }
+      .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-upload-qris-image-modal img.kc-qris-image {
         margin-bottom: 5px;
         width: 200px;
         height: 200px;
         object-fit: cover;
         object-position: center; }
-      .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail button.kc-upload-qris-btn {
+      .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-upload-qris-image-modal button.kc-upload-qris-btn {
         background-color: transparent;
         border: none;
         width: fit-content; }
-        .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail button.kc-upload-qris-btn label {
+        .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-upload-qris-image-modal button.kc-upload-qris-btn label {
           color: #0F77C0;
           cursor: pointer;
           text-decoration: underline; }
-      .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail input[type="file"] {
+      .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-upload-qris-image-modal input[type="file"] {
         visibility: hidden; }
       .kc-funding-detail-member .content-body .container-fluid main .kc-form-group {
         margin-bottom: 0;
