@@ -87,10 +87,6 @@
 
             .kc-form-group__identity .kc-form-group__label {
               margin-bottom: 5px;
-
-              label.kc-body1 {
-                font-size: 15px !important;
-              }
             }
           }
 
@@ -102,8 +98,16 @@
             width: 800px;
 
             .kc-modal__main .kc-modal__content {
-              height: 550px;
+              height: 780px;
               padding: 1.5rem;
+
+              .kc-form-group {
+                .kc-form-group__identity .kc-form-group__label {
+                  label.kc-body1 {
+                    font-size: 15px !important;
+                  }
+                }
+              }
 
               .kc-merchant-address {
                 .kc-form-group {
@@ -117,11 +121,17 @@
             }
           }
 
-          .kc-upload-qris-image-modal .kc-modal .kc-modal__container {
-            .kc-modal__main .kc-modal__content {
-              padding: 1.5rem 1.5rem 2.5rem;
-            }
+          .kc-upload-qris-image-modal, .kc-suspend-qris-merchant-modal {
+            .kc-modal .kc-modal__container {
+              width: 500px;
 
+              .kc-modal__main .kc-modal__content {
+                padding: 1.5rem 1.5rem 2.5rem;
+              }
+            }
+          }
+
+          .kc-upload-qris-image-modal .kc-modal .kc-modal__container {
             .kc-form-group {
               .kc-form-group__identity .kc-form-group__label {
                 margin-bottom: 0;
