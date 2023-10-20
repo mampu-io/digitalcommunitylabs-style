@@ -1420,6 +1420,10 @@ select, .form-control, .custom-select {
           padding: 1.5rem; }
           .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group .kc-form-group__identity .kc-form-group__label label.kc-body1 {
             font-size: 15px !important; }
+          .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group-with-helper .kc-form-group .kc-form-group__identity .kc-form-group__label {
+            margin-bottom: 0; }
+            .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group-with-helper .kc-form-group .kc-form-group__identity .kc-form-group__label label.kc-body1 {
+              margin-bottom: 0; }
           .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-merchant-address .kc-form-group {
             flex-grow: 1; }
             .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-merchant-address .kc-form-group .kc-textarea, .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-merchant-address .kc-form-group .kc-textarea .kc-textarea__box, .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-merchant-address .kc-form-group .kc-textarea .kc-textarea__box textarea {

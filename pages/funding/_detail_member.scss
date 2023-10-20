@@ -109,6 +109,18 @@
                 }
               }
 
+              .kc-form-group-with-helper {
+                .kc-form-group {
+                  .kc-form-group__identity .kc-form-group__label {
+                    margin-bottom: 0;
+  
+                    label.kc-body1 {
+                      margin-bottom: 0;
+                    }
+                  }
+                }
+              }
+
               .kc-merchant-address {
                 .kc-form-group {
                   flex-grow: 1;
