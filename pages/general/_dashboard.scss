@@ -1,0 +1,147 @@
+$dashboard_color_purple : #757AEA;
+$dashboard_color_blue : #51BCF8;
+$dashboard_color_yellow : #E5AE20;
+$dashboard_color_red : #DC496F;
+$dashboard_color_green : #74C990;
+
+.kc-dashboard {
+	h2 {
+		color: $neutral9;
+	}
+
+	table {
+		width: 100%;
+
+		tr td {
+			padding: 7.5px 0;
+			font-size: 14px;
+			color: $neutral7;
+		}
+	}
+
+	span {
+		color: $neutral7;
+		font-size: 14px;
+	}
+
+	span.kc-nominal-header {
+		font-size: 40px;
+		color: $neutral13;
+		margin: 25px 0;
+	}
+
+	.content-body {
+		align-items: center;
+		display: flex;
+	}
+
+	.kc-dashboard__left-section {
+		width: calc(30% - 1rem);
+
+		.kc-nominal-purple {
+			color: $dashboard_color_purple;
+		}
+
+		.kc-nominal-blue {
+			color: $dashboard_color_blue;
+		}
+
+		.kc-nominal-yellow {
+			color: $dashboard_color_yellow;
+		}
+
+		.kc-nominal-red {
+			color: $dashboard_color_red;
+		}
+
+		.kc-nominal-green {
+			color: $dashboard_color_green;
+		}
+
+		.kc-nominal-black {
+			color: $neutral13;
+		}
+	}
+
+	.kc-dashboard__right-section {
+		width: calc(70% - 1rem);
+
+		.kc-transaction-daterange {
+			max-width: 650px;
+		
+			.kc-form-group {
+				margin-bottom: 0;
+				margin-right: 1rem;
+			}
+
+			button.kc-button.kc-button--primary:disabled {
+				span.kc-button-label {
+					color: $neutral6;
+				}
+			}
+
+			button.kc-button.kc-button--primary {
+				span.kc-button-label {
+					color: $neutral1;
+				}
+			}
+		}
+
+		.kc-transaction-wrapper {
+			display: grid;
+			gap: 1rem;
+			grid-template-columns: 1fr 1fr;
+		}
+
+		.kc-dashboard-card {
+			span.kc-currency {
+				font-size: 18px;
+				font-weight: 400;
+			}
+		}
+	}
+
+	.kc-dashboard-card {
+		border: 1px solid #EFEFEF;
+		box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+	
+		.kc-dashboard-card__icon {
+			height: 50px;
+			width: 50px;
+
+			&.kc-dashboard-card__icon--green {
+				background-color: $dashboard_color_green;
+			}
+			&.kc-dashboard-card__icon--purple {
+				background-color: $dashboard_color_purple;
+			}
+			&.kc-dashboard-card__icon--yellow {
+				background-color: $dashboard_color_yellow;
+			}
+			&.kc-dashboard-card__icon--blue {
+				background-color: $dashboard_color_blue;
+			}
+		}
+
+		p {
+			font-size: 1rem;
+			color: $neutral7;
+		}
+
+		.kc-percentage-from-last-month {
+			text-align: right;
+
+			.kc-percentage-from-last-month__icon {
+				padding: 5px 10px;
+
+				&.kc-percentage-from-last-month--increase {
+					background-color: $functionalSuccess500;
+				}
+
+				&.kc-percentage-from-last-month--decrease {
+					background-color: $functionalError500;
+				}
+			}
+		}
+	}
+}
