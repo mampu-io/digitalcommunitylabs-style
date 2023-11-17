@@ -2241,6 +2241,21 @@ button.kc-text-button {
   button.kc-text-button:disabled {
     color: #BFBFBF; }
 
+.kc-ticketing-button a {
+  display: inline-block;
+  user-select: none;
+  border: 1px solid #7239EA;
+  padding: .45rem 1rem;
+  border-radius: .475rem;
+  transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+  color: #FFFFFF;
+  background-color: #7239EA;
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.15), 5px 5px 5px rgba(0, 0, 0, 0.2);
+  font-size: .925rem; }
+  .kc-ticketing-button a:hover {
+    background-color: #6130C7;
+    border-color: #5B2EBB; }
+
 .kc-animation p.kc-caption {
   font-size: 15px;
   line-height: 1.25;
