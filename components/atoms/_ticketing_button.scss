@@ -1,4 +1,12 @@
 .kc-ticketing-button {
+  * {
+    font-family: Poppins, Helvetica, sans-serif;
+  }
+
+  .fas {
+    font-family: "Font Awesome 6 Free";
+  }
+
   a {
     display: inline-block;
     user-select: none;
@@ -9,11 +17,15 @@
     color: $neutral1;
     background-color: #7239EA;
     box-shadow: 5px 5px 5px rgba(255, 255, 255, .15), 5px 5px 5px rgba(0, 0, 0, .2);
-    font-size: .925rem;
+    font-size: .775rem;
 
     &:hover {
       background-color: #6130C7;
       border-color: #5B2EBB;
+    }
+
+    i {
+      margin-right: .7rem;
     }
   }
 }

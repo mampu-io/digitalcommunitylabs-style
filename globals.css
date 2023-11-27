@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;700&display=swap");
 /* System Design */
 * {
   margin: 0;
@@ -1953,6 +1953,41 @@ select, .form-control, .custom-select {
         right: 0;
         width: max-content; }
 
+.kc-health-check-indicator {
+  margin-bottom: .75rem;
+  width: 240px; }
+  .kc-health-check-indicator * {
+    font-family: Poppins, Helvetica, sans-serif; }
+  .kc-health-check-indicator .bg-success {
+    background-color: #50CD88 !important; }
+  .kc-health-check-indicator .bg-danger {
+    background-color: #F1416C !important; }
+  .kc-health-check-indicator .fas {
+    font-family: "Font Awesome 6 Free"; }
+  .kc-health-check-indicator .kc-indicator-icon {
+    height: 20px;
+    width: 20px; }
+  .kc-health-check-indicator .card {
+    box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.15), 3px 3px 5px rgba(0, 0, 0, 0.15); }
+    .kc-health-check-indicator .card .card-header button {
+      background-color: #FFFFFF;
+      padding: .6rem 1rem; }
+      .kc-health-check-indicator .card .card-header button span {
+        color: #000000;
+        font-size: .875rem; }
+    .kc-health-check-indicator .card .card-header button:not(.collapsed) {
+      background-color: #F5F8FA; }
+      .kc-health-check-indicator .card .card-header button:not(.collapsed) span {
+        color: #009EF7; }
+    .kc-health-check-indicator .card .card-body {
+      font-size: .8rem;
+      padding: 13px 16px; }
+      .kc-health-check-indicator .card .card-body .d-flex {
+        font-size: .875rem;
+        margin-bottom: 13px; }
+      .kc-health-check-indicator .card .card-body > span {
+        font-size: .725rem; }
+
 .bg-loading-page {
   width: 100%;
   height: 100%;
@@ -2241,6 +2276,12 @@ button.kc-text-button {
   button.kc-text-button:disabled {
     color: #BFBFBF; }
 
+.kc-ticketing-button * {
+  font-family: Poppins, Helvetica, sans-serif; }
+
+.kc-ticketing-button .fas {
+  font-family: "Font Awesome 6 Free"; }
+
 .kc-ticketing-button a {
   display: inline-block;
   user-select: none;
@@ -2251,10 +2292,12 @@ button.kc-text-button {
   color: #FFFFFF;
   background-color: #7239EA;
   box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.15), 5px 5px 5px rgba(0, 0, 0, 0.2);
-  font-size: .925rem; }
+  font-size: .775rem; }
   .kc-ticketing-button a:hover {
     background-color: #6130C7;
     border-color: #5B2EBB; }
+  .kc-ticketing-button a i {
+    margin-right: .7rem; }
 
 .kc-animation p.kc-caption {
   font-size: 15px;

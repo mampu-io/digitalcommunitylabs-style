@@ -1,0 +1,65 @@
+.kc-health-check-indicator {
+  margin-bottom: .75rem;
+  width: 240px;
+
+  * {
+    font-family: Poppins, Helvetica, sans-serif;
+  }
+
+  .bg-success {
+    background-color: #50CD88 !important;
+  }
+
+  .bg-danger {
+    background-color: #F1416C !important;
+  }
+
+  .fas {
+    font-family: "Font Awesome 6 Free";
+  }
+
+  .kc-indicator-icon {
+    height: 20px;
+    width: 20px;
+  }
+
+  .card {
+    box-shadow:
+      3px 3px 5px rgba(255, 255, 255, .15),
+      3px 3px 5px rgba(0, 0, 0, .15);
+
+    .card-header {
+      button {
+        background-color: $neutral1;
+        padding: .6rem 1rem;
+
+        span {
+          color: $neutral13;
+          font-size: .875rem;
+        }
+      }
+
+      button:not(.collapsed) {
+        background-color: #F5F8FA;
+
+        span {
+          color: #009EF7;
+        }
+      }
+    }
+
+    .card-body {
+      font-size: .8rem;
+      padding: 13px 16px;
+  
+      .d-flex {
+        font-size: .875rem;
+        margin-bottom: 13px;
+      }
+  
+      > span {
+        font-size: .725rem;
+      }
+    }
+  }
+}
