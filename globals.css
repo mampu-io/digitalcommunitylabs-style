@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap");
 /* System Design */
 * {
   margin: 0;
@@ -464,6 +464,9 @@ select, .form-control, .custom-select {
   right: 0px;
   bottom: 0px;
   left: 0px; }
+
+.main-footer {
+  font-size: 14px; }
 
 .main-header {
   background: #0F77C0;
@@ -2209,6 +2212,49 @@ select, .form-control, .custom-select {
     background-color: #52C41A; }
   .kc-result-indicator.kc-result-indicator--fail {
     background-color: #FF4D4F; }
+
+.kc-service-health-broadcast-message {
+  margin-left: calc((100vw - 600px) / 2);
+  top: 20px;
+  width: 600px;
+  z-index: 1040; }
+  .kc-service-health-broadcast-message .alert {
+    box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.15), 3px 3px 5px rgba(0, 0, 0, 0.15);
+    margin-bottom: 0; }
+    .kc-service-health-broadcast-message .alert * {
+      font-family: Poppins, Helvetica, sans-serif; }
+    .kc-service-health-broadcast-message .alert .fas {
+      font-family: "Font Awesome 6 Free"; }
+    .kc-service-health-broadcast-message .alert.bg-danger {
+      background-color: #F1416C !important; }
+    .kc-service-health-broadcast-message .alert > i {
+      font-size: 32px; }
+    .kc-service-health-broadcast-message .alert .alert-heading {
+      font-size: 16px;
+      font-weight: 600; }
+    .kc-service-health-broadcast-message .alert .alert-body {
+      font-size: 13px;
+      font-weight: 400; }
+    .kc-service-health-broadcast-message .alert .btn-close {
+      background-color: transparent;
+      border: 0px;
+      height: 40px;
+      position: absolute;
+      right: 8px;
+      transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+      text-align: center;
+      top: 8px;
+      user-select: none;
+      vertical-align: middle;
+      visibility: hidden;
+      width: 40px; }
+      .kc-service-health-broadcast-message .alert .btn-close::before {
+        font-family: "Font Awesome 6 Free";
+        color: #FFFFFF;
+        content: "\f00d";
+        font-size: 22px;
+        font-weight: 700;
+        visibility: visible; }
 
 .kc-status-card {
   color: #FFFFFF;

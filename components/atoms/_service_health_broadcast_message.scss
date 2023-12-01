@@ -1,0 +1,63 @@
+.kc-service-health-broadcast-message {
+  margin-left: calc((100vw - 600px) / 2);
+  top: 20px;
+  width: 600px;
+  z-index: 1040;
+
+  .alert {
+    box-shadow:
+      3px 3px 5px rgba(255, 255, 255, .15),
+      3px 3px 5px rgba(0, 0, 0, .15);
+    margin-bottom: 0;
+
+    * {
+      font-family: Poppins, Helvetica, sans-serif;
+    }
+
+    .fas {
+      font-family: "Font Awesome 6 Free";
+    }
+
+    &.bg-danger {
+      background-color: #F1416C !important;
+    }
+
+    > i {
+      font-size: 32px;
+    }
+
+    .alert-heading {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .alert-body {
+      font-size: 13px;
+      font-weight: 400;
+    }
+
+    .btn-close {
+      background-color: transparent;
+      border: 0px;
+      height: 40px;
+      position: absolute;
+      right: 8px;
+      transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+      text-align: center;
+      top: 8px;
+      user-select: none;
+      vertical-align: middle;
+      visibility: hidden;
+      width: 40px;
+
+      &::before {
+        font-family: "Font Awesome 6 Free";
+        color: $neutral1;
+        content: "\f00d";
+        font-size: 22px;
+        font-weight: 700;
+        visibility: visible;
+      }
+    }
+  }
+}
