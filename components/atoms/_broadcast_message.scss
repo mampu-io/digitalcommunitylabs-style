@@ -1,4 +1,4 @@
-.kc-service-health-broadcast-message {
+.kc-broadcast-message {
   margin-left: calc((100vw - 600px) / 2);
   top: 20px;
   width: 600px;
@@ -18,8 +18,22 @@
       font-family: "Font Awesome 6 Free";
     }
 
-    &.bg-danger {
+    &.alert-danger {
       background-color: #F1416C !important;
+    }
+
+    &.alert-warning {
+      background-color: #EDB900 !important;
+    }
+
+    &.alert-success {
+      background-color: #50CD89 !important;
+      border-color: #CBF0DC !important;
+    }
+
+    &.alert-info {
+      background-color: #7239EA !important;
+      border-color: #D5C4F9 !important;
     }
 
     > i {
@@ -33,7 +47,7 @@
 
     .alert-body {
       font-size: 13px;
-      font-weight: 400;
+      font-weight: 500;
     }
 
     .btn-close {
