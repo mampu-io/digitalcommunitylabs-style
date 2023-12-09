@@ -28,15 +28,15 @@
 
     &.alert-success {
       background-color: #50CD89 !important;
-      border-color: #CBF0DC !important;
+      border-color: #50CD89 !important;
     }
 
     &.alert-info {
       background-color: #7239EA !important;
-      border-color: #D5C4F9 !important;
+      border-color: #7239EA !important;
     }
 
-    > i {
+    i.fas {
       font-size: 32px;
     }
 
@@ -72,6 +72,13 @@
         font-weight: 700;
         visibility: visible;
       }
+    }
+
+    button.kc-block-broadcast-message {
+      border: 1px solid $neutral1;
+      border-radius: 4px;
+      color: $neutral1;
+      font-size: 14px;
     }
   }
 }

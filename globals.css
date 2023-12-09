@@ -1911,11 +1911,11 @@ select, .form-control, .custom-select {
       background-color: #EDB900 !important; }
     .kc-broadcast-message .alert.alert-success {
       background-color: #50CD89 !important;
-      border-color: #CBF0DC !important; }
+      border-color: #50CD89 !important; }
     .kc-broadcast-message .alert.alert-info {
       background-color: #7239EA !important;
-      border-color: #D5C4F9 !important; }
-    .kc-broadcast-message .alert > i {
+      border-color: #7239EA !important; }
+    .kc-broadcast-message .alert i.fas {
       font-size: 32px; }
     .kc-broadcast-message .alert .alert-heading {
       font-size: 16px;
@@ -1943,6 +1943,11 @@ select, .form-control, .custom-select {
         font-size: 22px;
         font-weight: 700;
         visibility: visible; }
+    .kc-broadcast-message .alert button.kc-block-broadcast-message {
+      border: 1px solid #FFFFFF;
+      border-radius: 4px;
+      color: #FFFFFF;
+      font-size: 14px; }
 
 .kc-color-pallete {
   background-color: transparent;
@@ -3276,13 +3281,13 @@ aside.kc-deposit-account-onboarding-detail {
   align-items: center;
   justify-content: center; }
   .kc-login--wrapper .kc-login--container {
-    padding-bottom: 150px; }
+    padding-bottom: 100px; }
     .kc-login--wrapper .kc-login--container .kc-login--title {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      margin-bottom: 120px; }
+      margin-bottom: 60px; }
       .kc-login--wrapper .kc-login--container .kc-login--title .kc-login--back-button {
         background-color: #FFFFFF;
         border-radius: 50%;
