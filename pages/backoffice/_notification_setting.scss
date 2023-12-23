@@ -4,10 +4,6 @@
 
 .kc-notification-setting {
   .kc-datatable {
-    .kc-datatable__header {
-      padding: 0;
-    }
-  
     .kc-table table tr th {
       &:first-child, &:nth-child(2) {
         width: 15% !important;

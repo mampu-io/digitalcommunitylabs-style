@@ -793,9 +793,6 @@ select, .form-control, .custom-select {
 /**
   Styling for setting notification category page [BACKOFFICE]
 */
-.kc-notification-setting .kc-datatable .kc-datatable__header {
-  padding: 0; }
-
 .kc-notification-setting .kc-datatable .kc-table table tr th:first-child, .kc-notification-setting .kc-datatable .kc-table table tr th:nth-child(2) {
   width: 15% !important; }
 
@@ -2989,6 +2986,9 @@ button.kc-text-button {
   background-color: transparent; }
   .kc-datatable .kc-rounded-button.kc-rounded-button--neutral button {
     background-color: transparent; }
+
+.kc-datatable .kc-datatable__filter .kc-filter__reset {
+  margin-bottom: 16px; }
 
 /**
   Styling for MediaModal organism component.
