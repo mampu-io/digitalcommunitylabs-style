@@ -1355,6 +1355,16 @@ select, .form-control, .custom-select {
 .kc-account-search .kc-datatable .kc-table thead tr th:last-child {
   width: 10% !important; }
 
+.kc-bill-payment-list .kc-bill-payment-status {
+  font-size: 17px;
+  font-weight: 400; }
+  .kc-bill-payment-list .kc-bill-payment-status.kc-bill-payment-status--successful {
+    color: #52C41A; }
+  .kc-bill-payment-list .kc-bill-payment-status.kc-bill-payment-status--failed {
+    color: #FF4D4F; }
+  .kc-bill-payment-list .kc-bill-payment-status.kc-bill-payment-status--process {
+    color: #FAAD14; }
+
 /**
   Styling for active member detail page [FUNDING]
 */

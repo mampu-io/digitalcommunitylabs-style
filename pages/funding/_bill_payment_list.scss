@@ -1,0 +1,18 @@
+.kc-bill-payment-list {
+  .kc-bill-payment-status {
+    font-size: 17px;
+    font-weight: 400;
+
+    &.kc-bill-payment-status--successful {
+      color: $functionalSuccess500;
+    }
+
+    &.kc-bill-payment-status--failed {
+      color: $functionalError500;
+    }
+
+    &.kc-bill-payment-status--process {
+      color: $functionalWarning500;
+    }
+  }
+}
