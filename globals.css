@@ -1183,14 +1183,6 @@ select, .form-control, .custom-select {
   font-size: 22px; }
 
 /**
-  Styling for invoice list page [MEMBERSERVICE]
-*/
-.kc-invoice-list .kc-table table tbody tr td:nth-child(7) {
-  display: flex;
-  height: 100%;
-  justify-content: center; }
-
-/**
   Styling for member proposal detail page [MEMBERSERVICE]
 */
 .kc-member-proposal-detail aside .kc-memberservice-detail__action-buttons .kc-proposal-validation-result span {
@@ -1319,17 +1311,6 @@ select, .form-control, .custom-select {
   color: #8C8C8C;
   font-weight: 400; }
 
-.kc-whitelist .kc-datatable__searchbar button.kc-button--primary {
-  background-color: #FFFFFF;
-  border: 1px solid #8C8C8C;
-  color: #595959; }
-  .kc-whitelist .kc-datatable__searchbar button.kc-button--primary:hover {
-    border: 1px solid #43A3D9;
-    color: #43A3D9; }
-  .kc-whitelist .kc-datatable__searchbar button.kc-button--primary:active {
-    border: 1px solid #0A5CA5;
-    color: #0A5CA5; }
-
 .kc-whitelist .kc-modal .kc-modal__header .kc-modal__title span.kc-headline5 {
   font-size: 22px; }
 
@@ -1337,8 +1318,7 @@ select, .form-control, .custom-select {
   Styling for account search page [FUNDING]
 */
 .kc-account-search form {
-  height: 40px;
-  margin-bottom: 20px; }
+  height: 40px; }
   .kc-account-search form .kc-account-search__searchbar {
     margin-right: 20px;
     width: 300px; }
@@ -1350,10 +1330,10 @@ select, .form-control, .custom-select {
     width: 120px; }
 
 .kc-account-search .kc-datatable .kc-table thead tr th {
-  width: 30% !important; }
+  width: calc(95% / 4) !important; }
 
 .kc-account-search .kc-datatable .kc-table thead tr th:last-child {
-  width: 10% !important; }
+  width: 5% !important; }
 
 .kc-bill-payment-list .kc-bill-payment-status {
   font-size: 17px;
