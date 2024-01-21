@@ -1,4 +1,77 @@
 .kc-bill-payment-list {
+  .kc-bill-payment-summary-list {
+    border-color: transparent;
+    display: -webkit-inline-box;
+    overflow: auto;
+    transition: border-color .25s linear;
+    -webkit-transition: border-color .25s linear;
+
+    &:hover {
+      border-color: rgba(0, 0, 0, 0.1);
+    }
+
+    &::-webkit-scrollbar,
+    &::-webkit-scrollbar-thumb,
+    &::-webkit-scrollbar-corner {
+      border-right-style: inset;
+      border-color: inherit;
+      border-right-width: calc(100vw + 100vh);
+    }
+    
+    &::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+
+    .kc-bill-payment-summary-card {
+      border: 1px solid $neutral5;
+      margin-right: 10px;
+      padding: 16px;
+      width: 220px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .kc-bill-payment-summary-card__title h2 {
+        color: $neutral10;
+        font-size: 22px;
+      }
+
+      .kc-bill-payment-summary-card__total-amount {
+        color: $neutral10;
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 8px;
+
+        span {
+          font-size: 18px;
+          font-weight: 400;
+        }
+      }
+
+      .kc-bill-payment-summary-card__total-margin {
+        color: $neutral7;
+        font-size: 18px;
+        font-weight: 500;
+
+        span {
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .kc-bill-payment-summary-overview {
+    border: 1px solid $neutral5;
+
+    span {
+      font-size: 17px;
+      margin-right: 20px;
+    }
+  }
+
   .kc-bill-payment-status {
     font-size: 17px;
     font-weight: 400;
