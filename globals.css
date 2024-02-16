@@ -1503,6 +1503,25 @@ select, .form-control, .custom-select {
       .kc-funding-detail-member .content-body .container-fluid aside h2 {
         margin-bottom: 40px; }
 
+.kc-login-qris-merchant-admin .kc-modal-login--wrapper {
+  padding: 30px;
+  width: 360px; }
+  .kc-login-qris-merchant-admin .kc-modal-login--wrapper .kc-modal-login--content {
+    padding: 0;
+    width: 100%; }
+    .kc-login-qris-merchant-admin .kc-modal-login--wrapper .kc-modal-login--content .kc-otp-input {
+      margin-bottom: 10px;
+      width: 100%; }
+      .kc-login-qris-merchant-admin .kc-modal-login--wrapper .kc-modal-login--content .kc-otp-input input {
+        height: 40px;
+        width: 40px; }
+    .kc-login-qris-merchant-admin .kc-modal-login--wrapper .kc-modal-login--content button.kc-resend-otp-button {
+      background-color: transparent;
+      border: none;
+      color: #FF4D4F;
+      font-weight: 700;
+      text-decoration: underline; }
+
 .kc-qris-transaction-list .kc-datatable .kc-table thead tr th:first-child {
   width: 5% !important; }
 
