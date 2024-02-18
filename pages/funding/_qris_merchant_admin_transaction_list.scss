@@ -1,0 +1,191 @@
+.kc-qris-merchant-admin-container {
+  background: #F2F3F9 url("https://storage.googleapis.com/dcb_web_assets/others/mampu_background_v2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+
+  .kc-qris-merchant-admin-transaction-list {
+    background: $neutral1;
+    max-width: 750px;
+
+    h1 {
+      margin-top: 20px;
+      padding-left: 20px;
+
+      span {
+        color: $neutral9;
+        font-size: 18px;
+      }
+    }
+  
+    .kc-datatable {
+      padding: 0 10px;
+  
+      .kc-datatable__header {
+        .kc-datatable__searchbar {
+          form {
+            width: fit-content;
+    
+            .kc-inputfield {
+              margin-right: 12px;
+              width: 200px;
+    
+              .kc-inputfield__box {
+                height: 32px;
+    
+                input {
+                  font-size: 14px;
+                }
+              } 
+            }
+    
+            button.kc-button {
+              height: 32px;
+              width: 80px;
+    
+              .kc-button-label {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+  
+        .kc-datatable__filter {
+          margin-left: 12px;
+          width: fit-content;
+  
+          > button.kc-button {
+            height: 32px;
+            width: 48px;
+  
+            .kc-button__content .kc-button__icon {
+              margin-right: 0;
+            }
+          }
+  
+          .kc-filter {
+            .kc-filter__entries {
+              margin-bottom: 0;
+  
+              .kc-filter__entry .kc-filter__entry__date-range {
+                flex-direction: column;
+                width: 240px;
+    
+                .kc-inputfield {
+                  margin-bottom: 5px;
+                  margin-right: 0;
+                }
+              }
+            }
+  
+            .kc-filter__reset {
+              font-size: 13px;
+            }
+  
+            .kc-filter__action-button button.kc-button {
+              height: 32px;
+  
+              .kc-button-label {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+  
+      .kc-datatable__table {
+        .kc-table {
+          &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+          }
+  
+          table {
+            max-height: 600px;
+
+            thead {
+              tr {
+                th {
+                  font-weight: 700;
+                  line-height: 8px;
+                  padding: 6px;
+  
+                  &:nth-child(1) {
+                    padding: 12px;
+                  }
+  
+                  button span {
+                    font-weight: 700;
+                  }
+                }
+              }
+            }
+  
+            tbody {
+              tr {
+                td {
+                  line-height: 8px;
+                  padding: 6px;
+  
+                  &:nth-child(1) {
+                    padding: 12px;
+                  }
+  
+                  .rounded-circle {
+                    height: 16px;
+                    width: 16px;
+                  }
+
+                  .kc-rounded-button i {
+                    font-size: 16px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+  
+      .kc-datatable__footer {
+        .kc-datatable__pagination {
+          .kc-datatable__rows-per-page {
+            span {
+              font-size: 14px;
+            }
+  
+            .kc-dropdown {
+              button.kc-dropdown-button {
+                height: 30px;
+              }
+  
+              ul.kc-dropdown__items {
+                bottom: 30px;
+  
+                li.kc-dropdown__item button {
+                  height: 30px;
+                }
+              }
+            }
+          }
+  
+          .kc-datatable__data-count {
+            font-size: 14px;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  
+    .kc-body1 {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  
+    .kc-body2 {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+}
