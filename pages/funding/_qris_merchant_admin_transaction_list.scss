@@ -97,23 +97,28 @@
   
       .kc-datatable__table {
         .kc-table {
+          height: 600px;
+
           &::-webkit-scrollbar {
             width: 0;
             height: 0;
           }
   
           table {
-            max-height: 600px;
-
             thead {
               tr {
                 th {
                   font-weight: 700;
                   line-height: 8px;
                   padding: 6px;
-  
+
                   &:nth-child(1) {
                     padding: 12px;
+                  }
+
+                  &:nth-child(1), &:nth-child(2), &:nth-child(4), &:nth-child(5) {
+                    line-height: 20px;
+                    word-wrap: break-word;
                   }
   
                   button span {
@@ -132,10 +137,11 @@
                   &:nth-child(1) {
                     padding: 12px;
                   }
-  
-                  .rounded-circle {
-                    height: 16px;
-                    width: 16px;
+
+                  &:nth-child(1), &:nth-child(2), &:nth-child(4), &:nth-child(5) {
+                    line-height: 24px;
+                    text-wrap: wrap;
+                    word-wrap: break-word;
                   }
 
                   .kc-rounded-button i {

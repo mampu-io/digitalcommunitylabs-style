@@ -1594,17 +1594,20 @@ select, .form-control, .custom-select {
           height: 32px; }
           .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__header .kc-datatable__filter .kc-filter .kc-filter__action-button button.kc-button .kc-button-label {
             font-size: 13px; }
-      .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table::-webkit-scrollbar {
-        width: 0;
-        height: 0; }
-      .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table table {
-        max-height: 600px; }
+      .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table {
+        height: 600px; }
+        .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table::-webkit-scrollbar {
+          width: 0;
+          height: 0; }
         .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table table thead tr th {
           font-weight: 700;
           line-height: 8px;
           padding: 6px; }
           .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table table thead tr th:nth-child(1) {
             padding: 12px; }
+          .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table table thead tr th:nth-child(1), .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table table thead tr th:nth-child(2), .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table table thead tr th:nth-child(4), .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table table thead tr th:nth-child(5) {
+            line-height: 20px;
+            word-wrap: break-word; }
           .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table table thead tr th button span {
             font-weight: 700; }
         .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table table tbody tr td {
@@ -1612,9 +1615,10 @@ select, .form-control, .custom-select {
           padding: 6px; }
           .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table table tbody tr td:nth-child(1) {
             padding: 12px; }
-          .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table table tbody tr td .rounded-circle {
-            height: 16px;
-            width: 16px; }
+          .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table table tbody tr td:nth-child(1), .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table table tbody tr td:nth-child(2), .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table table tbody tr td:nth-child(4), .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table table tbody tr td:nth-child(5) {
+            line-height: 24px;
+            text-wrap: wrap;
+            word-wrap: break-word; }
           .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table table tbody tr td .kc-rounded-button i {
             font-size: 16px; }
       .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__footer .kc-datatable__pagination .kc-datatable__rows-per-page span {
