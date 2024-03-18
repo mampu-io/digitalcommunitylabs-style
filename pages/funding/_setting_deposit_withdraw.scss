@@ -54,4 +54,15 @@
       }
     }
   }
+
+  .kc-setting-withdraw-form {
+    .kc-form-group .kc-form-group__label {
+      margin-bottom: 0;
+
+      label {
+        color: $neutral9;
+        font-size: 15px;
+      }
+    }
+  }
 }

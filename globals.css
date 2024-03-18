@@ -1454,6 +1454,10 @@ select, .form-control, .custom-select {
         width: 24px; }
       .kc-funding-detail-member .content-body .container-fluid main .kc-more-option {
         position: relative; }
+        .kc-funding-detail-member .content-body .container-fluid main .kc-more-option > button {
+          background-color: transparent;
+          border: none;
+          width: 24px; }
         .kc-funding-detail-member .content-body .container-fluid main .kc-more-option .kc-more-option-menu {
           position: fixed;
           width: max-content; }
@@ -1713,6 +1717,11 @@ select, .form-control, .custom-select {
         font-weight: 400; }
       .kc-setting-deposit .kc-setting-deposit-form .kc-radio-button:last-child, .kc-setting-deposit .kc-setting-withdraw-form .kc-radio-button:last-child, .kc-setting-withdraw .kc-setting-deposit-form .kc-radio-button:last-child, .kc-setting-withdraw .kc-setting-withdraw-form .kc-radio-button:last-child {
         margin-bottom: 0; }
+  .kc-setting-deposit .kc-setting-withdraw-form .kc-form-group .kc-form-group__label, .kc-setting-withdraw .kc-setting-withdraw-form .kc-form-group .kc-form-group__label {
+    margin-bottom: 0; }
+    .kc-setting-deposit .kc-setting-withdraw-form .kc-form-group .kc-form-group__label label, .kc-setting-withdraw .kc-setting-withdraw-form .kc-form-group .kc-form-group__label label {
+      color: #434343;
+      font-size: 15px; }
 
 /**
   Styling for term deposit account detail page [FUNDING]

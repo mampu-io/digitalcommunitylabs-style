@@ -43,6 +43,12 @@
 
         .kc-more-option {
           position: relative;
+
+          > button {
+            background-color: transparent;
+            border: none;
+            width: 24px;
+          }
     
           .kc-more-option-menu {
             position: fixed;
