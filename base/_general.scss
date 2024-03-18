@@ -157,3 +157,18 @@ select, .form-control, .custom-select{
 .text-danger {
   color: $functionalError500 !important;
 }
+
+.row .col-xxl-6 {
+  position: relative;
+  width: 100%;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+
+@media screen and (min-width: 1400px) {
+  .row .col-xxl-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}

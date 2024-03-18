@@ -35,6 +35,21 @@
           margin-left: 5px;
         }
 
+        .kc-datatable tbody tr td > .kc-button-more-option {
+          background-color: transparent;
+          border: none;
+          width: 24px;
+        }
+
+        .kc-more-option {
+          position: relative;
+    
+          .kc-more-option-menu {
+            position: fixed;
+            width: max-content;
+          }
+        }
+
         section.kc-deposit-account-detail {
           width: 100%;
 
@@ -64,21 +79,6 @@
         section.kc-qris-detail {
           .kc-dropdown .kc-dropdown__items {
             z-index: 1000;
-          }
-
-          .kc-more-option {
-            position: relative;
-      
-            > button {
-              background-color: transparent;
-              border: none;
-              width: 24px;
-            }
-      
-            .kc-more-option-menu {
-              position: fixed;
-              width: max-content;
-            }
           }
 
           .kc-form-group {
@@ -176,6 +176,25 @@
   
             input[type="file"] {
               visibility: hidden;
+            }
+          }
+        }
+
+        section.kc-withdrawal-recipient {
+          .kc-modal .kc-modal__container {
+            width: 500px;
+
+            .kc-modal__title span.kc-headline5 {
+              font-size: 22px;
+            }
+
+            .kc-form-group {
+              margin-bottom: 20px;
+              margin-right: 0;
+
+              .kc-form-group__label {
+                margin-bottom: 0;
+              }
             }
           }
         }

@@ -143,6 +143,18 @@ select, .form-control, .custom-select {
 .text-danger {
   color: #FF4D4F !important; }
 
+.row .col-xxl-6 {
+  position: relative;
+  width: 100%;
+  padding-left: 7.5px;
+  padding-right: 7.5px; }
+
+@media screen and (min-width: 1400px) {
+  .row .col-xxl-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; } }
+
 .kc-headline1 {
   font-weight: 300;
   font-size: 100px;
@@ -1436,6 +1448,15 @@ select, .form-control, .custom-select {
         border: 0.25em solid #1890FF;
         border-right-color: transparent;
         margin-left: 5px; }
+      .kc-funding-detail-member .content-body .container-fluid main .kc-datatable tbody tr td > .kc-button-more-option {
+        background-color: transparent;
+        border: none;
+        width: 24px; }
+      .kc-funding-detail-member .content-body .container-fluid main .kc-more-option {
+        position: relative; }
+        .kc-funding-detail-member .content-body .container-fluid main .kc-more-option .kc-more-option-menu {
+          position: fixed;
+          width: max-content; }
       .kc-funding-detail-member .content-body .container-fluid main section.kc-deposit-account-detail {
         width: 100%; }
         .kc-funding-detail-member .content-body .container-fluid main section.kc-deposit-account-detail .kc-record-item-new {
@@ -1452,15 +1473,6 @@ select, .form-control, .custom-select {
           padding-left: 10px; }
       .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-dropdown .kc-dropdown__items {
         z-index: 1000; }
-      .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-more-option {
-        position: relative; }
-        .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-more-option > button {
-          background-color: transparent;
-          border: none;
-          width: 24px; }
-        .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-more-option .kc-more-option-menu {
-          position: fixed;
-          width: max-content; }
       .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-form-group {
         margin-bottom: 20px;
         width: 100%; }
@@ -1507,6 +1519,15 @@ select, .form-control, .custom-select {
           text-decoration: underline; }
       .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-upload-qris-image-modal .kc-modal .kc-modal__container input[type="file"] {
         visibility: hidden; }
+      .kc-funding-detail-member .content-body .container-fluid main section.kc-withdrawal-recipient .kc-modal .kc-modal__container {
+        width: 500px; }
+        .kc-funding-detail-member .content-body .container-fluid main section.kc-withdrawal-recipient .kc-modal .kc-modal__container .kc-modal__title span.kc-headline5 {
+          font-size: 22px; }
+        .kc-funding-detail-member .content-body .container-fluid main section.kc-withdrawal-recipient .kc-modal .kc-modal__container .kc-form-group {
+          margin-bottom: 20px;
+          margin-right: 0; }
+          .kc-funding-detail-member .content-body .container-fluid main section.kc-withdrawal-recipient .kc-modal .kc-modal__container .kc-form-group .kc-form-group__label {
+            margin-bottom: 0; }
       .kc-funding-detail-member .content-body .container-fluid main .kc-form-group {
         margin-bottom: 0;
         margin-right: 10px;
@@ -1847,11 +1868,6 @@ select, .form-control, .custom-select {
 */
 .kc-detail-wrapper.kc-withdrawal-detail {
   padding: 20px; }
-  .kc-detail-wrapper.kc-withdrawal-detail .col-xxl-6 {
-    position: relative;
-    width: 100%;
-    padding-left: 7.5px;
-    padding-right: 7.5px; }
   .kc-detail-wrapper.kc-withdrawal-detail table tbody tr td.kc-record-table__label {
     padding: 10px 20px 0 0;
     width: 250px; }
@@ -1896,10 +1912,6 @@ select, .form-control, .custom-select {
       margin-bottom: 20px; }
 
 @media screen and (min-width: 1500px) {
-  .kc-detail-wrapper.kc-withdrawal-detail .col-xxl-6 {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%; }
   .kc-detail-wrapper.kc-withdrawal-detail section.kc-withdrawal-approval {
     margin-bottom: 30px;
     margin-left: 20px;
@@ -3739,12 +3751,6 @@ main.kc-memberservice-detail {
   The template is used on create term deposit product page and
   term deposit product detail page
 */
-.kc-term-deposit-product .row .col-xxl-6 {
-  position: relative;
-  width: 100%;
-  padding-left: 7.5px;
-  padding-right: 7.5px; }
-
 .kc-term-deposit-product section.kc-term-deposit-product__overview,
 .kc-term-deposit-product section.kc-term-deposit-product__interest-config {
   background-color: #F5F5F5;
@@ -3904,12 +3910,6 @@ main.kc-memberservice-detail {
 .kc-term-deposit-product section.kc-term-deposit-product__interest-config .kc-tiered-term-table table tbody tr td .kc-rounded-button {
   display: flex;
   justify-content: center; }
-
-@media screen and (min-width: 1400px) {
-  .kc-term-deposit-product .row .col-xxl-6 {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%; } }
 
 .wrapper-cms .judul-cms {
   font-size: 16px;
