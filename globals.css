@@ -628,23 +628,21 @@ select, .form-control, .custom-select {
     overflow: hidden;
     white-space: break-spaces; }
 
-.kc-list-notifications .kc-datatable .kc-table table tbody tr td.kc-freeze-column {
-  position: static; }
-  .kc-list-notifications .kc-datatable .kc-table table tbody tr td.kc-freeze-column .kc-more-option {
-    position: static; }
-    .kc-list-notifications .kc-datatable .kc-table table tbody tr td.kc-freeze-column .kc-more-option > button {
-      background-color: transparent;
-      border: none;
-      height: 40px;
-      width: 40px; }
-    .kc-list-notifications .kc-datatable .kc-table table tbody tr td.kc-freeze-column .kc-more-option .kc-more-option-menu {
-      position: absolute;
-      right: 0;
-      width: max-content; }
-      .kc-list-notifications .kc-datatable .kc-table table tbody tr td.kc-freeze-column .kc-more-option .kc-more-option-menu a.kc-detail-notification {
-        color: #000000; }
-      .kc-list-notifications .kc-datatable .kc-table table tbody tr td.kc-freeze-column .kc-more-option .kc-more-option-menu .kc-more-option-menu__item.kc-delete-notification {
-        color: #FF4D4F; }
+.kc-list-notifications .kc-datatable tbody tr td > .kc-button-more-option {
+  background-color: transparent;
+  border: none;
+  height: 40px;
+  width: 40px; }
+
+.kc-list-notifications .kc-more-option {
+  position: relative; }
+  .kc-list-notifications .kc-more-option .kc-more-option-menu {
+    position: fixed;
+    width: max-content; }
+    .kc-list-notifications .kc-more-option .kc-more-option-menu a.kc-detail-notification {
+      color: #000000; }
+    .kc-list-notifications .kc-more-option .kc-more-option-menu .kc-more-option-menu__item.kc-delete-notification {
+      color: #FF4D4F; }
 
 /**
   Styling for general configuration page [BACKOFFICE]

@@ -69,31 +69,26 @@
 }
 
 .kc-list-notifications {
-  .kc-datatable .kc-table table tbody tr td.kc-freeze-column {
-    position: static;
+  .kc-datatable tbody tr td > .kc-button-more-option {
+    background-color: transparent;
+    border: none;
+    height: 40px;
+    width: 40px;
+  }
 
-    .kc-more-option {
-      position: static;
-    
-      > button {
-        background-color: transparent;
-        border: none;
-        height: 40px;
-        width: 40px;
+  .kc-more-option {
+    position: relative;
+  
+    .kc-more-option-menu {
+      position: fixed;
+      width: max-content;
+
+      a.kc-detail-notification {
+        color: $neutral13;
       }
 
-      .kc-more-option-menu {
-        position: absolute;
-        right: 0;
-        width: max-content;
-
-        a.kc-detail-notification {
-          color: $neutral13;
-        }
-
-        .kc-more-option-menu__item.kc-delete-notification {
-          color: $functionalError500;
-        }
+      .kc-more-option-menu__item.kc-delete-notification {
+        color: $functionalError500;
       }
     }
   }
