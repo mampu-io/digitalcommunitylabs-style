@@ -3143,6 +3143,17 @@ button.kc-text-button {
     .modal-get-premium .modal-body .close-botton:hover {
       cursor: pointer; }
 
+.kc-validate-credential-modal .kc-modal .kc-modal__container {
+  width: 480px; }
+  .kc-validate-credential-modal .kc-modal .kc-modal__container .kc-modal__title span {
+    font-size: 22px; }
+  .kc-validate-credential-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
+    padding: 2rem 1.5rem; }
+    .kc-validate-credential-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group .kc-form-group__label {
+      margin-bottom: 0; }
+      .kc-validate-credential-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group .kc-form-group__label label {
+        font-size: 15px; }
+
 .kc-configuration-card {
   background-color: #EBEBEB;
   display: flex;
