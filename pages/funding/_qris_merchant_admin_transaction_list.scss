@@ -11,12 +11,14 @@
     max-width: 750px;
 
     h1 {
+      font-size: 18px;
       margin-top: 20px;
       padding-left: 20px;
 
       span {
         color: $neutral9;
-        font-size: 18px;
+        font-size: 16px;
+        font-weight: 700;
       }
     }
   
@@ -97,7 +99,7 @@
   
       .kc-datatable__table {
         .kc-table {
-          height: 600px;
+          max-height: 600px;
 
           &::-webkit-scrollbar {
             width: 0;
@@ -192,6 +194,16 @@
     .kc-body2 {
       font-size: 12px;
       line-height: 16px;
+    }
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list h1 {
+    font-size: 22px;
+
+    span {
+      font-size: 18px;
     }
   }
 }

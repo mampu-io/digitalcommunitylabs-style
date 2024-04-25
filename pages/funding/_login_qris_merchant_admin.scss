@@ -1,11 +1,19 @@
 .kc-login-qris-merchant-admin {
   .kc-modal-login--wrapper {
     padding: 30px;
-    width: 360px;
+    width: fit-content;
 
     .kc-modal-login--content {
       padding: 0;
-      width: 100%;
+      width: fit-content;
+
+      form.kc-form-wrapper {
+        width: 300px;
+      }
+
+      p {
+        max-width: 300px;
+      }
 
       .kc-otp-input {
         margin-bottom: 10px;
