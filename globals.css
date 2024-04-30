@@ -1963,7 +1963,7 @@ select, .form-control, .custom-select {
 .kc-dashboard table {
   width: 100%; }
   .kc-dashboard table tr td {
-    padding: 7.5px 0;
+    padding: 5px 0;
     font-size: 14px;
     color: #8C8C8C; }
 
@@ -1972,7 +1972,7 @@ select, .form-control, .custom-select {
   font-size: 14px; }
 
 .kc-dashboard span.kc-nominal-header {
-  font-size: 40px;
+  font-size: 32px;
   color: #000000;
   margin: 25px 0; }
 
@@ -2010,13 +2010,13 @@ select, .form-control, .custom-select {
     display: grid;
     gap: 1rem;
     grid-template-columns: 1fr 1fr; }
-  .kc-dashboard .kc-dashboard__right-section .kc-dashboard-card span.kc-currency {
-    font-size: 18px;
-    font-weight: 400; }
 
 .kc-dashboard .kc-dashboard-card {
   border: 1px solid #EFEFEF;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1); }
+  .kc-dashboard .kc-dashboard-card span.kc-currency {
+    font-size: 18px;
+    font-weight: 400; }
   .kc-dashboard .kc-dashboard-card .kc-dashboard-card__icon {
     height: 50px;
     width: 50px; }
