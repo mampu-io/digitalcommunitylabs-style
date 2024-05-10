@@ -38,6 +38,31 @@ $dashboard_color_green : #74C990;
 	.kc-dashboard__left-section {
 		width: calc(30% - 1rem);
 
+		.kc-deposit-balance-overview {
+			.kc-deposit-balance {
+				align-items: start;
+				display: flex;
+				flex-direction: column;
+
+				.kc-deposit-balance-action-buttons {
+					margin: 10px 0;
+
+					button.kc-deposit-balance-btn {
+						background-color: #1135A6;
+						border: none;
+						border-radius: 4px;
+						color: $neutral1;
+						height: 48px;
+						width: 48px;
+					}
+				}
+			}
+
+			.kc-deposit-balance-last-checked-at {
+				font-size: 12px;
+			}
+		}
+
 		.kc-nominal-purple {
 			color: $dashboard_color_purple;
 		}
@@ -142,4 +167,16 @@ $dashboard_color_green : #74C990;
 			}
 		}
 	}
+}
+
+@media screen and (min-width: 1600px) {
+  .kc-dashboard .kc-dashboard__left-section .kc-deposit-balance-overview .kc-deposit-balance {
+    align-items: center;
+		flex-direction: row;
+		justify-content: space-between;
+
+		.kc-deposit-balance-action-buttons {
+			margin: 0;
+		}
+  }
 }
