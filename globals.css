@@ -2238,7 +2238,8 @@ select, .form-control, .custom-select {
 
 .kc-health-check-indicator {
   margin-bottom: .75rem;
-  width: 240px; }
+  min-width: 240px;
+  width: fit-content; }
   .kc-health-check-indicator * {
     font-family: Poppins, Helvetica, sans-serif; }
   .kc-health-check-indicator .bg-success {
@@ -2286,6 +2287,15 @@ select, .form-control, .custom-select {
         margin-bottom: 13px; }
       .kc-health-check-indicator .card .card-body > span {
         font-size: .725rem; }
+      .kc-health-check-indicator .card .card-body .badge {
+        align-items: center;
+        display: inline-flex;
+        justify-content: center;
+        min-width: 60px; }
+        .kc-health-check-indicator .card .card-body .badge.badge-danger {
+          background-color: #F1416C; }
+        .kc-health-check-indicator .card .card-body .badge.badge-success {
+          background-color: #50CD89; }
 
 .bg-loading-page {
   width: 100%;
