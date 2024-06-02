@@ -1781,9 +1781,9 @@ select, .form-control, .custom-select {
       margin-left: 20px;
       width: 30%; }
       .kc-term-deposit-account-detail .content-body .container-fluid aside h2 {
-        margin-bottom: 40px; }
+        margin-bottom: 20px; }
       .kc-term-deposit-account-detail .content-body .container-fluid aside hr {
-        margin: 40px 0; }
+        margin: 20px 0 25px; }
       .kc-term-deposit-account-detail .content-body .container-fluid aside a {
         color: #0F77C0;
         font-weight: 700;
@@ -3502,6 +3502,8 @@ aside.kc-deposit-account-onboarding-detail {
         max-width: 240px; }
     .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail .kc-invoice-detail__right section.kc-customer-info {
       margin-bottom: 20px; }
+      .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail .kc-invoice-detail__right section.kc-customer-info table.kc-record-table tr td.kc-record-table__label {
+        width: 180px; }
     .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail .kc-invoice-detail__right section.kc-invoice-amount table.kc-record-table tr:nth-child(3) td {
       border-bottom: 1px solid #D9D9D9; }
     .kc-deposit-transaction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-invoice-detail .kc-invoice-detail__right section.kc-invoice-amount table.kc-record-table tr:nth-child(3) td.kc-record-table__label {

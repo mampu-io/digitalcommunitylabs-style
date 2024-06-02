@@ -90,6 +90,12 @@
             .kc-invoice-detail__right {
               section.kc-customer-info {
                 margin-bottom: 20px;
+
+                table.kc-record-table {
+                  tr td.kc-record-table__label {
+                    width: 180px;
+                  }
+                }
               }
 
               section.kc-invoice-amount {
