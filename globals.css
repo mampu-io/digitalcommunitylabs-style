@@ -479,6 +479,9 @@ select, .form-control, .custom-select {
 
 .main-footer {
   font-size: 14px; }
+  .main-footer a {
+    color: #009EF7;
+    font-size: 14px; }
 
 .main-header {
   background: #0F77C0;
@@ -2290,12 +2293,15 @@ select, .form-control, .custom-select {
       .kc-health-check-indicator .card .card-body .badge {
         align-items: center;
         display: inline-flex;
+        height: 24px;
         justify-content: center;
         min-width: 60px; }
         .kc-health-check-indicator .card .card-body .badge.badge-danger {
           background-color: #F1416C; }
         .kc-health-check-indicator .card .card-body .badge.badge-success {
           background-color: #50CD89; }
+      .kc-health-check-indicator .card .card-body table.kc-signoff-statuses tr td {
+        max-width: 200px; }
 
 .bg-loading-page {
   width: 100%;
