@@ -1960,6 +1960,24 @@ select, .form-control, .custom-select {
   .kc-input-otp-modal .modal-body .kc-otp-input {
     margin-bottom: 1rem; }
 
+.kc-withdrawal-recipient-list .kc-modal .kc-modal__container .kc-modal__main .kc-modal__title span.kc-headline5 {
+  font-size: 22px; }
+
+.kc-withdrawal-recipient-list .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
+  padding-top: 1.5rem; }
+  .kc-withdrawal-recipient-list .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-table table thead tr th {
+    padding: 16px 12px; }
+    .kc-withdrawal-recipient-list .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-table table thead tr th:nth-child(1) {
+      padding-left: 24px; }
+    .kc-withdrawal-recipient-list .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-table table thead tr th:last-child {
+      padding-right: 24px; }
+  .kc-withdrawal-recipient-list .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-table table tbody tr td {
+    padding: 16px 12px; }
+    .kc-withdrawal-recipient-list .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-table table tbody tr td:nth-child(1) {
+      padding-left: 24px; }
+    .kc-withdrawal-recipient-list .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-table table tbody tr td:last-child {
+      padding-right: 24px; }
+
 .kc-dashboard h2 {
   color: #434343; }
 
