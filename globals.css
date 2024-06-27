@@ -580,6 +580,8 @@ select, .form-control, .custom-select {
       .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item a.nav-link.active p {
         color: #FFFFFF;
         font-weight: 700; }
+    .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item a.nav-link p {
+      font-size: 14px; }
   .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item ul.nav-treeview li.nav-item a.nav-link {
     padding-left: 1.75rem; }
     .layout-navbar-fixed.layout-fixed .wrapper .main-sidebar .sidebar nav li.nav-item ul.nav-treeview li.nav-item a.nav-link.active {
@@ -2118,6 +2120,20 @@ select, .form-control, .custom-select {
 .kc-change-password .kc-form-wrapper .kc-inputfield__subtitle span.kc-overline {
   font-size: 11px;
   letter-spacing: 0.75px; }
+
+.kc-third-party-usage-list .content-body {
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0; }
+  .kc-third-party-usage-list .content-body .container-fluid {
+    display: flex; }
+    .kc-third-party-usage-list .content-body .container-fluid main {
+      background-color: #FFFFFF;
+      border-radius: 2px;
+      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+      min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px) - 70px - 20px);
+      padding: 20px 30px; }
 
 /**
   Styling for AddOnboardingButton atom component.
