@@ -1478,6 +1478,16 @@ select, .form-control, .custom-select {
         .kc-funding-detail-member .content-body .container-fluid main section.kc-deposit-account-detail p.kc-body2 {
           color: #FF4D4F;
           padding-left: 10px; }
+        .kc-funding-detail-member .content-body .container-fluid main section.kc-deposit-account-detail .kc-add-deposit-account-transaction-modal .kc-modal .kc-modal__container {
+          width: 500px; }
+          .kc-funding-detail-member .content-body .container-fluid main section.kc-deposit-account-detail .kc-add-deposit-account-transaction-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__header .kc-modal__title span.kc-headline5 {
+            font-size: 22px; }
+          .kc-funding-detail-member .content-body .container-fluid main section.kc-deposit-account-detail .kc-add-deposit-account-transaction-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
+            padding: 1.5rem 1.5rem 2.5rem; }
+            .kc-funding-detail-member .content-body .container-fluid main section.kc-deposit-account-detail .kc-add-deposit-account-transaction-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical {
+              margin-bottom: 15px; }
+              .kc-funding-detail-member .content-body .container-fluid main section.kc-deposit-account-detail .kc-add-deposit-account-transaction-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical .kc-form-group__identity .kc-form-group__label label {
+                margin-bottom: 0; }
       .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-dropdown .kc-dropdown__items {
         z-index: 1000; }
       .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-form-group {
