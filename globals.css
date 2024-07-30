@@ -1619,136 +1619,6 @@ select, .form-control, .custom-select {
       .kc-funding-detail-member .content-body .container-fluid aside h2 {
         margin-bottom: 40px; }
 
-.kc-login-qris-merchant-admin .kc-modal-login--wrapper {
-  padding: 30px;
-  width: fit-content; }
-  .kc-login-qris-merchant-admin .kc-modal-login--wrapper .kc-modal-login--content {
-    padding: 0;
-    width: fit-content; }
-    .kc-login-qris-merchant-admin .kc-modal-login--wrapper .kc-modal-login--content form.kc-form-wrapper {
-      width: 300px; }
-    .kc-login-qris-merchant-admin .kc-modal-login--wrapper .kc-modal-login--content p {
-      max-width: 300px; }
-    .kc-login-qris-merchant-admin .kc-modal-login--wrapper .kc-modal-login--content .kc-otp-input {
-      margin-bottom: 10px;
-      width: 100%; }
-      .kc-login-qris-merchant-admin .kc-modal-login--wrapper .kc-modal-login--content .kc-otp-input input {
-        height: 40px;
-        width: 40px; }
-    .kc-login-qris-merchant-admin .kc-modal-login--wrapper .kc-modal-login--content button.kc-resend-otp-button {
-      background-color: transparent;
-      border: none;
-      color: #FF4D4F;
-      font-weight: 700;
-      text-decoration: underline; }
-
-.kc-qris-merchant-admin-container {
-  background: #F2F3F9 url("https://storage.googleapis.com/dcb_web_assets/others/mampu_background_v2.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  width: 100vw; }
-  .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list {
-    background: #FFFFFF;
-    max-width: 750px; }
-    .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list h1 {
-      font-size: 18px;
-      margin-top: 20px;
-      padding-left: 20px; }
-      .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list h1 span {
-        color: #434343;
-        font-size: 16px;
-        font-weight: 700; }
-    .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable {
-      padding: 0 10px; }
-      .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__header .kc-datatable__searchbar form {
-        width: fit-content; }
-        .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__header .kc-datatable__searchbar form .kc-inputfield {
-          margin-right: 12px;
-          width: 200px; }
-          .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__header .kc-datatable__searchbar form .kc-inputfield .kc-inputfield__box {
-            height: 32px; }
-            .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__header .kc-datatable__searchbar form .kc-inputfield .kc-inputfield__box input {
-              font-size: 14px; }
-        .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__header .kc-datatable__searchbar form button.kc-button {
-          height: 32px;
-          width: 80px; }
-          .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__header .kc-datatable__searchbar form button.kc-button .kc-button-label {
-            font-size: 13px; }
-      .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__header .kc-datatable__filter {
-        margin-left: 12px;
-        width: fit-content; }
-        .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__header .kc-datatable__filter > button.kc-button {
-          height: 32px;
-          width: 48px; }
-          .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__header .kc-datatable__filter > button.kc-button .kc-button__content .kc-button__icon {
-            margin-right: 0; }
-        .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__header .kc-datatable__filter .kc-filter .kc-filter__entries {
-          margin-bottom: 0; }
-          .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__header .kc-datatable__filter .kc-filter .kc-filter__entries .kc-filter__entry .kc-filter__entry__date-range {
-            flex-direction: column;
-            width: 240px; }
-            .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__header .kc-datatable__filter .kc-filter .kc-filter__entries .kc-filter__entry .kc-filter__entry__date-range .kc-inputfield {
-              margin-bottom: 5px;
-              margin-right: 0; }
-        .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__header .kc-datatable__filter .kc-filter .kc-filter__reset {
-          font-size: 13px; }
-        .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__header .kc-datatable__filter .kc-filter .kc-filter__action-button button.kc-button {
-          height: 32px; }
-          .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__header .kc-datatable__filter .kc-filter .kc-filter__action-button button.kc-button .kc-button-label {
-            font-size: 13px; }
-      .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table {
-        max-height: 600px; }
-        .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table::-webkit-scrollbar {
-          width: 0;
-          height: 0; }
-        .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table table thead tr th {
-          font-weight: 700;
-          line-height: 8px;
-          padding: 6px; }
-          .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table table thead tr th:nth-child(1) {
-            padding: 12px; }
-          .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table table thead tr th:nth-child(1), .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table table thead tr th:nth-child(2), .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table table thead tr th:nth-child(4), .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table table thead tr th:nth-child(5) {
-            line-height: 20px;
-            word-wrap: break-word; }
-          .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table table thead tr th button span {
-            font-weight: 700; }
-        .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table table tbody tr td {
-          line-height: 8px;
-          padding: 6px; }
-          .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table table tbody tr td:nth-child(1) {
-            padding: 12px; }
-          .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table table tbody tr td:nth-child(1), .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table table tbody tr td:nth-child(2), .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table table tbody tr td:nth-child(4), .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table table tbody tr td:nth-child(5) {
-            line-height: 24px;
-            text-wrap: wrap;
-            word-wrap: break-word; }
-          .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__table .kc-table table tbody tr td .kc-rounded-button i {
-            font-size: 16px; }
-      .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__footer .kc-datatable__pagination .kc-datatable__rows-per-page span {
-        font-size: 14px; }
-      .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__footer .kc-datatable__pagination .kc-datatable__rows-per-page .kc-dropdown button.kc-dropdown-button {
-        height: 30px; }
-      .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__footer .kc-datatable__pagination .kc-datatable__rows-per-page .kc-dropdown ul.kc-dropdown__items {
-        bottom: 30px; }
-        .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__footer .kc-datatable__pagination .kc-datatable__rows-per-page .kc-dropdown ul.kc-dropdown__items li.kc-dropdown__item button {
-          height: 30px; }
-      .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-datatable .kc-datatable__footer .kc-datatable__pagination .kc-datatable__data-count {
-        font-size: 14px;
-        margin-right: 8px; }
-    .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-body1 {
-      font-size: 14px;
-      line-height: 16px; }
-    .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list .kc-body2 {
-      font-size: 12px;
-      line-height: 16px; }
-
-@media screen and (min-width: 640px) {
-  .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list h1 {
-    font-size: 22px; }
-    .kc-qris-merchant-admin-container .kc-qris-merchant-admin-transaction-list h1 span {
-      font-size: 18px; } }
-
 .kc-qris-transaction-list .kc-datatable .kc-table thead tr th:first-child {
   width: 5% !important; }
 
@@ -1768,7 +1638,7 @@ select, .form-control, .custom-select {
   line-height: 16px; }
 
 /**
-  Styling for setting deposit page and setting withdraw page [FUNDING]
+  Styling for setting and configuration page (deposit, withdrawal, and qris) [FUNDING]
 */
 .kc-setting-deposit, .kc-setting-withdraw {
   margin: 20px 0; }
@@ -1807,6 +1677,9 @@ select, .form-control, .custom-select {
     .kc-setting-deposit .kc-setting-withdraw-form .kc-form-group .kc-form-group__label label, .kc-setting-withdraw .kc-setting-withdraw-form .kc-form-group .kc-form-group__label label {
       color: #434343;
       font-size: 15px; }
+
+.kc-setting-qris .kc-inputfield .kc-inputfield__box input {
+  text-align: right; }
 
 /**
   Styling for term deposit account detail page [FUNDING]

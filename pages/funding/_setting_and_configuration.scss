@@ -1,5 +1,5 @@
 /**
-  Styling for setting deposit page and setting withdraw page [FUNDING]
+  Styling for setting and configuration page (deposit, withdrawal, and qris) [FUNDING]
 */
 
 .kc-setting-deposit, .kc-setting-withdraw {
@@ -64,5 +64,11 @@
         font-size: 15px;
       }
     }
+  }
+}
+
+.kc-setting-qris {
+  .kc-inputfield .kc-inputfield__box input {
+    text-align: right;
   }
 }
