@@ -49,59 +49,50 @@
     }
   }
 
-  .kc-notification-description {
-    .kc-form-group.kc-form-group--vertical {
-      margin-bottom: 25px;
+  .kc-form-group.kc-notification-title, .kc-form-group.kc-notification-body,
+  .kc-form-group.kc-notification-description, .kc-form-group.kc-notification-illustration {
+    .kc-form-group__label {
+      margin-bottom: 0;
+    }
+  }
 
-      .kc-form-group__label {
-        margin-bottom: 0;
-      }
-
-      .kc-textarea {
-        .kc-textarea__title {
-          span.kc-caption {
-            color: $neutral7;
-            font-size: 13px;
-          }
-        }
-
-        .kc-textarea__box {
-          textarea {
-            line-height: 24px;
-          }
-        }
-  
-        .kc-textarea__subtitle {
-          margin-top: 0;
-  
-          span.kc-overline {
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 1px;
-          }
+  .kc-form-group.kc-notification-title {
+    .kc-inputfield {
+      .kc-inputfield__title {
+        span.kc-caption {
+          color: $neutral7;
+          font-size: 13px;
         }
       }
     }
   }
 
-  .kc-notification-body {
+  .kc-form-group.kc-notification-body {
     margin-bottom: 0;
 
-    button.kc-text-button, .kc-notification-body__helper {
-      margin-bottom: 10px;
-    }
-
-    .kc-notification-body__helper {
-      background: lighten($functionalWarning500, 40%);
-      border: 1px solid $functionalWarning500;
-      font-size: 13px;
-      padding: 5px;
-      border-radius: 4px;
-      color: $neutral8;
+    .kc-text-html-editor, .kc-inputfield {
+      margin-top: 10px;
     }
   }
 
-  .kc-notification-preview {
+  .kc-notification-description, .kc-notification-body {
+    .kc-textarea {
+      .kc-textarea__title {
+        span.kc-caption {
+          color: $neutral7;
+          font-size: 13px;
+        }
+      }
+
+      .kc-textarea__box {
+        textarea {
+          line-height: 24px;
+        }
+      }
+    }
+  }
+
+  .kc-form-group.kc-notification-preview {
     position: sticky;
     top: 80px;
     z-index: 999;
@@ -173,65 +164,55 @@
   }
 
   &.kc-notification--template {
-    .kc-notification-illustration {
-      .kc-form-group {
-        margin-bottom: 25px;
-  
-        .kc-form-group__identity {
-          .kc-form-group__label {
+    .kc-form-group.kc-notification-illustration {  
+      .d-flex.flex-column {
+        img {
+          height: 100px;
+          margin: 10px 0;
+          object-fit: contain;
+          object-position: center;
+          width: 100px;
+        }
+    
+        button.kc-upload-illustration-btn {
+          background-color: transparent;
+          border: none;
+          width: fit-content;
+    
+          label {
+            color: $primary7;
+            cursor: pointer;
             margin-bottom: 0;
+            text-decoration: underline;
           }
         }
-  
-        .d-flex.flex-column {
-          img {
-            height: 100px;
-            margin: 10px 0;
-            object-fit: contain;
-            object-position: center;
-            width: 100px;
+    
+        p {
+          margin-bottom: 0;
+    
+          &.kc-upload-illustration-status--failed {
+            color: $functionalError500;
+            font-weight: 700;
           }
-      
-          button.kc-upload-illustration-btn {
-            background-color: transparent;
-            border: none;
-            width: fit-content;
-      
-            label {
-              color: $primary7;
-              cursor: pointer;
-              margin-bottom: 0;
-              text-decoration: underline;
+    
+          &.kc-upload-illustration-status--successful {
+            color: $functionalSuccess500;
+            font-weight: 700;
+          }
+    
+          &.kc-upload-illustration-status--processed {
+            .spinner-border {
+              width: 1rem;
+              height: 1rem;
+              border: 0.25em solid $functionalLink500;
+              border-right-color: transparent;
+              margin-left: 5px;
             }
           }
-      
-          p {
-            margin-bottom: 0;
-      
-            &.kc-upload-illustration-status--failed {
-              color: $functionalError500;
-              font-weight: 700;
-            }
-      
-            &.kc-upload-illustration-status--successful {
-              color: $functionalSuccess500;
-              font-weight: 700;
-            }
-      
-            &.kc-upload-illustration-status--processed {
-              .spinner-border {
-                width: 1rem;
-                height: 1rem;
-                border: 0.25em solid $functionalLink500;
-                border-right-color: transparent;
-                margin-left: 5px;
-              }
-            }
-          }
-      
-          input[type="file"] {
-            visibility: hidden;
-          }
+        }
+    
+        input[type="file"] {
+          visibility: hidden;
         }
       }
     }
@@ -282,8 +263,6 @@
   &.kc-notification--alert {
     .kc-alert-notification-preview {
       .kc-alert-notification-card {
-        background-color: #FAEFDA;
-        border: 1px solid #EAB7B7;
         border-radius: 4px;
         display: flex;
         padding: 8px 12px;
@@ -294,8 +273,6 @@
         }
 
         .kc-alert-information-card__content {
-          color: #BF2628;
-
           .kc-alert-information-title {
             font-weight: 700;
           }
@@ -332,15 +309,11 @@
 
             .kc-alert-information-body {
               font-size: 12px;
-
-              p {
-                font-size: 12px;
-                display: -webkit-box;
-                line-clamp: 3;
-                -webkit-line-clamp: 3;
-                -webkit-box-orient: vertical;  
-                overflow: hidden;
-              }
+              display: -webkit-box;
+              line-clamp: 3;
+              -webkit-line-clamp: 3;
+              -webkit-box-orient: vertical;  
+              overflow: hidden;
             }
           }
         }

@@ -893,112 +893,97 @@ select, .form-control, .custom-select {
       height: 3rem;
       border: 0.25em solid #1890FF;
       border-right-color: transparent; }
-  .kc-notification .kc-notification-description .kc-form-group.kc-form-group--vertical {
-    margin-bottom: 25px; }
-    .kc-notification .kc-notification-description .kc-form-group.kc-form-group--vertical .kc-form-group__label {
-      margin-bottom: 0; }
-    .kc-notification .kc-notification-description .kc-form-group.kc-form-group--vertical .kc-textarea .kc-textarea__title span.kc-caption {
-      color: #8C8C8C;
-      font-size: 13px; }
-    .kc-notification .kc-notification-description .kc-form-group.kc-form-group--vertical .kc-textarea .kc-textarea__box textarea {
-      line-height: 24px; }
-    .kc-notification .kc-notification-description .kc-form-group.kc-form-group--vertical .kc-textarea .kc-textarea__subtitle {
-      margin-top: 0; }
-      .kc-notification .kc-notification-description .kc-form-group.kc-form-group--vertical .kc-textarea .kc-textarea__subtitle span.kc-overline {
-        font-size: 12px;
-        font-weight: 700;
-        letter-spacing: 1px; }
-  .kc-notification .kc-notification-body {
+  .kc-notification .kc-form-group.kc-notification-title .kc-form-group__label, .kc-notification .kc-form-group.kc-notification-body .kc-form-group__label,
+  .kc-notification .kc-form-group.kc-notification-description .kc-form-group__label, .kc-notification .kc-form-group.kc-notification-illustration .kc-form-group__label {
     margin-bottom: 0; }
-    .kc-notification .kc-notification-body button.kc-text-button, .kc-notification .kc-notification-body .kc-notification-body__helper {
-      margin-bottom: 10px; }
-    .kc-notification .kc-notification-body .kc-notification-body__helper {
-      background: #fef3dc;
-      border: 1px solid #FAAD14;
-      font-size: 13px;
-      padding: 5px;
-      border-radius: 4px;
-      color: #595959; }
-  .kc-notification .kc-notification-preview {
+  .kc-notification .kc-form-group.kc-notification-title .kc-inputfield .kc-inputfield__title span.kc-caption {
+    color: #8C8C8C;
+    font-size: 13px; }
+  .kc-notification .kc-form-group.kc-notification-body {
+    margin-bottom: 0; }
+    .kc-notification .kc-form-group.kc-notification-body .kc-text-html-editor, .kc-notification .kc-form-group.kc-notification-body .kc-inputfield {
+      margin-top: 10px; }
+  .kc-notification .kc-notification-description .kc-textarea .kc-textarea__title span.kc-caption, .kc-notification .kc-notification-body .kc-textarea .kc-textarea__title span.kc-caption {
+    color: #8C8C8C;
+    font-size: 13px; }
+  .kc-notification .kc-notification-description .kc-textarea .kc-textarea__box textarea, .kc-notification .kc-notification-body .kc-textarea .kc-textarea__box textarea {
+    line-height: 24px; }
+  .kc-notification .kc-form-group.kc-notification-preview {
     position: sticky;
     top: 80px;
     z-index: 999; }
-    .kc-notification .kc-notification-preview .kc-notification-preview__options {
+    .kc-notification .kc-form-group.kc-notification-preview .kc-notification-preview__options {
       margin-bottom: 20px; }
-      .kc-notification .kc-notification-preview .kc-notification-preview__options .kc-radio-button {
+      .kc-notification .kc-form-group.kc-notification-preview .kc-notification-preview__options .kc-radio-button {
         align-items: center;
         margin-bottom: 5px;
         margin-left: 20px; }
-        .kc-notification .kc-notification-preview .kc-notification-preview__options .kc-radio-button .kc-radio-button__text label {
+        .kc-notification .kc-form-group.kc-notification-preview .kc-notification-preview__options .kc-radio-button .kc-radio-button__text label {
           font-weight: 400;
           margin-bottom: 0; }
-    .kc-notification .kc-notification-preview .kc-notification-body-preview {
+    .kc-notification .kc-form-group.kc-notification-preview .kc-notification-body-preview {
       border: 1px solid #D9D9D9;
       height: auto;
       padding: 20px 10px;
       width: fit-content; }
-      .kc-notification .kc-notification-preview .kc-notification-body-preview.kc-notification-body-preview--template {
+      .kc-notification .kc-form-group.kc-notification-preview .kc-notification-body-preview.kc-notification-body-preview--template {
         align-items: center;
         display: flex;
         flex-direction: column; }
-        .kc-notification .kc-notification-preview .kc-notification-body-preview.kc-notification-body-preview--template img.kc-notification-body-preview__illustration,
-        .kc-notification .kc-notification-preview .kc-notification-body-preview.kc-notification-body-preview--template div.kc-notification-body-preview__illustration--empty {
+        .kc-notification .kc-form-group.kc-notification-preview .kc-notification-body-preview.kc-notification-body-preview--template img.kc-notification-body-preview__illustration,
+        .kc-notification .kc-form-group.kc-notification-preview .kc-notification-body-preview.kc-notification-body-preview--template div.kc-notification-body-preview__illustration--empty {
           height: 200px;
           width: 200px; }
-        .kc-notification .kc-notification-preview .kc-notification-body-preview.kc-notification-body-preview--template img.kc-notification-body-preview__illustration {
+        .kc-notification .kc-form-group.kc-notification-preview .kc-notification-body-preview.kc-notification-body-preview--template img.kc-notification-body-preview__illustration {
           object-fit: contain;
           object-position: center; }
-        .kc-notification .kc-notification-preview .kc-notification-body-preview.kc-notification-body-preview--template div.kc-notification-body-preview__illustration--empty {
+        .kc-notification .kc-form-group.kc-notification-preview .kc-notification-body-preview.kc-notification-body-preview--template div.kc-notification-body-preview__illustration--empty {
           border: 1px solid #BFBFBF;
           flex: 1 0 200px; }
-        .kc-notification .kc-notification-preview .kc-notification-body-preview.kc-notification-body-preview--template .kc-notification-body-preview__title {
+        .kc-notification .kc-form-group.kc-notification-preview .kc-notification-body-preview.kc-notification-body-preview--template .kc-notification-body-preview__title {
           font-size: 25px;
           margin-bottom: 20px;
           margin-top: 20px; }
-      .kc-notification .kc-notification-preview .kc-notification-body-preview .kc-notification-body-preview__title {
+      .kc-notification .kc-form-group.kc-notification-preview .kc-notification-body-preview .kc-notification-body-preview__title {
         margin-bottom: 10px;
         margin-top: 0; }
-      .kc-notification .kc-notification-preview .kc-notification-body-preview iframe {
+      .kc-notification .kc-form-group.kc-notification-preview .kc-notification-body-preview iframe {
         border: none;
         height: 576px;
         width: 360px; }
   .kc-notification > button.kc-button--primary {
     margin-top: 30px; }
-  .kc-notification.kc-notification--template .kc-notification-illustration .kc-form-group {
-    margin-bottom: 25px; }
-    .kc-notification.kc-notification--template .kc-notification-illustration .kc-form-group .kc-form-group__identity .kc-form-group__label {
-      margin-bottom: 0; }
-    .kc-notification.kc-notification--template .kc-notification-illustration .kc-form-group .d-flex.flex-column img {
-      height: 100px;
-      margin: 10px 0;
-      object-fit: contain;
-      object-position: center;
-      width: 100px; }
-    .kc-notification.kc-notification--template .kc-notification-illustration .kc-form-group .d-flex.flex-column button.kc-upload-illustration-btn {
-      background-color: transparent;
-      border: none;
-      width: fit-content; }
-      .kc-notification.kc-notification--template .kc-notification-illustration .kc-form-group .d-flex.flex-column button.kc-upload-illustration-btn label {
-        color: #0F77C0;
-        cursor: pointer;
-        margin-bottom: 0;
-        text-decoration: underline; }
-    .kc-notification.kc-notification--template .kc-notification-illustration .kc-form-group .d-flex.flex-column p {
-      margin-bottom: 0; }
-      .kc-notification.kc-notification--template .kc-notification-illustration .kc-form-group .d-flex.flex-column p.kc-upload-illustration-status--failed {
-        color: #FF4D4F;
-        font-weight: 700; }
-      .kc-notification.kc-notification--template .kc-notification-illustration .kc-form-group .d-flex.flex-column p.kc-upload-illustration-status--successful {
-        color: #52C41A;
-        font-weight: 700; }
-      .kc-notification.kc-notification--template .kc-notification-illustration .kc-form-group .d-flex.flex-column p.kc-upload-illustration-status--processed .spinner-border {
-        width: 1rem;
-        height: 1rem;
-        border: 0.25em solid #1890FF;
-        border-right-color: transparent;
-        margin-left: 5px; }
-    .kc-notification.kc-notification--template .kc-notification-illustration .kc-form-group .d-flex.flex-column input[type="file"] {
-      visibility: hidden; }
+  .kc-notification.kc-notification--template .kc-form-group.kc-notification-illustration .d-flex.flex-column img {
+    height: 100px;
+    margin: 10px 0;
+    object-fit: contain;
+    object-position: center;
+    width: 100px; }
+  .kc-notification.kc-notification--template .kc-form-group.kc-notification-illustration .d-flex.flex-column button.kc-upload-illustration-btn {
+    background-color: transparent;
+    border: none;
+    width: fit-content; }
+    .kc-notification.kc-notification--template .kc-form-group.kc-notification-illustration .d-flex.flex-column button.kc-upload-illustration-btn label {
+      color: #0F77C0;
+      cursor: pointer;
+      margin-bottom: 0;
+      text-decoration: underline; }
+  .kc-notification.kc-notification--template .kc-form-group.kc-notification-illustration .d-flex.flex-column p {
+    margin-bottom: 0; }
+    .kc-notification.kc-notification--template .kc-form-group.kc-notification-illustration .d-flex.flex-column p.kc-upload-illustration-status--failed {
+      color: #FF4D4F;
+      font-weight: 700; }
+    .kc-notification.kc-notification--template .kc-form-group.kc-notification-illustration .d-flex.flex-column p.kc-upload-illustration-status--successful {
+      color: #52C41A;
+      font-weight: 700; }
+    .kc-notification.kc-notification--template .kc-form-group.kc-notification-illustration .d-flex.flex-column p.kc-upload-illustration-status--processed .spinner-border {
+      width: 1rem;
+      height: 1rem;
+      border: 0.25em solid #1890FF;
+      border-right-color: transparent;
+      margin-left: 5px; }
+  .kc-notification.kc-notification--template .kc-form-group.kc-notification-illustration .d-flex.flex-column input[type="file"] {
+    visibility: hidden; }
   .kc-notification.kc-notification--template .kc-notification-body {
     margin-bottom: 25px; }
   .kc-notification.kc-notification--template p.kc-notification-placeholders--empty {
@@ -1020,20 +1005,16 @@ select, .form-control, .custom-select {
           .kc-notification.kc-notification--template ul.kc-notification-placeholders li .kc-record-item-new:first-child .kc-record-item-new__value label {
             font-weight: 700; }
   .kc-notification.kc-notification--alert .kc-alert-notification-preview .kc-alert-notification-card {
-    background-color: #FAEFDA;
-    border: 1px solid #EAB7B7;
     border-radius: 4px;
     display: flex;
     padding: 8px 12px; }
     .kc-notification.kc-notification--alert .kc-alert-notification-preview .kc-alert-notification-card svg {
       flex-shrink: 0;
       margin-right: 10px; }
-    .kc-notification.kc-notification--alert .kc-alert-notification-preview .kc-alert-notification-card .kc-alert-information-card__content {
-      color: #BF2628; }
-      .kc-notification.kc-notification--alert .kc-alert-notification-preview .kc-alert-notification-card .kc-alert-information-card__content .kc-alert-information-title {
-        font-weight: 700; }
-      .kc-notification.kc-notification--alert .kc-alert-notification-preview .kc-alert-notification-card .kc-alert-information-card__content .kc-alert-information-body p {
-        margin-bottom: 0; }
+    .kc-notification.kc-notification--alert .kc-alert-notification-preview .kc-alert-notification-card .kc-alert-information-card__content .kc-alert-information-title {
+      font-weight: 700; }
+    .kc-notification.kc-notification--alert .kc-alert-notification-preview .kc-alert-notification-card .kc-alert-information-card__content .kc-alert-information-body p {
+      margin-bottom: 0; }
   .kc-notification.kc-notification--alert .kc-alert-notification-preview.kc-alert-notification-preview--device {
     background-image: url("./assets/template-alert-notification.png");
     background-repeat: no-repeat;
@@ -1054,14 +1035,12 @@ select, .form-control, .custom-select {
         -webkit-box-orient: vertical;
         overflow: hidden; }
       .kc-notification.kc-notification--alert .kc-alert-notification-preview.kc-alert-notification-preview--device .kc-alert-notification-card .kc-alert-information-card__content .kc-alert-information-body {
-        font-size: 12px; }
-        .kc-notification.kc-notification--alert .kc-alert-notification-preview.kc-alert-notification-preview--device .kc-alert-notification-card .kc-alert-information-card__content .kc-alert-information-body p {
-          font-size: 12px;
-          display: -webkit-box;
-          line-clamp: 3;
-          -webkit-line-clamp: 3;
-          -webkit-box-orient: vertical;
-          overflow: hidden; }
+        font-size: 12px;
+        display: -webkit-box;
+        line-clamp: 3;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden; }
   .kc-notification.kc-notification--alert .kc-alert-notification-preview.kc-alert-notification-preview--original .kc-alert-notification-card .kc-alert-information-card__content .kc-alert-information-body {
     font-size: 15px; }
     .kc-notification.kc-notification--alert .kc-alert-notification-preview.kc-alert-notification-preview--original .kc-alert-notification-card .kc-alert-information-card__content .kc-alert-information-body p {
