@@ -629,6 +629,7 @@ select, .form-control, .custom-select {
   .kc-list-notifications .kc-datatable .kc-table table tbody tr td .kc-notification-preview p, .kc-notification-templates-list .kc-datatable .kc-table table tbody tr td .kc-notification-preview p {
     display: -webkit-box;
     -webkit-line-clamp: 4;
+    line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
     white-space: break-spaces; }
@@ -1633,11 +1634,6 @@ select, .form-control, .custom-select {
       border-top: 1px solid #8C8C8C;
       margin-bottom: 1.5rem;
       margin-top: 1.5rem; }
-    .kc-setting-deposit .kc-setting-simulation label, .kc-setting-withdraw .kc-setting-simulation label {
-      font-weight: 400;
-      margin: 0; }
-    .kc-setting-deposit .kc-setting-simulation span, .kc-setting-withdraw .kc-setting-simulation span {
-      font-weight: 700; }
     .kc-setting-deposit .kc-setting-simulation p.text-danger, .kc-setting-withdraw .kc-setting-simulation p.text-danger {
       margin-bottom: 0; }
   .kc-setting-deposit .kc-setting-deposit-form, .kc-setting-deposit .kc-setting-withdraw-form, .kc-setting-withdraw .kc-setting-deposit-form, .kc-setting-withdraw .kc-setting-withdraw-form {
@@ -3419,8 +3415,10 @@ aside.kc-deposit-account-onboarding-detail {
     font-size: 16px; }
   aside.kc-deposit-account-onboarding-detail section.kc-initial-deposit-detail .kc-record-table tbody tr .kc-record-table__label {
     max-width: 250px; }
-  aside.kc-deposit-account-onboarding-detail section.kc-invoice-detail .kc-deposit-account-onboarding-detail__entry label, aside.kc-deposit-account-onboarding-detail section.kc-invoice-detail .kc-deposit-account-onboarding-detail__entry p {
-    font-size: 16px; } }
+  aside.kc-deposit-account-onboarding-detail section.kc-invoice-detail .kc-deposit-account-onboarding-detail__entry span, aside.kc-deposit-account-onboarding-detail section.kc-invoice-detail .kc-deposit-account-onboarding-detail__entry p {
+    font-size: 16px; }
+  aside.kc-deposit-account-onboarding-detail section.kc-invoice-detail .kc-deposit-account-onboarding-detail__entry span {
+    font-weight: 700; } }
 
 /**
   Styling for deposit transaction detail template [FUNDING]

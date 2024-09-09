@@ -129,8 +129,12 @@ aside.kc-deposit-account-onboarding-detail {
 
     section.kc-invoice-detail {
       .kc-deposit-account-onboarding-detail__entry {
-        label, p {
+        span, p {
           font-size: 16px;
+        }
+
+        span {
+          font-weight: 700;
         }
       }
     }
