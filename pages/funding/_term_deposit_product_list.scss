@@ -1,0 +1,185 @@
+/**
+  Styling for term deposit product list page [FUNDING]
+*/
+
+.kc-term-deposit-product-list {
+  .kc-term-deposit-product-table {
+    .kc-term-deposit-product-table__row {
+      align-items: center;
+      border-bottom: 1px solid $neutral4;
+      color: $neutral9;
+      display: flex;
+      font-size: 15px;
+      justify-content: space-between;
+      width: 100%;
+
+      &:hover {
+        cursor: grab;
+      }
+
+      &.kc-term-deposit-product-table__row--head {
+        color: $neutral10;
+        font-weight: 700;
+      }
+
+      .kc-term-deposit-product-table__col {
+        padding: 10px 5px;
+
+        button.kc-term-deposit-product-table__detail-btn {
+          align-items: center;
+          background: none;
+          border: none;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          height: 40px;
+          width: 40px;
+      
+          &:hover {
+            background-color: $neutral3;
+          }
+        }
+
+        span.kc-term-deposit-product-table__label {
+          color: $neutral1;
+          display: inline-block;
+          font-size: 12px;
+          padding: 3px 5px;
+          padding-right: 20px;
+          position: relative;
+          text-align: center;
+          width: auto;
+      
+          &::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            border-top: 12.5px solid transparent;
+            border-bottom: 12.5px solid transparent;
+            border-right: 12.5px solid $neutral1;
+          }
+        }
+      }
+
+      &.kc-term-deposit-product-table__row--inactive {
+        i, p, span, div {
+          color: $neutral6;
+        }
+      }
+    }
+
+    .kc-term-deposit-product-table__body {
+      position: relative;
+      
+      .kc-scroll-top, .kc-scroll-bottom {
+        color: $neutral8;
+        font-size: 11px;
+        left: calc(50% - 11px);
+        position: absolute;
+      }
+    
+      .kc-scroll-top {
+        top: 6px;
+      }
+
+      .kc-scroll-bottom {
+        bottom: 6px;
+      }
+    }
+    
+    .kc-term-deposit-product-table__window {
+      border-bottom: 30px solid $neutral4;
+      border-left: 1px solid $neutral4;
+      border-right: 1px solid $neutral4;
+      border-top: 30px solid $neutral4;
+      height: calc(100vh - 350px);
+      overflow-y: auto;
+      width: 100%;
+      transition: border-color .25s linear;
+      -webkit-transition: border-color .25s linear;
+
+      &:hover {
+        border-color: rgba(0, 0, 0, 0.1);
+      }
+
+      &::-webkit-scrollbar,
+      &::-webkit-scrollbar-thumb,
+      &::-webkit-scrollbar-corner {
+        border-right-style: inset;
+        border-color: inherit;
+        border-right-width: calc(100vw + 100vh);
+      }
+      
+      &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+
+      &.kc-term-deposit-product-table__window--loading {
+        align-items: center;
+        border-bottom: 30px solid $neutral4;
+        border-left: none;
+        border-right: none;
+        border-top: 30px solid $neutral4;
+        display: flex;
+        justify-content: center;
+        height: calc(100vh - 350px);
+        overflow-y: hidden;
+        width: 100%;
+      }
+    }
+  }
+  
+  .kc-drag-and-drop-helper {
+    .kc-drag-and-drop-helper__content {
+      border-radius: 5px;
+      max-width: 450px;
+      padding: 10px;
+      display: flex;
+      border: 1px solid #E0E0E0;
+      background: #F0F0F0;
+      position: absolute;
+      right: 0;
+      top: 24px;
+  
+      &--hide {
+        opacity: 0;
+        animation: slide 1s ease 3.5s forwards;
+  
+        div, p {
+          display: none;
+        }
+      }
+  
+      &--show {
+        opacity: 1;
+        transition: opacity 0.6s linear;
+  
+        div, p {
+          display: block;
+        }
+      }
+  
+      .kc-drag-and-drop-helper__content-image {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+        border: 1px solid #666666;
+        flex-shrink: 0;
+      }
+  
+      p {
+        font-size: 12px;
+        color: #666666;
+  
+        strong {
+          margin-bottom: 5px;
+          font-style: normal;
+          color: $neutral9;
+        }
+      }
+    }
+  }
+}

@@ -245,211 +245,6 @@ select, .form-control, .custom-select {
     padding: 20px;
     min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px) - 70px - 20px); }
 
-.product-deposit-col-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  border-bottom: 1px solid #f0f0f0;
-  font-family: "Lato";
-  font-size: 15px;
-  color: #4c4c4c; }
-  .product-deposit-col-wrapper .buttonDetail-produk {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 100em;
-    border: none;
-    background: none; }
-    .product-deposit-col-wrapper .buttonDetail-produk:hover {
-      background-color: #F5F5F5; }
-  .product-deposit-col-wrapper .label-produk {
-    padding: 3px 5px;
-    padding-right: 20px;
-    font-size: 12px;
-    color: #fff;
-    position: relative;
-    text-align: center;
-    position: relative;
-    display: inline-block;
-    width: auto; }
-    .product-deposit-col-wrapper .label-produk::before {
-      content: "";
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 0;
-      height: 0;
-      border-top: 12.5px solid transparent;
-      border-bottom: 12.5px solid transparent;
-      border-right: 12.5px solid #fff; }
-  .product-deposit-col-wrapper.list-product-deposit-col-not-aktif i, .product-deposit-col-wrapper.list-product-deposit-col-not-aktif p, .product-deposit-col-wrapper.list-product-deposit-col-not-aktif b, .product-deposit-col-wrapper.list-product-deposit-col-not-aktif span, .product-deposit-col-wrapper.list-product-deposit-col-not-aktif div {
-    color: #c0c0c0; }
-  .product-deposit-col-wrapper.list-product-deposit-col-not-aktif .label-produk {
-    color: #fff;
-    background-color: #c0c0c0 !important; }
-  .product-deposit-col-wrapper.list-product-deposit-col:hover {
-    cursor: grab; }
-  .product-deposit-col-wrapper.header-product-deposit-col {
-    font-weight: bold !important;
-    color: #333; }
-  .product-deposit-col-wrapper .product-deposit-col {
-    padding: 10px 5px; }
-  .product-deposit-col-wrapper .product-deposit-col-iconDnD {
-    width: 5%;
-    text-align: center; }
-  .product-deposit-col-wrapper .product-deposit-col-no {
-    width: 5%; }
-  .product-deposit-col-wrapper .product-deposit-col-nama {
-    width: 20%; }
-  .product-deposit-col-wrapper .product-deposit-col-deskripsi {
-    width: 25%; }
-  .product-deposit-col-wrapper .product-deposit-col-general {
-    width: 10%; }
-  .product-deposit-col-wrapper .product-deposit-col-detail {
-    width: 5%; }
-
-.product-deposit-wrapper-scroll-info {
-  position: relative; }
-  .product-deposit-wrapper-scroll-info .produk-scroll-atas,
-  .product-deposit-wrapper-scroll-info .produk-scroll-bawah {
-    position: absolute;
-    color: #666;
-    font-size: 11px;
-    left: calc(50% - 11px); }
-  .product-deposit-wrapper-scroll-info .produk-scroll-atas {
-    top: 6px; }
-  .product-deposit-wrapper-scroll-info .produk-scroll-bawah {
-    bottom: 6px; }
-
-.product-deposit-wrapper {
-  width: 100%;
-  height: calc(100vh - 350px);
-  overflow-y: auto;
-  border-top: 30px solid #f0f0f0;
-  border-bottom: 30px solid #f0f0f0;
-  border-left: 1px solid #f0f0f0; }
-  .product-deposit-wrapper .petunjuk-scroll-atas {
-    position: absolute;
-    top: -20px;
-    left: 0px;
-    width: 100%;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #d0d0d0; }
-  .product-deposit-wrapper .product-deposit-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    max-width: 35%;
-    border: 1px solid #d4d4d4;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 15px;
-    font-family: "Lato"; }
-    .product-deposit-wrapper .product-deposit-item img {
-      width: 100px;
-      height: auto;
-      margin-right: 10px; }
-    .product-deposit-wrapper .product-deposit-item h2 {
-      font-weight: 700;
-      line-height: 1;
-      margin: 0;
-      padding: 0;
-      margin-bottom: 10px; }
-    .product-deposit-wrapper .product-deposit-item p {
-      line-height: 1.5;
-      font-size: 15px; }
-    .product-deposit-wrapper .product-deposit-item .kuota {
-      display: flex;
-      justify-content: space-between;
-      font-size: 13px;
-      color: #333;
-      margin-bottom: 15px; }
-
-.loading-produk-wrapper {
-  width: 100%;
-  height: calc(100vh - 350px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top: 30px solid #f0f0f0;
-  border-bottom: 30px solid #f0f0f0; }
-
-.wrapper-infoDnD {
-  z-index: 1;
-  flex: 1;
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
-  position: relative; }
-  .wrapper-infoDnD .icon-infoDnD {
-    font-size: 17px; }
-    .wrapper-infoDnD .icon-infoDnD-show {
-      color: #db1f25; }
-    .wrapper-infoDnD .icon-infoDnD-hide {
-      color: #006dbf; }
-    .wrapper-infoDnD .icon-infoDnD:hover {
-      cursor: pointer; }
-  .wrapper-infoDnD .content-infoDnD {
-    border-radius: 5px;
-    max-width: 450px;
-    width: 90%;
-    margin: 0 auto;
-    padding: 10px;
-    display: flex;
-    justify-content: flex-start;
-    border: 1px solid #e0e0e0;
-    align-items: flex-start;
-    background: #f0f0f0;
-    position: absolute;
-    right: 0;
-    top: 20px; }
-    .wrapper-infoDnD .content-infoDnD.content-infoDnD-hide {
-      height: 0;
-      width: 10px;
-      opacity: 0;
-      animation: slide 1s ease 3.5s forwards; }
-      .wrapper-infoDnD .content-infoDnD.content-infoDnD-hide div, .wrapper-infoDnD .content-infoDnD.content-infoDnD-hide p, .wrapper-infoDnD .content-infoDnD.content-infoDnD-hide span {
-        display: none; }
-    .wrapper-infoDnD .content-infoDnD.content-infoDnD-show {
-      height: auto;
-      width: inherit;
-      opacity: 1;
-      transition: opacity 0.6s linear; }
-      .wrapper-infoDnD .content-infoDnD.content-infoDnD-show div, .wrapper-infoDnD .content-infoDnD.content-infoDnD-show p, .wrapper-infoDnD .content-infoDnD.content-infoDnD-show span {
-        display: block; }
-    .wrapper-infoDnD .content-infoDnD .image-infoDnD {
-      position: relative;
-      width: 170px;
-      height: 100px;
-      margin-right: 10px;
-      border: 1px solid #666; }
-    .wrapper-infoDnD .content-infoDnD i {
-      font-size: 20px;
-      margin-right: 10px;
-      margin-top: 5px;
-      color: #666; }
-    .wrapper-infoDnD .content-infoDnD p {
-      margin: 0;
-      padding: 0;
-      line-height: 1.5;
-      font-family: "Lato";
-      font-size: 12px;
-      font-style: italic;
-      color: #6f6f6f; }
-      .wrapper-infoDnD .content-infoDnD p b {
-        display: block;
-        margin-bottom: 5px;
-        font-style: normal;
-        color: #000;
-        font-size: 15px; }
-
 .color-picker {
   width: 36px;
   height: 14px;
@@ -1804,6 +1599,133 @@ select, .form-control, .custom-select {
       letter-spacing: 1px; }
   .kc-term-deposit-application-detail .kc-modal .kc-modal__container .kc-form-group .kc-inputfield {
     max-width: none; }
+
+/**
+  Styling for term deposit product list page [FUNDING]
+*/
+.kc-term-deposit-product-list .kc-term-deposit-product-table .kc-term-deposit-product-table__row {
+  align-items: center;
+  border-bottom: 1px solid #F0F0F0;
+  color: #434343;
+  display: flex;
+  font-size: 15px;
+  justify-content: space-between;
+  width: 100%; }
+  .kc-term-deposit-product-list .kc-term-deposit-product-table .kc-term-deposit-product-table__row:hover {
+    cursor: grab; }
+  .kc-term-deposit-product-list .kc-term-deposit-product-table .kc-term-deposit-product-table__row.kc-term-deposit-product-table__row--head {
+    color: #262626;
+    font-weight: 700; }
+  .kc-term-deposit-product-list .kc-term-deposit-product-table .kc-term-deposit-product-table__row .kc-term-deposit-product-table__col {
+    padding: 10px 5px; }
+    .kc-term-deposit-product-list .kc-term-deposit-product-table .kc-term-deposit-product-table__row .kc-term-deposit-product-table__col button.kc-term-deposit-product-table__detail-btn {
+      align-items: center;
+      background: none;
+      border: none;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      height: 40px;
+      width: 40px; }
+      .kc-term-deposit-product-list .kc-term-deposit-product-table .kc-term-deposit-product-table__row .kc-term-deposit-product-table__col button.kc-term-deposit-product-table__detail-btn:hover {
+        background-color: #F5F5F5; }
+    .kc-term-deposit-product-list .kc-term-deposit-product-table .kc-term-deposit-product-table__row .kc-term-deposit-product-table__col span.kc-term-deposit-product-table__label {
+      color: #FFFFFF;
+      display: inline-block;
+      font-size: 12px;
+      padding: 3px 5px;
+      padding-right: 20px;
+      position: relative;
+      text-align: center;
+      width: auto; }
+      .kc-term-deposit-product-list .kc-term-deposit-product-table .kc-term-deposit-product-table__row .kc-term-deposit-product-table__col span.kc-term-deposit-product-table__label::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-top: 12.5px solid transparent;
+        border-bottom: 12.5px solid transparent;
+        border-right: 12.5px solid #FFFFFF; }
+  .kc-term-deposit-product-list .kc-term-deposit-product-table .kc-term-deposit-product-table__row.kc-term-deposit-product-table__row--inactive i, .kc-term-deposit-product-list .kc-term-deposit-product-table .kc-term-deposit-product-table__row.kc-term-deposit-product-table__row--inactive p, .kc-term-deposit-product-list .kc-term-deposit-product-table .kc-term-deposit-product-table__row.kc-term-deposit-product-table__row--inactive span, .kc-term-deposit-product-list .kc-term-deposit-product-table .kc-term-deposit-product-table__row.kc-term-deposit-product-table__row--inactive div {
+    color: #BFBFBF; }
+
+.kc-term-deposit-product-list .kc-term-deposit-product-table .kc-term-deposit-product-table__body {
+  position: relative; }
+  .kc-term-deposit-product-list .kc-term-deposit-product-table .kc-term-deposit-product-table__body .kc-scroll-top, .kc-term-deposit-product-list .kc-term-deposit-product-table .kc-term-deposit-product-table__body .kc-scroll-bottom {
+    color: #595959;
+    font-size: 11px;
+    left: calc(50% - 11px);
+    position: absolute; }
+  .kc-term-deposit-product-list .kc-term-deposit-product-table .kc-term-deposit-product-table__body .kc-scroll-top {
+    top: 6px; }
+  .kc-term-deposit-product-list .kc-term-deposit-product-table .kc-term-deposit-product-table__body .kc-scroll-bottom {
+    bottom: 6px; }
+
+.kc-term-deposit-product-list .kc-term-deposit-product-table .kc-term-deposit-product-table__window {
+  border-bottom: 30px solid #F0F0F0;
+  border-left: 1px solid #F0F0F0;
+  border-right: 1px solid #F0F0F0;
+  border-top: 30px solid #F0F0F0;
+  height: calc(100vh - 350px);
+  overflow-y: auto;
+  width: 100%;
+  transition: border-color .25s linear;
+  -webkit-transition: border-color .25s linear; }
+  .kc-term-deposit-product-list .kc-term-deposit-product-table .kc-term-deposit-product-table__window:hover {
+    border-color: rgba(0, 0, 0, 0.1); }
+  .kc-term-deposit-product-list .kc-term-deposit-product-table .kc-term-deposit-product-table__window::-webkit-scrollbar, .kc-term-deposit-product-list .kc-term-deposit-product-table .kc-term-deposit-product-table__window::-webkit-scrollbar-thumb, .kc-term-deposit-product-list .kc-term-deposit-product-table .kc-term-deposit-product-table__window::-webkit-scrollbar-corner {
+    border-right-style: inset;
+    border-color: inherit;
+    border-right-width: calc(100vw + 100vh); }
+  .kc-term-deposit-product-list .kc-term-deposit-product-table .kc-term-deposit-product-table__window::-webkit-scrollbar {
+    width: 6px;
+    height: 6px; }
+  .kc-term-deposit-product-list .kc-term-deposit-product-table .kc-term-deposit-product-table__window.kc-term-deposit-product-table__window--loading {
+    align-items: center;
+    border-bottom: 30px solid #F0F0F0;
+    border-left: none;
+    border-right: none;
+    border-top: 30px solid #F0F0F0;
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 350px);
+    overflow-y: hidden;
+    width: 100%; }
+
+.kc-term-deposit-product-list .kc-drag-and-drop-helper .kc-drag-and-drop-helper__content {
+  border-radius: 5px;
+  max-width: 450px;
+  padding: 10px;
+  display: flex;
+  border: 1px solid #E0E0E0;
+  background: #F0F0F0;
+  position: absolute;
+  right: 0;
+  top: 24px; }
+  .kc-term-deposit-product-list .kc-drag-and-drop-helper .kc-drag-and-drop-helper__content--hide {
+    opacity: 0;
+    animation: slide 1s ease 3.5s forwards; }
+    .kc-term-deposit-product-list .kc-drag-and-drop-helper .kc-drag-and-drop-helper__content--hide div, .kc-term-deposit-product-list .kc-drag-and-drop-helper .kc-drag-and-drop-helper__content--hide p {
+      display: none; }
+  .kc-term-deposit-product-list .kc-drag-and-drop-helper .kc-drag-and-drop-helper__content--show {
+    opacity: 1;
+    transition: opacity 0.6s linear; }
+    .kc-term-deposit-product-list .kc-drag-and-drop-helper .kc-drag-and-drop-helper__content--show div, .kc-term-deposit-product-list .kc-drag-and-drop-helper .kc-drag-and-drop-helper__content--show p {
+      display: block; }
+  .kc-term-deposit-product-list .kc-drag-and-drop-helper .kc-drag-and-drop-helper__content .kc-drag-and-drop-helper__content-image {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    border: 1px solid #666666;
+    flex-shrink: 0; }
+  .kc-term-deposit-product-list .kc-drag-and-drop-helper .kc-drag-and-drop-helper__content p {
+    font-size: 12px;
+    color: #666666; }
+    .kc-term-deposit-product-list .kc-drag-and-drop-helper .kc-drag-and-drop-helper__content p strong {
+      margin-bottom: 5px;
+      font-style: normal;
+      color: #434343; }
 
 /**
   Styling for withdrawal detail page [FUNDING]
