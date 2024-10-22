@@ -1,0 +1,44 @@
+/**
+  Styling for event representative list page [BACKOFFICE]
+*/
+
+.kc-event-representative {
+  .kc-modal .kc-modal__container {
+    min-width: 500px;
+
+    .kc-modal__content {
+      .kc-dropdown ul.kc-dropdown__items {
+        li.kc-dropdown__item span {
+          display: -webkit-box;
+          line-clamp: 1;
+          overflow: hidden;
+          white-space: break-spaces;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;  
+        }
+      }
+    }
+  }
+
+  .kc-table table tbody tr td {
+    .kc-button-more-option {
+      background-color: transparent;
+      border: none;
+      height: 24px;
+      width: 24px;
+    }
+  }
+
+  .kc-more-option {
+    position: relative;
+
+    .kc-more-option-menu {
+      position: fixed;
+      width: max-content;
+
+      .kc-more-option-menu__item {
+        width: 100%;
+      }
+    }
+  }
+}
