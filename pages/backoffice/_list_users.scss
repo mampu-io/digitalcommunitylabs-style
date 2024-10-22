@@ -1,5 +1,5 @@
 /**
-  Styling for list users page [BACKOFFICE]
+  Styling for backoffice user list page [BACKOFFICE]
 */
 
 .kc-list-users {
@@ -17,7 +17,7 @@
               width: 100%;
         
               .kc-roles__option {
-                margin-bottom: 15px;
+                margin-bottom: 5px;
         
                 .kc-checkbox label {
                   max-width: none;
@@ -42,12 +42,14 @@
       .kc-modal__container {
         width: 600px;
   
+        .kc-modal__header {
+          padding: .5rem 1rem 1.25rem;
+        }
+
         .kc-modal__content {
-          width: 450px;
-        
           .kc-form-group {  
             .kc-form-group__identity {
-              width: 120px;
+              margin-right: 10px;
             }
       
             .kc-roles {

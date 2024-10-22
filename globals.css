@@ -650,7 +650,7 @@ select, .form-control, .custom-select {
         margin-bottom: 20px; }
 
 /**
-  Styling for list users page [BACKOFFICE]
+  Styling for backoffice user list page [BACKOFFICE]
 */
 .kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container .kc-modal__content, .kc-list-users .kc-edit-user-profile-modal .kc-modal .kc-modal__container .kc-modal__content {
   margin: 0 auto; }
@@ -660,7 +660,7 @@ select, .form-control, .custom-select {
     margin-top: 5px;
     width: 100%; }
     .kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-roles .kc-roles__option, .kc-list-users .kc-edit-user-profile-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-roles .kc-roles__option {
-      margin-bottom: 15px; }
+      margin-bottom: 5px; }
       .kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-roles .kc-roles__option .kc-checkbox label, .kc-list-users .kc-edit-user-profile-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-roles .kc-roles__option .kc-checkbox label {
         max-width: none; }
   .kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container .kc-modal__content p.text-notes, .kc-list-users .kc-edit-user-profile-modal .kc-modal .kc-modal__container .kc-modal__content p.text-notes {
@@ -669,15 +669,15 @@ select, .form-control, .custom-select {
 
 .kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container {
   width: 600px; }
-  .kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container .kc-modal__content {
-    width: 450px; }
-    .kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-form-group__identity {
-      width: 120px; }
-    .kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-roles .kc-roles__option div.kc-caption {
-      color: #595959;
-      font-size: 13px;
-      line-height: 16px;
-      margin-top: 5px; }
+  .kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container .kc-modal__header {
+    padding: .5rem 1rem 1.25rem; }
+  .kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-form-group__identity {
+    margin-right: 10px; }
+  .kc-list-users .kc-user-registration-modal .kc-modal .kc-modal__container .kc-modal__content .kc-form-group .kc-roles .kc-roles__option div.kc-caption {
+    color: #595959;
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 5px; }
 
 .kc-list-users .kc-edit-user-profile-modal .kc-modal .kc-modal__container {
   width: 750px; }
