@@ -60,40 +60,51 @@
     }
   }
 
-  section.kc-event-management__event-detail, section.kc-event-management__event-configuration {
-    .kc-form-group {
-      max-width: 500px;
+  .kc-form-group {
+    max-width: 500px;
 
-      .kc-form-group__identity {
-        width: 100%;
+    .kc-form-group__identity {
+      width: 100%;
 
-        .kc-form-group__label {
-          margin-bottom: 4px;
-  
-          label {
-            font-size: 15px;
-            font-weight: 500;
-            margin-bottom: 0;
-          }
+      .kc-form-group__label {
+        margin-bottom: 8px;
+
+        label {
+          font-size: 15px;
+          font-weight: 500;
+          margin-bottom: 0;
         }
       }
+    }
 
-      .kc-textarea {
-        max-width: 500px;
-      }
+    .kc-textarea {
+      max-width: 500px;
+    }
 
-      .kc-inputfield .kc-inputfield__box, .kc-textarea .kc-textarea__box,
-      .kc-textarea .kc-textarea__box textarea {
-        border-radius: 6px;
-      }
+    .kc-inputfield .kc-inputfield__box, .kc-textarea .kc-textarea__box,
+    .kc-textarea .kc-textarea__box textarea, .kc-dropdown button.kc-dropdown-button,
+    .kc-dropdown ul.kc-dropdown__items {
+      border-radius: 6px;
+    }
 
-      .kc-inputfield .kc-inputfield__box {
-        height: 40px;
-      }
+    .kc-inputfield.kc-inputfield--medium .kc-inputfield__box {
+      height: 40px;
+    }
 
-      label.kc-toggle-switch {
-        flex-shrink: 0;
-      }
+    label.kc-toggle-switch {
+      flex-shrink: 0;
+    }
+  }
+
+  .kc-modal .kc-modal__container .kc-modal__main  {
+    min-width: 500px;
+
+    .kc-modal__header .kc-modal__title span {
+      font-size: 22px;
+    }
+
+    .kc-modal__content {
+      padding-top: 2rem;
     }
   }
 
@@ -135,12 +146,6 @@
 
   section.kc-event-management__event-configuration {
     .kc-modal .kc-modal__container {
-      min-width: 500px;
-  
-      .kc-modal__header .kc-modal__title span {
-        font-size: 22px;
-      }
-
       .kc-modal__content {
         .kc-dropdown ul.kc-dropdown__items {
           li.kc-dropdown__item span {

@@ -437,26 +437,33 @@ select, .form-control, .custom-select {
       padding: 20px 35px;
       width: 100%; }
 
-.kc-event-management section.kc-event-management__event-detail .kc-form-group, .kc-event-management section.kc-event-management__event-configuration .kc-form-group {
+.kc-event-management .kc-form-group {
   max-width: 500px; }
-  .kc-event-management section.kc-event-management__event-detail .kc-form-group .kc-form-group__identity, .kc-event-management section.kc-event-management__event-configuration .kc-form-group .kc-form-group__identity {
+  .kc-event-management .kc-form-group .kc-form-group__identity {
     width: 100%; }
-    .kc-event-management section.kc-event-management__event-detail .kc-form-group .kc-form-group__identity .kc-form-group__label, .kc-event-management section.kc-event-management__event-configuration .kc-form-group .kc-form-group__identity .kc-form-group__label {
-      margin-bottom: 4px; }
-      .kc-event-management section.kc-event-management__event-detail .kc-form-group .kc-form-group__identity .kc-form-group__label label, .kc-event-management section.kc-event-management__event-configuration .kc-form-group .kc-form-group__identity .kc-form-group__label label {
+    .kc-event-management .kc-form-group .kc-form-group__identity .kc-form-group__label {
+      margin-bottom: 8px; }
+      .kc-event-management .kc-form-group .kc-form-group__identity .kc-form-group__label label {
         font-size: 15px;
         font-weight: 500;
         margin-bottom: 0; }
-  .kc-event-management section.kc-event-management__event-detail .kc-form-group .kc-textarea, .kc-event-management section.kc-event-management__event-configuration .kc-form-group .kc-textarea {
+  .kc-event-management .kc-form-group .kc-textarea {
     max-width: 500px; }
-  .kc-event-management section.kc-event-management__event-detail .kc-form-group .kc-inputfield .kc-inputfield__box, .kc-event-management section.kc-event-management__event-detail .kc-form-group .kc-textarea .kc-textarea__box,
-  .kc-event-management section.kc-event-management__event-detail .kc-form-group .kc-textarea .kc-textarea__box textarea, .kc-event-management section.kc-event-management__event-configuration .kc-form-group .kc-inputfield .kc-inputfield__box, .kc-event-management section.kc-event-management__event-configuration .kc-form-group .kc-textarea .kc-textarea__box,
-  .kc-event-management section.kc-event-management__event-configuration .kc-form-group .kc-textarea .kc-textarea__box textarea {
+  .kc-event-management .kc-form-group .kc-inputfield .kc-inputfield__box, .kc-event-management .kc-form-group .kc-textarea .kc-textarea__box,
+  .kc-event-management .kc-form-group .kc-textarea .kc-textarea__box textarea, .kc-event-management .kc-form-group .kc-dropdown button.kc-dropdown-button,
+  .kc-event-management .kc-form-group .kc-dropdown ul.kc-dropdown__items {
     border-radius: 6px; }
-  .kc-event-management section.kc-event-management__event-detail .kc-form-group .kc-inputfield .kc-inputfield__box, .kc-event-management section.kc-event-management__event-configuration .kc-form-group .kc-inputfield .kc-inputfield__box {
+  .kc-event-management .kc-form-group .kc-inputfield.kc-inputfield--medium .kc-inputfield__box {
     height: 40px; }
-  .kc-event-management section.kc-event-management__event-detail .kc-form-group label.kc-toggle-switch, .kc-event-management section.kc-event-management__event-configuration .kc-form-group label.kc-toggle-switch {
+  .kc-event-management .kc-form-group label.kc-toggle-switch {
     flex-shrink: 0; }
+
+.kc-event-management .kc-modal .kc-modal__container .kc-modal__main {
+  min-width: 500px; }
+  .kc-event-management .kc-modal .kc-modal__container .kc-modal__main .kc-modal__header .kc-modal__title span {
+    font-size: 22px; }
+  .kc-event-management .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
+    padding-top: 2rem; }
 
 .kc-event-management section.kc-event-management__event-detail .kc-event-management__input-image {
   background-color: #FCFCFC;
@@ -484,17 +491,13 @@ select, .form-control, .custom-select {
   object-position: center;
   width: 160px; }
 
-.kc-event-management section.kc-event-management__event-configuration .kc-modal .kc-modal__container {
-  min-width: 500px; }
-  .kc-event-management section.kc-event-management__event-configuration .kc-modal .kc-modal__container .kc-modal__header .kc-modal__title span {
-    font-size: 22px; }
-  .kc-event-management section.kc-event-management__event-configuration .kc-modal .kc-modal__container .kc-modal__content .kc-dropdown ul.kc-dropdown__items li.kc-dropdown__item span {
-    display: -webkit-box;
-    line-clamp: 1;
-    overflow: hidden;
-    white-space: break-spaces;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical; }
+.kc-event-management section.kc-event-management__event-configuration .kc-modal .kc-modal__container .kc-modal__content .kc-dropdown ul.kc-dropdown__items li.kc-dropdown__item span {
+  display: -webkit-box;
+  line-clamp: 1;
+  overflow: hidden;
+  white-space: break-spaces;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical; }
 
 .kc-event-management section.kc-event-management__event-configuration .kc-table table thead tr th, .kc-event-management section.kc-event-management__event-configuration .kc-table table tbody tr td {
   padding: 12px 8px; }
