@@ -517,6 +517,39 @@ select, .form-control, .custom-select {
     .kc-event-management section.kc-event-management__event-configuration .kc-more-option .kc-more-option-menu .kc-more-option-menu__item {
       width: 100%; }
 
+.kc-event-management section.kc-event-management__event-summary .kc-table {
+  border: none; }
+  .kc-event-management section.kc-event-management__event-summary .kc-table table {
+    border-collapse: collapse; }
+    .kc-event-management section.kc-event-management__event-summary .kc-table table thead tr th {
+      background-color: #F0F0F0;
+      border: 1px solid #BABABA;
+      border-collapse: collapse;
+      color: #141414;
+      padding: 16px;
+      text-transform: none; }
+      .kc-event-management section.kc-event-management__event-summary .kc-table table thead tr th:first-child {
+        width: 300px; }
+      .kc-event-management section.kc-event-management__event-summary .kc-table table thead tr th:nth-child(2), .kc-event-management section.kc-event-management__event-summary .kc-table table thead tr th:nth-child(3) {
+        width: 150px; }
+    .kc-event-management section.kc-event-management__event-summary .kc-table table tbody tr.accent-success td {
+      background-color: #E8FADF; }
+    .kc-event-management section.kc-event-management__event-summary .kc-table table tbody tr.accent-danger td {
+      background-color: #FCE3E3; }
+    .kc-event-management section.kc-event-management__event-summary .kc-table table tbody tr td {
+      border: 1px solid #BABABA;
+      border-collapse: collapse;
+      color: #141414;
+      padding: 16px; }
+      .kc-event-management section.kc-event-management__event-summary .kc-table table tbody tr td.text-gray {
+        color: #808080; }
+      .kc-event-management section.kc-event-management__event-summary .kc-table table tbody tr td:first-child {
+        width: 300px; }
+      .kc-event-management section.kc-event-management__event-summary .kc-table table tbody tr td:nth-child(2), .kc-event-management section.kc-event-management__event-summary .kc-table table tbody tr td:nth-child(3) {
+        width: 150px; }
+      .kc-event-management section.kc-event-management__event-summary .kc-table table tbody tr td .kc-rounded-button button {
+        background-color: transparent; }
+
 /**
   Styling for event representative list page [BACKOFFICE]
 */

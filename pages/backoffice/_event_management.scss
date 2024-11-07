@@ -188,4 +188,64 @@
       }
     }
   }
+
+  section.kc-event-management__event-summary {
+    .kc-table {
+      border: none;
+
+      table {
+        border-collapse: collapse;
+  
+        thead tr th {
+          background-color: #F0F0F0;
+          border: 1px solid #BABABA;
+          border-collapse: collapse;
+          color: #141414;
+          padding: 16px;
+          text-transform: none;
+          
+          &:first-child {
+            width: 300px;
+          }
+  
+          &:nth-child(2), &:nth-child(3) {
+            width: 150px;
+          }
+        }
+  
+        tbody tr {
+          &.accent-success td {
+            background-color: #E8FADF;
+          }
+
+          &.accent-danger td {
+            background-color: #FCE3E3;
+          }
+
+          td {
+            border: 1px solid #BABABA;
+            border-collapse: collapse;
+            color: #141414;
+            padding: 16px;
+  
+            &.text-gray {
+              color: #808080;
+            }
+    
+            &:first-child {
+              width: 300px;
+            }
+    
+            &:nth-child(2), &:nth-child(3) {
+              width: 150px;
+            }
+  
+            .kc-rounded-button button {
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
 }
