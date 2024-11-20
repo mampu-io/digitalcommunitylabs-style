@@ -562,6 +562,12 @@ select, .form-control, .custom-select {
     white-space: break-spaces;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical; }
+  .kc-event-representative .kc-modal .kc-modal__container .kc-modal__content .kc-event-representative__signature {
+    border-radius: 6px;
+    height: 120px;
+    object-fit: cover;
+    object-position: center;
+    width: 160px; }
 
 .kc-event-representative .kc-table table tbody tr td .kc-button-more-option {
   background-color: transparent;
@@ -2249,6 +2255,25 @@ select, .form-control, .custom-select {
     width: 100%; }
     .kc-color-pallete .kc-color-pallete__inner i {
       font-size: 24px; }
+
+.kc-file-input {
+  background-color: #FCFCFC;
+  border: 1px solid #D9D9D9;
+  border-radius: 6px;
+  max-width: 500px;
+  padding: 8px 12px; }
+  .kc-file-input i {
+    color: #595959;
+    font-size: 24px; }
+  .kc-file-input label {
+    color: #595959;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 400 !important;
+    margin-bottom: 0;
+    width: 100%; }
+    .kc-file-input label input[type="file"] {
+      display: none; }
 
 /**
   Styling for GalleryCard atom component.

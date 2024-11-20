@@ -17,6 +17,14 @@
           -webkit-box-orient: vertical;  
         }
       }
+
+      .kc-event-representative__signature {
+        border-radius: 6px;
+        height: 120px;
+        object-fit: cover;
+        object-position: center;
+        width: 160px;
+      }
     }
   }
 
