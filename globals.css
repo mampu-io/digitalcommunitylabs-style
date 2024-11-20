@@ -1036,78 +1036,6 @@ select, .form-control, .custom-select {
     width: 100px; }
 
 /**
-  Styling for active member detail page [MEMBERSERVICE]
-*/
-.kc-active-member-detail .kc-suspend-member-modal .kc-modal .kc-modal__container {
-  width: 500px; }
-  .kc-active-member-detail .kc-suspend-member-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
-    padding: 1.5rem 1.5rem 2.5rem; }
-    .kc-active-member-detail .kc-suspend-member-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical {
-      margin-bottom: 10px; }
-      .kc-active-member-detail .kc-suspend-member-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical .kc-form-group__identity .kc-form-group__label {
-        margin-bottom: 0; }
-        .kc-active-member-detail .kc-suspend-member-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical .kc-form-group__identity .kc-form-group__label label {
-          margin-bottom: 0; }
-
-.kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
-  height: 700px;
-  padding-top: 1.5rem; }
-  .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content {
-    width: 500px;
-    height: 100%;
-    margin: 20px 0;
-    overflow-x: hidden;
-    overflow-y: auto;
-    border-color: transparent;
-    transition: border-color .25s linear;
-    -webkit-transition: border-color .25s linear; }
-    .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content:hover {
-      border-color: rgba(0, 0, 0, 0.1); }
-    .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content::-webkit-scrollbar, .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content::-webkit-scrollbar-thumb, .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content::-webkit-scrollbar-corner {
-      border-right-style: inset;
-      border-color: inherit;
-      border-right-width: calc(100vw + 100vh); }
-    .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content::-webkit-scrollbar {
-      width: 6px;
-      height: 6px; }
-    .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section-item {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 5px;
-      padding: 10px; }
-      .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section-item .kc-record-item-new {
-        align-items: flex-start;
-        background-color: #EFEFEF;
-        margin-bottom: 10px;
-        padding: 5px;
-        width: 100%; }
-        .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section-item .kc-record-item-new label, .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section-item .kc-record-item-new .kc-record-item-new__value {
-          flex: 1; }
-        .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section-item .kc-record-item-new label {
-          line-height: 24px; }
-      .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section-item .kc-dropdown button {
-        height: 32px; }
-      .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section-item .kc-dropdown .kc-dropdown__items {
-        top: 32px; }
-  .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__footer {
-    margin-left: 10px; }
-
-.kc-active-member-detail .kc-reset-pin-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-radio-button {
-  align-items: baseline;
-  margin-bottom: 10px; }
-  .kc-active-member-detail .kc-reset-pin-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-radio-button .kc-radio-button__label {
-    font-weight: 400; }
-
-.kc-active-member-detail .kc-change-phone-number-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
-  padding: 1.25rem 1.5rem 2.5rem; }
-  .kc-active-member-detail .kc-change-phone-number-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical {
-    margin-bottom: 10px; }
-    .kc-active-member-detail .kc-change-phone-number-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical .kc-form-group__identity .kc-form-group__label {
-      margin-bottom: 0; }
-      .kc-active-member-detail .kc-change-phone-number-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical .kc-form-group__identity .kc-form-group__label label {
-        margin-bottom: 0; }
-
-/**
   Styling for invoice detail page and
   invoice suspended detail page [MEMBERSERVICE]
 */
@@ -1236,6 +1164,83 @@ select, .form-control, .custom-select {
 .kc-active-member-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__header .kc-modal__title span.kc-headline5,
 .kc-request-update-data-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__header .kc-modal__title span.kc-headline5 {
   font-size: 22px; }
+
+/**
+  Styling for member detail page [MEMBERSERVICE]
+*/
+.kc-active-member-detail .kc-suspend-member-modal .kc-modal .kc-modal__container,
+.kc-suspended-member-detail .kc-modal .kc-modal__container, .kc-unsuspend-member-modal .kc-modal .kc-modal__container {
+  width: 500px; }
+  .kc-active-member-detail .kc-suspend-member-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content,
+  .kc-suspended-member-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content, .kc-unsuspend-member-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
+    padding: 1.5rem 1.5rem 2.5rem; }
+    .kc-active-member-detail .kc-suspend-member-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical,
+    .kc-suspended-member-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical, .kc-unsuspend-member-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical {
+      margin-bottom: 10px; }
+      .kc-active-member-detail .kc-suspend-member-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical .kc-form-group__identity .kc-form-group__label,
+      .kc-suspended-member-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical .kc-form-group__identity .kc-form-group__label, .kc-unsuspend-member-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical .kc-form-group__identity .kc-form-group__label {
+        margin-bottom: 0; }
+        .kc-active-member-detail .kc-suspend-member-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical .kc-form-group__identity .kc-form-group__label label,
+        .kc-suspended-member-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical .kc-form-group__identity .kc-form-group__label label, .kc-unsuspend-member-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical .kc-form-group__identity .kc-form-group__label label {
+          margin-bottom: 0; }
+
+.kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
+  height: 700px;
+  padding-top: 1.5rem; }
+  .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content {
+    width: 500px;
+    height: 100%;
+    margin: 20px 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-color: transparent;
+    transition: border-color .25s linear;
+    -webkit-transition: border-color .25s linear; }
+    .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content:hover {
+      border-color: rgba(0, 0, 0, 0.1); }
+    .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content::-webkit-scrollbar, .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content::-webkit-scrollbar-thumb, .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content::-webkit-scrollbar-corner {
+      border-right-style: inset;
+      border-color: inherit;
+      border-right-width: calc(100vw + 100vh); }
+    .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content::-webkit-scrollbar {
+      width: 6px;
+      height: 6px; }
+    .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section-item {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 5px;
+      padding: 10px; }
+      .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section-item .kc-record-item-new {
+        align-items: flex-start;
+        background-color: #EFEFEF;
+        margin-bottom: 10px;
+        padding: 5px;
+        width: 100%; }
+        .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section-item .kc-record-item-new label, .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section-item .kc-record-item-new .kc-record-item-new__value {
+          flex: 1; }
+        .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section-item .kc-record-item-new label {
+          line-height: 24px; }
+      .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section-item .kc-dropdown button {
+        height: 32px; }
+      .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__content .kc-section-item .kc-dropdown .kc-dropdown__items {
+        top: 32px; }
+  .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__footer {
+    margin-left: 10px; }
+
+.kc-active-member-detail .kc-reset-pin-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-radio-button {
+  align-items: baseline;
+  margin-bottom: 10px; }
+  .kc-active-member-detail .kc-reset-pin-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-radio-button .kc-radio-button__label {
+    font-weight: 400; }
+
+.kc-active-member-detail .kc-change-phone-number-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
+  padding: 1.25rem 1.5rem 2.5rem; }
+  .kc-active-member-detail .kc-change-phone-number-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical {
+    margin-bottom: 10px; }
+    .kc-active-member-detail .kc-change-phone-number-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical .kc-form-group__identity .kc-form-group__label {
+      margin-bottom: 0; }
+      .kc-active-member-detail .kc-change-phone-number-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical .kc-form-group__identity .kc-form-group__label label {
+        margin-bottom: 0; }
 
 /**
   Styling for member proposal detail page [MEMBERSERVICE]

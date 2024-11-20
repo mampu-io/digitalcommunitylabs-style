@@ -1,30 +1,31 @@
 /**
-  Styling for active member detail page [MEMBERSERVICE]
+  Styling for member detail page [MEMBERSERVICE]
 */
 
-.kc-active-member-detail {
-  .kc-suspend-member-modal {
-    .kc-modal .kc-modal__container {
-      width: 500px;
+.kc-active-member-detail .kc-suspend-member-modal,
+.kc-suspended-member-detail, .kc-unsuspend-member-modal {
+  .kc-modal .kc-modal__container {
+    width: 500px;
 
-      .kc-modal__main .kc-modal__content {
-        padding: 1.5rem 1.5rem 2.5rem;
+    .kc-modal__main .kc-modal__content {
+      padding: 1.5rem 1.5rem 2.5rem;
 
-        .kc-form-group.kc-form-group--vertical {
-          margin-bottom: 10px;
+      .kc-form-group.kc-form-group--vertical {
+        margin-bottom: 10px;
+  
+        .kc-form-group__identity .kc-form-group__label {
+          margin-bottom: 0;
     
-          .kc-form-group__identity .kc-form-group__label {
+          label {
             margin-bottom: 0;
-      
-            label {
-              margin-bottom: 0;
-            }
           }
         }
       }
     }
   }
+}
 
+.kc-active-member-detail {
   .kc-request-member-update-data-modal {
     .kc-modal {
       .kc-modal__container {
