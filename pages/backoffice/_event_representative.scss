@@ -7,6 +7,10 @@
     min-width: 500px;
 
     .kc-modal__content {
+      .kc-dropdown button.kc-dropdown-button, .kc-dropdown ul.kc-dropdown__items {
+        border-radius: 6px;
+      }
+
       .kc-dropdown ul.kc-dropdown__items {
         li.kc-dropdown__item span {
           display: -webkit-box;
@@ -14,7 +18,7 @@
           overflow: hidden;
           white-space: break-spaces;
           -webkit-line-clamp: 1;
-          -webkit-box-orient: vertical;  
+          -webkit-box-orient: vertical;
         }
       }
 

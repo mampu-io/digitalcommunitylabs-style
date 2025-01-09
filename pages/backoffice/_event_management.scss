@@ -108,6 +108,10 @@
     }
   }
 
+  .kc-validate-credential-modal .kc-modal .kc-modal__container .kc-modal__main {
+    min-width: auto;
+  }
+
   section.kc-event-management__event-detail {
     .kc-event-management__input-image {
       background-color: #FCFCFC;

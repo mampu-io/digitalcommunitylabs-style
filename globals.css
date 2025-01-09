@@ -465,6 +465,9 @@ select, .form-control, .custom-select {
   .kc-event-management .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
     padding-top: 2rem; }
 
+.kc-event-management .kc-validate-credential-modal .kc-modal .kc-modal__container .kc-modal__main {
+  min-width: auto; }
+
 .kc-event-management section.kc-event-management__event-detail .kc-event-management__input-image {
   background-color: #FCFCFC;
   border: 1px solid #D9D9D9;
@@ -555,6 +558,8 @@ select, .form-control, .custom-select {
 */
 .kc-event-representative .kc-modal .kc-modal__container {
   min-width: 500px; }
+  .kc-event-representative .kc-modal .kc-modal__container .kc-modal__content .kc-dropdown button.kc-dropdown-button, .kc-event-representative .kc-modal .kc-modal__container .kc-modal__content .kc-dropdown ul.kc-dropdown__items {
+    border-radius: 6px; }
   .kc-event-representative .kc-modal .kc-modal__container .kc-modal__content .kc-dropdown ul.kc-dropdown__items li.kc-dropdown__item span {
     display: -webkit-box;
     line-clamp: 1;
