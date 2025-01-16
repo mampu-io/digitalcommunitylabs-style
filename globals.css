@@ -2017,6 +2017,20 @@ select, .form-control, .custom-select {
     .kc-withdrawal-recipient-list .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-table table tbody tr td:last-child {
       padding-right: 24px; }
 
+.kc-third-party-usage-list .content-body, .kc-reward-program .content-body {
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0; }
+  .kc-third-party-usage-list .content-body .container-fluid, .kc-reward-program .content-body .container-fluid {
+    display: flex; }
+    .kc-third-party-usage-list .content-body .container-fluid main, .kc-reward-program .content-body .container-fluid main {
+      background-color: #FFFFFF;
+      border-radius: 2px;
+      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+      min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px) - 70px - 20px);
+      padding: 20px 30px; }
+
 .kc-dashboard h2 {
   color: #434343; }
 
@@ -2157,20 +2171,6 @@ select, .form-control, .custom-select {
 .kc-change-password .kc-form-wrapper .kc-inputfield__subtitle span.kc-overline {
   font-size: 11px;
   letter-spacing: 0.75px; }
-
-.kc-third-party-usage-list .content-body {
-  background-color: transparent;
-  border-radius: 0;
-  box-shadow: none;
-  padding: 0; }
-  .kc-third-party-usage-list .content-body .container-fluid {
-    display: flex; }
-    .kc-third-party-usage-list .content-body .container-fluid main {
-      background-color: #FFFFFF;
-      border-radius: 2px;
-      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
-      min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px) - 70px - 20px);
-      padding: 20px 30px; }
 
 /**
   Styling for AddOnboardingButton atom component.
