@@ -56,6 +56,63 @@
         min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px) - 70px - 20px - 60px);
         padding: 20px 35px;
         width: 100%;
+
+        button.kc-submit-event-btn, button.kc-cancel-event-btn {
+          background-color: #FFFFFF;
+        }
+
+        button.kc-submit-event-btn {
+          color: $primary7;
+          border: 1px solid $primary7;
+
+          &:hover {
+            color: $primary6;
+            border: 1px solid $primary6;
+          }
+
+          &:active {
+            color: $primary8;
+            border: 1px solid $primary8;
+          }
+        }
+
+        button.kc-cancel-event-btn {
+          color: $functionalError500;
+          border: 1px solid $functionalError500;
+
+          &:hover {
+            color: $functionalError400;
+            border: 1px solid $functionalError400;
+          }
+
+          &:active {
+            color: $functionalError600;
+            border: 1px solid $functionalError600;
+          }
+        }
+
+        .kc-table table thead tr th, .kc-table table tbody tr td {
+          .kc-button-more-option {
+            background-color: transparent;
+            border: none;
+            height: 24px;
+            width: 24px;
+          }
+        }
+    
+        .kc-more-option {
+          position: relative;
+    
+          .kc-more-option-menu {
+            flex-direction: column;
+            position: fixed;
+            width: max-content;
+    
+            .kc-more-option-menu__item {
+              width: 100%;
+            }
+          }
+        }
       }
     }
   }
@@ -105,6 +162,17 @@
 
     .kc-modal__content {
       padding-top: 2rem;
+
+      .kc-dropdown ul.kc-dropdown__items {
+        li.kc-dropdown__item span {
+          display: -webkit-box;
+          line-clamp: 1;
+          overflow: hidden;
+          white-space: break-spaces;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;  
+        }
+      }
     }
   }
 
@@ -149,46 +217,11 @@
   }
 
   section.kc-event-management__event-configuration {
-    .kc-modal .kc-modal__container {
-      .kc-modal__content {
-        .kc-dropdown ul.kc-dropdown__items {
-          li.kc-dropdown__item span {
-            display: -webkit-box;
-            line-clamp: 1;
-            overflow: hidden;
-            white-space: break-spaces;
-            -webkit-line-clamp: 1;
-            -webkit-box-orient: vertical;  
-          }
-        }
-      }
-    }
-
     .kc-table table thead tr th, .kc-table table tbody tr td {
       padding: 12px 8px;
 
       &:nth-child(1) {
         padding-left: 24px;
-      }
-
-      .kc-button-more-option {
-        background-color: transparent;
-        border: none;
-        height: 24px;
-        width: 24px;
-      }
-    }
-
-    .kc-more-option {
-      position: relative;
-
-      .kc-more-option-menu {
-        position: fixed;
-        width: max-content;
-
-        .kc-more-option-menu__item {
-          width: 100%;
-        }
       }
     }
   }
