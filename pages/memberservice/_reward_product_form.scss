@@ -1,0 +1,47 @@
+/**
+  Styling for reward product form page [MEMBERSERVICE]
+*/
+
+.kc-reward-product-form {
+  .kc-form-group {
+    max-width: 500px;
+
+    .kc-form-group__identity {
+      width: 100%;
+
+      .kc-form-group__label {
+        margin-bottom: 8px;
+
+        label {
+          font-size: 15px;
+          font-weight: 500;
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .kc-inputfield .kc-inputfield__box, .kc-dropdown button.kc-dropdown-button,
+    .kc-dropdown ul.kc-dropdown__items {
+      border-radius: 6px;
+    }
+
+    .kc-inputfield.kc-inputfield--medium .kc-inputfield__box {
+      height: 40px;
+    }
+
+    label.kc-toggle-switch {
+      flex-shrink: 0;
+      margin-bottom: 0;
+    }
+  }
+    
+  section.kc-reward-product-form__detail {
+    .kc-reward-product-form__image {
+      border-radius: 6px;
+      height: 120px;
+      object-fit: cover;
+      object-position: center;
+      width: 160px;
+    }
+  }
+}

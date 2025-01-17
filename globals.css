@@ -508,25 +508,6 @@ select, .form-control, .custom-select {
 .kc-event-management .kc-validate-credential-modal .kc-modal .kc-modal__container .kc-modal__main {
   min-width: auto; }
 
-.kc-event-management section.kc-event-management__event-detail .kc-event-management__input-image {
-  background-color: #FCFCFC;
-  border: 1px solid #D9D9D9;
-  border-radius: 6px;
-  max-width: 500px;
-  padding: 8px 12px; }
-  .kc-event-management section.kc-event-management__event-detail .kc-event-management__input-image i {
-    color: #595959;
-    font-size: 24px; }
-  .kc-event-management section.kc-event-management__event-detail .kc-event-management__input-image label {
-    color: #595959;
-    cursor: pointer;
-    font-size: 12px;
-    font-weight: 400;
-    margin-bottom: 0;
-    width: 100%; }
-    .kc-event-management section.kc-event-management__event-detail .kc-event-management__input-image label input[type="file"] {
-      display: none; }
-
 .kc-event-management section.kc-event-management__event-detail .kc-event-management__image {
   border-radius: 6px;
   height: 120px;
@@ -1394,6 +1375,35 @@ select, .form-control, .custom-select {
 .kc-request-update-data-detail main.kc-memberservice-detail .kc-section .kc-section-header .kc-record-item .kc-record-item--rows-value .kc-record-item--value span {
   color: #8C8C8C;
   font-weight: 400; }
+
+/**
+  Styling for reward product form page [MEMBERSERVICE]
+*/
+.kc-reward-product-form .kc-form-group {
+  max-width: 500px; }
+  .kc-reward-product-form .kc-form-group .kc-form-group__identity {
+    width: 100%; }
+    .kc-reward-product-form .kc-form-group .kc-form-group__identity .kc-form-group__label {
+      margin-bottom: 8px; }
+      .kc-reward-product-form .kc-form-group .kc-form-group__identity .kc-form-group__label label {
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 0; }
+  .kc-reward-product-form .kc-form-group .kc-inputfield .kc-inputfield__box, .kc-reward-product-form .kc-form-group .kc-dropdown button.kc-dropdown-button,
+  .kc-reward-product-form .kc-form-group .kc-dropdown ul.kc-dropdown__items {
+    border-radius: 6px; }
+  .kc-reward-product-form .kc-form-group .kc-inputfield.kc-inputfield--medium .kc-inputfield__box {
+    height: 40px; }
+  .kc-reward-product-form .kc-form-group label.kc-toggle-switch {
+    flex-shrink: 0;
+    margin-bottom: 0; }
+
+.kc-reward-product-form section.kc-reward-product-form__detail .kc-reward-product-form__image {
+  border-radius: 6px;
+  height: 120px;
+  object-fit: cover;
+  object-position: center;
+  width: 160px; }
 
 .kc-whitelist .kc-modal .kc-modal__header .kc-modal__title span.kc-headline5 {
   font-size: 22px; }
