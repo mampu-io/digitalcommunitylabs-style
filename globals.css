@@ -456,19 +456,21 @@ select, .form-control, .custom-select {
         .kc-event-management.kc-event-management--detail .content-body .container-fluid main button.kc-cancel-event-btn:active {
           color: #DB3848;
           border: 1px solid #DB3848; }
-      .kc-event-management.kc-event-management--detail .content-body .container-fluid main .kc-table table thead tr th .kc-button-more-option, .kc-event-management.kc-event-management--detail .content-body .container-fluid main .kc-table table tbody tr td .kc-button-more-option {
-        background-color: transparent;
-        border: none;
-        height: 24px;
-        width: 24px; }
-      .kc-event-management.kc-event-management--detail .content-body .container-fluid main .kc-more-option {
-        position: relative; }
-        .kc-event-management.kc-event-management--detail .content-body .container-fluid main .kc-more-option .kc-more-option-menu {
-          flex-direction: column;
-          position: fixed;
-          width: max-content; }
-          .kc-event-management.kc-event-management--detail .content-body .container-fluid main .kc-more-option .kc-more-option-menu .kc-more-option-menu__item {
-            width: 100%; }
+
+.kc-event-management .kc-table table thead tr th .kc-button-more-option, .kc-event-management .kc-table table tbody tr td .kc-button-more-option {
+  background-color: transparent;
+  border: none;
+  height: 24px;
+  width: 24px; }
+
+.kc-event-management .kc-more-option {
+  position: relative; }
+  .kc-event-management .kc-more-option .kc-more-option-menu {
+    flex-direction: column;
+    position: fixed;
+    width: max-content; }
+    .kc-event-management .kc-more-option .kc-more-option-menu .kc-more-option-menu__item {
+      width: 100%; }
 
 .kc-event-management .kc-form-group {
   max-width: 500px; }

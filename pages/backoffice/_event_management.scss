@@ -90,29 +90,29 @@
             border: 1px solid $functionalError600;
           }
         }
+      }
+    }
+  }
 
-        .kc-table table thead tr th, .kc-table table tbody tr td {
-          .kc-button-more-option {
-            background-color: transparent;
-            border: none;
-            height: 24px;
-            width: 24px;
-          }
-        }
-    
-        .kc-more-option {
-          position: relative;
-    
-          .kc-more-option-menu {
-            flex-direction: column;
-            position: fixed;
-            width: max-content;
-    
-            .kc-more-option-menu__item {
-              width: 100%;
-            }
-          }
-        }
+  .kc-table table thead tr th, .kc-table table tbody tr td {
+    .kc-button-more-option {
+      background-color: transparent;
+      border: none;
+      height: 24px;
+      width: 24px;
+    }
+  }
+
+  .kc-more-option {
+    position: relative;
+
+    .kc-more-option-menu {
+      flex-direction: column;
+      position: fixed;
+      width: max-content;
+
+      .kc-more-option-menu__item {
+        width: 100%;
       }
     }
   }
