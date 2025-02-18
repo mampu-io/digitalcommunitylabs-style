@@ -143,7 +143,7 @@ select, .form-control, .custom-select {
 .text-danger {
   color: #FF4D4F !important; }
 
-.row .col-xxl-6 {
+.row .col-xxl-6, .row .col-xxl-12 {
   position: relative;
   width: 100%;
   padding-left: 7.5px;
@@ -1391,6 +1391,8 @@ select, .form-control, .custom-select {
         font-size: 15px;
         font-weight: 500;
         margin-bottom: 0; }
+    .kc-reward-product-form .kc-form-group .kc-form-group__identity span.kc-form-group__note {
+      line-height: 15px; }
   .kc-reward-product-form .kc-form-group .kc-inputfield .kc-inputfield__box, .kc-reward-product-form .kc-form-group .kc-dropdown button.kc-dropdown-button,
   .kc-reward-product-form .kc-form-group .kc-dropdown ul.kc-dropdown__items {
     border-radius: 6px; }
@@ -1406,6 +1408,38 @@ select, .form-control, .custom-select {
   object-fit: cover;
   object-position: center;
   width: 160px; }
+
+.kc-reward-product-form section.kc-reward-product-form__condition button.kc-button {
+  background-color: transparent;
+  border: none; }
+  .kc-reward-product-form section.kc-reward-product-form__condition button.kc-button .kc-button__icon i, .kc-reward-product-form section.kc-reward-product-form__condition button.kc-button .kc-button-label {
+    font-size: 13px;
+    font-weight: 700; }
+  .kc-reward-product-form section.kc-reward-product-form__condition button.kc-button.kc-condition__delete-btn {
+    font-size: 20px;
+    width: fit-content; }
+    .kc-reward-product-form section.kc-reward-product-form__condition button.kc-button.kc-condition__delete-btn .kc-button__icon {
+      margin-right: 0; }
+    .kc-reward-product-form section.kc-reward-product-form__condition button.kc-button.kc-condition__delete-btn:hover {
+      color: #FF8379; }
+    .kc-reward-product-form section.kc-reward-product-form__condition button.kc-button.kc-condition__delete-btn:active {
+      color: #DB3848; }
+
+.kc-reward-product-form section.kc-reward-product-form__condition .kc-condition-list {
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  max-width: 1100px;
+  padding: 10px; }
+  .kc-reward-product-form section.kc-reward-product-form__condition .kc-condition-list .kc-condition {
+    margin-bottom: 10px; }
+    .kc-reward-product-form section.kc-reward-product-form__condition .kc-condition-list .kc-condition:last-child {
+      margin-bottom: 0; }
+    .kc-reward-product-form section.kc-reward-product-form__condition .kc-condition-list .kc-condition .kc-form-group .kc-form-group__identity .kc-form-group__label label {
+      font-size: 13px; }
+    .kc-reward-product-form section.kc-reward-product-form__condition .kc-condition-list .kc-condition .kc-form-group .kc-form-group__identity .kc-form-group__label span.kc-form-group__is-required {
+      font-size: 17px; }
+    .kc-reward-product-form section.kc-reward-product-form__condition .kc-condition-list .kc-condition .kc-dropdown > button .kc-dropdown-button__content span.kc-button-label {
+      font-size: 13px; }
 
 .kc-whitelist .kc-modal .kc-modal__header .kc-modal__title span.kc-headline5 {
   font-size: 22px; }

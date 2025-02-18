@@ -18,6 +18,10 @@
           margin-bottom: 0;
         }
       }
+
+      span.kc-form-group__note {
+        line-height: 15px;
+      }
     }
 
     .kc-inputfield .kc-inputfield__box, .kc-dropdown button.kc-dropdown-button,
@@ -42,6 +46,64 @@
       object-fit: cover;
       object-position: center;
       width: 160px;
+    }
+  }
+
+  section.kc-reward-product-form__condition {
+    button.kc-button {
+      background-color: transparent;
+      border: none;
+
+      .kc-button__icon i, .kc-button-label {
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      &.kc-condition__delete-btn {
+        font-size: 20px;
+        width: fit-content;
+
+        .kc-button__icon {
+          margin-right: 0;
+        }
+
+        &:hover {
+          color: #FF8379;
+        }
+    
+        &:active {
+          color: #DB3848;
+        }
+      }
+    }
+
+    .kc-condition-list {
+      border: 1px solid #eaeaea;
+      border-radius: 6px;
+      max-width: 1100px;
+      padding: 10px;
+
+      .kc-condition {
+        margin-bottom: 10px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .kc-form-group .kc-form-group__identity .kc-form-group__label {
+          label {
+            font-size: 13px;
+          }
+
+          span.kc-form-group__is-required {
+            font-size: 17px;
+          }
+        }
+
+        .kc-dropdown > button .kc-dropdown-button__content span.kc-button-label {
+          font-size: 13px;
+        }
+      }
     }
   }
 }
