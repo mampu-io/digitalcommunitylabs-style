@@ -1701,7 +1701,8 @@ select, .form-control, .custom-select {
         margin-top: 4px; }
       .kc-setting-deposit .kc-setting-deposit-form .kc-radio-button .kc-radio-button__label, .kc-setting-deposit .kc-setting-withdraw-form .kc-radio-button .kc-radio-button__label, .kc-setting-withdraw .kc-setting-deposit-form .kc-radio-button .kc-radio-button__label, .kc-setting-withdraw .kc-setting-withdraw-form .kc-radio-button .kc-radio-button__label {
         font-size: 16px;
-        font-weight: 400; }
+        font-weight: 400;
+        margin-bottom: 0; }
       .kc-setting-deposit .kc-setting-deposit-form .kc-radio-button:last-child, .kc-setting-deposit .kc-setting-withdraw-form .kc-radio-button:last-child, .kc-setting-withdraw .kc-setting-deposit-form .kc-radio-button:last-child, .kc-setting-withdraw .kc-setting-withdraw-form .kc-radio-button:last-child {
         margin-bottom: 0; }
   .kc-setting-deposit .kc-setting-withdraw-form .kc-form-group .kc-form-group__label, .kc-setting-withdraw .kc-setting-withdraw-form .kc-form-group .kc-form-group__label {
