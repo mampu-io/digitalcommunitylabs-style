@@ -1,8 +1,8 @@
 /**
-  Styling for general configuration page [BACKOFFICE]
+  Styling for feature management page [BACKOFFICE]
 */
 
-.kc-general-configuration {
+.kc-feature-management {
   .content-body {
     background-color: transparent;
     border-radius: 0;
@@ -19,9 +19,21 @@
         justify-content: space-between;
         margin-bottom: 10px;
 
+        div.d-flex.align-items-end {
+          width: calc(100% - 200px);
+
+          .kc-dropdown {
+            flex-shrink: 0;
+          }
+        }
+
+        > button.kc-button {
+          flex-grow: 1;
+        }
+
         .kc-navigation {
           display: flex;
-          margin-right: 60px;
+          margin-right: 20px;
           overflow: auto;
 
           &::-webkit-scrollbar,
