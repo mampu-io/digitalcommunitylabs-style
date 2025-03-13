@@ -4225,7 +4225,7 @@ main.kc-memberservice-detail {
     margin-bottom: 0; }
 
 .alert-before-publish {
-  margin: 15px 0;
+  margin-bottom: 10px;
   background: #f8cecf;
   border: 1px solid #db1f25;
   padding: 15px;
