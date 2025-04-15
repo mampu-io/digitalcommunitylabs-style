@@ -11,6 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "local-web-server": "^5.2.0",
-    "node-sass": "^7.0.1"
+    "node-sass": "^9.0.0"
   }
 }

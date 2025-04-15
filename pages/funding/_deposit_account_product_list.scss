@@ -1,0 +1,19 @@
+/**
+  Styling for account search page [FUNDING]
+*/
+
+.kc-deposit-account-product-list {
+  .kc-modal {
+    .kc-modal__container {
+      width: 500px;
+
+      .kc-modal__title span {
+        font-size: 22px;
+      }
+
+      .kc-form-group .kc-form-group__label label {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

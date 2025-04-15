@@ -1529,6 +1529,16 @@ select, .form-control, .custom-select {
     color: #FAAD14; }
 
 /**
+  Styling for account search page [FUNDING]
+*/
+.kc-deposit-account-product-list .kc-modal .kc-modal__container {
+  width: 500px; }
+  .kc-deposit-account-product-list .kc-modal .kc-modal__container .kc-modal__title span {
+    font-size: 22px; }
+  .kc-deposit-account-product-list .kc-modal .kc-modal__container .kc-form-group .kc-form-group__label label {
+    margin-bottom: 0; }
+
+/**
   Styling for active member detail page [FUNDING]
 */
 .kc-funding-detail-member .content-body {
@@ -1661,6 +1671,21 @@ select, .form-control, .custom-select {
       width: 30%; }
       .kc-funding-detail-member .content-body .container-fluid aside h2 {
         margin-bottom: 40px; }
+
+/**
+  General styling for all pages on FUNDING
+*/
+.kc-deposit-account-request-list .kc-datatable tbody tr td > .kc-button-more-option {
+  background-color: transparent;
+  border: none;
+  height: 40px;
+  width: 40px; }
+
+.kc-deposit-account-request-list .kc-more-option {
+  position: relative; }
+  .kc-deposit-account-request-list .kc-more-option .kc-more-option-menu {
+    position: fixed;
+    width: max-content; }
 
 .kc-qris-transaction-list .kc-datatable .kc-table thead tr th:first-child {
   width: 5% !important; }
