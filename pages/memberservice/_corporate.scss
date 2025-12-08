@@ -1,0 +1,106 @@
+/**
+  Styling for register and corporate detail page [MEMBERSERVICE]
+*/
+
+.kc-register-corporate, .kc-corporate-detail {
+  .kc-form-group {
+    max-width: 500px;
+
+    .kc-form-group__identity {
+      width: 100%;
+
+      .kc-form-group__label {
+        margin-bottom: 8px;
+
+        label {
+          font-size: 15px;
+          font-weight: 500;
+          margin-bottom: 0;
+        }
+      }
+
+      span.kc-form-group__note {
+        line-height: 15px;
+      }
+    }
+
+    .kc-inputfield .kc-inputfield__box, .kc-dropdown button.kc-dropdown-button,
+    .kc-dropdown ul.kc-dropdown__items {
+      border-radius: 6px;
+    }
+
+    .kc-inputfield.kc-inputfield--medium .kc-inputfield__box {
+      height: 40px;
+    }
+  }
+}
+
+.kc-corporate-detail .content-body {
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+
+  .container-fluid {
+    display: flex;
+    flex-direction: column;
+
+    .kc-navigation {
+      display: flex;
+      margin-right: 60px;
+      overflow: auto;
+
+      &::-webkit-scrollbar,
+      &::-webkit-scrollbar-thumb,
+      &::-webkit-scrollbar-corner {
+        border-right-style: inset;
+        border-color: inherit;
+        border-right-width: calc(100vw + 100vh);
+      }
+      
+      &::-webkit-scrollbar {
+        width: 1px;
+        height: 1px;
+      }
+
+      button.kc-navigation-item {
+        letter-spacing: 1px;
+        text-transform: none;
+        white-space: nowrap;
+
+        &.kc-navigation-item--active {
+          font-weight: 700;
+        }
+      }
+    }
+
+    main {
+      background-color: $neutral1;
+      border-radius: 2px;
+      box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
+      min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px) - 70px - 20px - 60px);
+      padding: 20px 35px;
+      width: 100%;
+
+      .kc-modal .kc-modal__container {
+        width: 500px;
+
+        .kc-modal__main .kc-modal__header .kc-modal__title span {
+          font-size: 22px;
+          font-weight: 700;
+        }
+
+        .kc-checkbox label {
+          max-width: none;
+        }
+      }
+    }
+
+    .spinner-border {
+      border: 0.2em solid $functionalLink500;
+      border-right-color: transparent;
+      height: 1.25rem;
+      width: 1.25rem;
+    }
+  }
+}

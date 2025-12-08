@@ -134,8 +134,14 @@
 
   .kc-modal {
     .kc-modal__container {
-      width: 600px;
+      width: 500px;
 
+      .kc-modal__title {
+        span.kc-headline5 {
+          font-size: 21px;
+        }
+      }
+      
       .kc-form-group {
         .kc-textarea {
           .kc-textarea__subtitle {

@@ -86,3 +86,19 @@
     }
   }
 }
+
+.kc-corporate-list, .kc-corporate-detail {
+  .kc-more-option {
+    position: relative;
+  
+    .kc-more-option-menu {
+      position: fixed;
+      width: max-content;
+      z-index: 1039;
+
+      .kc-more-option-menu__item {
+        width: 100%;
+      }
+    }
+  }
+}

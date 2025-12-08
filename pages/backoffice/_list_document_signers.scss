@@ -1,0 +1,33 @@
+/**
+  Styling for backoffice document signer list page [BACKOFFICE]
+*/
+
+.kc-list-document-signers {
+  .kc-document-signer-form-modal {
+    .kc-modal {
+      .kc-modal__container {
+        width: 600px;
+
+        .kc-inputfield .kc-inputfield__box {
+          border-radius: 6px;
+        }
+
+        .kc-inputfield.kc-inputfield--medium .kc-inputfield__box {
+          height: 40px;
+        }
+
+        .kc-form-group {
+          .kc-inputfield .kc-inputfield__subtitle {
+            margin-top: 0;
+
+            span.kc-overline {
+              color: #FF4D4F;
+              font-size: 12px;
+              letter-spacing: 0.75px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -4,12 +4,14 @@
 @import 'backoffice/feature_management';
 @import 'backoffice/general';
 @import 'backoffice/list_users';
+@import 'backoffice/list_document_signers';
 @import 'backoffice/media_management';
 @import 'backoffice/notification_setting';
 @import 'backoffice/notification_template_detail';
 @import 'backoffice/product_biller_category_detail';
 
 // Styling pages for memberservice
+@import 'memberservice/corporate';
 @import 'memberservice/dao_membership_detail';
 @import 'memberservice/general';
 @import 'memberservice/member_detail';

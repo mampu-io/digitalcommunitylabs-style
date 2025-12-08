@@ -155,17 +155,6 @@ select, .form-control, .custom-select {
     flex: 0 0 50%;
     max-width: 50%; } }
 
-.kc-inputfield .kc-inputfield__box button.kc-inputfield__icon-button {
-  color: #434343;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  padding: 0;
-  margin-left: 8px; }
-  .kc-inputfield .kc-inputfield__box button.kc-inputfield__icon-button:disabled {
-    color: #BFBFBF;
-    cursor: default; }
-
 .kc-headline1 {
   font-weight: 300;
   font-size: 100px;
@@ -755,6 +744,22 @@ select, .form-control, .custom-select {
       margin-bottom: 5px; }
 
 /**
+  Styling for backoffice document signer list page [BACKOFFICE]
+*/
+.kc-list-document-signers .kc-document-signer-form-modal .kc-modal .kc-modal__container {
+  width: 600px; }
+  .kc-list-document-signers .kc-document-signer-form-modal .kc-modal .kc-modal__container .kc-inputfield .kc-inputfield__box {
+    border-radius: 6px; }
+  .kc-list-document-signers .kc-document-signer-form-modal .kc-modal .kc-modal__container .kc-inputfield.kc-inputfield--medium .kc-inputfield__box {
+    height: 40px; }
+  .kc-list-document-signers .kc-document-signer-form-modal .kc-modal .kc-modal__container .kc-form-group .kc-inputfield .kc-inputfield__subtitle {
+    margin-top: 0; }
+    .kc-list-document-signers .kc-document-signer-form-modal .kc-modal .kc-modal__container .kc-form-group .kc-inputfield .kc-inputfield__subtitle span.kc-overline {
+      color: #FF4D4F;
+      font-size: 12px;
+      letter-spacing: 0.75px; }
+
+/**
   Styling for media management page [BACKOFFICE]
 */
 .kc-media-management .content-body {
@@ -1060,6 +1065,73 @@ select, .form-control, .custom-select {
     width: 100px; }
 
 /**
+  Styling for register and corporate detail page [MEMBERSERVICE]
+*/
+.kc-register-corporate .kc-form-group, .kc-corporate-detail .kc-form-group {
+  max-width: 500px; }
+  .kc-register-corporate .kc-form-group .kc-form-group__identity, .kc-corporate-detail .kc-form-group .kc-form-group__identity {
+    width: 100%; }
+    .kc-register-corporate .kc-form-group .kc-form-group__identity .kc-form-group__label, .kc-corporate-detail .kc-form-group .kc-form-group__identity .kc-form-group__label {
+      margin-bottom: 8px; }
+      .kc-register-corporate .kc-form-group .kc-form-group__identity .kc-form-group__label label, .kc-corporate-detail .kc-form-group .kc-form-group__identity .kc-form-group__label label {
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 0; }
+    .kc-register-corporate .kc-form-group .kc-form-group__identity span.kc-form-group__note, .kc-corporate-detail .kc-form-group .kc-form-group__identity span.kc-form-group__note {
+      line-height: 15px; }
+  .kc-register-corporate .kc-form-group .kc-inputfield .kc-inputfield__box, .kc-register-corporate .kc-form-group .kc-dropdown button.kc-dropdown-button,
+  .kc-register-corporate .kc-form-group .kc-dropdown ul.kc-dropdown__items, .kc-corporate-detail .kc-form-group .kc-inputfield .kc-inputfield__box, .kc-corporate-detail .kc-form-group .kc-dropdown button.kc-dropdown-button,
+  .kc-corporate-detail .kc-form-group .kc-dropdown ul.kc-dropdown__items {
+    border-radius: 6px; }
+  .kc-register-corporate .kc-form-group .kc-inputfield.kc-inputfield--medium .kc-inputfield__box, .kc-corporate-detail .kc-form-group .kc-inputfield.kc-inputfield--medium .kc-inputfield__box {
+    height: 40px; }
+
+.kc-corporate-detail .content-body {
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0; }
+  .kc-corporate-detail .content-body .container-fluid {
+    display: flex;
+    flex-direction: column; }
+    .kc-corporate-detail .content-body .container-fluid .kc-navigation {
+      display: flex;
+      margin-right: 60px;
+      overflow: auto; }
+      .kc-corporate-detail .content-body .container-fluid .kc-navigation::-webkit-scrollbar, .kc-corporate-detail .content-body .container-fluid .kc-navigation::-webkit-scrollbar-thumb, .kc-corporate-detail .content-body .container-fluid .kc-navigation::-webkit-scrollbar-corner {
+        border-right-style: inset;
+        border-color: inherit;
+        border-right-width: calc(100vw + 100vh); }
+      .kc-corporate-detail .content-body .container-fluid .kc-navigation::-webkit-scrollbar {
+        width: 1px;
+        height: 1px; }
+      .kc-corporate-detail .content-body .container-fluid .kc-navigation button.kc-navigation-item {
+        letter-spacing: 1px;
+        text-transform: none;
+        white-space: nowrap; }
+        .kc-corporate-detail .content-body .container-fluid .kc-navigation button.kc-navigation-item.kc-navigation-item--active {
+          font-weight: 700; }
+    .kc-corporate-detail .content-body .container-fluid main {
+      background-color: #FFFFFF;
+      border-radius: 2px;
+      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+      min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px) - 70px - 20px - 60px);
+      padding: 20px 35px;
+      width: 100%; }
+      .kc-corporate-detail .content-body .container-fluid main .kc-modal .kc-modal__container {
+        width: 500px; }
+        .kc-corporate-detail .content-body .container-fluid main .kc-modal .kc-modal__container .kc-modal__main .kc-modal__header .kc-modal__title span {
+          font-size: 22px;
+          font-weight: 700; }
+        .kc-corporate-detail .content-body .container-fluid main .kc-modal .kc-modal__container .kc-checkbox label {
+          max-width: none; }
+    .kc-corporate-detail .content-body .container-fluid .spinner-border {
+      border: 0.2em solid #1890FF;
+      border-right-color: transparent;
+      height: 1.25rem;
+      width: 1.25rem; }
+
+/**
   Styling for invoice detail page and
   invoice suspended detail page [MEMBERSERVICE]
 */
@@ -1188,6 +1260,15 @@ select, .form-control, .custom-select {
 .kc-active-member-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__header .kc-modal__title span.kc-headline5,
 .kc-request-update-data-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__header .kc-modal__title span.kc-headline5 {
   font-size: 22px; }
+
+.kc-corporate-list .kc-more-option, .kc-corporate-detail .kc-more-option {
+  position: relative; }
+  .kc-corporate-list .kc-more-option .kc-more-option-menu, .kc-corporate-detail .kc-more-option .kc-more-option-menu {
+    position: fixed;
+    width: max-content;
+    z-index: 1039; }
+    .kc-corporate-list .kc-more-option .kc-more-option-menu .kc-more-option-menu__item, .kc-corporate-detail .kc-more-option .kc-more-option-menu .kc-more-option-menu__item {
+      width: 100%; }
 
 /**
   Styling for member detail page [MEMBERSERVICE]
@@ -1919,7 +2000,9 @@ select, .form-control, .custom-select {
   margin-right: 50px; }
 
 .kc-term-deposit-application-detail .kc-modal .kc-modal__container {
-  width: 600px; }
+  width: 500px; }
+  .kc-term-deposit-application-detail .kc-modal .kc-modal__container .kc-modal__title span.kc-headline5 {
+    font-size: 21px; }
   .kc-term-deposit-application-detail .kc-modal .kc-modal__container .kc-form-group .kc-textarea .kc-textarea__subtitle {
     margin-top: 0; }
     .kc-term-deposit-application-detail .kc-modal .kc-modal__container .kc-form-group .kc-textarea .kc-textarea__subtitle span.kc-overline {
