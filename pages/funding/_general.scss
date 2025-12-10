@@ -2,7 +2,7 @@
   General styling for all pages on FUNDING
 */
 
-.kc-deposit-account-request-list {
+.kc-deposit-account-request-list, .kc-qris-transaction-list {
   .kc-datatable tbody tr td > .kc-button-more-option {
     background-color: transparent;
     border: none;
@@ -12,7 +12,7 @@
 
   .kc-more-option {
     position: relative;
-  
+
     .kc-more-option-menu {
       position: fixed;
       width: max-content;

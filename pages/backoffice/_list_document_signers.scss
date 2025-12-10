@@ -8,6 +8,12 @@
       .kc-modal__container {
         width: 600px;
 
+        .kc-modal__title {
+          span.kc-headline5 {
+            font-size: 21px;
+          }
+        }
+
         .kc-inputfield .kc-inputfield__box {
           border-radius: 6px;
         }

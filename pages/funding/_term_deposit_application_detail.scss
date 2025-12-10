@@ -157,6 +157,14 @@
         .kc-inputfield {
           max-width: none;
         }
+
+        .kc-radio-button {
+          align-items: baseline;
+
+          label {
+            margin-bottom: 0;
+          }
+        }
       }
     }
   }

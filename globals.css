@@ -748,6 +748,8 @@ select, .form-control, .custom-select {
 */
 .kc-list-document-signers .kc-document-signer-form-modal .kc-modal .kc-modal__container {
   width: 600px; }
+  .kc-list-document-signers .kc-document-signer-form-modal .kc-modal .kc-modal__container .kc-modal__title span.kc-headline5 {
+    font-size: 21px; }
   .kc-list-document-signers .kc-document-signer-form-modal .kc-modal .kc-modal__container .kc-inputfield .kc-inputfield__box {
     border-radius: 6px; }
   .kc-list-document-signers .kc-document-signer-form-modal .kc-modal .kc-modal__container .kc-inputfield.kc-inputfield--medium .kc-inputfield__box {
@@ -1790,23 +1792,17 @@ select, .form-control, .custom-select {
 /**
   General styling for all pages on FUNDING
 */
-.kc-deposit-account-request-list .kc-datatable tbody tr td > .kc-button-more-option {
+.kc-deposit-account-request-list .kc-datatable tbody tr td > .kc-button-more-option, .kc-qris-transaction-list .kc-datatable tbody tr td > .kc-button-more-option {
   background-color: transparent;
   border: none;
   height: 40px;
   width: 40px; }
 
-.kc-deposit-account-request-list .kc-more-option {
+.kc-deposit-account-request-list .kc-more-option, .kc-qris-transaction-list .kc-more-option {
   position: relative; }
-  .kc-deposit-account-request-list .kc-more-option .kc-more-option-menu {
+  .kc-deposit-account-request-list .kc-more-option .kc-more-option-menu, .kc-qris-transaction-list .kc-more-option .kc-more-option-menu {
     position: fixed;
     width: max-content; }
-
-.kc-qris-transaction-list .kc-datatable .kc-table thead tr th:first-child {
-  width: 5% !important; }
-
-.kc-qris-transaction-list .kc-datatable .kc-table tbody tr td:last-child {
-  width: 5% !important; }
 
 .kc-qris-transaction-list .kc-datatable .kc-rounded-button .kc-rounded-button__tooltip {
   left: 36px;
@@ -2010,6 +2006,10 @@ select, .form-control, .custom-select {
       letter-spacing: 1px; }
   .kc-term-deposit-application-detail .kc-modal .kc-modal__container .kc-form-group .kc-inputfield {
     max-width: none; }
+  .kc-term-deposit-application-detail .kc-modal .kc-modal__container .kc-form-group .kc-radio-button {
+    align-items: baseline; }
+    .kc-term-deposit-application-detail .kc-modal .kc-modal__container .kc-form-group .kc-radio-button label {
+      margin-bottom: 0; }
 
 /**
   Styling for term deposit product list page [FUNDING]
