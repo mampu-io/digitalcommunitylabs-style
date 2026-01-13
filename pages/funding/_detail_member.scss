@@ -3,283 +3,260 @@
 */
 
 .kc-funding-detail-member {
-  .content-body {
-    background-color: transparent;
-    border-radius: 0;
-    box-shadow: none;
-    padding: 0;
+  .kc-record-item-new > label {
+    font-weight: 400;
+  }
 
-    .container-fluid {
-      display: flex;
+  main {
+    .spinner-border {
+      width: 1.25rem;
+      height: 1.25rem;
+      border: 0.25em solid $functionalLink500;
+      border-right-color: transparent;
+      margin-left: 5px;
+    }
+
+    .kc-datatable tbody tr td > .kc-button-more-option {
+      background-color: transparent;
+      border: none;
+      width: 24px;
+    }
+
+    .kc-more-option {
+      position: relative;
+
+      > button {
+        background-color: transparent;
+        border: none;
+        width: 24px;
+      }
+
+      .kc-more-option-menu {
+        position: fixed;
+        width: max-content;
+      }
+    }
+
+    section.kc-deposit-account-detail {
+      width: 100%;
 
       .kc-record-item-new {
-        > label {
-          font-weight: 400;
+        padding-left: 10px;
+      }
+
+      .kc-record-table {
+        margin-left: 10px;
+
+        td.kc-record-table__label, td.kc-record-table__value {
+          padding-bottom: 5px;
+          padding-top: 5px;
+        }
+
+        td.kc-record-table__value .kc-status-card {
+          width: fit-content;
         }
       }
 
-      main {
-        background-color: $neutral1;
-        border-radius: 2px;
-        box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
-        max-width: 1080px;
-        min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px) - 70px - 20px);
-        padding: 40px 30px;
-        width: 70%;
+      p.kc-body2 {
+        color: $functionalError500;
+        padding-left: 10px;
+      }
 
-        .spinner-border {
-          width: 1.25rem;
-          height: 1.25rem;
-          border: 0.25em solid $functionalLink500;
-          border-right-color: transparent;
-          margin-left: 5px;
-        }
-
-        .kc-datatable tbody tr td > .kc-button-more-option {
-          background-color: transparent;
-          border: none;
-          width: 24px;
-        }
-
-        .kc-more-option {
-          position: relative;
-
-          > button {
-            background-color: transparent;
-            border: none;
-            width: 24px;
-          }
+      .kc-add-deposit-account-transaction-modal {
+        .kc-modal .kc-modal__container {
+          width: 500px;
     
-          .kc-more-option-menu {
-            position: fixed;
-            width: max-content;
-          }
-        }
-
-        section.kc-deposit-account-detail {
-          width: 100%;
-
-          .kc-record-item-new {
-            padding-left: 10px;
-          }
-
-          .kc-record-table {
-            margin-left: 10px;
-
-            td.kc-record-table__label, td.kc-record-table__value {
-              padding-bottom: 5px;
-              padding-top: 5px;
+          .kc-modal__main {
+            .kc-modal__header .kc-modal__title span.kc-headline5 {
+              font-size: 22px;
             }
 
-            td.kc-record-table__value .kc-status-card {
-              width: fit-content;
-            }
-          }
-
-          p.kc-body2 {
-            color: $functionalError500;
-            padding-left: 10px;
-          }
-
-          .kc-add-deposit-account-transaction-modal {
-            .kc-modal .kc-modal__container {
-              width: 500px;
-        
-              .kc-modal__main {
-                .kc-modal__header .kc-modal__title span.kc-headline5 {
-                  font-size: 22px;
-                }
-
-                .kc-modal__content {
-                  padding: 1.5rem 1.5rem 2.5rem;
+            .kc-modal__content {
+              padding: 1.5rem 1.5rem 2.5rem;
+      
+              .kc-form-group.kc-form-group--vertical {
+                margin-bottom: 15px;
           
-                  .kc-form-group.kc-form-group--vertical {
-                    margin-bottom: 15px;
-              
-                    .kc-form-group__identity .kc-form-group__label {
-                      label {
-                        margin-bottom: 0;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-
-          .kc-sync-account-modal {
-            .kc-modal .kc-modal__container {
-              width: 500px;
-        
-              .kc-modal__main {
-                .kc-modal__header .kc-modal__title span.kc-headline5 {
-                  font-size: 22px;
-                }
-
-                .kc-modal__content {
-                  padding: 1.5rem 1.5rem 2.5rem;
-          
-                  .kc-form-group.kc-form-group--vertical {
-                    margin-bottom: 15px;
-              
-                    .kc-form-group__identity .kc-form-group__label {
-                      label {
-                        margin-bottom: 0;
-                      }
-                    }
+                .kc-form-group__identity .kc-form-group__label {
+                  label {
+                    margin-bottom: 0;
                   }
                 }
               }
             }
           }
         }
+      }
 
-        section.kc-qris-detail {
-          .kc-dropdown .kc-dropdown__items {
-            z-index: 1000;
+      .kc-sync-account-modal {
+        .kc-modal .kc-modal__container {
+          width: 500px;
+    
+          .kc-modal__main {
+            .kc-modal__header .kc-modal__title span.kc-headline5 {
+              font-size: 22px;
+            }
+
+            .kc-modal__content {
+              padding: 1.5rem 1.5rem 2.5rem;
+      
+              .kc-form-group.kc-form-group--vertical {
+                margin-bottom: 15px;
+          
+                .kc-form-group__identity .kc-form-group__label {
+                  label {
+                    margin-bottom: 0;
+                  }
+                }
+              }
+            }
           }
+        }
+      }
+    }
+
+    section.kc-qris-detail {
+      .kc-dropdown .kc-dropdown__items {
+        z-index: 1000;
+      }
+
+      .kc-form-group {
+        margin-bottom: 20px;
+        width: 100%;
+
+        .kc-form-group__identity .kc-form-group__label {
+          margin-bottom: 5px;
+        }
+      }
+
+      .kc-modal__title span.kc-headline5 {
+        font-size: 22px;
+      }
+
+      .kc-qris-merchant-modal .kc-modal .kc-modal__container {
+        width: 800px;
+
+        .kc-modal__main .kc-modal__content {
+          height: 780px;
+          padding: 1.5rem;
 
           .kc-form-group {
-            margin-bottom: 20px;
-            width: 100%;
-
             .kc-form-group__identity .kc-form-group__label {
-              margin-bottom: 5px;
-            }
-          }
-
-          .kc-modal__title span.kc-headline5 {
-            font-size: 22px;
-          }
-
-          .kc-qris-merchant-modal .kc-modal .kc-modal__container {
-            width: 800px;
-
-            .kc-modal__main .kc-modal__content {
-              height: 780px;
-              padding: 1.5rem;
-
-              .kc-form-group {
-                .kc-form-group__identity .kc-form-group__label {
-                  label.kc-body1 {
-                    font-size: 15px !important;
-                  }
-                }
-              }
-
-              .kc-form-group-with-helper {
-                .kc-form-group {
-                  .kc-form-group__identity .kc-form-group__label {
-                    margin-bottom: 0;
-  
-                    label.kc-body1 {
-                      margin-bottom: 0;
-                    }
-                  }
-                }
-              }
-
-              .kc-merchant-address {
-                .kc-form-group {
-                  flex-grow: 1;
-  
-                  .kc-textarea, .kc-textarea .kc-textarea__box, .kc-textarea .kc-textarea__box textarea {
-                    height: 100%;
-                  }
-                }
+              label.kc-body1 {
+                font-size: 15px !important;
               }
             }
           }
 
-          .kc-upload-qris-image-modal, .kc-suspend-qris-merchant-modal {
-            .kc-modal .kc-modal__container {
-              width: 500px;
-
-              .kc-modal__main .kc-modal__content {
-                padding: 1.5rem 1.5rem 2.5rem;
-              }
-            }
-          }
-
-          .kc-upload-qris-image-modal .kc-modal .kc-modal__container {
+          .kc-form-group-with-helper {
             .kc-form-group {
               .kc-form-group__identity .kc-form-group__label {
                 margin-bottom: 0;
-  
+
                 label.kc-body1 {
                   margin-bottom: 0;
                 }
               }
             }
+          }
 
-            img.kc-qris-image {
-              margin-bottom: 5px;
-              width: 200px;
-              height: 200px;
-              object-fit: cover;
-              object-position: center;
-            }
-  
-            button.kc-upload-qris-btn {
-              background-color: transparent;
-              border: none;
-              width: fit-content;
-              
-              label {
-                color: $primary7;
-                cursor: pointer;
-                text-decoration: underline;
+          .kc-merchant-address {
+            .kc-form-group {
+              flex-grow: 1;
+
+              .kc-textarea, .kc-textarea .kc-textarea__box, .kc-textarea .kc-textarea__box textarea {
+                height: 100%;
               }
             }
-  
-            input[type="file"] {
-              visibility: hidden;
+          }
+        }
+      }
+
+      .kc-upload-qris-image-modal, .kc-suspend-qris-merchant-modal {
+        .kc-modal .kc-modal__container {
+          width: 500px;
+
+          .kc-modal__main .kc-modal__content {
+            padding: 1.5rem 1.5rem 2.5rem;
+          }
+        }
+      }
+
+      .kc-upload-qris-image-modal .kc-modal .kc-modal__container {
+        .kc-form-group {
+          .kc-form-group__identity .kc-form-group__label {
+            margin-bottom: 0;
+
+            label.kc-body1 {
+              margin-bottom: 0;
             }
           }
         }
 
-        section.kc-withdrawal-recipient {
-          .kc-modal .kc-modal__container {
-            width: 500px;
+        img.kc-qris-image {
+          margin-bottom: 5px;
+          width: 200px;
+          height: 200px;
+          object-fit: cover;
+          object-position: center;
+        }
 
-            .kc-modal__title span.kc-headline5 {
-              font-size: 22px;
-            }
-
-            .kc-form-group {
-              margin-bottom: 20px;
-              margin-right: 0;
-
-              .kc-form-group__label {
-                margin-bottom: 0;
-              }
-            }
+        button.kc-upload-qris-btn {
+          background-color: transparent;
+          border: none;
+          width: fit-content;
+          
+          label {
+            color: $primary7;
+            cursor: pointer;
+            text-decoration: underline;
           }
+        }
+
+        input[type="file"] {
+          visibility: hidden;
+        }
+      }
+    }
+
+    section.kc-withdrawal-recipient {
+      .kc-modal .kc-modal__container {
+        width: 500px;
+
+        .kc-modal__title span.kc-headline5 {
+          font-size: 22px;
         }
 
         .kc-form-group {
-          margin-bottom: 0;
-          margin-right: 10px;
-          width: fit-content;
+          margin-bottom: 20px;
+          margin-right: 0;
 
-          .kc-inputfield {
-            .kc-inputfield__box {
-              height: 40px;
-            }
+          .kc-form-group__label {
+            margin-bottom: 0;
           }
         }
       }
+    }
 
-      aside {
-        margin-left: 20px;
-        margin-top: 50px;
-        max-width: 360px;
-        width: 30%;
+    .kc-form-group {
+      margin-bottom: 0;
+      margin-right: 10px;
+      width: fit-content;
 
-        h2 {
-          margin-bottom: 40px;
+      .kc-inputfield {
+        .kc-inputfield__box {
+          height: 40px;
         }
       }
+    }
+  }
+
+  aside {
+    margin-top: 50px;
+    max-width: 360px;
+
+    h2 {
+      margin-bottom: 40px;
     }
   }
 }

@@ -19,3 +19,59 @@
     }
   }
 }
+
+.kc-qris-transaction-list, .kc-corporate-withdrawal-instruction-list {
+  .kc-datatable {
+    .kc-body1 {
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    .kc-body2 {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+}
+
+.kc-funding-detail-member, .kc-corporate-withdrawal-instruction-detail {
+  .content-body {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+
+    .container-fluid {
+      display: flex;
+
+      main {
+        background-color: $neutral1;
+        border-radius: 2px;
+        box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
+        max-width: 1080px;
+        min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px) - 70px - 20px);
+        padding: 40px 30px;
+        width: 70%;
+      }
+
+      aside {
+        margin-left: 20px;
+        width: 30%;
+      }
+    }
+  }
+}
+
+.kc-withdrawal-detail, .kc-corporate-withdrawal-instruction-detail {
+  table tbody tr {
+    td.kc-record-table__label {
+      width: 250px;
+    }
+
+    td.kc-record-table__value {
+      .kc-status-card {
+        width: fit-content;
+      }
+    }
+  }
+}

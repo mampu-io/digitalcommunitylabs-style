@@ -610,8 +610,6 @@ select, .form-control, .custom-select {
         width: calc(100% - 200px); }
         .kc-feature-management .content-body .container-fluid nav div.d-flex.align-items-end .kc-dropdown {
           flex-shrink: 0; }
-      .kc-feature-management .content-body .container-fluid nav > button.kc-button {
-        flex-grow: 1; }
       .kc-feature-management .content-body .container-fluid nav .kc-navigation {
         display: flex;
         margin-right: 20px;
@@ -1648,146 +1646,145 @@ select, .form-control, .custom-select {
 /**
   Styling for active member detail page [FUNDING]
 */
-.kc-funding-detail-member .content-body {
+.kc-funding-detail-member .kc-record-item-new > label {
+  font-weight: 400; }
+
+.kc-funding-detail-member main .spinner-border {
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 0.25em solid #1890FF;
+  border-right-color: transparent;
+  margin-left: 5px; }
+
+.kc-funding-detail-member main .kc-datatable tbody tr td > .kc-button-more-option {
   background-color: transparent;
-  border-radius: 0;
-  box-shadow: none;
-  padding: 0; }
-  .kc-funding-detail-member .content-body .container-fluid {
-    display: flex; }
-    .kc-funding-detail-member .content-body .container-fluid .kc-record-item-new > label {
-      font-weight: 400; }
-    .kc-funding-detail-member .content-body .container-fluid main {
-      background-color: #FFFFFF;
-      border-radius: 2px;
-      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
-      max-width: 1080px;
-      min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px) - 70px - 20px);
-      padding: 40px 30px;
-      width: 70%; }
-      .kc-funding-detail-member .content-body .container-fluid main .spinner-border {
-        width: 1.25rem;
-        height: 1.25rem;
-        border: 0.25em solid #1890FF;
-        border-right-color: transparent;
-        margin-left: 5px; }
-      .kc-funding-detail-member .content-body .container-fluid main .kc-datatable tbody tr td > .kc-button-more-option {
-        background-color: transparent;
-        border: none;
-        width: 24px; }
-      .kc-funding-detail-member .content-body .container-fluid main .kc-more-option {
-        position: relative; }
-        .kc-funding-detail-member .content-body .container-fluid main .kc-more-option > button {
-          background-color: transparent;
-          border: none;
-          width: 24px; }
-        .kc-funding-detail-member .content-body .container-fluid main .kc-more-option .kc-more-option-menu {
-          position: fixed;
-          width: max-content; }
-      .kc-funding-detail-member .content-body .container-fluid main section.kc-deposit-account-detail {
-        width: 100%; }
-        .kc-funding-detail-member .content-body .container-fluid main section.kc-deposit-account-detail .kc-record-item-new {
-          padding-left: 10px; }
-        .kc-funding-detail-member .content-body .container-fluid main section.kc-deposit-account-detail .kc-record-table {
-          margin-left: 10px; }
-          .kc-funding-detail-member .content-body .container-fluid main section.kc-deposit-account-detail .kc-record-table td.kc-record-table__label, .kc-funding-detail-member .content-body .container-fluid main section.kc-deposit-account-detail .kc-record-table td.kc-record-table__value {
-            padding-bottom: 5px;
-            padding-top: 5px; }
-          .kc-funding-detail-member .content-body .container-fluid main section.kc-deposit-account-detail .kc-record-table td.kc-record-table__value .kc-status-card {
-            width: fit-content; }
-        .kc-funding-detail-member .content-body .container-fluid main section.kc-deposit-account-detail p.kc-body2 {
-          color: #FF4D4F;
-          padding-left: 10px; }
-        .kc-funding-detail-member .content-body .container-fluid main section.kc-deposit-account-detail .kc-add-deposit-account-transaction-modal .kc-modal .kc-modal__container {
-          width: 500px; }
-          .kc-funding-detail-member .content-body .container-fluid main section.kc-deposit-account-detail .kc-add-deposit-account-transaction-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__header .kc-modal__title span.kc-headline5 {
-            font-size: 22px; }
-          .kc-funding-detail-member .content-body .container-fluid main section.kc-deposit-account-detail .kc-add-deposit-account-transaction-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
-            padding: 1.5rem 1.5rem 2.5rem; }
-            .kc-funding-detail-member .content-body .container-fluid main section.kc-deposit-account-detail .kc-add-deposit-account-transaction-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical {
-              margin-bottom: 15px; }
-              .kc-funding-detail-member .content-body .container-fluid main section.kc-deposit-account-detail .kc-add-deposit-account-transaction-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical .kc-form-group__identity .kc-form-group__label label {
-                margin-bottom: 0; }
-        .kc-funding-detail-member .content-body .container-fluid main section.kc-deposit-account-detail .kc-sync-account-modal .kc-modal .kc-modal__container {
-          width: 500px; }
-          .kc-funding-detail-member .content-body .container-fluid main section.kc-deposit-account-detail .kc-sync-account-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__header .kc-modal__title span.kc-headline5 {
-            font-size: 22px; }
-          .kc-funding-detail-member .content-body .container-fluid main section.kc-deposit-account-detail .kc-sync-account-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
-            padding: 1.5rem 1.5rem 2.5rem; }
-            .kc-funding-detail-member .content-body .container-fluid main section.kc-deposit-account-detail .kc-sync-account-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical {
-              margin-bottom: 15px; }
-              .kc-funding-detail-member .content-body .container-fluid main section.kc-deposit-account-detail .kc-sync-account-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical .kc-form-group__identity .kc-form-group__label label {
-                margin-bottom: 0; }
-      .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-dropdown .kc-dropdown__items {
-        z-index: 1000; }
-      .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-form-group {
-        margin-bottom: 20px;
-        width: 100%; }
-        .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-form-group .kc-form-group__identity .kc-form-group__label {
-          margin-bottom: 5px; }
-      .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-modal__title span.kc-headline5 {
-        font-size: 22px; }
-      .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container {
-        width: 800px; }
-        .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
-          height: 780px;
-          padding: 1.5rem; }
-          .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group .kc-form-group__identity .kc-form-group__label label.kc-body1 {
-            font-size: 15px !important; }
-          .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group-with-helper .kc-form-group .kc-form-group__identity .kc-form-group__label {
-            margin-bottom: 0; }
-            .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group-with-helper .kc-form-group .kc-form-group__identity .kc-form-group__label label.kc-body1 {
-              margin-bottom: 0; }
-          .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-merchant-address .kc-form-group {
-            flex-grow: 1; }
-            .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-merchant-address .kc-form-group .kc-textarea, .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-merchant-address .kc-form-group .kc-textarea .kc-textarea__box, .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-merchant-address .kc-form-group .kc-textarea .kc-textarea__box textarea {
-              height: 100%; }
-      .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-upload-qris-image-modal .kc-modal .kc-modal__container, .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-suspend-qris-merchant-modal .kc-modal .kc-modal__container {
-        width: 500px; }
-        .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-upload-qris-image-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content, .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-suspend-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
-          padding: 1.5rem 1.5rem 2.5rem; }
-      .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-upload-qris-image-modal .kc-modal .kc-modal__container .kc-form-group .kc-form-group__identity .kc-form-group__label {
-        margin-bottom: 0; }
-        .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-upload-qris-image-modal .kc-modal .kc-modal__container .kc-form-group .kc-form-group__identity .kc-form-group__label label.kc-body1 {
+  border: none;
+  width: 24px; }
+
+.kc-funding-detail-member main .kc-more-option {
+  position: relative; }
+  .kc-funding-detail-member main .kc-more-option > button {
+    background-color: transparent;
+    border: none;
+    width: 24px; }
+  .kc-funding-detail-member main .kc-more-option .kc-more-option-menu {
+    position: fixed;
+    width: max-content; }
+
+.kc-funding-detail-member main section.kc-deposit-account-detail {
+  width: 100%; }
+  .kc-funding-detail-member main section.kc-deposit-account-detail .kc-record-item-new {
+    padding-left: 10px; }
+  .kc-funding-detail-member main section.kc-deposit-account-detail .kc-record-table {
+    margin-left: 10px; }
+    .kc-funding-detail-member main section.kc-deposit-account-detail .kc-record-table td.kc-record-table__label, .kc-funding-detail-member main section.kc-deposit-account-detail .kc-record-table td.kc-record-table__value {
+      padding-bottom: 5px;
+      padding-top: 5px; }
+    .kc-funding-detail-member main section.kc-deposit-account-detail .kc-record-table td.kc-record-table__value .kc-status-card {
+      width: fit-content; }
+  .kc-funding-detail-member main section.kc-deposit-account-detail p.kc-body2 {
+    color: #FF4D4F;
+    padding-left: 10px; }
+  .kc-funding-detail-member main section.kc-deposit-account-detail .kc-add-deposit-account-transaction-modal .kc-modal .kc-modal__container {
+    width: 500px; }
+    .kc-funding-detail-member main section.kc-deposit-account-detail .kc-add-deposit-account-transaction-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__header .kc-modal__title span.kc-headline5 {
+      font-size: 22px; }
+    .kc-funding-detail-member main section.kc-deposit-account-detail .kc-add-deposit-account-transaction-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
+      padding: 1.5rem 1.5rem 2.5rem; }
+      .kc-funding-detail-member main section.kc-deposit-account-detail .kc-add-deposit-account-transaction-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical {
+        margin-bottom: 15px; }
+        .kc-funding-detail-member main section.kc-deposit-account-detail .kc-add-deposit-account-transaction-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical .kc-form-group__identity .kc-form-group__label label {
           margin-bottom: 0; }
-      .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-upload-qris-image-modal .kc-modal .kc-modal__container img.kc-qris-image {
-        margin-bottom: 5px;
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-        object-position: center; }
-      .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-upload-qris-image-modal .kc-modal .kc-modal__container button.kc-upload-qris-btn {
-        background-color: transparent;
-        border: none;
-        width: fit-content; }
-        .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-upload-qris-image-modal .kc-modal .kc-modal__container button.kc-upload-qris-btn label {
-          color: #0F77C0;
-          cursor: pointer;
-          text-decoration: underline; }
-      .kc-funding-detail-member .content-body .container-fluid main section.kc-qris-detail .kc-upload-qris-image-modal .kc-modal .kc-modal__container input[type="file"] {
-        visibility: hidden; }
-      .kc-funding-detail-member .content-body .container-fluid main section.kc-withdrawal-recipient .kc-modal .kc-modal__container {
-        width: 500px; }
-        .kc-funding-detail-member .content-body .container-fluid main section.kc-withdrawal-recipient .kc-modal .kc-modal__container .kc-modal__title span.kc-headline5 {
-          font-size: 22px; }
-        .kc-funding-detail-member .content-body .container-fluid main section.kc-withdrawal-recipient .kc-modal .kc-modal__container .kc-form-group {
-          margin-bottom: 20px;
-          margin-right: 0; }
-          .kc-funding-detail-member .content-body .container-fluid main section.kc-withdrawal-recipient .kc-modal .kc-modal__container .kc-form-group .kc-form-group__label {
-            margin-bottom: 0; }
-      .kc-funding-detail-member .content-body .container-fluid main .kc-form-group {
-        margin-bottom: 0;
-        margin-right: 10px;
-        width: fit-content; }
-        .kc-funding-detail-member .content-body .container-fluid main .kc-form-group .kc-inputfield .kc-inputfield__box {
-          height: 40px; }
-    .kc-funding-detail-member .content-body .container-fluid aside {
-      margin-left: 20px;
-      margin-top: 50px;
-      max-width: 360px;
-      width: 30%; }
-      .kc-funding-detail-member .content-body .container-fluid aside h2 {
-        margin-bottom: 40px; }
+  .kc-funding-detail-member main section.kc-deposit-account-detail .kc-sync-account-modal .kc-modal .kc-modal__container {
+    width: 500px; }
+    .kc-funding-detail-member main section.kc-deposit-account-detail .kc-sync-account-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__header .kc-modal__title span.kc-headline5 {
+      font-size: 22px; }
+    .kc-funding-detail-member main section.kc-deposit-account-detail .kc-sync-account-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
+      padding: 1.5rem 1.5rem 2.5rem; }
+      .kc-funding-detail-member main section.kc-deposit-account-detail .kc-sync-account-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical {
+        margin-bottom: 15px; }
+        .kc-funding-detail-member main section.kc-deposit-account-detail .kc-sync-account-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical .kc-form-group__identity .kc-form-group__label label {
+          margin-bottom: 0; }
+
+.kc-funding-detail-member main section.kc-qris-detail .kc-dropdown .kc-dropdown__items {
+  z-index: 1000; }
+
+.kc-funding-detail-member main section.kc-qris-detail .kc-form-group {
+  margin-bottom: 20px;
+  width: 100%; }
+  .kc-funding-detail-member main section.kc-qris-detail .kc-form-group .kc-form-group__identity .kc-form-group__label {
+    margin-bottom: 5px; }
+
+.kc-funding-detail-member main section.kc-qris-detail .kc-modal__title span.kc-headline5 {
+  font-size: 22px; }
+
+.kc-funding-detail-member main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container {
+  width: 800px; }
+  .kc-funding-detail-member main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
+    height: 780px;
+    padding: 1.5rem; }
+    .kc-funding-detail-member main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group .kc-form-group__identity .kc-form-group__label label.kc-body1 {
+      font-size: 15px !important; }
+    .kc-funding-detail-member main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group-with-helper .kc-form-group .kc-form-group__identity .kc-form-group__label {
+      margin-bottom: 0; }
+      .kc-funding-detail-member main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group-with-helper .kc-form-group .kc-form-group__identity .kc-form-group__label label.kc-body1 {
+        margin-bottom: 0; }
+    .kc-funding-detail-member main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-merchant-address .kc-form-group {
+      flex-grow: 1; }
+      .kc-funding-detail-member main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-merchant-address .kc-form-group .kc-textarea, .kc-funding-detail-member main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-merchant-address .kc-form-group .kc-textarea .kc-textarea__box, .kc-funding-detail-member main section.kc-qris-detail .kc-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-merchant-address .kc-form-group .kc-textarea .kc-textarea__box textarea {
+        height: 100%; }
+
+.kc-funding-detail-member main section.kc-qris-detail .kc-upload-qris-image-modal .kc-modal .kc-modal__container, .kc-funding-detail-member main section.kc-qris-detail .kc-suspend-qris-merchant-modal .kc-modal .kc-modal__container {
+  width: 500px; }
+  .kc-funding-detail-member main section.kc-qris-detail .kc-upload-qris-image-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content, .kc-funding-detail-member main section.kc-qris-detail .kc-suspend-qris-merchant-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
+    padding: 1.5rem 1.5rem 2.5rem; }
+
+.kc-funding-detail-member main section.kc-qris-detail .kc-upload-qris-image-modal .kc-modal .kc-modal__container .kc-form-group .kc-form-group__identity .kc-form-group__label {
+  margin-bottom: 0; }
+  .kc-funding-detail-member main section.kc-qris-detail .kc-upload-qris-image-modal .kc-modal .kc-modal__container .kc-form-group .kc-form-group__identity .kc-form-group__label label.kc-body1 {
+    margin-bottom: 0; }
+
+.kc-funding-detail-member main section.kc-qris-detail .kc-upload-qris-image-modal .kc-modal .kc-modal__container img.kc-qris-image {
+  margin-bottom: 5px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center; }
+
+.kc-funding-detail-member main section.kc-qris-detail .kc-upload-qris-image-modal .kc-modal .kc-modal__container button.kc-upload-qris-btn {
+  background-color: transparent;
+  border: none;
+  width: fit-content; }
+  .kc-funding-detail-member main section.kc-qris-detail .kc-upload-qris-image-modal .kc-modal .kc-modal__container button.kc-upload-qris-btn label {
+    color: #0F77C0;
+    cursor: pointer;
+    text-decoration: underline; }
+
+.kc-funding-detail-member main section.kc-qris-detail .kc-upload-qris-image-modal .kc-modal .kc-modal__container input[type="file"] {
+  visibility: hidden; }
+
+.kc-funding-detail-member main section.kc-withdrawal-recipient .kc-modal .kc-modal__container {
+  width: 500px; }
+  .kc-funding-detail-member main section.kc-withdrawal-recipient .kc-modal .kc-modal__container .kc-modal__title span.kc-headline5 {
+    font-size: 22px; }
+  .kc-funding-detail-member main section.kc-withdrawal-recipient .kc-modal .kc-modal__container .kc-form-group {
+    margin-bottom: 20px;
+    margin-right: 0; }
+    .kc-funding-detail-member main section.kc-withdrawal-recipient .kc-modal .kc-modal__container .kc-form-group .kc-form-group__label {
+      margin-bottom: 0; }
+
+.kc-funding-detail-member main .kc-form-group {
+  margin-bottom: 0;
+  margin-right: 10px;
+  width: fit-content; }
+  .kc-funding-detail-member main .kc-form-group .kc-inputfield .kc-inputfield__box {
+    height: 40px; }
+
+.kc-funding-detail-member aside {
+  margin-top: 50px;
+  max-width: 360px; }
+  .kc-funding-detail-member aside h2 {
+    margin-bottom: 40px; }
 
 /**
   General styling for all pages on FUNDING
@@ -1804,17 +1801,42 @@ select, .form-control, .custom-select {
     position: fixed;
     width: max-content; }
 
-.kc-qris-transaction-list .kc-datatable .kc-rounded-button .kc-rounded-button__tooltip {
-  left: 36px;
-  top: 0; }
-
-.kc-qris-transaction-list .kc-datatable .kc-body1 {
+.kc-qris-transaction-list .kc-datatable .kc-body1, .kc-corporate-withdrawal-instruction-list .kc-datatable .kc-body1 {
   font-size: 14px;
   line-height: 16px; }
 
-.kc-qris-transaction-list .kc-datatable .kc-body2 {
+.kc-qris-transaction-list .kc-datatable .kc-body2, .kc-corporate-withdrawal-instruction-list .kc-datatable .kc-body2 {
   font-size: 12px;
   line-height: 16px; }
+
+.kc-funding-detail-member .content-body, .kc-corporate-withdrawal-instruction-detail .content-body {
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0; }
+  .kc-funding-detail-member .content-body .container-fluid, .kc-corporate-withdrawal-instruction-detail .content-body .container-fluid {
+    display: flex; }
+    .kc-funding-detail-member .content-body .container-fluid main, .kc-corporate-withdrawal-instruction-detail .content-body .container-fluid main {
+      background-color: #FFFFFF;
+      border-radius: 2px;
+      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+      max-width: 1080px;
+      min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px) - 70px - 20px);
+      padding: 40px 30px;
+      width: 70%; }
+    .kc-funding-detail-member .content-body .container-fluid aside, .kc-corporate-withdrawal-instruction-detail .content-body .container-fluid aside {
+      margin-left: 20px;
+      width: 30%; }
+
+.kc-withdrawal-detail table tbody tr td.kc-record-table__label, .kc-corporate-withdrawal-instruction-detail table tbody tr td.kc-record-table__label {
+  width: 250px; }
+
+.kc-withdrawal-detail table tbody tr td.kc-record-table__value .kc-status-card, .kc-corporate-withdrawal-instruction-detail table tbody tr td.kc-record-table__value .kc-status-card {
+  width: fit-content; }
+
+.kc-qris-transaction-list .kc-datatable .kc-rounded-button .kc-rounded-button__tooltip {
+  left: 36px;
+  top: 0; }
 
 /**
   Styling for setting and configuration page (deposit, withdrawal, and qris) [FUNDING]
