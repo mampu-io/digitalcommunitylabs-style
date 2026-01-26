@@ -1809,14 +1809,20 @@ select, .form-control, .custom-select {
   font-size: 12px;
   line-height: 16px; }
 
-.kc-funding-detail-member .content-body, .kc-corporate-withdrawal-instruction-detail .content-body {
+.kc-qris-transaction-list .kc-datatable .kc-status-card.kc-status-card--medium span, .kc-corporate-withdrawal-instruction-list .kc-datatable .kc-status-card.kc-status-card--medium span {
+  font-size: 13px; }
+
+.kc-funding-detail-member .content-body, .kc-corporate-withdrawal-instruction-list .content-body,
+.kc-corporate-withdrawal-instruction-detail .content-body {
   background-color: transparent;
   border-radius: 0;
   box-shadow: none;
   padding: 0; }
-  .kc-funding-detail-member .content-body .container-fluid, .kc-corporate-withdrawal-instruction-detail .content-body .container-fluid {
+  .kc-funding-detail-member .content-body .container-fluid, .kc-corporate-withdrawal-instruction-list .content-body .container-fluid,
+  .kc-corporate-withdrawal-instruction-detail .content-body .container-fluid {
     display: flex; }
-    .kc-funding-detail-member .content-body .container-fluid main, .kc-corporate-withdrawal-instruction-detail .content-body .container-fluid main {
+    .kc-funding-detail-member .content-body .container-fluid main, .kc-corporate-withdrawal-instruction-list .content-body .container-fluid main,
+    .kc-corporate-withdrawal-instruction-detail .content-body .container-fluid main {
       background-color: #FFFFFF;
       border-radius: 2px;
       box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
@@ -1824,9 +1830,17 @@ select, .form-control, .custom-select {
       min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px) - 70px - 20px);
       padding: 40px 30px;
       width: 70%; }
-    .kc-funding-detail-member .content-body .container-fluid aside, .kc-corporate-withdrawal-instruction-detail .content-body .container-fluid aside {
+    .kc-funding-detail-member .content-body .container-fluid aside, .kc-corporate-withdrawal-instruction-list .content-body .container-fluid aside,
+    .kc-corporate-withdrawal-instruction-detail .content-body .container-fluid aside {
       margin-left: 20px;
       width: 30%; }
+
+.kc-corporate-withdrawal-instruction-list .content-body .container-fluid main {
+  width: 100%;
+  max-width: none; }
+
+.kc-corporate-withdrawal-instruction-list .content-body .container-fluid aside {
+  width: 0; }
 
 .kc-withdrawal-detail table tbody tr td.kc-record-table__label, .kc-corporate-withdrawal-instruction-detail table tbody tr td.kc-record-table__label {
   width: 250px; }

@@ -31,10 +31,15 @@
       font-size: 12px;
       line-height: 16px;
     }
+
+    .kc-status-card.kc-status-card--medium span {
+      font-size: 13px;
+    }
   }
 }
 
-.kc-funding-detail-member, .kc-corporate-withdrawal-instruction-detail {
+.kc-funding-detail-member, .kc-corporate-withdrawal-instruction-list,
+.kc-corporate-withdrawal-instruction-detail {
   .content-body {
     background-color: transparent;
     border-radius: 0;
@@ -58,6 +63,19 @@
         margin-left: 20px;
         width: 30%;
       }
+    }
+  }
+}
+
+.kc-corporate-withdrawal-instruction-list {
+  .content-body .container-fluid {
+    main {
+      width: 100%;
+      max-width: none;
+    }
+  
+    aside {
+      width: 0;
     }
   }
 }
