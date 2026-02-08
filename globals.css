@@ -1620,6 +1620,11 @@ select, .form-control, .custom-select {
   .kc-bill-payment-list .kc-bill-payment-status.kc-bill-payment-status--process {
     color: #FAAD14; }
 
+.kc-corporate-withdrawal-instruction-list .kc-modal .kc-modal__container, .kc-corporate-withdrawal-instruction-detail .kc-modal .kc-modal__container {
+  width: 500px; }
+  .kc-corporate-withdrawal-instruction-list .kc-modal .kc-modal__container .kc-modal__main .kc-modal__header .kc-modal__title span.kc-headline5, .kc-corporate-withdrawal-instruction-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__header .kc-modal__title span.kc-headline5 {
+    font-size: 22px; }
+
 /**
   Styling for account search page [FUNDING]
 */
@@ -1801,15 +1806,15 @@ select, .form-control, .custom-select {
     position: fixed;
     width: max-content; }
 
-.kc-qris-transaction-list .kc-datatable .kc-body1, .kc-corporate-withdrawal-instruction-list .kc-datatable .kc-body1 {
+.kc-qris-transaction-list .kc-datatable .kc-datatable__table .kc-body1, .kc-corporate-withdrawal-instruction-list .kc-datatable .kc-datatable__table .kc-body1 {
   font-size: 14px;
   line-height: 16px; }
 
-.kc-qris-transaction-list .kc-datatable .kc-body2, .kc-corporate-withdrawal-instruction-list .kc-datatable .kc-body2 {
+.kc-qris-transaction-list .kc-datatable .kc-datatable__table .kc-body2, .kc-corporate-withdrawal-instruction-list .kc-datatable .kc-datatable__table .kc-body2 {
   font-size: 12px;
   line-height: 16px; }
 
-.kc-qris-transaction-list .kc-datatable .kc-status-card.kc-status-card--medium span, .kc-corporate-withdrawal-instruction-list .kc-datatable .kc-status-card.kc-status-card--medium span {
+.kc-qris-transaction-list .kc-datatable .kc-datatable__table .kc-status-card.kc-status-card--medium span, .kc-corporate-withdrawal-instruction-list .kc-datatable .kc-datatable__table .kc-status-card.kc-status-card--medium span {
   font-size: 13px; }
 
 .kc-funding-detail-member .content-body, .kc-corporate-withdrawal-instruction-list .content-body,
