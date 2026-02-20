@@ -1261,14 +1261,27 @@ select, .form-control, .custom-select {
 .kc-request-update-data-detail .kc-modal .kc-modal__container .kc-modal__main .kc-modal__header .kc-modal__title span.kc-headline5 {
   font-size: 22px; }
 
-.kc-corporate-list .kc-more-option, .kc-corporate-detail .kc-more-option {
+.kc-corporate-list .kc-more-option, .kc-corporate-detail .kc-more-option, .kc-registered-member-list .kc-more-option {
   position: relative; }
-  .kc-corporate-list .kc-more-option .kc-more-option-menu, .kc-corporate-detail .kc-more-option .kc-more-option-menu {
+  .kc-corporate-list .kc-more-option .kc-more-option-menu, .kc-corporate-detail .kc-more-option .kc-more-option-menu, .kc-registered-member-list .kc-more-option .kc-more-option-menu {
     position: fixed;
     width: max-content;
     z-index: 1039; }
-    .kc-corporate-list .kc-more-option .kc-more-option-menu .kc-more-option-menu__item, .kc-corporate-detail .kc-more-option .kc-more-option-menu .kc-more-option-menu__item {
+    .kc-corporate-list .kc-more-option .kc-more-option-menu .kc-more-option-menu__item, .kc-corporate-detail .kc-more-option .kc-more-option-menu .kc-more-option-menu__item, .kc-registered-member-list .kc-more-option .kc-more-option-menu .kc-more-option-menu__item {
       width: 100%; }
+
+.kc-registered-member-list .kc-rounded-button button:disabled, .kc-registered-member-list .kc-rounded-button button:disabled:hover {
+  background-color: transparent;
+  border: none; }
+
+.kc-member-proposal-detail .kc-reset-pin-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__title span, .kc-active-member-detail .kc-reset-pin-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__title span, .kc-registered-member-list .kc-reset-pin-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__title span {
+  font-size: 22px; }
+
+.kc-member-proposal-detail .kc-reset-pin-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-radio-button, .kc-active-member-detail .kc-reset-pin-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-radio-button, .kc-registered-member-list .kc-reset-pin-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-radio-button {
+  align-items: baseline;
+  margin-bottom: 10px; }
+  .kc-member-proposal-detail .kc-reset-pin-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-radio-button .kc-radio-button__label, .kc-active-member-detail .kc-reset-pin-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-radio-button .kc-radio-button__label, .kc-registered-member-list .kc-reset-pin-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-radio-button .kc-radio-button__label {
+    font-weight: 400; }
 
 /**
   Styling for member detail page [MEMBERSERVICE]
@@ -1332,12 +1345,6 @@ select, .form-control, .custom-select {
   .kc-active-member-detail .kc-request-member-update-data-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-revision-modal__footer {
     margin-left: 10px; }
 
-.kc-active-member-detail .kc-reset-pin-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-radio-button {
-  align-items: baseline;
-  margin-bottom: 10px; }
-  .kc-active-member-detail .kc-reset-pin-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-radio-button .kc-radio-button__label {
-    font-weight: 400; }
-
 .kc-active-member-detail .kc-change-phone-number-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
   padding: 1.25rem 1.5rem 2.5rem; }
   .kc-active-member-detail .kc-change-phone-number-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-form-group.kc-form-group--vertical {
@@ -1366,12 +1373,6 @@ select, .form-control, .custom-select {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 0; }
-
-.kc-member-proposal-detail .kc-reset-pin-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-radio-button {
-  align-items: baseline;
-  margin-bottom: 10px; }
-  .kc-member-proposal-detail .kc-reset-pin-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content .kc-radio-button .kc-radio-button__label {
-    font-weight: 400; }
 
 .kc-member-proposal-detail .kc-revision-modal .kc-modal .kc-modal__container .kc-modal__main .kc-modal__content {
   height: 700px;
